@@ -61,13 +61,6 @@ plugins:
 twitter:
   username: "polgarp"
 
-social:
-  type: "Person"
-  name:  "Polgár Péter Balázs"
-  links:
-    - "https://twitter.com/polgarp"
-    - "https://linkedin.com/in/peterbalazspolgar"
-
 author:
   name   : "Péter Balázs Polgár"
   avatar : "/assets/images/bio-photo.jpg"
@@ -115,3 +108,10 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+social:
+  type: "Person"
+  name:  "Polgár Péter Balázs"
+  links:
+    - "https://twitter.com/polgarp"
+    - "https://linkedin.com/in/peterbalazspolgar"
