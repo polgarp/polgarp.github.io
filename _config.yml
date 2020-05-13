@@ -13,14 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "polgarp - thoughts after eleven"
+title: "polgarp - Thoughts after eleven"
+title_separator: "|"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a design explorer.
+  "Design explorer."
 twitter_username: polgarp
 github_username: polgarp
 minimal_mistakes_skin: "contrast"
 search: true
+search_full_content: true
+site.description: "Writings and others by Péter Balázs Polgár"
 
 # Build settings
 markdown: kramdown
@@ -55,35 +58,36 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "Peter Balazs Polgar"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+twitter:
+  username: "polgarp"
+
+social:
+  type: "Person"
+  name:  "Polgár Péter Balázs"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - "https://twitter.com/polgarp"
+    - "https://linkedin.com/in/peterbalazspolgar"
+
+author:
+  name   : "Péter Balázs Polgár"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "fas fa-drafting-compass Design explorer"
+  links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://twitter.com/polgarp"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/peterbalazspolgar"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://twitter.com/polgarp"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/peterbalazspolgar"
 
 defaults:
   # _posts
