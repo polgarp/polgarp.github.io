@@ -1,7 +1,7 @@
 ---
 title: "#stretchcon 2015 impressions"
 categories:
-  - blog
+  - Blog
 tags:
   - Conference notes
 header:
