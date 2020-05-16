@@ -3,7 +3,7 @@ title: "#watchlearn Designing How We Design — Kim Goodwin"
 categories:
   - Blog
 tags:
-  - Notes
+  - Design leadership
 header:
   overlay_filter: rgba(255, 0, 0, 0.6)
   show_overlay_excerpt: false
