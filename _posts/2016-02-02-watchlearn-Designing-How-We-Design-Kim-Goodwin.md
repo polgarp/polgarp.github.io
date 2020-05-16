@@ -5,7 +5,7 @@ categories:
 tags:
   - Design leadership
 header:
-  overlay_color: rgba(255, 0, 0, 0.6)
+  overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 
