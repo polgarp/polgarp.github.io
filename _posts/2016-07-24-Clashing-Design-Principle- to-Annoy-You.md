@@ -5,7 +5,7 @@ categories:
 tags:
   - Product design
 header:
-  overlay_color: rgba(255, 0, 0, 0.6)
+  overlay_color: rgba(255, 0, 0, 0.3)
   show_overlay_excerpt: false
 ---
 
