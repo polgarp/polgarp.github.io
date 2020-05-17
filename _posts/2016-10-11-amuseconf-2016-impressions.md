@@ -26,7 +26,7 @@ Here are my notes of the talks, and you can watch [most of them on the Amuse’s
 
 ## Giles Colborne: UX vs Artificial Intelligence
 
-- UXers don’t write algorithms, but **algorithms are the next generation of added value** — currently design adds the most value. New apps with xhat and conversational interactions build on NLP and AI, but it all happens on the backend.
+- UXers don’t write algorithms, but algorithms are the next generation of added value — currently design adds the most value. New apps with xhat and conversational interactions build on NLP and AI, but it all happens on the backend.
 - What will be the next generation? Ambient interface, all around people, the environment adapts to people’s needs, a kind of environmental computing.
 - So will designers be replaced by data scientist?
 - There are four categories where this change will have an impact. 1st category: AI shortcuts user input, like putting in calories based on image recognition. 2nd category: pattern finding in complex data, by adding the user’s context, the user’s own data it can anticipate user needs. 3rd category: personal assistants. 4th category: coordinating complex environments.
