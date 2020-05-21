@@ -1,7 +1,7 @@
 ---
 title: "About Ford’s faster horses"
 categories:
-  - Blog
+  - 
 tags:
   - Product development
 header:

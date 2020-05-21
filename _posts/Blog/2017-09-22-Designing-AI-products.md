@@ -118,7 +118,7 @@ The Butler. The [Roomba](http://www.irobot.com/For-the-Home/Vacuuming/Roomba.asp
 
 The Police. The [Bonjour Smart Alarm Clock](https://www.kickstarter.com/projects/1450781303/bonjour-smart-alarm-clock-with-artificial-intellig) has quite a few features, but in the end it will wake you, whether you like it or no. The Police guides the user to specific outcomes, even preventing some choices. Maybe it enforces rules for environmental considerations, or for example when a car doesn’t start when trying to drunk-drive. It makes choices instead of the user.
 
-![image-center](/assets/images/2017-09-22-Designing-AI-products-buddy.jpg){: .align-center}
+![image-center](/assets/images/2017-09-22-Designing-AI-products-buddy.png){: .align-center}
 
 The Buddy. [Chef Watson](https://www.ibmchefwatson.com/) is a nice app from the Watson team, that helps you to cook as cooking alone is not that fun. The Buddy complements and augments the human’s work. The choices remain with the user, it only suggests options.
 

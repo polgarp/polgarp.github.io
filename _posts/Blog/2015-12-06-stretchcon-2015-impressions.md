@@ -1,7 +1,7 @@
 ---
 title: "#stretchcon 2015 impressions"
 categories:
-  - Blog
+  - 
 tags:
   - Design leadership
 header:

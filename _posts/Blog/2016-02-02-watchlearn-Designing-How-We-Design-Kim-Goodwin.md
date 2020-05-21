@@ -1,7 +1,7 @@
 ---
 title: "#watchlearn Designing How We Design — Kim Goodwin"
 categories:
-  - Blog
+  - 
 tags:
   - Design leadership
 header:
