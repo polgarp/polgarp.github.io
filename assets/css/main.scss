@@ -4,7 +4,9 @@
 
 @charset "utf-8";
 
-$global-font-family: Monaco, Consolas, "Lucida Console", monospace !default;
+.page__title {
+  background-color: #000;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
