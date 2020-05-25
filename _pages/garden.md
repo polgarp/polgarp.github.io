@@ -7,4 +7,4 @@ entries_layout: categories
 classes: wide
 ---
 
-Garden is a place where I publicly collect notes and half-shaped ideas.
+[Garden](https://www.mentalnodes.com/a-gardening-guide-for-your-mind) - a place for notes and half-shaped ideas.
