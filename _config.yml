@@ -98,14 +98,14 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _garden
+  # _portfolio
   - scope:
       path: ""
-      type: garden
+      type: portfolio
     values:
       layout: single
       author_profile: false
-      related: true
+      related: false
 
 category_archive:
   type: liquid
@@ -115,10 +115,9 @@ tag_archive:
   path: /tags/
 
 collections:
-  garden:
+  portfolio:
     output: true
     permalink: /:collection/:path/
-
 
 social:
   type: "Person"
