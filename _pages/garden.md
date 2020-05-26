@@ -1,6 +1,6 @@
 ---
 title: Garden
 layout: category
-permalink: /categories/Garden/
+permalink: /categories/garden/
 taxonomy: Garden
 ---
