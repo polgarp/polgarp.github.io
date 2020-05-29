@@ -9,7 +9,7 @@ date: 2020-05-29
 
 ## Books
 
-- Recommended books from the Nielsen group's career study:
+- Recommended books from the Nielsen group's [User Experience Careers](https://www.nngroup.com/reports/user-experience-careers/) report:
   - About Face 3
   - Don’t Make Me Think
   - Design of Everyday Things
