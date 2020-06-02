@@ -7,6 +7,8 @@ tags:
 date: 2020-06-02
 ---
 
+Being accessible is not only a good practice for legal reasons (to avoid getting sued, like the [Dominos case](https://arstechnica.com/tech-policy/2019/10/accessibility-the-future-and-why-dominos-matters/), it's also the right thing to do (being more inclusive to all people) and improves the experience to all users (as it usually results in a better usability).
+
 ## Accessibility audit
 
 - There are no easy way around to make an [audit](https://medium.com/@krisrivenburgh/the-ada-checklist-website-compliance-guidelines-for-2019-in-plain-english-123c1d58fad9). 
