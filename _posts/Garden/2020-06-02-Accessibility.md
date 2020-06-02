@@ -13,6 +13,8 @@ Being accessible is not only a good practice for legal reasons (to avoid getting
 
 - There are no easy way around to make an [audit](https://medium.com/@krisrivenburgh/the-ada-checklist-website-compliance-guidelines-for-2019-in-plain-english-123c1d58fad9). 
   - ADA compliance is practically referred to as being compliant to [Web Content Accessibility Guidelines (WCAG) 2.0 Level AA](https://www.w3.org/TR/WCAG20/). *The WCAG 2.0 AA success criteria are comprised of 38 requirements (including level A), individually referred to as success criterion.*
+    - It's not neccessary to cover all the pages on your webpage, only the ones directly related to the purpose of your website, so the main flow.
+    - For user generated content you can claim partial compliance, as you cannot be responsible for content added later.
   - Recommendation is to meet as many success criteria the best we can. Accesibility is something we need to constantly work on, and total compliance is more an ideal than reality. ADA also gives some flexibility to private entitites. 
   - [2.1 is 2.0](https://medium.com/@krisrivenburgh/wcag-2-0-vs-2-1-aa-how-to-view-them-legally-and-accessibility-wise-4f18cfa2367a) + 12 more success criteria, mostly around mobile usage. Usually 2.0 is referenced as the standard.
   - *"There is a separate set of legal best practices to ADA compliance as well: training, having a web accessibility policy page, making a [web accessibility statement](https://medium.com/@krisrivenburgh/web-accessibility-policy-page-example-template-to-model-e7e8519ea124), appointing an accessibility coordinator, hiring an independent consultant, and inviting feedback."*
