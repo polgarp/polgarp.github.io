@@ -69,6 +69,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
+    - label: "Email"
+      icon: "fab fa-fw fa-envelope-o"
+      url: "mailto:hello@polgarp.com"
 
 footer:
   links:
@@ -78,6 +81,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
+    - label: "Email"
+      icon: "fab fa-fw fa-envelope-o"
+      url: "mailto:hello@polgarp.com"
 
 defaults:
   # _posts
