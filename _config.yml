@@ -70,7 +70,7 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
     - label: "Email"
-      icon: "fas fa-envelope-o"
+      icon: "far fa-envelope"
       url: "mailto:hello@polgarp.com"
 
 footer:
@@ -82,7 +82,7 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
     - label: "Email"
-      icon: "fas fa-envelope-o"
+      icon: "far fa-envelope"
       url: "mailto:hello@polgarp.com"
 
 defaults:
