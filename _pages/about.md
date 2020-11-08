@@ -13,3 +13,7 @@ I write sometimes about products and UX on [Medium](https://medium.com/@polgarp)
 I write sometimes about products and UX in 280 characters on [Twitter](https://twitter.com/polgarp).
 
 I frequently do talks on meetups, on various courses and I'm also open for [mentoring](http://uxcoffeehours.com/).
+
+## Contact me
+
+I'm available for coaching of designers and researchers. I also offer consulting for a limited time as a design leader: establishing design / research processes, hiring and training design team, leading discovery work. You can reach me on [hello@polgarp.com](mailto:hello@polgarp.com) for inquiries.
