@@ -89,14 +89,50 @@ I made notes for some of the talks, and summarized them here for later reference
    - Everything is a meeting where two or more people come together to discuss one or more topics. Discuss is the key word, anything else can be delivered in a different format.
    - Enter the room, there should be a visible, auditory arrival, and do a little chit-chat (if you are on time). Acknowledge changes with people: new hair, new background, new filters. Have new folks in the room introduce themselves, spend a bit of time on being human and connect.
    - Set rules for discussions:
-     - 0. Rule: do you really-really-really need a meeting? Is there an other way to do this?
-     - 1. Rule: If it's a meeting, it's around 10 people max. Make meetings smaller, go through bigger meetings and start uninviting people, you need all participants discussing.
-     - 2. Rule: Make sure what is discussed and decided is captured and shared always. So no participants can have more context. People don't just miss out. An extra task for meetings, but it's essential.
-     - 3. Rule: Invest in other mediums, where people can interact, for example Slack.
-     - 4. Be engaged in meetings. If you choose to come to the meetings, leave your camera on, smile.
+     - Rule 0.: do you really-really-really need a meeting? Is there an other way to do this?
+     - Rule 1.: If it's a meeting, it's around 10 people max. Make meetings smaller, go through bigger meetings and start uninviting people, you need all participants discussing.
+     - Rule 2.: Make sure what is discussed and decided is captured and shared always. So no participants can have more context. People don't just miss out. An extra task for meetings, but it's essential.
+     - Rule 3.: Invest in other mediums, where people can interact, for example Slack.
+     - Rule 4. Be engaged in meetings. If you choose to come to the meetings, leave your camera on, smile.
    - Use these roles post covid too, these are great rules. We are not going back to the way things were, some large and hard lessons were learned here.
  - Daily standups for checking in helps a lot in the socializing part, also playing games together.
  - If you are also a maker, set meeting boundaries, like no meeting Wednesdays.
  - Camera filters are now part of your outfit. A small human thing that defines you at least for the day. Maybe also a nice conversation starter to connect.
 
-###
+### Dave Snowden: From enlightenment to entaglement how do we make sense in a world of accelerating uncertainties?
+
+ - How do you know you enough, and can differentiate between correlation and causality?
+ - The Lean Startup method might be a good example. It's a set of practices, methods that successful startup companies do. But also unsuccessful, and arguably more companies do the exact same practices, so in the end lean startup is just something lots of companies try at the same time.
+ - So you cannot rely on inductive logic, so base your thinking on cases when figuring out what to do next.
+ - 3 major facts to be aware of:
+   - Inattentional blindness, a form of bias, we just don't see things we don't expect to see (the famous gorilla experiment). We are not looking for the best solutions that are out there, but looking for the first solution that is out there, as this form of bias helps us to optimise for speed.
+   - Pattern of attraction, things we like to hear, so narrative tropes, memes. These are evolved patterns, so even if you try to counter it, they resist and only get stronger (for example Trump has been using these extensively). These micro narratives have a strong impact on how people make decisions.
+   - Complexity, deeply entangled systems are what we are dealing with, plus we are beyond linear complexity make it more important to understand the present than to imagine a future. Approaches where we set a goal and go towards that will make us ignore the opportunities along the road, so we need to understand our current situation. You might still need targets, you can use vector targets, direction and velocity.
+ - So we are switching from enlightenment to entanglement, since complexity brings us there.
+   - The Carthusian model of leadership trained leaders to be rational or later have emotional intelligence.
+   - Coaches work from outdated scientific models, for example having a consciousness and unconsciousness is not that exact, now we know the body is making autonomous decisions without the brain all the time. Beyond the body our tools, narratives are also part of us.
+   - We need different methods, for example workshops from the facilitator's cultural biases, so just bringing people together won't make it work instantly, to change culture, people need to do things over a longer time.
+ - One way forward is building more on the wisdom of crowds, for example asking everyone at a company to interpret real time their understanding of the company vision, and work from that feedback by visualizing the results.
+ - This boils down to using adaptive logic instead of inductive logic.
+ - In an agile environment this means using multi-method approaches and diversity, to have a variety of perspectives.
+
+### Linda Rising:  Busting Myths around Organizational Change
+
+ - Pattern is a name for solution to a problem in particular context where the solution worked in the past. Once you have many of these patterns, they form a language you can talk about.
+ - So how to make change? Deal with the myths related to change.
+ - Myth number 1: Smart people are rational.
+   - We both think other people are rational, and ourself is rational, but this is not true. Rational (in the economic sense) would mean action in our own best interest.
+   - Instead of being rational, we have a set of irrational decision making methods, also known as cognitive biases. You need to learn to deal with these by looking for small successes, running experiments, find patterns in baby steps.
+   - Arguing facts just increases resistance, focus on telling engaging stories, since they make emotional connections, they involve different areas of the brain.
+ - Myth number 2: Good always triumphs over evil, so the just world fallacy.
+   - An underappreciated pattern is to share food, as there are very few problems that a cake cannot solve.
+ - Myth number 3: You can make people to do what you want with power.
+   - Threats (like firing) only get compliance and not commitment, means people slowly get back to the old ways in the absence of direct threat.
+   - Power doesn't get you nowhere, personal touch helps more, so telling people why they need to do certain things.
+   - But different people accept new ideas differently, they are on the adoption curve: innovators (new is cool), early adopters (interested, needs to learn more), early majority (looking at other people's experiences), late majority (if I have to), laggards (always done like this).
+ - Myth number 4: Ignoring negative people helps.
+   - Resistance can be used as advantage, by really listening and learning what other people know. What you believe about another person changes what you signal to people, and how you can deal with people.
+   - Dealing with skeptics: name them champions who will ask the hard questions, being the devil's advocate, this has high value in a change effort.
+ - Myth number 5: You are smart, so you don't need help.
+   - Ask for help, show gratitude.
+   - The powerful way to say thanks: be sincere, timely, detailed and describe impact.
