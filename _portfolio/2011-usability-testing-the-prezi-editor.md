@@ -1,6 +1,7 @@
 ---
 title: "Usability testing the Prezi editor"
 excerpt: ""
+date: 2011-01-01
 header:
   image:
   teaser: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
