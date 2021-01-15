@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item 2"
+title: "Usability testing the Prezi editor"
 categories:
   - portfolio
 tags:
