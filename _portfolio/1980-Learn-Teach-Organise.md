@@ -1,6 +1,6 @@
 ---
 title: "Learn, Teach, Organize"
-excerpt: "To continue learning, I must be able to inspire and explain things to others, so I keep improving my evangelization game."
+excerpt: ""
 header:
   image:
   teaser: assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
