@@ -3,7 +3,7 @@ title: "Learn, Teach, Organize"
 excerpt: "To continue learning, I must be able to inspire and explain things to others, so I keep improving my evangelization game."
 header:
   image:
-  teaser:
+  teaser: assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
 sidebar:
   - text: "Teaching since 2007"
   - text: "Learning since 1980"
