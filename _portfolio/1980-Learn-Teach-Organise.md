@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item 1"
+title: "Learn, Teach, Organize"
 categories:
-  - portfolio
+  - 
 tags:
   -
 ---
