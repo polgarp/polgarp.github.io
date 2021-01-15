@@ -19,6 +19,8 @@ gallery:
     alt: "introduction on a meetup"
 ---
 
+{% include gallery caption="Fun times with meetup and conference talks" %}
+
 When I first realized that as a computer science major instead of programming big black boxes, I’d rather work with people, I started to read everything that had even a slight connection to this topic. After reading all of the Alertbox posts available online, **I knew I’ll only understand usability / UX well enough if I can also explain it to others**. So I went back to my university and started to teach software ergonomics to other computer science students. I continue to teach and evangelize UX in some way ever since.
 
 Besides teaching, I also **started to write, I was one of the first bloggers writing in Hungarian about UX**. That’s how I met other people who were also working on this field. It quickly turned out we need more time to talk, so with others I started to organize World Usability Day events, and later **the [UX Budapest meetup](https://www.meetup.com/UXbudapest/)** series. It evolved into a [huge community of professionals](https://www.facebook.com/groups/594600877237593/about/), especially thinking back at the humble beginning of 10 UXers going out to have a beer and talking about user needs and testing.
