@@ -6,6 +6,7 @@ collection: portfolio
 entries_layout: grid
 classes: wide
 author_profile: false
+sort_by: title
 sort_order: reverse
 header:
   overlay_image: /assets/images/portfolio/splash.jpg
