@@ -1,7 +1,7 @@
 ---
 title: "Portfolio item 2"
 categories:
-  -
+  - portfolio
 tags:
   -
 ---
