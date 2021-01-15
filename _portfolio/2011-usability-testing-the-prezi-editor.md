@@ -3,7 +3,7 @@ title: "Usability testing the Prezi editor"
 excerpt: ""
 header:
   image:
-  teaser: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.jpg
+  teaser: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/Prezi-logo-blue-lg.png
@@ -12,14 +12,14 @@ sidebar:
   - title: "Responsibilities"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
 gallery:
-  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.jpg
-    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.jpg
+  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
+    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
     alt: "testing the prezi editor"
-  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-2.png
-    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-2.png
+  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-2.jpg
+    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-2.jpg
     alt: "testing the business sign up flow"
-  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.jpg
-    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.jpg
+  - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.png
+    image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.png
     alt: "mobile testing"
 ---
 
