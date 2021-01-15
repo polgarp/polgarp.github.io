@@ -12,20 +12,20 @@ sidebar:
   - title: "Responsibilities"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
 gallery:
-  - url: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-1.png
-    image_path: assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-1.png
-    alt: "building lo-fi prototypes"
-  - url: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png
-    image_path: assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png
-    alt: "building prototypes in webflow"
-  - url: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg
-    image_path: assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg
-    alt: "building prototypes in bootstrap"
+  - url: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-1.jpg
+    image_path: assets/images/portfolio/2014-shared-understanding-with-story-mapping-1.jpg
+    alt: "introducing user story map to people outside of the team"
+  - url: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg
+    image_path: assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg
+    alt: "team task planning with user story map"
+  - url: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-3.jpg
+    image_path: assets/images/portfolio/2014-shared-understanding-with-story-mapping-3.jpg
+    alt: "understanding wider context with story map"
 ---
 
 Working on the mobile products of Prezi, we realized with the pm and my designer pair that we have an issue coordinating our 4 developer teams, and backlogs don’t communicate well enough what everybody needs to do and how it relates to the big picture. Every dev team had their own goals with the design tasks barely keeping up, so we faced a possibly broken experience. There was no clear focus and we only had a very high business case. I needed to find a way to **build a shared understanding to get the teams focused**.
 
-{% include gallery caption="Building prototypes for all stages of testing" %}
+{% include gallery caption="Using user story maps to share, plan and understand" %}
 
 On the advice of my manager I started to look into this method and read the new book from Jeff Patton about user story mapping. It seemed the right method to use, as it **provided a unified view to product, design and development** with enough detail for the devs to know what to work on when, while also showing the overall goals. I facilitated the creation of the first version with the pm and designer. We had done enough research to have a good understanding on what the users would need from the product.
 
