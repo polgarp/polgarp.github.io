@@ -15,6 +15,6 @@ header:
 
 ---
 
-After spending 10+ years in the UX field, one of my biggest learnings is that as people get better and more experienced, it's not necessarily through single projects to be composed into a portfolio. Better comes through reflection, and stories that have been told again and again about the past work.
+After spending 10+ years in the UX field, one of my key learnings is that as people get better, it's not necessarily through single projects to be composed into a portfolio. Better comes through experimentation, reflection and stories that have been told again and again about past work crystalizing experience.
 
 **Here is a selection of my stories.**
