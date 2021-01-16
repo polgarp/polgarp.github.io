@@ -7,7 +7,7 @@ entries_layout: grid
 classes: wide
 author_profile: false
 sort_by: date
-sort_order: forward
+sort_order: reverse
 header:
   overlay_image: /assets/images/portfolio/splash.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
