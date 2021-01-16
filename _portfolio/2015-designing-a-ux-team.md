@@ -4,7 +4,7 @@ excerpt: ""
 date: 2015-01-01
 header:
   image:
-  teaser: /assets/images/portfolio/2015-designing-a-ux-team-3.jpg
+  teaser: /assets/images/portfolio/2015-designing-a-ux-team-3.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/emarsys-vector-logo.svg
@@ -16,11 +16,11 @@ gallery:
   - url: /assets/images/portfolio/2015-designing-a-ux-team-1.jpg
     image_path: assets/images/portfolio/2015-designing-a-ux-team-1.jpg
     alt: "emarsys ux team 2017"
-  - url: /assets/images/portfolio2015-designing-a-ux-team-2.jpg
-    image_path: assets/images/portfolio/2015-designing-a-ux-team-2.jpg
+  - url: /assets/images/portfolio/2015-designing-a-ux-team-2.jpeg
+    image_path: assets/images/portfolio/2015-designing-a-ux-team-2.jpeg
     alt: "working with design thinking methods"
-  - url: /assets/images/portfolio/2015-designing-a-ux-team-3.jpg
-    image_path: assets/images/portfolio/2015-designing-a-ux-team-3.jpg
+  - url: /assets/images/portfolio/2015-designing-a-ux-team-3.png
+    image_path: assets/images/portfolio/2015-designing-a-ux-team-3.png
     alt: "emarsys ux team intro video 2015"
 ---
 
@@ -34,4 +34,4 @@ I had three basic ideas on how to establish the team.
 2. **Establish researcher - designer** pairs based on the pair design practice by Cooper.
 3. Make product teams superheroes by **embedding UX people with devs and PMs** ([the talk I did](https://prezi.com/rit0h4vvzql8/lean-ux-in-product-teams/) when introducing this).
 
-Starting with 2 people and [hiring 14 more since then](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb), we work now on most of the product. I also **established key design practices** (with the support of my awesome team): design studios, critiques, frequent interviews and tests, design briefs, principles, remote design feedback over Invision, [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe), [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47), a design system. While doing this I learned, **an organization is very similar to the product**: you have to understand the needs and pain points of users (the rest of the organization) in order to create the best solutions.
+Starting [with 2 people](https://www.youtube.com/watch?v=sG8FBnwci7k) and [hiring 14 more since then](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb), we work now on most of the product. I also **established key design practices** (with the support of my awesome team): design studios, critiques, frequent interviews and tests, design briefs, principles, remote design feedback over Invision, [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe), [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47), a design system. While doing this I learned, **an organization is very similar to the product**: you have to understand the needs and pain points of users (the rest of the organization) in order to create the best solutions.
