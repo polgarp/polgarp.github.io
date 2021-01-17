@@ -28,11 +28,13 @@ When I joined Trustpilot, a key challenge was to provide better alignment to tea
 
 {% include gallery caption="Creating alignment with IA" %}
 
-We started with the key principle of better information architecture requires better alignment. For business applications the optimal structure is not necessary something you'd define based on user research, it's at least equal parts how the organization defines the ideal path for use. This is the path which can also drive marketing and sales. To set this up, **we defined 4 parallel tracks to discover a great solution**:
+We started with the key principle of better information architecture requires better alignment. For business applications the optimal structure is not necessary something you'd define based on user research, it's at least equal parts how the organization defines the ideal path of use. This is the path which can also drive marketing and sales besides product decisions on journey. To set this up, **we defined 4 parallel tracks to discover a great solution**:
 
- - User research track: We wanted to understand how current users perceived the solution, and wanted to continuously test versions via usability testing, card sorting and tree testing.
+ - User research track: We wanted to understand how current users perceived the solution, and intended to continuously test versions via usability testing, card sorting and tree testing.
  - Alignment track: We did workshops with all product teams, and most stakeholders over several weeks, understanding key concerns, ambitions and expectations towards the new IA. With some groups we set up further workshops to understand how the new menus would impact their work.
- - Design track: We involved the whole design team to get ideas about problems and potential solutions to widen the solutions we were exploring.
- - Prototype track: We started with a prototype menu from the beginning of the project that we modified and testes as the project went on.
+ - Design track: We involved the whole design team to get ideas about problems and potential solutions to widen possible space of the solutions we were exploring.
+ - Prototype track: We started with a prototype menu from the beginning of the project that we modified and tested as the project went on.
 
-After 3 months we had a solution proposal that was agreed by everyone, and what the product team could deliver within 3 more months together with some major design changes in the B2B app. Our **goal with the release was to improve traffic to some of the key tasks in the app, while not making overall numbers lower (like conversion)**, in which we succeeded. In the end the success of the rollout and results confirmed our initial bet of prioritizing internal alignment through building a better IA for the business app.
+I was working within each of these tracks in various ways to enable and support the individual contributors driving them.
+
+After 3 months we discovered a solution that was agreed by everyone, and what the product team could deliver within 3 more months together with some major design changes in the B2B app. Our **goal with the release was to improve traffic to some of the key tasks in the app, while not making overall numbers lower (like conversion)**, in which we succeeded. In the end the success of the rollout and results confirmed our initial bet of prioritizing internal alignment through building a better IA for the business app.
