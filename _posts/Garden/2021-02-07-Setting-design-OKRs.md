@@ -1,0 +1,19 @@
+---
+title: "Setting design OKRs"
+categories:
+  - Garden
+tags:
+  - Design leadership
+  - OKRs
+  date: 2021-02-07
+---
+
+OKRs (for example from *Radical Focus* by Christina Wodtke is a good book about it) or similar goal setting techniques usually work well for focusing product teams. In larger organizations this is usually done by cascading, there are a few high level objectives that the product org delivers on, and that cascades down to product teams. So product designers would work on the objectives set for their team. Ideally this is not just a top-bottom, but also a bottom-top process, so insights, ideas, experiments also flow up to leadership, before the high level OKRs are set and flow down again, plus at the end of the process they flow up again, confirming commitments.
+
+As companies scale, design leaders would start to have design objectives that go beyond what each team would deliver on, plus they'd would look for ways to influence priorities beyond simply contributing to objectives. So how can design leaders push their design goals? For example design goals might include improve brand alignment, work on accessibility, establish new research practices, fix UX debt?
+
+Ideally the design goals should flow from a similar process as above: there is some strategy / mission / vision involved for overall design, ideas flowing from the rest of the team that results in a set of OKR candidates. At this stage you'd be still talking about objectives as the KRs would get defined once the context of execution gets clearer.
+
+Some objectives will need product team involvement, either because we will ask individual designers to contribute in a way that goes beyond just participating in a workshop or giving feedback. An other type of contribution would also ask for engineering time (like fixing usability issues), product management time (like working on the information architecture, you want changes that also give value to users and fits with the overall business) or even contribution from the rest of the org (like updating support articles for new screens, providing translations, updating marketing websites etc). For these cases, the design OKRs should flow together with the other objectives coming from the business, engineering and other disciplines. So design leadership has to figure out how to fit into these flow (possibly ask or even fight to be included), and be prepared to have their goals under the same scrutiny that other goals are under. Meaning they would need some shaping, supporting data, and allies who also support the goals. A widely shared design vision or strategy helps.
+
+Since the above flow will have some limitations (time and effort needed for preparation, getting outprioritised due to limited resources, picking your battles pushing for a few high prio items), an other type of objective for design leadership would be more self contained, things that leaders can do their own time. For example shaping the above opportunities. Or preparing strategies, research, investigations, prototypes for the above. Or running small pilots that don't need extra time spent by product teams. In these cases while the objectives might be the same as above (for example "Create a responsive design that works for all user devices"), the key results might be different and be set based on what is achievable with these constraints. So key results set here (just as when setting KRs for product teams) should be within the design leaders' area of influence to reach, but still tied as closely to business outcomes, at least by a proxy. This way, if your priorities don't get selected within the overall process at first (or second, third ...) time, over time as you create more and more artifacts / studies / prototypes / visions you build a stronger case for it.
