@@ -4,8 +4,17 @@ categories:
   - Garden
 tags:
   - Design career
-date: 2020-06-17
+date: 2021-02-18
 ---
+
+## Collecting pieces
+
+One challenge with stories seems to be the white paper syndrome, whenever there is a need to start a story, for example after a big project finishes, the details are often hazy, as what exactly the story should be focusing on. I found [brag documents](https://jvns.ca/blog/brag-documents/) by Julie Evans help a lot. They are essentially a running list of small wins, where over time larger patterns, stories also emerge. It's very simple to get started, just spend a few minutes every two weeks to list all the things that went well in a couple of bullet points.
+
+Two other approaches to documenting:
+
+ - [Seriously, you need to start documenting your UX work](https://www.invisionapp.com/inside-design/document-your-ux-work/). Here the idea is to write a "Career Project Diary", a central place to document all project work. Documents are heavily templated to make documentation as fast as possible. The approach is more focused on portfolio pieces, and while the idea is to add on an ongoing basis, it focuses more on details rather than lessons learned.
+ - [Seriously, you need to start documenting your UX work](https://alistapart.com/article/the-career-management-document/). Proposes the "Career Management Document", a "a comprehensive collection of your résumé and portfolio content". Focus is more on portfolio pieces and on detailed logs of work done, written on a continuous basis.
 
 ## Writing stories
 
