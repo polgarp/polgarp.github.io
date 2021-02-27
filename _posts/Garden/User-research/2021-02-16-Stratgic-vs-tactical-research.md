@@ -4,7 +4,7 @@ categories:
   - Garden
 tags:
   - User research
-date: 2021-02-16
+date: 2021-02-27
 ---
 
 User research projects vary in scope, where they are on the scale depends on the goal.
@@ -28,6 +28,13 @@ On the other end of the scale, it's tactical research.
  - Validation is key.
  - Findings are relevant only in the current phase of the project, possibly as rationalization, supporting information until the end of the project.
  - Documentation should be as lightweight as possible, if any (might fit the team better if results are acted upon on the spot).
+
+[This article by Peter Parkes](https://medium.com/qualdesk/disposable-insights-aa8e240b3ad7) talks about evergreen and disposable insights that might be an even better terminology.
+
+ - Disposable insights: fast (discover and act in 1-2 sprints), narrow focused (on a screen or interaction), mostly diagnostic research.
+ - Evergreen insights: continuous (no one shot action), broad focused (entire product), discovery type of research.
+
+He writes that evergreen insights can emerge also from diagnostic research ([halo insights](https://medium.com/qualdesk/halo-insights-5b182d9a4cc8)), just unexpected pieces of knowledge.
 
 In practice research is usually somewhere in between, even deeply within delivery, within a usability test there is an opportunity to learn something new that benefits the team on the long term. While during generative explorations there might be information that a team can act on right away.
 
