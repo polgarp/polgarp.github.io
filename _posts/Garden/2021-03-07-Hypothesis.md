@@ -6,7 +6,7 @@ tags:
   - Product development
   - Product management
   - Product discovery
-  date: 2021-03-07
+date: 2021-03-07
 ---
 
 First, we start of a business **problem**. This is something we observe in our systems, or in the world that we think is worth solving. "We observe...".

@@ -5,7 +5,7 @@ categories:
 tags:
   - Design leadership
   - OKRs
-  date: 2021-02-07
+date: 2021-02-07
 ---
 
 OKRs (for example from *Radical Focus* by Christina Wodtke is a good book about it) or similar goal setting techniques usually work well for focusing product teams. In larger organizations this is usually done by cascading, there are a few high level objectives that the product org delivers on, and that cascades down to product teams. So product designers would work on the objectives set for their team. Ideally this is not just a top-bottom, but also a bottom-top process, so insights, ideas, experiments also flow up to leadership, before the high level OKRs are set and flow down again, plus at the end of the process they flow up again, confirming commitments.
