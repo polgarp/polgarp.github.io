@@ -24,7 +24,7 @@ This is my current knowledge workflow as of beginning of 2021. I write these bot
 # Organizing knowledge
 
  - The articles clipped is already curation, that can be already shared (externally: link + tags, so why people should care and not only "nice", internally: summarizing interesting points, possibly a sketch to show how it works in our own context). I'm setting up my [Twitter feed](https://twitter.com/polgarp) for external sharing.
- - From the clippings and other sources (like discussions) I think through topics by adding or updating notes in my [Garden](https://polgarp.com/categories/garden/). Setup is based broadly on the [garden](({% post_url 2020-11-08-Garden %})) idea and the [Zettelkasten](https://zettelkasten.de/introduction/) method. Here I can collect and refine ideas.
+ - From the clippings and other sources (like discussions) I think through topics by adding or updating notes in my [Garden](https://polgarp.com/categories/garden/). Setup is based broadly on the [garden]({% post_url 2020-11-08-Garden %}) idea and the [Zettelkasten](https://zettelkasten.de/introduction/) method. Here I can collect and refine ideas.
    - **Titles** of notes should be specific, look for as much specificity as to clearly designate the contents.
    - Each note should contain **one piece of knowledge**. I can easily recognize when a note contains more pieces of knowledge, if title of the note is getting less specific. This would be the right time to add a split the note.
    - If the content of a note is based on an external source, the note should be rewritten in my own words. Otherwise I'm not working with my knowledge, but with somebody else's.
