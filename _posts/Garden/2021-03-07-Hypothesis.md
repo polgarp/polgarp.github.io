@@ -6,8 +6,12 @@ tags:
   - Product development
   - Product management
   - Product discovery
-date: 2021-03-07
+date: 2021-03-13
 ---
+
+Tal Raviv's article, [That’s Not a Hypothesis](https://medium.com/@talraviv/thats-not-a-hypothesis-25666b01d5b4) describes what hypothesis is in the scientific method: something we believe in, a part of the model what we believe and something that can be falsified. This is connected to problem statement, the hypothesis is our belief why the problem is happening. If the hypothesis is true, we can make a prediction what will happen.
+
+# Setting problems, beliefs, bets
 
 First, we start of a business **problem**. This is something we observe in our systems, or in the world that we think is worth solving. "We observe...".
 
