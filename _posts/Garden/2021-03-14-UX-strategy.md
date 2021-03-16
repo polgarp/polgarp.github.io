@@ -9,10 +9,10 @@ tags:
 
 Two chief direction for UX strategy (correlates with the two roles for design leaders, leadership and management):
 
- - Looking internally, focused on improving the team, getting better at practices. Scaling, ops drive this. About increasing maturity for the team and the broader organization.
- - Looking externally, focused on improving the product, providing better experiences. Vision, UX outcomes drive this.
+ - Looking at practice and people, focused on improving the team, getting better at practices. Scaling, ops drive this. About increasing maturity for the team and the broader organization.
+ - Looking at the purpose and product, focused on improving the product, providing better experiences. Vision, UX outcomes drive this.
 
-Both these perspectives need to be aligned and support broader business goals. Strategy can be also aimed at influencing business goals on the longer term, like increasing user-centeredness.
+Both these perspectives need to be aligned with each other (prioritizing maturity improvement to drive product strategy) and support broader business goals. Strategy can be also aimed at influencing business goals on the longer term, like increasing user-centeredness.
 
 Why do you need a UX strategy?
 
