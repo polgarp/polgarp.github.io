@@ -1,7 +1,7 @@
 ---
 title: "Leader archetypes in practice"
 excerpt: ""
-date: 2021-01-01
+date: 2021-03-01
 header:
   image:
   teaser: /assets/images/portfolio/2021-leader-archetypes-in-practice-1.png
@@ -42,7 +42,7 @@ Some of the feedback was on point, as it usually does. But the format was not co
 
  Most the issues tagged in the feedback were not causing huge issues, as the number of users in this journey were fairly low. Fixing everything might have had a huge conversation rate improvement, but low impact overall. so earlier I was advocating for the strategy of adding things we heard from users the would need (like adding module buying capability that we don’t have yet), that we heard from interviews. As company strategy changed, and there were huge investments committed in marketing, this changed, more people in the top of the funnel would mean churn having a much larger overall impact.
 
-{% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-1.png" caption="Self service upgrade journey" %}
+{% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-1.png" caption="Activity artefacts" %}
 
 As the glube in this project, I was mostly focused setting up the designer for success:
 
@@ -65,7 +65,7 @@ As the glube in this project, I was mostly focused setting up the designer for s
  3. We already made some high level user journeys. One key friction was that different teams own different parts of the flow: there is a marketing website, marketing email campaigns, upgrade flow, and entry points to the upgrade, these are all owned by different teams. Aligning through the journey was proposed by us, also as a more proactive way to have these conversations, this is still in progress as we prepare for the next phase.
  4. UI refresh project: redesign the app through iterations, we had a 1 year roadmap ahead focusing on various aspects, like a typography update, with a senior designer leading the project. Shaping the opportunity of “Key moments” and figuring out how to add it to the roadmap for future similar projects was helpful.
 
- {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-4.png" caption="Self service upgrade journey" %}
+ {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-4.png" caption="The updated pricing page" %}
 
 After working through the feedback and successfully collaborating with all teams and stakeholders connected to the project. Some nice outcomes:
 
