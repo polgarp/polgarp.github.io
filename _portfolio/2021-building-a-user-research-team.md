@@ -1,7 +1,7 @@
 ---
 title: "Building a user research team"
 excerpt: ""
-date: 2021-04-01
+date: 2021-04-02
 header:
   image:
   teaser: /assets/images/portfolio/2021-building-a-user-research-team-1.png
