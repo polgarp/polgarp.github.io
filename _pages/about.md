@@ -6,7 +6,7 @@ author_profile: true
 
 I’m Péter Balázs Polgár.
 
-I help teams to by bringing products from idea till execution. I create great experiences by providing insights about the user needs and expectations, validating hypotheses and designing solutions. I also mentor and train others to do the same. Currently Senior UX manager at [Trustpilot](https://www.trustpilot.com/), previously Head of UX at [Emarsys](https://emarsys.com/) and UX researcher [Prezi](https://prezi.com/).
+I help teams to by bringing products from idea till execution. I create great experiences by providing insights about the user needs and expectations, validating hypotheses and designing solutions. I also mentor and train others to do the same. Currently Lead Product designer at [Krisp.ai](https://krisp.ai), previously Senior UX manager at [Trustpilot](https://www.trustpilot.com/), Head of UX at [Emarsys](https://emarsys.com/) and UX researcher [Prezi](https://prezi.com/).
 
 I write sometimes about products and UX on [Medium](https://medium.com/@polgarp).
 
