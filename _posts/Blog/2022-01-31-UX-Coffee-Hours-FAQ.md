@@ -32,7 +32,7 @@ Useful resources to learn more about how companies do the levels:
 
 ## How is your hiring process?
 
-Right now at Krisp we have:
+Right now at Krisp we have these steps:
 
 - Resume screen - figuring out if what we see in the resume / portfolio / email to the hiring manager, so everything the candidate provided to us fits with what we are looking for. Details here are helpful, so I don't have to wonder what the candidate did or didn't do in the past.
 - Hiring manager interview - A more general interview, where I figure out if the candidate worked similarly, if our understanding about design and UX process and concepts is aligned, and if we the candidate's goals fits with what we do, so we can provide them with appropriate opportunities.
