@@ -9,7 +9,7 @@ header:
   show_overlay_excerpt: false
 ---
 
-I've been part of the [UX Coffee Hours](https://storage.googleapis.com/uxcoffeehours.com/site/research.html) in the past 1,5 years, meeting UX researchers every week for a chat, mostly mentoring people starting out in their career. While each session is different and insightful in it's own way, I've noticed a few recurring topics. I'm writing my high level take on these, so I can share with future mentees for future sessions, making more time for deeper discussions.
+I've been part of the [UX Coffee Hours](https://storage.googleapis.com/uxcoffeehours.com/site/research.html) in the past 1.5 years, meeting UX researchers every week for a chat, mostly mentoring people starting out in their career. While each session is different and insightful in it's own way, I've noticed a few recurring topics. I'm writing my high level take on these, so I can share with future mentees for future sessions, making more time for deeper discussions.
 
 I'll update this FAQ from time to time as I learn about new questions from mentees that are interesting to answer in writing.
 
