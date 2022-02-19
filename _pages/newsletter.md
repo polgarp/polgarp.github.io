@@ -1,8 +1,8 @@
 ---
-title: " 9am26 Newsletter"
+title: " 9am26 - Design Leadership"
 layout: category
 permalink: /categories/newsletter/
 taxonomy: Newsletter
 ---
 
-This is the description of my newsletter.
+9am26 is my biweekly newsletter on all things product design leadership: design and research practice, managing people and teams, finding our places in tech product orgs, scaling and maturity, describing best practices and new ways for being a design leader from great companies and design teams.
