@@ -78,6 +78,8 @@ Framing partly means just talking about how they did their thing differently, an
 
 The other part is outcome: I'm usually looking for researchers who go beyond a study, engage with teams / developers, and had impact on the product. In academia outcome is publication, in industry it's change in user's behavior, or at least in the product or at least in the thinking of team members. So I'm looking more closely at how people talk about presenting, communicating their results, and how they collaborated with other team members which are important to get reach and impact. Unfortunately a lot of academic projects stop before users get real value from it (ofcourse this is fine and makes sense in the context of academia).
 
+This is a pretty good article on lingo (and mindset) differences: [From Academia to UX: Understanding User Research Lingo](https://dscout.com/people-nerds/user-research-lingo).
+
 ## How do you work together with product managers?
 
 Both roles, so product managers and UX people (including researchers and designers) are a bit underdefined and might cover different tasks at different organisations (sometimes even at different teams). So there is usually some overlap or fuzziness there. For example product managers should engage with customers, but if that's true what do researchers do? In the past I did my best work, when we figured out a good distribution of  tasks between us and we had complementing skills, even if we took turns doing some things like user interviews. A good rule of thumb is that you should do your thing and support as opposed to gatekeeping: enable PMs who look to engage with customers, rather than trying to "own" this connection.
