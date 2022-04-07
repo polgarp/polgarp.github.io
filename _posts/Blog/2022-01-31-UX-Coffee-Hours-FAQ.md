@@ -78,7 +78,10 @@ Framing partly means just talking about how they did their thing differently, an
 
 The other part is outcome: I'm usually looking for researchers who go beyond a study, engage with teams / developers, and had impact on the product. In academia outcome is publication, in industry it's change in user's behavior, or at least in the product or at least in the thinking of team members. So I'm looking more closely at how people talk about presenting, communicating their results, and how they collaborated with other team members which are important to get reach and impact. Unfortunately a lot of academic projects stop before users get real value from it (ofcourse this is fine and makes sense in the context of academia).
 
-This is a pretty good article on lingo (and mindset) differences: [From Academia to UX: Understanding User Research Lingo](https://dscout.com/people-nerds/user-research-lingo).
+Good articles on lingo (and mindset) differences:
+
+- [From Academia to UX: Understanding User Research Lingo](https://dscout.com/people-nerds/user-research-lingo).
+- [Transfer Your Academic Skills to the World of UX](https://dscout.com/people-nerds/academic-skills).
 
 ## How do you work together with product managers?
 
