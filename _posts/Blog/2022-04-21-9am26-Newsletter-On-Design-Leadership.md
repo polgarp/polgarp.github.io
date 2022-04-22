@@ -15,7 +15,9 @@ I'm starting a (bi)weekly newsletter on design leadership called **[9am26](https
 
 Why 9am26? I imagine a design leader starting their day. After going through the slack, emails and finishing the first cup of coffee, it's almost half past nine. They need to decide which problem to work on today. There are always many things to figure out at any one point in time. It could be about bettering team ceremonies, finding new practices to adopt, increasing maturity, growing talented ICs and managers... the list is endless. Getting an email with a good starting point helps in setting a course.
 
-So I intend to focus each issue on a specific topic, adding a few curated links with a short primer laying out ideas on which directions to go. This should help in getting new ideas and levelling up the leadership game for design leaders just starting out - or for experienced design leaders finding new ways to improve. Or even for senior designers looking to get into a leadership.
+So I intend to make each issue about a specific topic, adding a few curated links with a short primer laying out ideas on which directions to go. This should help in getting new ideas and levelling up the leadership game for design leaders just starting out - or for experienced design leaders finding new ways to improve. Or even for senior designers looking to get into a leadership.
+
+I especially intend to focus on design leadership challenges at software product companies, and the differences between good design teams and great design teams. It seems that product managers get some great advices from people such as Marty Cagan or Jeff Patton, while engineering has an even larger body of good material coming out constantly (I love Gergely Orosz's The Pragamatic Engineer). We seem to be missing such discussions of leadership on the design side. A few authors I like to read from are Jared Spool, Peter Merholz, Julie Zhou and others, but I'd want to see more discussions on what sets apart great design organisations from the rest. With this newsletter I intend to explore this.
 
 If this sounds kinda like your alley, subscribe:
 
