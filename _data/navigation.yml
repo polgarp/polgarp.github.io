@@ -1,6 +1,8 @@
 main:
   - title: "Blog"
     url: /
+  - title: "9am26"
+    url: /categories/newsletter/
   - title: "Garden"
     url: /categories/garden/
   - title: "About"
