@@ -21,4 +21,4 @@ I especially intend to focus on design leadership challenges at software product
 
 If this sounds kinda like your alley, subscribe:
 
-{% include buttondown-signup.html %}
+{% include newsletter-signup.html %}
