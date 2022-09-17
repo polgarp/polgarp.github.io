@@ -9,6 +9,8 @@ header:
   show_overlay_excerpt: false
 ---
 
+Design critique is not only a basic method for designers to get feedback and improve the quality of their work, but also a core practice for design teams to collaborate and develop a shared language.
+
 # ☕ A core practice for design teams
 
 When design teams form, they rarely have an organized way to analyze designs and improve quality together. Even if individual designers have an idea of what good design is, the team will lack the shared vision of what great looks like for the overall experience they create together.
