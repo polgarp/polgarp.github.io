@@ -15,6 +15,7 @@ Brag doc, a running list of what has gone well, is a great practice for designer
 
 # ☕ Keeping track of wins
 
+
 I frequently see designers, even senior ones struggle with having good reflective practice. That is, keeping track of what they have been doing and especially what they learned in their design work. Over time, reflecting on what was learned and understanding why things go well when they go well forms the basis for growth.
 
 This is also a problem for the managers of designers. Feedback should be given based on facts. Having evidence is especially important when doing performance reviews or preparing promotion cases. Working directly together with designers is a great way to collect facts, but product design teams are frequently distributed organizationally and more and more often also geographically.
