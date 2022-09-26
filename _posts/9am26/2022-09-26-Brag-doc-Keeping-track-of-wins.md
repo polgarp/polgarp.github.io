@@ -13,8 +13,10 @@ header:
 
 Brag doc, a running list of what has gone well, is a great practice for designers to reflect and keep track of learnings and wins. It also helps managers to understand performance and give better feedback.
 
-# ☕ Keeping track of wins
+{% include figure image_path="/assets/images/2022-09-26-Brag-doc-Keeping-track-of-wins.jpg" alt="Three pencils playing a concert piano in front of an audience in impressionist style" caption="Three pencils playing a concert piano in front of an audience in impressionist style, generated with DALL-E" %}
 
+
+# ☕ Keeping track of wins
 
 I frequently see designers, even senior ones struggle with having good reflective practice. That is, keeping track of what they have been doing and especially what they learned in their design work. Over time, reflecting on what was learned and understanding why things go well when they go well forms the basis for growth.
 
@@ -31,7 +33,6 @@ Another advantage of brag docs is how they give an outside view of one's perform
 For leaders seeing the brag docs of their teams helps in two ways besides keeping track of things that happened. First, almost all the teams I've ever worked with could have done better in celebrating successes. By seeing and thinking more about wins, it will become clearer when and what to celebrate.
 
 Second, by having a good overview of what the team is excelling in, growth areas can be identified. For example, if everybody from the team talks about the great collaboration with engineering, but not about product management, that might make it worth investigating.
-
 
 # 🍪 Things to snack on
 
