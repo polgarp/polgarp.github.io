@@ -42,7 +42,7 @@ Collecting evidence is also the key when applying to new jobs, as Jessica Ivins 
 
 I love the enthusiasm coming from Aashni Shah's take in **[Hype Yourself! You're Worth It!](https://aashni.me/blog/hype-yourself-youre-worth-it/)**. This might come from the term "hype" - might help people to feel the logging of achievements less of a chore. The positive vibe might also help in boosting one's confidence.
 
-David Huong also uses the term "hype doc" in **[Your Career Hype Doc](https://www.proofofconcept.pub/p/your-career-hype-doc)**. He adds more forward-looking elements to the list, having mid and long-term goals in the same place. Another good idea to try is how he automates the logging of hype moments as they happen instead of doing a weekly review.
+David Hoang also uses the term "hype doc" in **[Your Career Hype Doc](https://www.proofofconcept.pub/p/your-career-hype-doc)**. He adds more forward-looking elements to the list, having mid and long-term goals in the same place. Another good idea to try is how he automates the logging of hype moments as they happen instead of doing a weekly review.
 
 Sarah Doody focuses on the documentation aspect and gives more detailed pointers on what to write in **[Seriously, you need to start documenting your UX work](https://www.invisionapp.com/inside-design/document-your-ux-work/)**. While she writes about projects (and how logging supports creating portfolio items), the same question prompts can go into the brag doc. Her questions are also similar to what's usually asked on portfolio reviews:
 
