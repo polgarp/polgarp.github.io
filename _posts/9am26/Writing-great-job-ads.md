@@ -35,6 +35,8 @@ Instead describing needs day-to-day, describe their journey. Describe onboarding
 
 N years of experience means nothing. You did this means more.
 
+You can think about what makes great places of work, what makes your team great place to work and add it. Maybe ask your team to get some ideas.
+
 
 # 🍪 Things to snack on
 
@@ -46,6 +48,8 @@ Jered Spool writes and talks extensively about this crucial part of the hiring p
 - **[UX Hiring: The Performance Profile is a Game Changer](https://articles.uie.com/ux-hiring-the-performance-profile-is-a-game-changer/)**
 - **[Your Job Ad: The Start of a Great Hiring Experience](https://articles.uie.com/job_ad/)**
 
-Job ad types **[5 UX job ads that will help you hire great designers](https://www.invisionapp.com/inside-design/ux-designer-job-description/)**
+Emily Esposito describes types of job ads in **[5 UX job ads that will help you hire great designers](https://www.invisionapp.com/inside-design/ux-designer-job-description/)**: Define day-to-day tasks, Clarly define projects, Focus on the why, Promote cultural fit, Lay out the challenges. She gives some examples which provide good starting points, giving some ideas how to start writing. 
 
-**[Writing a Job Description for UX People](https://medium.com/design-your-life/writing-a-job-description-for-ux-people-bcad01be93b0)**
+Irene Au's **[Writing a Job Description for UX People](https://medium.com/design-your-life/writing-a-job-description-for-ux-people-bcad01be93b0)** is more targeted to non-designer people, and also gives a longer explanation of various skill sets for designers and UX people as the first step to figure out what's needed. Thinking about the basic skills (like user research, interaction design or visual design) helps non-design leaders better understand what sort of candidate they want. In turn the desired skill set also informs the job description for more concretes on what's needed to do.
+
+For design leaders, taking the user-centered approach in everything we do comes by nature. That should be also our approach when writing job ads argues Andy Budd in **[How to Write a Job Ad that Doesn't Suck!](https://andybudd.com/archives/2022/04/crafting-effective-job-ads)**. Job ads should focus on things people, especially designers care about as that is what will sell the company and the role to potential candidates. He lists 8 things that people, especially designers care about: disclosing the salary band, listing learning opportunities, talking about culture, showing career opportunities, provide potential candidates with the right job titles, describing an attractive work environment, sharing a story that people can belong to or excited about, and most importantly the company's commitment to design. He also gives great examples for each. I thought the most important message  (besides including the salary was) to think about what the candidates would look for as persons.
