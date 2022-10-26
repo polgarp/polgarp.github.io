@@ -16,6 +16,9 @@ header:
 
 # ☕ Writing great job ads
 
+Best is to have passive pipeline, but second best is.
+
+Remember, this is a job ad and not a job description.
 
 The thing is, each company needs different things to succeed, even when generally describing the package of needs with the same job title.
 
