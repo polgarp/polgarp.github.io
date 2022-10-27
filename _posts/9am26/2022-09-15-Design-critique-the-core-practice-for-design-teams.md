@@ -1,5 +1,5 @@
 ---
-title: "Design critique - a core practice for design teams"
+title: "e01 Design critique - a core practice for design teams"
 categories:
   - Newsletter
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Brag doc - Keeping track of wins"
+title: "e02 Brag doc - Keeping track of wins"
 categories:
   - Newsletter
 tags:

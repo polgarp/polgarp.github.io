@@ -1,5 +1,5 @@
 ---
-title: "Structuring research notes"
+title: "e03 Structuring research notes"
 categories:
   - Newsletter
 tags:
