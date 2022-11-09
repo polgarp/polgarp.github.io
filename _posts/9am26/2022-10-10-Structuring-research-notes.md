@@ -16,7 +16,7 @@ Taking notes on user research sessions should go beyond asking observers to writ
 
 # ☕ Structuring research notes
 
-User research is the bread and butter for more design teams. Whether they have dedicated researchers or generalist designers doing research, most design processes need insights from users to produce great results.
+User research is the bread and butter for most design teams. Whether they have dedicated researchers or generalist designers doing research, most design processes need insights from users to produce great results.
 
 The benefits of doing research go beyond single projects, great insights inform multiple projects and allow the whole team to learn together. This doesn't happen by chance, there is more to be done besides sharing the conclusions of a study. How the research is conducted, specifically how notes are taken has a large impact on how the output of a study can build the team's knowledge. Teams need to be strategic in how they structure their note-taking.
 
