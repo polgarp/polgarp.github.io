@@ -1,5 +1,5 @@
 ---
-title: "e07 Player-coach leadership"
+title: "e07 Player-coach leaders"
 categories:
   - Newsletter
 tags:
