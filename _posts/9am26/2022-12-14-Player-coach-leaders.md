@@ -15,7 +15,7 @@ Player-coach roles in design teams are getting more common again but come with t
 
 {% include figure image_path="/assets/images/2022-12-14-Player-coach-leadership.jpg" alt="A large fish giving a pep talk to a group of crabs in a surrealistic style with electric colors, generated with DiffusionBee" caption="A large fish giving a pep talk to a group of crabs in a surrealistic style with electric colors, generated with DiffusionBee" %}
 
-# ☕ Player-coach leadership
+# ☕ Player-coach leaders
 
 As the product design discipline matures, the career tracks are more or less solidified to have separate paths for the manager and individual contributor tracks beyond the senior level. But there are a few things muddying these waters.
 
