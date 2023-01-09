@@ -1,3 +1,26 @@
+---
+title: "e08 Building portfolios with stories"
+categories:
+  - Newsletter
+tags:
+  - Design career
+  - Mentoring
+  - 9am26
+header:
+  overlay_color: rgba(255, 0, 0, 0.8)
+  show_overlay_excerpt: false
+---
+
+
+{% include figure image_path="/assets/images/2022-12-14-Player-coach-leadership.jpg" alt="A large fish giving a pep talk to a group of crabs in a surrealistic style with electric colors, generated with DiffusionBee" caption="A large fish giving a pep talk to a group of crabs in a surrealistic style with electric colors, generated with DiffusionBee" %}
+
+# ☕ Building portfolios with stories
+
+Projects don't highlight learning particularly well.
+
+Stories also allow to customise to the audience.
+
+
 Crafting portfolios
 Different companies have different needs, so everyone looks at kinda different things in a portfolio, if the company is honest enough (or at least they have a good enough process) the things they are looking for are kinda the things they describe in the job ad. I usually hire "product designers" - meaning designers who can create full products from first concepts to the delivery phase, and in the case of Trustpilot even able to do some research. Here "UX" and "UI" are not really differentiated, rather "research" and "design". So when I look at a portfolio I'd want to see more than a few images that show the end result, but rather the story as you wrote, so what was the process. I think the best ones I saw so far also had a kinda authentic voice that also talked about the lessons learned - a portfolio with 5–10 projects that are kinda the same are not that interesting. But showing how the 2–3 most interesting projects had made you a better designer helps me to understand your journey so far, how that would fit into the team I'm recruiting for, and how I may be able to help you grow further. Some of the more specific things I'm looking for, if the portfolio pieces have enough "depth" (so not just a few landing pages or a trivial webshop), were indeed products, or just agency style design work, the quality (not necessarily visual, can be interaction or writing) and the care (maybe the portfolio is personalized, includes something that shows the candidate is ready to go the extra mile). I usually don't do a strong filtering based on the filtering, just look at it if it contains any of the positive signs, rather trying to find mistakes (spelling errors and the wrong margins are bad signs, but not enough to refuse something - the truth the everyone lacks good designers, so wanna make sure we are not disqualifying early somebody who could be otherwise a good fit). The pieces are a good conversations starters though, and is something I like to get back on the initial interviews.
 
@@ -28,6 +51,14 @@ So here are some principles for a great story to get you started:
 7. Present your solution and the journey.
 8. Celebrate your accomplishments.
 9. Reflect upon your learnings.
-From this article: https://medium.com/interactive-mind/great-design-portfolios-are-great-stories-7bb2617cd7ab
 
-https://fs.blog/2018/06/double-loop-learning/
+> This is a post from my newsletter, [9am26](https://polgarp.com/categories/newsletter/), subscribe here:
+> {% include newsletter-signup.html %}
+
+# 🍪 Things to snack on
+
+**[Great Design Portfolios Are Great Stories](https://medium.com/interactive-mind/great-design-portfolios-are-great-stories-7bb2617cd7ab)** by Simon Pan
+
+**[Double Loop Learning](https://fs.blog/2018/06/double-loop-learning/)** by Farnam Street
+
+**[Telling a Story Through Your Portfolio Presentation](https://www.uxmatters.com/mt/archives/2019/06/telling-a-story-through-your-portfolio-presentation.php)**
