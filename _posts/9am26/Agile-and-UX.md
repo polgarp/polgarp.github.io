@@ -1,1 +1,1 @@
-UX is not part of agile sprints. there is no zero sprints.
+UX is not part of agile sprints. there is no zero sprints. They need to work together however. As a team lead you need to understand the process of other disciplines, and make connection to design's, rather than making it servient to engineering or product. 
