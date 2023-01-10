@@ -62,3 +62,7 @@ So here are some principles for a great story to get you started:
 **[Double Loop Learning](https://fs.blog/2018/06/double-loop-learning/)** by Farnam Street
 
 **[Telling a Story Through Your Portfolio Presentation](https://www.uxmatters.com/mt/archives/2019/06/telling-a-story-through-your-portfolio-presentation.php)**
+
+**[Making sense of your design project by writing ](https://buditanrim.co/2020/making-sense-of-your-design-project-by-writing/)**
+
+**[Great Stories Release Brain Chemicals](https://www.blog.theteamw.com/2016/05/11/the-next-100-things-you-need-to-know-about-people-114-great-stories-release-brain-chemicals/)
