@@ -57,12 +57,24 @@ So here are some principles for a great story to get you started:
 
 # 🍪 Things to snack on
 
-**[Great Design Portfolios Are Great Stories](https://medium.com/interactive-mind/great-design-portfolios-are-great-stories-7bb2617cd7ab)** by Simon Pan
+The power of using stories has a simple reason: **[Great Stories Release Brain Chemicals](https://www.blog.theteamw.com/2016/05/11/the-next-100-things-you-need-to-know-about-people-114-great-stories-release-brain-chemicals/)**, as Susan Weinschenk writes. There are common plot points that resonate with people and form archetypal stories (Overcoming a monster, Rags to riches, The quest, Voyage and return, Comedy, Tragedy, Rebirth). Some of these stories (like The quest) fit well portfolio descriptions, and give a recognizable narrative framework. The stories made of common plot points are easy to understand to people. Listening to such stories release brain chemicals, so results in direct physical change, that makes it easier to connect with. This explains why stories are so powerful if we want to transmit information.
+
+Telling your stories is just as important for growth as the story itself, writes Simon Pan in **[Great Design Portfolios Are Great Stories](https://medium.com/interactive-mind/great-design-portfolios-are-great-stories-7bb2617cd7ab)**. He also has some advice how to prepare a portfolio pieces that tells a story and craft a narrative around the work done. 
+
 
 **[Double Loop Learning](https://fs.blog/2018/06/double-loop-learning/)** by Farnam Street
 
-**[Telling a Story Through Your Portfolio Presentation](https://www.uxmatters.com/mt/archives/2019/06/telling-a-story-through-your-portfolio-presentation.php)**
+Your experiences should be shaped shaped into stories as something that will be read or listened. The easiest form for this are presentations, and Jonathan Walter has a lot of useful tips about these in **[Telling a Story Through Your Portfolio Presentation](https://www.uxmatters.com/mt/archives/2019/06/telling-a-story-through-your-portfolio-presentation.php)**. The article details how most projects can be applied the common story structure of Exposition - Rising Action - Climax - Falling action - Denouement. This needs to shaped into a presentation too - probably a longer project story can go together with multiple shorter project highlights. The article also remarks that the best stories are told effectively, this is where storytelling skills can shine.
 
-**[Making sense of your design project by writing ](https://buditanrim.co/2020/making-sense-of-your-design-project-by-writing/)**
+Budi Tanrim gives a simple framework for writing about projects, as he argues it helps making sense of things in **[Making sense of your design project by writing ](https://buditanrim.co/2020/making-sense-of-your-design-project-by-writing/)**. Just like more generally in design, once things are on paper, it's easier to spot unclear things that needs further followup. This also shows how thinking in stories also helps much earlier in design work, not only when creating a portfolio piece. The starter questions he shares are also good to think about when creating a portfolio piece:
 
-**[Great Stories Release Brain Chemicals](https://www.blog.theteamw.com/2016/05/11/the-next-100-things-you-need-to-know-about-people-114-great-stories-release-brain-chemicals/)
+* Why did your team start it in the first place?
+* Who is the target audience?
+* What is the customer problem we’re trying to solve?
+* What data do we have to back up this argument?
+* Why is this worth solving?
+* How is this useful for the company?
+
+
+
+
