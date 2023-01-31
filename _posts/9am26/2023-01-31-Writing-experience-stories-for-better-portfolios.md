@@ -11,7 +11,7 @@ header:
   show_overlay_excerpt: false
 ---
 
-Storytelling is a key skill for designers, and it can be also used to get learn and create better portfolios - by telling stories about our own experiences.
+Storytelling is a key skill for designers, and it can be also used to understand what we learned and to create better portfolios - by telling stories about our own experiences.
 
 {% include figure image_path="/assets/images/2023-01-31-Writing-experience-stories-for-better-portfolios.jpg" alt="Nyan cat staying up late to finish an important project, beautiful lighting, generated with DiffusionBee" caption="Nyan cat staying up late to finish an important project, beautiful lighting, generated with DiffusionBee" %}
 
