@@ -14,7 +14,7 @@ header:
 
 # ☕ Product trios for designers
 
-
+Rituals to do together. Process of work.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
