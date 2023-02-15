@@ -1,0 +1,1 @@
+Kim Godwin's company culture types also tells you how to set up your org.
