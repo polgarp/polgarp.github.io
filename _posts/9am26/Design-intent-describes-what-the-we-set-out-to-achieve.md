@@ -14,47 +14,32 @@ header:
 
 # ☕ Design intent describes what the we set out to achieve
 
-This might be familiar to some design leaders. The designer starts a new project. As design commences, you are asked to review the work. "So what are you trying to do here?" "We need to create this table for that list of items." "No, I meant what's the goal? How will this fit to the user's journey?" "...". And this goes on - since the team is unclear what they are trying to do (besides checking requirements), it's also unclear whether they've reached it. Which results in too many back and forth over supposed to be final designs.
+This might be familiar to some design leaders. One of the designer starts a new project. As design progresses, you review the work. "So what are you trying to do here?" "We need to create this table for that list of items." "No, I meant what's the goal? How will this fit to the user's journey?" "...". And this goes on - since the designer is unclear what they are trying to do (besides checking requirements), it's also unclear whether they've reached it. Which results in too many back and forth over supposed to be final designs.
 
-At the core of this and similar situations is the lack of clear intentions. Both on the project level - the product team might be unclear what they set out to do, or at least they don't share this clear view. And also in the design process, design decisions should have a reason, but since the designer is unclear what they are trying to achieve, decisions are vague and don't have a clear foundation. If there is a little push, the whole solution topples, falls together. Which ultimately leads to mediocre design.
+At the core of this and similar situations is the lack of clear intentions. Both on the project level - the product team is unclear what they set out to do or at least they don't share a clear view. And also within the design process intention clarity lacks, design decisions should have a reason, but since the designer is unclear what they are trying to achieve, decisions are vague and don't have a clear foundation. Results are shallow, lots of talk about surface level changes, but disconnect from the wider context. If there is a little push, the whole solution topples, falls apart. Which ultimately leads to mediocre design.
 
 Unfortunately the lack of clear intentions goes beyond the problems on the design's level. Since there is no unifying idea, that is shared by the whole team the overall UX will also suffer. Research insights might be overlooked, engineers make trade-offs that contradicts with what the designer wanted to do, marketing and support will be misaligned. 
 
-Design is not art and not something the designer does on their own in Figma. Design should be the rendering of intent, that is the shared intent by the whole product team. So what's intent exactly? It's he goal we are pursuing within the context. It needs to be a shared intent, having a common understanding with the team what we are doing, as design is not in isolation. Discovery is not only about discovering the solutions, but also articulating the shared intent.
+Before design starts, the problem to be solved should be clearly understood - by the designer and by the whole team. Often at the starting point of a project just a few vague sentences are known or some scattered research materials, or some data charts not increasing enough. When designing, the tactical aspect of diving int Figma is not the most valuable aspect, but the relation between understanding and creating.
 
-I've used two ways of defining intent in the past, creating briefs and working with hypotheses. Briefs work well as a high level description that summarizes research done and kicks of the design process. But they are not easily broken down and connected to detail design decisions, so best used for check-ins and milestones. Hypotheses on the other hand fit better to use within the process, as they can be broken down into smaller pieces and establish scaffolding for testing and validation.
+Design is not art and not something the designer does on their own in Figma. Design should be the rendering of intent, that is the shared intent by the whole product team (and anybody else contributing). So what's intent exactly? It's he goal we are pursuing within the context. It needs to be a shared intent, a common understanding in the team what they are doing, as design does not happen in isolation. Discovery is not only about discovering the solutions, but also discovering the problem, and what the team will do about it, articulating the shared intent.
 
-Design briefs for designers working in product teams differ to what a creative agency would want to have. They don't need to extensively document project meta, instead of it should describe goals of the project and what should be the focus. Something that worked well for me in the past is to to have four sections: goals or main hypothesis, personas or jobs, scenarios or flows and design principles. This keeps it lightweight and flexible enough to have it in the foreground in the project, and makes it easy to iterate on.
+I've used two ways of defining intent in the past, by creating briefs and by working with hypotheses. Briefs work well as a high level description that summarizes research done and kicks of the design process. But they are not easily broken down into smaller pieces and connected to detail design decisions, so they are best used for check-ins and milestones. Hypotheses on the other hand fit well to be used within the process, as they can be broken down into smaller pieces and establish scaffolding for testing and validation.
 
-Hypothesis driven
+Design briefs for designers working in product teams differ to what a creative agency would want to have. They don't need to extensively document project meta. Instead, a brief should describe goals of the project and what should be the focus - this also declares what is not the focus. Something that worked well for me in the past is to to have four sections in the brief: goals or main hypothesis, personas or jobs, scenarios or flows and [design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %}). This keeps it lightweight and flexible enough to have it in the top of mind in the project, and makes it easy to iterate on.
+
+Hypothesis driven design works especially well if the wider team also uses hypotheses. Even without that, constantly keeping mind "what am I trying to do"-"why am I trying to do this"-"what do I expect this will do" is a useful mindset to have while designing. The 
+
+Shared is an important aspect of having clear intentions. It's not enough if the designer knows what they are trying to do and how design decisions are connected to the goals. The rest of the team also needs to be on board. Since the designer is looking for a foundation of design work, getting the team to articulate the shared intent often falls on the designer. A good way to make sure there are no misunderstandings is to talk, a better way is to work through and prepare it together. Workshops typically work well.
 
 
-
-Shared also means designers need to figure out ways to define this together - so workshops.
 This is also back and forth, intent might get clearer as we start building. Research needs to go into it. Understanding business goals as part of intent.
 
 
-*5 practical questions you should answer when solving a design problem:  
-  
-1\. What are the root causes of the problem?  
-  
-2\. What are all of the potential consequences of the problem?  
-  
-3\. Who is affected by the problem?  
-  
-4\. What are some potential solutions to mitigate or control the problem?  
-  
-5\. What are the costs and benefits of each potential solution?  
-  
-Before jumping into a design, ensure you have done the work to understand the problem.  
-  
-Sometimes it’s surprising to see people jumping into a design with a very shallow understanding of the problem.  
-  
-The most valuable aspect of the solving problems with design isn’t the tactical process of creating a design but the idea of profoundly comprehending what you are trying to solve.*
 
+Once a clear intent is articulated, it can be used in a few waysAlso a basis for design critiques.
 
-Also a basis for design critiques.
-
+For design leaders, seeing intentions
 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
