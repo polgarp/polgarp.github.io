@@ -21,6 +21,8 @@ I've been building up to this topic over the last few newsletter issues:
 
 As you get more senior, you should better understand why you do things. Team leads should help and make connections.
 
+One of the most important job I had as a design leader to make sure decisions are articulated, and designers have the confidence in their rationale.
+
 Key to be a confident designer is to be able to rationalize your decisions. Some of the problems come from not being confident enough, taking feedback as a must act on (a lot of time they are more like ideas, and need to be treated like that). 
 
 A lot of happens when designs get out of product teams - on presentations to stakeholders or the wider org, this is where defending decisions comes up. But either way, articulation is the first step, why something is made in a certain way.
