@@ -14,10 +14,23 @@ header:
 
 # ☕  Articulating design decisions
 
+I've been building up to this topic over the last few newsletter issues: 
+- good design
+- design principles
+- design intent.
+
 As you get more senior, you should better understand why you do things. Team leads should help and make connections.
 
-Key to be a confident designer is to be able to rationalize your decisions.
+Key to be a confident designer is to be able to rationalize your decisions. Some of the problems come from not being confident enough, taking feedback as a must act on (a lot of time they are more like ideas, and need to be treated like that). 
 
+A lot of happens when designs get out of product teams - on presentations to stakeholders or the wider org, this is where defending decisions comes up. But either way, articulation is the first step, why something is made in a certain way.
+
+Macro level - micro level decisions.
+
+Decide - divergent and convergent - these help in developing an idea. This doesn't need to be a lengthy process, for example when deciding where to put that button, divergence: what do want to do and why? what are the options (for example fitting with rest of the app)? converges to a decision (button should be in top right corner) and gives a one sentence rationale that can be shared.
+
+
+The point is, the designer should actively decide things, not passively accept for example a button being at the wrong place as there was no better way placing it.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
@@ -30,15 +43,13 @@ Key to be a confident designer is to be able to rationalize your decisions.
 
 **[Tradeoffs: The Currency of Decision Making](https://fs.blog/tradeoffs-decision-making/)** by **Farnam Streer**
 
-**[What is a Design Decision?](https://odannyboy.medium.com/what-is-a-design-decision-21fb7fb17089)** by **Dan Saffer**
+**Dan Saffer** raises a few important points in **[What is a Design Decision?](https://odannyboy.medium.com/what-is-a-design-decision-21fb7fb17089)** about what's a design decision and what's not. A lot of the decisions affecting the product are not design decisions, and are better understood as constraints the designer needs to consider.
 
-**[Finding confidence in design decisions](https://www.figma.com/blog/finding-confidence-in-design-decisions/)** by **Linda Eliasen**
+Confidence is key to articulate decisions, and it can be increased by working on the narrative in our heads, as **Linda Eliasen** writes in **[Finding confidence in design decisions](https://www.figma.com/blog/finding-confidence-in-design-decisions/)**. The article describes two activities (Early Scary Things and Building Confidence with Data and Experience) that can be done alone or in a group to build confidence.
 
-**[Defending UX design decisions — 8 essential techniques](https://uxdesign.cc/defending-ux-design-decisions-8-essential-techniques-770a85b589d6)** by **Chris Kiess**
+When presenting design solutions, it often comes down to deflect some of the feedback. There are a few ways of doing this as **Chris Kiess** describes in **[Defending UX design decisions — 8 essential techniques](http://chriskiess.net/defending-ux-design-decisions-8-essential-techniques/)**. 
 
-**[The Business of Design](https://uxdesign.cc/the-business-of-design-fec915a60231)** by **Dave Huber**
+A huge part of articulation is presenting design solutions, and there is not better resource for that, than the **[Articulating Design Decisions](https://www.oreilly.com/library/view/articulating-design-decisions/9781491921555/)** book by **Tom Greeber**. It provides plenty of guidance on the whys and hows, and is also generally a good resource for stakeholder management. 
 
-**[Articulating Design Decisions](https://www.oreilly.com/library/view/articulating-design-decisions/9781491921555/)** book by **Tom Greeber**
-
-**[A framework to make great design decisions](https://uxdesign.cc/a-framework-to-make-great-design-decisions-ce4a366bf3e1)** by **Chris Lee**
+**Chris Lee** provides a simple, two-step approach to make design decisions in **[A framework to make great design decisions](https://uxdesign.cc/a-framework-to-make-great-design-decisions-ce4a366bf3e1)**. The first step is to look at first principles, that is to think about whys and the intention. The second step is to look at the expected outcome and potential risk for directions to take. The article also gives a good example to illustrate this process.
 
