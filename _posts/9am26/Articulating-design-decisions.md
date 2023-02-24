@@ -14,25 +14,30 @@ header:
 
 # ☕  Articulating design decisions
 
-One of the most important duties I have as a design leader to make sure the design team is highly intentional in their work. This means every interaction, every word and every pixel should have a clear reason to exist the way it does. Since product will be the result of collaboration and more often than not shared to a wider audience of stakeholders, these reasons need to be well described. That is, the design decisions need to be well articulated.
+One of the most important duties design leaders have is to make sure the design team is highly intentional in their work. This means every interaction, every screen, every word and every pixel should have a clear reason to exist the way it does. Since the design output will be also the result of collaboration and more often than not shared to a wider audience of stakeholders, there needs to be a clearly described design rationale, easily understood by everyone. That is, the design decisions need to be well articulated.
 
-Well articulated design decisions should stand on solid ground. I've introduced some of the topics to make this happen in the last few newsletter issues. Having a shared understanding in the org what [good desgin]({% post_url 2023-02-06-What-is-good-design %}) looks like sets up ways on how to evaluate if a design decision is right. Defining [design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %}) creates a foundation for making choices and accepting trade-offs. Stating a clear [design intent]({% post_url 2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) sets the context and aim for the design decision. These three help in developing a solid rationale.
+Well articulated design decisions should stand on solid ground. I've introduced some of the topics to make this happen in the last few newsletter issues. Having a shared understanding in the org on what [good desgin]({% post_url 2023-02-06-What-is-good-design %}) looks like sets up ways to evaluate if a design decision is right. Defining [design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %}) creates a foundation for making choices and accepting trade-offs. Stating a clear [design intent]({% post_url 2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) sets the context, summarizes research and data insights, and defines goals for the design. These three help in developing a solid rationale.
 
-As you get more senior, you should better understand why you do things. Team leads should help and make connections.
-designers have the confidence in their rationale.
+Having a solid rationale also lets the designers to be more confident in their choices. In product teams designers often partner with more senior peers - an engineering lead or a product manager. Being partners, they need to stand as equals in their argumentation. Designers can develop their confidence in their own arguments by getting better at how they articulate their decisions.
 
-Key to be a confident designer is to be able to rationalize your decisions. Some of the problems come from not being confident enough, taking feedback as a must act on (a lot of time they are more like ideas, and need to be treated like that). 
+Not having clear articulation of design choices results in a few problems. Design process will be super messy. There will be last minute additions contradicting the established vision. The designer might feel the pressure to take each feedback as a must act on (a lot of time they are more like ideas, and need to be treated like that). The UX across app developed by different teams will be confusing. Past decisions will be overruled without understanding why that decision was made in the first place. Shipped product will have busy pages with too many features and busy flows with too many steps.
 
-A lot of happens when designs get out of product teams - on presentations to stakeholders or the wider org, this is where defending decisions comes up. But either way, articulation is the first step, why something is made in a certain way.
+In the design process the designer and the other collaborators should have alignment why things are created in a certain way. The way to do it is to involve peers early and often, sharing research done, sharing intent, establish shared ownership, all with the occasional workshop. Design decisions should be made by combining user research, business awareness with design priorities (hierarchy, design system, heuristics, etc). These make the design process more transparent and strengthen trust in the design decisions made.
 
-The point is, the designer should actively decide things, not passively accept for example a button being at the wrong place as there was no better way placing it.
+Since these decisions are made within the product team, designers should proactively seek feedback from the wider group, other designers and peers. Accepting / not accepting feedback is the first part where articulating decision is needed, as it helps to determine whether the feedback is relevant or not. As the design progresses, there will be other presentations and sharing - this means people farther away from the immediate decisions, stakeholders - who need to understand why things happen to understand the impact. So more questions, ideas, feedback - some of these will strengthen the design rationale, others might weaken it up to a point where the decision needs to be reconsidered.
+
+What well articulated means will depend on the scope of a design decision. For macro level decisions (like features, pages, navigation, or workflow) more detailed rationale is needed, including more collaboration, more data, connection to business strategy and possibly validation. For micro level decisions (like layout, buttons, copy etc) usually less rationale is needed, often principles, heuristics and aesthetic notes enough. Between macro and micro the level of expected documentation also differs, macro will need permanent description, while micro level will barely needed to put on paper if any. The exception for when micro decisions matter are the key interactions (for example a payment button) where details will have a lots of eyes on them, and this clearer articulation will be needed.
+
+Effective articulation works the same way independently of scope. Start with describing the problem, explain options and pros and cons supported with data and possibly address potential concerns. What changes with scope is how these are documented, usually micro decisions won't need to be documented at all, or at most as notes within the design file itself. Macro level will be part of documentation or presentations where it will be needed to share.
+
+An important situation for articulation are presentations. The designer might need to show the work that was done to the wider product team or to a group of stakeholders. This is where presentation skills matter - designers should practice how they set the scene on the problems they are solving
 
 
-Macro level - micro level decisions.
-
-Decide - divergent and convergent - these help in developing an idea. This doesn't need to be a lengthy process, for example when deciding where to put that button, divergence: what do want to do and why? what are the options (for example fitting with rest of the app)? converges to a decision (button should be in top right corner) and gives a one sentence rationale that can be shared.
 
 One reason for articulating design decisions is the role it plays in making organizations more design focused and more user-centered. 
+Team leads should help and make connections. THe role is to ask whys more often.
+
+
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
