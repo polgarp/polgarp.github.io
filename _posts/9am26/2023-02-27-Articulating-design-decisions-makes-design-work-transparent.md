@@ -10,7 +10,7 @@ header:
   show_overlay_excerpt: false
 ---
 
-Well-articulated design decisions are often the single most impactful design teams can do. It helps in transparency, more confident design choices, and more intentional design work.
+Well-articulated design decisions are often the single most impactful improvement design teams can do. It helps in transparency, more confident design choices, and more intentional design work.
 
 {% include figure image_path="/assets/images/2023-02-27-Articulating-design-decisions-makes-design-work-transparent.jpg" alt="A medieval cyber coffee with medieval computers has just lost the network connection and the patrons are angry, generated with DiffusionBee" caption="A medieval cyber coffee with medieval computers has just lost the network connection and the patrons are angry, generated with DiffusionBee" %}
 
