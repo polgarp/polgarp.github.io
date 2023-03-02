@@ -37,3 +37,11 @@ The latest generic process I've been using
 **[Design orgs are their own greatest impediment to success in recruiting and hiring](https://www.petermerholz.com/blog/design-orgs-are-their-own-greatest-impediment-to-success-in-recruiting-and-hiring/)** by **Peter Merholz**
 
 **[Hiring is Broken And Yours Is Too](https://software.rajivprab.com/2019/07/27/hiring-is-broken-and-yours-is-too/)**
+
+**[Product Design Hiring at GitLab](https://about.gitlab.com/job-families/product/product-designer/#hiring-process)** and **[Hiring Product Designers](https://about.gitlab.com/handbook/product/ux/product-design/hiring-product-designers.html)** 
+
+**[Redesigning our product design hiring process](https://uxdesign.cc/redesigning-our-product-design-hiring-process-de7d0ee80515)** by **Sean Filiatrault**
+
+**[The product design interview process](https://www.tannerchristensen.com/blog/the-product-design-interview-process)** by **Tanner Christensen**
+
+**[Designing an interview process for product designers](https://craft.faire.com/designing-an-interview-process-for-product-designers-b6ada19a957b)** by the **Faire Design Team**
