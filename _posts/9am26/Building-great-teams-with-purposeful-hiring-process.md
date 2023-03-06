@@ -15,27 +15,29 @@ header:
 
 # ☕  Building great teams with purposeful hiring process
 
-Hiring is difficult, and sometimes relegated to the side, trusting People and HR teams to do most of the work.
+Hiring well is difficult, yet it's one of the highest leverage work a design leader can do. If there are missing people in the team and open headcounts, the rest of the team and the overall design output suffers. So design teams should prioritise hiring above everything else. and sometimes relegated to the side, trusting People and HR teams to do most of the work.
 
-Hiring is the most important job of a design leader. Prioritise it over everything else.
+I've written about our hiring process  couple of years ago, right after I've learned my first few lessons (**[Hiring UX people at Emarsys](https://medium.com/emarsys-craftlab/hiring-ux-people-at-emarsys-e12f5bfdd5fb)** describes our process at Emarsys). Based a lessons I've learned since, some parts are still quite relevant - like having clear ideas about the team and how the role fits, and having principles, I also see myself re-using these when I create new processes. Some other parts however, especially within the process steps I've changed my mind considerable. So, right principles and intention but implementation that should be improved.
 
-I've learned a lot since I started hiring (**[Hiring UX people at Emarsys](https://medium.com/emarsys-craftlab/hiring-ux-people-at-emarsys-e12f5bfdd5fb)** describes our first process at Emarsys), wouldn't do homework or trial days any more - the perceived benefits (deeper look into candidates, better introduction about ourselves) are fare outweighed by the downsides (most importantly the amount of time investment we have asked for).
+For design leaders who are about to hiring for a new role, it's better to create a new process or at least evaluate what worked previously. Either way, the process established by others should be viewed a critical eye. Think about the hiring process as a design project. What's already in place might be from an earlier approach, or might be not intentionally designed for hiring great researchers and designers. Either way there is room for improvement. Thinking about design process gets to use tools like understanding business goals, having a vision, bringing in empathy, iterating on the process and process details, getting feedback from candidates, and measuring impact.
 
-Treat it as a design project, get feedback from candidates, bring empathy, understand business goals, have a vision, measure impact.
+Vision for roles vision for teams.
 
+For principles
 Make sure you hire you want to hire - generally increase diversity of thought in the team.
+fit is the most important thing. also need to customize process for roles
+reduce bias - the most important
 
 Each step should have one or two key competencies it tries to validate
 
+The latest generic process I've been using
+
+Homework, most types of in person exercises (like whiteboard sessions) and trial days all suffer from the same issue. There are obviously perceived benefits to both parties, there is a deeper look into both how the candidates performs, how they approach problem etc that paints the better picture than a case study. The candidates might also get a better insight into the internal collaboration of the company. But the downsides far outweighs the benefits. Every one of these practices ask the candidates to spend time and energy on a role which is unjustified. Also breaks our principle of caring about candidates.
 
 
-No homework.
-
-reduce bias - the most important
-
+So how you get people in? Partnership with HR. Internal references (might reduce diversity). 
 Build a passive pipeline - by writing articles, networking, speaking on meetups, participating on conferences. 
 
-The latest generic process I've been using
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
