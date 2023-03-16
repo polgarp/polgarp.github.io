@@ -30,6 +30,9 @@ Establish space by asking a few easy questions.
 
 Rhythm, feedback.
 
+
+What we did a lot of iterations on each guide to get to better questions.
+
 Guide to not guide, what's helpful for questions.
 
 1.  Start with open-ended questions: Begin your interview with open-ended questions that allow the user to express their thoughts and feelings freely. For example, "Can you tell me about your experience with \[product/service\]?" or "What are some challenges you've faced in \[activity\]?"
@@ -53,11 +56,14 @@ For leaders - getting great insights
 - Look for concrete stories through examples
 - Rewrite your questions and iterate.
 - Start broad, go narrow deeper
+- For leaders to get great stories to share to peers, you want 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
+
+The best resource on user interviews in general is the **[Interviewing Users](https://rosenfeldmedia.com/books/interviewing-users/)** book by **Steve Portigal**. It has a chapter that goes into great detail about asking great questions. Also some great tips what to do between questions with topics like managing the flow of the interview, how to deal with silence, what type of questions to ask, and how to work with the user's view (as opposed to the interviewer's).
 
 **[The Funnel Technique in Qualitative User Research](https://www.nngroup.com/articles/the-funnel-technique-in-qualitative-user-research/)** by **Maria Rosala** and **Kate Moran**
 
@@ -69,14 +75,8 @@ For leaders - getting great insights
 
 **[User Interviews: How, When, and Why to Conduct Them](https://www.nngroup.com/articles/user-interviews/)** by **Kara Pernice**
 
-**[What Are the Best Customer Interview Questions?](https://www.producttalk.org/2022/04/best-customer-interview-questions/)** by **Teresa Torres**
+We shouldn't loose sight, that every research activity should focus on what outcome it's supporting. **Teresa Torres** gives some idea what questions to ask for a specific opportunity with story based interviews in **[What Are the Best Customer Interview Questions?](https://www.producttalk.org/2022/04/best-customer-interview-questions/)**. Depending on the opportunity, the focus of the questions should be on different part of the stories shared by the users. 
 
-**[A beginner’s guide to asking follow-up questions in user interviews](https://uxdesign.cc/a-beginners-guide-to-asking-follow-up-questions-in-user-interviews-2fbeba124712)** by **Taylor Nguyen**
+Followup questions are how the researcher makes the interview flow like a conversation, as **Taylor Nguyen** writes in **[A beginner’s guide to asking follow-up questions in user interviews](https://uxdesign.cc/a-beginners-guide-to-asking-follow-up-questions-in-user-interviews-2fbeba124712)**. Follow up questions can zoom in on the details or zoom out to focus on the context, with a third category of situational questions. The article list question types and examples for each. Also there are some good tips how to manage the list of followup questions by taking notes - not on what the user is saying, but what needs to be asked still. 
 
-**[12 Ways To Improve User Interview Questions](https://www.smashingmagazine.com/2020/06/user-interview-questions/)** by **Slava Shestopalov**
-
-**[Interviewing Users](https://rosenfeldmedia.com/books/interviewing-users/)** book by **Steve Portigal** a specific chapter about asking great questions. Msot useful for how to go around questions - managing flow of the interview, dealing with silence, type of questions to ask, working with the user's view (and not the interviewer's)
-
-
-
-
+**Slava Shestopalov** describes some of the ways questions can go wrong in **[12 Ways To Improve User Interview Questions](https://www.smashingmagazine.com/2020/06/user-interview-questions/)**. Some pitfalls are related to well-known issues (like leading questions, hypothetical questions or closed questions), but there are a few more interesting ones. Selfish questions focus on the relation between the interviewer and the product idea, rather than the user and the product idea. Stacked questions combine multiple questions into one. Some other nice tips on how to avoid vagueness, too general answers, and ambiguous amounts. 
