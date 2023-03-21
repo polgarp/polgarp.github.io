@@ -6,7 +6,8 @@ tags:
   - Product design
   - 9am26
 header:
-  overlay_color: rgba(255, 0, 0, 0.8)
+  overlay_image: /assets/images/2023-02-12-Design-principles-set-the-foundation-for-good-design.jpg
+  overlay_filter: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 
