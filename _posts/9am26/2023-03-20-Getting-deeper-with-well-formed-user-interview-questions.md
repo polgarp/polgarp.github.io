@@ -6,7 +6,8 @@ tags:
   - User research
   - 9am26
 header:
-  overlay_color: rgba(255, 0, 0, 0.8)
+  overlay_image: /assets/images/2023-03-20-Getting-deeper-with-well-formed-user-interview-questions.jpg
+  overlay_filter: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 

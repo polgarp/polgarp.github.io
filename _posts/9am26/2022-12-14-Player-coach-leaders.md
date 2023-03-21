@@ -7,7 +7,8 @@ tags:
   - Design practice
   - 9am26
 header:
-  overlay_color: rgba(255, 0, 0, 0.8)
+  overlay_image: /assets/images/2022-12-14-Player-coach-leadership.jpg
+  overlay_filter: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 

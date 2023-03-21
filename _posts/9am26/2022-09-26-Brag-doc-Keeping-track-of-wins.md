@@ -7,7 +7,8 @@ tags:
   - People management
   - 9am26
 header:
-  overlay_color: rgba(255, 0, 0, 0.8)
+  overlay_image: /assets/images/2022-09-26-Brag-doc-Keeping-track-of-wins.jpg
+  overlay_filter: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 

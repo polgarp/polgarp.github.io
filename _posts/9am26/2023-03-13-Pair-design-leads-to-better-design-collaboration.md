@@ -8,7 +8,8 @@ tags:
   - Design teams
   - 9am26
 header:
-  overlay_color: rgba(255, 0, 0, 0.8)
+  overlay_image: /assets/images/2023-03-13-Pair-design-leads-to-better-design-collaboration.jpg
+  overlay_filter: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
 ---
 
