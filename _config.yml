@@ -13,8 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "polgarp"
+title: "Péter Balázs Polgár, Product Design Leader"
 title_separator: "|"
+name: "Péter Balázs Polgár"
+url: "https://polgarp.com"
 email: hello@polgarp.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Design explorer."
@@ -23,8 +25,9 @@ github_username: polgarp
 minimal_mistakes_skin: "contrast"
 search: true
 search_full_content: true
-site.description: "Writings and others by Péter Balázs Polgár"
+site.description: "Writings and others by Péter Balázs Polgár, Product Design Leader"
 logo: "/assets/images/logo.png"
+masthead_title: "Péter Balázs Polgár"
 
 
 # Build settings
@@ -34,6 +37,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
+date_format: "%Y. %B %d"
 timezone: Europe/Copenhagen
 
 include:
@@ -63,11 +67,8 @@ plugins:
 author:
   name: "Péter Balázs Polgár"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : '<i class="fas fa-drafting-compass"></i> Design explorer'
+  bio    : '<i class="fas fa-drafting-compass"></i> Design explorer building products and product design teams'
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/polgarp"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
@@ -77,9 +78,6 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/polgarp"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
@@ -99,6 +97,7 @@ defaults:
       comments: false
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -129,7 +128,7 @@ collections:
 
 social:
   type: "Person"
-  name:  "Polgár Péter Balázs"
+  name:  "Péter Balázs Polgár"
   links:
     - "https://twitter.com/polgarp"
     - "https://linkedin.com/in/peterbalazspolgar"
