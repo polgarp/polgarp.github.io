@@ -6,9 +6,9 @@ author_profile: true
 
 I’m Péter Balázs Polgár.
 
-I love building product design teams. I also like to help product teams bringing products from idea till execution. I create great experiences by providing insights about the user needs and expectations, validating hypotheses and designing solutions. I also mentor and train others to do the same. Currently Lead Product Designer at [Krisp.ai](https://krisp.ai), previously Senior UX Manager at [Trustpilot](https://www.trustpilot.com/), Head of UX at [Emarsys](https://emarsys.com/) and UX Researcher at [Prezi](https://prezi.com/).
+I love building product design teams. I also like to help product teams bringing products from idea till execution. I create great experiences by providing insights about the user needs and expectations, validating hypotheses and designing solutions. I also mentor and train others to do the same. Previously Lead Product Designer at [Krisp.ai](https://krisp.ai), Senior UX Manager at [Trustpilot](https://www.trustpilot.com/), Head of UX at [Emarsys](https://emarsys.com/), and UX Researcher at [Prezi](https://prezi.com/).
 
-I write sometimes about products and UX on [Medium](https://medium.com/@polgarp).
+I write sometimes about product design and design leadership on [Medium](https://medium.com/@polgarp).
 
 I do talks on meetups and on various courses. I'm also open for [mentoring](http://uxcoffeehours.com/).
 
