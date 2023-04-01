@@ -15,63 +15,51 @@ header:
 
 # ☕ Career ladders
 
-I. Introduction
+Some of the toughest conversations I've had with my reports were around promotion and growth. This makes sense, as if we hire people for growth, to be able to improve and increase their impact over time, there needs to be clarity how this should happen. 
+
+The challenge has been always that while as a leader I could easily see why certain team members were not on a senior level yet, it was hard to articulate why exactly. Especially as this needed to be articulated across the team to make sure things are fair for all designers designers without this getting to be a sort of checklist of things to be done. Clearly articulating what is expected across roles and levels needs a common basis and strong vision, this is where having a career ladder helps.
+
+Career ladders are sometimes called progression frameworks. In essence they are a description what is expected for each role in the team at each level and provide general guidance on what is the desired growth path for team members at the organization or company. Having the expectations in writing forces clarity into otherwise vague career and promotion discussions. 
+
+s with everything, writing things down forces clarity into a the otherwise vague discussions.
+
+Also closely related to skill maps, Also helps checking what's missing from the team - in terms of skills.
+
+
+Informs hiring and helps to understand team members how they can grow their career within the organization. Discuss the importance of creating a culture of growth and development within the design team
+
+Once there 3-4 designers and progression, promotion gets to be a question, this gets brought up.
 
 * Briefly define what a career ladder is
 * Explain why having a career ladder is important for design teams
-* State the purpose of the blog post
 
-II. The Levels of a Design Team Career Ladder
-
-* Define the different levels in a design team career ladder (e.g. Junior Designer, Senior Designer, Lead Designer, Design Manager, etc.)
-* Describe the responsibilities and expectations for each level, including specific skills and competencies required
-* Discuss how designers progress from one level to the next, including the criteria for promotion
-
-III. Creating a Culture of Growth and Development
-
-* Discuss the importance of creating a culture of growth and development within the design team
-* Share tips on how to foster this culture, such as providing regular feedback and coaching, offering opportunities for professional development, and encouraging experimentation and exploration
-
-IV. Supporting Career Progression
-
-* Explain how leaders can support the career progression of their team members, such as by advocating for their advancement and providing opportunities for growth and development
-* Discuss the role of mentorship and coaching in supporting career progression
-* Address the importance of providing equitable opportunities for all team members, regardless of background or identity
-
-V. Conclusion
-
-* Summarize the main points of the blog post
-* Reiterate the importance of having a career ladder for design teams
-* Encourage leaders to use the information provided in the post to create or improve their own career ladder framework
-
-
-Some of the toughest conversations I had with my reports were around promotion and growth. While I could easily see why certain team members were not on a senior level yet, it was hard to articulate why exactly without this getting to be a sort of checklist of things to be done. This is where having a ladder helps.
-
-sometimes called progression frameworks, as intends to solve problems around growth. But another role is laying out team skills and making it clearer what is it that he team is doing. As with everything, writing things down forces clarity into a the otherwise vague discussions.
-
-General progession: increase impact (self, team, org, company, industry), increase scope (artifact, feature, flow, journey), way of working (follow rules, iterate on methods, innovate on methods, break rules. )
-
-Once there 3-4 designers and progression, promotion gets to be a quesiton, this gets brought up.
-
-Embed T-shapedness.
-
-Also helps checking what's missing from the team - in terms of skills.
-
-Informs hiring and helps to understand team members how they can grow their career within the organization.
-
-Work from team vision - ladder has to fit current org structure. Reward desired things.
-
-Strive to align with industry - shouldn't use wildly different role names, it has to sort of align with other company expectations. I've tried to shoot upwards - meaning that if you were a senior in my team, that would be senior in 90%+ of other companies too.
-
-Process:
+Process is similar to how other team artiefacts are done, this is what worked for me?
 - Align with HR / people team. They are experts, maybe there is something to align with. Get clear on how promotion works and how this all aligns with compensation.
 - What's the need 
 - Research company values and skills needed
-- Group and architech skills
+- Group and architect skills
 - Articulate high level differences between levels
 - Write up skill differences between levels
 - Iterate, get feedback
 - Use
+
+Strive to align with industry - shouldn't use wildly different role names, it has to sort of align with other company expectations. I've tried to shoot upwards - meaning that if you were a senior in my team, that would be senior in 90%+ of other companies too.
+
+
+Work for design team - aligned across org.
+
+
+Team vision - Embed T-shapedness. Work from team vision - ladder has to fit current org structure. Reward desired things.
+
+Differences creation - General progession: increase impact (self, team, org, company, industry), increase scope (artifact, feature, flow, journey), way of working (follow rules, iterate on methods, innovate on methods, break rules. )
+
+
+Followup Share tips on how to foster this culture, such as providing regular feedback and coaching, offering opportunities for professional development, and encouraging experimentation and exploration
+Explain how leaders can support the career progression of their team members, such as by advocating for their advancement and providing opportunities for growth and development
+Discuss the role of mentorship and coaching in supporting career progression
+
+
+
 
 ### 🥤 To recap
 - Ladders provide clarity for progression, how the team intends to do things, what skills are missing.
