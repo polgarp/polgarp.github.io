@@ -33,9 +33,11 @@ header:
 
 # 🍪 Things to snack on
 
-[**Product Design for Sustainability**](https://uxdesign.cc/product-design-for-sustainability-3fffbb2a7f0e) by **Artiom Dashinsky**
+Resources to check out:
+- https://the-sustainable.dev/
+- https://sustainableuxnetwork.com/
+- https://lowwwcarbon.com/ 
 
-[**What stops us from designing a sustainable future?**](https://uxdesign.cc/what-stops-us-from-designing-a-sustainable-future-1f354143bc8b) by **Sanna Rau**
 
 [**Sustainable Web Design**](https://sustainablewebdesign.org/)
 
@@ -44,6 +46,15 @@ https://www.climatedesigners.org/
 https://blog.prototypr.io/how-we-used-ui-ux-to-confront-an-inconvenient-truth-5b70eb9e3c85
 
 
+
 **[The Sustainable Creative Charter](https://sustainablecreativecharter.com/)**
 
-**[Designing sustainable business models and product service systems](https://medium.com/activate-the-future/designing-sustainable-business-models-and-product-service-systems-cd548328e852)** by **Daniel Christian Wahl**
+https://uxdesign.cc/impact-driven-design-getting-the-results-you-want-392fabb095c8 
+
+
+
+[**Product Design for Sustainability**](https://uxdesign.cc/product-design-for-sustainability-3fffbb2a7f0e) by **Artiom Dashinsky**
+
+Product design's challenges to include sustainability goes beyond simple tactics, unfortunately there are systematic barriers. **Sanna Rau** mentions two of these in [**What stops us from designing a sustainable future?**](https://uxdesign.cc/what-stops-us-from-designing-a-sustainable-future-1f354143bc8b), reductionism and measurements of success. Reductionism states that complex problems can be broken down to simple problems to be solved, which for example results product teams and designers working on separate pieces of the experience - resulting in silos. This keeps designers from taking a more holistic approach. Measurements of success on the other hand steers the outcomes the teams trying to achieve, and since they focus on piece of the larger word, they may hide parts of the entire truth. These two together result in having no simple, easy to use solution to a complex problem as sustainability.
+
+**Daniel Christian Wahl**'s article, [**Designing sustainable business models and product service systems**](https://medium.com/activate-the-future/designing-sustainable-business-models-and-product-service-systems-cd548328e852) takes the system design's view by showing a few types of business model canvases that includes sustainability. Product design usually works on lower levels than a business model, but these provide a good inspiration how to systematically include sustainability into artifacts the design team is creating.
