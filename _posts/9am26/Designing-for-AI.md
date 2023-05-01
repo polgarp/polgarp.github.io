@@ -91,23 +91,15 @@ VII. Conclusion
 
 # 🍪 Things to snack on
 
-https://medium.com/google-design/human-centered-machine-learning-a770d10562cd
+There is a lot of hype going on around AI, and it's sometimes tough to understands what matters and why. I found the [**The Algorithmic Bridge**](https://thealgorithmicbridge.substack.com/) newsletter by **Alberto Romero** quite helpful to follow trends slightly above the technical level and a bit farther away from the hype arena.
 
-https://blog.google/technology/ai/ai-principles/
+To understand how to design with AI, designers should explore by creating new things, argues **Gus Baggermans** in [**Embracing AI as a material for design**](https://uxdesign.cc/embracing-ai-as-a-material-for-design-b2986f7af7ed). The article also gives some general guidelines: Play responsibly, Design for discoverability, Help people navigate the maze of possibilities, and Consider legal & ethical implications. 
 
-https://uxdesign.cc/embracing-ai-as-a-material-for-design-b2986f7af7ed
+[**Design for AI: What should people who design AI know?**](https://uxdesign.cc/design-for-ai-what-should-people-who-design-ai-know-761e78fdabb) is a tool and an attempt to define what design skills will be needed for creating systems with AI by **Hal Wuertz**. It provides some useful behaviors for the five skill categories it presents (Technical, Ethics, Collaboration, Strategy, and Interactions). The list of behaviors might also give ideas for what skills to learn or improve.
 
-https://cacm.acm.org/magazines/2023/3/270209-toward-practices-for-human-centered-machine-learning/fulltext
+16 excellent principles and added context to learn more by **Lennart Zibruski** in [**UX of AI**](https://uxofai.com/). Some of the principles just show how designing for AI is not that different from designing any software ("Start with the user"), while others are quite specific ("Explain the results"). 
 
-https://uxdesign.cc/design-for-ai-what-should-people-who-design-ai-know-761e78fdabb
-
-https://www.microsoft.com/en-us/research/uploads/prod/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf
-
-https://smarterpatterns.com/
-
-http://uniform.net/about/blog/designing-with-ai
-
-https://bigmedium.com/speaking/design-in-the-era-of-the-algorithm.html
+**Joël van Bodegraven** focuses on anticipatory design (how systems will think ahead the users) in  [**Design principles for AI-driven UX**](https://uxdesign.cc/ai-driven-ux-design-7735bdefbffc), describing systems designed with AI as simply "smart". The article also gives 5 principles to get started: Smart design has a purpose, Smart design is an extension of human capabilities, smart design anticipates, smart design should humanise experiences, smart design is proactive.
 
 Google published a bunch of great and insightful articles, starting with [**The UX of AI**](https://design.google/library/ux-ai/) by **Josh Lovejoy** which is a case study about the Clips camera. Three main points on how AI needs human-centered design: solutions need to address a real human need, the intelligence needs guidance, and building trust needs to be core.
 
