@@ -12,7 +12,7 @@ header:
   show_overlay_excerpt: false
 ---
 
-1-on-1s can be a real game-changer when it comes to building a design team that works like a well-oiled machine. Managers can improve their team's skills, can create trust and open communication, can give feedback that helps everyone grow on these magical sessions.
+1-on-1s can be a real game-changer when it comes to building a design team that works like a well-oiled machine. Managers can improve their team's skills, can create trust and open communication, can give feedback that helps everyone grow in these magical sessions.
 
 {% include figure image_path="/assets/images/2023-05-08-1-on-1s-strengthening-the-team-with-coaching.jpg" alt="A magical silhouette of flying animals dancing with an abstract background, with realistic lighting, generated with DiffusionBee" caption="A magical silhouette of flying animals dancing with an abstract background, with realistic lighting, generated with DiffusionBee" %}
 
@@ -22,7 +22,7 @@ header:
 
 Besides the people issues and the fact that it's on 1-on-1s where great people managers shine (and bad ones burn), two underappreciated aspects contribute to the challenge. Most design leaders are not trained as coaches and how 1-on-1 helps in building the team.
 
-First, about coaching. The weekly 1-on-1 might be not the place where most designers get their first exposure to coaching, but it's definitely where most design leaders need to step into the role of coaches. Coaching should be the default behavior, as even in the most flat teams, the manager is the boss. The job is to get the most out of their team.
+First, about coaching. The weekly 1-on-1 might be not the place where most designers get their first exposure to coaching, but it's definitely where most design leaders need to step into the role of coaches. Coaching should be the default behavior, as even in the most flat teams, the manager is the boss. The job is to get the most out of the team.
 
 This is not a guide about coaching. But in short, it helps to get the right outcomes, and it also helps to build the team and grow the team members to deliver more and better. In the end, with team members we are not talking about resources, but people whose strengths and weaknesses should be acknowledged, and who need help to grow beyond their limits. 
 
@@ -31,7 +31,7 @@ I believe in letting people learn from their own mistakes, that is people grow t
 One challenge is how team members might not know what to expect from the coach, their expectations might be unsophisticated or they have unrealistic images of how things should go. So it might take a long time until a team member would tell their manager "Now I know how to use you".
 
 To get to a place where coaching and 1-on-1s can be successful, the manager needs to get a few things right:
-- Building trust: Regularity helps. By having one-on-one conversations with each team member each week, design leaders can learn about their goals, concerns, and aspirations. This can help leaders tailor coaching tools to meet the needs of each individual and help team members feel valued and supported.\
+- Building trust: Regularity helps. By having one-on-one conversations with each team member each week, design leaders can learn about their goals, concerns, and aspirations. This can help leaders tailor coaching tools to meet the needs of each individual and help team members feel valued and supported.
 - Encouraging open communication: Creating the right space for discussions is the foundation. By creating a safe and supportive space, team members are more likely to share their ideas, feedback, and concerns. This can help leaders identify areas of improvement and implement changes that benefit the team as a whole.
 - Setting goals and expectations: Radical candor to set expectations is a great approach. By setting clear expectations early on, team members can focus on their work and strive to meet these goals. This can also help prevent misunderstandings and ensure that everyone is on the same page.
 - Providing feedback: 1:1 meetings are also an opportunity for design leaders to provide feedback to their direct reports. By providing constructive feedback, leaders can help their team members grow and develop their skills. This can also help team members feel more engaged and invested in their work.
