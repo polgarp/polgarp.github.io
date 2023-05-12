@@ -15,6 +15,21 @@ header:
 
 # ☕ UX or product design or whatever strategy
 
+
+Strategy can be understood in multiple levels. But in essence it's a vision and the way to get there. 
+
+It can be how the design team should be operating and what to do to get there. IT could be how the design team should support organisational strategy how to get there. It could be what UX goals the product needs to do and how to get there. This evolves as the maturity evolves.
+
+Also some misalignment - UX team might be asked for a UX strategy, but the user's experience is affected by many things, most beyond the impact of the UX team, so the team will focus they have impact on, what the product's UI and interaction would be. That's why I like the term "product design" better. It's still a bit broad (engineering choices affect the product a lot, this contribute to product design afterall).
+
+Designers of all levels should practice strategy. On an individual level, it could be describing a design goal, what good looks like and the process to get there. On a higher level more collab, more alignment is needed, while on the leadership level even more is needed.
+
+It's also about alignment - being a plan on how the team will deliver value, and making it clear if the team working towards the goals of the broader organisation. As such strategy should avoid design lingo and speak to a wider group of stakeholders.
+
+Ultimately strategy should describe how we are going to be successful, given our goals.
+
+--
+
 Product strategy and product design strategy are related but distinct concepts that are both important for the success of a tech startup or scaleup.
 
 Product strategy focuses on defining the overall direction and goals for the product. It includes identifying the target audience, defining the product's unique value proposition, and creating a roadmap that outlines the product's development priorities. Product strategy is typically owned by product managers and involves collaboration with other stakeholders such as engineering, marketing, and sales.
@@ -57,23 +72,14 @@ A well-defined UX strategy helps companies create products and services that are
 
 # 🍪 Things to snack on
 
-https://www.nngroup.com/articles/ux-strategy/
+[**UX Strategy: Definition and Components**](https://www.nngroup.com/articles/ux-strategy/) by **Anna Kaley and Sarah Gibbons**
 
-https://uxdesign.cc/what-makes-a-ux-strategy-successful-ebdb72641968
+[**What makes a UX Strategy successful**](https://uxdesign.cc/what-makes-a-ux-strategy-successful-ebdb72641968) by **Bilgi Karan**
 
+The design strategy is usually part of a broader product strategy, so should contribute to that, as **Matthew Godfrey** argues in [**The Anatomy of Design Strategy**](https://medium.com/ingeniouslysimple/the-anatomy-of-design-strategy-75be8cfa3dc3). This means the design strategy should talk about the necessary experience changes, what success would look like, what opportunities to target, how the current experience looks like and what a future experience would look like. There are some further helpful tips on what each of these sections should contain.
 
+I found the four dimensions in [**Level, Depth, Time, and Frame**](https://cutlefish.substack.com/p/tbm-218-level-depth-time-and-frame) by **John Cutler** extremely useful to understand how strategy can have very different meanings based on the context it's created. Level is where it sits in the organizational hierarchy. Depth tells about how specific or high level the strategy is. Time gives the timeframe, how long the strategy is to be followed without change. Finally the Frame describes the focus or focuses (for product design this could be about the culture, the product capabilities, the customer or even something else). Thinking about these dimensions helps in creating appropriate constraints for the strategy.
 
+While strategy is important, it's just part of a bigger palette of tools that build a the design culture. [**Culture Eats UX Strategy for Breakfast**](https://medium.com/on-experience/culture-eats-ux-strategy-for-breakfast-2a805d47097e) by **Liam Friedland** is a nice overview on the pieces. Besides UX Strategy, the others described by the article are Research Program, Innovation Program, Design Program, UX Ops, Growing People, Evangelize + Promote, and Relations + Alliances.
 
-https://medium.com/ingeniouslysimple/the-anatomy-of-design-strategy-75be8cfa3dc3
-
-https://cutlefish.substack.com/p/tbm-218-level-depth-time-and-frame
-
-https://medium.com/on-experience/culture-eats-ux-strategy-for-breakfast-2a805d47097e
-
-https://medium.com/ingeniouslysimple/the-anatomy-of-design-strategy-75be8cfa3dc3
-
-https://articles.uie.com/the-experience-vision-a-self-fulfilling-ux-strategy/
-
-http://www.foolproof.co.uk/thinking/what-is-user-experience-strategy
-
-
+Vision is at the core of strategy, and experience vision is what describes a great user experience. **Jared Spool** gives a brief introduction with some examples about why the vision matters and how it ties things together in [**The Experience Vision: A Self-Fulfilling UX Strategy**](https://articles.uie.com/the-experience-vision-a-self-fulfilling-ux-strategy/).
