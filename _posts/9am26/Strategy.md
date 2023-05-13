@@ -17,33 +17,30 @@ Having a clear strategy is what sets apart mediocre design teams and good teams.
 
 # ☕ UX strategy
 
-In any given moment, a design leader can chose to do any one thing from a long and ever expanding list of things. Improve user research? Iterate on the design system? Change the team composition? Focus on new users? Create a journey map? A few things can help to decide which one to do. If the team has an idea where they want to go. If that is aligned with what the company wants to do. If the team already spent some time on deciding how to get there. In short, if the team has a strategy.
+In any given moment, a design leader can chose to do any one thing from a long and ever expanding list of things. Improve user research? Iterate on the design system? Change the team composition? Focus on new users? Explore new feature opportunities? Create a journey map?
 
-Strategy is one of those words we talk about a lot, but in a somehow under defined manner. More senior designers are usually expected to think about strategy while they work in their product teams. Design leaders are usually expected to have a strategy that defines what their team focuses on.
+A few things can help to decide what to do. If the leader and team has an idea has good idea what their goals are. If their goals are aligned with what the company wants to do. If the team already spent some time charting how to get there. In short, if the leader and the team has a strategy.
 
-Depending on the context, strategy means different things. For a designers working on the product it's more about how the end goal would be reached, so what steps, in what order, what methods, and how the problems and solutions are approached. On a design team level it's more about what practices, what projects the team should be taking on.
+Strategy is one of those words we talk about a lot, but in a somehow under defined manner. More senior designers are usually expected to think about strategy while they work in their product teams. Design leaders are usually expected to have a strategy that ties into broader company strategies and defines what their team focuses on.
 
-Either way, a strategy in essence is a goal, a vision of a different and desired future state and the way, the approach taken to get there. 
+Depending on the context, strategy means different things. For a designer working on the product it's more about how a concrete opportunity would be explored, so what steps, in what order, what methods, and how the problems and solutions would be discovered. On a design team level it's more about what practices to do, how to evolve the team, what projects the team should be taking on, and what would drive decisions.
 
-To be sure, a good strategy helps good teams determine what to focus on and to grow and increase their impact.
+Either way, a strategy in essence is a goal, a vision of a different and desired future state and the way, what good looks like and the approach taken to get there. Not a list of projects or a roadmap of todos, rather intention, direction, and a plan of play. 
 
+Besides this, for product design teams good strategy also helps the team to determine what to focus on, what not to focus on, and what to grow to increase their impact. Most design teams would have ambition to increase the user-centeredness of their respective orgs, strategy charts the way.
 
+Designers of all levels should practice strategy. 
 
+For juniors and mediors it's more on the craft side, how to execute methods and what to practice. For seniors and up, it's more on the project level or even across features, products, teams. Which also assumes more collaboration, more alignment is needed to be able to execute on the strategy. This level would typically include research, analysis, and planning, as well as the implementation and evaluation of design solutions. It may involve things like defining user personas, conducting user research, creating user flows and wireframes, designing interfaces, and testing and iterating on designs.
 
-It's usually clear the design team needs to have a strategy, usually driven by the leader. 
+For design managers and leaders strategy would also focus on practices, organizational changes or even culture changes besides broad opportunities on the product, service or company level. This is where the design team's strategy or UX strategy would be defined.
 
-Designers of all levels should practice strategy. On an individual level, it could be describing a design goal, what good looks like and the process to get there. On a higher level more collab, more alignment is needed, while on the leadership level even more is needed.
+The UX strategy is driven by the leader and would start with a vision - an experience vision describing a future state of the user experience. This assumes research already done, as alignment with other stakeholders and higher level strategies (such as company or product strategy). After a vision is in place, a direction can be formed that would get the team and the broader org there.  
 
-
-
-
-
-Getting together: define goal or more a vision. Research experience, collect input from internal stakeholders. Compose plans how we gonna get there.
-
-A UX strategy typically includes research, analysis, and planning, as well as the implementation and evaluation of design solutions. It may involve defining user personas, conducting user research, creating user flows and wireframes, designing interfaces, and testing and iterating on designs.
-
-Plan components to think about while preparing a strategy:
+Components to think about while preparing a strategy:
+- Team setup: Where the team members should be focusing on, which teams they would spend the majority of their time. If there are researchers or writers in the team, how would they work.
 - User research:  It's essential to understand your target audience's needs, pain points, and expectations before designing any product or feature.
+- Design process and practices: Gaps to reach what good looks like might need to be addressed. For example if there are misalignment between customer touchpoints, additional reviews, design critiques or just ways of sharing would be needed.
 - Competitive analysis: It's crucial to understand the competitive landscape to design a product that stands out from the crowd.
 - Design thinking: As a methodology that can help teams solve complex problems while involving a wider group of stakeholders or co-create with customers.
 - Collaboration: How the team should work with cross-functional teams, including product managers, developers, and stakeholders, to ensure everyone is aligned on the product vision and goals. Also determines organizational setup - the strategy should drive org design and not the other way around.
@@ -51,13 +48,11 @@ Plan components to think about while preparing a strategy:
 - Accessibility: Accessibility is an essential aspect of product design and UX strategy. It's important to design products that are accessible to users with disabilities and meet accessibility standards.
 - Continuous growth: Product design and UX strategy are continually evolving, so it's essential to stay up-to-date with industry trends, best practices, and emerging technologies. Continuous learning and professional development are crucial for design leaders and their teams.
 
+A question with UX strategy is the relation to the overall product or even company strategy. This usually depends on the organizational setup, what's the flow of insights, direction, and where results are channeled in. For most product design teams working from the product organization, their strategy should be part of the product strategy, closely aligned with product engineering's and product management's strategy.
+
+Product strategy focuses on defining the overall direction and goals for the product. It includes identifying the target audience, defining the product's unique value proposition, and creating a roadmap that outlines the product's development priorities. Product strategy is typically owned by product managers and involves collaboration with other stakeholders such as marketing, or sales.
 
 
-A question with UX strategy is the relation to the overall product or even company strategy. This usually depends on the organizational setup for it to be executable. For most product design teams working from the product organization, their strategy should be part of the product strategy, closely aligned with product engineering's and product management's strategy.
-
-Product strategy focuses on defining the overall direction and goals for the product. It includes identifying the target audience, defining the product's unique value proposition, and creating a roadmap that outlines the product's development priorities. Product strategy is typically owned by product managers and involves collaboration with other stakeholders such as engineering, marketing, and sales.
-
-Product design strategy, on the other hand, is focused on the specific design elements of the product. It includes defining the design problem, conducting user research, creating user personas, developing a design language, creating user flows and wireframes, and testing and iterating on designs. Product design strategy is owned by the design team and involves collaboration with cross-functional teams such as product management, engineering, and marketing.
 
 Also some misalignment - UX team might be asked for a UX strategy, but the user's experience is affected by many things, most beyond the impact of the UX team, so the team will focus they have impact on, what the product's UI and interaction would be. That's why I like the term "product design" better. It's still a bit broad (engineering choices affect the product a lot, this contribute to product design afterall).
 
