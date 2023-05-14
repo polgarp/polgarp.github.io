@@ -39,4 +39,7 @@ header:
 
 # 🍪 Things to snack on
 
-https://www.youtube.com/watch?v=GViU4sAI6os 
+https://www.youtube.com/watch?v=GViU4sAI6os
+
+https://dscout.com/people-nerds/foundation-dynamic-ux-team
+
