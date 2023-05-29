@@ -15,39 +15,32 @@ header:
 
 # ☕ Celebrating successes
 
-One of the most frequent issues I've seen teams raise as something to start doing is to celebrate successes more.
+One of the most frequent issues I've seen teams raise is to celebrate successes more. This goes both for large things (like new product launches) and also for small things (like crushing a week's tasks). A lot of teams seem to be struggling with establishing the rituals to acknowledge wins, which also seems to be holding back the team from growing.
 
-Why? It seems partly celebrating is hard. The pace of product development orgs is fast, and projects are seemingly never done, big launches are overshadowed by iterative development and staged rollouts. Phases are not done, but continued later. Also people tend to be more maximalists, focusing on minor wins is not good enough 
+When I started leading teams many years ago, one of my first reports told me that if I want to lead a team and not just some designers, we would need rituals, especially around celebrating. So I did the most simple thing I could think of - I started to regularly bring cakes and have events with the team where we took a bit of time during the day to hang out. This worked well, but also we never went beyond and upgraded this ritual.
 
-It would be easy to guess what ha s been the most commonly raised issue by the teams I've lead over the years. We need to celebrate our successes more. It seems it's one of those highly desirable things that takes time figure out with each teams and that is wildly different with each team. Or, as one of my first reports told me at years ago - if I want to lead a team and not just some designers, we would need rituals. 
+For a lot people and a lot of teams, celebrating seems to be hard. People focus on the next goals and don't have time to look back. Sometimes the bar for success is set so high that anything below astounding success is not worth celebrating, small wins and successes are not worth mentioning. People might feel there is not time to hang out, as there is a stream of tasks waiting. And also some teams have developed a culture that keeps from acknowledging wins.
 
-Obviously, celebrating successes is great. The team did well, it should be acknowledged. It builds team morale, strengthens 
+In fast-paced product orgs all these issues hit even harder. Project are seemingly never done, big launches are overshadowed by iterative development and staged rollouts. Phases are not done, but continued later. Teams are always after the next experiment, feature or customer need to take care of.
 
-But it's also difficult, as each team is different, and team members might have conflicting needs. Going out for drinks late? Woould be better to go home early and play with kids. Taking the time
+When there is no celebration, motivation and engagement declines. Achievements get unnoticed, people don't grow as much as they have the potential to, there is a lack of reflection and learning. Morale sinks and overall job satisfactions declines. Team members might experience burnout and stress. So recognizing and celebrating achievements is crucial for fostering a positive work environment, boosting team morale, and maintaining a motivated and engaged team.
 
+On the plus side, if the team celebrates, there is a better motivation and engagement, morale and the team cohesion improves (which is especially important for distributed design teams), there is more space for learning and improvement, and team members get more confidence in their own abilities and value.
+
+When it comes to establishing a culture that celebrates, team leaders have. crucial role. They are leading by example - actively acknowledging wins and creating a positive tone and routine for celebrations, but their role goes beyond that. Leaders also need to foster a supportive environment where sharing and especially sharing success is encouraged. This includes to more broadly sharing success stories from the team. Team cultures celebrate more if it not only comes from the top, but also peers recognize wins.
+
+How to do celebration?
+
+
+
+But it's also difficult, as each team is different, and team members might have conflicting needs. Going out for drinks late? Would be better to go home early and play with kids. Taking the time
 
 Most important - has to be authentic. Remember all the awkward remote team meeting when corona started? For the most teams it wasn't authentic, since they didn't had time to figure out how they do this online. The laid back Friday afternoon beers don't translate well to the online space.
 
+
+How to get people to contribute?
+
 This is where also adding to the team culture is important. Leaders need to contribute to the team culture. But also more senior team members would be expected. 
-
-
-Wrote in the past about how individuals should keep track of their wins with a brag doc, but this practice is also crucial on a team level - builds team culture and fosters a positive environment.
-
-
-1.  Boosting Morale and Motivation: Recognizing and celebrating successes uplifts the morale of design team members. It acknowledges their hard work, creativity, and achievements, motivating them to continue performing at their best. This positive reinforcement helps create a supportive and inspiring work environment.
-    
-2.  Fostering a Positive Culture: Celebrating successes cultivates a culture of appreciation and positivity within the design team. When team members witness their colleagues being recognized and celebrated, it creates a sense of camaraderie and encourages collaboration, cooperation, and healthy competition. It also helps build a culture that values and rewards excellence.
-    
-3.  Encouraging Innovation and Risk-Taking: Celebrating successes reinforces the idea that taking risks and pushing boundaries is encouraged and rewarded. Design is an iterative process where experimentation and learning from failures are essential. By celebrating successful design outcomes, team members are more likely to take calculated risks, explore creative solutions, and embrace innovation.
-    
-4.  Enhancing Team Cohesion: Celebrating successes brings the design team closer together. It provides opportunities for team members to come together, share their achievements, and appreciate each other's contributions. This sense of unity and shared accomplishment strengthens the bonds within the team, fostering a collaborative and supportive work environment.
-    
-5.  Recognizing and Retaining Talent: Celebrating successes is a powerful tool for recognizing the talent and expertise of individual team members. It not only acknowledges their skills but also highlights their value to the organization. Recognizing and celebrating successes can increase job satisfaction and employee engagement, contributing to higher retention rates and attracting top talent to join the design team.
-    
-6.  Improving Client and Stakeholder Relationships: Celebrating successes can extend beyond the design team and positively impact client and stakeholder relationships. Sharing successful design outcomes with clients and stakeholders demonstrates the team's capabilities and builds trust and confidence in their work. It can lead to stronger client relationships, repeat business, and referrals.
-
-
-On the side: celebrating successes is also an important design principle, when the user finishes something successfully, we should give them a clear feedback, to make them positive feels.
 
 
 
