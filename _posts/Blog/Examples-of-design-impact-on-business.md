@@ -1,10 +1,9 @@
 ---
-title: "e "
+title: " "
 categories:
-  - Newsletter
+  - Blog
 tags:
   - Design leadership
-  - 9am26
 header:
   overlay_image: /assets/images/.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)
