@@ -1,0 +1,1 @@
+https://medium.com/onebigthought/the-ux-research-reckoning-is-here-c63710ea4084
