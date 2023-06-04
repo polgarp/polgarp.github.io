@@ -38,6 +38,8 @@ Solution space - explore for customer's active need (they already know what is t
 
 https://medium.com/inclusive-software/when-why-to-explore-the-problem-space-16068f1a1dbc
 
+<p style="text-align: center;">🁃</p>
+
 https://bootcamp.uxdesign.cc/the-problem-with-the-double-diamond-57ab03719ce0
 
 https://www.producttalk.org/2016/08/opportunity-solution-tree/
