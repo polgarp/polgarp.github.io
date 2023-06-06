@@ -1,5 +1,5 @@
 ---
-title: "e21 Building UX research teams"
+title: "e25 Building UX research teams"
 categories:
   - Newsletter
 tags:
@@ -10,7 +10,7 @@ tags:
   - 9am26
 header:
   overlay_image: /assets/images/.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
+  overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
 
@@ -38,6 +38,9 @@ header:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
+
+<p style="text-align: center;">🁃</p>
+
 
 https://www.youtube.com/watch?v=GViU4sAI6os
 
