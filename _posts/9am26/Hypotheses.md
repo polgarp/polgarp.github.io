@@ -1,1 +1,0 @@
-Hypothesis driven design, good hypothesis, from research, in team.
