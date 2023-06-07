@@ -22,5 +22,5 @@ Statistics:
 - Bunch of stats in McKinsey's [**The business value of design**](https://www.mckinsey.com/capabilities/mckinsey-design/our-insights/the-business-value-of-design) report.  
 - [**The business impact of design in 2021 — stats included**](https://uxdesign.cc/the-business-impact-of-design-in-2021-stats-included-8767b4094a3a)
 - [**The value of UX Design**](https://www.uxdesigninstitute.com/blog/the-value-of-ux-design/)
-- [** Impressive UX Statistics to Prove the Value of Great Design**](https://www.eleken.co/blog-posts/14-impressive-ux-statistics-to-prove-the-value-of-great-design)
+- [**Impressive UX Statistics to Prove the Value of Great Design**](https://www.eleken.co/blog-posts/14-impressive-ux-statistics-to-prove-the-value-of-great-design)
 
