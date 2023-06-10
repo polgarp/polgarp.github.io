@@ -7,6 +7,7 @@ author_profile: true
 I'm super annoyed by bad experiences. So I resolved early to try and build better ones. These days I believe great teams build great products.
 
 **I ❤️ building product design teams.**
+{: .notice--primary}
 
 Sometimes this means coaching and management, sometimes working with product teams to bring products from idea to execution.
 
