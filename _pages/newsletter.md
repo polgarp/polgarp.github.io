@@ -1,5 +1,5 @@
 ---
-title: "9am26 - Reflections on Design Leadership"
+title: "9am26 Newsletter - Reflections on Design Leadership"
 layout: category
 permalink: /categories/newsletter/
 taxonomy: Newsletter
