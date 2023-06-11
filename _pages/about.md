@@ -11,7 +11,7 @@ I'm super annoyed by bad experiences. So I resolved early to try and build bette
 
 Sometimes this means coaching and management, sometimes working with product teams to bring products from idea to execution.
 
-Previously Lead Product Designer at [Krisp.ai](https://krisp.ai), Senior UX Manager at [Trustpilot](https://www.trustpilot.com/), Head of UX at [Emarsys](https://emarsys.com/), and UX Researcher at [Prezi](https://prezi.com/).
+Currently bringing sustainability to companies and products at [Megis](https://megis.studio/). Previously Lead Product Designer at [Krisp.ai](https://krisp.ai), Senior UX Manager at [Trustpilot](https://www.trustpilot.com/), Head of UX at [Emarsys](https://emarsys.com/), and UX Researcher at [Prezi](https://prezi.com/).
 
 ## Contact me
 
