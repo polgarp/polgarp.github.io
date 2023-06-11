@@ -15,6 +15,8 @@ header:
 
 # ☕ Writing meaningful hypotheses
 
+Design intent 
+
 Hypothesis and consequently hypothesis driven design is one of those terms that since it sounds scientific, it must also sound right. But this is just cargo-culting, just because a team adopts a term from science, it doesn't mean that their approach would be more scientific.
 
 The more years pass, the less I like the terms "hypothesis" and "assumptions". They carry some scientific terminology, but also quite vague. So going with "bet" and "believe these days".
@@ -49,6 +51,9 @@ Also hypothesis helps you figure out what you need to learn. All those awkward h
 
 So how does it work in a process?
 
+
+Need to actively look for sings that the hypothesis is not right. This is why having contextual clarity (right users for example) is important. 
+
 What does this mean to design leaders?
 
 ### 🥤 To recap
@@ -58,23 +63,27 @@ What does this mean to design leaders?
 
 # 🍪 Things to snack on
 
-Lean UX Book
-
-https://medium.com/@talraviv/thats-not-a-hypothesis-25666b01d5b4
-
-https://grillopress.github.io/2017/12/10/hypothesis-driven-design.html
-
-https://medium.com/nodesdigital/reduce-risk-in-your-product-development-with-hypothesis-driven-design-c4300112b88b
-
-https://jeffgothelf.com/blog/the-hypothesis-prioritization-canvas/
-
-https://blog.prototypr.io/thinking-your-design-with-hypotheses-6d486910d214
-
-https://medium.com/@furthermore_ux/hypothesis-driven-design-9f78db4dbe91
+Already at its third edition, **Jeff Gothelf** and **Josh Seiden**'s [**Lean UX**](https://jeffgothelf.com/books/#lean-ux) book is a good way to get started with hypothesis-driven design and product development and is generally a recommended read to product designers. This edition describes the Lean UX process based on the [Lean UX Canvas](https://jeffgothelf.com/blog/leanuxcanvas-v2/). 
 
 <p style="text-align: center;">🁄</p>
 
-One way to group research activities is how they relate to hypotheses, as **Laura Klein** writes in [**Hypothesis Generation vs. Validation**](https://www.usersknow.com/blog/2011/08/hypothesis-generation-vs-validation.html). Generation happens after collecting data about users and the team has an idea what needs to be done. Validation follows, once there is a tangible solution to the problems found and they need to be tested in some way.
+I loved **Tal Raviv**'s [**That’s Not a Hypothesis**](https://medium.com/@talraviv/thats-not-a-hypothesis-25666b01d5b4), as it gives a pretty good critique of some of the cargo-cult usage of hypothesis and describes a good way of thinking about them. The most important point is to separate the problem (the objective), the hypothesis (the thing we believe to be true), and the prediction (the thing that will happen). 
+
+<p style="text-align: center;">🁄</p>
+
+[**Thinking your design with hypotheses**](https://blog.prototypr.io/thinking-your-design-with-hypotheses-6d486910d214) is a nice overview of how to formulate hypotheses starting from the scientific process, also showing a good framework. There is also a good discussion on the definition of success, that is what result the teams hopes from the proposed solution.
+
+<p style="text-align: center;">🁄</p>
+
+**Andrew Duckworth** writes about how hypotheses can act as the articulation of intent in [**Hypothesis driven design**](https://grillopress.github.io/2017/12/10/hypothesis-driven-design.html). The simple presumption here is, that most designers are already thinking as if they would have a hypothesis, but as it's not explicit, it's not becoming something to learn from. The article also describes a simple way of working with hypotheses.
+
+<p style="text-align: center;">🁄</p>
+
+One challenge with hypotheses is, that while it's easy to generate more, validating them takes time and resources. This is where **Jeff Gothelf**'s [**The Hypothesis Prioritization Canvas**](https://jeffgothelf.com/blog/the-hypothesis-prioritization-canvas/) helps, as it gives a simple way to decide what to do with each hypothesis. The canvas is a simple matrix around risk and perceived value, and the resulting quadrants are: Test, Ship & Measure, Don't Test. Usually Don't Build, and Discard.
+
+<p style="text-align: center;">🁄</p>
+
+One way to group research activities is how they relate to hypotheses, as **Laura Klein** writes in [**Hypothesis Generation vs. Validation**](https://www.usersknow.com/blog/2011/08/hypothesis-generation-vs-validation.html). Generation happens after collecting data about users and the team has an idea what needs to be done. Validation follows once there is a tangible solution to the problems found that need to be tested in some way.
 
 
 
