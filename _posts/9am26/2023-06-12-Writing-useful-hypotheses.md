@@ -7,14 +7,14 @@ tags:
   - Design process
   - 9am26
 header:
-  overlay_image: /assets/images/.jpg
+  overlay_image: /assets/images/2023-06-12-Writing-useful-hypotheses.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
 
 Writing useful hypotheses in the product design process helps understand user and business problems better while fostering critical thinking about the product team's beliefs and bets.
 
-{% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
+{% include figure image_path="/assets/images/2023-06-12-Writing-useful-hypotheses.jpg" alt="The house of chickens synthwave cel shading illustration, generated with DiffusionBee" caption="The house of chickens synthwave cel shading illustration, generated with DiffusionBee" %}
 
 # ☕ Writing useful hypotheses
 
