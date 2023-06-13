@@ -15,7 +15,7 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% if post.categories contains 'Blog' or post.categories contains 'Newsletter' %}
+    {% if post.categories contains 'Blog' or post.categories contains 'Newsletter' or post.categories contains 'DelightDissect' %}
       {% include archive-single.html type=entries_layout %}
     {% endif %}  
   {% endfor %}
