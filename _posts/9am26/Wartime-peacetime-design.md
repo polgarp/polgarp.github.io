@@ -25,3 +25,6 @@ header:
 * For engineering:https://www.linkedin.com/posts/gergelyorosz_wartime-stressful-times-vs-peacetime-activity-7045361529432530944-AXnJ/?originalSubdomain=gr
 
 https://mailchi.mp/22e97ce2d9e6/open-registration-20209974?e=f1fa6b50e7
+
+https://www.linkedin.com/feed/update/urn:li:activity:7074376898830573568/
+
