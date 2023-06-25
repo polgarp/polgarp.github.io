@@ -4,12 +4,17 @@ categories:
   - Newsletter
 tags:
   - Design leadership
+  - Product development
+  - Product discovery
+  - Collaboration
   - 9am26
 header:
   overlay_image: /assets/images/.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
+
+Product trios is a great team setup to do product discovery, yet introducing this type of close collaboration is not for everyone. Designers need to be prepared to be able to stand on equal grounds with product management and engineering.
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
@@ -56,9 +61,13 @@ Changing this is not easy, as design leaders both need a good strategic vision a
 - Foster cross-functional collaboration: Encourage open communication and collaboration among product management, engineering, and design, breaking down silos and promoting knowledge sharing, establishing common rituals.
 - Define clear roles and responsibilities: Establishing clear boundaries and expectations for each role within the trio helps avoid confusion and promotes accountability.
 
-Product trios provide an effective framework for product development, leveraging the combined strengths of product management, engineering, and design. By supporting and empowering designers within these trios, organizations can unlock their full potential. While transitioning to a trio model may present challenges, the benefits of enhanced collaboration, streamlined processes, and efficient teamwork make it a worthwhile endeavor. By embracing the power of trios
-
 ### 🥤 To recap
+
+- Product trios are highly effective and energizing way of working, leading to better products and higher job satisfaction.
+- Their key to successful product trios is in equal contribution, decision-making, and ownership of outcomes.
+- Trios focus on product discovery and work closely together, utilizing approaches defined by themselves and rituals for efficient collaboration.
+- Design leaders face challenges in supporting individual designers and providing central direction for a coherent user experience.
+- Adoption of the product trio setup needs cultural change, designer seniority, strategic vision, and cross-functional collaboration.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
