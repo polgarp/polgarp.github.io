@@ -35,7 +35,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 50 # amount of posts to show
 paginate_path: /page:num/
 date_format: "%Y. %B %d"
 timezone: Europe/Copenhagen
