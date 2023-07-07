@@ -72,18 +72,24 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
-    - label: "Email"
-      icon: "far fa-fw fa-envelope"
+    - label: "Drop me an email"
+      icon: "fa-solid fa-envelope"
       url: "mailto:hello@polgarp.com"
+    - label: "Subscribe to my newsletter"
+      icon: "fa-solid fa-wand-magic-sparkles"
+      url: "https://polgarp.com/categories/newsletter/"
 
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/peterbalazspolgar"
-    - label: "Email"
+    - label: "Drop me an email"
       icon: "far fa-fw fa-envelope"
       url: "mailto:hello@polgarp.com"
+    - label: "Subscribe to my newsletter"
+      icon: "fa-solid fa-wand-magic-sparkles"
+      url: "https://polgarp.com/categories/newsletter/"
 
 defaults:
   # _posts
