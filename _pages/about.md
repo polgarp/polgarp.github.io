@@ -15,10 +15,10 @@ Currently bringing sustainability to companies and products at [Megis](https://m
 
 ## Contact me
 
-I'm available as a fractional design leader, helping startups and scaleups to achieve their goals, for example: 
+I'm available as a design mentor and a fractional design leader, helping startups and scaleups to achieve their goals, for example: 
 1. Building effective design teams.  
 2. Improving product discovery.  
 3. Conducting user research.  
 4. Promoting a user-centered culture.
 
-You can reach me at [hello@polgarp.com](mailto:hello@polgarp.com) with inquiries.
+Want to discuss your product? Need design or career advice? Lets discuss: [**hello@polgarp.com**](mailto:hello@polgarp.com).
