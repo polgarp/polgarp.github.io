@@ -67,7 +67,7 @@ plugins:
 author:
   name: "Péter Balázs Polgár"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : '<i class="fas fa-drafting-compass"></i> Design explorer building products and product design teams'
+  bio    : '<i class="fas fa-drafting-compass"></i> Design explorer. <br>Building products <br>and product design teams.'
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
