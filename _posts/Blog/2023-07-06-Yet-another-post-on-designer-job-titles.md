@@ -11,7 +11,7 @@ header:
 
 Digital design is still in its storming phase, that's why we have so many posts, debates, and comments on naming, terminology, etc. Part of it is philosophical clashes (for example can we design experiences like we design a chair), but also different people at different companies have different experiences. Plus terminology is often not only driven by the design community but by other stakeholders, like hiring managers or c-level leadership.
 
-So there are no clear definitions of what to call what we do and ourselves, just a set of interconnected terms that enable us to have a conversation.
+So there are no clear definitions of what to call what we do, and what we call ourselves, just a set of interconnected terms that enable us to have a conversation most of the time.
 
 The following is how I think about this stuff. Not claiming to be the authority, but wanted to have a consistent terminology for myself. Obviously, my perspective is that of tech product companies working on software products and services, other industries or company types might have different terms.
 
@@ -29,9 +29,11 @@ Sometimes I only write designers, when I really mean a person who is part of the
 
 Designers create things like user flows, wireframes, and UI designs and spend most of their time in Figma, though they could do a bunch of other things, like research, workshops, design systems, prototypes, and maybe even some light front-end coding.
 
-While I use the generic term designer, most often I talk about product designers specifically, people who work on products or services for the company.
+While I use the generic term designer, most often I mean product designers, people who design products or services for the company.
 
 I prefer the term product designer over UX designer. First, this aligns with other terms like product management or product development. Second, owning UX puts too much on the designers and ignores the fact that a lot of decisions by other teams, like engineering, impact performance and thus impact UX a lot, so it's not fair to put it only on the design team. Third, there is even a question if UX can be intentionally designed, or if it's more of an emergent thing, especially for more complex software.
+
+Side question would be - so who owns the UX? I'd argue it's a cross functional thing - design team can be responsible (just as for example engineering is responsible for reliability), but it needs to be recognized that the design needs leverage to be able to impact UX. UX goes waaay beyond the UI and look&feel.
 
 There are also a bunch of disciplines that might have their own specialists, like UI designers, or interaction designers. A product designer would be a generalist knowing some of everything.
 
