@@ -9,5 +9,7 @@ $serif: 'IBM Plex Serif', Georgia, Times, serif !default;
 $sans-serif: 'IBM Plex Sans', Georgia, Times, serif !default;
 $monospace: 'IBM Plex Mono', Georgia, Times, serif !default;
 
+$header-font-family: $serif !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
