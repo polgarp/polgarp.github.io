@@ -39,27 +39,30 @@ Service designers are a special thing, in some orgs they do something very simil
 
 ### Researchers
 
-Researchers talk to users, collect and analyze data, and create artifacts. They could also project manage, run workshops, work on interaction models, set up experiments, etc.
+Researchers talk to users, collect and analyze data, helps the org to learn about customers, and create artifacts to facilitate understanding. They could also project manage, run workshops, work on interaction models, set up experiments, etc.
 
-They could be called UX or user or design researchers. I do prefer UX research though. While UX is hard to design for, it makes sense that it can be investigated, understood, and evaluated. User research sounds to focus too much on the users themselves, rather than the use and the context of use. Design research on the other hand sounds like focusing too much on the artifacts and validation. Compared to user and design, UX research also sounds more connected to the things the company does.
+They can be called UX or user or design researchers. I do prefer UX researcher though. While UX is hard to design for, it makes sense that it can be investigated, understood, and evaluated. User research sounds to focus too much on the users themselves, rather than the use and the context of use. Design research on the other hand sounds like focusing too much on the artifacts and validation. Compared to user and design, UX research also sounds more connected to the things the company does.
 
 There is also market research, which is usually a marketing function, with a different function - though UX researchers should be able to do some marketing research.
 
-As research matures, there is always the question of why it's not more cross-disciplinary and less connected to the design team, which is a fair question. I'd love to see more research teams that bring together market researchers, user researchers, and data analysts, enabling more strategic level research - but not many organs I know of succeeded in this.
+As research matures, there is always the question of why it's not more cross-disciplinary and less connected to the design team, which is a fair question. I'd love to see more research teams that bring together market researchers, user researchers, and data analysts, enabling more strategic level research - but not many orgs I know of succeeded in this.
 
 ### Verb vs Noun (Design vs Designer and Research vs Researcher)
 
-Sometimes I talk to people, who think only designers design. Sometimes I talk to people who think everyone designs. This confuses. 
+Sometimes I talk to people, who think only designers design. Sometimes I talk to people who think everyone designs. 
 
-In short, I do think everyone designs (verb) the product, as everyone participating is making decisions that have an impact on the final product. Also, things like system architecture are designed (with usually little input from designers). Designers shouldn't feel worried about not owning this verb. Designers still create the design (noun) - driving, leading, facilitating, doing - designing it. 
+In short, everyone designs (verb) the product, as everyone participating is making decisions that have an impact on the final product. Also, things like system architecture are designed (with usually little input from designers). Designers shouldn't feel worried about not owning this verb. Designers still trained to create the design (noun) - driving, leading, facilitating, doing - designing it. 
 
-But the fact that "everyone is a designer" doesn't mean that everyone would participate equally (or participate at all) in making decisions about user flows, layout interaction details, or typography. Good designers include others but keep their hands on the driving wheel.
+But the fact that "everyone is a designer" doesn't mean that everyone would participate equally (or participate at all) in making decisions about user flows, layout interaction details, or typography. Good designers include others but keep their hands on the driving wheel. 
 
 With research, it's even more muddy. Product managers should talk to users and do their research. Sales teams research customers too, and so do some other teams. This doesn't mean it's the same research as a UX researcher would do, and ideally, product teams should have access to multiple types of research that supports their discovery process. There is no role conflict here, just researchers shouldn't grip too tightly researching (the verb). 
 
+Also, great design teams look to increase their impact, meaning they'll teach others how to work with design and research, enabling themselves to focus where deeper expertise is needed. This is how design gets more infused into an org's thinking.
+
 ### Summary
 
-In short, I prefer:
+In short, I prefer calling things as:
 - Design team = team of designers, researchers, and other people supporting them.
 - Designers = product designers.
 - Researchers = UX researchers.
+- Everyone can design and research to get to a design or research, this enables designers and researchers to focus where their expertise is most needed and can have the highest impact.
