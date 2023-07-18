@@ -28,3 +28,7 @@ https://mailchi.mp/22e97ce2d9e6/open-registration-20209974?e=f1fa6b50e7
 
 https://www.linkedin.com/feed/update/urn:li:activity:7074376898830573568/
 
+https://cutlefish.substack.com/p/tbm-231-productivity-the-clash?utm_source=substack&utm_medium=email
+
+
+
