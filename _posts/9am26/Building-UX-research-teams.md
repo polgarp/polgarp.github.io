@@ -49,3 +49,5 @@ https://dscout.com/people-nerds/foundation-dynamic-ux-team
 https://dscout.com/people-nerds/building-your-best-team
 
 https://gregg.io/on-the-right-path
+
+https://dscout.com/people-nerds/scaling-your-uxr-team
