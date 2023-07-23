@@ -46,10 +46,20 @@ There will be conflicts. So provide spaces to have the discussion - structuring 
 
 # 🍪 Things to snack on
 
+The better understand the role of a design leader, [Coach, Diplomat, Advocate, Architect: The Four Archetypes of the Design Leader](https://www.youtube.com/watch?v=NJCUti7XSD8) is an awesome talk by **Peter Merholz**. For managing the team, the first part talking about being a coach is useful, as it gives a great overview on the role of being a leader specific to design teams. This is useful for managing both researchers and designers.
+
+<p style="text-align: center;">🀲</p>
+
+Intercom's [**How to have impact as a designer**](https://www.intercom.com/blog/product-designer-impact/) by **Paul Murphy** gives a good framework to think about designer's performance, though this can be used for researchers too. Impact considerations (this is where the article focuses) and collaboration expectations should be fairly similar for both researchers and designers, while leadership differs, as what can be considered quality of work.
+
 <p style="text-align: center;">🀲</p>
 
 The most important part of managing UX researchers is making sure they get questions that they can answer, as **Yaron Cohen** argues in [**How to manage UX researchers**](https://bootcamp.uxdesign.cc/how-to-manage-ux-researchers-15e0f85dcf36). This means helping shaping questions, making sure there is available data (for example ensuring a budget to recruit participants, or enable access to users), and providing a context for their inquiry. The article has a few more rules of thumb regarding performing research.
 
+<p style="text-align: center;">🀲</p>
+
 **Jim Ross** writes about skills important to researchers in [**Qualities of Effective User Researchers**](https://www.uxmatters.com/mt/archives/2017/11/qualities-of-effective-user-researchers.php), both soft skills (like pragmatism or ability to learn quickly) and research skills (like effective note taking or writing skills). This is a good starter list to see what to focus on when coaching researchers. 
 
-Intercom's [**How to have impact as a designer**](https://www.intercom.com/blog/product-designer-impact/) by **Paul Murphy** gives a good framework to think about designer's performance, though this can be used for researchers too. Impact considerations (this is where the article focuses) and collaboration expectations should be fairly similar for both researchers and designers, while leadership differs, as what can be considered quality of work.
+<p style="text-align: center;">🀲</p>
+
+Thinking about what usually doesn't work is a good exercise to figure out what to focus on, and this goes for helping designers. **John Zeratsky** wrote a nice list of issues designers face in [**8 common dysfunctions of design teams—and what to do about them**](https://www.invisionapp.com/inside-design/common-dysfunctions-design-teams/). I liked polishing a brick (working on small details of a product with uncertain value) and starting with solutions the most, seeing these often at work in designers' work.
