@@ -19,7 +19,7 @@ Product designers and UX researchers have different mindsets, skills, and commun
 
 # ☕ Managing designers and managing researchers
 
-(Thanks for the topic idea, David Udvardy!)
+(Thanks for the topic idea, Dávid Udvardy!)
 
 For most of my time as a design leader, I've been managing both researchers and designers. People management is pretty similar between the two roles, but there are a few notable differences.
 
