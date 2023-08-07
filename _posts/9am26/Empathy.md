@@ -17,32 +17,39 @@ header:
 
 (Thanks for the topic idea, Jakob Christoffersen!)
 
-Empathy is such a buzzword, as design teams like to think 
-It's also a spicy topic, since empathy is not that well understood.
+Empathy has been, and remains a buzzword. Often included in job descriptions for UX, design and research related roles. As a call to the broader design industry to focus on the users. A key skill that differentiates unethical technology bros from humane designers. 
 
-Empathy is the ability to understand and share the feelings of another person. In the design process, empathy is essential for understanding the needs and wants of users. When designers have empathy for their users, they are better able to create products that are user-friendly, effective, and enjoyable to use.
+Design teams also like to describe themselves as the team advocating for users. Meaning acting with empathy is a sort of role-based competence that other functions don't have. But why couldn't we raise the empathy of others?
 
-While usually design carries the torch of empathy, they might have a hard time what exactly mean. And it might be even harder to tell the other teams to articulate why it's important.
+While it's true that empathy is important, it's often not that well understood what it exactly means. And especially how to get better at it. If a design team has the goal of making their wider organization more user-centered, they should also think about how they use empathy, and how they can teach the wider org to get better at empathy.
 
-Empathy in teams (which also improves the skills) and empath as part of the design process
+To advocate for more empathy, design teams also need to understand how it contributes to their design process. This helps in articulating to the other teams why it's important and how to work with it.
+
+Empathy is the ability to understand and share the feelings of another person. In the design process, empathy is essential for understanding the needs and wants of users. Here is where understanding gets important - just sharing feelings leads to sympathy with little actionable insights.
+
+Teams adopting the design thinking process, sometimes just point at the first step (Empathize!) as the key point where they understand the users - usually with some user research methods. But obviously using empathy in the beginning in the process is not enough, besides the right methods the right mindset is more important.
+
+Since we are creating products for people to be used, things should start with the users. What are their needs? What are their goals? What are their pain points? There also needs to be respect for their time and attention - both during the design process and in the products we create. Finally understanding is not a single act, feedback from users drives further iterations ti make things better.
+
+So start with the users, respect, iterations - these need to be grounding points towards empathizing. To make this happen team members need to be open minded, respectful and willing to listen - these are qualities that are difficult to coach, but can be improved while improving a team's empathy levels.
+
+Building on the mindset, empathy is useful in a few ways. It helps the team understanding the user's
+- Goals: What are they trying to achieve? What are their motivations? 
+- Pain points:  What are the things that are getting in their way?
+- Context: How is their environment? What are their constraints?
+- Emotions: How do they feel when they use your product? What emotions are they trying to achieve?
+
+Within the design process empathy applies to getting a better understanding of the users, and bringing that information to energize, motivate the team and also to enable better design decisions. The most common steps or methods include:
+-  User research: Gathering information about the users of a product or service through interviews, surveys, and observation etc. The goal of user research is to understand the users' needs, wants, and pain points.
+-  Personas: Representations of users created by combining information from user research and other sources. Personas can be used to express and visualize users' needs and wants on a deeper level.
+-  User journey mapping: Understanding the user's experience with a product by mapping out the steps that a user takes when interacting with a product. Helps to identify potential problems and areas for improvement.
+-  Empathy mapping: Understanding the user's emotions and motivations by creating a map of the user's thoughts, feelings, and actions at different points in their interaction with a product or service. Empathy mapping can help designers understand the user's perspective and create a more user-friendly experience.
 
 
-It's the first step in the design thinking process, so teams adopting it as an approach could easily think they empathise with users, when in fact they only. 
-  
-Empathy is applied within a design process in a number of ways, but the most common steps or methods include:
-
-1.  **User research:** This is the process of gathering information about the users of a product or service. This information can be gathered through interviews, surveys, and observation. The goal of user research is to understand the users' needs, wants, and pain points.
-2.  **Personas:** Personas are fictional representations of users. They are created by combining information from user research with the designer's own insights. Personas can be used to help designers understand the users' needs and wants on a deeper level.
-3.  **User journey mapping:** User journey mapping is a way of understanding the user's experience with a product or service. It involves mapping out the steps that a user takes when interacting with a product or service. User journey mapping can help designers identify potential problems and areas for improvement.
-4.  **Empathy mapping:** Empathy mapping is a technique for understanding the user's emotions and motivations. It involves creating a map of the user's thoughts, feelings, and actions at different points in their interaction with a product or service. Empathy mapping can help designers understand the user's perspective and create a more user-friendly experience.
-
-These are just a few of the ways that empathy can be applied within a design process. Here are some additional tips for applying empathy in the design process:
-
-* **Be open-minded:** When you are gathering information about users, be open to hearing their thoughts and feelings, even if they are different from your own.
-* **Be respectful:** Remember that the user is the one who will be using your product, so it's important to treat them with respect.
-* **Be willing to listen:** Be willing to listen to the user's feedback and be willing to make changes to your design based on their input.
 
 
+
+While design usually focuses on empathy towards the users to support the design process, for leaders the problem is more widespread, as empathy within the team and organisation is important - as it makes the collaboration easier. So raising empathy is also important to build great teams.
 
 Besides the process, It helps on multiple levels, for users, for team members. It's great to develop
 Also empathy is a collaboration super skill. Better understanding other's situation also helps to make better consensus. 
@@ -72,7 +79,7 @@ Here are some specific activities that a design leader can do to help teach or h
 
 # 🍪 Things to snack on
 
-**Indy Young**'s [**Practical Empathy**](https://rosenfeldmedia.com/books/practical-empathy/) book (also, as [**conference talk**](https://indiyoung.com/conference-presentation-practical-empathy/)) is the single best resource to learn about empathy, how to get better at it, and how to apply it. As it's an essential skills to not only for designers, this can be useful to other functions too.
+**Indy Young**'s [**Practical Empathy**](https://rosenfeldmedia.com/books/practical-empathy/) book (also, as [**conference talk**](https://indiyoung.com/conference-presentation-practical-empathy/)) is the single best resource to learn about empathy, how to get better at it, and how to apply it. As it's an essential skill not only for designers, it's a recommended read to other functions too.
 
 <p style="text-align: center;">🁆</p>
 
@@ -80,7 +87,7 @@ Empathy is often just another vague word, **Sarah Gibbons** clarifies the depth 
 
 <p style="text-align: center;">🁆</p>
 
-A few nice examples to practice empathy by **Jennifer Winter** in [**Three Exercises to Teach Your Team Empathy**](https://uxbooth.com/articles/three-exercises-to-teach-your-team-empathy/). These exercises focus on learning about other people, understanding their situation and practice active listening. Similar practices can be easily added to team meetings.
+A few nice examples to teach and practice empathy by **Jennifer Winter** in [**Three Exercises to Teach Your Team Empathy**](https://uxbooth.com/articles/three-exercises-to-teach-your-team-empathy/). These exercises focus on learning about other people, understanding their situation and practice active listening. Similar practices can be easily added to team meetings.
 
 <p style="text-align: center;">🁆</p>
 
@@ -92,7 +99,7 @@ I liked this short one from **Dan Saffer**: [**In Design, Empathy is Not Enough*
 
 <p style="text-align: center;">🁆</p>
 
-While design teams often advocate for empathy a lot, it's interesting to see how other functions take empathy seriously, like in **Zafeer Rais**'s [**The most important product manager skill: empathy**](https://bootcamp.uxdesign.cc/product-manager-and-empathy-f7f886616ee1). Rais describes how empathy can be showcased towards users, customers, engineer & design teams, stakeholders, the company overall and yourself.  
+While design teams often advocate for empathy, it's interesting to see how other functions take empathy seriously, like in **Zafeer Rais**'s [**The most important product manager skill: empathy**](https://bootcamp.uxdesign.cc/product-manager-and-empathy-f7f886616ee1). Rais describes how empathy can be showcased towards users, customers, engineer & design teams, stakeholders, the company overall and yourself.  
 
 <p style="text-align: center;">🁆</p>
 
