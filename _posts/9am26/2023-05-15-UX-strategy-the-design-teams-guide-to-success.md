@@ -25,7 +25,7 @@ Strategy is one of those words we talk about a lot, but the exact meaning stays 
 
 Depending on the context, strategy means different things. For a designer working on the product, it's more about how the opportunity at hand would be explored, what steps, in what order, with what methods would be used, and how the problems and solutions would be discovered. On a design team level, it's more about what practices to do, how to evolve the team, what projects the team should be taking on, and what would drive decisions.
 
-Either way, a strategy in essence is a goal, a vision of a different and desired future state and the way, what good looks like, and the approach taken to get there. Not a list of projects or a roadmap of todos, but rather intention, direction, and a plan of play. 
+Either way, a strategy in essence is a goal, a vision of a different and desired future, what good looks like, and the approach taken to get there. Not a list of projects or a roadmap of todos, but rather intention, direction, and a plan of play. 
 
 Besides this, for product design teams good strategy also helps to determine what to focus on, what not to focus on, and which path to take to increase their impact. For example, most design teams would have the ambition to increase the user-centeredness of their respective orgs, and strategy charts the way there.
 
