@@ -4,6 +4,7 @@ categories:
   - Newsletter
 tags:
   - Design leadership
+  - UX Strategy
   - 9am26
 header:
   overlay_image: /assets/images/2023-05-15-UX-strategy-the-design-teams-guide-to-success.jpg
