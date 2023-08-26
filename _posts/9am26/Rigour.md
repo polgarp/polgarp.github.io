@@ -69,7 +69,7 @@ For design leaders hiring researchers a few things to keep in mind to watch for 
 - Does the candidate appear systematic, organized and detail-oriented? 
 - Can the candidate communicate effectively both about their research practice and about their findings? "* How do you collaborate with other stakeholders to ensure that research is used to make informed decisions?" and "* How do you communicate research findings to stakeholders in a clear and concise way?"
 
-Asking about approach, biases, reflections helps uncovering these.
+At the end of the day, the true value of user research rigor for product development is that it can help to ensure that products are designed and developed with the needs of users in mind. Which in turn leads to better products.
 
 ### 🥤 To recap
 
