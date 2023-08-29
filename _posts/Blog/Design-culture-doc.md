@@ -2,6 +2,8 @@ My sets of principles on how we do things.
 
 Principles for product design
 
+- Everything should have a clear reason. Every research, every design decisions. Reasons should flow within the design process.
+
 Principles for design teams
 
 - Heist teams win
