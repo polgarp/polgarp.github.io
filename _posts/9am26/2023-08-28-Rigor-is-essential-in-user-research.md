@@ -29,7 +29,7 @@ It's almost always better to talk to users, learn about them, and involve them i
 
 But it's also better to do this the right way, as the opposite would be just reinforcing biases, seeking validation for opinions rather than seeking facts, and just generally leading to studies with uncertain outcomes and sentences like "We already knew this!". Orgs get user research theater and cargo cults if rigor is not kept - instead of better insights they would need.
 
-There needs to clarity of why research is done, how the research insights are generated, and how the insights support design and product decisions.
+There needs to be clarity of why research is done, how the research insights are generated, and how the insights support design and product decisions.
 
 Rigor in user research establishes this clarity, brings discipline to the research process, trust in the results, and builds the reputation of the researcher. It leads to informed decisions based on facts, trust in research findings, and just an overall improvement in the product's user experience.
 
