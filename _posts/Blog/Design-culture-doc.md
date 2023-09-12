@@ -13,3 +13,4 @@ Principles for design teams
 Principles for leadership
  
 - Lead with context
+- Every designer is a leader. Radical transparency helps them to learn from you.
