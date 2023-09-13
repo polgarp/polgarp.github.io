@@ -43,7 +43,7 @@ Service designers are a special thing, in some orgs they do something very simil
 
 Researchers talk to users, collect and analyze data, helps the org to learn about customers, and create artifacts to facilitate understanding. They could also project manage, run workshops, work on interaction models, set up experiments, etc.
 
-They can be called UX or user or design researchers. I do prefer UX researcher though. While UX is hard to design for, it makes sense that it can be investigated, understood, and evaluated. User research sounds to focus too much on the users themselves, rather than the use and the context of use. Design research on the other hand sounds like focusing too much on the artifacts and validation. Compared to user and design, UX research also sounds more connected to the things the company does.
+They can be called UX or user or design researchers. I do prefer UX researcher though. While UX is hard to design for, it makes sense that it can be investigated, understood, and evaluated. User research sounds to focus too much on the users themselves, rather than the use and the context of use. Design research on the other hand sounds like focusing too much on the artifacts and validation. Both user and design research are parts of the broader UX research discipline. Compared to user and design, UX research also sounds more connected to the things the company does.
 
 Research is sometimes a scary word (sounds like something taking too much time), but I like that it implies at least some objectivity and rigor, which most product teams and product development process needs.
 
