@@ -7,13 +7,17 @@ tags:
   - 9am26
 header:
   overlay_image: /assets/images/.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
+  overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
+
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
 # ☕
+
+(Thanks for the topic idea, !)
+
 
 ### 🥤 To recap
 
@@ -21,6 +25,9 @@ header:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
+
+<p style="text-align: center;">🁃</p>
+
 * For design? (might be better articles around this) https://www.linkedin.com/pulse/peacetime-design-leader-wartime-dmitry-nekrasovski/
 * For engineering:https://www.linkedin.com/posts/gergelyorosz_wartime-stressful-times-vs-peacetime-activity-7045361529432530944-AXnJ/?originalSubdomain=gr
 
