@@ -1,6 +1,7 @@
 https://stephaniewalter.design/blog/create-better-conference-presentations-slides/
 
 
+https://blog.bensauer.net/posts/presenting-design-use-stories-not-real-estate-tours-a-conversation-with-jane-austin/
   
 The Art Of Deck Making (PDF), by [Aisha Hakim](https://www.linkedin.com/in/ACoAAAaLFTgBfKZ8LHaMiq5IWTQpCDgt0nQxICI)  
 https://lnkd.in/eg4ebZPj  
