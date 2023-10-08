@@ -1,5 +1,5 @@
 ---
-title: "e "
+title: "e35 "
 categories:
   - Newsletter
 tags:
@@ -14,7 +14,7 @@ header:
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
-# ☕
+# ☕ Develop your leadership style
 
 Style is important to me, since I see huge differences in how teams operate and indeed what they can achieve depending on how their leaders approach the design and research that needs to be done.
 
@@ -37,6 +37,8 @@ Teams, orgs and situations might also need different style - it's a good idea to
 Maybe a set of principles. Maybe a short manifesto. Maybe mission statement. Maybe a personal read.me.
 Show examples to highlight this might be also a string of case studies.
 
+How you handle your team, how you further the company's mission - and how you are inline with your own values to live a fulfileld and happy life - or at least without burnout.
+
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
@@ -44,28 +46,20 @@ Show examples to highlight this might be also a string of case studies.
 
 # 🍪 Things to snack on
 
-<p style="text-align: center;">🁃</p>
+Design leaders might be expected to behave a certain way, but not being true to oneself might actually hold back leaders to reach their full potential. **Matthew Godfrey** writes about this aspect of leadership in [**Design Leadership: On being your genuine self**](https://uxdesign.cc/design-leadership-series-on-being-your-genuine-self-a8593951a183/). Finding one's true self behind the mask of assumed leadership and bringing one's whole self to work helps in being more authentic, getting more respect and creates a sense of safety.
 
-https://nesslabs.com/servant-leadership/
+<p style="text-align: center;">🁋</p>
 
-https://situational.com/blog/the-four-leadership-styles-of-situational-leadership/
+**Lara Hogan**'s [**Leadership Style Colors**](https://larahogan.me/blog/leadership-style-colors/) is both a nice introduction into leadership styles, and a way of describing it that might be attractive to design leaders - as shifting colors symbolizing different stances. This also offers a way to choose the right color in different situations. The article also has some nice exercises to figure out one's own colors of leadership style. Hogan also has a simple one-pager madlib to describe one's leadership style: [**Management / leadership philosophy worksheet**](https://larahogan.me/resources/philosophy.pdf/) for her book, Resilient Management. 
 
-https://zapier.com/blog/management-styles/
-
-https://www.ted.com/talks/lorna_davis_a_guide_to_collaborative_leadership/
-
-https://uxdesign.cc/design-leadership-series-on-being-your-genuine-self-a8593951a183/
-
-https://intenseminimalism.com/2015/the-six-styles-of-leadership/
-
-https://larahogan.me/blog/leadership-style-colors/ and https://larahogan.me/resources/philosophy.pdf/
-
-https://medium.com/servant-leadership/failure-as-a-service-937473b0c9b8/
+<p style="text-align: center;">🁋</p>
 
 I found **Justin Baker**'s [**The 7 Design Leadership Styles — Which one are you?**](https://medium.muz.li/the-7-design-leadership-styles-which-one-are-you-927977468f78/) list a useful baseline overview on some of the styles for designers, and how they differ. The seven styles mentioned are: Affiliative, Autocratic, Democratic, Laissez-Faire, Strategic, Transformational, and Transactional. These styles are probably not something a new leader should follow, but rather archetypes that can be used to figure out and develop the story of one's personal leadership style.
 
-The personal design leadership approach, [**my leadership philosophy and approach.**](http://www.jerrodlarson.com/my-leadership-approach/) by **Jerrod Larson** focuses on the specifics of design leadership, details how UX fits into the broader business context, and how it applies managing designers and researchers. The article highlights how design leadership and management differs from other disciplines, as there cannot be a generalist design manager, people leading design teams always need to be experts in UX.
+<p style="text-align: center;">🁋</p>
 
 I love reading about how other designer leaders present their secret sauce. **Brendan McWeeney**'s [**You may not be my leader: my personal philosophy on design leadership**](https://uxdesign.cc/you-may-not-be-my-leader-my-personal-philosophy-on-design-leadership-54359c3258e5/) is a particularly interesting example, as the article also details the process McWeeny went through to figure out his leadership philosophy starting from experience and fitting it to an established leadership model.
 
+<p style="text-align: center;">🁋</p>
 
+The personal design leadership approach, [**my leadership philosophy and approach.**](http://www.jerrodlarson.com/my-leadership-approach/) by **Jerrod Larson** focuses on the specifics of design leadership, details how UX fits into the broader business context, and how it applies managing designers and researchers. The article highlights how design leadership and management differs from other disciplines, as there cannot be a generalist design manager, people leading design teams always need to be experts in UX.
