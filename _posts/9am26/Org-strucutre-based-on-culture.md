@@ -19,9 +19,6 @@ header:
 tradeoffs when setting up a design org - how should designers work
 
 
-(Thanks for the topic idea, !)
-
-
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
