@@ -28,6 +28,13 @@ tradeoffs when setting up a design org - how should designers work
 
 <p style="text-align: center;">🁃</p>
 
-Kim Godwin's company culture types also tells you how to set up your org.
+https://orgdesignfordesignorgs.com/ book
+
+https://www.youtube.com/watch?v=cTs89MU3PCw Kim Godwin's company culture types also tells you how to set up your org.
 
 https://joshuaburgin.substack.com/p/golden-rules-for-organizational-structure
+
+https://uxdesign.cc/designing-a-new-ux-team-7ffdb6c33b63
+
+https://www.nngroup.com/articles/ux-team-models/
+
