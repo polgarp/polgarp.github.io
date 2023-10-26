@@ -14,7 +14,7 @@ header:
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
-# ☕ Growing designers
+# ☕ Nurturing designer and researcher careers
 
 Mentoring vs coaching.
 
@@ -26,3 +26,16 @@ Mentoring vs coaching.
 # 🍪 Things to snack on
 
 <p style="text-align: center;">🁃</p>
+
+https://medium.com/design-leadership-notebook/the-designers-growth-model-8240dafb7137
+
+https://www.youtube.com/watch?v=BW2yC0hbxPY
+
+https://www.mindtools.com/a0bop9z/the-learning-zone-model
+
+<https://medium.com/ingeniouslysimple/levelling-up-the-design-org-b52f9e5080a>
+
+<https://www.mindtheproduct.com/how-am-i-doing-thoughts-on-evaluating-product-managers/>
+
+
+coach, mentor, grow, level, develop, career, progress, senior, raise, nurture, advance
