@@ -32,8 +32,13 @@ Difference per levels:
 - medior: help find voice and confidence, design critique, leading practice, coaching
 - senior: taking more in their own hand, partnership, leading projects and initiatives
 
-  GROW is a tool that is always useful to get started from. This both helps in a larger scale (career) and smaller (what to learn next). I tend to do a broader examination on what's the purpose or long-term career goals, but especially for juniors this might be harder to grasp and it's better to focus on just a few next steps.
+GROW is a tool that is always useful to get started from. This both helps in a larger scale (career) and smaller (what to learn next). I tend to do a broader examination on what's the purpose or long-term career goals, but especially for juniors this might be harder to grasp and it's better to focus on just a few next steps.
 
+### 🚲 Questions to consider
+
+- Where are people in their career journey?
+- What help do they need? What can you provide, what will need others to provide?
+  
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
