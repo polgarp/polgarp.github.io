@@ -1,3 +1,5 @@
+https://gds.blog.gov.uk/2016/04/07/giving-clear-presentations/
+
 https://stephaniewalter.design/blog/create-better-conference-presentations-slides/
 
 
