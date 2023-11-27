@@ -14,20 +14,48 @@ header:
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
-# ☕ Maturity
+# ☕ Maturity models help formulating what good looks like
 
-A quite challenge thing for design leaders is to understand where they are. Ther are always fires to put out, but once obvious improvements are done, it might unclear how we are doing. This is where maturity models might help, they act as a benchmark and heuristic on what's next, help form a vision.
+A key task for any design leader is to know what good looks like. For the design work itself, how their team operates, and for how their organization works with design. That is, having a clear idea what delivering positive business value would be.
 
-A hauristic to consider baseline, where are we?
+There are plenty of ways of viewing what the positive business value could be. It's the impact and outcomes of the team, how do they work with others, how strong is design's influence to steer the company toward being human-centered, and probably also what is the ideal environment for happy and fulfilled designers and researchers.
 
-Research shoould be a key driver.
+In short, this is called maturity. That is, the wider organization's desire and ability to successfully deliver good outcomes (following NN/g's definition). In the case of product design good outcomes would mean delivering user-centered design.
 
+Maturity is one of those concepts where everyone feels what it is, but at the same time it's difficult to nail down what it means in practice. Maturity models intend to make the vague sentences like "our company is less mature when it comes to design" a bit less vague.
 
-I find it a very interesting parallel to career ladders: we have aspects (competencies to aim for) and stages (levels like junior and senior), just as career ladders, the information is more of a snapshot, while growth is continuous. A difference is, that's much less clearer what needs to be done, and maturity models work for a whole organization, things are more specific and need to be more nuanced. 
+While models might capture useful ideas to think about (such as the progression of the organization to be better at designing great products), the scope can be fuzzy, and the granularity too general. 
+
+Fuzzy scope is why design teams struggle to improve - working towards more mature UX needs an understanding of other teams too. Getting more mature in UX is not a silver bullet to solve perceived problems for the design team, it's a more general endeavor. 
+
+Granularity is what keeps the models from being useful to many team members. Across larger teams (so anything more than 2-3 designers) maturity will depend on the what's happening in each of the product teams. As teams will have different people in it, the maturity will be also not homogeneous. The average of maturity is not that helpful.
+
+Another challenge for maturity models is that since maturity is often expressed via what practices are done and in what quality, measurement and descriptions in maturity models are also more focused on the tactical level. Does the team do usability test regularly? Are there designer executives? Does the team have a design system? These are interesting questions, but more about symptoms and not root causes. To make a plan, further investigation is needed, and an understanding what the evaluation's results mean for the team.
+
+So how do maturity models help?
+
+When I used a maturity model, I worked at a fairly mature team, and while we had a lot of ideas on what to focus on next, we were not sure what should we choose. A detailed maturity evaluation gave us a new perspective and a framework to what to focus on next. Since our strategy emerged from a broader range of discussion, the maturity evaluation was useful to anchor and reinforce ideas, and as a way to provide measurement on how well we are progressing over time.
+
+In general, this is where using a maturity model is helpful. They provide a framework for a holistic view on what's going on, what the team is lacking, the evaluation results are a good conversation starter, and progress can be hopefully shown through repeated measurements. They are an input into the design org's strategy.
+
+Maturity models also seem to be filling a gap for the missing design orchestration tool. Design leaders don't have great tools for coordinating and aligning the activities of multiple team members and stakeholders to execute on a strategy and achieve goals. Bringing together people, processes, and tools to ensure that the design process runs smoothly and effectively is complicated and needs a lot of effort to get right. All this in the context of challenging organizations with ever-growing expectations.
+
+While maturity models are not the one-stop solution for all of the orchestration needs, they are a good heuristic to start with as they show what good and especially what better could be. 
 
 ### 🚲 Questions to consider
 
+- How is the design team doing?
+- What should the design team focused on improving in it's practice next?
+- Did the improvements to our practice we've been making have the right outcomes and impact?
+- What would the right impact to aim  for our team at this organization?
+
 ### 🥤 To recap
+
+- Design maturity encompasses the overall effectiveness of a design team and its ability to deliver positive business value.
+- Maturity models can be helpful tools, but they also have limitations, they may not be granular enough to be truly useful for to set a strategy forward.
+- Design maturity is not a silver bullet for solving all of a design team's problems, but it's a helpful set of heuristics.
+- Maturity models can be used to identify areas for improvement and drive positive change in design organizations. They can also be used to track progress over time.
+- Maturity models can contribute to improving design orchestration within organizations.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
