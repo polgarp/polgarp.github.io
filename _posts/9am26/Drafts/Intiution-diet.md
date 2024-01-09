@@ -1,0 +1,1 @@
+Informing your intuition is important, but you need a balanced diet just like in food. Insights from users, dogfeeding are the most important, using competitors, using not competitors, understanding the business, understanding the economy (news, cultural changes).
