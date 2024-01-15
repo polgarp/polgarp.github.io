@@ -31,6 +31,6 @@ As one could expect, since Joplin is an open-source tool, the experience is bare
 - Since Joplin workspace doesn't synchronize (just the notes), each device needs to be set up with plugins and settings separately.
 - Search, filter, list options are less refined.
 
-  On the plus side, synchronizations seems better than Evernote, clipping from the web is almost instantaneous, direct-to-markdown clips also seem much more usable than the sometimes HTML-ridden mess Evernote's clipper produced, and there are some really useful plugins.
+On the plus side, synchronizations seems better than Evernote, clipping from the web is almost instantaneous, direct-to-markdown clips also seem much more usable than the sometimes HTML-ridden mess Evernote's clipper produced, and there are some really useful plugins.
 
 But overall, pretty impressed with Joplin, and while I keep my Evernote account open (have a couple of months left from my subscription), I haven't opened it since I started to use Joplin full-time.
