@@ -24,13 +24,13 @@ Migrating from Evernote to Joplin is super easy. Just export notebooks from Ever
 
 As one could expect, since Joplin is an open-source tool, the experience is bare-bones. Some things I've noticed:
 - Working with a high number of tags is difficult (no way to search or filter).
-- Web clipping offers no preview and adding tags is a bit cumbersome (on the plus side clipping works pretty well, so previewing is not so important).
+- Web clipping offers no preview (on the plus side clipping works pretty well, so previewing is not so important).
 - No easy way to work with multiple notes at the same time (there is a plugin for a note tabs at least).
 - I've had note automation in Evernote with Zapier, but there is no easy way for creating notes automatically in Joplin (subscribing to Joplin cloud provides email to notes as a workaround).
 - Notelist width needs to be constantly adjusted, as longer note titles don't wrap.
 - Since Joplin workspace doesn't synchronize (just the notes), each device needs to be set up with plugins and settings separately.
 - Search, filter, list options are less refined.
 
-  On the plus side, synchronizations seems better than Evernote, clipping from the web is almost instantenious. 
+  On the plus side, synchronizations seems better than Evernote, clipping from the web is almost instantaneous, direct-to-markdown clips also seem much more usable than the sometimes HTML-ridden mess Evernote's clipper produced, and there are some really useful plugins.
 
 But overall, pretty impressed with Joplin, and while I keep my Evernote account open (have a couple of months left from my subscription), I haven't opened it since I started to use Joplin full-time.
