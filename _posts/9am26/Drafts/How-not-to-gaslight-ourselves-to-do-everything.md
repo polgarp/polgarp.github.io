@@ -1,0 +1,1 @@
+There are so many thigns we can do, and that might need doing, like collecting insights, talkign to users. How to make sure we are doing the most important thing right now?
