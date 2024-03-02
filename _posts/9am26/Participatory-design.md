@@ -44,5 +44,5 @@ https://uxmag.com/articles/participatory-design-in-practice
 
 https://www.imaginarycloud.com/blog/participatory-design/
 
-https://uxdesign.cc/participatory-design-in-practice-bf5bfe3f529
+This is not a thing. https://uxdesign.cc/participatory-design-in-practice-bf5bfe3f529
 
