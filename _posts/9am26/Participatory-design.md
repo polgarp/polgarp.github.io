@@ -11,37 +11,41 @@ header:
   show_overlay_excerpt: false
 ---
 
+Designers might describe their approach as designing, but more often than not it's more facilitating as the modern design process calls for participation not only from team members, but also from internal stakeholders, users and even people not using our products but affected by it.
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
-# ☕ Participatory design
+# ☕ Facilitating participatory design
 
-Often describe role as facilitating or driving. Simply, since designers on hand pdon't have all the info (at the minimum product managers know more about the business, engineers about our current system and users about their own workflow), and in general genious design is a myth.
+I often describe the main style of working for designers as facilitating or driving, in contrast to designing. What this means is designers shouldn't do it alone, creating products is a team effort. 
 
-In many ways the ideals of participatory design fused into modern UX appraoches,
-But the challange remains how to involve others in our process, so it's worth taking a deeper look how to enable participation.
+It's not practical for them to absorb every piece of important information themselves. At the minimum product managers would know more about the business and market, while engineers would know more about the capabilities of the current system and what's feasible to add. The image of a genius designer figuring out everything alone is a myth when it comes to actually deliver products.
 
-So facilitating beyond the design team, beyond the product team, beyond the company and beyond the users. 
+This also goes beyond the immediate product team. Other stakeholders' perspective from the commercial teams (like marketing or sales) need to be included, as people's from outside the company such as users.
 
-There is a balance to be kept here, while going beyond the design team is table stakes, beyond the product team (like raching out to other orgs) brings more difficulty, might need more experience and knowle4dge of the political landscape to handle, while bringing in users might be challanging logistics and going beyond is rarely understood as valuebe - but something we as designers should do more often ot understand the impact of our design work.
+Everyone's input adds to the design process in various ways, and to make this effective, proper facilitation is needed, hence the designer's role expanding from the more immediate details of production work. So a designer facilitating the design process goes beyond the design team, beyond the product team, beyond the company and even beyond the users. Each of these steps is a way to level up one's approach to creating products.
 
+Including users and other outside stakeholders in the process is usually called participatory design. Though I like to think inviting anyone into a design process should be a call for participation and not only a vague request for feedback or approval. 
 
-This is also a great strategy to make our approach more user centered
+But obviously the most important invitation should be extended towards users. If the difference between art and design is having an objective intention, the difference between a design process not having or having users invited is surely practicality. Being user-centered goes beyond simple moral concern, it's the most viable and practical way to create successful products.
 
-Som frame participatory design as a way to do user research - which is wrong, it's an approch to design. If design without purpose is art, design without users is just rehearsal.
+What's great that in many ways the ideals of participatory design are fused into modern UX approaches. It's getting rare to question if input is needed from stakeholders or users. But it remains a challenge how to involve others in our process.
 
-Workshops!
+One challenge is that other disciplines and most people are not trained in design, and even after years of working on software problems and with designers, might not have the language to articulate a design rationale.
 
-But problem is also how other disciplines are not trained in design and even after years of workin on software problems and with designers might not have language to articulate design rationale.
+This is where facilitating comes in. It helps designers inquire the right way, interpret the answer, and enrich their creative process. 
 
-But this is where facilitation comes in, ask the right way, interpret and let it enrich your creative process.
+I also like to call this working style as facilitation, as participatory design is almost always done through workshops. While every type of workshop needs some facilitation, the broader the range of included people, the more thoughtful facilitation matters.
 
+There is also a balance to be kept in how far we are reaching out to include people. Going beyond the design team is table stakes, every designer should be closely working with their partners from product and engineering. Reaching beyond the product team (like other orgs) might need more knowledge of the internal political landscape. While bringing in users might be challenging logistics. Going beyond the immediate users is rarely understood as valuable - but it's something we as designers should do more often to understand the impact of our design work.
 
-
-
-### 🚲 Questions to consider
+Participatory design is not only a way to enrich the design process, it's also a strategy to make the approach more user-centered. With users in the room and in the process, it's harder to ignore their needs, and helps us to keep them in the focus.
 
 ### 🥤 To recap
+- Designers should choose collaboration over solitary work, involving diverse stakeholders from within and outside their org.
+- Participatory design, facilitated by designers, integrates input from various teams and users to enhance product outcomes.
+- Facilitation is crucial in navigating input from non-designers, enriching the creative process, and ensuring user needs are addressed.
+- Despite challenges, such as understanding internal dynamics and involving non-designers, participatory design remains key for creating user-centered products.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
