@@ -53,16 +53,24 @@ Participatory design is not only a way to enrich the design process, it's also a
 
 # 🍪 Things to snack on
 
-<p style="text-align: center;">🁃 d</p>
-
 [**Participatory design: Everything you need to know about it and how to use it**](https://pointjupiter.com/what-is-participatory-design-what-makes-it-great/) by **Ines Anić** and **Vibor Cipan** is a good overview on the topic and has a lot of useful tips on how to include users into the process, including detailed steps to run such a session.
+
+<p style="text-align: center;">🁏</p>
 
 **Maddie Brown**'s article, [**How and Why to Include Users in UX Workshops**](https://www.nngroup.com/articles/including-users-workshops/) shows how users can be invited into already established types of workshops the design team most probably is already doing. Having users in critical parts of the design process, such as a design studio or critique ensures the focus remains on the users.
 
+<p style="text-align: center;">🁏</p>
+
 Participation can be a useful tool in research too. **Nikki Anderson** writes about this in [**Come Together: Reasons to Include Participatory Design in Your Research Process**](https://dscout.com/people-nerds/participatory-design), starting with matching participatory research to the right research goals (creating journeys, understanding emotional responses, connections, and exploring concepts). The article has tips for each of these, with some additional notes on how to prepare for these sessions.
+
+<p style="text-align: center;">🁏</p>
 
 A mix between user research and visioning, [**Envision Future Products with Participatory Visioning Research**](https://dscout.com/people-nerds/participatory-visioning-research) by **Jaclyn Suzuki** is an interesting method. Usually research, so direct user input precedes the visioning activities, as a vision is as much internal looking as it's forward-looking. Involving users in later parts of the process might shift this focus more onto users. 
 
+<p style="text-align: center;">🁏</p>
+
 Loved the detailed walkthrough on doing a participatory design workshop by **Jennifer Davidson**, **Meridel Walkington**, **Emanuela Damiani** and **Philip Walmsley**, [**Reflections on a co-design workshop**](https://blog.mozilla.org/ux/2019/01/reflections-on-a-co-design-workshop/). Things like participant selection, working with them before and after the workshop, or establishing ground rules and roles, are all important learnings that are also useful to do for less diverse sessions. 
+
+<p style="text-align: center;">🁏</p>
 
 Four cool short case studies with some methods detail how things were done in [**Participatory Design in Practice**](https://uxmag.com/articles/participatory-design-in-practice) by **Olga Elizarova** and **Kimberly Dowd**. 
