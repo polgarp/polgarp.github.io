@@ -1,5 +1,5 @@
 ---
-title: "e42 "
+title: "e42 Facilitating participatory design"
 categories:
   - Newsletter
 tags:
