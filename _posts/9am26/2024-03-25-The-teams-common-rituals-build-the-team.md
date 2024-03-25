@@ -1,5 +1,5 @@
 ---
-title: "e43 Team rituals "
+title: "e43 The team's common rituals build the team"
 categories:
   - Newsletter
 tags:
@@ -7,16 +7,16 @@ tags:
   - Design teams
   - 9am26
 header:
-  overlay_image: /assets/images/.jpg
+  overlay_image: /assets/images/2024-03-25-The-teams-common-rituals-build-the-team.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
 
 When a design team is formed from individual designers, it needs to have certain rituals in place to grow into an actual team. Besides the usual suspects of alignment and communication, designers need these spaces to maintain a holistic view and be able to act as a team on the overall UX.
 
-{% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
+{% include figure image_path="/assets/images/2024-03-25-The-teams-common-rituals-build-the-team.jpg" alt="A repeating pattern of cake, digital art, generated with DiffusionBee" caption="A repeating pattern of cake, digital art, generated with DiffusionBee" %}
 
-# ☕ Team rituals
+# ☕ The team's common rituals build the team
 
 When I started leading a team, one of the first things I needed to figure out was how to make sure we were not just a team of designers but a design team. This means we have a common purpose, we support each other to act on the common purpose, which mostly means we work together on the overall UX, and we also help each other to grow and get better as designers. 
 
