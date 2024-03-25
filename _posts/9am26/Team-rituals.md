@@ -19,6 +19,8 @@ header:
 Ceremony or ritual
 Communication, align, 
 
+Offourse a lot of meetings could have been an email, but the thing is, reading something written takes a lot of discipline to get through and act on, plus a lot of thoughtful crafting from the writers side. Even if this seems cheaper (a common argument for not holding meetings), it might be more expensive for a lot of the middle stakes type of meetings.
+
 ### 🚲 Questions to consider
 
 ### 🥤 To recap
