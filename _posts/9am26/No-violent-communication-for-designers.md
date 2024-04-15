@@ -11,6 +11,8 @@ header:
   show_overlay_excerpt: false
 ---
 
+As designers become more seniors, there is a common expectation of also becoming better at communication. It's often unclear what's it that actually needs to be improved. Nonviolent communication is a powerful tool helping designers with fostering empathy, clearer communication, and creating better experiences.
+
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
 
@@ -30,21 +32,22 @@ I also find it relevant to talk about NVC because of the endemic issue of burnou
 
 NVC at its core is a quite simple 4-step process, and can be boiled down to a statement that goes like this:
 
-When **\[observation\]**, I feel **\[emotion\]** because I’m needing some **\[needs\]**. Would you be able to **\[request\]**?
+*When **\[observation\]**, I feel **\[emotion\]** because I’m needing some **\[needs\]**. Would you be able to **\[request\]**?*
+
 - Observation is presenting facts without judgement. This is sometimes harder than it seems, personal values need to be separated from how we describe what we perceive.
 - Emotions are our own, and we are responsible for them. We have a choice how we respond to outside events, so to observations.
 - Needs are universal, and by connecting our emotions to these fundamental needs we can describe how they are unfulfilled. These can include both physical needs and also emotional ones like respect, meaning, or dignity.
 - Request is a doable and specific action that would be help us. It should be always what we would want to happen (not what we don't want to happen), and a clear request (instead of a forceful demand).
 
-The four-step process is always given, but even the formula can be adapted to different context. Often asking questions is a good lead-in, as understanding the other side helps us to recognize the needs of others.
+The four-step process is always given, but the formula should be adapted to different context. Often asking questions is a good lead-in, as understanding the other side helps us to recognize the needs of others.
 
-– specific ways it's helpful
+While talking about feelings might seem out of place in a professional environment, talking about why there is a tension or discomfort, and connecting to our needs as design professionals changes the tone of discussions to be more helpful
 
-Since it focuses so much on listening, easy to see the parallels with this way of communicationg and design. 
+The most obvious place to use NVC is communicating with partners and stakeholders, for example when presenting design decisions, understanding feedback and navigating disagreements. Framing feedback around shared objectives helps to find the common ground.
 
-A great way to practice when performing a critique.
+The framework is also helpful when giving feedback at [design critique]({% post_url 9am26/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) or generally receiving feedback. How I like to give critique (focus on an aspect of the design, connect with goals, analyze how well it fulfils the goal, and describe a rationale) is already close to the NVC way. Using the specific terminology helps to better check ourselves what is observable and what are stories we construct around the work presented. 
 
-I found NVC also quite helpful when thinking about the design process itself. First it disconnects observations with our own stories. Also, design process should a heart. As we explore the solution space based on what we learned, figuring out what we need from the design, how our needs as desiogn professionals are fulfilled lead to better products and a better life.
+I found NVC also quite helpful when designing, and particularly when working with user needs and user research. Disconnecting observations from judgement avoids blaming the user, helps recognizing biases, and avoids premature conclusions. When thinking about user needs, sometimes the direct and articulated expectations overshadow the more basic, human needs — which we need to identify to be design better experiences.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
