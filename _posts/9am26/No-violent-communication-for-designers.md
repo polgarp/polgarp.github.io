@@ -16,21 +16,27 @@ header:
 
 # ☕ Nonviolent communication for designers
 
-When I started to move into more senior roles, and first became a manager, I found that I had more and more difficult discussions both within my team and with cross-functional partners. It was around that time that I learned about nonviolent communication (NVC), and it proved to be both an enormous help. I kept on practicing since, and it's a framework that every designer could benefit learning about as they get more senior.
+When I started to move into more senior roles, and first became a manager, I found that I had to do more and more difficult discussions both within my team and with cross-functional partners. It was around that time that I learned about nonviolent communication (NVC), and it proved to be an enormous help in this. I kept on practicing since, and it's a framework that every designer could benefit learning as they get more senior.
 
-There is a reason why communication skills are important to designers. If a designer wants to have any hope of influencing their destiny and more broadly the products they are working on, being a leader is essential, and to be an effective leader, communicating the right way is a must.
+There is a reason why communication skills are important to designers. If a designer wants to have any hope of influencing their destiny and more broadly the products they are working on, being a leader is essential. And to be an effective leader, communicating the right way is a must.
 
 While design in a narrower sense is about making decisions while predicting the future, performing the design tasks is just a small part. To create a product, many other people need to collaborate, and that's where driving other people's decisions and establishing consensus becomes more critical. This is a major use of communication skills.
 
-Everyone likes to work on important problems with passionate people. I'd even argue, that designers should strive to work on such problems, and enable their partners to be passionate. But passion and just the daily realities of product development make perceived differences between opinions seemingly more difficult to reconcile. So we need to make sure to talk to people empathetically while looking out for our own needs too.
+Everyone likes to work on important problems with passionate people. I'd even argue, that designers should strive to work on such problems, and enable their partners to be passionate. But passion and just the daily realities of product development make perceived differences between opinions more difficult to reconcile. Passionate people will argue passionately. So we need to make sure to talk to people empathetically while looking out for our own needs too.
 
-This is where NVC can help and elevate our communication game a lot. It can help us to be better communicators and collaborators (and sometimes better persons too), and that also make us better designers.
+This is where NVC can help and elevate our communication game. It can help us to be better communicators and collaborators (and sometimes better persons too), and this also make us better designers.
 
-I also like to talk about NVC because of the endemic issue of burnout in our industry. While there are many different reasons for it, designers should be using their empathy skills more on themselves, and be clearer about their needs. This can lead to less situations where designers need to make compromises they are not comfortable to do, and NVC provedis a good framework for this.
+I also find it relevant to talk about NVC because of the endemic issue of burnout in our industry. While there are many different reasons for it, designers should be using their empathy skills more on themselves, and be clearer about their needs to have a better fighting chance. Using NVC can lead to fewer situations where designers need to make compromises they are not comfortable with, and NVC provides a good framework for this.
 
-NVC at it's core is quite simple. 
+NVC at its core is a quite simple 4-step process, and can be boiled down to a statement that goes like this:
 
+When **\[observation\]**, I feel **\[emotion\]** because I’m needing some **\[needs\]**. Would you be able to **\[request\]**?
+- Observation is presenting facts without judgement. This is sometimes harder than it seems, personal values need to be separated from how we describe what we perceive.
+- Emotions are our own, and we are responsible for them. We have a choice how we respond to outside events, so to observations.
+- Needs are universal, and by connecting our emotions to these fundamental needs we can describe how they are unfulfilled. These can include both physical needs and also emotional ones like respect, meaning, or dignity.
+- Request is a doable and specific action that would be help us. It should be always what we would want to happen (not what we don't want to happen), and a clear request (instead of a forceful demand).
 
+The four-step process is always given, but even the formula can be adapted to different context. Often asking questions is a good lead-in, as understanding the other side helps us to recognize the needs of others.
 
 – specific ways it's helpful
 
