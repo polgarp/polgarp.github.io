@@ -1,5 +1,5 @@
 ---
-title: "e44 "
+title: "e44 Nonviolent communication for designers"
 categories:
   - Newsletter
 tags:
@@ -16,20 +16,20 @@ header:
 
 # ☕ Nonviolent communication for designers
 
-When first became manager and started to move into more senior roles, I found that I needed to have more and more difficult discussions both within my team and with cross-functional partners. It was around that time that I learned about nonviolent communication (NVC), and it proved to be both an enormous help, and something I keep on practicing.
+When I started to move into more senior roles, and first became a manager, I found that I had more and more difficult discussions both within my team and with cross-functional partners. It was around that time that I learned about nonviolent communication (NVC), and it proved to be both an enormous help. I kept on practicing since, and it's a framework that every designer could benefit learning about as they get more senior.
 
-– why important to designers
-Since I beleive all designers are leaders, have to act as leaders if they want any hope of influencing the future, what they work on, communicating the right way is essential. 
-Design is about decisions, but often as much design is about communication as we drive the design process as much as we perfom design tasks ourselves.
+There is a reason why communication skills are important to designers. If a designer wants to have any hope of influencing their destiny and more broadly the products they are working on, being a leader is essential, and to be an effective leader, communicating the right way is a must.
 
-We like to work on important problems with passionate people. But passion also makes percieved differences between opinions larger than it has to, so communication has to be efficient too.
+While design in a narrower sense is about making decisions while predicting the future, performing the design tasks is just a small part. To create a product, many other people need to collaborate, and that's where driving other people's decisions and establishing consensus becomes more critical. This is a major use of communication skills.
 
-A lot of the tips you can hear about effective feedback, like focusing on real examples instead of stories we construct have a root on NVC. 
-So NVC makes us better collaborators (and sometimes better persons too), but can also make us better designers.
+Everyone likes to work on important problems with passionate people. I'd even argue, that designers should strive to work on such problems, and enable their partners to be passionate. But passion and just the daily realities of product development make perceived differences between opinions seemingly more difficult to reconcile. So we need to make sure to talk to people empathetically while looking out for our own needs too.
 
-I talk about this, since I see all the burnt out designers, and this is one way it can be helpful.
+This is where NVC can help and elevate our communication game a lot. It can help us to be better communicators and collaborators (and sometimes better persons too), and that also make us better designers.
 
---key things on NVC
+I also like to talk about NVC because of the endemic issue of burnout in our industry. While there are many different reasons for it, designers should be using their empathy skills more on themselves, and be clearer about their needs. This can lead to less situations where designers need to make compromises they are not comfortable to do, and NVC provedis a good framework for this.
+
+NVC at it's core is quite simple. 
+
 
 
 – specific ways it's helpful
