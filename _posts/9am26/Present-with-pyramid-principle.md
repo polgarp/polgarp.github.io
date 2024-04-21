@@ -31,7 +31,7 @@ And this applies also to portfolio presentations.
 
 We often talk about importance of storytelling  - the pyramid principle is a great way to construct stories, gives a clear method to come up with a storyline.
 
-
+Sometimes people think about presenting like telling a joke, the punchline is at the end. Imagine the presentation should be something where you lead people through your process. In a lot of cases the process is less important than the outcome. With pyramid principle, it's the opposite, you'd be telling the key information first, and if there is interest, dive into details and data. 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
@@ -44,10 +44,12 @@ https://dataanddesign.substack.com/p/improve-ux-research-presentations
 
 https://twitter.com/polak_jasper/status/1550816018158833667
 
-https://maggieappleton.com/evergreens (backlink works?)
+https://maggieappleton.com/evergreens
 
-https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7
+https://medium.com/make-work-better/the-pyramid-principle-6705da58c582
 
-https://jeffkavanaugh.net/pyramid-principle-craft-coherent-explanations/
+https://beyondthebacklog.com/2023/12/11/pyramid-principle/
 
+The method is not only for presentations, it works in other forms of communication too. For example, **Raquel Piqueras** writes about how to write effective emails in [**Use the Pyramid Principle to improve your influence and get design buy-in**](https://uxdesign.cc/use-the-pyramid-principle-to-improve-your-influence-and-get-design-buy-in-1a736fa1e54a), with a few examples, including concrete tips for pitching an idea, requesting feedback, and solving a problem.
 
+[**The Pyramid Principle: How To Craft Coherent Explanations**](https://jeffkavanaugh.net/pyramid-principle-craft-coherent-explanations/) is a straightforward explanation of the concept by **Jeff Kavanaugh**, mostly focused on how it serves to convince people. 
