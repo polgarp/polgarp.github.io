@@ -38,18 +38,14 @@ Sometimes people think about presenting like telling a joke, the punchline is at
 
 # 🍪 Things to snack on
 
+**Daniel Good** offers a good summary of the original book in [**📖 The Pyramid Principle**](https://medium.com/make-work-better/the-pyramid-principle-6705da58c582). This summary also points out that the method doesn't always work, as it was created to support how consultants work. It doesn't help formulate answers (the analysis and solution finding needs to be done earlier), and is less good at more collaborative approaches.
+
 <p style="text-align: center;">🁃</p>
 
-https://dataanddesign.substack.com/p/improve-ux-research-presentations
-
-https://twitter.com/polak_jasper/status/1550816018158833667
-
-https://maggieappleton.com/evergreens
-
-https://medium.com/make-work-better/the-pyramid-principle-6705da58c582
-
-https://beyondthebacklog.com/2023/12/11/pyramid-principle/
-
-The method is not only for presentations, it works in other forms of communication too. For example, **Raquel Piqueras** writes about how to write effective emails in [**Use the Pyramid Principle to improve your influence and get design buy-in**](https://uxdesign.cc/use-the-pyramid-principle-to-improve-your-influence-and-get-design-buy-in-1a736fa1e54a), with a few examples, including concrete tips for pitching an idea, requesting feedback, and solving a problem.
-
 [**The Pyramid Principle: How To Craft Coherent Explanations**](https://jeffkavanaugh.net/pyramid-principle-craft-coherent-explanations/) is a straightforward explanation of the concept by **Jeff Kavanaugh**, mostly focused on how it serves to convince people. 
+
+A significant context where the pyramid principle is very helpful are research summaries, where results from the studies should influence. **Christopher K Wong** writes about this in [**Improve UX research presentations with 3 minor writing tweaks**](https://dataanddesign.substack.com/p/improve-ux-research-presentations). The tips here show how to apply the principle in practice - include key takeaways in titles, use bullet points as summaries of findings, and highlight takeaways from user quotes. 
+
+Describing ideas in a more permanent way comes from the concept of evergreens. A short summary of this idea by **Maggie Appleton** in [**Growing the Evergreens**](https://maggieappleton.com/evergreens).
+
+The method is not only for presentations, it works for other forms of communication too. For example, **Raquel Piqueras** writes about how to write effective emails in [**Use the Pyramid Principle to improve your influence and get design buy-in**](https://uxdesign.cc/use-the-pyramid-principle-to-improve-your-influence-and-get-design-buy-in-1a736fa1e54a), with a few examples, including concrete tips for pitching an idea, requesting feedback, and solving a problem.
