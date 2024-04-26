@@ -18,6 +18,7 @@ header:
 
 This one is about making better presentations, but is actually as much about describing your knowledge better.
 
+Organize
 
 I wish more designers would create their presentations more strategically.
 
