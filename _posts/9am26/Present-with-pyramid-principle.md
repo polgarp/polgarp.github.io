@@ -39,19 +39,14 @@ A presentation created with the pyramid principle has a few attributes:
 
 This approach also provides a way for storytelling. The challenge is how exactly to come up with a clear and coherent story. The key point slides grouping the details, and ordered give a simple way to come up with a story line.
 
-To create a presentation with the pyramid principle, an easy way is to use a mind map. The leaves are the data points, groups of data points are key points, and conclusion comes from the key points. When all the content is collected, the centre of the mindmap can be pulled up to form a tree. The branches of the tree can be ordered to from the main story. Each node will be a slide, and the order of the slides is conclusion, key point, data, data, key point, data, … etc.
+To create a presentation with the pyramid principle, an easy way is to use a mind map. The leaves are the data points, groups of data points are key points, and conclusion comes from the key points. When all the content is collected, the center of the mindmap can be pulled up to form a tree. The branches of the tree can be ordered to from the main story. Each node will be a slide, and the order of the slides is conclusion, key point, data, data, key point, data, … etc.
 
-One way we used approach is to organize research findings. We didn't have a research repository, and each designer and researcher used their own way to present research results. This was really hard to get an understanding of what the research results were, and to reuse insights across projects. We created research report templates based on the pyramid principle. This allowed for the broader organization to quickly understand conclusions (enough to look at the first slide in each report), while the key point and data slides could be reused in project related presentations, as they 
+One way we used approach is to organize research findings. We didn't have a research repository, and each designer and researcher used their own way to present research results. This was really hard to get an understanding of what the research results were, and to reuse insights across projects. We created research report templates based on the pyramid principle. This allowed for the broader organization to quickly understand conclusions (enough to look at the first slide in each report), while the key point and data slides could be reused in project related presentations, as
 
-More generally, creating 
+This idea can be generalized to not only research insights. If the organization is prone to use slide decks, having slides created according to a single principle makes them reusable easier. Ideas, project insights, data points, design rationale and similar often get referenced at various times in projects or during the lifecycle of a product. Collecting and reusing well-made slides helps in influence and building concensus over time.
 
->a way to organize nuggets
+A
 
-There are ideas that are persistent, maybe within a project, or maybe on the longer term.
-
->a way to organize more
-
-It's often needed to do a similar presentations over and over again, as the project progresses, as you work with different stakeholders.
 And this applies also to portfolio presentations. 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
