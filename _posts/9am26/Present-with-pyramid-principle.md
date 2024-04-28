@@ -18,7 +18,7 @@ header:
 
 I wish more designers would create their presentations more strategically. There are many types of presentation, most can be used to experiment with storytelling. But where the medium of presentation needs more than casual storytelling is usually where the goal is to influence stakeholders and decisions.
 
-There are a few situations where influencing matters, like presenting research results pitching a problem to solve, trying to get momentum for a vision and direction, or looking for approval and support for a solution. All of these are typically involve stakeholders from outside the immediate team, who might have a holistic perspective lacking specific context details, but have power to move things forward.
+There are a few situations where influencing matters, like showing research results, pitching a problem to solve, trying to get momentum for a vision and direction, or looking for approval and support for a solution. All of these are typically involve stakeholders from outside the immediate team, who might have a holistic perspective lacking specific context details, but have power to move things forward.
 
 The thing is, most of the time stakeholders don't have that much time and focus to understand all the context details we know already. They require just the gist of it. But the gist might mean different depth of detail to different people, depending on what they already know, what's their perspective and interest. 
 
@@ -32,26 +32,22 @@ To optimize for fast-to-digest presentations with a clear structure, I found the
 
 A presentation created with the pyramid principle has a few attributes:
 - The overall structure looks like a pyramid. The base is made of data slides, the middle has a few key point slides, while the top has one conclusion slide.
-- The data slides contain all the information collected to support the goal of the presentation. They can be any input, evidence, or details that was used to create the conclusion.
-- The key point slides summarize groups of data slides into themes, while the key points define the overall narrative strucutre of the presentation.
-- The conclusion slide takes the key points and summarizes them into one proposal, that is the main point of the presentation.
+- The data slides contain all the information collected to support the goal of the presentation. They can be any input, evidence, or details that support the conclusion in some ways.
+- The key point slides summarize groups of data slides into themes, while the key points together define the overall narrative structure of the presentation.
+- The conclusion slide takes the key points and summarizes them into one proposal, the main point of the presentation.
 - The individual slides are also made with the pyramid principle, the slide content provides some data, evidence or key points, while the title summarizes the important point based on the content.
 
+This approach also provides a way for storytelling. The challenge is how exactly to come up with a clear and coherent story. The key point slides grouping the details, and ordered give a simple way to come up with a story line.
 
-A key thing how this provides a way for storytelling
+To create a presentation with the pyramid principle, an easy way is to use a mind map. The leaves are the data points, groups of data points are key points, and conclusion comes from the key points. When all the content is collected, the centre of the mindmap can be pulled up to form a tree. The branches of the tree can be ordered to from the main story. Each node will be a slide, and the order of the slides is conclusion, key point, data, data, key point, data, … etc.
 
-We often talk about importance of storytelling  - the pyramid principle is a great way to construct stories, gives a clear method to come up with a storyline.
+One way we used approach is to organize research findings. We didn't have a research repository, and each designer and researcher used their own way to present research results. This was really hard to get an understanding of what the research results were, and to reuse insights across projects. We created research report templates based on the pyramid principle. This allowed for the broader organization to quickly understand conclusions (enough to look at the first slide in each report), while the key point and data slides could be reused in project related presentations, as they 
 
-
->good way to start: mindmaps
-
-
-
->how we used
+More generally, creating 
 
 >a way to organize nuggets
 
-There are ideas that are persisstent, maybe within a project, or maybe on the longer term.
+There are ideas that are persistent, maybe within a project, or maybe on the longer term.
 
 >a way to organize more
 
