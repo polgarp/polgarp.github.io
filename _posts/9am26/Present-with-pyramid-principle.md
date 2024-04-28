@@ -16,26 +16,29 @@ header:
 
 # ☕ Present with the pyramid principle
 
-I wish more designers would create their presentations more strategically. There are many types of presentation, most of it are ways to use and experiment with storytelling. But where the medium of presentation needs more than casual storytelling is usually where the goal is to influence stakeholders.
+I wish more designers would create their presentations more strategically. There are many types of presentation, most can be used to experiment with storytelling. But where the medium of presentation needs more than casual storytelling is usually where the goal is to influence stakeholders and decisions.
 
-There are a few situations where influencing matters, like presenting research results pitching a problem to solve, trying to get momentum for a vision and direction, or looking for approval and support for a solution. All of these is typically involving stakeholders from outside the immediate team, who might have a holistic perspective lacking specific context details, but have some power to move things forward.
+There are a few situations where influencing matters, like presenting research results pitching a problem to solve, trying to get momentum for a vision and direction, or looking for approval and support for a solution. All of these are typically involve stakeholders from outside the immediate team, who might have a holistic perspective lacking specific context details, but have power to move things forward.
+
+The thing is, most of the time stakeholders don't have that much time and focus to understand all the context details we know already. They require just the gist of it. But the gist might mean different depth of detail to different people, depending on what they already know, what's their perspective and interest. 
+
+Designers often like to present their process and think about presenting like telling a joke, with the punchline (the solution or outcome) at the end. This doesn't fit well with what the audience actually needs. The needs of the audience should be considered, just like the needs of users should be considered when creating an interface.
+
+For example, in most cases, the process is less important than the outcome. If there is interest, process can be shown, but leading with the result is what's needed to get to a decision. Presentation sessions might get shortened, with long discussions over details, so optimize for fast-to-digest. 
+
+Most presentations are based on slides. Title, images, bullet points, next slide. Obviously, slides are often an imperfect way to package ideas, as ideas come in all sizes and shapes. But the constraints of slides can be used as a simple and familiar structure. This clarity of the structure helps in making the main point understandable, as we want energy spent in a presentation on getting the idea, rather than getting the delivery.
+
+To optimize for fast-to-digest presentations with a clear structure, I found the pyramid principle quite useful. It's a framework used by the big consultancies (who often create slide decks as the de facto product of their projects) to create their presentations. 
+
+A presentation created with the pyramid principle has a few attributes:
+- The overall structure looks like a pyramid. The base is made of data slides, the middle has a few key point slides, while the top has one conclusion slide.
+- The data slides contain all the information collected to support the goal of the presentation. They can be any input, evidence, or details that was used to create the conclusion.
+- The key point slides summarize groups of data slides into themes, while the key points define the overall narrative strucutre of the presentation.
+- The conclusion slide takes the key points and summarizes them into one proposal, that is the main point of the presentation.
+- The individual slides are also made with the pyramid principle, the slide content provides some data, evidence or key points, while the title summarizes the important point based on the content.
 
 
-
->About slides
-
-Obviously, slides are an imperfect way of containging ideas, but also they provide constraints on expression which in itself is useful.
-
->decisionmaker perspective, primary principle
-
-The first thing critical to recognize, that while people
-
-
-Sometimes people think about presenting like telling a joke, the punchline is at the end. Imagine the presentation should be something where you lead people through your process. In a lot of cases the process is less important than the outcome. With pyramid principle, it's the opposite, you'd be telling the key information first, and if there is interest, dive into details and data. 
-
->found the pyramid principle a good one
-
->how the principle works
+A key thing how this provides a way for storytelling
 
 We often talk about importance of storytelling  - the pyramid principle is a great way to construct stories, gives a clear method to come up with a storyline.
 
