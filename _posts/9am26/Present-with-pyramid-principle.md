@@ -16,23 +16,44 @@ header:
 
 # ☕ Present with the pyramid principle
 
-This one is about making better presentations, but is actually as much about describing your knowledge better.
+I wish more designers would create their presentations more strategically. There are many types of presentation, most of it are ways to use and experiment with storytelling. But where the medium of presentation needs more than casual storytelling is usually where the goal is to influence stakeholders.
 
-Organize
+There are a few situations where influencing matters, like presenting research results pitching a problem to solve, trying to get momentum for a vision and direction, or looking for approval and support for a solution. All of these is typically involving stakeholders from outside the immediate team, who might have a holistic perspective lacking specific context details, but have some power to move things forward.
 
-I wish more designers would create their presentations more strategically.
 
-There are ideas that are persisstent, maybe within a project, or maybe on the longer term.
+
+>About slides
 
 Obviously, slides are an imperfect way of containging ideas, but also they provide constraints on expression which in itself is useful.
 
-It's often needed to do a similar presentations over and over again, as the project progresses, as you work with different stakeholders.
+>decisionmaker perspective, primary principle
 
-And this applies also to portfolio presentations. 
+The first thing critical to recognize, that while people
+
+
+Sometimes people think about presenting like telling a joke, the punchline is at the end. Imagine the presentation should be something where you lead people through your process. In a lot of cases the process is less important than the outcome. With pyramid principle, it's the opposite, you'd be telling the key information first, and if there is interest, dive into details and data. 
+
+>found the pyramid principle a good one
+
+>how the principle works
 
 We often talk about importance of storytelling  - the pyramid principle is a great way to construct stories, gives a clear method to come up with a storyline.
 
-Sometimes people think about presenting like telling a joke, the punchline is at the end. Imagine the presentation should be something where you lead people through your process. In a lot of cases the process is less important than the outcome. With pyramid principle, it's the opposite, you'd be telling the key information first, and if there is interest, dive into details and data. 
+
+>good way to start: mindmaps
+
+
+
+>how we used
+
+>a way to organize nuggets
+
+There are ideas that are persisstent, maybe within a project, or maybe on the longer term.
+
+>a way to organize more
+
+It's often needed to do a similar presentations over and over again, as the project progresses, as you work with different stakeholders.
+And this applies also to portfolio presentations. 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
