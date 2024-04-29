@@ -14,7 +14,7 @@ header:
 ---
 If the goal of a presentation is to influence stakeholder decisions, the pyramid principle provides a simple framework to create decks that have flexible depth, are fast to digest, and have a clear structure. It also gives a simple approach to creating a narrative that is focused on the outcome and not the process of work done.
 
-{% include figure image_path="/assets/images/2024-04-29-Better-presentatations-with-the-pyramid-principle.jpg" alt="Not an actual product render, synthwave, detailed and intricate, generated with DiffusionBee" caption="Not an actual product render, synthwave, detailed and intricate, generated with DiffusionBee" %}
+{% include figure image_path="/assets/images/2024-04-29-Better-presentations-with-the-pyramid-principle.jpg" alt="Not an actual product render, synthwave, detailed and intricate, generated with DiffusionBee" caption="Not an actual product render, synthwave, detailed and intricate, generated with DiffusionBee" %}
 
 # ☕ Better presentations with the pyramid principle
 
