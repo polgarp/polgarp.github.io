@@ -27,6 +27,8 @@ Process is multifaceted, tries to capture tasks, collaboration, timelines, plann
 
 One way processes fail, focusing on unit of work as project, rather than product. Projects have a definite end and beginning and kinda align with day-to-day work, but when working with products, research is continuous and also small improvements can be continuous. process is not a standalone thing.
 
+Design process on it's own leads to frustration, as there will be always a deviation from the ideal state. Thinking about product development process (together with pms and / or engineering) is more aligned.
+
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
