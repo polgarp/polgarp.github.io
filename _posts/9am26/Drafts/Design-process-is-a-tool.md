@@ -15,6 +15,9 @@ header:
 
 # ☕ Design process is a tool
 
+Design process is not to organize the tools, rather than a tool itself.
+
+
 Is it for alignment? Communicating what the team does? Guidance for more junior designers? A way to scale the design team? Promoting better design practices? 
 
 Juniors need to learn what to do. Seniors need to know when to break.
