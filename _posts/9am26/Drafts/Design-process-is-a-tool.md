@@ -21,6 +21,9 @@ Juniors need to learn what to do. Seniors need to know when to break.
 
 Process is multifaceted, tries to capture tasks, collaboration, timelines, planning.
 
+
+One way processes fail, focusing on unit of work as project, rather than product. Projects have a definite end and beginning and kinda align with day-to-day work, but when working with products, research is continuous and also small improvements can be continuous. process is not a standalone thing.
+
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
