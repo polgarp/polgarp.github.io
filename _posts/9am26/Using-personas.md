@@ -16,6 +16,8 @@ header:
 
 # ☕
 
+I've been seeing a lot of portfolios recently, where the designer described the process of creating personas, usually after the interviews or sometimes without any user research there is a fully defined persona, that somehow didn't have any impact on the design process afterwards, so I thought It makes sense to summarize this.
+
 I've been looking at a lot of portfolios recently, and while I'm seeing a lot of personas being made, I see way less personas being used in the design process. As if creating personas is a mandatory step in the process without much purpose. 
 
 Maybe the questions is broader - if user research is done, how does it's results actually inform the design?
