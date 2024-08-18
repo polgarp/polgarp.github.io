@@ -28,21 +28,29 @@ In some sense, personas act as a shortcut in conversation throughout the product
 
 The easiest way to get started with using personas is just start replacing each mention of "users" or "customers" with an actual persona name when designing and talking about problems and solutions. This will immediately force the personas to be well understood and useful, as whoever is in the discussion needs to understand clearly who exactly we mean, and what are their attributes. Using them consistently will also drive iterations to remove data points from a persona that is generally not useful within the design process (as it's often the case with demographics), and clarifying others (like the context of use).
 
-Most probably this is also a good way to showcase how personas did have an impact on the design process,. For example when describing problems solved, instead of writing *We wanted users to have an easy way to find books*, it's better to have *We wanted Frequent Reader Fred to have an easy way to find books*. This also showcases how and why certain design tradeoffs were made.
+This is also a good way to showcase how personas did have an impact on the design process,. For example when describing solutions, instead of writing *We wanted users to have an easy way to find books*, it's better to have *We wanted Frequent Reader Fred to have an easy way to find books*. This also showcases how and why certain design trade-offs were made.
 
 There are three more places where I found personas to be especially useful, setting the goals for designing, coming up with better ideas, and making prioritization more deliberate. 
 
 For setting the goals for design, I've written about [**expressing the intent**]({ % post_url 9am26/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) via a design brief earlier. Together with the goal, the key scenarios and the principles, personas are needed to set the stage and boundaries for the space to explore. These provide a consistent statement to look at in the messy middle of the design process.
 
-In coming up with new and valuable ideas, personas provide context and narrative that help in coming up with better ideas. Whether it's in a design studio or generating answers to HMWs, thinking about somebody concrete increases empathy (by making it more personal) and helps coming up with more specific while opening up broader solution spaces.
+In coming up with new and valuable ideas, personas provide context and narrative that help in coming up with better ideas. Whether it's in a design studio or generating answers to HMWs, thinking about somebody concrete increases empathy (by making it more personal) and helps to come up with more specific while opening up broader solution spaces.
 
+Generating ideas alone is not enough, we also need to make sure we focus on the right things firsts. There are many prioritization techniques, and regarding users as specific personas is helpful. This is where having a clear order for personas help, as it makes choices clearer, who the team focuses on first, second and so on.
 
+Personas can be used beyond the immediate design process, for example during development and marketing. 
 
-Three more places: brief, ideation, prioritisation. 
+Most agile frameworks have a format for user stories. These can be improved by substituting *user* with a specific persona, for example *As Frequent Reader Fred, I want to have an easy way to find books, so I learn easier about new books*. This way the benefit is more closely tied into the actual user research aggregated in the persona, rather than something made up.
 
-Through the complete process beyond the immediate design process, development and marketing. 
+Product marketing people usually already think about their target audience and message. Having a persona aligns the product's design with the marketing efforts by providing an easily understandable common intention. And even the personas created by a designer doesn't have all the useful information for a marketeer (like demographics for targeting), they still provide a good staring point.
 
-Getting this change is hard, some personas are just not that useful, since they are not made with real user research in mind. But more often I've seen how they are created more of an artifact to be looked at, and not an artifact to be used. This needs iteration, testing, 
+So how to get a team of designers to start with personas. 
+
+As with other similar efforts, there needs to be a clear problem to solve (for example teams not having a common image who they need to solve problems for), and personas need to fit with the already established ways of working. For example unless there is already a practice of talking to customers, it will be very hard to create actually useful personas. 
+
+The other common problem I see is usually getting personas right, efforts often stop with creating a first a version, while getting to useful personas takes time spent with testing them, updating the data, and iterating on the structure and presentation.
+
+Ultimately as with any other tool, personas need to be useful throughout the design process to make them sensible to create.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
