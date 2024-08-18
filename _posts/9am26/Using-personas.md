@@ -16,26 +16,27 @@ header:
 
 # ☕ Personas are meant to be used, not just created
 
-I've been seeing some portfolios recently, where the designer has some personas as part of their process. They describe the creation of personas, or sometimes the personas are just there hinted as an obvious step in the process. But somehow these personas didn't have any impact on the design process afterwards, they are just there as a sort-of unrelated step.
+I've been seeing some portfolios recently, where the designer shows some personas as part of their process. They describe the creation of personas, and some pretty looking artifacts. But somehow these personas don't have any impact on the design process afterwards, they are just there as a sort-of unrelated but mandatory step.
 
-Now part of the issue is the impact of bootcamps
+Now part of the issue is how design process is perceived (and sometimes taught), with personas as step synthesizing user research done, before design starts. Of course, it might be just an issue of presentation — artifacts get into a portfolio, and describing process details in later steps is less interesting compared to actually showing UI. But if we take working on the experience seriously, who is the user needs to be key point, and shine through the design process.
 
-Ofcourse it might be just an issue of presentation - artifacts get into a portfolio, and describing process details is less interesting. But if we take working on the experience seriously, who is the user needs to be key point and shine through the design process.
+But it got me thinking on what are good practices using personas in the design process.
 
+Persona is a method to aggregate user research done, create a shared understanding on who the users are, and align the team on who is the target. Ofcourse personas are not the only way to describe the audience, but something needs to focus the discussion about who our users are.
 
-Personas aggregate and or align. Some researcgh is needed, at least to inform.
+In some sense, personas act as a shortcut in conversation throughout the product development process. Provided they are based on actual user research and the team can actually connect to them. There are some ways to this, most obviously making it a team effort helps (so workshops), but actively taking care of them (iterating and promoting) is also important.
+
+Besides creating personas based on user research, and using them whenever 
 Maybe the questions is broader - if user research is done, how does it's results actually inform the design?
-Ofcourse personas are not the only way to describe the audiene, but something needs 
+
 
 On the simplest way, just replace user everywhere
 
-Through the complete process beyond the immediate design process.
+Three more places: brief, ideation, prioritisation. 
 
-Use in briefs.
+Through the complete process beyond the immediate design process, development and marketing. 
 
-
-
-
+Getting this change is hard, some personas are just not that useful, since they are not made with real user research in mind. But more often I've seen how they are created more of an artifact to be looked at, and not an artifact to be used. This needs iteration, testing, 
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
 > {% include newsletter-signup.html %}
