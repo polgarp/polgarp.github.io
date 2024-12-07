@@ -1,5 +1,5 @@
 ---
-title: "Research both known unknowns and unknown unknows"
+title: "AI tool's near future"
 categories:
   - Blog 
 tags:
