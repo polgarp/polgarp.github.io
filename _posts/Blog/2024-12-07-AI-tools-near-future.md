@@ -1,5 +1,5 @@
 ---
-title: "AI tool's near future"
+title: "AI tools' near future"
 categories:
   - Blog 
 tags:
