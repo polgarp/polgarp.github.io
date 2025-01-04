@@ -19,7 +19,7 @@ Pair design is an awesome way to get designers to collaborate more closely, incr
 
 # ☕  Pair design leads to better design collaboration
 
-Modern product design is a deeply collaborative discipline. Whether it's the discovery process within the product team, or functional practices like **[design critiques]({% post_url 2022-09-15-Design-critique-the-core-practice-for-design-teams %})**, there are a lot of opportunities to exchange ideas and get feedback. 
+Modern product design is a deeply collaborative discipline. Whether it's the discovery process within the product team, or functional practices like **[design critiques]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %})**, there are a lot of opportunities to exchange ideas and get feedback. 
 
 While collaboration is the name of the game, the reality is more nuanced. Designers often work alone as the sole designer in a product team. A lone researcher or designer leaning over a piece of paper, a spreadsheet, or a Figma canvas focused on ready some artifacts for the next round. This thinking and crafting, so maker time is necessary for progress.
 
@@ -27,7 +27,7 @@ There are a few trade-offs with this setup (designers in product teams, occasion
 
 This is where pair design comes in. On the surface level, two designers sitting and designing together a single piece of product experience sounds like any other type of collaboration, or maybe even avoiding progress and just generally being inefficient. But the opposite is true. 
 
-While timewise pair design might take longer (as two people spend time on the same thing), the overall efficiency in terms of outcomes is much higher. As within the process, there are already two pairs of eyes on the design decisions, there are less obvious issues in the end. While having to **[articulate design decisions]({% post_url 2023-02-27-Articulating-design-decisions-makes-design-work-transparent %})** as they are made, makes the overall design rationale better, more likely to fulfill the intended outcome. Overall this all leads to a higher design quality. This type of collaboration is also more inspiring and energizing, contributing to overall design team happiness. Finally, pair design allows team members to learn from each other, so it's especially valuable to level up junior or mid-level designers. 
+While timewise pair design might take longer (as two people spend time on the same thing), the overall efficiency in terms of outcomes is much higher. As within the process, there are already two pairs of eyes on the design decisions, there are less obvious issues in the end. While having to **[articulate design decisions]({% post_url 9am26/2023/2023-02-27-Articulating-design-decisions-makes-design-work-transparent %})** as they are made, makes the overall design rationale better, more likely to fulfill the intended outcome. Overall this all leads to a higher design quality. This type of collaboration is also more inspiring and energizing, contributing to overall design team happiness. Finally, pair design allows team members to learn from each other, so it's especially valuable to level up junior or mid-level designers. 
 
 Pair design has its roots in pair programming, though the advantages are different (it's more about the overall app UX than having fewer bugs in a piece of code). Usually, it's two designers collaborating but can work with any discipline (so designer & researcher, designer & product manager, designer & engineer, or any other combination). The difference to other types of collaboration with more participants (like workshops, reviews, etc.) is the immersion into the problems and solutions, the strength of connection in the pairs, and having a clearer focus on the pair roles.
 
@@ -57,7 +57,7 @@ For design leaders, the practice of pair design is an opportunity to level up th
 - With product teams (one designer per product team), the setup is to have long-term pairs (quarter length) and allocate a few hours per week to work together. Alternatively have the driver and supporting navigator roles for projects.
 - This practice helps to level up junior and mid-level designers to be true peers in product teams by working with another, more senior designer.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

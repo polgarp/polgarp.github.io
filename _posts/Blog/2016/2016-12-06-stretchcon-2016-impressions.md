@@ -13,7 +13,7 @@ header:
 
 Last week I attended the [Stretch leadership conference here in Budapest](http://stretchcon.com/). Being both a leader and a UXer puts me in a unique position. I’m both interested in how to become a better leader in daily practice, but also in ways how such a leadership and better functioning teams can be designed, how to approach leadership as a design project.
 
-[Compared to last year]({% post_url 2015-12-06-stretchcon-2015-impressions %}), I felt there were less truly remarkable talks. Maybe it’s related to how my experiences as a team lead have changed my views what is important, and now I’m watching these talks through a more nuanced glasses. But overall there were plenty of nice small tidbits at least to reframe some of the things I’ve been doing.
+[Compared to last year]({% post_url Blog/2015/2015-12-06-stretchcon-2015-impressions %}), I felt there were less truly remarkable talks. Maybe it’s related to how my experiences as a team lead have changed my views what is important, and now I’m watching these talks through a more nuanced glasses. But overall there were plenty of nice small tidbits at least to reframe some of the things I’ve been doing.
 
 The common theme among the talks seemed like how leadership should be focused (more) on people. Great news for any designer looking to get into a leadership position, as we already have the tools and the mindset to deal with people issues, for example empathy, user research and facilitation skills.
 

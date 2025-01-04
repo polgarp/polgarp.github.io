@@ -52,7 +52,7 @@ For the interactivity gap, prototypes help to imagine more than what's readily v
 - Prototyping encourages exploration beyond static screens, enabling designers to envision more complex and engaging interactions.
 - Thinking in prototypes rather than screens empowers designers to create more user-centered and innovative products.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

@@ -17,4 +17,4 @@ I found the term vision a bit confusing when thinking on their role on product d
 
 # Backlinks
 
- - [Design innovation]({% post_url 2021-04-17-Design-innovation %})
+ - [Design innovation]({% post_url Garden/2021-04-17-Design-innovation %})

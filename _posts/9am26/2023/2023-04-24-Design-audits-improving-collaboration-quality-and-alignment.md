@@ -50,7 +50,7 @@ Sometimes the scope is focused on a specific aspect (like brand or content) whic
 Auditing when entering a new team or organization is a great way for a designer to get started with the context. For design leaders, auditing in a recurring fashion is also great to see changes over time, highlighting the work the design team did, and getting feedback on the strategy of the team. If there are issues the team wishes to pursue, an audit provides good input for making a push. For example, laying out UI inconsistencies after a design system audit is better than just talking about these issues if the goal is to get buy-in for more design system work.
 
 Auditing on the product team and org level has a few additional benefits for leaders:
-- Improving [design quality]({% post_url 2023-02-06-What-is-good-design %}): Product design audits provide an opportunity to review the design process, identify weaknesses, and make improvements to design quality. This can help the team create more effective and efficient designs, reducing the number of errors and iterations required.
+- Improving [design quality]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}): Product design audits provide an opportunity to review the design process, identify weaknesses, and make improvements to design quality. This can help the team create more effective and efficient designs, reducing the number of errors and iterations required.
 - Enhancing Collaboration: Conducting audits on the design team level can foster collaboration and communication between team members. It can also help build a shared understanding of the design process, standards, and goals, leading to more cohesive teamwork and higher morale.
 - Aligning with Business Objectives: A design audit can help ensure that the design process is aligned with business objectives, ensuring that design decisions are based on evidence and not just personal preferences. This can also help the design team better articulate the value of their work to stakeholders.
 - Identifying Skills Gaps: Audits can highlight skills gaps within the team, helping design leaders identify areas where team members
@@ -62,7 +62,7 @@ Auditing on the product team and org level has a few additional benefits for lea
 - The starting point of a design audit should clarify the scope, evaluation criteria, and logistics of the audit, and the report should reflect the purpose and focus of the audit.
 - Conducting design audits regularly can improve design quality, enhance collaboration, align with business objectives, and identify skills gaps within the team.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

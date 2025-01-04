@@ -33,7 +33,7 @@ Design briefs for designers working in product teams differ from what a creative
 1. Goals or main hypothesis
 2. Personas or jobs
 3. Scenarios or flows
-4. [Design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %})
+4. [Design principles]({% post_url 9am26/2023/2023-02-12-Design-principles-set-the-foundation-for-good-design %})
 
 This keeps the brief lightweight and flexible enough to have it at the top of the mind of everyone in the project, and also makes it easy to iterate on.
 
@@ -43,11 +43,11 @@ Shared is an important aspect of having clear intentions. It's not enough if the
 
 Articulating shared intent is not easy, and sometimes might be the hardest part of a project. Intents might need a lot of back and forth between product team members, and they get clearer as they get articulated. Part of this process is also understanding past user research done ("So we intend users to..." "Who are these users?") and business goals (".. increase adoption" "What's adoption in this context?").
 
-Once a clear intent is articulated, it can be used in a few ways immediately. Shared before discussions with stakeholders clarifies "are we working on the right thing". They help to give context and focus feedback before [design critiques](post_url 2022-09-15-Design-critique-the-core-practice-for-design-teams %}). In team discussions, they make sure the team is still aligned on the common goals. 
+Once a clear intent is articulated, it can be used in a few ways immediately. Shared before discussions with stakeholders clarifies "are we working on the right thing". They help to give context and focus feedback before [design critiques](post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %}). In team discussions, they make sure the team is still aligned on the common goals. 
 
 For design leaders, seeing intentions across projects makes the background of projects and the alignment across designers and product teams more visible.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

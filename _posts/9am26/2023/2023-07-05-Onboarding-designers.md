@@ -17,7 +17,7 @@ Onboarding new design team members in a good way is essential for their success 
 
 # ☕ Onboarding designers
 
-After writing a [**killer job ad**]({% post_url 9am26/2022-10-27-Writing-great-job-ads %}), and driving a [**purposeful hiring process**]({% post_url 9am26/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process %}), your new team member is finally on board and starts in your team. The first week passes, and things are fine. Fine-ish. Somehow working. It should have more energy though, right? 
+After writing a [**killer job ad**]({% post_url 9am26/2022/2022-10-27-Writing-great-job-ads %}), and driving a [**purposeful hiring process**]({% post_url 9am26/2023/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process %}), your new team member is finally on board and starts in your team. The first week passes, and things are fine. Fine-ish. Somehow working. It should have more energy though, right? 
 
 It's the onboarding! Not only a thing for the apps we create, but also what's helping new team members pick up things fast, be energized, be motivated in the long term, and generally just have a great start. While the hypergrowth a lot of tech companies went through in past years is now less of a thing, it's still important to get the occasional new team members started energized.
 
@@ -33,7 +33,7 @@ For designers and researchers, the plan is pretty straightforward:
 - Have a buddy system that enables new team members to navigate the organization, for example, where is the coffee machine, which Slack channels to join, etc.
 - Get people familiar with tools and practices, for example, Figma organization, design system elements, how to do a usability test, etc.
 - Set up introductions with stakeholders around the team.
-- Have them take a look at the broader product, for example by doing a [**design audit**]({% post_url 9am26/2023-04-24-Design-audits-improving-collaboration-quality-and-alignment %}).
+- Have them take a look at the broader product, for example by doing a [**design audit**]({% post_url 9am26/2023/2023-04-24-Design-audits-improving-collaboration-quality-and-alignment %}).
 - Let them dive deep into user research done, experiments ran, and insights gathered.
 - Create goals on what to achieve in the first week, first month, and first 90 days. Based on the first career discussions this could go up until the first 180 and 360 days too.
 
@@ -42,9 +42,9 @@ While the relationship between the design leader and the new team member starts 
 - Talk about what the new team member wants to get out of this role. This will be the basis for further career discussions.
 - Connect how their role fits into the big picture, and why their role matters. This helps in focusing on the right levers and is good for firing up people.
 - Discuss how you, the leader can and will help them achieve their goals.
-- Schedule check-ins for the first few weeks and the first [**1-on-1**]({% post_url 9am26/2023-05-08-1-on-1s-strengthening-the-team-with-coaching %}). 
+- Schedule check-ins for the first few weeks and the first [**1-on-1**]({% post_url 9am26/2023/2023-05-08-1-on-1s-strengthening-the-team-with-coaching %}). 
 
-The onboarding should be also customized to the specific new role. Juniors and mid-levels will need more guidance, so these days I prefer to [**pair them up**]({% post_url 9am26/2023-03-13-Pair-design-leads-to-better-design-collaboration %}) with more senior team members. This enables them to find their footing and focus on the right skills - building their craft first.
+The onboarding should be also customized to the specific new role. Juniors and mid-levels will need more guidance, so these days I prefer to [**pair them up**]({% post_url 9am26/2023/2023-03-13-Pair-design-leads-to-better-design-collaboration %}) with more senior team members. This enables them to find their footing and focus on the right skills - building their craft first.
 
 More experienced people - senior and beyond - are usually expected to do more, often this includes defining the details of their role. For example, they might need to establish practices, collaborate with multiple stakeholders, or take responsibility for a larger piece of experience. The onboarding plan should acknowledge and support this. 
 
@@ -52,7 +52,7 @@ Getting the new designer or researcher familiar with the rest of the team and mo
 
 One nice thing I did in the past, was an hour-long session every Friday where the team casually talked about what happened with each of us. This helped everyone to get to know the others better, opened up some interesting discussions and helped establish an open culture. Such sessions help new team members to feel comfortable and part of the team faster.
 
-Regardless of the details of an onboarding plan, or how things are done one important aspect is to [**celebrate their joining**]({% post_url 9am26/2023-05-29-Celebrating-success-is-a-team-effort %}). 
+Regardless of the details of an onboarding plan, or how things are done one important aspect is to [**celebrate their joining**]({% post_url 9am26/2023/2023-05-29-Celebrating-success-is-a-team-effort %}). 
 
 ### 🥤 To recap
 
@@ -62,7 +62,7 @@ Regardless of the details of an onboarding plan, or how things are done one impo
 - Tailoring onboarding to each person's role is crucial. More junior team members may need more guidance, so pairing them with experienced team members can help them learn and develop their skills. More experienced team members may have additional responsibilities that might need additional space.
 - Apart from the formal onboarding process, it's important to help new designers and researchers integrate into the team's culture. Also, it's essential to celebrate their arrival and make them feel welcome.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

@@ -46,7 +46,7 @@ Designers need seniority to work in a trio. They need to stand on equal ground t
 
 Junior designers (or designers who have never worked in such a collaborative way) struggle. Leaders need to figure out a way to support them, just providing the usual mentoring through 1-on-1s is not enough. Two ways we made this work in the past is to always hire senior designers and pair junior designers with a senior until they level up to mid-level.
 
-Central direction is even more tricky but is vital. Users won't care if features were done by different teams, they expect a coherent experience. Design leaders need to make sure there is alignment within the team by creating a common ground (for example by defining [**design principles**]({% post_url 9am26/2023-02-12-Design-principles-set-the-foundation-for-good-design %}) and what [**good design**]({% post_url 9am26/2023-02-06-What-is-good-design %}) is) and encouraging internal collaboration (for example with [**design critiques**]({% post_url 9am26/2022-09-15-Design-critique-the-core-practice-for-design-teams %})).
+Central direction is even more tricky but is vital. Users won't care if features were done by different teams, they expect a coherent experience. Design leaders need to make sure there is alignment within the team by creating a common ground (for example by defining [**design principles**]({% post_url 9am26/2023/2023-02-12-Design-principles-set-the-foundation-for-good-design %}) and what [**good design**]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}) is) and encouraging internal collaboration (for example with [**design critiques**]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %})).
 
 These efforts can channel back and support the work product-trios too. Design leaders need to make sure it's not a "design team vs product trio", but rather the trio's work is supported by what comes out of the design team.
 
@@ -72,7 +72,7 @@ Changing this is not easy, as design leaders both need a good strategic vision a
 - Design leaders face challenges in supporting individual designers and providing central direction for a coherent user experience.
 - Adoption of the product trio setup needs cultural change, designer seniority, strategic vision, and cross-functional collaboration.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

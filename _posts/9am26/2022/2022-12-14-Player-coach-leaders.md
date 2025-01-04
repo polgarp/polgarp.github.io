@@ -34,7 +34,7 @@ The disadvantage is that it's even more difficult to balance tasks on the urgent
 
 Player-coach roles won't go away. For experienced leaders, it's an opportunity to practice and hone both their design and management skills. For first-time leaders, it's an opportunity to get into management by taking a lower risk. For either, the right balance is key - and building the confidence to seamlessly shift from player to coach, sometimes even within the same discussion.
 
-> This is a post from my newsletter, [9am26](https://polgarp.com/categories/newsletter/), subscribe here:
+> This is a post from my newsletter, [9am26]({% link _pages/newsletter.md %}), subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

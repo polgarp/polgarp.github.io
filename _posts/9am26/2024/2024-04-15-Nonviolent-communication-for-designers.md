@@ -44,11 +44,11 @@ While talking about feelings might seem out of place in a professional environme
 
 The most obvious place to use NVC is when communicating with partners and stakeholders, for example, when presenting design decisions, understanding feedback, and navigating disagreements. Framing feedback around shared objectives helps to find common ground.
 
-The framework is also helpful when giving feedback at [design critique]({% post_url 9am26/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) or generally receiving feedback. How I like to give critique (focus on an aspect of the design, connect with goals, analyze how well it fulfills the goal, and describe a rationale) is already close to the NVC way. Using specific terminology helps us to better check what is observable and what stories we construct around the work presented. 
+The framework is also helpful when giving feedback at [design critique]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) or generally receiving feedback. How I like to give critique (focus on an aspect of the design, connect with goals, analyze how well it fulfills the goal, and describe a rationale) is already close to the NVC way. Using specific terminology helps us to better check what is observable and what stories we construct around the work presented. 
 
 I found NVC also quite helpful when designing, particularly when working with user needs and user research. Disconnecting observations from judgment avoids blaming the user, helps recognize biases, and avoids premature conclusions. When thinking about user needs, sometimes the direct and articulated expectations overshadow the more basic, human needs — which we need to identify to design better experiences.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

@@ -50,7 +50,7 @@ One way we used this approach was to organize research findings. I worked with a
 
 This idea can be further generalized beyond research insights. If the organization is prone to use slide decks, having slides created according to a single principle makes them easier to reuse. Ideas, project insights, data points, design rationale and similar often get referenced at various times in projects or during the lifecycle of a product. Collecting and reusing well-made slides helps in influencing and building consensus over time.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

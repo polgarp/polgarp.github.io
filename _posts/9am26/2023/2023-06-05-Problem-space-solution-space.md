@@ -44,7 +44,7 @@ Iterations are a way to resolve it, going through problems and solutions multipl
 
 In a real design process, things get even more murky. Exploring the problem space often uncovers new regions in the solution space. On the other hand, working with the solutions helps a better understanding of the problem space. The two spaces should be explored in parallel, rather than serial.
 
-When we talk about product discovery, so what's the right product to build, this is what it means. The team will discover both the problem and the solution holistically at the same time, exploring how the shape and the topography of these spaces. The plan for this exploration is the [strategy]({% post_url 2023-05-15-UX-strategy-the-design-teams-guide-to-success %}) for the project.
+When we talk about product discovery, so what's the right product to build, this is what it means. The team will discover both the problem and the solution holistically at the same time, exploring how the shape and the topography of these spaces. The plan for this exploration is the [strategy]({% post_url 9am26/2023/2023-05-15-UX-strategy-the-design-teams-guide-to-success %}) for the project.
 
 The holistic view comes from cross-functional collaboration (within and beyond the product team). Working within the two spaces not only defines the methods to use but also the flavor of collaboration. While product trios need to work together closely through product development, the amount of effort spent will differ depending on the current activity. 
 
@@ -60,7 +60,7 @@ Keeping in mind both spaces, while exploring them at the same time is where thin
 - The double diamond model represents the problem space and solution space. While it provides a framework for working with problems and solutions, it's important to recognize that these spaces are deeply intertwined.
 - Iterations and parallel exploration of the problem space and solution space are essential. Cross-functional collaboration helps maintain a holistic view. Design leaders play a vital role in guiding and supporting teams to ensure exhaustive exploration and a holistic perspective.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

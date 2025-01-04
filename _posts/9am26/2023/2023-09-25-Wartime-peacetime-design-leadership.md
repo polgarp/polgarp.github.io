@@ -45,7 +45,7 @@ I love working in design, as designers are intrinsically optimistic. We believe 
 - Leaders should provide support to their teams by giving them context to their work and updated rules of engagement, building on what was achieved in maturity, and providing additional help to those who are struggling.
 - Design has the power of counteracting fear with hope and optimism, this is important to keep in mind during wartime.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

@@ -73,7 +73,7 @@ Raising empathy is not a one-off activity. The above practices should be baked i
 - Empathy is also important for collaboration and building great teams. When team members are empathetic, they are more likely to be understanding and respectful of each other's ideas. This can lead to better collaboration and more effective teamwork.
 - Design leaders should prioritize raising the design teams and the wider org's empathy.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

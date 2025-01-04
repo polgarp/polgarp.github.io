@@ -44,7 +44,7 @@ Writing is for clarifying and organizing thoughts. It can help designers to arti
 In short, both visualization and writing are valuable thinking tools. The best tool to use in a particular situation will depend on the specific task at hand. Visualization and writing can be used together to complement each other. For example, using visualization to brainstorm ideas and then using writing to refine and communicate those ideas.
 
 Writing can be used in a few specific ways for practice and as part of the design process:
-- Journalling is a great way to explore your thoughts and feelings. It can help you to identify patterns in your thinking, to work through problems, and to develop new ideas. Keeping notes about your work is also a way to [**keep track of your wins**]({% post_url 9am26/2022-09-26-Brag-doc-Keeping-track-of-wins %}).
+- Journalling is a great way to explore your thoughts and feelings. It can help you to identify patterns in your thinking, to work through problems, and to develop new ideas. Keeping notes about your work is also a way to [**keep track of your wins**]({% post_url 9am26/2022/2022-09-26-Brag-doc-Keeping-track-of-wins %}).
 - Brainstorming with free-form writing is great to generate new ideas. I've used it for brainstorming both mindmaps (helps establish relationships between concepts) and narratives (develops ideas by framing them as a story).
 - Reflective writing is a type of writing where you reflect on your experiences and what you have learned from them. This can help you to make sense of your experiences and to develop your insights.
 - Project design logs are similar to journalling, but instead of general design practice, they are focused on a specific project, written collaboratively with team members, and are focused on keeping track of design decisions.
@@ -67,7 +67,7 @@ There are additional benefits to writing, as it helps develop personal skills, b
 - Writing can be used for personal development, as well as professional development.
 - There are many different ways to practice writing, such as journaling, brainstorming, and reflective writing.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

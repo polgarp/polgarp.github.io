@@ -64,7 +64,7 @@ To get there, clear alignment with other teams is needed, while the strategy its
 - UX strategy might include elements like team setup, user research, design process, competitive analysis, design thinking, collaboration, design systems, accessibility, and continuous growth.
 - A UX strategy should be closely aligned with the product strategy, which defines the overall direction and goals for the product.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

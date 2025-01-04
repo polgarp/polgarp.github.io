@@ -52,7 +52,7 @@ Team structure is not only an organizational chart of designers and researchers 
 - Scale your team structure as needed. As your company grows, you may need to adjust your team structure to accommodate new teams or new roles.
 - Team structure is important for collaboration and communication. A clear team structure can help to reduce friction and improve collaboration and communication.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

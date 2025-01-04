@@ -21,7 +21,7 @@ Rigor is a key ingredient in any successful user research project. But what does
 
 (Thanks for the topic idea and the insightful discussion, Louise!)
 
-Doing (more) user research makes better products, as teams feel more [**empathy**]({% post_url 9am26/2023-08-07-Raising-team-empathy %}) towards users, and make better decisions. But more research cannot mean we compromise on the quality. For example, the proliferation of unmoderated usability testing tools led to an increase in usability tests done but didn't lead to much better products as usability findings got more shallow and diluted.
+Doing (more) user research makes better products, as teams feel more [**empathy**]({% post_url 9am26/2023/2023-08-07-Raising-team-empathy %}) towards users, and make better decisions. But more research cannot mean we compromise on the quality. For example, the proliferation of unmoderated usability testing tools led to an increase in usability tests done but didn't lead to much better products as usability findings got more shallow and diluted.
 
 The big challenge is how to keep up or increase the quality, so how to balance the pace and expectations of modern product development and standards for good research. In short, how to keep user research rigorous. 
 
@@ -37,11 +37,11 @@ Rigor in short is the extent to which the research is conducted in a systematic 
 
 Much of how we do user research in the industry is established in academia, and researchers coming from that sector often bring their scientific method and a mindset biased toward rigor with them. And while we usually don't need scientific rigor in our user research practice (we are not publishing papers after all), to produce anything of value, at the minimum, we need to understand the trade-offs we are making.
 
-A sidenote - design as an activity also needs to have rigor, especially as teams scale up. Rigor in design means having a transparent, objective, and systematic approach. Clear intentions and design rationale for decisions. This still doesn't mean the design process needs to be a list of rigid activities, but rather the use of good practices, the right focus, and a structured exploration of the design space. Things like declaring [**intentions**]({% post_url 9am26/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}), [**articulating design decisions**]({% post_url 9am26/2023-02-27-Articulating-design-decisions-makes-design-work-transparent %}) and doing great [**design critiques**]({% post_url 9am26/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) all help.
+A sidenote - design as an activity also needs to have rigor, especially as teams scale up. Rigor in design means having a transparent, objective, and systematic approach. Clear intentions and design rationale for decisions. This still doesn't mean the design process needs to be a list of rigid activities, but rather the use of good practices, the right focus, and a structured exploration of the design space. Things like declaring [**intentions**]({% post_url 9am26/2023/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}), [**articulating design decisions**]({% post_url 9am26/2023/2023-02-27-Articulating-design-decisions-makes-design-work-transparent %}) and doing great [**design critiques**]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) all help.
 
 Research rigor, at least for qualitative studies, builds on four pillars - credibility, transferability, dependability, and confirmability.
 
-Credibility means that the research findings are believable and trustworthy. In other words, if the findings are likely to be accurate and reliable. This is where following the correct process comes in, including establishing a [**hypothesis**]({& post_url 9am26/2023-06-12-Writing-useful-hypotheses %}), clear research questions, using a variety of methods, involving stakeholders, and having an understanding of the target industry and target participants. 
+Credibility means that the research findings are believable and trustworthy. In other words, if the findings are likely to be accurate and reliable. This is where following the correct process comes in, including establishing a [**hypothesis**]({& post_url 9am26/2023/2023-06-12-Writing-useful-hypotheses %}), clear research questions, using a variety of methods, involving stakeholders, and having an understanding of the target industry and target participants. 
 
 Transferability refers to the extent to which the research findings can be applied to other contexts or situations. In short, how likely are the findings relevant to other users or other products? Having clarity on recruitment and participant choices, looking for behaviors, and not only for demographics in screening, understanding participants, and getting a deep understanding of users' tasks are good ways to ensure transferability. 
 
@@ -57,7 +57,7 @@ Rigor might mean additional challenges (like finding the right participants migh
 
 This is also where using good frameworks (for example RITE for testing) or tools (like automated recruitment) come in, they should enable good research, rather than make it easy to do bad research faster. Methods, tools, or frameworks promising faster research results should be understood as do we compromise on rigor or other aspects of the research?
 
-Unfortunately, rigor does have some downsides. It's more challenging to do (for example needs proper recruitment and clarity in session goals). It needs training (like how to [**ask questions the right way**]({% post_url 9am26/2023-03-20-Getting-deeper-with-well-formed-user-interview-questions %}) on interviews). Studies need to be documented and not shotgunned. And getting real facts might disturb some people, not everyone likes to hear bad news about their ideas and designs.
+Unfortunately, rigor does have some downsides. It's more challenging to do (for example needs proper recruitment and clarity in session goals). It needs training (like how to [**ask questions the right way**]({% post_url 9am26/2023/2023-03-20-Getting-deeper-with-well-formed-user-interview-questions %}) on interviews). Studies need to be documented and not shotgunned. And getting real facts might disturb some people, not everyone likes to hear bad news about their ideas and designs.
 
 Rigor might end up with the need to deliver bad news, as unbiased research can result in unexpected insights that contradict previous beliefs. However, rigor builds the researcher's credibility and trustworthiness. Delivering good quality research results builds a better reputation than delivering compromises - and excuses.
 
@@ -87,7 +87,7 @@ At the end of the day, the true value of user research rigor for product develop
 - Rigor is not always easy to achieve, but it is essential for producing high-quality user research findings. When researchers take the time to ensure rigor, they can be confident that their findings will be accurate and reliable, and that they can be used to make informed decisions about product development.
 - Several things design leaders can do to promote rigor in user research, such as providing training to researchers, setting clear expectations for research quality, and creating a culture of continuous learning.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

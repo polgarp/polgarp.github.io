@@ -19,7 +19,7 @@ Well-articulated design decisions are often the single most impactful improvemen
 
 One of the most important duties design leaders have is to make sure the design team is highly intentional in their work. This means every interaction, every screen, every word, and every pixel should have a clear reason to exist the way it does. Since the design output will be also the result of collaboration and more often than not shared with a wider audience of stakeholders, there needs to be a clearly described design rationale, easily understood by everyone. That is, the design decisions need to be well articulated.
 
-Well-articulated design decisions should stand on solid ground. I've introduced some of the topics to make this happen in the last few newsletter issues. Having a shared understanding in the org of what [good design]({% post_url 2023-02-06-What-is-good-design %}) looks like sets up ways to evaluate design decisions. Defining [design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %}) creates a foundation for making choices and accepting trade-offs. Stating a clear [design intent]({% post_url 2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) sets the context, summarizes research and data insights, and defines goals for the design. These three help in developing a solid rationale.
+Well-articulated design decisions should stand on solid ground. I've introduced some of the topics to make this happen in the last few newsletter issues. Having a shared understanding in the org of what [good design]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}) looks like sets up ways to evaluate design decisions. Defining [design principles]({% post_url 9am26/2023/2023-02-12-Design-principles-set-the-foundation-for-good-design %}) creates a foundation for making choices and accepting trade-offs. Stating a clear [design intent]({% post_url 9am26/2023/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) sets the context, summarizes research and data insights, and defines goals for the design. These three help in developing a solid rationale.
 
 Having a solid rationale also lets the designers be more confident in their choices. In product teams, designers often partner with more senior peers - an engineering lead or a product manager. Being partners, they need to stand as equals in their argumentation. Designers can develop their confidence in their own arguments by getting better at how they articulate their decisions.
 
@@ -44,7 +44,7 @@ Design leaders can help their teams in a few ways to develop better articulation
 
 Besides the obvious improvements in the design process, clear articulation of design choices also helps the wider strategy. Showing transparency in the design process and explaining why things were designed in a certain way makes organizations more design focused, and ultimately more user-centered.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
