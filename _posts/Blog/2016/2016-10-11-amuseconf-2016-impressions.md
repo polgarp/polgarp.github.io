@@ -5,6 +5,8 @@ categories:
 tags:
   - Product design
   - Design leadership
+  - Conference
+  - Summary
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
@@ -166,7 +168,7 @@ This has an impact on hiring, UX/UI designer position mean companies are not sur
 - Providing success states, congratulating on the progress made gives back.
 - Teams missing on onboarding? It’s the Conway’s law: “products are organised how the teams producing it are organizes). Silos between marketing and development break onboarding. But for example UX and Growth team can spot problems in the funnel.
 
-Sara Wachter-Boettcher: Design for Real Life
+## Sara Wachter-Boettcher: Design for Real Life
 
 - Design is never neutral, since it’s made by people who embed their culture. So design for diversity, and you need to test with all types of people (like skin color).
 - Everyone has blind spots, because we picture our audience in a very narrow way.
