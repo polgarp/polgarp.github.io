@@ -11,7 +11,7 @@ header:
 
 Last week I attended the [Strech conference 2020 online](https://www.stretchcon.com/2020-online/). I found over the years that the individual talks themselves don't give that much useful insights, but spending focused time on learning, and taking a step back from the daily storms is helpful to put things into perspective and evaluate problems, ideas in a new light.
 
-Compared to previous years ([2015]({% post_url 2015-12-06-stretchcon-2015-impressions %}), [2016]({% post_url 2016-12-06-stretchcon-2016-impressions %})) the biggest difference was the conference's online nature, due to the covid restrictions.
+Compared to previous years ([2015]({% post_url Blog/2015/2015-12-06-stretchcon-2015-impressions %}), [2016]({% post_url Blog/2016/2016-12-06-stretchcon-2016-impressions %})) the biggest difference was the conference's online nature, due to the covid restrictions.
 
 The remoteness fit nicely into the common theme of the conference: how to lead teams and organizations in a constantly changing world, how to develop ourselves as leaders to be able to enact the necessary changes and especially how to adapt communication to different situations, such as changing to a distributed model of working.
 

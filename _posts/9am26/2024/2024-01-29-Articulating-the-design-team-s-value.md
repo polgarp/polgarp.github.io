@@ -71,7 +71,7 @@ For most teams, these values are not something that will be used daily, but they
 - With the wider contribution, design can be a force multiplier, helping other teams to be more productive and efficient.
 - A way to articulate value for the design team is to make it part of their mission statement. This can help to ensure that everyone in the organization understands how design contributes to the company's success.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

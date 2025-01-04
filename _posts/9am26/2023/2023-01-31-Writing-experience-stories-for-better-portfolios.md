@@ -36,7 +36,7 @@ This is where the second step helps. Thinking in stories adds structure and prov
 
 Compared to just writing portfolio items, stories are more flexible and can be customized to different contexts. Stories don't stand on their own, but are shaped by the storyteller and received by the audience - the final form depends on both sides. As such elements of the story can change, but the key message, so the core of the earning will remain the same. Creating a portfolio item is an experience story taking a particular shape.
 
-Reflection should be a recurring activity, done every month or at least a few times per year. It should start with a short review of what happened (having a [brag doc]({% post_url 9am26/2022-09-26-Brag-doc-Keeping-track-of-wins %}) helps), and what would be worth reflecting on. To think in stories, reflection can follow from the start of a narrative scaffolding, such as the STAR framework (Situation, Task, Action Result). Add plenty of artifacts (images, text experts) by simply copy-pasting into your tool of choice - this helps when making a concrete artifact, such as a portfolio item or presentation.
+Reflection should be a recurring activity, done every month or at least a few times per year. It should start with a short review of what happened (having a [brag doc]({% post_url 9am26/2022/2022-09-26-Brag-doc-Keeping-track-of-wins %}) helps), and what would be worth reflecting on. To think in stories, reflection can follow from the start of a narrative scaffolding, such as the STAR framework (Situation, Task, Action Result). Add plenty of artifacts (images, text experts) by simply copy-pasting into your tool of choice - this helps when making a concrete artifact, such as a portfolio item or presentation.
 
 What should be the story about? The point is not just to get as many stories as possible (that's breadth). As designers progress with their careers, the stories' scope should deepen. As a rough rule of thumb, depending on one's level the story's main narrative can focus on the:
 - Interns: The first adventures as a designer or researcher.
@@ -48,7 +48,7 @@ As you learn, your tasks and execution skills should grow deeper and also wider.
 
 For design leaders, encouraging team members to create stories and share them has some additional benefits. Stories are great artifacts to work from when creating promotion cases or figuring out growth plans.  Knowledge shared in a story format is a good incentive to create it, it helps the designer share to iterate on lessons learned, and raises what the team overall knows. A small added advantage is that most teams are not great at celebrating their successes - and hearing about lessons learned is a great way to get the drinks and cake out for the team.
 
-> This is a post from my newsletter, [9am26](https://polgarp.com/categories/newsletter/), subscribe here:
+> This is a post from my newsletter, [9am26]({% link _pages/newsletter.md %}), subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

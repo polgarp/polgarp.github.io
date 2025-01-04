@@ -48,7 +48,7 @@ To make these rituals successful, each session needs to be designed well. At the
 - Meetings are team rituals that create a safe space for alignment, sharing ideas, tracking progress, growth, and team cohesion.
 - Different meetings will be needed to serve the various purposes; weekly reviews, retros, workshops, and social time.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

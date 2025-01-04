@@ -58,7 +58,7 @@ While maturity models are not the one-stop solution for all of the orchestration
 - Maturity models can be used to identify areas for improvement and drive positive change in design organizations. They can also be used to track progress over time.
 - Maturity models can contribute to improving design orchestration within organizations.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

@@ -27,7 +27,7 @@ Leaders need a lot of skills to be effective, things as communication, UX skills
 
 The demand and pressure towards design leaders is ever-increasing. Their teams want to grow themselves and their impact and want to create profound, innovative, and beautiful things. The broader business expects them to deliver great experiences and a clear value. These pressures often push leaders into assuming a masked persona, conflicting with their values, making their leadership inauthentic, and heading ultimately to disillusionment and burnout. This is the internal conflict.
 
-Depending on the context, the style does need to change. When [**times are tough**]({% post_url 9am26/2023-09-25-Wartime-peacetime-design-leadership%}) the team might need a sub-optimal design process to get things done quickly, more junior team members might need hand-holding to get through a tricky project, different people will need different coaching, the leader could be super-cautious or daring in certain projects. Some styles are just more successful and effective in certain company cultures. This is the external conflict.
+Depending on the context, the style does need to change. When [**times are tough**]({% post_url 9am26/2023/2023-09-25-Wartime-peacetime-design-leadership%}) the team might need a sub-optimal design process to get things done quickly, more junior team members might need hand-holding to get through a tricky project, different people will need different coaching, the leader could be super-cautious or daring in certain projects. Some styles are just more successful and effective in certain company cultures. This is the external conflict.
 
 Ideally, there is a clear alignment between the leader's internal values, the assumed style, and the business context. Since multiple styles might fit the same values, there are multiple paths to choose from that fit certain contexts. Articulating one's internal values and philosophy helps to establish a toolbox of styles. In some cases, one might even discover they don't fit into a given context.
 
@@ -53,7 +53,7 @@ Styles will ideally help to determine how you work with your team, and how the d
 - Design leadership goes beyond managers. Every designer and researcher is also a leader, and they need to be able to have their way to be effective. Having a clear leadership style can help them to do this.
 - Articulating your leadership style is a simple but valuable exercise. It can help you to better understand your values and motivations and to develop a more intentional and effective approach to leadership.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

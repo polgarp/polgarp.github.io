@@ -11,7 +11,7 @@ header:
   show_overlay_excerpt: false
 ---
 
-I'm starting a (bi)weekly newsletter on design leadership called **[9am26](https://polgarp.com/categories/newsletter/)**. Looking around the interwebs these days there are more and more good articles on leading and scaling design teams. So why am I adding to those? Three reasons: for myself to learn, for others to have good starting points and to start conversations.
+I'm starting a (bi)weekly newsletter on design leadership called **[9am26]({% link _pages/newsletter.md %})**. Looking around the interwebs these days there are more and more good articles on leading and scaling design teams. So why am I adding to those? Three reasons: for myself to learn, for others to have good starting points and to start conversations.
 
 Why 9am26? I imagine a design leader starting their day. After going through Slack, email and finishing the first cup of coffee, it's almost half past nine. They need to decide which problem to work on today. There are always many things to figure out at any one point in time. It could be about bettering team ceremonies, finding new practices to adopt, setting a product direction, increasing maturity, growing talented ICs and managers... the list is endless. Getting an email with a good starting point helps in charting a course forward.
 

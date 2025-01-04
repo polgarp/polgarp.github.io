@@ -51,7 +51,7 @@ Overall, 1-on-1s are an important tool for building a strong and effective desig
 - Leaders can establish and live the culture and values, make connections between team members, align individual goals with broader organizational goals, and resolve broader problems through individual cases during 1-on-1s.
 - 1-on-1s are an important tool for building a strong and effective design team, leading to higher job satisfaction, better performance, and ultimately, better design outcomes.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

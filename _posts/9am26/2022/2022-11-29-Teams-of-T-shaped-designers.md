@@ -33,7 +33,7 @@ This idea also guides hiring - as we look for new team members, we also need to 
 
 The T-shape also applies to the more specialist members of the team. If there is a research team, it's better to have one person more experienced in qualitative and another more experienced in mixed-methods or quantitative methods than to have 2 persons with the same skillset.
 
-> This is a post from my newsletter, [9am26](https://polgarp.com/categories/newsletter/), subscribe here: 
+> This is a post from my newsletter, [9am26]({% link _pages/newsletter.md %}), subscribe here: 
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

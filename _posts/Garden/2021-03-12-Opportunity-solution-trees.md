@@ -19,4 +19,4 @@ Outcome, opportunities, solutions, experiments can be laid out into a tree struc
 
 # Backlinks
 
- - [Hypothesis]({% post_url 2021-03-07-Hypothesis %})
+ - [Hypothesis]({% post_url Garden/2021-03-07-Hypothesis %})

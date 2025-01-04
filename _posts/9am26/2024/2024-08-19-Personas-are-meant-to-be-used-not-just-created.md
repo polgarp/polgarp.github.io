@@ -32,7 +32,7 @@ This approach is also a good way to showcase how personas had an impact on the d
 
 There are three more places where I found personas to be especially useful, setting the goals for designing, coming up with better ideas, and making prioritization more deliberate. 
 
-For setting the goals for design, I've written about [**expressing the intent**]({ % post_url 9am26/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) via a design brief earlier. Together with the goal, the key scenarios, and the principles, personas set the boundaries for the space to explore while designing. These provide a consistent statement to look at in the messy middle of the design process for the whole team.
+For setting the goals for design, I've written about [**expressing the intent**]({ % post_url 9am26/2023/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) via a design brief earlier. Together with the goal, the key scenarios, and the principles, personas set the boundaries for the space to explore while designing. These provide a consistent statement to look at in the messy middle of the design process for the whole team.
 
 In coming up with new and valuable ideas, personas provide context and narrative. Whether in a design studio or when generating answers to HMWs, thinking about somebody concretely increases empathy (by making it more personal) and helps to come up with more specifics while opening up broader solution spaces.
 
@@ -52,7 +52,7 @@ The other common difficulty I see in getting personas right is how efforts often
 
 Ultimately as with any other tool, personas need to be useful throughout the design process to make them sensible to create.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

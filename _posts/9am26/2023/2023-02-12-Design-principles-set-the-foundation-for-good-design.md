@@ -17,7 +17,7 @@ Design principles set the foundation for consistently articulating design choice
 
 # ☕ Design principles set the foundation for good design
 
-The pursuit of consistency and coherence in design becomes a paramount concern for design teams as they work on their products over time. This encompasses not only the manifestation of design artifacts such as user interface and user experience design but also extends to the underlying decision-making processes. In other words, it involves the systematic evaluation and prioritization of design preferences and trade-offs and the clear articulation of these choices. This becomes an even more critical factor in the quest for attaining a level of [good design]({% post_url 2023-02-06-What-is-good-design %}). 
+The pursuit of consistency and coherence in design becomes a paramount concern for design teams as they work on their products over time. This encompasses not only the manifestation of design artifacts such as user interface and user experience design but also extends to the underlying decision-making processes. In other words, it involves the systematic evaluation and prioritization of design preferences and trade-offs and the clear articulation of these choices. This becomes an even more critical factor in the quest for attaining a level of [good design]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}). 
 
 Even with the best process, designing products is messy. There is a stream of trade-offs to consider between various insights, design choices, technical execution, and business goals. There are also constant feedback and ideas from the rest of the product team or the wider organization to filter through and act on. Under time pressure, fast decisions have to be made.
 
@@ -49,9 +49,9 @@ Once design principles are created and shared, they can be used in a few ways:
 3. Articulating choices (when prioritizing or presenting design decisions).
 4. Providing design critique.
 
-Design leaders can use design principles to improve the shared understanding in the team of what good looks like and scale direction. It's also a good tool to talk about design goals in the wider organization and express what [good design]({% post_url 2023-02-06-What-is-good-design %}) looks like.
+Design leaders can use design principles to improve the shared understanding in the team of what good looks like and scale direction. It's also a good tool to talk about design goals in the wider organization and express what [good design]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}) looks like.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

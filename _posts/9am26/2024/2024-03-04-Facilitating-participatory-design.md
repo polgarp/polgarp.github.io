@@ -48,7 +48,7 @@ Participatory design is not only a way to enrich the design process, it's also a
 - Facilitation is crucial in navigating input from non-designers, enriching the creative process, and ensuring user needs are addressed.
 - Despite challenges, such as understanding internal dynamics and involving non-designers, participatory design remains key for creating user-centered products.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

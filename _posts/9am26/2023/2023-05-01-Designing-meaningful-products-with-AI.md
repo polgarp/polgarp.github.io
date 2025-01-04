@@ -20,7 +20,7 @@ AI has become a buzzword in tech, but simply adding it to a product does not gua
 
 I keep getting asked how to design for AI. Since the hype just keeps growing, seemingly everyone is either already working on an AI product (at the minimum wondering how to add ChatGPT to all the input fields) or expects to work on one very shortly. Hence the interest in how to actually design with these systems or at least get started.
 
-I wrote an article a couple of years ago ([**Designing AI products**]({% post_url 2017-09-22-Designing-AI-products %})) when machine learning started to catch up. The article more or less covered the then state-of-the-art and our understanding of the challenges. Working with AI tech more recently, plus all the advances in the field (generative AI systems especially) allows me to add details, especially about what this all means for designers.
+I wrote an article a couple of years ago ([**Designing AI products**]({% post_url Blog/2017/2017-09-22-Designing-AI-products %})) when machine learning started to catch up. The article more or less covered the then state-of-the-art and our understanding of the challenges. Working with AI tech more recently, plus all the advances in the field (generative AI systems especially) allows me to add details, especially about what this all means for designers.
 
 Three statements to start with - neither of these should be highly controversial:
 1. AI is a technology, just having it in the system doesn't imply the software's valuable.
@@ -69,7 +69,7 @@ In the end, for design leaders, AI doesn't change that much. Spaces for their te
 - The design process needs to adapt to AI tech, designers need to think about the interaction model, mental models, solutions, dynamic experiences, uncertain outcomes, and how to prototype for AI systems when designing AI products.
 - To create successful AI products, designers should focus on the principles of transparency, user-centered design, and collaboration, and keep ethical and legal concerns in mind.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

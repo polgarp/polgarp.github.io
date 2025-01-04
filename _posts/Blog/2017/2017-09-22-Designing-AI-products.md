@@ -98,7 +98,7 @@ Responsibility for AI’s decisions is unclear, so plenty of ethics questions, l
 
 ---
 
-Ultimately it boils down to this: designers of such systems will need to be prepared on how to tackle these issues and still keep focusing in the users. There was a great quote on last year’s [Amuse conference]({% post_url 2016-10-11-amuseconf-2016-impressions %}) on this:
+Ultimately it boils down to this: designers of such systems will need to be prepared on how to tackle these issues and still keep focusing in the users. There was a great quote on last year’s [Amuse conference]({% post_url Blog/2016/2016-10-11-amuseconf-2016-impressions %}) on this:
 
 > Algorithmic cruelty is the cruelty of the design team. — Giles Colborne
 

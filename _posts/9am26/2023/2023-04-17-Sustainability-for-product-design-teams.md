@@ -29,9 +29,9 @@ On the tactical level, the design should take into consideration the carbon cons
 
 On the more strategic level, product design through a deep understanding of users and creative problem-solving can influence business models for services and what features are added to products, and in some cases also what products are created. Depending on the product category the impact can be larger here than on the tactical level. Designers can explore ways to reduce the overall environmental footprint by making informed decisions throughout the product's life cycle. Additionally, educating users about the importance of sustainable digital product use and encouraging behavior change, such as reducing data consumption, can contribute to overall sustainability efforts.
 
-The difficulty in having more sustainable practices is part of just plain old inertia. When we try to adopt new practices and mindsets (whether it's new ethical standards, accessibility, or increased [design quality]({% post_url 2023-02-06-What-is-good-design %})), the push of work that needs to happen often leaves little time to adopt or better the design process. 
+The difficulty in having more sustainable practices is part of just plain old inertia. When we try to adopt new practices and mindsets (whether it's new ethical standards, accessibility, or increased [design quality]({% post_url 9am26/2023/2023-02-06-What-is-good-design %})), the push of work that needs to happen often leaves little time to adopt or better the design process. 
 
-One way to counteract the inertia is to embed such practices directly into the design process: revising [design principles]({% post_url 2023-02-12-Design-principles-set-the-foundation-for-good-design %}) to include a sustainability angle, adding such principles to [design intentions]({% post_url 2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}), and having sustainability checks as part of the definition of done. 
+One way to counteract the inertia is to embed such practices directly into the design process: revising [design principles]({% post_url 9am26/2023/2023-02-12-Design-principles-set-the-foundation-for-good-design %}) to include a sustainability angle, adding such principles to [design intentions]({% post_url 9am26/2023/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}), and having sustainability checks as part of the definition of done. 
 
 More difficult seems to be the adoption of new methods, for example, impact mapping or carbon calculations (for web pages), as these need to go beyond what a designer can do on their own and include other partners. But once the methods are understood, they can be adopted similarly to other new design practices.
 
@@ -48,7 +48,7 @@ As with everything in product development, the design team would need to work to
 - Collaboration and communication among design teams, engineering, product, and other stakeholders are crucial for setting common sustainability goals, sharing best practices, and fostering a culture of sustainability.
 - Encouraging innovation in digital product design by exploring emerging technologies, materials, and approaches can contribute to finding new ways to address sustainability challenges and promote sustainable practices.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

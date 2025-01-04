@@ -56,7 +56,7 @@ Even if leaders lead by example, celebrating is a team sport. Rituals only work 
 - Celebrating successes boosts motivation, engagement, team cohesion, and learning opportunities. It fosters a positive work environment, enhances morale, and contributes to job satisfaction.
 - Team leaders play a crucial role in establishing a culture of celebration. They lead by example, create supportive environments for sharing successes, and encourage peer recognition. Personalization, authenticity, and inclusive rituals contribute to a successful celebration culture.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

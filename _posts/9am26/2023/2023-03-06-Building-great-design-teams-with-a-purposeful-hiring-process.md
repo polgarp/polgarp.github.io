@@ -18,9 +18,9 @@ Great teams are not born overnight - they are forged through a purposeful hiring
 
 # ☕  Building great design teams with a purposeful hiring process
 
-Hiring well is difficult, yet it's one of the highest leverage work a design leader can do. If there are missing people in the team and open headcounts, the rest of the team, the overall design output, and impact suffer. On a more abstract level, absent team members might also mean missing expertise (in a **[team with t-shaped designers]({% post_url 2022-11-29-Teams-of-T-shaped-designers %})**), and a lower diversity of thought. So design leaders should prioritize hiring above everything else, and involve their teams as much as possible. 
+Hiring well is difficult, yet it's one of the highest leverage work a design leader can do. If there are missing people in the team and open headcounts, the rest of the team, the overall design output, and impact suffer. On a more abstract level, absent team members might also mean missing expertise (in a **[team with t-shaped designers]({% post_url 9am26/2022/2022-11-29-Teams-of-T-shaped-designers %})**), and a lower diversity of thought. So design leaders should prioritize hiring above everything else, and involve their teams as much as possible. 
 
-With hiring being difficult, some leaders are less comfortable putting effort into it and rely on their respective HR or People team partners to do much of the heavy lifting - which is a mistake. Great designers and researchers can be only hired through care, commitment, and focus, implemented in a purposeful hiring process (starting from the **[job ad]({% post_url 2022-10-27-Writing-great-job-ads %})** up until the evaluation post-trial period). 
+With hiring being difficult, some leaders are less comfortable putting effort into it and rely on their respective HR or People team partners to do much of the heavy lifting - which is a mistake. Great designers and researchers can be only hired through care, commitment, and focus, implemented in a purposeful hiring process (starting from the **[job ad]({% post_url 9am26/2022/2022-10-27-Writing-great-job-ads %})** up until the evaluation post-trial period). 
 
 I've written about our hiring process a couple of years ago, right after I learned my first few lessons in **[Hiring UX people at Emarsys](https://medium.com/emarsys-craftlab/hiring-ux-people-at-emarsys-e12f5bfdd5fb)**. Based on the lessons I've learned since, some parts seem still quite relevant - having clear ideas about the team and how the role fits and having principles for the process and the hiring decision. In other parts, however, especially within the process steps I've changed my mind considerably, I don't believe homework or trial days are good ideas anymore.
 
@@ -46,7 +46,7 @@ Over the last two roles I had, we came to similar process steps, which can be bo
 
 One of my key learning over the past few years was how homework, most types of in-person exercises (like whiteboard sessions), and trial days all suffer from the same issue. There are perceived benefits to both parties, as there is a deeper look into how the candidates perform, how they approach problems, etc that paints a better picture than a case study. The candidates also get a better and deeper insight into the internal collaboration of the company. But the downsides far outweigh the benefits. Every one of these practices asks the candidates to spend time and energy on unjustified tasks while creating further stress. Also, certain biases in these tasks favor some candidates over others that might be not aligned with the profile we are looking for. For example, whiteboard exercises favor people who can sketch quickly - which is a nice skill to have but disqualify a lot of candidates who would be otherwise a great fit. 
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

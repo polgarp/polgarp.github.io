@@ -25,7 +25,7 @@ There is a lot of great material on the interweb for designers and researchers o
 
 I also keep hearing from managers that they had too many bad experiences with unfit managers in the past, so they plan to do better by doing the opposite of what they've seen. While this idea has a good intention (avoid mistakes seen in the past), it doesn't have a positive vision of what good looks like.
 
-Nurturing designers covers a wide range of activities, defining the [**career ladder**]({% post_url 9am26/2023-04-03-Career-ladders-chart-a-path-for-the-teams-growth %}), managing performance, giving continuous feedback, regular [**1-on-1**]({% post_url 9am26/2023-05-08-1-on-1s-strengthening-the-team-with-coaching %})s, and career development are all part of it. There are both long-term, like career development discussions, and short-term activities, like helping the person with what they need at the moment. 1-on-1s are typically the place for the weekly iteration on both long-term and short-term improvement.
+Nurturing designers covers a wide range of activities, defining the [**career ladder**]({% post_url 9am26/2023/2023-04-03-Career-ladders-chart-a-path-for-the-teams-growth %}), managing performance, giving continuous feedback, regular [**1-on-1**]({% post_url 9am26/2023/2023-05-08-1-on-1s-strengthening-the-team-with-coaching %})s, and career development are all part of it. There are both long-term, like career development discussions, and short-term activities, like helping the person with what they need at the moment. 1-on-1s are typically the place for the weekly iteration on both long-term and short-term improvement.
 
 Whatever help a person needs, besides some trivial and basic feedback, progress will need an established and positive relationship. Part of it is the negative experiences many designers had in the past with bad managers, but a more important reason is the need to understand where a person is at the moment, and where they want to go. This is where coaching tools help.
 
@@ -36,8 +36,8 @@ The advantage of GROW and coaching more generally is that the starting point is 
 Sometimes more directness is needed simply because the person is more junior. But even then, there needs to be a good balance. How a leader helps an employee depends on the person, and also the person's level, more juniors need more telling compared to more senior people.
 
 Besides direct coaching, nurturing will also change as designers and researchers progress in their careers:
-- Juniors need more help in their craft, to develop a consistent methodology and arrive in the profession. Practices like [**pair design**]({% post_url 9am26/2023-03-13-Pair-design-leads-to-better-design-collaboration %}), working in an apprentice model, and general mentoring are the most helpful at this level. As long-term career goals might be too far off, it's better to focus on smaller steps.
-- Mid-levels having a good knowledge of their craft should be looking to find their voice and confidence, developing their articulating on both problems and solutions and coming into their own as a member of their product team. Practices like [**design critique**]({% post_url 9am26/2022-09-15-Design-critique-the-core-practice-for-design-teams %}), and getting bigger and more complex tasks support this, as more and more coaching.
+- Juniors need more help in their craft, to develop a consistent methodology and arrive in the profession. Practices like [**pair design**]({% post_url 9am26/2023/2023-03-13-Pair-design-leads-to-better-design-collaboration %}), working in an apprentice model, and general mentoring are the most helpful at this level. As long-term career goals might be too far off, it's better to focus on smaller steps.
+- Mid-levels having a good knowledge of their craft should be looking to find their voice and confidence, developing their articulating on both problems and solutions and coming into their own as a member of their product team. Practices like [**design critique**]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %}), and getting bigger and more complex tasks support this, as more and more coaching.
 - Seniors would grow their influence in more personalized and specific ways, which also means more and more of their growth would be driven by themselves, with leaders fully stepping into a coaching role. With taking things into their own hands, individual practices get less important compared to developing partnerships and driving projects and initiatives.
 
 Beyond the designers' and researchers' goals, leaders also need to think about the broader organization's needs. This is where shaping the individuals' plans and connecting goals from multiple people together helps to reinforce the overall team vision and strategy. 
@@ -60,7 +60,7 @@ Beyond the designers' and researchers' goals, leaders also need to think about t
 - The level of directness required from a leader will vary depending on the experience level of the designer or researcher. Juniors may need more telling, while more senior designers and researchers may benefit more from a coaching approach.
 - Beyond the individual's goals, leaders also need to consider the broader organization's needs and align the individual's plans with the team's vision and strategy.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

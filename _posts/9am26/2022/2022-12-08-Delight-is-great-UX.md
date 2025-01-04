@@ -27,7 +27,7 @@ Obviously, designers need to do their user research and focus on their craft at 
 
 For these discussions to happen, designers can lean on their design teams to define what delightful would mean together. As design leaders are responsible for the overall quality - creating a common understanding of what high quality and delight are in the given context is an important, and most likely, ongoing task.
 
-> This is a post from my newsletter, [9am26](https://polgarp.com/categories/newsletter/), subscribe here:
+> This is a post from my newsletter, [9am26]({% link _pages/newsletter.md %}), subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

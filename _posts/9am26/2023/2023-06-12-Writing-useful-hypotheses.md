@@ -22,7 +22,7 @@ Hypothesis! Gotta love them. They provide scaffolding to how we think about our 
 
 Well as it often goes, hearing about or using a term doesn't mean it's understood well. Or used the right way. Just writing a statement and calling it a hypothesis, doesn't make it a hypothesis. Much less science. 
 
-I've written earlier how stating a [**design intent**]({% post_url 2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) helps in articulating shared goals not only for the designer but the whole product team. While hypotheses are great in stating the intent, their role goes beyond, as they give a broader clarity to the product design process.
+I've written earlier how stating a [**design intent**]({% post_url 9am26/2023/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve %}) helps in articulating shared goals not only for the designer but the whole product team. While hypotheses are great in stating the intent, their role goes beyond, as they give a broader clarity to the product design process.
 
 In the context of product development, a hypothesis refers to a proposed explanation that can be tested to validate or invalidate a specific product-related idea. While its use is based on the scientific method, it's more of an inspiration than an actual implementation of the scientific process.
 
@@ -65,7 +65,7 @@ The terms beliefs and bets also allow for a simpler way of teaching hypothesis-d
 - This framework emphasizes the importance of understanding business problems, connecting them to user problems, and prioritizing them based on beliefs and supporting evidence.
 - Using hypotheses encourages a mindset of actively looking to disprove beliefs, fostering critical thinking, experimentation, and a culture of taking risks and making data-informed decisions.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on

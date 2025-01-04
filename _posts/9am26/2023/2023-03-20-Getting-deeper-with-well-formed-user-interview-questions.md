@@ -46,7 +46,7 @@ Getting deep insights and stories from users is also how the design team can com
 - As the topic gets clearer for further interviews, the guide should be iterated on by rewriting questions and restructuring flow. 
 - Design leaders can advocate great stories from users, so those stories must flow from research done.
 
-> This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
+> This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
