@@ -7,6 +7,7 @@ tags:
   - Idea
   - Product design
   - User research
+  - Quotes
 header:
   overlay_image: /assets/images/2016-01-26-About-Ford-s-faster-horses.jpeg
   overlay_filter: 0.5
