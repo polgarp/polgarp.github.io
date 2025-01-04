@@ -4,6 +4,9 @@ categories:
   - Blog
 tags:
   - Product design
+  - Design principles
+  - Annoyance
+  - UX fail
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
