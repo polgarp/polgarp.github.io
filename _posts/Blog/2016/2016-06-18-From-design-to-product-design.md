@@ -5,6 +5,7 @@ categories:
 tags:
   - Product design
   - Conference
+  - Teaching
   - Ideas
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
