@@ -5,6 +5,8 @@ categories:
 tags:
   - Product discovery
   - User research
+  - Empathy
+  - Idea
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
