@@ -4,8 +4,9 @@ categories:
   - Blog
 tags:
   - Design leadership
-  - Conference summary
+  - Conference
   - Org design
+  - Summary
 header:
   overlay_image: /assets/images/2015-12-06-stretch-logo.jpeg
   overlay_filter: 0.5
