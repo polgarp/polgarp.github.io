@@ -4,7 +4,7 @@ categories:
   - Blog
 tags:
   - Product development
-  - Workshop
+  - Workshop method
   - Product discovery
   - Method
 header:
