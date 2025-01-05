@@ -4,6 +4,10 @@ categories:
   - Blog
 tags:
   - User research
+  - Template
+  - Continuous discovery
+  - Usability testing
+  - User interview
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
