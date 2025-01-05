@@ -4,6 +4,10 @@ categories:
   - Blog
 tags:
   - Design leadership
+  - Summary
+  - Org design
+  - Design career
+  - Senior plus
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false
