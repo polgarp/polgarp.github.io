@@ -5,6 +5,7 @@ categories:
 tags:
   - Design leadership
   - Design practice
+  - Org design
   - 9am26
 header:
   overlay_image: /assets/images/2022-12-14-Player-coach-leadership.jpg
