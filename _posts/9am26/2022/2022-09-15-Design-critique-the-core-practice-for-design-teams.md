@@ -4,6 +4,9 @@ categories:
   - Newsletter
 tags:
   - Design practice
+  - Method
+  - Product Design
+  - Presenting work
   - 9am26
 header: 
   overlay_color: rgba(255, 0, 0, 0.8)
