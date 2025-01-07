@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - User research
+  - Research repository
+  - Note taking
   - 9am26
 header:
   overlay_image: /assets/images/2022-10-10-Structuring-research-notes.jpg
