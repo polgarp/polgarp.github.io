@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design teams
+  - Design skills
+  - Design career
   - 9am26
 header:
   overlay_image: /assets/images/2022-11-29-Teams-of-T-shaped-designers.jpg
