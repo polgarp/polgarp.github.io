@@ -5,6 +5,7 @@ categories:
 tags:
   - Design career
   - People management
+  - Fulfilling career
   - 9am26
 header:
   overlay_image: /assets/images/2022-09-26-Brag-doc-Keeping-track-of-wins.jpg
