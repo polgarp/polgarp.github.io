@@ -4,7 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Product design 
+  - Product design
+  - Design audit
   - 9am26
 header:
   overlay_image: /assets/images/2023-04-24-Design-audits-improving-collaboration-quality-and-alignment.jpg
