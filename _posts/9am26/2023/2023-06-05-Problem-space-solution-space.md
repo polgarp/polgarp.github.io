@@ -5,6 +5,8 @@ categories:
 tags:
   - Product design
   - Design process
+  - Problem space
+  - Solution space
   - 9am26
 header:
   overlay_image: /assets/images/2023-06-05-Problem-space-solution-space.jpg
