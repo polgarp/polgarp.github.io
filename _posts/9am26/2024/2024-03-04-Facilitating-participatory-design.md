@@ -5,6 +5,7 @@ categories:
 tags:
   - Design leadership
   - Design process
+  - Collaboration
   - 9am26
 header:
   overlay_image: /assets/images/2024-03-04-Facilitating-participatory-design.jpg
