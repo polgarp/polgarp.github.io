@@ -5,6 +5,7 @@ categories:
 tags:
   - Product design
   - Design practice
+  - Prototype
   - 9am26
 header:
   overlay_image: /assets/images/2024-01-15-Prototypes-model-experiences.jpg
