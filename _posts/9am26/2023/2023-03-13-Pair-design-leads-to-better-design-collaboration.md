@@ -6,6 +6,8 @@ tags:
   - Product design
   - Collaboration
   - Design teams
+  - Pair design
+  - Mentoring
   - 9am26
 header:
   overlay_image: /assets/images/2023-03-13-Pair-design-leads-to-better-design-collaboration.jpg
