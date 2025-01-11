@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design leadership
+  - Maturity
+  - Good design
   - 9am26
 header:
   overlay_image: /assets/images/2023-11-27-Maturity-models-help-formulating-what-good-looks-like.jpg
