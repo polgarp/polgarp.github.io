@@ -4,6 +4,9 @@ categories:
   - Newsletter
 tags:
   - Design leadership
+  - People management
+  - Hiring
+  - Team management
   - 9am26
 header:
   overlay_image: /assets/images/2023-07-05-Onboarding-designers.jpg
