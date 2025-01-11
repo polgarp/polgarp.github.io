@@ -7,6 +7,7 @@ tags:
   - Product development
   - Product discovery
   - Collaboration
+  - Product trio
   - 9am26
 header:
   overlay_image: /assets/images/2023-06-26-Product-trios-for-designers.jpg
