@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design leadership
+  - Design process
+  - Evidence-based design
   - 9am26
 header:
   overlay_image: /assets/images/2023-09-18-Activating-insights-for-the-design-process.jpg
