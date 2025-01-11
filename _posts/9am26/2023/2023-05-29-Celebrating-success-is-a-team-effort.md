@@ -5,6 +5,8 @@ categories:
 tags:
   - Design leadership
   - People management
+  - Design teams
+  - Team management
   - 9am26
 header:
   overlay_image: /assets/images/2023-05-29-Celebrating-success-is-a-team-effort.jpg
