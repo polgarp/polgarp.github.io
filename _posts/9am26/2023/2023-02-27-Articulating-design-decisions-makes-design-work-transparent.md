@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - Product design
+  - Design intent
+  - Design rationale
   - 9am26
 header:
   overlay_image: /assets/images/2023-02-27-Articulating-design-decisions-makes-design-work-transparent.jpg
