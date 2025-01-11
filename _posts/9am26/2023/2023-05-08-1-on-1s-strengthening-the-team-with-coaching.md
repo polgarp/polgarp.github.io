@@ -5,6 +5,7 @@ categories:
 tags:
   - Design leadership
   - People management
+  - Coaching
   - 9am26
 header:
   overlay_image: /assets/images/2023-05-08-1-on-1s-strengthening-the-team-with-coaching.jpg
