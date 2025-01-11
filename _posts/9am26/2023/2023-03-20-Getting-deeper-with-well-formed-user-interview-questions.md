@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - User research
+  - Method
+  - User interview
   - 9am26
 header:
   overlay_image: /assets/images/2023-03-20-Getting-deeper-with-well-formed-user-interview-questions.jpg
