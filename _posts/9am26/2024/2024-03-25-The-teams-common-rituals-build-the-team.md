@@ -5,6 +5,7 @@ categories:
 tags:
   - Design leadership
   - Design teams
+  - Team management
   - 9am26
 header:
   overlay_image: /assets/images/2024-03-25-The-teams-common-rituals-build-the-team.jpg
