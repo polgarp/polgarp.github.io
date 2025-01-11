@@ -5,6 +5,10 @@ categories:
 tags:
   - Design career
   - Mentoring
+  - Confidence
+  - Coaching
+  - Self-management
+  - Job hunting
   - 9am26
 header:
   overlay_image: /assets/images/2023-01-31-Writing-experience-stories-for-better-portfolios.jpg
