@@ -4,6 +4,8 @@ categories:
   - Newsletter
 tags:
   - Product design
+  - Idea
+  - Inspiration
   - 9am26
 header:
   overlay_image: /assets/images/2023-07-10-Desire-paths-following-the-users-tracks.jpg
