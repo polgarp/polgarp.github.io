@@ -1,0 +1,1 @@
+Discovery is not only research, the way for design to fit with an agile process. Dual track etc.
