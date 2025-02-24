@@ -31,3 +31,5 @@ https://medium.com/design-bootcamp/mindful-design-reducing-anxiety-through-calm-
 CAlm TEchnology Book + website
 
 https://caseorganic.medium.com/is-your-product-designed-to-be-calm-cdde5039cca5
+
+https://nothinghuman.substack.com/p/the-tyranny-of-the-marginal-user - designing slow products
