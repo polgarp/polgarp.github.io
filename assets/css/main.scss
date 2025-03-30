@@ -5,11 +5,15 @@
 @charset "utf-8";
 
 $link-color: #FF0000 !default;
-$serif: 'IBM Plex Serif', Georgia, Times, serif !default;
-$sans-serif: 'IBM Plex Sans', Georgia, Times, serif !default;
-$monospace: 'IBM Plex Mono', Georgia, Times, serif !default;
 
-$header-font-family: $serif !default;
+$serif: "IBM Plex Serif", Georgia, serif !default;
+//$sans-serif: "IBM Plex Sans", Verdana, sans-serif !default;
+$sans-serif:  "IBM Plex Mono", "Courier New", monospace !default;
+$monospace: "IBM Plex Mono", "Courier New", monospace !default;
+
+$sans-serif-narrow: $monospace !default;
+$global-font-family: $monospace !default;
+$header-font-family: $monospace !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
