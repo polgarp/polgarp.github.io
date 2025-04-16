@@ -20,7 +20,7 @@ I'm available as a design mentor and adviser, helping designers and design teams
 I'm happy to collaborate on things like
 - Building effective design teams
 - Making designers true partners to the business
-- Establishing product discovery
-- Conducting user research
+- Establishing product discovery.
+- Conducting user research.
 
 Want to discuss your product? Need design or career advice? Let's discuss: **hello@polgarp.com**.
