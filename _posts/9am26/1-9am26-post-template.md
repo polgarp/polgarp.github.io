@@ -12,7 +12,7 @@ header:
 ---
 
 
-{% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}
+{% include figure image_path="/assets/images/.jpg" alt="" caption="" %}
 
 # ☕
 
