@@ -17,7 +17,9 @@ header:
 
 {% include figure image_path="/assets/images/.jpg" alt="" caption="" %}
 
-# ☕ The discovery track
+# ☕ Discovery is more than user research
+
+It's about making sure we build the right thing. But this goes beyond
 
 Discovery is one of the those terms that describes very simply what needs to happen in product development, but since it's so easy adopt, practitioners often try to fill it up with their own ideas. If you have a hammer, everything looks like a nail.
 
@@ -51,13 +53,16 @@ When starting out with discovery teams need to get over two big challenges: more
 
 <p style="text-align: center;">🁃</p>
 
-Continuous Discovery Habits
+Product discovery is usually paired with delivery in a development process usually named dual track agile. **Jeff Patton**'s  [Dual Track Development is not Duel Track](http://jpattonassociates.com/dual-track-development/) describes the origin of the term, the differences between discovery and delivery, and how product teams need to do both activites at the same time.
 
-[Dual Track Development is not Duel Track](http://jpattonassociates.com/dual-track-development/) by **Jeff Patton**
+Besides offering a good primer on discovery, [The critical role of discovery in product development
+](https://uxdesign.cc/the-critical-role-of-discovery-in-product-development-6f50bf196722) by **Matthew Godfrey** offers a view on collaboration in discovery. It's usually lead by the product manager, product designer and technical lead, while other disciplines can join temporarily the efforts. 
 
-[https://uxdesign.cc/the-critical-role-of-discovery-in-product-development-6f50bf196722](#)
+[Product Discovery: Pitfalls and Anti-Patterns
+](http://svpg.com/product-discovery-anti-patterns/)
+[Discovery is not a process](https://jocatorres.medium.com/discovery-is-not-a-process-e18c0b301299)
 
-[http://svpg.com/product-discovery-anti-patterns/](#)
+
 
 [https://www.mindtheproduct.com/2019/07/product-discovery-or-product-delivery-how-do-you-decide/](#)
 
