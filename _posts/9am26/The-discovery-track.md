@@ -51,24 +51,24 @@ When starting out with discovery teams need to get over two big challenges: more
 
 # 🍪 Things to snack on
 
-<p style="text-align: center;">🁃</p>
-
 Product discovery is usually paired with delivery in a development process usually named dual track agile. **Jeff Patton**'s  [Dual Track Development is not Duel Track](http://jpattonassociates.com/dual-track-development/) describes the origin of the term, the differences between discovery and delivery, and how product teams need to do both activites at the same time.
+
+<p style="text-align: center;">♠</p>
 
 Besides offering a good primer on discovery, [The critical role of discovery in product development
 ](https://uxdesign.cc/the-critical-role-of-discovery-in-product-development-6f50bf196722) by **Matthew Godfrey** offers a view on collaboration in discovery. It's usually lead by the product manager, product designer and technical lead, while other disciplines can join temporarily the efforts. 
 
-[Product Discovery: Pitfalls and Anti-Patterns
-](http://svpg.com/product-discovery-anti-patterns/)
-[Discovery is not a process](https://jocatorres.medium.com/discovery-is-not-a-process-e18c0b301299)
+<p style="text-align: center;">♠</p>
 
+If discovery is building the right product, it's important to understand how the wrong product could be built. This is where understanding the various risk types is helpful. **Marty Cagan** describes four types of risks in [Product Risk Taxonomy](https://www.svpg.com/product-risk-taxonomies/): value, usability, feasibility and viability. By covering each of these risks, product teams discover what product they should build.
 
+<p style="text-align: center;">♠</p>
 
-[https://www.mindtheproduct.com/2019/07/product-discovery-or-product-delivery-how-do-you-decide/](#)
+**Chris Jones** in [Product Discovery: Pitfalls and Anti-Patterns](http://svpg.com/product-discovery-anti-patterns/) categorizes discovery mistakes into 6 categories. These are: Confirmation-biased discovery (focusing on an alreadz established solution), product-as-a-prtotype discovery (mistaken delivery), partial-team discovery (doesn't address all risks), one-dimensional discovery (focused on a single method or approach), big-bang discovery (lacking continuity), outsourced discovery (expecting others can learn instead of us). There are also some tips to get it right.
 
-[https://www.producttalk.org/2020/06/measure-discovery/](#)
+<p style="text-align: center;">♠</p>
 
-[https://www.svpg.com/product-risk-taxonomies/](#)
+The ultimate result of discovery is better outcomes for the users. This is main reason of handling discovery as a team level activity, rather than focused only on specific aspect. In [Doing Discovery Well: How to Measure and Guide Your Team](https://www.producttalk.org/2020/06/measure-discovery/), **Teresa Torres** shows that the good lagging indicator for discovery is how well the team reaches their desired outcome. As a more immediate measure, cycle time between activites can be used, like how often the team talks to a user, runs an expriment, or throws away solutions.
 
 
 
