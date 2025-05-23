@@ -19,11 +19,13 @@ header:
 
 # ☕ Discovery is more than user research
 
-It's about making sure we build the right thing. But this goes beyond
+Discovery in product development defines the group of activites that need to happen so the team knows what is the right product to build. As [Teresa Torres](https://www.producttalk.org/) puts it: *the work we do to make decisions about what to build*.
 
-Discovery is one of the those terms that describes very simply what needs to happen in product development, but since it's so easy adopt, practitioners often try to fill it up with their own ideas. If you have a hammer, everything looks like a nail.
+Since multiple people make decisions about what to build, I often hear practitioners reframing their exisitng approach as discovery. For example designers calling user research as discovery, or product managers talking to a few customers and writing a PRD and calling it a day. If you have a hammer, everything looks like a nail. 
 
-"the work we do to make decisions about what to build" - as [Teresa Torres](https://www.linkedin.com/in/ACoAAAAABQIBksTwFRyWlc2Rz43Z-BbuVG8zw54 "https://www.linkedin.com/in/ACoAAAAABQIBksTwFRyWlc2Rz43Z-BbuVG8zw54") puts it.
+Figuring out what the right product is needs input from all members of a product team (the [**product trio**]({% post_url 9am26/2023/2023-06-26-Product-trios-for-designers %}) approach), and thus a combination of activities. 
+
+
 
 
 Product discovery being part of dual track agile resolves the question when sh
