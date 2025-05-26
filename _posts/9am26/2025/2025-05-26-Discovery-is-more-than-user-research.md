@@ -1,5 +1,5 @@
 ---
-title: "e47 The discovery track "
+title: "e47 Discovery is more than user research"
 categories:
   - Newsletter
 tags:
@@ -16,7 +16,7 @@ header:
 
 When working on a new opportunity, the first thing a product team needs to do is to make some decisions how they are going to solve it. Most probably they won't have all the information readily available, and they would need to spend a bit of time to learn and understand, that is to do discovery. Designers are often expected to drive this process, and their usual reaction is to focus on user research. But it's important to realize that discovery is more than that.
 
-{% include figure image_path="/assets/images/.jpg" alt="" caption="" %}
+{% include figure image_path="/assets/images/2025-05-26-Discovery-is-more-than-user-research.jpg" alt="Photo by [Amin](https://unsplash.com/@aminpics?utm_content=creditCopyText\&utm_medium=referral\&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-dirt-road-going-up-a-hill-covered-in-fog-i5QoPix2c90?utm_content=creditCopyText\&utm_medium=referral\&utm_source=unsplash)" caption="Photo by [Amin](https://unsplash.com/@aminpics?utm_content=creditCopyText\&utm_medium=referral\&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-dirt-road-going-up-a-hill-covered-in-fog-i5QoPix2c90?utm_content=creditCopyText\&utm_medium=referral\&utm_source=unsplash)" %}
 
 # ☕ Discovery is more than user research
 
