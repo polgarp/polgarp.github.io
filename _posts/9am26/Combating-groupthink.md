@@ -26,6 +26,12 @@ Is it a designer's job to get to concesus?
 
 <p style="text-align: center;">🁃</p>
 
+Title
+Insight
+Quote
+Writer
+
+
 https://en.wikipedia.org/wiki/Groupthink
 
 https://www.nngroup.com/articles/common-knowledge-effect/
