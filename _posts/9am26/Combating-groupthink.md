@@ -11,14 +11,13 @@ header:
   show_overlay_excerpt: false
 ---
 
-
 {% include figure image_path="/assets/images/.jpg" alt="" caption="" %}
 
 # ☕ Combating groupthink
 
-Products might fail because of many reasons. One of them being if the team ignores ideas or evidence and goes all in on an idea that in the end was not the right one. While there could be approach or organizational issues, a reason for failure is also if the team focuses too much on internal agreement, that is groupthink in their decisions.
+Products might fail because of many reasons. One of them being if the team ignores feedback or evidence and goes all in on an idea that in the end was not the right one. While there could be approach or organizational issues, a reason for failure is also if the team focuses too much on internal agreement, that is groupthink in their decisions.
 
-Groupthink is a phenomenon of social decision making, when the group members value internal harmony and lack of conflicts higher than great outcomes. Because agreement can be based for example on the loudest voice, or the lowest common denominator, this can lead to mediocre decisions, lack of innovation and ultimately wasted resources.
+Groupthink is a phenomenon of social decision-making, when the group members value internal harmony and lack of conflicts higher than great outcomes. Because agreement can be based for example on the loudest voice, or the lowest common denominator, this can lead to mediocre decisions, lack of innovation, and ultimately wasted resources.
 
 The need of humans to be accepted by their groups makes this phenomenon extremely common in situations where disagreement might lead to social rejection. Since product development is usually a high pressure situation, there are quite frequent opportunities for friction between team members in almost every step of the process, like interpreting research results, brainstorming ideas, prioritising, or reviewing design choices.
 
@@ -32,40 +31,19 @@ The convergent — divergent thinking is not our only tool. Holding structured [
 
 As a side note, while team's decisions making processes are important to scrutinize, groupthink might start much earlier, when teams are formed. When designers hire other designers like them (focusing on the similar skills or a similar background), it can lead unintentionally to a group that rarely looks for information from the outside and falls into the groupthink pattern. A [purposeful hiring process]({% post_url 9am26/2023/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process %}) is the first step to avoid this.
 
-A tool for leaders to improve decisions is to foster psychological safety, where giving a fair stage to every viewpoint is part of the culture.
-- Leadership role: this starts with the leaders as they need to be a role model for being open and respectful to opinions other then theirs.
-- Encouraging dissent: by not only providing a space, but explicitly asking for opposing ideas, it's easier to articulate things that goes against the majority opinion. Workshop plays like pre-mortems help solidify the point that falws need to be discussed.
-- Blameless post-mortems: 
+Fostering psychological safety is a tool for leaders to improve decisions. This makes giving a fair stage to every viewpoint is part of the culture. There are a few things any leader can start doing:
+- Leadership's role is to be a role model for being open and respectful to opinions other then theirs.
+- Encourage dissent by not only providing a space, but explicitly ask for opposing ideas, as that makes it easier to articulate things that goes against the majority opinion. Workshop plays like pre-mortems help solidify the point that failures need to be discussed.
+- Blameless post-mortems, after something happens focuses on learning from mistakes.
+- Celebrate constructive conflict, by recognizing how challenging ideas and having a healthy debate about options leads to better outcomes.
+- Empower junior team members, since they might be reluctant to speak up and question more senior members.
 
-Safety **. Cultivating a Culture of Psychological Safety:**
+However the above only work, if the team's roles are set up to do this.
+- Facilitation needs to be a clear role, to have someone that guides the discussion and makes sure everyone gets to talk. Rotating the facilitator (like having it on a schedule, or choosing randomly at the beginning of the session) helps working on problems with different discussion patterns.
+- Devil's advocate can be a defined a role, tasked with challenging ideas or coming up with counter arguments.
+- Cross-functional participants provide new perspectives, and generally improve collaboration across teams.
 
-* **Leadership Role:** Leaders must model openness, vulnerability, and respect for differing opinions.
-
-* **Encouraging Dissent:** Explicitly ask for opposing viewpoints.
-
-* **Blameless Post-Mortems:** Focus on learning from mistakes, not assigning blame.
-
-* **Celebrating Constructive Conflict:** Recognizing that healthy debate leads to better outcomes.
-
-* **Empowering Junior Team Members:** Ensuring everyone feels comfortable speaking up.
-
-* **Roles and Responsibilities:**
-
-  * **Clear Facilitation:** Someone (or a rotating role) to guide discussions, ensure everyone is heard, and manage dominant personalities.
-
-  * **Dedicated "Challenge" Roles:** Could be a temporary role for a project or a permanent part of a design lead's responsibilities.
-
-  * **Promoting Cross-Functional Collaboration:** Breaking down silos between design, engineering, product management, etc.
-
-* **D. Structured Decision-Making Frameworks:**
-
-
-* **A. Reiterate the Importance:** Briefly summarize why combating groupthink is crucial for product success and team health.
-
-* **B. Call to Action for Product Leaders and Teams:** Encourage continuous effort in applying these strategies.
-
-* **C. Final Thought:** End with an inspiring statement about the power of diverse perspectives and open dialogue in creating truly impactful products.
-
+These tactics won't easily solve all problems with groupthink, besides being mindful when creating team practices and rituals, it's also a continuous effort that needs leadership. However open dialog and diverse perspectives are powerful tools to create truly impactful products.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
 > {% include newsletter-signup.html %}
