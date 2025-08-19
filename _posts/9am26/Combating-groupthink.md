@@ -16,30 +16,27 @@ header:
 
 # ☕ Combating groupthink
 
-Products can fail because of many reasons. One of them being if the team ignores ideas or evidence and goes all in on an idea that in the end was not the right one. While there could be approach or organizational issues, a reason for failure is also if the team focuses too much on internal agreement, that is groupthink their decisions.
+Products might fail because of many reasons. One of them being if the team ignores ideas or evidence and goes all in on an idea that in the end was not the right one. While there could be approach or organizational issues, a reason for failure is also if the team focuses too much on internal agreement, that is groupthink in their decisions.
 
-Groupthink is a phenomenon of social decision making, when the group members value internal harmony and lack of conflicts higher, than great outcomes. Because agreement can be based for example on the loudest voice, or the lowest common denominator, this can lead to mediocre decisions, lack of innovation and ultimately wasted resources.
+Groupthink is a phenomenon of social decision making, when the group members value internal harmony and lack of conflicts higher than great outcomes. Because agreement can be based for example on the loudest voice, or the lowest common denominator, this can lead to mediocre decisions, lack of innovation and ultimately wasted resources.
 
-The need of humans to be accepted by their groups makes this phenomenon extremely common in situations where disagreement might lead to social rejection. Since product development is usually a high pressure situation, there are quite frequent opportunities for this, in almost every step of the process, like interpreting research results, brainstorming ideas, prioritising, or reviewing design choices.
+The need of humans to be accepted by their groups makes this phenomenon extremely common in situations where disagreement might lead to social rejection. Since product development is usually a high pressure situation, there are quite frequent opportunities for friction between team members in almost every step of the process, like interpreting research results, brainstorming ideas, prioritising, or reviewing design choices.
 
 Why the group ends up with a mediocre choice is best understood from social dynamics, deadlines are tight, there is a lot of external pressure, there are dominant personalities in the team, dissent or disagreement isn't encouraged, or team is lacking diversity of thinking.
 
+While designers are not always responsible to facilitate disagreements, since by its nature design questions highlight internal problems, they often find themselves trying to figure out the group consensus.
 
-This is why Is it a designer's job to get to concensus?
+Besides finding themselves in these situations, the nature of design process also lends itself to facilitate discussions. Alternating convergent and divergent thinking is a key piece of handling groupthink. When there is space to analyze data and mature ideas outside of conversations (divergent thinking), it'll be much easier to articulate new ideas or connect the dots in a discussion (convergent thinking).
 
-diverge\nt - convergent thinking.
+The convergent — divergent thinking is not our only tool. Holding structured [critiques]({% post_url 9am26/2022/2022-09-15-Design-critique-the-core-practice-for-design-teams %}) helps in better discussions not only in design, while advocating for user centricity helps understanding and accepting how data from outside of the immediate group can be helpful for example via user research.
 
-What to do? divergent thinking, structured critique, user centricity. 
+As a side note, while team's decisions making processes are important to scrutinize, groupthink might start much earlier, when teams are formed. When designers hire other designers like them (focusing on the similar skills or a similar background), it can lead unintentionally to a group that rarely looks for information from the outside and falls into the groupthink pattern. A [purposeful hiring process]({% post_url 9am26/2023/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process %}) is the first step to avoid this.
 
+A tool for leaders to improve decisions is to foster psychological safety, where giving a fair stage to every viewpoint is part of the culture.
+- Leadership role: this starts with the leaders as they need to be a role model for being open and respectful to opinions other then theirs.
+- Encouraging dissent: by not only providing a space, but explicitly asking for opposing ideas, it's easier to articulate things that goes against the majority opinion. Workshop plays like pre-mortems help solidify the point that falws need to be discussed.
+- Blameless post-mortems: 
 
-
-Need to go outside of your team and org to get fresh perspectives.
-
-
-
-Groupthink can be also a problem when building teams. When designers hire other designers like them (focusing on the same skillset, or similar background), it leads to..
-
-Hiring process for diversity of thinking,
 Safety **. Cultivating a Culture of Psychological Safety:**
 
 * **Leadership Role:** Leaders must model openness, vulnerability, and respect for differing opinions.
@@ -76,19 +73,19 @@ Safety **. Cultivating a Culture of Psychological Safety:**
 # 🍪 Things to snack on
 
 [Groupthink](https://en.wikipedia.org/wiki/Groupthink) by **Wikipedia**
-Wikipedia as always has a good overview of the topic, adding some history too, including the insight that the effect is not that well researched and understood, but has plenty of anecdotal evidence. There is also a longer section on prevention, with some really nice advice, like inviting experts from outside of the group to get a different, outgroup perspective.
+Wikipedia as always has a good overview of the topic, adding some history too, including the insight that the effect is not that well researched and understood, but has plenty of anecdotal evidence. There is also a longer section on prevention, with some really nice advice, like inviting experts from outside the group to get a different, outgroup perspective.
 *Diversity of all kinds is also instrumental in preventing groupthink. Individuals with varying backgrounds, thought, professional and life experiences etc. can offer unique perspectives and challenge assumptions.*
 
 <p style="text-align: center;">♣︎</p>
 
 [Groupthink: when collective decisions go wrong](https://nesslabs.com/groupthink) by **Dr. Hannah Rose**
-A few more general examples of how groupthink impact our daily life, and strategies to avoid it (for example assigning some group members play devil's advocate). As in work situations, in non-business contexts it also helps to put a little structure into decisions, like treating ideas as something transitional, but not the final solutions, until the other members could articulate concerns.
+A few more general examples of how groupthink impacts our daily life, and strategies to avoid it (for example assigning some group members to play devil's advocate). As in work situations, in non-business contexts it also helps to put a little structure into decisions, like treating ideas as something transitional, but not the final solutions, until the other members could articulate concerns.
 *Groupthink can be responsible for collective decisions that are irrational, risky or even illegal. In a group setting in which cohesion and a positive social opinion of the group are highly valued, members put a lot of energy into ensuring harmony within the group.*
 
 <p style="text-align: center;">♣︎</p>
 
 [Groupthink in UX Work](https://www.nngroup.com/articles/groupthink-in-ux/) by **Samhita Tankala**
-A nice summary of symptoms of groupthink (collective rationalization, illusion of unanimity, self-censorship, and direct pressure on dissenters), with some guidelines to prevent it in UX activities. The guidelines are grouped by various scenarios (like during ideation or remote environments), which in itself also describes what are the common situation where groupthink can arise.
+A nice summary of symptoms of groupthink in design contexts (collective rationalization, illusion of unanimity, self-censorship, and direct pressure on dissenters), with some guidelines to prevent it in UX activities. The guidelines are grouped by various scenarios (like during ideation or in remote environments), which in itself also describes what are the common situation where groupthink can arise.
 *Groups benefit from hearing diverse perspectives. For that to happen, group members have to feel comfortable in sharing their thoughts. We need to intentionally build awareness around groupthink, acknowledge that it occurs in group settings, and create a work environment that prevents it from happening.*
 
 <p style="text-align: center;">♣︎</p>
