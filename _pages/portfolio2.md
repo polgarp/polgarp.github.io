@@ -1,5 +1,5 @@
 ---
-title: "Journey and Story Portfolio"
+title: "Journey"
 layout: splash
 permalink: /portfolio2/
 collection: portfolio
@@ -8,60 +8,88 @@ header:
     overlay_image: /assets/images/portfolio/splash.jpg
     overlay_filter: rgba(255, 63, 49, 0.8)
     actions:
-    - label: "Download my CV"
-      url: "https://www.dropbox.com/s/tzuion63pit1tme/Peter-Balazs-Polgar-cv-202307.pdf?dl=0"
-excerpt: "With 12+ years in product design, I learned that growth and excellence goes with a set of crystalized stories. My journey as a design leader has been a cycle of finding better ways to build the right product and product right, reflecting on lessons learned, and telling stories to help others grow. **Here are some of my stories.**"
-krisp2:
-  - title: "Scaling coherent user journeys"
-    excerpt: 'I tackle this by architecting features into a smooth and coherent user journey across all parts of the product. This involves stepping back to see the entire ecosystem, connecting the efforts of different teams, and establishing clear guidelines and principles for how things should work together.<br><br>
-     - **Key project: Creating an experience vision**.<br>
-     - Other stories: Raise product and org maturity.
+    - label: "My CV"
+      url: "https://www.dropbox.com/scl/fi/myfulonkphti9x984ortr/Peter-Balazs-Polgar-cv-202506.pdf?rlkey=xduacb4943g03x0o1h1s5rvhg&st=0tn25rw2&dl=0"
+excerpt: 'With 16+ years in product design, I learned great teams deliver great products. Here are some of my stories how I helped teams and products getting better'
+intro:
+  - title: "I obsess about four things"
+    excerpt: 'Impactful design leadership is about more than just great products, it’s about building the systems that make great products possible. These four principles allow me to guide teams in solving the right problems and creating meaningful results.<br><br>
+    - Scaling coherent user journeys<br>
+    - Prototyping the future with visions<br>
+    - Making better product decisions with discovery<br>
+    - Building the right teams to deliver the right results
     '
-trustpilot:
-  - image_path:  assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png
-    alt: ""
-    title: "Senior UX Manager @ Trustpilot ⊂ 2018 - 2021"
-    excerpt: "Teamed up with Trustpilot to align and scale the B2B product and the UX team. Learned a lot about trust and safety, design strategy, product discovery, and visioning. Best outcomes: growing talent, great app foundations.<br><br>
-    **Key project: [Redesigning app IA is alignment](/portfolio/2019-redesigning-app-ia-is-alignment)**.<br>
-    Other stories: [Building a user research team](/portfolio/2021-building-a-user-research-team), [Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice), [Define design strategy through maturity evaluation](/portfolio/2020-define-design-strategy-through-maturity-evaluation).
-    "
-emarsys:
-  - image_path:  assets/images/portfolio/2015-designing-a-ux-team-2.jpeg
-    alt: ""
-    title: "Head of UX @ Emarsys ⊂ 2015 - 2018"
-    excerpt: 'Joined Emarsys to establish the UX team and practice from scratch. Built a 16 person team, while making major iterations to the core product. Learned a lot about marketing methods, hiring process, org structure, career development, workshops, design process, and the most about myself. Best outcomes: mature UX team, well established design system.<br><br>
-    **Key project: [Designing a UX team](/portfolio/2015-designing-a-ux-team)**.<br>
-    Other stories: [Building a design system](/portfolio/2016-building-a-design-system), [Establishing a UX process](/portfolio/2017-establishing-a-ux-process), [Grow with experience stories](/portfolio/2018-improve-with-experience-stories).
+scaling:
+  - title: "Scaling coherent user journeys"
+    excerpt: 'A key part of my focus is ensuring that as products scale, they remain cohesive and intuitive. I decrease fragmentation by designing along the user''s journey, making complex experiences feel unified and simple.<br><br>
+     - [Building a design system](/portfolio/2016-building-a-design-system)<br>
+     - [Redesigning app IA is alignment](/portfolio/2019-redesigning-app-ia-is-alignment)<br>
+     - [Shared understanding with story mapping](/portfolio/2014-shared-understanding-with-story-mapping)
+     - Also on 9am26.
+    '
+prototyping:
+  - title: "Prototyping the future with visions"
+    excerpt: 'Vision is a crucial tool for aligning teams and driving innovation. I use storytelling and prototypes to make the future tangible, helping everyone see what''s possible and get excited about building it together.
+.<br><br>
+    - Creating an experience vision (Krisp1).<br>
+    - Vision stories at Trustpilot<br>
+    - Drive alignment with prototypes
+    - Also on 9am26
+    '
+discovery:
+  - title: "Making better product decisions with discovery"
+    excerpt: 'Great products come from a deep understanding of people''s needs, not assumptions. I empower teams to use research and discovery to solve the right problems and make smarter decisions that lead to better results.
+<br><br>
+    - [Building a user research team](/portfolio/2021-building-a-user-research-team)<br>
+    - [Establishing a UX process](/portfolio/2017-establishing-a-ux-process)<br>
+    - Raise product and org maturity Krisp2.
+    - Also on 9am26: discovery tags.
+    '
+team:
+  - title: "Building the right teams to deliver the right results"
+    excerpt: 'A strong design team is a key driver of business success. I''m focused on building and coaching great teams that not only deliver exceptional work, but also multiply the impact of everyone they collaborate with.
+<br><br>
+    - [Designing a UX team at Emarsys](/portfolio/2015-designing-a-ux-team)<br>
+    - [Grow with experience stories](/portfolio/2018-improve-with-experience-stories)<br>
+	- [Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice)<br>
+    - [Define design strategy through maturity evaluation](/portfolio/2020-define-design-strategy-through-maturity-evaluation)
+    - Also on 9am26: hiring, team tags.
     '
 other_stories:
-   - image_path:  assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg
-     alt: "Shared understanding with story mapping"
-     excerpt: '[**Shared understanding with story mapping**](/portfolio/2014-shared-understanding-with-story-mapping)'
    - image_path:  assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png
      alt: "Learning with stories in mobile app design"
      excerpt: '[**Learning with stories in mobile app design**](/portfolio/2013-learning-with-stories-in-mobile-app-design)'
    - image_path:  assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png
      alt: "Testing prototypes along the fidelity range"
-     excerpt: '[**Testing prototypes along the fidelity range**](/portfolio/2012-testing-prototypes-along-the-fidelity-range)'
+     excerpt: '[Testing prototypes along the fidelity range](/portfolio/2012-testing-prototypes-along-the-fidelity-range)'
    - image_path:  assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
      alt: "Usability testing the Prezi editor"
-     excerpt: '[**Usability testing the Prezi editor**](/portfolio/2011-usability-testing-the-prezi-editor)'
+     excerpt: '[Usability testing the Prezi editor](/portfolio/2011-usability-testing-the-prezi-editor)'
    - image_path:  assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
      alt: "Learn, Teach, Organize"
-     excerpt: '[**Learn, Teach, Organize**](/portfolio/1980-Learn-Teach-Organise)'                         
+     excerpt: '[Learn, Teach, Organize](/portfolio/1980-Learn-Teach-Organise)'
 ---
 
+{% include feature_row id="intro" type="left" %}
 
 ![full](/assets/images/portfolio/2022-krisp-cover.png)
 
-{% include feature_row id="krisp2" type="left" %}
+{% include feature_row id="scaling" type="left" %}
 
-{% include feature_row id="trustpilot" type="left" %}
+![full](/assets/images/portfolio/2022-krisp-cover.png)
 
-{% include feature_row id="emarsys" type="left" %}
+{% include feature_row id="prototyping" type="left" %}
 
-# Stories from my other adventures.
+![full](/assets/images/portfolio/2022-krisp-cover.png)
 
-Plus some other things.
+{% include feature_row id="discovery" type="left" %}
+
+![full](/assets/images/portfolio/2022-krisp-cover.png)
+
+{% include feature_row id="team" type="left" %}
+
+# Stories from my other adventures
+
+Plus some other things I did.
 
 {% include feature_row id="other_stories" %}
