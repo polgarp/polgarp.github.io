@@ -12,6 +12,8 @@ sidebar:
     text: "Senior UX Manager @ Trustpilot ⊂ 2018 - 2021"
   - title: "Responsibilities"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
+  - title: "<br><br>"
+    text: "[Back to the portfolio](/portfolio)"
 gallery:
   - url: /assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png
     image_path: assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png
@@ -24,17 +26,16 @@ gallery:
     alt: "What got delivered, clearer menu, transparent workflow to follow"
 ---
 
-When I joined Trustpilot, a key challenge was to provide better alignment to teams. The product organization was historically composed of autonomous teams with little coordination on how to add new features to the B2B app. This resulted in **all teams owning one or more first-level menu items, screaming for attention**. For users, this meant a suboptimal user journey, especially during onboarding. The menu made it very difficult for users to understand what they needed to do and what is the ideal workflow. I partnered with a product manager and we decided to start an information architecture project to redesign the menu.
+When I joined Trustpilot, the product organization was struggling with a key challenge: a fragmented B2B app experience caused by autonomous teams working each on their own roadmap. Each team had its own menu item, each item screaming for attention, which created a confusing user journey, especially during onboarding. To solve this, I partnered with a product manager and their team to lead an information architecture project focused on redesigning the main menu.
 
 {% include gallery caption="Creating alignment with IA" %}
 
-We started with the key principle of better information architecture requires better alignment. For business applications the optimal structure is not necessarily something you'd define based on user research, it's at least equal parts how the organization defines the ideal path of use. This is the path that can also drive marketing and sales besides product decisions on the journey. To set this up, **we defined 4 parallel tracks to discover a great solution**:
-
- - User research track: We wanted to understand how current users perceived the solution and intended to continuously test versions via usability testing, card sorting, and tree testing.
- - Alignment track: We did workshops with all product teams, and most stakeholders over several weeks, understanding key concerns, ambitions, and expectations towards the new IA. With some groups, we set up further workshops to understand how the new menus would impact their work.
- - Design track: We involved the whole design team to get ideas about problems and potential solutions to widen the possible space of the solutions we were exploring.
- - Prototype track: We started with a prototype menu from the beginning of the project that we modified and tested as the project went on.
+Our core principle was simple: a better information architecture requires a better understanding of the organization and its users. To get everyone on the same page, we designed a strategic process with four parallel tracks, ensuring our solution would be both user-centered and internally aligned.
+ - User research track: We wanted to understand how current users perceived the solution and intended to continuously test versions via usability testing, card sorting, and tree testing. This was our core discovery track.
+ - Alignment track: We did workshops with all product teams, and most stakeholders over several weeks, understanding key concerns, ambitions, and expectations towards the new IA and getting buy-in. With some groups, we set up further workshops to understand how the new menus would impact their work.
+ - Design track: We involved the entire design team to widen our solution space, proving that **great ideas come from a collaborative culture**.
+ - Prototype track: We used a running prototype from day one to test our vision, turning abstract concepts into a tangible experience we could validate and refine.
 
 I was working within each of these tracks in various ways to enable and support the individual contributors driving them.
 
-After 3 months we discovered a solution that was agreed upon by everyone, and what the product team could deliver within 3 more months together with some major design changes in the B2B app. Our **goal with the release was to improve traffic to some of the key tasks in the app, while not making overall numbers lower (like conversion)**, in which we succeeded. In the end, the success of the rollout and results confirmed our initial bet of prioritizing internal alignment through building a better IA for the business app.
+After three months, we had a solution that was agreed upon by everyone, a testament to the power of our collaborative process. Our success was not just in improving traffic to key tasks and conversions but in proving that internal alignment through a **coherent user journey** is a strategic business driver. This project was core to my belief that **design leadership is about building the systems and teams that enable a product to scale effectively.**
