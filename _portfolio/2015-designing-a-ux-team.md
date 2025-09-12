@@ -24,14 +24,16 @@ gallery:
     alt: "emarsys ux team intro video 2015"
 ---
 
-I joined Emarsys not just **to lead its UX team**, but **also to establish the team and introduce the design practice into product development**. Before I joined Emarsys didn’t have a dedicated UX team, they worked with contractors and agencies. Product managers did some user research and mockups for their features. Even with the company's openness towards UX and committed leadership, creating the team and injecting design into the development process was a great challenge.
+I joined Emarsys with a strategic mandate: to not only to **build and lead the new UX team**, but to **establish a design practice** and fully integrate it into the product development process. With no dedicated UX team previously, this was a significant challenge that required both a strong vision and a hands-on approach.
 
 {% include gallery caption="People are the most important part of a great UX team" %}
 
-I had three basic ideas on how to establish the team.
+My approach to **building the right team** was guided by three core principles:
 
-1. **Apply the Lean UX mindset** to everything we do, so experiment and learn what the organization needs to bring the product forward.
-2. **Establish researcher - designer** pairs based on the pair design practice by Cooper.
-3. Make product teams superheroes by **embedding UX people with devs and PMs** ([the talk I did](https://prezi.com/rit0h4vvzql8/lean-ux-in-product-teams/) when introducing this).
+1. **Lean UX mindset:** We experimented and learned what the organization needed to truly bring the product forward, treating the org itself like a product we had to understand and improve.
+2. **Researcher-designer pairs:** I established this model to ensure our design work was always grounded in deep user understanding and a true collaborative partnership.
+3. **Embedded UX people:** We integrated designers and researchers directly with developer and product teams. This empowered them to act as strategic partners and amplified their impact across the organization ([the talk I did](https://prezi.com/rit0h4vvzql8/lean-ux-in-product-teams/) when introducing this).
 
-Starting [with 2 people](https://www.youtube.com/watch?v=sG8FBnwci7k) and [hiring 14 more since then](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb), we had been working on most of the product. I also **established key design practices** (with the support of my awesome team): design studios, critiques, frequent interviews and tests, design briefs, principles, remote design feedback over Invision, [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe), [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47), a design system. While doing this I learned, **an organization is very similar to the product**: you have to understand the needs and pain points of users (the rest of the organization) to create the best solutions.
+Through a disciplined approach to hiring and professional growth, we built a team of [16 people](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb). Together, we introduced a suite of practices that became the foundation of our work: **discovery and research** to make better product decisions (like frequent interviews and [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47)), **visioning tools** like design principles and briefs, and **systems thinking** like our [design system]({% link _portfolio/2016-building-a-design-system.md %}) and [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe) to **build coherent user journeys** across the product.
+
+In this role, I learned that an organization is very much like a product: you have to understand the needs of your 'users' (the rest of the organization) to create the best possible solutions. This experience thaught me that **design leadership is ultimately about building the systems, teams, and culture that enable great design to thrive.**
