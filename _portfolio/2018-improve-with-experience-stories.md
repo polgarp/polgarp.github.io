@@ -12,6 +12,8 @@ sidebar:
     text: "Head of UX @ Emarsys ⊂ 2015 - 2018"
   - title: "Responsibilities"
     text: "Establish and lead a UX team of designers and researchers."
+  - title: "<br><br>"
+    text: "[Back to the portfolio](/portfolio)"    
 gallery:
   - url: /assets/images/portfolio/2018-improve-with-experience-stories-1.png
     image_path: assets/images/portfolio/2018-improve-with-experience-stories-1.png
