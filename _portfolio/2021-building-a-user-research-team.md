@@ -12,36 +12,22 @@ sidebar:
     text: "Senior UX Manager @ Trustpilot ⊂ 2018 - 2021"
   - title: "Responsibilities"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
+  - title: "<br><br>  "
+    text: "[Back to the portfolio](/portfolio)"    
 ---
 
-I joined Trustpilot in 2018. At that time **user research as a practice was already fairly established**. Leaders bought into the idea of both understanding the intended audience better through explorative research and validating ideas and solutions through evaluative research.
+When I joined Trustpilot, a user research team was already in place, but their work was mostly reactive. While teams were empowered to do their own research, and leaders agreed that understanding the intended audience better and validating ideas both were important practices. But a lack of clear direction and connecting to product leadership meant we weren’t generating strategic insights or making a clear business impact. 
 
 {% include figure image_path="/assets/images/portfolio/2021-building-a-user-research-team-1.png" caption="Trustpilot's original research team structure" %}
 
-Product teams have been empowered to do their user research on the projects they have been working on, while we had also a user research team working with the product teams and supporting them with whatever they needed. This mostly meant giving feedback on their research plans, lending a hand in certain studies, and some cases doing their studies. The bottom line: this was **mostly reactive work, we had no clear business impact** for research and we lacked high-level, more strategic insights.
-
-The answer this challenge we sat down with the team, and changed our strategy for 2020. We established the research team as a proper team and identified 2 key goals:
-
- - Do more strategic research.
- - Get better at knowledge sharing.
+My challenge was to guide the team to change operating model and evolve. We sat down with the researchers, and established the research team as a proper team and identified 2 key goals: more knowledge sharing and increasing research maturity across the entire organization.
 
 {% include figure image_path="/assets/images/portfolio/2021-building-a-user-research-team-2.png" caption="Trustpilot's research team structure after focusing on strategic research in 2020" %}
 
-With **knowledge sharing we were successful**, we created a system of templated slide decks that made reusing [evergreen insights](https://medium.com/qualdesk/disposable-insights-aa8e240b3ad7) much easier. However, the goal for strategic projects went not that well. One important learning we had in the design leadership group, was that researchers need clearer directions, so I stepped in to help in some projects. While this allowed us to deliver a few key projects (personas for the B2B and B2C sides, a journey map project, an accessibility audit, etc.), **we didn't get to the business impact we were hoping for**. One key problem we identified was the relative disconnectedness of the research team from the product team and product leadership goals.
+In the first phase, we were successful with knowledge sharing, as we created a repository of templated slide decks that made reusing evergreen insights much easier. However, we needed further changes to improve impact on the strategic projects.
 
-With this history at the beginning of 2021 **I got the task to redefine our research team** and its operating model. This also included getting more clarity on expectations towards researchers and hiring a new team, since both of our researchers left the company in 2020. I've worked with some key stakeholders from across design and product to understand their needs and also did an extensive review of what worked in the past and what didn't. Based on these I've created a proposal as a way forward. This also set us some direction on hiring and onboarding the new researchers and creating a solid progression path for them.
-
-First I've defined two focus areas for the research team:
-
- - **More knowledge sharing**: The research team should act more as stewards of learning, getting insights to many people is more important than getting new insights. This was furthering the design team's goals of increasing the user-centricity of the company.
- - **Increase research maturity**: We have noticed that teams with higher research maturity (more consistent and efficient user research process balancing generative and evaluative research), so another key goal for the researchers was to work with teams and improve how they do research.
-
-The operating model also did some changes to how researchers were working together with the rest of the organization, taking into account that teams were following the [dual track agile](https://www.jpattonassociates.com/dual-track-development/) product development approach. The core idea was to **add the researchers to product teams as full members for key projects** based on quarterly planning. This allowed researchers to directly impact business goals, educate product teams on research practices, and collect questions and knowledge for primary research and more strategic insights that could influence product planning and prioritization.
-
-With this we could also balance various priorities by setting guidelines for time allocation - initially, the quarterly goals should include 60% of the time on projects, 20% of the time on ad hoc tasks supporting teams, and 20% of time working on research ops and primary research initiatives.
+To step up, the core of my strategy was to embed researchers directly into product teams for key projects based on quarterly planning. This was a crucial part of **building the right team** and ensuring they had a direct impact on business goals. This approach also allowed researchers to educate product teams on best practices and gather insights that could inform broader strategy. To balance these priorities, I set clear guidelines for time allocation, ensuring the team had dedicated time for project work, ad hoc support, and primary research.
 
 {% include figure image_path="/assets/images/portfolio/2021-building-a-user-research-team-3.png" caption="Trustpilot's research team in 2021" %}
 
-The final change was **the addition of a lead user researcher** to the team. This way the researchers got clear leadership support with a senior person focused on supporting the team and engaging with leadership while also doing some high-level primary research.
-
-With the above model set, we were successful in providing a clear vision for the research team, and set a path forward for the newly hired researchers. Even after the first month, we've seen more insights emerging from teams, and more consistent user research effort happening. A key thing I've learned in setting up the above is the **importance of providing direction and vision for the user research practice** in general and for researchers in particular.
+As the last piece of the puzzle, we also added a lead user researcher to the team. This provided direct leadership support and helped the team engage with product leadership more effectively. This strategic shift not only provided a clear vision for the  hired researchers but also immediately led to more consistent research and a greater flow of insights across the organization. This experience was key to my belief that **providing clear direction and vision is crucial for enabling a research practice that drives real business results.**
