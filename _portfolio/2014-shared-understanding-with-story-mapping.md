@@ -12,6 +12,8 @@ sidebar:
     text: "UX Researcher @ Prezi ⊂ 2011 - 2015"
   - title: "Responsibilities"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
+  - title: "<br><br>"
+    text: "[Back to the portfolio](/portfolio)"    
 gallery:
   - url: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-1.jpg
     image_path: assets/images/portfolio/2014-shared-understanding-with-story-mapping-1.jpg
