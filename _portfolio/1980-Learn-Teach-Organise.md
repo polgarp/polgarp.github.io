@@ -8,6 +8,8 @@ header:
 sidebar:
   - text: "Teaching since 2007"
   - text: "Learning since 1980"
+  - title: "<br><br>"
+    text: "[Back to the portfolio](/portfolio)"
 gallery:
   - url: /assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
     image_path: assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
