@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.png
     image_path: assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.png
     alt: "mobile testing"
+classes: wide
 ---
 
 Prezi, as a presentation startup offered many opportunities around the product when I joined. Along with separate desktop, web, and mobile versions, it has collaboration features and a unique interaction model. Instead of slides, it offers an infinite, zoomable canvas. This is a difficult problem space, presenting unique challenges in understanding how users navigate a boundless canvas. My team and I had to **experiment constantly to truly understand their shifting mental models and "aha" moments.**
