@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2017-establishing-a-ux-process-3.png
     image_path: assets/images/portfolio/2017-establishing-a-ux-process-3.png
     alt: "Outcomes over the design process"
+classes: wide
 ---
 
 As I led the newly formed UX team at Emarsys, I quickly identified a critical challenge: without a shared process, our designers were spending too much time on refining solutions and too little on research. This led to late-stage changes and a lack of clarity on when to apply the right methods. My goal was to provide a framework that would **empower the team to work more strategically and effectively**, while communicating clearly our approach to our partners.
