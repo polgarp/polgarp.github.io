@@ -14,6 +14,7 @@ sidebar:
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>  "
     text: "[Back to the portfolio](/portfolio)"    
+classes: wide
 ---
 
 Unwritten pages, 
