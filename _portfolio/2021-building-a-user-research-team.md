@@ -13,7 +13,8 @@ sidebar:
   - title: "Responsibilities"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>  "
-    text: "[Back to the portfolio](/portfolio)"    
+    text: "[Back to the portfolio](/portfolio)"   
+classes: wide
 ---
 
 When I joined Trustpilot, a user research team was already in place, but their work was mostly reactive. While teams were empowered to do their own research, and leaders agreed that understanding the intended audience better and validating ideas both were important practices. But a lack of clear direction and connecting to product leadership meant we weren’t generating strategic insights or making a clear business impact. 
