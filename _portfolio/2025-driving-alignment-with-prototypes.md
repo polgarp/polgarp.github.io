@@ -13,7 +13,8 @@ sidebar:
   - title: "Responsibilities"
     text: "Lead the design for the Ubuntu Pro portfolio"
   - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"    
+    text: "[Back to the portfolio](/portfolio)"
+classes: wide
 ---
 
 Words are on the page, 
