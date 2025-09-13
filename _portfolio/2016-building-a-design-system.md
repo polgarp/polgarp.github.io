@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2016-building-a-design-system-3.png
     image_path: assets/images/portfolio/2016-building-a-design-system-3.png
     alt: "design system v2"
+classes: wide
 ---
 
 When I joined Emarsys, the product had a new look but lacked a unified design language. This page-by-page redesign created a fragmented user journey and resulted in a confusing experience. My challenge was to work the engineering team, nurture our design system, and **unify our interaction patterns to create a coherent user journey** and improve usability.
