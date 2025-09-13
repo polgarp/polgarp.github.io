@@ -20,6 +20,7 @@ gallery:
   - url: /assets/images/portfolio/1980-Learn-Teach-Organise-3.jpg
     image_path: assets/images/portfolio/1980-Learn-Teach-Organise-3.jpg
     alt: "introduction on a meetup"
+classes: wide
 ---
 
 When I first realized that as a computer science major instead of programming big black boxes, I’d rather work with people, I started to read everything that had even a slight connection to this topic. After reading all the Alertbox posts available online, I realized that **great design is not only about understanding UX, it's also helping others to make better products.** My journey into design leadership began with this simple idea: to truly master a subject, you must be able to teach it.
