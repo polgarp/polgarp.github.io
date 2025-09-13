@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2018-improve-with-experience-stories-3.png
     image_path: assets/images/portfolio/2018-improve-with-experience-stories-3.png
     alt: "Experience stories"
+classes: wide
 ---
 
 As a design leader, I've found that one of the most critical but challenging tasks is helping team members **grow and rise to ever-increasing challenges**, to go beyond the comfortable, and become a T-shaped specialist. I noticed a pattern where team members were staying as shallow generalists, which limited their growth and the team’s overall impact. My goal was to create a system that would help everyone find their deep expertise.
