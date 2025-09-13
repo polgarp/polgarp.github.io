@@ -2,6 +2,7 @@
 permalink: /about/
 title: "I'm *super* annoyed by bad experiences. "
 author_profile: true
+classes: wide
 ---
 
 So I'm on a journey to channel this energy to build better things. These days I believe better products are built by great teams. As it turns out, **I ❤️ building product design teams** - almost as much as building products.
