@@ -1,7 +1,7 @@
 ---
 title: "Define design strategy through maturity evaluation"
 excerpt: ""
-date: 2020-01-01
+date: 2020-02-04
 header:
   image:
   teaser: /assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png

@@ -1,7 +1,7 @@
 ---
 title: "Shared understanding with story mapping"
 excerpt: ""
-date: 2014-01-01
+date: 2014-01-02
 header:
   image:
   teaser: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg

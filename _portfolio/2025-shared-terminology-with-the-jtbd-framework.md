@@ -1,7 +1,7 @@
 ---
 title: "Shared terminology with the JTBD framework"
 excerpt: ""
-date: 2025-01-01
+date: 2025-07-01
 header:
   image:
   teaser: /assets/images/portfolio/

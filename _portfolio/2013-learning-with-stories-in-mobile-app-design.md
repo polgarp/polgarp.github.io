@@ -1,7 +1,7 @@
 ---
 title: "Learning with stories in mobile app design"
 excerpt: ""
-date: 2013-01-01
+date: 2013-06-01
 header:
   image:
   teaser: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg

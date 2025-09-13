@@ -1,7 +1,7 @@
 ---
 title: "Redesigning app IA is alignment"
 excerpt: ""
-date: 2019-01-01
+date: 2019-04-02
 header:
   image:
   teaser: /assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png

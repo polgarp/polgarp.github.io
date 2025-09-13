@@ -1,7 +1,7 @@
 ---
 title: "Establishing a UX process"
 excerpt: ""
-date: 2017-01-01
+date: 2017-01-02
 header:
   image:
   teaser: /assets/images/portfolio/2017-establishing-a-ux-process-3.png

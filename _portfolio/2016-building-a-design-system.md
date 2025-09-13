@@ -1,7 +1,7 @@
 ---
 title: "Building a design system"
 excerpt: ""
-date: 2016-01-01
+date: 2016-03-01
 header:
   image:
   teaser: /assets/images/portfolio/2016-building-a-design-system-3.png
