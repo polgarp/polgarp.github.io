@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-3.jpg
     image_path: assets/images/portfolio/2014-shared-understanding-with-story-mapping-3.jpg
     alt: "understanding wider context with story map"
+classes: wide
 ---
 
 Driving the user experience for Prezi's mobile products, our product team faced a critical challenge: our four development teams were working in silos, and their backlogs didn't provide a clear, unified view of the product's direction. We were at risk of building a fragmented, incoherent experience. My first priority was to **create a shared understanding and get everyone focused on the same goal.**
