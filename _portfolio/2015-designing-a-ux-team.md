@@ -1,7 +1,7 @@
 ---
 title: "Designing a UX team"
 excerpt: ""
-date: 2015-11-01
+date: 2017-11-01
 header:
   image:
   teaser: /assets/images/portfolio/2015-designing-a-ux-team-3.png
