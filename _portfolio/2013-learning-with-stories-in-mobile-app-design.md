@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg
     image_path: assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg
     alt: "sharing insights to the team"
+classes: wide
 ---
 
 When I joined the mobile team, we were facing a critical challenge: a previous attempt to launch our Android app had failed. To get us back on track, I knew we needed a unified approach that would re-center our efforts on the user. I proposed using a **story-based framework** to redefine our product strategy. To make this happen, I had to **collect stories from user research** that we could refine and build upon. I also had to make sure the stories collected would affect the whole product development and validation of the MVP we had in mind for the app.
