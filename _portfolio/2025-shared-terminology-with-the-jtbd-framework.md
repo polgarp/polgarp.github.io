@@ -7,11 +7,11 @@ header:
   teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
-    image: /assets/images/portfolio/canonical-logo.png
+    image: /assets/images/portfolio/canonical-logo.svg
     image_alt: "Canonical logo"
-    text: "Senior Experience Designer @ Canonical ⊂ 2024 - "
+    text: "Senior Experience Designer <br>@Canonical ⊂ 2024 - "
   - title: "Responsibilities"
-    text: "Lead the design for the Ubuntu Pro portfolio"
+    text: "Lead the design for the Ubuntu Pro portfolio."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
 classes: wide

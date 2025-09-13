@@ -7,9 +7,9 @@ header:
   teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
-    image: /assets/images/portfolio/krisp-logo.png
+    image: /assets/images/portfolio/krisp-logo.svg
     image_alt: "Krisp logo"
-    text: "Lead Product Designer @ Krisp ⊂ 2021 - 2023"
+    text: "Lead Product Designer <br>@Krisp ⊂ 2021 - 2023"
   - title: "Responsibilities"
     text: "Establish a product design team and bring the noise cancellation app to the next level"
   - title: "<br><br>"

@@ -7,9 +7,9 @@ header:
   teaser: /assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png
 sidebar:
   - title: "Role"
-    image: /assets/images/portfolio/Prezi-logo-blue-lg.png
+    image: /assets/images/portfolio/prezi-logo.png
     image_alt: "Prezi logo"
-    text: "UX Researcher @ Prezi ⊂ 2011 - 2015"
+    text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
   - title: "Responsibilities"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
   - title: "<br><br>" 

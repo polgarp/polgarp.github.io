@@ -7,9 +7,9 @@ header:
   teaser: /assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png
 sidebar:
   - title: "Role"
-    image: /assets/images/portfolio/Trustpilot_brandmark_gr-blk_RGB-320x132px.png
+    image: /assets/images/portfolio/trustpilot-logo.png
     image_alt: "Trustpilot logo"
-    text: "Senior UX Manager @ Trustpilot ⊂ 2018 - 2021"
+    text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
   - title: "Responsibilities"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>" 
