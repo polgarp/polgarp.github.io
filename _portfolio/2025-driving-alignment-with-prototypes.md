@@ -21,7 +21,10 @@ A tale half-told, half-dreamed of,
 Waiting for the end.
 
 ---
+TBD
+---
 
+Notes:
 When I joined Canonical, we had a fragmented offering around Ubuntu Pro. Pieces were added at various times by various teams, not only not offering a coherent experience, but also keeping us from levelling up the offering.
 First we did a journey map to see all the misalignment and how that affects the experience, and the various team's work.
 Then we pitched a simple idea with a single hero image to showcase the experience. This had the intended effect, and it was decided to start working on the Portal project.
