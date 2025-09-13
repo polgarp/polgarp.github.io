@@ -15,5 +15,19 @@ $sans-serif-narrow: $monospace !default;
 $global-font-family: $monospace !default;
 $header-font-family: $monospace !default;
 
+/* Add spacing to the left of the main content */
+.page {
+    padding-left: 2em;
+  }
+  
+  /* You might also need to adjust the content width to accommodate the new spacing */
+  .page {
+    width: calc(100% - $left-sidebar-width-wide - 2em); /* Increase spacing by 2em */
+  }
+$right-sidebar-width-narrow: 200px !default;
+$right-sidebar-width: 300px !default;
+$right-sidebar-width-wide: 400px !default;
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
