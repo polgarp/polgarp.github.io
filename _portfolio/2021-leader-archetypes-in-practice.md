@@ -14,6 +14,7 @@ sidebar:
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"    
+classes: wide
 ---
 
 Leading design on Trustpilot's freemium product, I faced a significant challenge: a major product release generated strong, negative feedback from marketing and other key stakeholders. This friction stemmed from a lack of alignment on strategic goals. I stepped in to help the designer under fire, supporting also the product team while managing expectations across the organization.
