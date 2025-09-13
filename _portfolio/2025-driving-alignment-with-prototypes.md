@@ -1,7 +1,7 @@
 ---
 title: "Driving alignment with prototypes"
 excerpt: ""
-date: 2025-01-01
+date: 2025-09-01
 header:
   image:
   teaser: /assets/images/portfolio/

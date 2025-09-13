@@ -1,7 +1,7 @@
 ---
 title: "Learn, Teach, Organize"
 excerpt: ""
-date: 1980-01-01
+date: 1980-10-01
 header:
   image:
   teaser: assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg

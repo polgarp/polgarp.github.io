@@ -1,7 +1,7 @@
 ---
 title: "Exploring direction with vision exercises"
 excerpt: ""
-date: 2021-04-02
+date: 2021-06-02
 header:
   image:
   teaser: /assets/images/portfolio/2021-building-a-user-research-team-1.png

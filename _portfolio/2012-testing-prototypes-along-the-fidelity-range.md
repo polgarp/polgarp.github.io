@@ -1,7 +1,7 @@
 ---
 title: "Testing prototypes along the fidelity range"
 excerpt: ""
-date: 2012-01-01
+date: 2012-06-01
 header:
   image:
   teaser: /assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png
