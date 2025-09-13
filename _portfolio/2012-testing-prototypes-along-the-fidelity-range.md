@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-3.png
     image_path: assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-3.png
     alt: "building prototypes in bootstrap"
+classes: wide
 ---
 
 At Prezi, I was tasked with a particularly complex problem: designing for team collaboration. This was a complex challenge in **forming a single user journey** across multiple roles and team-based needs. We needed to support different users working together in a wide range of contexts, which meant our research had to go beyond individual user flows and test with entire groups. 
