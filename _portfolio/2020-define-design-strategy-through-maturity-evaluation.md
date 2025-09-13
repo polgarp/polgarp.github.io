@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-3.png
     image_path: assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-3.png
     alt: "Part of the evaluation results with recommendations for strategy"
+classes: wide
 ---
 
 Leading a fairly mature design team with a dual-track agile approach was a great experience, but my director and I faced a challenge: a wealth of ideas for improving our practices. We needed a strategic way to prioritize our efforts and make sure we were focusing on the right initiatives. My goal was to create a data-driven roadmap that would **help the team make more purposeful priority decisions and become more proactive**.
