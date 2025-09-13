@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png
     image_path: assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png
     alt: "What got delivered, clearer menu, transparent workflow to follow"
+classes: wide
 ---
 
 When I joined Trustpilot, the product organization was struggling with a key challenge: a fragmented B2B app experience caused by autonomous teams working each on their own roadmap. Each team had its own menu item, each item screaming for attention, which created a confusing user journey, especially during onboarding. To solve this, I partnered with a product manager and their team to lead an information architecture project focused on redesigning the main menu.
