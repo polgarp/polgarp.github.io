@@ -7,9 +7,9 @@ header:
   teaser: /assets/images/portfolio/2016-building-a-design-system-3.png
 sidebar:
   - title: "Role"
-    image: /assets/images/portfolio/emarsys-vector-logo.svg
+    image: /assets/images/portfolio/emarsys-logo.svg
     image_alt: "Emarsys logo"
-    text: "Head of UX @ Emarsys ⊂ 2015 - 2018"
+    text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
   - title: "Responsibilities"
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
