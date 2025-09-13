@@ -24,6 +24,7 @@ gallery:
   - url: /assets/images/portfolio/2015-designing-a-ux-team-3.png
     image_path: assets/images/portfolio/2015-designing-a-ux-team-3.png
     alt: "emarsys ux team intro video 2015"
+classes: wide
 ---
 
 I joined Emarsys with a strategic mandate: to not only to **build and lead the new UX team**, but to **establish a design practice** and fully integrate it into the product development process. With no dedicated UX team previously, this was a significant challenge that required both a strong vision and a hands-on approach.
