@@ -1,8 +1,5 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M48 40V56H32V88H56V104H16V40H48Z" fill="black"/>
-<path d="M112 40V88H80V104H64V56H56V40H112ZM80 56V72H96V56H80Z" fill="black"/>
-<path d="M80 40H112V88H80V71.5H96V56H80V40Z" fill="#FF3F31"/>
-<path d="M16 24H48V32H16V24Z" fill="#FF3F31"/>
-<path d="M80 24H112V32H80V24Z" fill="#FF3F31"/>
-<path d="M56 24H80V32H56V24Z" fill="black"/>
+<path d="M48 16V32H32L32 96H56V112H16V16H48Z" fill="black"/>
+<path d="M112 32V80H80V96H64V48H56V32H112ZM80 48V64H96V48H80Z" fill="black"/>
+<path d="M80 32H112V80H80V63.5H96V48H80V32Z" fill="#FF3F31"/>
 </svg>
