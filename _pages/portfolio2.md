@@ -76,19 +76,19 @@ other_stories:
 
 {% include feature_row id="intro" type="left" %}
 
-![full](/assets/images/portfolio/2022-krisp-cover.png)
+![full](/assets/images/portfolio/scaling-cover.png)
 
 {% include feature_row id="scaling" type="left" %}
 
-![full](/assets/images/portfolio/2022-krisp-cover.png)
+![full](/assets/images/portfolio/prototyping-cover.png)
 
 {% include feature_row id="prototyping" type="left" %}
 
-![full](/assets/images/portfolio/2022-krisp-cover.png)
+![full](/assets/images/portfolio/discovery-cover.png)
 
 {% include feature_row id="discovery" type="left" %}
 
-![full](/assets/images/portfolio/2022-krisp-cover.png)
+![full](/assets/images/portfolio/team-cover.png)
 
 {% include feature_row id="team" type="left" %}
 
