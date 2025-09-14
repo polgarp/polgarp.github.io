@@ -13,8 +13,7 @@ sidebar:
   - title: "Responsibilities"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
   - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"  
-classes: wide
+    text: "[Back to the portfolio](/portfolio)"
 ---
 
 When I joined the mobile team, we were facing a critical challenge: a previous attempt to launch our Android app had failed. To get us back on track, I knew we needed a unified approach that would re-center our efforts on the user. I proposed using a **story-based framework** to redefine our product strategy. 

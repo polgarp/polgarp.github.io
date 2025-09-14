@@ -14,7 +14,6 @@ sidebar:
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 Driving the user experience for Prezi's mobile products, our product team faced a critical challenge: our four development teams were working in silos, and their backlogs didn't provide a clear, unified view of the product's direction. We were at risk of building a fragmented, incoherent experience. My first priority was to **create a shared understanding and get everyone focused on the same goal.**
