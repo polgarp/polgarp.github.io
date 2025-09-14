@@ -13,18 +13,7 @@ sidebar:
   - title: "Responsibilities"
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"    
-gallery:
-  - url: /assets/images/portfolio/2018-improve-with-experience-stories-1.png
-    image_path: assets/images/portfolio/2018-improve-with-experience-stories-1.png
-    alt: "Improvement and stretch over time"
-  - url: /assets/images/portfolio/2018-improve-with-experience-stories-2.png
-    image_path: assets/images/portfolio/2018-improve-with-experience-stories-2.png
-    alt: "Creating a level system"
-  - url: /assets/images/portfolio/2018-improve-with-experience-stories-3.png
-    image_path: assets/images/portfolio/2018-improve-with-experience-stories-3.png
-    alt: "Experience stories"
-classes: wide
+    text: "[Back to the portfolio](/portfolio)"
 ---
 
 As a design leader, I've found that one of the most critical but challenging tasks is helping team members **grow and rise to ever-increasing challenges**, to go beyond the comfortable, and become a T-shaped specialist.
