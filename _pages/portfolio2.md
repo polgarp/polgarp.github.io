@@ -54,7 +54,7 @@ other_stories:
    - image_path:  assets/images/portfolio/2021-building-a-user-research-team-3.png
      alt: "Building a user research team"
      excerpt: '[Building a user research team](/portfolio/2021-building-a-user-research-team) @Trustpilot'
-   - image_path:  assets/images/portfolio/2021-leader-archetypes-in-practice-2.png
+   - image_path:  assets/images/portfolio/2021-leader-archetypes-in-practice-1.png
      alt: "Leader archetypes in practice"
      excerpt: '[Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice) @Trustpilot'
    - image_path:  assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png
