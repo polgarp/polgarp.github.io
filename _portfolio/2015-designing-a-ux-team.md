@@ -13,8 +13,7 @@ sidebar:
   - title: "Responsibilities"
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"    
-classes: wide
+    text: "[Back to the portfolio](/portfolio)"
 ---
 
 I joined Emarsys with a strategic mandate: to not only to **build and lead the new UX team**, but to **establish a design practice** and fully integrate it into the product development process. With no dedicated UX team previously, this was a significant challenge that required both a strong vision and a hands-on approach.

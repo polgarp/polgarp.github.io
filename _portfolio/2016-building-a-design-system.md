@@ -14,7 +14,6 @@ sidebar:
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 When I joined Emarsys, the product had a new look but lacked a unified design language. This page-by-page redesign created a fragmented user journey and resulted in a confusing experience. My challenge was to work the engineering team, nurture our design system, and **unify our interaction patterns to create a coherent user journey** and improve usability.

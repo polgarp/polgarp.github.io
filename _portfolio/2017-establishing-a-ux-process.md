@@ -14,7 +14,6 @@ sidebar:
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 As I led the newly formed UX team at Emarsys, I quickly identified a critical challenge: without a shared process, our designers were spending too much time on refining solutions and too little on research. This led to late-stage changes and a lack of clarity on when to apply the right methods. My goal was to provide a framework that would **empower the team to work more strategically and effectively**, while communicating clearly our approach to our partners.
