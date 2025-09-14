@@ -14,7 +14,6 @@ sidebar:
     text: "Establish a product design team and bring the noise cancellation app to the next level"
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 At Krisp, we had a clear ambition: to go beyond noise cancellation and improve the overall effectiveness of communication. However, our team lacked a consistent approach to discovery and product decisions. I took on the challenge of not only leading a new project but also leveling up how we worked, **raising the organizational maturity** along the way.
