@@ -29,6 +29,8 @@ site.description: "Ideas and Stuff by Péter Balázs Polgár, Product Design Lea
 logo: "/assets/images/logo.png"
 masthead_title: "Péter Balázs Polgár"
 
+
+
 # Comments
 
 repository: polgarp/polgarp.github.io
@@ -83,34 +85,34 @@ plugins:
 author:
   name: "Péter Balázs Polgár"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : '<i class="fas fa-drafting-compass"></i> Design explorer. <br>Building products <br>and product design teams.'
+  bio    : '<i class="ph ph-compass-rose"></i> Design explorer. <br>Building products <br>and product design teams.'
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "ph ph-linkedin-logo"
       url: "https://linkedin.com/in/peterbalazspolgar"
     - label: "Mastodon"
-      icon: "fab fa-mastodon"
+      icon: "ph ph-mastodon-logo"
       url: "https://mastodon.online/@polgarp"
     - label: "Drop me an email"
-      icon: "fas fa-solid fa-envelope"
+      icon: "ph ph-envelope"
       url: "mailto:hello@polgarp.com"
     - label: "My newsletter"
-      icon: "fas fa-magic"
+      icon: "ph ph-newspaper-clipping"
       url: "https://polgarp.com/categories/newsletter/"
 
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin" 
+      icon: "ph ph-linkedin-logo" 
       url: "https://linkedin.com/in/peterbalazspolgar"
     - label: "Mastodon"
-      icon: "fab fa-mastodon"
+      icon: "ph ph-mastodon-logo"
       url: "https://mastodon.online/@polgarp"
     - label: "Drop me an email"
-      icon: "fas fa-solid fa-envelope"
+      icon: "ph ph-envelope"
       url: "mailto:hello@polgarp.com"
     - label: "My newsletter"
-      icon: "fas fa-magic"
+      icon: "ph ph-newspaper-clipping"
       url: "https://polgarp.com/categories/newsletter/"
 
 defaults:
