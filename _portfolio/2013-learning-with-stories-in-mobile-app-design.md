@@ -16,11 +16,11 @@ sidebar:
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-When I joined the mobile team, we were facing a critical challenge: a previous attempt to launch our Android app had failed. To get us back on track, I knew we needed a unified approach that would re-center our efforts on the user. I proposed using a **story-based framework** to redefine our product strategy. 
+When I joined the mobile team at Prezi, we were facing a critical challenge: a previous attempt to launch our Android app had failed. To get us back on track, I knew we needed a new approach that would re-center our efforts on the user. I proposed using a **story-based framework** to redefine our product strategy. 
 
 {% include figure image_path="assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-1.png" caption="Interview guide focused on stories" %}
 
-To make this happen, I had to **collect stories from user research** that we could refine and build upon. I also had to make sure the stories collected would affect the whole product development and validation of the MVP we had in mind for the app.
+To make this happen, I **collected stories from user research** that we could refine and build upon. I also made sure the stories collected would affect the whole product development and validated the MVP we had in mind for the app.
 
 {% include figure image_path="assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png" caption="Crafting stories from interview data" %}
 
@@ -28,4 +28,4 @@ We already had weekly user sessions (interviews and tests), so the first task wa
 
 {% include figure image_path="assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg" caption="Sharing insights to the team" %}
 
-This story-driven approach helped us define our **product vision** and served as a powerful tool for aligning our team and stakeholders—from developers to marketing. It provided a clear, shared understanding of what we were building and why. We even used these stories for product marketing, which directly contributed to the app's successful launch. This experience reinforced my belief that **a compelling vision, grounded in discovery, is the ultimate force multiplier for a team.** I also did a [conference talk](https://prezi.com/dutn4vgss7js/stories-in-ux-design/) on this topic.
+This story-driven approach helped us define our **product vision** and served as a powerful tool for aligning our team and stakeholders, from developers to marketing. It provided a clear, shared understanding of what we were building and why. We even used these stories for product marketing, which directly contributed to the app's successful launch. This experience reinforced my belief that **a compelling vision, grounded in discovery, is the ultimate force multiplier for a team.** I also did a [conference talk](https://prezi.com/dutn4vgss7js/stories-in-ux-design/) on this topic.

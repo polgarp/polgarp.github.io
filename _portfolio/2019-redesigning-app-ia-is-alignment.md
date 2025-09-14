@@ -16,7 +16,7 @@ sidebar:
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-When I joined Trustpilot, the product organization was struggling with a key challenge: a fragmented B2B app experience caused by autonomous teams working each on their own roadmap. Each team had its own menu item, each item screaming for attention, which created a confusing user journey, especially during onboarding. 
+When I joined Trustpilot, the product organization was struggling with a key challenge: **a fragmented B2B app experience** caused by autonomous teams working each on their own roadmap. Each team had its own menu item, each item screaming for attention. This created a confusing user journey, especially during onboarding, a key challenge for growth. 
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png" caption="Too many first level items in the old IA" %}
 
@@ -24,14 +24,14 @@ To solve this, I partnered with a product manager and their team to lead an info
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-2.jpg" caption="Preparing with  card sorting to understand function groups across the app" %}
 
-Our core principle was simple: a better information architecture requires a better understanding of the organization and its users. To get everyone on the same page, we designed a strategic process with four parallel tracks, ensuring our solution would be both user-centered and internally aligned.
- - User research track: We wanted to understand how current users perceived the solution and intended to continuously test versions via usability testing, card sorting, and tree testing. This was our core discovery track.
- - Alignment track: We did workshops with all product teams, and most stakeholders over several weeks, understanding key concerns, ambitions, and expectations towards the new IA and getting buy-in. With some groups, we set up further workshops to understand how the new menus would impact their work.
+Our core principle was simple: **a better information architecture requires both a better understanding of our organization and its users**. To get everyone on the same page, we designed a strategic process with four parallel tracks, ensuring our solution would be both user-centered and internally aligned.
+ - User research track: We wanted to understand **how current users perceived the app** and intended to continuously test versions via usability testing, card sorting, and tree testing. This was our core discovery track.
+ - Alignment track: We did **workshops with all product teams and key stakeholders** over several weeks, understanding key concerns, ambitions, and expectations towards the new IA while also getting buy-in. With some groups, we set up further workshops to understand how the new menus would impact their work.
  - Design track: We involved the entire design team to widen our solution space, proving that **great ideas come from a collaborative culture**.
- - Prototype track: We used a running prototype from day one to test our vision, turning abstract concepts into a tangible experience we could validate and refine.
+ - Prototype track: We used **a running prototype from day one to test** our vision, turning abstract concepts into a tangible experience we could validate and refine.
 
-I was working within each of these tracks in various ways to enable and support the individual contributors driving them.
+I was working within each of these tracks both as coach and the occasional player in various ways to enable and support the individual contributors driving them.
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png" caption="What we delivered: clearer menu, transparent workflow to follow" %}
 
-After three months, we had a solution that was agreed upon by everyone, a testament to the power of our collaborative process. Our success was not just in improving traffic to key tasks and conversions but in proving that internal alignment through a **coherent user journey** is a strategic business driver. This project was core to my belief that **design leadership is about building the systems and teams that enable a product to scale effectively.**
+After three months, we had a solution that was agreed upon by everyone, a testament to the power of our collaborative process. Our success was not just in improving traffic to key tasks, but in proving that internal alignment through along a **coherent user journey** is a strategic business driver. This project was core to my belief that **design leadership is about building the systems and teams that enable a product to scale effectively.**

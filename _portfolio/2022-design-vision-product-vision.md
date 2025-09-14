@@ -16,17 +16,17 @@ sidebar:
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-As the lead designer at Krisp, I faced a key challenge: the product was being built feature-by-feature as new technology became available, resulting in a fragmented user journey and a lack of clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and drive long-term strategy.
+As the lead designer at Krisp, I faced a key challenge: **the product was being built feature-by-feature** as new technology became available, resulting in a fragmented user journey and a lack of clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and drive long-term strategy.
 
-My goal was to **prototype the future** with a few compelling hero images and interactions, that would energize the team and allow for better prioritization. Partnering with a product director and a founder, I led a highly iterative, four-week process. I focused on exploring divergent ideas and converging on a solution based on feedback from stakeholders, our design team, and users. This fast, iterative approach was essential to validate our ideas quickly and get buy-in from the organization.
+My goal was to **prototype the future with a few compelling hero images** and interactions, that would energize the team and allow for better prioritization. Partnering with a product director and a founder, **I led a highly iterative, four-week process**. I focused on exploring divergent ideas and converging on a solution based on feedback from stakeholders, our design team, and users. This fast, iterative approach was essential to validate our ideas quickly and get buy-in from the organization.
 
 {% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-1.png" caption="User journey, after four weeks of iterative discovery" %}
 
-I used a user journey map to centralize all of our insights and identify key interactions where we could elevate the experience. My explorations, which ranged from a "today view" to a more collaborative focus, ultimately landed on a "speech coaching" direction. This was a clear user problem we could solve and a way to differentiate ourselves in the market.
+I used a user journey map to centralize all of our insights and identify key interactions where we could elevate the experience. My explorations, which ranged from a "today view" to a more collaborative focus, ultimately landed on a "speech coaching" direction. This was a clear user problem we could aim to solve, and a way to differentiate ourselves in the market.
 
 {% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-3.png" caption="The modular speech coaching insights designed for a dynamic experience" %}
 
-I designed a unified flow that addressed core user problems and showcased the product's future. I focused on hero interactions like the onboarding and in-call experiences, defining a seamless journey that connected the app's various features. This project provided the tech team with a clear roadmap, turning abstract ideas into tangible designs that could be measured and built upon.
+I designed **a unified flow that addressed core user problems** and showcased the product's future. I focused on hero interactions like the onboarding and in-call experiences, defining a seamless journey that connected the app's various features. This project also provided the tech team with a clear roadmap, turning abstract ideas into tangible designs that could be measured and built upon.
 
 {% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-2.png" caption="Hero images from the presentation to the whole company, showing key vison interaction points" %}
 
