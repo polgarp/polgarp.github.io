@@ -9,7 +9,7 @@ So I'm on a journey to channel this energy to build better things. These days I 
 
 Sometimes this means coaching and management, sometimes working with product teams to bring products from idea to users.
 
-Currently, I'm a senior designer at [Canonical](https://canonical.com/). Previously managing partner at [Megis](https://megis.studio/), lead product designer at [Krisp.ai](https://krisp.ai), senior UX manager at [Trustpilot](https://www.trustpilot.com/), head of UX at [Emarsys](https://emarsys.com/), and UX researcher at [Prezi](https://prezi.com/).
+Currently, I'm a lead designer at [Canonical](https://canonical.com/). Previously managing partner at [Megis](https://megis.studio/), lead product designer at [Krisp.ai](https://krisp.ai), senior UX manager at [Trustpilot](https://www.trustpilot.com/), head of UX at [Emarsys](https://emarsys.com/), and UX researcher at [Prezi](https://prezi.com/).
 
 – Péter
 
