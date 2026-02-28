@@ -9,7 +9,7 @@ header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
-Last big change to my personal workflow was to [switch to Joplin]({% post_url Blog/2024/2024-01-12-Switching-from-evernote-to-joplin %}) some time ago. I’ve been generally quite happy with using an open-source tool, as it has made me less concerned about my data becoming inaccessible due to company changes. But my notes were still in a database rather than files (and I’m slowly turning back to files to retain control, a good article on this topic: [File over app](https://stephango.com/file-over-app)). Plus, I’ve been using Claude Code more and more, and wanted it to have more direct access to my files. MCP-based solutions are just too cumbersome and expensive for such a simple usecase.
+Last big change to my personal workflow was to [switch to Joplin]({% post_url Blog/2024/2024-01-12-Switching-from-evernote-to-joplin %}) some time ago. I’ve been generally quite happy with using an open-source tool, as it has made me less concerned about my data becoming inaccessible due to company changes. But my notes were still in a database rather than files (and I’m slowly turning back to files to retain control, a good article on this topic: [File over app](https://stephango.com/file-over-app)). Plus, I’ve been using Claude Code more and more, and wanted it to have more direct access to my stash of saved articles. MCP-based solutions are just too cumbersome and expensive for such a simple usecase.
 
 ## Joplin -> Obsidian
 
@@ -36,7 +36,7 @@ A thing I notice is how Obsidian is better at nurturing my data-hoarding hobby, 
 
 ## Pocket -> Instapaper
 
-Last year, after Mozilla decided to close [Pocket,](https://getpocket.com/home) I ended up with a stash of over 4000 “read-it-later” links. Besides using [Instapaper,](https://www.instapaper.com/) I’m also saving fewer things to my reading backlog - both curating things faster and throwing away uninteresting things. Meanwhile, I’m reading through the past items, relying on Obsidian’s better tagging and web clipper tools, plus on Claude to help with some of the more complicated things.
+Last year, after Mozilla decided to close [Pocket,](https://getpocket.com/home) I ended up with a stash of over 4000 “read-it-later” links. Besides using [Instapaper,](https://www.instapaper.com/) I’m also saving fewer things to my reading backlog - both curating things faster and throwing away uninteresting things. Meanwhile, I’m reading through the past items, relying on Obsidian’s better tagging and web clipper tools, plus on Claude to help with some of the more tedious reviews, like articles broken up to multiple pages.
 
 ## Claude Code
 
@@ -46,13 +46,13 @@ I’m still figuring out the best approach. I’m sometimes chatting with Claude
 
 How I use Claude Code is all over the place: making side projects, exploring creative ideas, organizing and researching information. Like this week, I’ve made a simple command to summarise YouTube videos with timelines to explore (I like to read much better than to watch a long-form video). A lot of things I’ve considered hard or time-consuming in the past turned into something to pick up and finish between my morning yoga and the first meeting of the day, removing the need to learn uninteresting things or go through tedious processes.
 
-In many ways this interaction (or maybe better described as meta-interaction) reminds me of modern mobile games: the energy mechanism (the tokens might run out), the sorta slot-machine like waiting for results (though Opus 4.6 is much more consistent than earlier versions), the easy to enter a flow state (“Huh, I’ve been trying to solve this issue for 4 hours now?”).
+In many ways this interaction (or maybe better described as meta-interaction) reminds me of modern mobile games: the energy mechanism (the tokens might run out), the sorta slot-machine like waiting for results (though Opus 4.6 is much more consistent than earlier versions), the easy to enter a flow state (“Huh, I’ve been working on this question for 4 hours now?”).
 
-The cognitive exhaustion / decision fatigue after a longer session is the most interesting effect I observe in myself. But I also feel more energised, with much of the tedium removed.
+The cognitive exhaustion / decision fatigue after a longer session is the most interesting effect I observed sofar. But I also feel more energised, with much of the tedium removed from making things.
 
-So fun, but needs mindfulness on how to use responsibly - just because results are easy, sometimes the goal was not to get easy results in the first place. Kinda like how having a “2nd brain” in notes makes people do more thinking instead of doing, having such tools can make people do more doing (instead of thinking).
+So fun, but needs mindfulness on how to use responsibly - just because results are easy, sometimes the goal was not to get easy results in the first place. Kinda like how having a “2nd brain” in notes makes people do more thinking instead of doing, having such tools can make people doing more (instead of thinking).
 
 My current rule of thumbs with agentic systems is:
 
-* If I intend something I make to be read / used by humans, I should mostly craft ideas, words, and pixels myself. If that’s not feasible, I'll build a separate and appropriate workflow to establish systems and not just launch rapid-fire slop.
+* If I intend something I make to be read / used by humans, I should mostly craft ideas, words, and pixels myself as much as possible. If that’s not feasible, I'll build a separate and appropriate workflow to establish systems and not just launch rapid-fire slop.
 * Spend more social and 2nd brain time (here is how Obsidian helps) to balance out agentic time.
