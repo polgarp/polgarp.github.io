@@ -5,5 +5,7 @@ main:
     url: /
   - title: "9am26 Newsletter"
     url: /categories/newsletter/
+  - title: "Playground"
+    url: /playground/
 #  - title: "Tags"
 #    url: /tags/
