@@ -146,6 +146,15 @@ defaults:
       author_profile: false
       related: false
       classes: wide
+  # _playground
+  - scope:
+      path: ""
+      type: playground
+    values:
+      layout: single
+      author_profile: false
+      related: false
+      classes: wide
 
 category_archive:
   type: liquid
@@ -156,6 +165,9 @@ tag_archive:
 
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  playground:
     output: true
     permalink: /:collection/:path/
 
