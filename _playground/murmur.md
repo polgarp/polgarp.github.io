@@ -11,7 +11,7 @@ header:
 > the mirror is the joy <br>
 
 
-[Murmur](https://murmur-7f0.pages.dev/) creates haikus with a small AI language model directly in the browser.
+[Murmur](https://murmur.polgarp.com/) creates haikus with a small AI language model directly in the browser.
 
 Built with Astro on Cloudflare, running Qwen3-0.6B in-browser via Transformers.js, with Stripe and Printful for the print-on-demand side.
 
