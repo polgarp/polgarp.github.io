@@ -46,15 +46,15 @@ After testing multiple agentic tools, I settled on using & subscribing to Claude
 
 I’m still figuring out the best approach. I’m sometimes chatting with Claude on the web for quick questions, using Claude Code from the terminal most of the time ([Ghostty](https://ghostty.org/) is great), and opening VSCode to see files and make edits. Generally, the terminal feels the fastest and most information-dense.
 
-How I use Claude Code is all over the place: making side projects, exploring creative ideas, organizing and researching information. Like this week, I’ve made a simple command to summarise YouTube videos with timelines to explore (I like to read much better than to watch a long-form video). A lot of things I’ve considered hard or time-consuming in the past turned into something to pick up and finish between my morning yoga and the first meeting of the day, removing the need to learn uninteresting things or go through tedious processes.
+How I use Claude Code is all over the place: making side projects, exploring creative ideas, organizing and researching information. Like this week, I’ve made a simple command to summarise YouTube videos with timelines to explore (I like to read much more than to watch a long-form video). A lot of things I’ve considered hard or time-consuming in the past turned into something to pick up and finish between my morning yoga and the first meeting of the day, removing the need to learn uninteresting things or go through tedious processes.
 
-In many ways this interaction (or maybe better described as meta-interaction) reminds me of modern mobile games: the energy mechanism (the tokens might run out), the sorta slot-machine like waiting for results (though Opus 4.6 is much more consistent than earlier versions), the easy to enter a flow state (“Huh, I’ve been working on this question for 4 hours now?”).
+In many ways this interaction (or maybe better described as meta-interaction) reminds me of modern mobile games: the energy mechanism (the tokens might run out), the sorta slot-machine like waiting for results (though Opus 4.6 is much more consistent than earlier versions), the easy to enter a flow state (“Huh, I’ve been working on this problem for 4 hours now?”).
 
 The cognitive exhaustion / decision fatigue after a longer session is the most interesting effect I observed sofar. But I also feel more energised, with much of the tedium removed from making things.
 
-So fun, but needs mindfulness on how to use responsibly - just because results are easy, sometimes the goal was not to get easy results in the first place. Kinda like how having a “2nd brain” in notes makes people do more thinking instead of doing, having such tools can make people doing more (instead of thinking).
+It's fun, but needs mindfulness on how to use responsibly - just because results are easy, sometimes the goal was not to get easy results in the first place. Kinda like how having a “2nd brain” in notes makes people do more thinking instead of doing, having such tools can make people doing more (instead of thinking).
 
-My current rule of thumbs with agentic systems is:
+My current rule of thumbs with using agentic systems as a tool are:
 
-* If I intend something I make to be read / used by humans, I should mostly craft ideas, words, and pixels myself as much as possible. If that’s not feasible, I'll build a separate and appropriate workflow to establish systems and not just launch rapid-fire slop.
+* If I intend something I make to be read / used by humans, I should craft ideas, words, and pixels myself as much as possible. If that’s not feasible, I'll build a separate and appropriate workflow to establish systems and not just launch rapid-fire slop.
 * Spend more social and 2nd brain time (here is how Obsidian helps) to balance out agentic time.
