@@ -1,11 +1,13 @@
 main:
-  - title: "About"
-    url: /about/
   - title: "Blog"
     url: /
-  - title: "9am26 Newsletter"
+  - title: "9am26"
     url: /categories/newsletter/
   - title: "Playground"
     url: /playground/
+  - title: "About"
+    url: /about/
+  - title: "Now"
+    url: /now/
 #  - title: "Tags"
 #    url: /tags/
