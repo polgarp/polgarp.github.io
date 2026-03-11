@@ -9,7 +9,7 @@ tags:
   - Dual track agile
   - 9am26
 header:
-  overlay_image: /assets/images/.jpg
+  overlay_image: /assets/images/2025-05-26-Discovery-is-more-than-user-research.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false
 ---
