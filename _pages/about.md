@@ -26,3 +26,5 @@ I'm happy to collaborate on things like
 - establishing product discovery, and conducting rigorous user research
 
 Want to discuss your product? Need design or career advice? Let's talk: **hello@polgarp.com**.
+
+See what I'm [up to now](/now/).
