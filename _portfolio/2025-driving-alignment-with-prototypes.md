@@ -9,9 +9,9 @@ sidebar:
   - title: "Role"
     image: /assets/images/portfolio/canonical-logo.svg
     image_alt: "Canonical logo"
-    text: "Senior Experience Designer <br>@Canonical ⊂ 2024 - "
+    text: "Lead Experience Designer <br>@Canonical ⊂ 2024 - "
   - title: "Scope"
-    text: "Lead the design for the Ubuntu Pro portfolio."
+    text: "Lead the design on the Ubuntu Pro portfolio."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
 classes: wide
@@ -22,8 +22,7 @@ A tale half-told, half-dreamed of,
 Waiting for the end.
 
 ---
-TBD
----
+{% include figure image_path="/assets/images/portfolio/2026-1.png" caption="" %}
 
 Notes:
 When I joined Canonical, we had a fragmented offering around Ubuntu Pro. Pieces were added at various times by various teams, not only not offering a coherent experience, but also keeping us from levelling up the offering.
