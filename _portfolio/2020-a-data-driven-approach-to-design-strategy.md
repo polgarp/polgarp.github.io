@@ -1,5 +1,5 @@
 ---
-title: "Define design strategy through maturity evaluation"
+title: "A data-driven approach to design strategy"
 excerpt: ""
 date: 2020-02-04
 header:

@@ -1,5 +1,5 @@
 ---
-title: "Building a design system"
+title: "From UI kit to design system team"
 excerpt: ""
 date: 2016-03-01
 header:

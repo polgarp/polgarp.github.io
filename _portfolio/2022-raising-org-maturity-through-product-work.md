@@ -1,5 +1,5 @@
 ---
-title: "Raising organizational maturity with product work"
+title: "Raising org maturity through product work"
 excerpt: ""
 date: 2022-09-01
 header:

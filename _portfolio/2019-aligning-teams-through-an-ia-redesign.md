@@ -1,5 +1,5 @@
 ---
-title: "Redesigning app IA is alignment"
+title: "Aligning teams through an IA redesign"
 excerpt: ""
 date: 2019-04-02
 header:

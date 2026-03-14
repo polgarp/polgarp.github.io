@@ -1,5 +1,5 @@
 ---
-title: "Establishing a UX process for transparent design strategy"
+title: "A UX process for transparent collaboration"
 excerpt: ""
 date: 2017-01-02
 header:
