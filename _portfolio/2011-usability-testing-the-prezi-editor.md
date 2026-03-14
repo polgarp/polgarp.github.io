@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/prezi-logo.png
     image_alt: "Prezi logo"
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
@@ -28,4 +28,4 @@ We quickly realized that only **a continuous and rigorous discovery practice** c
 
 {% include figure image_path="assets/images/portfolio/2011-usability-testing-the-prezi-editor-3.png" caption="Mobile app testing" %}
 
-Through this process, I gained deep expertise in a wide range of discovery and research methods, from paper prototypes and A/B tests to eye tracking and guerrilla testing. But my biggest lesson was about impact. To ensure our insights were never siloed, we developed creative ways to get the information to the broader product team—through newsletters, comics, and mini-talks. **This was a foundational experience in making discovery a core, integrated part of our product development process.**
+Through this process, I gained deep expertise in a wide range of discovery and research methods, from paper prototypes and A/B tests to eye tracking and guerrilla testing. But my biggest lesson was about impact. To ensure our insights were never siloed, we developed creative ways to get the information to the broader product team, through newsletters, comics, and mini-talks. **This was a foundational experience in making discovery a core, integrated part of our product development process.**
