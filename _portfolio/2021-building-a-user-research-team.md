@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/trustpilot-logo.png
     image_alt: "Trustpilot logo"
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>  "
     text: "[Back to the portfolio](/portfolio)"
@@ -30,4 +30,4 @@ To step up, the core of my strategy was to embed researchers directly into produ
 
 {% include figure image_path="/assets/images/portfolio/2021-building-a-user-research-team-3.png" caption="Trustpilot's research team in 2021" %}
 
-As the last piece of the puzzle, we also added a lead user researcher to the team. They provided direct leadership support and helped the team engage with product leadership more effectively. This strategic immediately led to more consistent research and a greater flow of insights across the organization. This experience was key to my belief that **providing clear direction and vision is crucial for enabling a research practice that drives real business results.**
+As the last piece of the puzzle, we also added a lead user researcher to the team. They provided direct leadership support and helped the team engage with product leadership more effectively. Through this redesign, the research function went from a single researcher to a team of three embedded across product, a result of demonstrating clear value through the new operating model. This immediately led to more consistent research and a greater flow of insights across the organization. The right org design for a research team isn't something you can plan upfront, you find it by experimenting with how the team connects to the business environment and the teams around it.
