@@ -10,13 +10,13 @@ sidebar:
     image: /assets/images/portfolio/emarsys-logo.svg
     image_alt: "Emarsys logo"
     text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-As I led the newly formed UX team at Emarsys, I quickly identified a critical challenge: without a shared process, our designers were spending too much time on refining solutions and too little on research. This led to late-stage changes and a lack of clarity on when to apply the right methods. My goal was to provide a framework that would **empower the team to work more strategically and effectively**, while making our approach transparent to our partners.
+As I led the newly formed UX team at Emarsys, I quickly identified a critical challenge: without a shared process, our designers were spending too much time on refining solutions and too little on discovery and exploration. This led to late-stage changes, lack of clarity on how to approach problems, and inconsistent engagement with stakeholders. My goal was to provide a framework that would **empower the team to work more strategically and effectively**, while making our approach transparent to our partners.
 
 {% include figure image_path="assets/images/portfolio/2017-establishing-a-ux-process-1.png" caption="Phases of activities in the design process" %}
 
@@ -28,4 +28,4 @@ A key part of this new process was requiring a **design brief** to be created in
 
 {% include figure image_path="assets/images/portfolio/2017-establishing-a-ux-process-3.png" caption="Outcomes over the design process" %}
 
-The results were clear: the process organized our activities and proved scalable for any project size. The design brief became a particularly powerful tool, giving our designers clear, focused goals, and communicating design goals t our partners. This experience taught me that **creating a flexible process is essential to building a high-performing design team** that fits the organization, and makes collaboration transparent to partners.
+The results were clear: the process organized our activities and proved scalable for any project size. The design brief became a particularly powerful tool, giving our designers clear, focused goals, and communicating design goals to our partners. The brief itself was simple, but it changed how the team thought about their work, and how our partners understood what we were doing and why.
