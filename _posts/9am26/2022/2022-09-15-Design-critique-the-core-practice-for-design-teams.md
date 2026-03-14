@@ -5,7 +5,7 @@ categories:
 tags:
   - Design practice
   - Method
-  - Product Design
+  - Product design
   - Presenting work
   - 9am26
 header: 
