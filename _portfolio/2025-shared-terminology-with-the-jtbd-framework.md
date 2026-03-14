@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/canonical-logo.svg
     image_alt: "Canonical logo"
     text: "Senior Experience Designer <br>@Canonical ⊂ 2024 - "
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Lead the design for the Ubuntu Pro portfolio."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
