@@ -10,8 +10,8 @@ sidebar:
     image: /assets/images/portfolio/krisp-logo.svg
     image_alt: "Krisp logo"
     text: "Lead Product Designer <br>@Krisp ⊂ 2021 - 2023"
-  - title: "Responsibilities"
-    text: "Establish a product design team and bring the noise cancellation app to the next level"
+  - title: "Scope"
+    text: "Establish a product design team and shape product strategy beyond noise cancellation"
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
 ---
@@ -28,4 +28,4 @@ This collaborative model was a significant evolution from our previous process, 
 
 {% include figure image_path="/assets/images/portfolio/2022-raising-org-maturity-with-product-work-3.png" caption="Vision developed to show next steps from beta, with updated always-on widget" %}
 
-This experience was a powerful lesson in my leadership philosophy. It proved that a well-designed process can be as impactful as a well-designed feature. By **building the right team practices**, we not only learned what our users needed, but we also learned to work more efficiently, setting a new standard for how the organization makes product decisions.
+A well-designed process can be as impactful as a well-designed feature. By **building the right team practices**, we not only learned what our users needed, but also learned to work more efficiently, and set a new standard for how the organization makes product decisions.
