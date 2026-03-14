@@ -1,5 +1,5 @@
 ---
-title: "Leader archetypes in practice"
+title: "Four leadership modes for a troubled launch"
 excerpt: ""
 date: 2021-03-01
 header:

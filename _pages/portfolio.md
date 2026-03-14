@@ -22,8 +22,9 @@ intro:
 scaling:
   - title: "Driving product coherence at scale"
     excerpt: 'When multiple teams build independently, products fragment. I bring coherence by aligning teams around the user''s journey, turning fragmented experiences into unified products, and making cross-team alignment a strategic driver of growth.<br><br>
-     • **Key story**: [Redesigning app IA is alignment](/portfolio/2019-redesigning-app-ia-is-alignment) @Trustpilot<br>
-     • [Building a design system](/portfolio/2016-building-a-design-system) @Emarsys<br>
+     • **Key story**: [Aligning teams through an IA redesign](/portfolio/2019-aligning-teams-through-an-ia-redesign) @Trustpilot<br>
+     • [Build a horizontal framework with AI](/portfolio/2026-build-a-horizontal-framework-with-ai) @Canonical<br>
+     • [From UI kit to design system team](/portfolio/2016-from-ui-kit-to-design-system-team) @Emarsys<br>
      • Some further thoughts on [product design](/tags/#product-design)
     '
 prototyping:
@@ -36,18 +37,18 @@ discovery:
   - title: "Embedding discovery into product decisions"
     excerpt: 'Great products come from understanding, not assumptions. I build the practices and team habits that make research and discovery an integrated part of how product decisions get made, and not a phase that happens before the "real work."
 <br><br>
-    • [Raise product and org maturity with product work](/portfolio/2022-raising-org-maturity-with-product-work) @Krisp<br>
-    • [Define design strategy through maturity evaluation](/portfolio/2020-define-design-strategy-through-maturity-evaluation) @Trustpilot<br>
-    • [Establishing a UX process for transparent design strategy](/portfolio/2017-establishing-a-ux-process) @Emarsys<br>
+    • [Raising org maturity through product work](/portfolio/2022-raising-org-maturity-through-product-work) @Krisp<br>
+    • [A data-driven approach to design strategy](/portfolio/2020-a-data-driven-approach-to-design-strategy) @Trustpilot<br>
+    • [A UX process for transparent collaboration](/portfolio/2017-a-ux-process-for-transparent-collaboration) @Emarsys<br>
     • Some further thoughts on [product discovery](/tags/#product-discovery) and [user research](/tags/#user-research)
     '
 team:
   - title: "Building and scaling design teams"
     excerpt: 'A strong design team is a key driver of business success. I build teams that not only deliver exceptional work, but multiply the impact of everyone they collaborate with, through clear growth frameworks, embedded practices, and deliberate org design.
 <br><br>
-    • [Designing a UX team](/portfolio/2015-designing-a-ux-team) @Emarsys<br>
+    • **Key story**: [Designing a UX team](/portfolio/2015-designing-a-ux-team) @Emarsys<br>
     • [Building a user research team](/portfolio/2021-building-a-user-research-team) @Trustpilot<br>
-    • [Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice) @Trustpilot<br>
+    • [Four leadership modes for a troubled launch](/portfolio/2021-four-leadership-modes-for-a-troubled-launch) @Trustpilot<br>
     • [Growing teams with experience stories](/portfolio/2018-improve-with-experience-stories) @Emarsys<br>
     • Some further thoughts on [people management](/tags/#people-management), [org design](/tags/#org-design), [coaching](/tags/#coaching), and [hiring](/tags/#hiring)<br><br><br><br><br><br>
     '
