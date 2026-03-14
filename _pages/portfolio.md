@@ -9,67 +9,65 @@ header:
     actions:
     - label: "Peter's CV"
       url: "https://www.dropbox.com/scl/fi/myfulonkphti9x984ortr/Peter-Balazs-Polgar-cv-202506.pdf?rlkey=xduacb4943g03x0o1h1s5rvhg&st=0tn25rw2&dl=0"
-excerpt: 'With 16+ years in product design, I learned great teams deliver great products. Here are some of my stories how I helped teams and products getting better.'
+excerpt: 'I build design teams that drive product strategy and create spaces where great products are made.'
 intro:
-  - title: "I obsess about four things"
-    excerpt: 'Impactful design leadership goes beyond the immediate product impact. It’s about building the systems that make great products possible & efficient. I drive teams to solve the right problems and create meaningful results with these four principles:<br><br>
-    • Scaling coherent user journeys<br>
-    • Prototyping the future with visions<br>
-    • Making better product decisions with discovery<br>
-    • Building the right teams to deliver the right results
+  - title: "What I focus on as a design leader"
+    excerpt: 'Design leadership goes beyond the immediate product. It''s about the systems, teams, and culture that make great products possible. Over 16+ years I''ve built my leadership around four areas:<br><br>
+    • Driving product coherence at scale<br>
+    • Shaping strategy through design vision<br>
+    • Embedding discovery into product decisions<br>
+    • Building and scaling design teams<br><br>
+    <strong>My arc</strong><br>Built deep research craft at a fast-growing startup (Prezi) ● Founded and scaled a 16-person UX team from scratch (Emarsys) ● Scaled design influence across a mature B2B product org (Trustpilot) ● Shaped product strategy as design lead at a startup (Krisp) ● Driving cross-portfolio experience coherence (Canonical)
     '
 scaling:
-  - title: "Scaling coherent user journeys"
-    excerpt: 'As products scale, I focus on them remaining cohesive and intuitive. I decrease fragmentation by designing along the user''s journey, making complex experiences feel unified and simple.<br><br>
+  - title: "Driving product coherence at scale"
+    excerpt: 'When multiple teams build independently, products fragment. I bring coherence by aligning teams around the user''s journey, turning fragmented experiences into unified products, and making cross-team alignment a strategic driver of growth.<br><br>
      • **Key story**: [Redesigning app IA is alignment](/portfolio/2019-redesigning-app-ia-is-alignment) @Trustpilot<br>
      • [Building a design system](/portfolio/2016-building-a-design-system) @Emarsys<br>
-     • [Shared understanding with story mapping](/portfolio/2014-shared-understanding-with-story-mapping) @Prezi<br>
      • Some further thoughts on [product design](/tags/#product-design)
     '
 prototyping:
-  - title: "Prototyping the future with visions"
-    excerpt: 'Vision is a crucial tool for aligning teams and driving innovation. I use storytelling and prototypes to make the future tangible, helping everyone see what''s possible and get excited about building it together.<br><br>
+  - title: "Shaping strategy through design vision"
+    excerpt: 'Design is a powerful tool for prediction, it lets us show, not just tell, compelling stories about the future. I use vision prototypes and storytelling to align leadership, redirect product strategy, and give teams a shared picture of where we''re heading.<br><br>
     • **Key story**: [Shaping product strategy through design vision](/portfolio/2022-design-vision-product-vision) @Krisp<br>
     • Some further thoughts on [prototypes](/tags/#prototype)
     '
 discovery:
-  - title: "Making better product decisions with discovery"
-    excerpt: 'Great products come from a deep understanding of people''s needs, not assumptions. I empower teams to use research and discovery to solve the right problems and make smarter decisions for better results.
+  - title: "Embedding discovery into product decisions"
+    excerpt: 'Great products come from understanding, not assumptions. I build the practices and team habits that make research and discovery an integrated part of how product decisions get made, and not a phase that happens before the "real work."
 <br><br>
     • [Raise product and org maturity with product work](/portfolio/2022-raising-org-maturity-with-product-work) @Krisp<br>
+    • [Define design strategy through maturity evaluation](/portfolio/2020-define-design-strategy-through-maturity-evaluation) @Trustpilot<br>
     • [Establishing a UX process for transparent design strategy](/portfolio/2017-establishing-a-ux-process) @Emarsys<br>
     • Some further thoughts on [product discovery](/tags/#product-discovery) and [user research](/tags/#user-research)
     '
 team:
-  - title: "Building the right teams to deliver the right results"
-    excerpt: 'A strong design team is a key driver of business success. I''m focused on building and coaching great teams that not only deliver exceptional work, but also multiply the impact of everyone they collaborate with.
+  - title: "Building and scaling design teams"
+    excerpt: 'A strong design team is a key driver of business success. I build teams that not only deliver exceptional work, but multiply the impact of everyone they collaborate with, through clear growth frameworks, embedded practices, and deliberate org design.
 <br><br>
     • [Designing a UX team](/portfolio/2015-designing-a-ux-team) @Emarsys<br>
+    • [Building a user research team](/portfolio/2021-building-a-user-research-team) @Trustpilot<br>
+    • [Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice) @Trustpilot<br>
     • [Growing teams with experience stories](/portfolio/2018-improve-with-experience-stories) @Emarsys<br>
     • Some further thoughts on [people management](/tags/#people-management), [org design](/tags/#org-design), [coaching](/tags/#coaching), and [hiring](/tags/#hiring)<br><br><br><br><br><br>
     '
 other_stories:
-   - image_path:  assets/images/portfolio/2021-building-a-user-research-team-3.png
-     alt: "Building a user research team"
-     excerpt: '[Building a user research team](/portfolio/2021-building-a-user-research-team) @Trustpilot'
-   - image_path:  assets/images/portfolio/2021-leader-archetypes-in-practice-1.png
-     alt: "Leader archetypes in practice"
-     excerpt: '[Leader archetypes in practice](/portfolio/2021-leader-archetypes-in-practice) @Trustpilot'
-   - image_path:  assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png
-     alt: "Define design strategy through maturity evaluation"
-     excerpt: '[Define design strategy through maturity evaluation](/portfolio/2020-define-design-strategy-through-maturity-evaluation) @Trustpilot'
+   - image_path:  assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
+     alt: "Learn, Teach, Organize"
+     excerpt: '[Learn, Teach, Organize](/portfolio/1980-Learn-Teach-Organise) @Everywhere'
+foundations:
    - image_path:  assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png
      alt: "Learning with stories in mobile app design"
      excerpt: '[Learning with stories in mobile app design](/portfolio/2013-learning-with-stories-in-mobile-app-design) @Prezi'
+   - image_path:  assets/images/portfolio/2014-shared-understanding-with-story-mapping-1.jpg
+     alt: "Shared understanding with story mapping"
+     excerpt: '[Shared understanding with story mapping](/portfolio/2014-shared-understanding-with-story-mapping) @Prezi'
    - image_path:  assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png
      alt: "Testing prototypes along the fidelity range"
      excerpt: '[Testing prototypes along the fidelity range](/portfolio/2012-testing-prototypes-along-the-fidelity-range) @Prezi'
    - image_path:  assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
      alt: "Usability testing the Prezi editor"
      excerpt: '[Usability testing the Prezi editor](/portfolio/2011-usability-testing-the-prezi-editor) @Prezi'
-   - image_path:  assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
-     alt: "Learn, Teach, Organize"
-     excerpt: '[Learn, Teach, Organize](/portfolio/1980-Learn-Teach-Organise) @Everywhere'
 ---
 
 {% include feature_row id="intro" type="left" %}
@@ -90,6 +88,10 @@ other_stories:
 
 {% include feature_row id="team" type="left" %}
 
-# Stories from my other adventures
+# Foundations: Building craft depth
+
+Early in my career as a UX researcher at Prezi, I built the deep discovery and research expertise that became foundational to my later leadership work. Good decisions come from understanding people, experiments and collaborative decisions, these drive how I approach and solve problems.
+
+{% include feature_row id="foundations" %}
 
 {% include feature_row id="other_stories" %}
