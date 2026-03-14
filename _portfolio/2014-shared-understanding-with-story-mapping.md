@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/prezi-logo.png
     image_alt: "Prezi logo"
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
