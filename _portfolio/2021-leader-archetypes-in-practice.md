@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/trustpilot-logo.png
     image_alt: "Trustpilot logo"
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
@@ -31,7 +31,7 @@ My role was to bring alignment and help the project move ahead, by providing cri
 
 {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-1.png" caption="Activity artefacts" %}
 
-This collaborative approach transformed the project. Conversion rates went up, and more importantly, the collaboration model between teams improved. This project is an example to my belief that **design leadership is about building the systems and relationships that enable teams to navigate complexity and achieve shared success.** 
+This collaborative approach transformed the project. Conversion rates improved by ~15%, and more importantly, the collaboration model between teams changed fundamentally. **Design leadership is about building the systems and relationships that enable teams to navigate complexity and achieve shared success.** 
 
 {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-4.png" caption="The updated pricing page" %}
 
