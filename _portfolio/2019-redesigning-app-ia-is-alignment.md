@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/trustpilot-logo.png
     image_alt: "Trustpilot logo"
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
@@ -20,7 +20,7 @@ When I joined Trustpilot, the product organization was struggling with a key cha
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png" caption="Too many first level items in the old IA" %}
 
-To solve this, I partnered with a product manager and their team to lead an information architecture project focused on redesigning the main menu.
+To solve this, I partnered with a product manager and their team to lead an information architecture project focused on redesigning the main menu. While one product team drove the work, all 7 product teams contributed by revising structures in their own areas, and we engaged ~20 teams across the organization, about 50-60 stakeholders including commercial teams like support and customer success.
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-2.jpg" caption="Preparing with  card sorting to understand function groups across the app" %}
 
@@ -34,4 +34,4 @@ I was working within each of these tracks both as coach and the occasional playe
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png" caption="What we delivered: clearer menu, transparent workflow to follow" %}
 
-After three months, we had a solution that was agreed upon by everyone, a testament to the power of our collaborative process. Our success was not just in improving traffic to key tasks, but in proving that internal alignment through along a **coherent user journey** is a strategic business driver. This project was core to my belief that **design leadership is about building the systems and teams that enable a product to scale effectively.**
+After three months, we had a solution that was agreed upon by everyone. The results spoke for themselves: a ~20% increase in intended user flows, customer success teams reporting significantly easier onboarding for new customers, and an IA foundation so solid it was still in use 5+ years later. Our success was not just in the metrics, but in proving that internal alignment along a **coherent user journey** is a strategic business driver, one that compounds over time.
