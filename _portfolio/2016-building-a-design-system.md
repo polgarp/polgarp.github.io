@@ -10,13 +10,13 @@ sidebar:
     image: /assets/images/portfolio/emarsys-logo.svg
     image_alt: "Emarsys logo"
     text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Establish and lead a UX team of designers and researchers."
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-When I joined Emarsys, the product had a new look but lacked a systematic unified design language. The page-by-page redesign created a fragmented user journey and resulted in a confusing experience. My challenge was to work the engineering team, nurture our design system, and **unify our interaction patterns to create a coherent user journey** and improve usability.
+When I joined Emarsys, the product had a new look but lacked a systematic unified design language. The page-by-page redesign created a fragmented user journey and resulted in a confusing experience. My challenge was to work with the engineering team, nurture our design system, and **unify our interaction patterns to create a coherent user journey** and improve usability.
 
 {% include figure image_path="assets/images/portfolio/2016-building-a-design-system-1.png" caption="Design system Sketch UI kit" %}
 
@@ -28,4 +28,4 @@ I led the UX team in recreating all of our elements as proper components to spee
 
 {% include figure image_path="assets/images/portfolio/2016-building-a-design-system-3.png" caption="Design system v2" %}
 
-Recognizing the importance of this work, I successfully advocated for **a dedicated cross-functional Design System team** composed of engineers, designers, and researchers. This initiative became a core part of our design practice. This experience taught me that **building a design system is not just about assets, it's about building a strong, cross-functional team and a culture that can effectively scale a product and its vision.**
+Recognizing the importance of this work, I successfully advocated for **a dedicated cross-functional Design System team** composed of engineers, designers, and researchers. The results went beyond consistency: a more coherent experience across a deeply complex product meant faster customer onboarding and reduced support costs, while the shared component library sped up both design and development work. Building a design system is not just about assets, it's about building the cross-functional team and culture that can effectively scale a product.
