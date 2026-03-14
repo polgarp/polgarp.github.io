@@ -10,7 +10,7 @@ sidebar:
     image: /assets/images/portfolio/trustpilot-logo.png
     image_alt: "Trustpilot logo"
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
-  - title: "Responsibilities"
+  - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
   - title: "<br><br>" 
     text: "[Back to the portfolio](/portfolio)"
@@ -28,6 +28,6 @@ For the first round speed, rather than precision was a priority, as we didn't kn
 
 {% include figure image_path="assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-3.png" caption="Part of the evaluation results with recommendations for strategy" %}
 
-Based on our findings, we launched several key projects that directly addressed our strategic goals. We worked on **user journeys and personas**. We also focused on **creating experience visions**, which helped us to explore possible **product futures**. Finally, we prioritized growing and promoting people. 
+Based on our findings, we launched several key projects that directly addressed our strategic goals. We worked on **user journeys and personas** to improve decision coherence through design critique. We focused on **creating experience visions** to explore possible **product futures** and improve onboarding. And we prioritized growing and promoting people. The tangible outcomes: improved team retention, a more proactive design team that was driving initiatives rather than reacting to requests, and better decision-making across the product org.
 
-This experience was pivotal to my leadership philosophy. It showed me that taking the time to pause and reflect is crucial for making effective, proactive decisions. The confidence this evaluation gave us helped unite the team around a shared purpose and proved that a data-driven approach is the key to **building a high-performing design team**.
+Taking the time to pause and reflect is crucial for making effective, proactive decisions. A data-driven approach to understanding your own team's strengths and gaps is the key to **building a high-performing design team**.
