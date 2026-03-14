@@ -10,13 +10,13 @@ sidebar:
     image: /assets/images/portfolio/krisp-logo.svg
     image_alt: "Krisp logo"
     text: "Lead Product Designer <br>@Krisp ⊂ 2021 - 2023"
-  - title: "Responsibilities"
-    text: "Establish a product design team and bring the noise cancellation app to the next level"
+  - title: "Scope"
+    text: "Establish a product design team and shape product strategy beyond noise cancellation"
   - title: "<br><br>"
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-As the lead designer at Krisp, I faced a key challenge: **the product was being built feature-by-feature** as new technology became available, resulting in a fragmented user journey and a lack of clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and drive long-term strategy.
+At Krisp (~200 employees at the time), the core challenge was existential: built on a successful noise cancellation technology, the app was mostly invisible to users, easily lost as a feature rather than a standalone product. The company needed to find a killer app that could carry recognizable value to a wider audience and expand the total addressable market. But **the product was being built feature-by-feature** as new technology became available, resulting in a fragmented user journey and no clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and point toward the right future.
 
 My goal was to **prototype the future with a few compelling hero images** and interactions, that would energize the team and allow for better prioritization. Partnering with a product director and a founder, **I led a highly iterative, four-week process**. I focused on exploring divergent ideas and converging on a solution based on feedback from stakeholders, our design team, and users. This fast, iterative approach was essential to validate our ideas quickly and get buy-in from the organization.
 
@@ -28,6 +28,6 @@ I used a user journey map to centralize all of our insights and identify key int
 
 I designed **a unified flow that addressed core user problems** and showcased the product's future. I focused on hero interactions like the onboarding and in-call experiences, defining a seamless journey that connected the app's various features. This project also provided the tech team with a clear roadmap, turning abstract ideas into tangible designs that could be measured and built upon.
 
-{% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-2.png" caption="Hero images from the presentation to the whole company, showing key vison interaction points" %}
+{% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-2.png" caption="Hero images from the presentation to the whole company, showing key vision interaction points" %}
 
-While the product ultimately pivoted, the project was successful. As we could see where the product direction would take us, it showed the stakeholder group we would need to make a pivot. The design vision provided the clarity to make this major strategic shift, and many of our ideas influenced the tech team’s roadmap down the line. This experience was key to my belief that **design is a powerful tool for prediction, it allows us to show, not just tell, a compelling story about the future and shape the product's, and ultimately the company's direction.**
+The project delivered exactly what was needed — though not in the way we initially expected. By making the product direction tangible and testable, the vision showed leadership that this particular path wouldn’t carry the company where it needed to go. That clarity was the real outcome: the design vision gave the stakeholder group the confidence to make a major strategic pivot, and many of our ideas influenced the tech team’s roadmap going forward. **Design is a powerful tool for prediction. It lets us show, not just tell, a compelling story about the future and shape the product’s, and ultimately the company’s direction.**
