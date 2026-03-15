@@ -19,7 +19,7 @@ I believe this will be another example for the [automation trap]({% post_url 202
 
 Also tools like Claude make it very easy to work on multiple things parallel, making the hard part taking even more energy (Pablo Stanley's [Fried](https://pablostanley.substack.com/p/fried) writes about this).
 
-So how to manage this?
+So how to deal with this?
 - [Take a step back]({% post_url 2026-03-14-the-power-of-stepping-back %}). Making decisions and orchestrating agents (or directing orchestration agents) is highly creative work, you not only need to take a step back to get new ideas, but also to let your brain breathe a bit.
 - Embrace the new design process: sketch → agentic prototype → define details (doc, Figma, other tools). While sketching and writing also take brain power, they add a good mix of microtasks with various levels of cognitive costs.
 - Mindful time planning. The old rule of thumb of max 5-6 hours of deep work per day is still very much true, even if agents can do more. Plan ahead what you want to get done over the day and week, and allow yourself to close your Claude Code terminal once those are done.
