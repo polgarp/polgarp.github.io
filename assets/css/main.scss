@@ -31,3 +31,22 @@ $right-sidebar-width-wide: 400px !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Remove all link underlines globally */
+a {
+  text-decoration: none;
+}
+
+/* Subtle hover underline only in content areas */
+.page__content a,
+.archive__item-title a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
