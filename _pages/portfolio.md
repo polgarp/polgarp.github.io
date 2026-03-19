@@ -12,7 +12,7 @@ header:
 excerpt: 'I build design teams that drive product strategy and create spaces where great products are made.'
 intro:
   - title: "What I focus on as a design leader"
-    excerpt: 'Design leadership goes beyond the immediate product. It''s about the systems, teams, and culture that make great products possible. Over 16+ years I''ve built my leadership around four areas:<br><br>
+    excerpt: 'Design leadership goes beyond the immediate product. It''s about the systems, teams, and culture that make great products possible. Over 15+ years I''ve built my leadership around four areas:<br><br>
     • Driving product coherence at scale<br>
     • Shaping strategy through design vision<br>
     • Embedding discovery into product decisions<br>
