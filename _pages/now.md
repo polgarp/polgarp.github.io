@@ -13,8 +13,8 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 ### Building
 
-- A pattern generator / explorer based on Paul Jackson's book [_How to Make Repeating Patterns_](https://www.laurenceking.com/products/how-to-make-repeat-patterns).
 - A storyboard comic creator without AI image generation.
+- A dynamic explorer of user segments and insights to use instead of tired old personas.
 
 ### Reading
 
