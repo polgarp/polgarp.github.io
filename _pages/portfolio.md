@@ -8,7 +8,7 @@ header:
     overlay_filter: rgba(255, 63, 49, 0.8)
     actions:
     - label: "Peter's CV"
-      url: "https://www.dropbox.com/scl/fi/zbe0sw34jt3yp7sp7v46s/Peter-Balazs-Polgar-cv-202511.pdf?rlkey=uu28xg32atcp769xvtym8uz8w&st=gku2d15l&dl=0"
+      url: "https://www.dropbox.com/scl/fi/399zyx1suggexgp23jjdl/Peter-Balazs-Polgar-cv-202603.pdf?rlkey=0sgi8py08bx5agaew9es7bnlm&st=hd6stmgo&dl=0"
 excerpt: 'I build design teams that drive product strategy and create spaces where great products are made.'
 intro:
   - title: "What I focus on as a design leader"
