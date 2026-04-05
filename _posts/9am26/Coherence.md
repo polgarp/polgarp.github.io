@@ -16,31 +16,30 @@ header:
 
 # ☕
 
-I was a leading a team working on a fairly complex CRM software. We were building a design system and had fairly good coverage, the screens we created looked great, and more importantly, consistent after the layers of debt the software collected over the previous eras of design. But we still saw users struggling on more sophisticated workflows. After a deeper look I got the designers to work together more beyond the design system components, and thus we reached the idea of coherence.
+I was a leading a team working on a fairly complex CRM software. We were building a design system and had fairly good coverage, the screens we created looked great, and more importantly, consistent after we worked through the layers of debt the software collected over the previous eras of design. But we still saw users struggling across workflows. After a deeper look I got the designers to work together more beyond the design system components to explore how to make things more coherent.
 
-Consistency is important designing anything beyond the simplest software. It's the approach of solving the same things the same way, for example using buttons that look the same for all actions, making navigation predictable, using the same terms to describe the same concepts, and following brand guideline. 
+Consistency is important in designing anything beyond the simplest software. It's the approach of solving the same things the same way. For example using buttons that look the same for all actions, making navigation predictable, using the same terms to describe the same concepts, and following brand guidelines. 
 
-Consistency is a result of systematic design. Good designers solve things consistently by following their own system, and we create design systems for teams to solve things consistently. 
+Consistency is a result of systematic design. Good designers solve things consistently by following their own system, and we create design systems for teams to get more consistency across. 
 
-Since inconsistency is so visible, design teams often set consistency as a target though various ways, for example design system compliance or setting standards. It also makes pitching consistency related projects, like design systems fairly easy to pitch to product and engineering partners, since it's very much focused on the product at hand. Consistency also makes for reasoning on rebranding projects, as it's an easy win to make software look better.
+Since inconsistency is so visible, design teams often set consistency as a target though various ways, like design system compliance checks or setting standards to review for. It also makes consistency related projects, like design systems fairly easy to pitch to product and engineering partners, since it's very much focused on the product, what everyone is already working on. Consistency also makes for good rationale for rebranding projects, as it's an easy win to make software look more evenly put together.
 
-This leads to the tension with consistency. when taken to extreme and applied rigidly, it leads to uniformity, and a rigid UX that's not helping users. As consistency keeps the focus on internally visible problems, it can overshadow problems actual users face. Making a target of design system consistency will make designers following the guidelines blindly, putting usability ot the backseat.
+This leads to the tension with consistency. When taken to extreme and applied rigidly, it leads to uniformity, and a rigid UX that's not helping users. As consistency keeps the focus on internally visible problems, it can overshadow problems actual users face. Making a target of design system consistency will make designers following the guidelines primarily, putting usability to the backseat.
 
-Coherence is systematic design. It goes beyond solving problems consistently, and also applies the system to the types of problems solved and recognizes the context of problems. 
+Coherence is systematic design. It goes beyond solving problems consistently, and also applies the system to the types of problems solved, and considers how the problems and solutions fit together into whole.
 
-Coherence connects the business and user goals with the design activities by giving the designers a set of ideas or principles that leads to consistency in the broader system. By applying it to each layer of the app design: through branding, design system, journeys and user flows, it helps in achiving consistency in each.
+Coherence connects the business and user goals with the design activities by giving the designers a set of ideas or principles that leads to consistency in the broader system and beyond the immediate screens. By applying it to each layer of the app design: through branding, design system, journeys and user flows, it helps in achieving consistency in each.
 
 To put it simply, consistency works in the touchpoints of the user journey, while coherence works across the entire journey.
 
+While coherence considers users' context, builds on their existing knowledge, and fulfils their goals to achieve design goals, consistency generally serves the team's internal goals. These are important, for example consistency speeds up development, makes maintenance easier, or enables better brand alignment. 
+
+Consistency makes things more predictable: certainly for the team, and if the user goals are considered in a coherent way, also for them. Both are essential qualities of great design.
+
+Naturally, coherence requires more thought and practice than consistency. Design teams with weaker alignment and lower maturity will focus on consistency first, as it provides visible and stable guardrails. Something easy to align to. As teams get better, they can make more coherent decisions. Like improving brand articulation that in turn enables better brand alignment in design that goes beyond simply using consistent colors or logos.
 
 
-Coherence builds on the users' existing knowledge, so fulfills their goals, while consistency generally serves product and team's internal goals. These are important (like speeding up development or making maintanence easier or enabling better brand alignment). Because what consitency needs to do is getting things more predictable, both for users (buttons doing the same thing in a context) and for the team (development times).
-
-Naturally, coherence requires more thought and more skill than consistency, hence design teams with weak alignment and lower maturity will opt for that, as it provides a more visible and stable guardrails. as they get better they can more easily make coherent decisions. Coherence is also harder on brand alignment, requires a brand that has a better articulaton (like principles that are deeply explored and have seen practical use), and more recognizable boundries, a clear voice that can tell what belongs to a brand and what doesn't beyond visual or tonal signals.
-
-Consistency without thought is sameness where sameness is not needed, while adding thought means coherence
-
-Even consistency takes a lot of energy to achieve. A good design system is key, but treating it as a living system enables to take it further and enable coherence. The design system perspective is applying the current rules or treating system as a living product, a systemmati grammar that enables dialects according to needs. There should be tiers with non negotiable (like brand elements) to more flexible (like page layout patterns). 
+Even consistency takes effort to achieve. A good design system is key, but treating it as a living system enables to take it further and enable coherence. The design system perspective is applying the current rules or treating system as a living product, a systemmati grammar that enables dialects according to needs. There should be tiers with non negotiable (like brand elements) to more flexible (like page layout patterns). 
 
 How to get designers to align across teams and org?
 
