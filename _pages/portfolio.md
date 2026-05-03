@@ -23,7 +23,7 @@ scaling:
   - title: "Driving product coherence at scale"
     excerpt: 'When multiple teams build independently, products fragment. I bring coherence by aligning teams around the user''s journey, turning fragmented experiences into unified products, and making cross-team alignment a strategic driver of growth.<br><br>
      • **Key story**: [Aligning teams through an IA redesign](/portfolio/2019-aligning-teams-through-an-ia-redesign) @Trustpilot<br>
-     • [Build a horizontal framework with AI](/portfolio/2026-build-a-horizontal-framework-with-ai) @Canonical<br>
+     • [Building a horizontal framework with AI](/portfolio/2026-build-a-horizontal-framework-with-ai) @Canonical<br>
      • [Making a complex portfolio feel simple](/portfolio/2026-making-a-complex-portfolio-feel-simple) @Canonical<br>
      • [From UI kit to design system team](/portfolio/2016-from-ui-kit-to-design-system-team) @Emarsys<br>
      • Some further thoughts on [product design](/tags/#product-design)
