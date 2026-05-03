@@ -1,5 +1,5 @@
 ---
-title: "Build a horizontal framework with AI"
+title: "Building a horizontal framework with AI"
 excerpt: ""
 date: 2026-02-01
 header:
@@ -17,11 +17,11 @@ sidebar:
 classes: wide
 ---
 
-Canonical has a wide portfolio of over 60 deeply technical products. After I joined, I recognized that this breadth makes it increasingly challenging to have **meaningful conversations about target user segments across marketing, sales, product, design, and engineering**. There was a good understanding of the audience in the product teams through community engagement and plenty of dogfooding, but transmitting learning between teams was where things broke down. This led to friction both within a single product's experience and cross-product experiences in the portfolio, for example sales not targeting the right type of customers.
+Canonical has a wide portfolio of over 60 deeply technical products. After I joined, I recognized that this breadth makes it increasingly challenging to have **meaningful conversations about target user segments across marketing, sales, product, design, and engineering**. There was a good understanding of the audience in the product and engineering teams through community engagement and plenty of dogfooding, but transmitting learning between teams was where things broke down. This led to friction both within a single product's experience and cross-product experiences in the portfolio, for example sales not targeting the right type of customers or mismatch in touchpoints across user journeys.
 
 {% include figure image_path="/assets/images/portfolio/2026-build-a-horizontal-framework-with-ai-1.png" caption="A job map for a core user segment with the JTBD framework" %}
 
-I decided to change to take on this challenge to improve the business. As a first exploratory step, I worked with the marketing team to describe a single segment of our audience using the JTBD framework. I've led several workshops with senior stakeholders as a source of data. Besides the concrete benefit, the goal was to understand the problem and pitch a solution to leadership. The first round was successful enough that we expanded it into a proper project team to create **a framework for both positioning products and measuring their performance** using a mix of customer journey, jobs to be done, and persona methods. The framework was intended to provide common terminology and a set of artifacts that could drive conversations across silos, not just within design.
+I decided to change this, and to take on the challenge to improve the business. As a first exploratory step, I worked with the marketing team to describe a single segment of our audience using the JTBD framework. I've led several workshops with senior stakeholders to gather data. Besides the concrete benefit, the goal was to understand the problem and pitch a solution to leadership. The first round was successful enough that we expanded it into a proper project team to create **a framework for both positioning products and measuring their performance** using a mix of customer journey, jobs to be done, and persona methods. The framework was intended to provide common terminology and a set of artifacts that could drive conversations across silos, not just within design.
 
 {% include figure image_path="/assets/images/portfolio/2026-build-a-horizontal-framework-with-ai-2.png" caption="A framework to align teams" %}
 
