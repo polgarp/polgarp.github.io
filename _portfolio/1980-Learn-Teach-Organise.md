@@ -12,7 +12,7 @@ sidebar:
     text: "[Back to the portfolio](/portfolio)"
 ---
 
-When still at the university as a computer science major I realized I'm the most interested in how software gets used and bring value to people. So I started to read and learn and pick new courses that matched my interest. During my own studies, I also understood, that **great design is not only about understanding UX, it's also helping others to make better products.** My journey into design leadership began with this simple idea: to truly master a subject, you must be able to teach it.
+I started as a computer science major and realised pretty quickly that the part I cared about was how software actually gets used. I steered my courses that way. Somewhere along the line I noticed that the people around me wanted to make better products too, and that helping them was as interesting as doing the work myself.
 
 So I teach software ergonomics to other computer science students to spread what I already had learned. I continue to teach and advocate for UX in some ways ever since.
 
