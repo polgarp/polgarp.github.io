@@ -28,6 +28,4 @@ For the first round speed, rather than precision was a priority, as we didn't kn
 
 {% include figure image_path="assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-3.png" caption="Part of the evaluation results with recommendations for strategy" %}
 
-Based on our findings, we launched several key projects that directly addressed our strategic goals. We worked on **user journeys and personas** to improve decision coherence through design critique. We focused on **creating experience visions** to explore possible **product futures** and improve onboarding. And we prioritized growing and promoting people. The tangible outcomes: improved team retention, a more proactive design team that was driving initiatives rather than reacting to requests, and better decision-making across the product org.
-
-Taking the time to pause and reflect is crucial for making effective, proactive decisions. A data-driven approach to understanding your own team's strengths and gaps is the key to **building a high-performing design team**.
+The evaluation pointed at a few clear bets. We invested in user journeys and personas to give design critique something to lean on, in experience visions to push onboarding further out than the next sprint, and in promoting our own people rather than hiring over them. Retention improved, the team started picking its own initiatives instead of waiting to be asked, and product decisions got better evidence to argue with.
