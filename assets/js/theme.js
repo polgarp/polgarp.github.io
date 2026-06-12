@@ -23,10 +23,17 @@
     }
   }
 
+  function reflect(theme) {
+    btn.setAttribute("aria-checked", theme === "dark" ? "true" : "false");
+  }
+
+  reflect(current());
+
   btn.addEventListener("click", function () {
     var next = current() === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     localStorage.setItem("theme", next);
+    reflect(next);
     syncGiscus(next);
   });
 

@@ -1,17 +1,9 @@
 // Shell, masthead, footer.
 
-.shell,
-.shell-wide {
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-}
-
 .shell {
   max-width: var(--shell);
-}
-
-.shell-wide {
-  max-width: var(--shell-wide);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
 }
 
 main.shell {
@@ -72,12 +64,17 @@ main.shell {
       color: var(--accent);
     }
 
-    // The dot is absolutely positioned so items never shift when it appears.
+    // The dot is absolutely positioned so items never shift when it appears,
+    // and drawn as a box so it centers exactly on the text's midline.
     &::before {
-      content: "▪";
+      content: "";
       position: absolute;
       left: -0.95em;
-      color: var(--accent);
+      top: 50%;
+      width: 0.38em;
+      height: 0.38em;
+      transform: translateY(-50%);
+      background: var(--accent);
       opacity: 0;
       transition: opacity 0.15s ease;
     }
@@ -100,6 +97,7 @@ main.shell {
 
 .masthead__tools {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 
   button {
@@ -117,6 +115,52 @@ main.shell {
       color: var(--accent);
       border-color: var(--accent);
     }
+  }
+}
+
+// Dark-mode switch: a track with a square knob, drawn with pseudo-elements
+// so the button keeps a comfortable hit area.
+.masthead__tools .theme-switch {
+  width: 2.75rem;
+  border: 0;
+  position: relative;
+
+  &::before {
+    // track
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.2rem;
+    height: 1.1rem;
+    border: 1px solid var(--rule);
+    transition: border-color 0.15s ease;
+  }
+
+  &::after {
+    // knob
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0.475rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: translateY(-50%);
+    background: var(--ink);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+
+  &[aria-checked="true"]::after {
+    transform: translateY(-50%) translateX(1.1rem);
+  }
+
+  &:hover::before {
+    border-color: var(--accent);
+  }
+
+  &:hover::after {
+    background: var(--accent);
   }
 }
 

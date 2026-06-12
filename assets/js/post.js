@@ -19,7 +19,7 @@
   var btn = document.createElement("button");
   btn.className = "quote-share";
   btn.type = "button";
-  btn.textContent = "Share ↗";
+  btn.textContent = "Share to Mastodon ↗";
   btn.hidden = true;
   document.body.appendChild(btn);
 
