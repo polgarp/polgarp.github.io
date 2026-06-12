@@ -5,9 +5,6 @@ categories:
 tags:
   - AI design
   - Product design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Intention is at the core of designing products. Product design is the rendering of intent.

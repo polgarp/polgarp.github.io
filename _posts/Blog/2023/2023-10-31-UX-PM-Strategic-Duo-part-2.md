@@ -5,9 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design strategy
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 This is the second post in a series that [**Greg**](https://www.linkedin.com/in/gregprickril/) and I are publishing on the strategic role of UX in product development and how PMs and UX professionals can deliver greater impact via strategic alignment. [**Previously**](https://www.coachpms.com/post/ux-pm-a-strategic-duo) 

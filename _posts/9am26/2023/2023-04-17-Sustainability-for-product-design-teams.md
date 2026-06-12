@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Product design
-header:
-  overlay_image: /assets/images/2023-04-17-Sustainability-for-product-design-teams.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Product designers should think about including more sustainable practices in their work. They should consider carbon consumption, influencing business models, embedding sustainability principles into the design process, fostering a culture shift, and encouraging innovation in addressing sustainability challenges.

@@ -7,10 +7,6 @@ tags:
   - People management
   - Design career
   - Org design
-header:
-  overlay_image: /assets/images/2023-04-03-Career-ladders-chart-a-path-for-the-teams-growth.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 A clear career ladder is vital to retain team members and ensure they are growing in their roles. They provide clarity not only for professional development but also a way to bring the vision for the team alive and play a key part in fostering the team's culture.

@@ -5,9 +5,6 @@ categories:
 tags:
   - Product design
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 A key idea in product design is to make things easier and simpler as much as possible so people are faster at whatever they are doing, with the assumption that more efficiency generally means more satisfaction too. But even in business software (where we can fairly consistently presume, people want as much efficiency as possible) this is not always true.

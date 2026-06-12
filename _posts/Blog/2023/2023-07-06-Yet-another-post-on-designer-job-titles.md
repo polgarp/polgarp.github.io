@@ -6,9 +6,6 @@ tags:
   - Design teams
   - Design career
   - User research
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Digital design is still in its storming phase, that's why we have so many posts, debates, and comments on naming, terminology, etc. Part of it is philosophical clashes (for example can we design experiences like we design a chair), but also different people at different companies have different experiences. Plus terminology is often not only driven by the design community but by other stakeholders, like hiring managers or c-level leadership.

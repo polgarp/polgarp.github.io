@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Product design
   - Design process
-header:
-  overlay_image: /assets/images/2023-04-24-Design-audits-improving-collaboration-quality-and-alignment.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design audits are an often overlooked but valuable tool for designers and design leaders to get valuable insights and energy for change.

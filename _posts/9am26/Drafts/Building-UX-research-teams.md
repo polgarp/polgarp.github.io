@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - User research
   - Design teams
-header:
-  overlay_image: /assets/images/.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 {% include figure image_path="/assets/images/.jpg" alt=", generated with DiffusionBee" caption=", generated with DiffusionBee" %}

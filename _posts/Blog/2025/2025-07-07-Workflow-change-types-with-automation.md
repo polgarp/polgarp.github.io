@@ -4,9 +4,6 @@ categories:
   - Blog 
 tags:
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Considering how much of the current AI conversation revolves around how these tools will automate away people's jobs, it's worth trying to describe what automation does to a person's tasks. While this won't influence decision-makers who aim for headcounts to go down, we can still think about designing better systems.

@@ -62,7 +62,8 @@
     e.preventDefault(); // keep the selection alive
     var quote = currentQuote.length > 280 ? currentQuote.slice(0, 279) + "…" : currentQuote;
     var text = "“" + quote + "”\n\n— " + document.title + "\n" + location.href;
-    window.open("https://mastodonshare.com/?text=" + encodeURIComponent(text), "_blank", "noopener");
+    var service = document.body.dataset.shareService || "https://mastodonshare.com/?text=";
+    window.open(service + encodeURIComponent(text), "_blank", "noopener");
     hide();
   });
 })();

@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-header:
-  overlay_image: /assets/images/.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 

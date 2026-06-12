@@ -5,10 +5,6 @@ categories:
 tags:
   - User research
   - Knowledge work
-header:
-  overlay_image: /assets/images/2022-10-10-Structuring-research-notes.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Taking notes on user research sessions should go beyond asking observers to write down everything they see. Structuring notes drive impact beyond a single session or study.

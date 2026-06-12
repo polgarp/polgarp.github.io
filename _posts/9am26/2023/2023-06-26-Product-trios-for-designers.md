@@ -7,10 +7,6 @@ tags:
   - Product design
   - Product discovery
   - Design teams
-header:
-  overlay_image: /assets/images/2023-06-26-Product-trios-for-designers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Product trios is a great team setup to do product discovery, yet working in this type of close collaboration is not for everyone. Designers need to be prepared to be able to stand on equal grounds with product management and engineering.

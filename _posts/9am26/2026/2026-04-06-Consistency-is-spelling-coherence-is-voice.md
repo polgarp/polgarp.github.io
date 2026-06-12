@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Product design
-header:
-  overlay_image: /assets/images/2026-04-06-Consistency-is-spelling-coherence-is-voice.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Consistency and coherence are both important qualities in product design, and they work at different levels. Product designers need to master both.

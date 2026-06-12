@@ -5,10 +5,6 @@ categories:
 tags:
   - Product design
   - Design process
-header:
-  overlay_image: /assets/images/2023-06-05-Problem-space-solution-space.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Understanding the concepts of problem space and solution space is crucial for achieving exceptional product outcomes. While these two realms are intricately intertwined, designers often underutilize their potential.

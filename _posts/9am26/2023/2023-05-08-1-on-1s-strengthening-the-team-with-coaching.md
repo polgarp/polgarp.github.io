@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - People management
   - Coaching
-header:
-  overlay_image: /assets/images/2023-05-08-1-on-1s-strengthening-the-team-with-coaching.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 1-on-1s can be a real game-changer when it comes to building a design team that works like a well-oiled machine. Managers can improve their team's skills, can create trust and open communication, can give feedback that helps everyone grow in these magical sessions.

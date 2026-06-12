@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - User research
-header:
-  overlay_image: /assets/images/2023-08-28-Rigor-is-essential-in-user-research.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Rigor is a key ingredient in any successful user research project. But what does rigor mean, exactly? And how can you ensure that your research is rigorous?

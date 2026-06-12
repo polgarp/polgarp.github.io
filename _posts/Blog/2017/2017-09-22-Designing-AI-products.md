@@ -5,9 +5,6 @@ categories:
 tags:
   - Product design
   - AI design
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 *This story is based on the talk I recently gave on the [UX Budapest Meetup featuring AI topics](https://www.meetup.com/UXbudapest/events/243139012/). Here is [my prezi from the event](https://prezi.com/bn1pvzmeclfu/designing-ai-products/). I’ve added more links and more content here.*

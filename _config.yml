@@ -30,6 +30,15 @@ logo: "/assets/images/logo.png"
 
 
 
+# Site UI settings (consumed by the custom layouts/includes)
+
+intro:
+  lede: "Design explorer. Building products and product design teams."
+  now: 'Currently lead product designer at <a href="https://canonical.com/">Canonical</a>, designing humane human–AI workflows.'
+colophon: "black, red, white & monospace · ☕ brewed at 9:26"
+newsletter_embed: "https://embeds.beehiiv.com/37db567b-1484-4bb3-8430-ed1d569535ca?slim=true"
+share_service: "https://mastodonshare.com/?text="
+
 # Comments
 
 repository: polgarp/polgarp.github.io

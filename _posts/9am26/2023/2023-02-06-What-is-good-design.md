@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Product design
-header:
-  overlay_image: /assets/images/2023-02-06-What-is-good-design.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design teams and leaders need to define what good design looks like within their context to be able to push for better outcomes.

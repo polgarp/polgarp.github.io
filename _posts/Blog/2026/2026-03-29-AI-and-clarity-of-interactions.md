@@ -6,9 +6,6 @@ tags:
   - AI design
   - Product design
   - Side project
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 While working on my side project, [Tilecraft](https://polgarp.com/tilecraft/) I've been thinking a lot about the rendering of intentions, and how they influence the outcomes in vibe-coded software.

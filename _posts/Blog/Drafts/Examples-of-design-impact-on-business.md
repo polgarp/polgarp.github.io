@@ -4,10 +4,6 @@ categories:
   - Blog
 tags:
   - Design leadership
-header:
-  overlay_image: /assets/images/.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 It's a bit dizzying to think that after so many years of of design taking over the world (at the minimum since Apple proved design and experience does matter), we still need to convince senior business stakeholders on the value that UX brings to products.

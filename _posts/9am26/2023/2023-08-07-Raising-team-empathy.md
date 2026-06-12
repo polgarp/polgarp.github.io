@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design teams
-header:
-  overlay_image: /assets/images/2023-08-07-Raising-team-empathy.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Empathy is a key skill for designers and design teams. The ability to understand another person not only helps in creating better products but also in establishing better collaboration.

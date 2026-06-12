@@ -1,10 +1,6 @@
 ---
 title: "Usability testing the Prezi editor"
-excerpt: ""
 date: 2011-12-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2011-usability-testing-the-prezi-editor-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/prezi-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
   - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 Prezi, as a presentation startup offered many opportunities around the product when I joined. Along with separate desktop, web, and mobile versions, it had collaboration features and a unique interaction model. This made it a difficult problem space, presenting unique challenges in understanding how users navigate such a novel product. My team and I had to **experiment with research methods constantly to truly understand their shifting mental models and "aha" moments.**

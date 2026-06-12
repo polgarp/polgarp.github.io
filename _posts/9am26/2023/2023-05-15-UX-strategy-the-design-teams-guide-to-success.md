@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design strategy
-header:
-  overlay_image: /assets/images/2023-05-15-UX-strategy-the-design-teams-guide-to-success.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Having a clear strategy is what sets apart mediocre design teams and good teams. A clear strategy is crucial for design teams to have a clear vision and direction toward achieving their goals.

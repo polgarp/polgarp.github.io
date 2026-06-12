@@ -5,9 +5,6 @@ categories:
 tags:
   - Design leadership
   - Conference
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Last week I attended the [Strech conference 2020 online](https://www.stretchcon.com/2020-online/). I found over the years that the individual talks themselves don't give that much useful insights, but spending focused time on learning, and taking a step back from the daily storms is helpful to put things into perspective and evaluate problems, ideas in a new light.

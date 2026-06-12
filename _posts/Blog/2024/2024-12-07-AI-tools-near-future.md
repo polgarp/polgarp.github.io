@@ -5,9 +5,6 @@ categories:
 tags:
   - Product design
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 The doom and gloom around non-designers using AI tools to replace designers is increasing. I don't doubt this is a trend, but I suspect that it won't lead to better business for most companies.

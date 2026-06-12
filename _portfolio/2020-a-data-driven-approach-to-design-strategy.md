@@ -1,10 +1,6 @@
 ---
 title: "A data-driven approach to design strategy"
-excerpt: ""
 date: 2020-02-04
-header:
-  image:
-  teaser: /assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/trustpilot-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
   - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
-  - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 Leading a fairly mature design team with a dual-track agile approach was a great experience, but my director and I faced a challenge: a wealth of ideas for improving our practices without a clear direction. We needed a strategic way to prioritize our efforts and make sure we were focusing on the right initiatives. My goal was to create a data-driven roadmap that would **help the team make more purposeful priority decisions and become more proactive**.

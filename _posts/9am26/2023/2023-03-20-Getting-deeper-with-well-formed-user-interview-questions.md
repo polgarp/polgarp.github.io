@@ -5,10 +5,6 @@ categories:
 tags:
   - User research
   - Design process
-header:
-  overlay_image: /assets/images/2023-03-20-Getting-deeper-with-well-formed-user-interview-questions.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 User interviews are one of the easiest user research methods to get started with. To make them effective, the flow and formulation of questions need to be right.

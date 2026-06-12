@@ -1,10 +1,6 @@
 ---
 title: "Growing teams with experience stories"
-excerpt: ""
 date: 2018-05-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2018-improve-with-experience-stories-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/emarsys-logo.svg
@@ -12,8 +8,6 @@ sidebar:
     text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
   - title: "Scope"
     text: "Establish and lead a UX team of designers and researchers."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 As a design leader, I've found that one of the most critical but challenging tasks is helping team members **grow and rise to ever-increasing challenges**, to go beyond the comfortable, and become a T-shaped specialist.

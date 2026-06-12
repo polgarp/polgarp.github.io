@@ -2,9 +2,6 @@
 title: "Software should be the tool of people"
 categories:
   - blog
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I've been using computers for a long time.

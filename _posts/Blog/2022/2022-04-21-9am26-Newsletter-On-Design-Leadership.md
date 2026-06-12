@@ -5,9 +5,6 @@ categories:
 tags:
   - Side project
   - Design leadership
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I'm starting a (bi)weekly newsletter on design leadership called **[9am26]({% link _pages/newsletter.md %})**. Looking around the interwebs these days there are more and more good articles on leading and scaling design teams. So why am I adding to those? Three reasons: for myself to learn, for others to have good starting points and to start conversations.

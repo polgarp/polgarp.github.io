@@ -7,10 +7,6 @@ tags:
   - Design teams
   - Org design
   - People management
-header:
-  overlay_image: /assets/images/2023-10-23-Design-team-structures-defining-how-we-work.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Defining a team structure with intention helps design leaders achieve their goals, scale their teams, and create great designs. Key factors to consider are the company's goals and culture, the skills and roles required, and the different types of team structures available.

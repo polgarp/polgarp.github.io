@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-header:
-  overlay_image: /assets/images/2023-09-25-Wartime-peacetime-design-leadership.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Product design and research leaders are facing a shift from peacetime to wartime conditions. With shifting priorities, layoffs, budget cuts, and higher demands from senior management, it can be difficult to know how to lead your team through this difficult time.

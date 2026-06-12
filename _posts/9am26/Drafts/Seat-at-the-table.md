@@ -4,9 +4,6 @@ categories:
   - Newsletter
 tags:
   - Design strategy
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 # ☕ Seat at the table - what to do once you are sitting at the table

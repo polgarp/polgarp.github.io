@@ -5,10 +5,6 @@ categories:
 tags:
   - Product design
   - Product discovery
-header:
-  overlay_image: /assets/images/2025-05-26-Discovery-is-more-than-user-research.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 When working on a new opportunity, the first thing a product team needs to do is make some decisions about how they are going to solve it. Most probably, they won't have all the information readily available, and they would need to spend a bit of time learning and understanding—that is, doing discovery. Designers are often expected to drive this process, and their usual reaction is to focus on user research. But it's important to realize that discovery is more than that.

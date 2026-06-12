@@ -7,10 +7,6 @@ tags:
   - Design process
   - Product discovery
   - Design intent
-header:
-  overlay_image: /assets/images/2023-06-12-Writing-useful-hypotheses.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Writing useful hypotheses in the product design process helps understand user and business problems better while fostering critical thinking about the product team's beliefs and bets.

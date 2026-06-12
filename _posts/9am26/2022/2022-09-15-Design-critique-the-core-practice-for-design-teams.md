@@ -5,9 +5,6 @@ categories:
 tags:
   - Design process
   - Product design
-header: 
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design critique is not only a basic method for designers to get feedback and improve the quality of their work, but also a core practice for design teams to collaborate and develop a shared language.

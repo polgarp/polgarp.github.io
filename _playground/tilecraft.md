@@ -1,9 +1,7 @@
 ---
 title: "Tilecraft"
-excerpt: ""
 header:
   image: /assets/images/playground/tilecraft-1.png
-  teaser: /assets/images/playground/tilecraft-1.png
 ---
 
 [Tilecraft](https://polgarp.com/tilecraft/) is a little tool I made based on the examples from Paul Jackson's excellent book [*How to Make Repeat Patterns*](https://www.laurenceking.com/products/how-to-make-repeat-patterns). I picked the book up when visiting the Escher Museum in the Hague, and wanted to try out and play with the ideas presented. It was also an experiment in building a non-trivial interactive tool with Claude, directing an agentic tool through complex geometry and interaction design.

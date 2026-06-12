@@ -6,9 +6,6 @@ tags:
   - Product design
   - Design process
   - Product discovery
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 ### User Story Mapping at Emarsys

@@ -6,9 +6,6 @@ tags:
   - Design process
   - Conference
   - Coaching
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 # Things learned at the IxD ’16 Camp

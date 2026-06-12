@@ -1,10 +1,6 @@
 ---
 title: "Learning with stories in mobile app design"
-excerpt: ""
 date: 2015-02-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/prezi-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
   - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 When I joined the mobile team at Prezi, we were facing a critical challenge: a previous attempt to launch our Android app had failed. To get us back on track, I knew we needed a new approach that would re-center our efforts on the user. I proposed using a **story-based framework** to redefine our product strategy. 

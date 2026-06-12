@@ -5,9 +5,6 @@ categories:
 tags:
   - Design leadership
   - Product design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Knowing what good looks like separates mediocre designers from great designers. And it's not just having a vague, high level, abstract, by-the-book idea of good, but a messy, close relationship, acknowledging the details and indeed being energized to to get the good. It's the driving force behind the optimism that the world can be indeed changed for the better. 

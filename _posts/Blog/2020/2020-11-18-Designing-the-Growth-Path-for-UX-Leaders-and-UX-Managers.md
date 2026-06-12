@@ -6,9 +6,6 @@ tags:
   - Design leadership
   - Org design
   - Design career
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 My notes from Jared Spool's talk ["Designing the Growth Path for UX Leaders and UX Managers"](https://leaders.centercentre.com/events/designing-the-growth-path-for-ux-leaders-and-ux-managers-talk-ux-strategy-with-jared-spool-8938411?instance_index=20201026T180000Z).

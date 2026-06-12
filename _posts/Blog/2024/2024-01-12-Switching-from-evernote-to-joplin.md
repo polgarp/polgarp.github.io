@@ -5,9 +5,6 @@ categories:
 tags:
   - Personal practices
   - Knowledge work
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I've been an Evernote user for more than 10 years, but finally decided to switch away from it. I started to use [**Joplin**](https://joplinapp.org/), an open-source note-taking app a couple of weeks ago, and won't be looking back.

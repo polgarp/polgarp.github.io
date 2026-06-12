@@ -6,9 +6,6 @@ tags:
   - Product design
   - Design process
   - Design teams
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 **Christopher K Wong** in [Why you shouldn’t be too eager to share your work](https://dataanddesign.substack.com/p/why-you-shouldnt-be-too-eager-to):

@@ -4,9 +4,6 @@ categories:
   - Blog
 tags:
   - Side project
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I seem to followed by quotes on all things UX. They appear in presentations, on Facebook conversations as funny come backs, in discussions about UIs. I get inspirational UX quotes written on funny images. They are told by UX people, told by people who know about UX, and told by people who think they know about UX after seeing that one funny picture on Twitter where UI is represented by a concrete path while UX is a well trodden path on the grass. They are misquoted, misattributed, or not attributed at all.

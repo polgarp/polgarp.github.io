@@ -5,9 +5,6 @@ categories:
 tags:
   - Knowledge work
   - Personal practices
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 This is my current knowledge workflow as of beginning of 2021. I write these both to document my current practice, and also to clearly set what guidelines I'm working with.

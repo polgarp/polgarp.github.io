@@ -1,10 +1,6 @@
 ---
 title: "Shaping product strategy through design vision"
-excerpt: ""
 date: 2022-06-01
-header:
-  image:
-  teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/krisp-logo.svg
@@ -12,8 +8,6 @@ sidebar:
     text: "Lead Product Designer <br>@Krisp ⊂ 2021 - 2023"
   - title: "Scope"
     text: "Establish a product design team and shape product strategy beyond noise cancellation"
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 At Krisp (~200 employees at the time), the core challenge was existential: built on a successful noise cancellation technology, the app was mostly invisible to users, easily lost as a feature rather than a standalone product. The company needed to find a killer app that could carry recognizable value to a wider audience and expand the total addressable market. But **the product was being built feature-by-feature** as new technology became available, resulting in a fragmented user journey and no clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and point toward the right future.

@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Product design
-header:
-  overlay_image: /assets/images/2023-07-10-Desire-paths-following-the-users-tracks.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Desire paths, and shortcuts people make in physical spaces are also relevant to UX design. Users always find clever ways to use software that suits them better, showing their agency. Designers can weave these desire paths into their design process through research and user flow consideration.

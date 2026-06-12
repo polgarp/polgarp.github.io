@@ -4,9 +4,6 @@ categories:
   - Blog
 tags:
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 [When Using AI Leads to “Brain Fry”](https://hbr.org/2026/03/when-using-ai-leads-to-brain-fry):

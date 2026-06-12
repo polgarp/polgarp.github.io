@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design process
-header:
-  overlay_image: /assets/images/2023-09-18-Activating-insights-for-the-design-process.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Evidence-based design serves the users truly, and actively using user research insights provides the evidence. Use workshops and other collaborative tools to help your team work with user research findings and make insights active.

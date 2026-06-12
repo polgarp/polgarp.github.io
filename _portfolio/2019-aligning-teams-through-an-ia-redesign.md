@@ -1,10 +1,6 @@
 ---
 title: "Aligning teams through an IA redesign"
-excerpt: ""
 date: 2019-04-02
-header:
-  image:
-  teaser: /assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/trustpilot-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
   - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 When I joined Trustpilot, the product organization was struggling with a key challenge: **a fragmented B2B app experience** caused by autonomous teams working each on their own roadmap. Each team had its own menu item, each item screaming for attention. This created a confusing user journey, especially during onboarding, a key challenge for growth. 

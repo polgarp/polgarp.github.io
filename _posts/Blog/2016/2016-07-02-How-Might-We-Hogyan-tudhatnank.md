@@ -4,9 +4,6 @@ categories:
   - Blog
 tags:
   - Design process
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 *(This post is about how to apply the [How Might We](http://designthinking.ideo.com/?tag=how-might-we) method in Hungarian, and in a broader sense how language based design methods translate.)*

@@ -5,10 +5,6 @@ categories:
 tags:
   - Design teams
   - Design career
-header:
-  overlay_image: /assets/images/2022-11-29-Teams-of-T-shaped-designers.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Product design teams are more effective and produce higher quality output if they have deep expertise in each design discipline, while they also need generalist designers in each product team. A team of T-shaped designers resolves these twin goals.

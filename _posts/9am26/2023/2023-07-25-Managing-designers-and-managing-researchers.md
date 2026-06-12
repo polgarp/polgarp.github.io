@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - People management
   - Design teams
-header:
-  overlay_image: /assets/images/2023-07-25-Managing-designers-and-managing-researchers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Product designers and UX researchers have different mindsets, skills, and communication styles. Managing these two roles requires an understanding of both roles and the ability to foster good conversations and build understanding between them.

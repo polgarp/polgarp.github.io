@@ -1,10 +1,6 @@
 ---
 title: "Building a user research team"
-excerpt: ""
 date: 2021-04-02
-header:
-  image:
-  teaser: /assets/images/portfolio/2021-building-a-user-research-team-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/trustpilot-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
   - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
-  - title: "<br><br>  "
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 When I joined Trustpilot, a user research team was already in place, but their work was mostly reactive. Teams were empowered to do their own research, and leaders agreed that understanding the intended audience better and validating ideas both were important practices. But a **lack of clear direction and connections to product leadership** meant we weren’t generating strategic insights or making a clear business impact. 

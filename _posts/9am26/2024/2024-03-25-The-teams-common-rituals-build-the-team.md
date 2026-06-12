@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Design teams
   - People management
-header:
-  overlay_image: /assets/images/2024-03-25-The-teams-common-rituals-build-the-team.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 When a design team is formed from individual designers, it needs to have certain rituals in place to grow into an actual team. Besides the usual suspects of alignment and communication, designers need these spaces to maintain a holistic view and be able to act as a team on the overall UX.

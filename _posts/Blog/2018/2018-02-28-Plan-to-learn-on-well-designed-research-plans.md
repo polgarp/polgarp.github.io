@@ -5,9 +5,6 @@ categories:
 tags:
   - User research
   - Product discovery
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 # Well designed research plans in qualitative user research help to successfully learn about users
