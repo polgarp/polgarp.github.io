@@ -1,8 +1,7 @@
 ---
 permalink: /about/
-title: "I'm *super* annoyed by bad experiences. "
-author_profile: true
-classes: wide
+title: "I'm *super* annoyed by bad experiences."
+avatar: /assets/images/bio-photo.jpg
 ---
 
 So I'm on a journey to channel this energy to build better things. I've learnt that better products are built by great teams, and that **building those teams is itself a design problem** I find endlessly interesting.

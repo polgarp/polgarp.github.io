@@ -2,16 +2,20 @@
 layout: default
 ---
 <article class="page-single">
+  {% if page.avatar %}
+  <img class="page-avatar" src="{{ page.avatar | relative_url }}" alt="Portrait of {{ site.name }}">
+  {% endif %}
+
   {% if page.title %}
   <header class="post__header">
-    <h1 class="post__title">{{ page.title }}</h1>
+    {% comment %} markdownify so emphasis in titles renders; strip the <p> wrapper {% endcomment %}
+    <h1 class="post__title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
   </header>
   {% endif %}
 
-  {% assign hero = page.header.image | default: page.header.overlay_image %}
-  {% if hero %}
+  {% if page.header.image %}
   <figure class="post__hero">
-    <img src="{{ hero | relative_url }}" alt="" loading="eager">
+    <img src="{{ page.header.image | relative_url }}" alt="" loading="eager">
   </figure>
   {% endif %}
 

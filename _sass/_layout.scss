@@ -1,9 +1,17 @@
 // Shell, masthead, footer.
 
-.shell {
-  max-width: var(--shell);
+.shell,
+.shell-wide {
   margin-inline: auto;
   padding-inline: 1.25rem;
+}
+
+.shell {
+  max-width: var(--shell);
+}
+
+.shell-wide {
+  max-width: var(--shell-wide);
 }
 
 main.shell {
@@ -18,50 +26,45 @@ main.shell {
 
 .masthead__inner {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
-  padding-block: 1.1rem;
+  padding-block: 1rem;
 }
 
 .masthead__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
   font-weight: 600;
   white-space: nowrap;
 
+  .logo {
+    display: block;
+  }
+
+  .logo__bowl {
+    fill: var(--accent);
+  }
+
   &:hover {
     color: inherit;
-
-    .masthead__bracket {
-      color: var(--ink);
-    }
   }
-}
-
-.masthead__mark {
-  letter-spacing: -0.05em;
-}
-
-.masthead__bracket {
-  color: var(--accent);
-  transition: color 0.15s ease;
-}
-
-.masthead__name {
-  margin-left: 0.35rem;
 }
 
 .masthead__nav {
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem 1.25rem;
+    gap: 0.25rem 1.5rem;
     list-style: none;
     padding: 0;
   }
 
   a {
+    position: relative;
     text-decoration: none;
     font-size: var(--text-sm);
 
@@ -69,12 +72,21 @@ main.shell {
       color: var(--accent);
     }
 
+    // The dot is absolutely positioned so items never shift when it appears.
+    &::before {
+      content: "▪";
+      position: absolute;
+      left: -0.95em;
+      color: var(--accent);
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+
     &[aria-current="page"] {
       font-weight: 600;
 
       &::before {
-        content: "▪ ";
-        color: var(--accent);
+        opacity: 1;
       }
     }
   }
