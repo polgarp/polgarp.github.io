@@ -5,9 +5,6 @@ categories:
 tags:
   - Coaching
   - Design career
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I've been part of the [UX Coffee Hours](https://storage.googleapis.com/uxcoffeehours.com/site/research.html) for the past 1.5 years, meeting UX researchers every week for a chat, mostly mentoring people starting out in their careers. While each session is different and insightful in its own way, I've noticed a few recurring topics. I'm writing my high-level take on these, so I can share it with future mentees for future sessions, making more time for deeper discussions.

@@ -5,10 +5,6 @@ categories:
 tags:
   - Design process
   - Product design
-header:
-  overlay_image: /assets/images/2026-03-14-the-power-of-stepping-back.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 The best ideas and most creative solutions don't just happen in the depth of work, but often in the between steps. By taking a step back from the work we often find new and better connections.

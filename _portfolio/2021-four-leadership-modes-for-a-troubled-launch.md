@@ -1,10 +1,6 @@
 ---
 title: "Four leadership modes for a troubled launch"
-excerpt: ""
 date: 2021-03-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2021-leader-archetypes-in-practice-1.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/trustpilot-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "Senior UX Manager <br>@Trustpilot ⊂ 2018 - 2021"
   - title: "Scope"
     text: "Provide alignment and leadership to a group of designers and researchers working on the B2B product."
-  - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 Leading design on Trustpilot's freemium product, I faced a significant challenge: **a major product release generated strong, negative feedback from marketing and other key stakeholders**. This friction stemmed from a lack of alignment on strategic goals. I stepped in to help the designer under fire, supporting also the product team while managing expectations across the organization.

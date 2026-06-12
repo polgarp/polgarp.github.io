@@ -5,9 +5,6 @@ categories:
 tags:
   - Product discovery
   - User research
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 I was [teaching designers](http://momeid.mome.hu/) this week, and it struck me: people don’t question the need of doing research any more. There used to be a few confident, experienced ones every semester who thought and said: they could do well enough without talking to users (insert anecdotal evidence here). I don’t think I heard this opinion this year, maybe not even last year. Even though the class consisted of people trying to get into product design and learn the basics, a few of them already did interviews and usability tests. So we are done? Everybody knows they need to do research and just wonders how to get started setting up sessions and recruiting participants?

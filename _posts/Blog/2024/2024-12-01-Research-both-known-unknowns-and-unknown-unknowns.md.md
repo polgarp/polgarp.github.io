@@ -4,9 +4,6 @@ categories:
   - Blog 
 tags:
   - User research
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 **Greg Bernstein** in [**Making research more durable**](https://gregg.io/durable-research):

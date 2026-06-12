@@ -1,10 +1,6 @@
 ---
 title: "Making a complex portfolio feel simple"
-excerpt: ""
 date: 2026-02-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2026-making-a-complex-portfolio-feel-simple-3.jpg
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/canonical-logo.svg
@@ -12,9 +8,6 @@ sidebar:
     text: "Lead Experience Designer <br>@Canonical ⊂ 2024 - "
   - title: "Scope"
     text: "Lead the design for the Ubuntu Pro portfolio."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 As the lead designer for Ubuntu Pro, a subscription bundle for a portfolio of products, my key challenge was to **scale up the buying journey from product-level to portfolio-level**. The pieces of the portfolio had been built independently over time, and the buying journey for self-service users needed to become a proper SaaS flow, and cover the full portfolio instead of a single product. This meant updating both the messaging and how we presented the stack.

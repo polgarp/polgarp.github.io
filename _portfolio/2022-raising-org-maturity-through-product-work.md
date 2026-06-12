@@ -1,10 +1,6 @@
 ---
 title: "Raising org maturity through product work"
-excerpt: ""
 date: 2022-09-01
-header:
-  image:
-  teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/krisp-logo.svg
@@ -12,8 +8,6 @@ sidebar:
     text: "Lead Product Designer <br>@Krisp ⊂ 2021 - 2023"
   - title: "Scope"
     text: "Establish a product design team and shape product strategy beyond noise cancellation"
-  - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 At Krisp, we had a clear ambition: to go beyond noise cancellation and improve the overall effectiveness of communication. However, our team lacked a consistent approach to discovery and product decisions that was needed to reach such ambitious goals. I used the opportunity of a new project to not only improve our product, but to also level up how we worked, **raising the organizational maturity** along the way.

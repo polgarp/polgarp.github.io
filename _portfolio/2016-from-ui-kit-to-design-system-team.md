@@ -1,10 +1,6 @@
 ---
 title: "From UI kit to design system team"
-excerpt: ""
 date: 2016-03-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2016-building-a-design-system-3.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/emarsys-logo.svg
@@ -12,8 +8,6 @@ sidebar:
     text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
   - title: "Scope"
     text: "Establish and lead a UX team of designers and researchers."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 When I joined Emarsys, the product had a new look but lacked a systematic unified design language. The page-by-page redesign created a fragmented user journey and resulted in a confusing experience. My challenge was to work with the engineering team, nurture our design system, and **unify our interaction patterns to create a coherent user journey** and improve usability.

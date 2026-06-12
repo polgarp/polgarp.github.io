@@ -1,10 +1,6 @@
 ---
 title: "Designing a UX team"
-excerpt: ""
 date: 2017-11-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2015-designing-a-ux-team-3.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/emarsys-logo.svg
@@ -12,8 +8,6 @@ sidebar:
     text: "Head of UX <br>@Emarsys ⊂ 2015 - 2018"
   - title: "Scope"
     text: "Establish and lead a UX team of designers and researchers."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 I joined Emarsys with a strategic mandate: to not only **build and lead the new UX team**, but to **establish a design practice** and fully integrate it into the product development process. With no dedicated UX team previously, this was a significant challenge that required both a strong vision and a hands-on approach. The team I built would go on to drive a major platform redesign, and our talent development was strong enough that the two subsequent heads of UX were both promoted from within.

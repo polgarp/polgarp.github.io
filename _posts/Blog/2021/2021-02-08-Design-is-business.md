@@ -5,9 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design strategy
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Was on a meetup today, and one of the questions asked from the presenter was "What's the relationship between business and design at your company". Ofcourse the intention of the question was more about how we as a design team work together with other teams, departments, organizations. But since words do matter, for me the answer was obvious:

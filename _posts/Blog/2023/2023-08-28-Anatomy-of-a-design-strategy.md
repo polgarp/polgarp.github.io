@@ -5,9 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design strategy
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Senior designers and even design leaders are often asked to go more strategic. Makes sense, that's what more experienced people do to increase their impact and presumably their delivered value. So what should go into a [**UX strategy**]({% post_url 9am26/2023/2023-05-15-UX-strategy-the-design-teams-guide-to-success %})? Context matters a lot, but there are some common points to view this.

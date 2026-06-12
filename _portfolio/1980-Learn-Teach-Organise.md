@@ -1,15 +1,9 @@
 ---
 title: "Learn, Teach, Organize"
-excerpt: ""
 date: 1980-10-01
-header:
-  image:
-  teaser: assets/images/portfolio/1980-Learn-Teach-Organise-1.jpg
 sidebar:
   - text: "Teaching since 2007"
   - text: "Learning since 1980"
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 I started as a computer science major and realised pretty quickly that the part I cared about was how software actually gets used. I steered my courses that way. Somewhere along the line I noticed that the people around me wanted to make better products too, and that helping them was as interesting as doing the work myself.

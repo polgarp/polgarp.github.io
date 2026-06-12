@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - People management
-header:
-  overlay_image: /assets/images/2023-07-05-Onboarding-designers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Onboarding new design team members in a good way is essential for their success and the overall productivity of the team. Planning this right fosters a supportive team culture and sets the new joiners up for success.

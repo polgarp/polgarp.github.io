@@ -6,10 +6,6 @@ tags:
   - Product design
   - Design process
   - Prototypes
-header:
-  overlay_image: /assets/images/2024-01-15-Prototypes-model-experiences.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Since we design interactive systems, prototypes are the most important artifacts we can produce in our work. Prototypes expand what we can create, model the real experience, and allow faster learning.

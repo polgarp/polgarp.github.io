@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Design process
   - Design teams
-header:
-  overlay_image: /assets/images/2024-03-04-Facilitating-participatory-design.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Designers might describe what they do as designing, but more often than not, it's more facilitating. The modern design process calls for participation not only from team members but also from internal stakeholders, users, and even people not using our products but affected by it.

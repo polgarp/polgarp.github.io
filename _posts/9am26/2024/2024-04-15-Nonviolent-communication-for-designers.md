@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Coaching
-header:
-  overlay_image: /assets/images/2024-04-15-Nonviolent-communication-for-designers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 As designers become more seniors, there is a common expectation of also becoming better at communication. It's often unclear what's it that actually needs to be improved. Nonviolent communication is a powerful tool that helps designers foster empathy, clearer communication, and create better experiences.

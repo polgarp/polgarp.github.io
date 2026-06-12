@@ -5,10 +5,6 @@ categories:
 tags:
   - Product design
   - Design intent
-header:
-  overlay_image: /assets/images/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Without a solid intention, a designed solution will have unclear decisions, shallow exploration, and mediocre quality. Describing the shared design intent gives a solid foundation for the whole product team to work together on.

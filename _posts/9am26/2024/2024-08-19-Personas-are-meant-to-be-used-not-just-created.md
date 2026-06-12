@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Personas
   - Design process
-header:
-  overlay_image: /assets/images/2024-08-19-Personas-are-meant-to-be-used-not-just-created.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Personas are a widely used method, as they are seemingly easy to create and fit well into the image of a standardized design process. But as with any other tool, their creation needs to be driven by actual usage, otherwise, they will just add to the list of useless artefacts in a project's documentation.

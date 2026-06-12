@@ -5,9 +5,6 @@ categories:
 tags:
   - Design process
   - Product design
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 # A quick method to build a creative brief for small projects

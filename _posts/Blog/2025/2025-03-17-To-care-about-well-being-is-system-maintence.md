@@ -4,9 +4,6 @@ categories:
   - Blog 
 tags:
   - Personal practices
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Each year, I'm setting a list of goals based on the review of the previous year and some reflection where I want to go next. Things like "Write more on my blog", because it's a good thinking too, or "do more sports", because of the long term health benefits. But I don't really have a very structured system for this, it's mostly an organically evolving system. For this year I have 15 goals to track (plus a few project based goals) in 5 categories: Self care, Growth, Family, Financial, Better world with not a lot of definition, just an understanding that I want to progress in each of these.

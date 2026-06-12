@@ -5,10 +5,6 @@ categories:
 tags:
   - Design career
   - People management
-header:
-  overlay_image: /assets/images/2022-09-26-Brag-doc-Keeping-track-of-wins.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Brag doc, a running list of what has gone well, is a great practice for designers to reflect and keep track of learnings and wins. It also helps managers to understand performance and give better feedback.

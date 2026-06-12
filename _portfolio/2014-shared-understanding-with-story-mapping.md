@@ -1,10 +1,6 @@
 ---
 title: "Shared understanding with story mapping"
-excerpt: ""
 date: 2014-01-02
-header:
-  image:
-  teaser: /assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/prezi-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
   - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 Driving the user experience for Prezi's mobile products, our product team faced a critical challenge: our four development teams were working in silos, and their backlogs didn't provide a clear, unified view of the product's direction. We were at risk of building a fragmented, incoherent experience. My first priority was to **create a shared understanding and get everyone focused on the same goal.**

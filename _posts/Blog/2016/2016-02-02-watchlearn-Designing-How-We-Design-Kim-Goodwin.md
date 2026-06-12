@@ -6,9 +6,6 @@ tags:
   - Design leadership
   - Org design
   - Design teams
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 > #watchlearn is series of sessions of the Emarsys UX team watching a talk, discussing it, and publishing their notes about it.

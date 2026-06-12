@@ -1,10 +1,6 @@
 ---
 title: "Building a horizontal framework with AI"
-excerpt: ""
 date: 2026-02-01
-header:
-  image:
-  teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/canonical-logo.svg
@@ -12,9 +8,6 @@ sidebar:
     text: "Lead Experience Designer <br>@Canonical ⊂ 2024 - "
   - title: "Scope"
     text: "Lead the design for the Ubuntu Pro portfolio."
-  - title: "<br><br>"
-    text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 Canonical has a wide portfolio of over 60 deeply technical products. After I joined, I recognized that this breadth makes it increasingly challenging to have **meaningful conversations about target user segments across marketing, sales, product, design, and engineering**. There was a good understanding of the audience in the product and engineering teams through community engagement and plenty of dogfooding, but transmitting learning between teams was where things broke down. This led to friction both within a single product's experience and cross-product experiences in the portfolio, for example sales not targeting the right type of customers or mismatch in touchpoints across user journeys.

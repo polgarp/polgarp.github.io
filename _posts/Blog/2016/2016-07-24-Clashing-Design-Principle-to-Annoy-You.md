@@ -5,9 +5,6 @@ categories:
 tags:
   - Product design
   - Design process
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 From time to time I find myself obsessed with broken things, especially physical objects. The ones that leave me in an interrupted, annoyed, confused state whenever I use them.

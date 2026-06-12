@@ -7,10 +7,6 @@ tags:
   - Personal practices
   - Coaching
   - Knowledge work
-header:
-  overlay_image: /assets/images/2023-08-21-Why-writing-matters-for-designers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Writing is a valuable skill for product designers, especially in distributed teams. Besides its inherent use for async communication, it's a valuable tool for critical thinking and also develops long-term life skills.

@@ -7,9 +7,6 @@ tags:
   - Conference
   - Org design
   - People management
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 ![image-center](/assets/images/2016-12-06-stretchcon-2016-impressions.png){: .align-center}

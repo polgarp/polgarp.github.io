@@ -6,9 +6,6 @@ tags:
   - Design leadership
   - People management
   - Coaching
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 A manager's success is measured by how well their team perform. This introduces some vagueness to their performance, as we only see it by proxy. I heard these five points from Hans, one of my managers on how he evaluates his manager reports.

@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Org design
   - Product design
-header:
-  overlay_image: /assets/images/2023-11-27-Maturity-models-help-formulating-what-good-looks-like.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design maturity models help get a holistic understanding of where the design team is and should go, but they are also often distracting by being overly general heuristics. 

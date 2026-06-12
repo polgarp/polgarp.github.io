@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Conference
   - Org design
-header:
-  overlay_image: /assets/images/2015-12-06-stretch-logo.jpeg
-  overlay_filter: 0.5
-  show_overlay_excerpt: false
 ---
 
 I frequently see UX people in a leadership role, even if they are not team leads or managers. They still need to guide their teams or even to change processes and culture to achieve a better experience. That’s why I decided to go to [Stretch](http://stretchcon.com/) conference again after 2014. It offers a good mix of talks about personal and organisational improvement. Besides enjoying nice networking (hello prezi people!), I made some notes (see below) on the talks I liked the most.

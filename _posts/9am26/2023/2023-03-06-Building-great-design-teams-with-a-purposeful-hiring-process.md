@@ -5,10 +5,6 @@ categories:
 tags:
   - People management
   - Org design
-header:
-  overlay_image: /assets/images/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Great teams are not born overnight - they are forged through a purposeful hiring process. At its core, hiring is not just about filling roles; it's about finding the right people who match the role and the team. A purposeful process helps to smooth things out, improves the experience for candidates, and is important to build great teams.

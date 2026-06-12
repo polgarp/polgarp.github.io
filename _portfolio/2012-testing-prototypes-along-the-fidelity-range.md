@@ -1,10 +1,6 @@
 ---
 title: "Testing prototypes along the fidelity range"
-excerpt: ""
 date: 2012-06-01
-header:
-  image:
-  teaser: /assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/prezi-logo.png
@@ -12,8 +8,6 @@ sidebar:
     text: "UX Researcher <br>@Prezi ⊂ 2011 - 2015"
   - title: "Scope"
     text: "In a cross-functional team partner with a product designer, a product manager and engineers and enable discovery and learning about users."
-  - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"
 ---
 
 At Prezi, I was tasked with a particularly complex problem: designing for team collaboration. This was a complex challenge in **forming a single user journey** across multiple roles and team-based needs. We needed to support different users working together in a wide range of contexts, which meant our research had to go beyond individual user flows and test with entire groups. 

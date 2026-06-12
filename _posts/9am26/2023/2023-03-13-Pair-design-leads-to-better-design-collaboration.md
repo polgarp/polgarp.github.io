@@ -7,10 +7,6 @@ tags:
   - Design teams
   - Design process
   - Coaching
-header:
-  overlay_image: /assets/images/2023-03-13-Pair-design-leads-to-better-design-collaboration.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Pair design is an awesome way to get designers to collaborate more closely, increase design quality, and for team members to learn and grow together.

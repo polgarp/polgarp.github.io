@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - People management
-header:
-  overlay_image: /assets/images/2022-10-27-Writing-great-job-ads.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 The hiring process needs to be a designed experience, and job ads are the first touchpoints for potential candidates. A great job ad should be human-centered, focusing as much on the business needs as on the needs of potential candidates.

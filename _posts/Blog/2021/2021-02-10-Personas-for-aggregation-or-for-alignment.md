@@ -6,9 +6,6 @@ tags:
   - User research
   - Personas
   - Design process
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Had a chat with a researcher this week, and one of the topics we discussed was how to use personas in a design process. We ended up talking a lot on why their team wanted to look into personas in the first place, and we realized that even though personas are by no ways a new method, there are still quite a lot of confusion about what they can do or cannot do.

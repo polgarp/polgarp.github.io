@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - People management
   - Design teams
-header:
-  overlay_image: /assets/images/2023-05-29-Celebrating-success-is-a-team-effort.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 In the fast-paced world of product design, celebrating successes often takes a backseat to chase the next goal. But failing to acknowledge achievements together as a team can impact motivation, growth, and job satisfaction.

@@ -5,10 +5,6 @@ categories:
 tags:
   - Product design
   - Design process
-header:
-  overlay_image: /assets/images/2023-02-12-Design-principles-set-the-foundation-for-good-design.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design principles set the foundation for consistently articulating design choices and prioritizing trade-offs across the design team and the wider organization.

@@ -6,9 +6,6 @@ tags:
   - Product design
   - Design leadership
   - Conference
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 ![image-center](/assets/images/2016-10-11-amuseconf-2016-impressions.png){: .align-center}

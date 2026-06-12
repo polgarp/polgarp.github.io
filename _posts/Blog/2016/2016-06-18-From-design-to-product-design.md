@@ -6,9 +6,6 @@ tags:
   - Product design
   - Conference
   - Coaching
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 This week I attended a [UX Budapest](http://www.meetup.com/UXbudapest/events/222786346/) meetup event. Besides the always great networking I liked the talks too, as they offered an interesting insight on how people were getting along on learning UX. The talks were showcasing the project based work done by the learners coming from the different hands on courses started in recent years in Budapest.

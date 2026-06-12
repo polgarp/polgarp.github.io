@@ -1,9 +1,7 @@
 ---
 title: "Murmur"
-excerpt: ""
 header:
   image: /assets/images/playground/murmur.png
-  teaser: /assets/images/playground/murmur.png
 ---
 
 > a toaster gives advice <br>

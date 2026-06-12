@@ -227,6 +227,7 @@ main.shell {
 .footer__colophon {
   font-size: var(--text-xs);
   color: var(--ink-muted);
+  filter: grayscale(1); // quiets the ☕ without markup in the config string
 }
 
 @media (max-width: 600px) {

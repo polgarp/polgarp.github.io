@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Coaching
-header:
-  overlay_image: /assets/images/2024-04-29-Better-presentations-with-the-pyramid-principle.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 If the goal of a presentation is to influence stakeholder decisions, the pyramid principle provides a simple framework to create decks that have flexible depth, are fast to digest, and have a clear structure. It also gives a simple approach to creating a narrative that is focused on the outcome and not the process of work done.
 

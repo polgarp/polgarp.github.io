@@ -5,10 +5,6 @@ categories:
 tags:
   - Product design
   - User research
-header:
-  overlay_image: /assets/images/2016-01-26-About-Ford-s-faster-horses.jpeg
-  overlay_filter: 0.5
-  show_overlay_excerpt: false
 ---
 
 There is an often told quote attributed to [Henry Ford](https://en.wikipedia.org/wiki/Henry_Ford), in product development:

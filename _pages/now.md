@@ -1,8 +1,6 @@
 ---
 permalink: /now/
 title: "Now"
-author_profile: false
-classes: wide
 ---
 
 What I'm currently focusing on, updated from time to time. Inspired by [nownownow.com](https://nownownow.com/about).

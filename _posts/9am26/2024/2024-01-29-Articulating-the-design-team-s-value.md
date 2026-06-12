@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design teams
-header:
-  overlay_image: /assets/images/2024-01-29-Articulating-the-design-team-s-value.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Some design teams have a vague understanding of how they contribute to their organization beyond the daily tasks of producing UIs. However, the value the team contributes needs to be crystal clear both to the designers and to all the stakeholders if the team hopes to expand its impact and mature its practice.

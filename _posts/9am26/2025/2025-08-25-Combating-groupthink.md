@@ -4,10 +4,6 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-header:
-  overlay_image: /assets/images/2025-08-25-Combating-groupthink.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Products and teams can fail not only if they are not aligned, but also if they are too aligned. In this case, being in agreement is more important than considering different perspectives, ideas, and sometimes even new data that contradict the existing status quo. This is the danger of groupthink.

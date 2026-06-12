@@ -5,10 +5,6 @@ categories:
 tags:
   - Design leadership
   - Coaching
-header:
-  overlay_image: /assets/images/2023-11-13-Nurturing-designer-and-researcher-careers.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Effective nurturing of designers and researchers is not only crucial for their career development but also essential for building a high-impact design organization.

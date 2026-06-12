@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Design process
   - Org design
-header:
-  overlay_image: /assets/images/2022-12-14-Player-coach-leadership.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Player-coach roles in design teams are getting more common again but come with tradeoffs for both design leaders and their teams. Leaders need to balance their attention with confidence to be successful in such roles.

@@ -4,9 +4,6 @@ categories:
   - Blog 
 tags:
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 A constant thing with creating new software seems the tendency to automate things people can do easily while leaving the more complicated stuff for people to do (also [The Irones of Automation](https://humanfactors101.com/2020/05/24/the-ironies-of-automation/)). We build software we can build instead of building stuff that we should be building. The same seems to be true with Generative AI. 

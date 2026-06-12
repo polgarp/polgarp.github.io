@@ -1,10 +1,6 @@
 ---
 title: "Driving alignment with prototypes"
-excerpt: ""
 date: 2025-09-01
-header:
-  image:
-  teaser: /assets/images/portfolio/
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/canonical-logo.svg
@@ -12,9 +8,6 @@ sidebar:
     text: "Lead Experience Designer <br>@Canonical ⊂ 2024 - "
   - title: "Scope"
     text: "Lead the design on the Ubuntu Pro portfolio."
-  - title: "<br><br>" 
-    text: "[Back to the portfolio](/portfolio)"
-classes: wide
 ---
 
 Words are on the page, <br>

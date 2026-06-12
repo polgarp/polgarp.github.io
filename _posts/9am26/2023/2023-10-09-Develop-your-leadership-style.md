@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Coaching
   - Personal practices
-header:
-  overlay_image: /assets/images/2023-10-09-Develop-your-leadership-style.jpg
-  overlay_filter: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Design leadership style is a powerful determinant of a design team's effectiveness. By understanding and articulating your style, you can be a more intentional and effective leader.

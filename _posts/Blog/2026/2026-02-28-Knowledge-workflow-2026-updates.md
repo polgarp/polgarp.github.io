@@ -6,9 +6,6 @@ tags:
   - Knowledge work
   - Personal practices
   - AI design
-header:
-  overlay_color: rgba(255, 63, 49, 0.8)
-  show_overlay_excerpt: false
 ---
 Last big change to my personal workflow was to [switch to Joplin]({% post_url Blog/2024/2024-01-12-Switching-from-evernote-to-joplin %}) some time ago. I’ve been generally quite happy with using an open-source tool, as it has made me less concerned about my data becoming inaccessible due to company changes. But my notes were still in a database rather than files (and I’m slowly turning back to files to retain control, a good article on this topic: [File over app](https://stephango.com/file-over-app)). Plus, I’ve been using Claude Code more and more, and wanted it to have more direct access to my stash of saved articles. MCP-based solutions are just too cumbersome and expensive for such a simple usecase.
 

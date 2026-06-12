@@ -5,10 +5,6 @@ categories:
 tags:
   - Design career
   - Coaching
-header:
-  overlay_image: /assets/images/2023-01-31-Writing-experience-stories-for-better-portfolios.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 Storytelling is a key skill for designers, and it can be also used to understand what we learned and to create better portfolios - by telling stories about our own experiences.

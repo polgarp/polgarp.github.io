@@ -4,9 +4,6 @@ categories:
   - Blog
 tags:
   - Design career
-header:
-  overlay_color: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 We assess UX designers’ and researchers’ professional skills with a homework during our hiring process. While we set up our interviews to get a nice picture of candidates, there is more to learn by understanding how they work. I’ve written earlier why portfolios usually don’t tell the whole story about one’s process, and the choices a UXer makes while working on a task. Home assignments give us a more nuanced picture on the candidates abilities. They also let us see the seniority of a candidate more clearly, more senior people should have a clearly more sophisticated approach compared to juniors.

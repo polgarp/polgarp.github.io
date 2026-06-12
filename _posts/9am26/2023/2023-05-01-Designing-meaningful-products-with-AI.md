@@ -6,10 +6,6 @@ tags:
   - Design leadership
   - Product design
   - AI design
-header:
-  overlay_image: /assets/images/2023-05-01-Designing-meaningful-products-with-AI.jpg
-  overlay_filter: rgba(255, 0, 0, 0.8)
-  show_overlay_excerpt: false
 ---
 
 AI has become a buzzword in tech, but simply adding it to a product does not guarantee value. Designers need to have an understanding of the underlying technology and develop their approach while building on the principles of human-centered design.
