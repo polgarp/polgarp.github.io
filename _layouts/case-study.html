@@ -3,19 +3,37 @@ layout: default
 ---
 <article class="post case-study">
   <header class="post__header">
-    {% if page.role or page.company or page.timeframe %}
     <p class="post__meta">
-      {% if page.company %}<span>@{{ page.company }}</span>{% endif %}
-      {% if page.timeframe %}<span class="post__meta-sep" aria-hidden="true">/</span><span>{{ page.timeframe }}</span>{% endif %}
+      <span class="post__cat">Portfolio</span>
+      {% if page.date %}
+      <span class="post__meta-sep" aria-hidden="true">/</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y" }}</time>
+      {% endif %}
     </p>
-    {% endif %}
     <h1 class="post__title">{{ page.title }}</h1>
   </header>
 
-  {% assign hero = page.header.image | default: page.header.overlay_image %}
-  {% if hero %}
+  {% if page.sidebar %}
+  <dl class="case-meta">
+    {% for item in page.sidebar %}
+    {% unless item.title contains "<br>" or item.text contains "Back to the portfolio" %}
+    <div class="case-meta__item">
+      <dt>{{ item.title }}</dt>
+      <dd>
+        {% if item.image %}
+        <img class="case-meta__logo" src="{{ item.image | relative_url }}" alt="{{ item.image_alt | default: '' }}" loading="lazy">
+        {% endif %}
+        {{ item.text | markdownify }}
+      </dd>
+    </div>
+    {% endunless %}
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if page.header.image %}
   <figure class="post__hero">
-    <img src="{{ hero | relative_url }}" alt="" loading="eager">
+    <img src="{{ page.header.image | relative_url }}" alt="" loading="eager">
   </figure>
   {% endif %}
 

@@ -226,6 +226,67 @@
   }
 }
 
+// ----- Case study meta (role/scope block)
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  border-block: 1px solid var(--rule);
+  padding-block: 1.25rem;
+  margin: 2rem 0;
+  font-size: var(--text-sm);
+
+  dt {
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-caps);
+    color: var(--ink-muted);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  dd {
+    margin: 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Company logos stay quiet until hovered.
+.case-meta__logo {
+  display: block;
+  max-height: 1.75rem;
+  width: auto;
+  margin-bottom: 0.6rem;
+  filter: grayscale(1) contrast(1.1);
+  transition: filter 0.2s ease;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+// In dark mode, invert the (mostly dark-on-transparent) logos to stay legible.
+[data-theme="dark"] .case-meta__logo {
+  filter: grayscale(1) invert(1) contrast(1.1);
+
+  &:hover {
+    filter: grayscale(1) invert(1) contrast(1.1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .case-meta__logo {
+    filter: grayscale(1) invert(1) contrast(1.1);
+
+    &:hover {
+      filter: grayscale(1) invert(1) contrast(1.1);
+    }
+  }
+}
+
 // ----- Avatar (about page)
 
 .page-avatar {

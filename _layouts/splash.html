@@ -5,7 +5,7 @@ layout: default
   {% if page.title %}
   <header class="post__header">
     <h1 class="post__title">{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="post__lede">{{ page.excerpt | markdownify | strip_html }}</p>{% endif %}
+    {% if page.excerpt %}<div class="post__lede">{{ page.excerpt | markdownify }}</div>{% endif %}
     {% if page.header.actions %}
     <p class="post__actions">
       {% for action in page.header.actions %}
