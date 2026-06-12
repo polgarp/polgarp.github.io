@@ -13,7 +13,7 @@
     if (open && !line) {
       line = document.createElement("p");
       line.className = "footer__club";
-      line.textContent = "it's 9:26 — drink up ☕";
+      line.textContent = " ☕ it's 9:26 - the kettle's on!";
       var footer = document.querySelector(".footer__inner");
       if (footer) footer.appendChild(line);
     } else if (!open && line) {
