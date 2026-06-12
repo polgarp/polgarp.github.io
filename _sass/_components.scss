@@ -154,6 +154,10 @@
   font-variant-numeric: tabular-nums;
 }
 
+.feed__title {
+  text-wrap: pretty;
+}
+
 .feed__title a {
   text-decoration: none;
 
@@ -192,8 +196,7 @@
 }
 
 .post__title {
-  max-width: 32ch;
-  text-wrap: balance; // avoid orphaned single words on the last line
+  max-width: 38ch;
 }
 
 .post__lede {
@@ -258,7 +261,7 @@
   // Outbound links carry a quiet departure mark.
   :is(p, li) > a[href^="http"]:not(:has(img))::after {
     content: "↗";
-    font-size: 0.85em;
+    font-size: 1em;
     margin-left: 0.2ch;
     color: var(--ink-muted);
   }

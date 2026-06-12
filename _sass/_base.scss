@@ -42,7 +42,9 @@ h5,
 h6 {
   font-weight: 600;
   line-height: 1.3;
-  text-wrap: balance;
+  // `pretty` avoids orphaned last words without forcing the artificially
+  // even (and often extra) lines that `balance` produces on long titles.
+  text-wrap: pretty;
 }
 
 h1 { font-size: var(--text-xl); }

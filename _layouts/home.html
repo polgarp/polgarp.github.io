@@ -10,10 +10,10 @@ layout: default
 {{ content }}
 
 <div class="topics" role="group" aria-label="Filter by topic">
-  <p class="topics__label">Filter by topic</p>
+  <p class="topics__label">Looking for something?</p>
   <div class="topics__row">
     {% for t in site.data.topics %}
-    <button class="topic-chip" type="button" aria-pressed="false" data-topic="{{ t.topic | downcase }}">#{{ t.topic | downcase }}</button>
+    <button class="topic-chip" type="button" aria-pressed="false" data-label="{{ t.label }}" data-topic="{{ t.tags | join: '|' | downcase }}">#{{ t.label }}</button>
     {% endfor %}
   </div>
   <p class="topics__status" aria-live="polite" hidden></p>

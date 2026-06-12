@@ -9,10 +9,13 @@
   var status = document.querySelector(".topics__status");
   if (!chips.length || !items.length) return;
 
-  var active = null;
+  var active = null; // the active chip element
 
-  function matches(item, topic) {
-    return item.dataset.tags.split("|").indexOf(topic) !== -1;
+  function matches(item, chip) {
+    var itemTags = item.dataset.tags.split("|");
+    return chip.dataset.topic.split("|").some(function (t) {
+      return itemTags.indexOf(t) !== -1;
+    });
   }
 
   function apply() {
@@ -24,7 +27,7 @@
       y.classList.toggle("is-hidden", !y.querySelector(".feed__item:not(.is-hidden)"));
     });
     chips.forEach(function (c) {
-      var on = active === c.dataset.topic;
+      var on = active === c;
       c.classList.toggle("is-active", on);
       c.setAttribute("aria-pressed", on ? "true" : "false");
     });
@@ -32,7 +35,7 @@
     if (active) {
       var n = document.querySelectorAll(".feed__item:not(.is-hidden)").length;
       status.hidden = false;
-      status.textContent = n + (n === 1 ? " entry" : " entries") + " tagged #" + active + " · ";
+      status.textContent = n + (n === 1 ? " entry" : " entries") + " about #" + active.dataset.label + " · ";
       var clear = document.createElement("button");
       clear.type = "button";
       clear.className = "topics__clear";
@@ -50,13 +53,13 @@
 
   chips.forEach(function (chip) {
     chip.addEventListener("click", function () {
-      active = active === chip.dataset.topic ? null : chip.dataset.topic;
+      active = active === chip ? null : chip;
       apply();
     });
     chip.addEventListener("mouseenter", function () {
       if (active) return;
       items.forEach(function (it) {
-        it.classList.toggle("is-dimmed", !matches(it, chip.dataset.topic));
+        it.classList.toggle("is-dimmed", !matches(it, chip));
       });
     });
     chip.addEventListener("mouseleave", function () {

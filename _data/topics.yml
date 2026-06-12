@@ -1,10 +1,10 @@
-# Curated homepage topics. `topic` must match post tags (case-insensitive);
-# `anchor` is the slug on the /tags/ page.
-- topic: Design leadership
-  anchor: design-leadership
-- topic: Product design
-  anchor: product-design
-- topic: User research
-  anchor: user-research
-- topic: AI design
-  anchor: ai-design
+# Curated homepage topics. `label` is what the chip shows;
+# `tags` lists the post tags it matches (case-insensitive).
+- label: design leadership
+  tags: [Design leadership]
+- label: product design
+  tags: [Product design]
+- label: discovery
+  tags: [Product discovery, User research, Continuous discovery]
+- label: ai design
+  tags: [AI design]
