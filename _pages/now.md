@@ -13,8 +13,9 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 ### Building
 
-- A storyboard comic creator without AI image generation.
-- A dynamic explorer of user segments and insights to use instead of tired old personas.
+- A product design themed tarot deck to explore symolism and the core ideas of our craft
+- An agentic storyboard comic creator without AI image generation.
+- An agentic workflow to explore of user segments and insights instead of tired old personas.
 
 ### Reading
 
@@ -26,4 +27,4 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 Factorio, scaling my factory to 150-200k SPM.
  
-*Last updated: March 2026*
+*Last updated: June 2026*
