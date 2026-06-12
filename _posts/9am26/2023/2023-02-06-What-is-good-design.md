@@ -4,9 +4,6 @@ categories:
   - Newsletter
 tags:
   - Product design
-  - Product development
-  - Good design
-  - 9am26
 header:
   overlay_image: /assets/images/2023-02-06-What-is-good-design.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

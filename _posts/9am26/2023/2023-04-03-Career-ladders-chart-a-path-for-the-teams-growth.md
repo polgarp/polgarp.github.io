@@ -7,7 +7,6 @@ tags:
   - People management
   - Design career
   - Org design
-  - 9am26
 header:
   overlay_image: /assets/images/2023-04-03-Career-ladders-chart-a-path-for-the-teams-growth.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

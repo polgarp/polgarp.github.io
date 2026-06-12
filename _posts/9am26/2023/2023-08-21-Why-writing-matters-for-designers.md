@@ -6,8 +6,7 @@ tags:
   - Design leadership
   - Personal practices
   - Coaching
-  - Writing
-  - 9am26
+  - Knowledge work
 header:
   overlay_image: /assets/images/2023-08-21-Why-writing-matters-for-designers.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

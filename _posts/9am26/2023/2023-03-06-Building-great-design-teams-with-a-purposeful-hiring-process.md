@@ -4,9 +4,7 @@ categories:
   - Newsletter
 tags:
   - People management
-  - Hiring
   - Org design
-  - 9am26
 header:
   overlay_image: /assets/images/2023-03-06-Building-great-design-teams-with-a-purposeful-hiring-process.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

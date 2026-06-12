@@ -6,8 +6,7 @@ tags:
   - Design leadership
   - Design teams
   - Org design
-  - Team management
-  - 9am26
+  - People management
 header:
   overlay_image: /assets/images/2023-10-23-Design-team-structures-defining-how-we-work.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

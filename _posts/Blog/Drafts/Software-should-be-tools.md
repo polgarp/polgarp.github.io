@@ -2,8 +2,6 @@
 title: "Software should be the tool of people"
 categories:
   - blog
-tags:
-  - 
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

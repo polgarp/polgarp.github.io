@@ -4,9 +4,8 @@ categories:
   - Newsletter
 tags:
   - Product design
-  - Design practice
-  - Prototype
-  - 9am26
+  - Design process
+  - Prototypes
 header:
   overlay_image: /assets/images/2024-01-15-Prototypes-model-experiences.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

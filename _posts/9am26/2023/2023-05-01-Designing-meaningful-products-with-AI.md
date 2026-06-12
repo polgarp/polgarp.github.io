@@ -6,7 +6,6 @@ tags:
   - Design leadership
   - Product design
   - AI design
-  - 9am26
 header:
   overlay_image: /assets/images/2023-05-01-Designing-meaningful-products-with-AI.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

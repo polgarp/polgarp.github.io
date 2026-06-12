@@ -5,8 +5,6 @@ categories:
 tags:
   - Side project
   - Design leadership
-  - 9am26
-  - Newsletter
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false

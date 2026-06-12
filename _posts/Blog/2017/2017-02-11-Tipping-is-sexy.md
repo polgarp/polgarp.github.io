@@ -4,7 +4,6 @@ categories:
   - Blog
 tags:
   - Product design
-  - Power of defaults
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false

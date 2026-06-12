@@ -5,7 +5,6 @@ categories:
 tags:
   - Design leadership
   - Product design
-  - 9am26
 header:
   overlay_image: /assets/images/2026-04-06-Consistency-is-spelling-coherence-is-voice.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

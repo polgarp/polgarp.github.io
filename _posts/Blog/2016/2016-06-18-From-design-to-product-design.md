@@ -5,8 +5,7 @@ categories:
 tags:
   - Product design
   - Conference
-  - Teaching
-  - Idea
+  - Coaching
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false

@@ -3,7 +3,6 @@ title: "AI lacks intentionality"
 categories:
   - Blog 
 tags:
-  - Idea
   - AI design
   - Product design
 header:

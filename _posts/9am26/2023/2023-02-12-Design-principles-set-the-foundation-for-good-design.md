@@ -4,9 +4,7 @@ categories:
   - Newsletter
 tags:
   - Product design
-  - Design principles
-  - Good design
-  - 9am26
+  - Design process
 header:
   overlay_image: /assets/images/2023-02-12-Design-principles-set-the-foundation-for-good-design.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

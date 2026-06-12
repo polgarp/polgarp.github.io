@@ -3,10 +3,7 @@ title: "e44 Nonviolent communication for designers"
 categories:
   - Newsletter
 tags:
-  - Communication
-  - Self management
-  - Confidence
-  - 9am26
+  - Coaching
 header:
   overlay_image: /assets/images/2024-04-15-Nonviolent-communication-for-designers.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

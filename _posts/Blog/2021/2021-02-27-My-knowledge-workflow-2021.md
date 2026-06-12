@@ -3,10 +3,8 @@ title: "My knowledge workflow 2021"
 categories:
   - Blog
 tags:
-  - Garden
+  - Knowledge work
   - Personal practices
-  - Tools
-  - Note taking
 header:
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false

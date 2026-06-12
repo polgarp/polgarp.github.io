@@ -3,7 +3,7 @@ title: "Design teams"
 categories:
   - Garden
 tags:
-  - Team management
+  - People management
   - Design leadership
 ---
 

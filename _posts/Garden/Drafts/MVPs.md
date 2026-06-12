@@ -4,7 +4,7 @@ categories:
   - Garden
 tags:
   - Design leadership
-  - Product management
+  - Product design
 ---
 
 - Projects go bad when functions are not clear, and not without consequences.
