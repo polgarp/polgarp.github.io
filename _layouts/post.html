@@ -15,10 +15,11 @@ layout: default
     <h1 class="post__title p-name">{{ page.title }}</h1>
   </header>
 
-  {% assign hero = page.header.image | default: page.header.overlay_image %}
-  {% if hero %}
+  {% comment %} header.overlay_image was Minimal Mistakes banner decoration and
+  often duplicates a credited figure in the body — only header.image is real content. {% endcomment %}
+  {% if page.header.image %}
   <figure class="post__hero">
-    <img src="{{ hero | relative_url }}" alt="" loading="eager" fetchpriority="high">
+    <img src="{{ page.header.image | relative_url }}" alt="" loading="eager" fetchpriority="high">
   </figure>
   {% endif %}
 
