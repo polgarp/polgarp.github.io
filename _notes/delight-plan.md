@@ -10,7 +10,8 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
     a third footer line appears: "it's 9:26 — drink up ☕".
     Detail: the colophon's ☕ is grayscaled; the club line's ☕ is the only
     full-color emoji on the site, one minute per day.
-- [ ] **R2 — #2 switch squash**: knob squash-and-slide on toggle (~150ms, transform only).
+- [x] **R2 — #2 switch squash**: knob squash-and-slide on toggle (250ms `scale` keyframes
+  over the translate transition; retriggered per click; killed by reduced-motion). *(shipped)*
 - [ ] **R3 — #3 view-source banner**: ASCII `[P` logo in an HTML comment at the top of every page.
 - [ ] **R4 — #5 404 logo**: the P's red bowl tipped off the glyph, fallen to the baseline.
 - [ ] **R5 — #6 search seeds**: empty overlay shows "try: …" with 3 rotating suggestions.

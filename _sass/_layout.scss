@@ -187,6 +187,11 @@ main.shell {
     transform: translateY(-50%) translateX(1.1rem);
   }
 
+  // Mechanical squash while the knob slides (retriggered per click in JS).
+  &.is-squashing::after {
+    animation: knob-squash 0.25s ease;
+  }
+
   &:hover::before {
     border-color: var(--accent);
   }
@@ -259,6 +264,12 @@ main.shell {
     padding-block: 0.6rem;
     display: inline-block;
   }
+}
+
+@keyframes knob-squash {
+  0% { scale: 1; }
+  40% { scale: 1.35 0.65; }
+  100% { scale: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {

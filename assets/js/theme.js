@@ -53,6 +53,10 @@
     localStorage.setItem("theme", next);
     reflect(next);
     syncGiscus(next);
+    // retrigger the knob squash
+    btn.classList.remove("is-squashing");
+    void btn.offsetWidth;
+    btn.classList.add("is-squashing");
   });
 
   // If a stored theme overrides the OS preference, align giscus once it loads.
