@@ -153,14 +153,6 @@
     margin-bottom: 0.75rem;
   }
 
-  // End-of-article mark.
-  &::after {
-    content: "▪";
-    display: block;
-    color: var(--accent);
-    margin-top: 2.5rem;
-  }
-
   > p,
   > ul,
   > ol {
@@ -175,6 +167,15 @@
   li {
     margin-bottom: 0.35rem;
   }
+}
+
+// End-of-article mark — articles only, so empty page intros
+// (tags, categories) don't render a stray mark.
+article.post .post__body::after {
+  content: "▪";
+  display: block;
+  color: var(--accent);
+  margin-top: 2.5rem;
 }
 
 .post__footer {
