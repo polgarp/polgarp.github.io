@@ -38,7 +38,7 @@ I found with the teams I've been working with, that good design was often an eme
 Besides design critiques, two practices seem to be the easiest to implement to get to a good shared understanding of good design. First, establishing a set of principles that focuses on common criteria that all designs need to fulfill. Principles can be also emergent ideas, for example by asking all team members to define principles in their work and later use these as input to a definition exercise - this way the principles are more grounded and less fluffy. The second practice is the collection of good examples, [stories]({% post_url 9am26/2023/2023-01-31-Writing-experience-stories-for-better-portfolios %}) about successful projects. Over time, these examples develop into a library of good that the team can refer to and try to move beyond.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

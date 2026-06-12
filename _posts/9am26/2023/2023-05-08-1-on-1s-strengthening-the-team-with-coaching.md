@@ -53,7 +53,7 @@ Overall, 1-on-1s are an important tool for building a strong and effective desig
 - 1-on-1s are an important tool for building a strong and effective design team, leading to higher job satisfaction, better performance, and ultimately, better design outcomes.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

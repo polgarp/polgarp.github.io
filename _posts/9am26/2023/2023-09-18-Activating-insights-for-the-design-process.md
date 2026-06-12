@@ -56,7 +56,7 @@ If design leaders want to make sure the designs created serve users, they should
 - Design leaders should set clear expectations for collaboration and use insights. They should also provide regular feedback to researchers and designers on how they are using the research findings.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

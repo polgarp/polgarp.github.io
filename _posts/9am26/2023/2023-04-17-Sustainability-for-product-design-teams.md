@@ -49,7 +49,7 @@ As with everything in product development, the design team would need to work to
 - Encouraging innovation in digital product design by exploring emerging technologies, materials, and approaches can contribute to finding new ways to address sustainability challenges and promote sustainable practices.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

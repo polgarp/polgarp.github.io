@@ -53,7 +53,7 @@ As you learn, your tasks and execution skills should grow deeper and also wider.
 For design leaders, encouraging team members to create stories and share them has some additional benefits. Stories are great artifacts to work from when creating promotion cases or figuring out growth plans.  Knowledge shared in a story format is a good incentive to create it, it helps the designer share to iterate on lessons learned, and raises what the team overall knows. A small added advantage is that most teams are not great at celebrating their successes - and hearing about lessons learned is a great way to get the drinks and cake out for the team.
 
 > This is a post from my newsletter, [9am26]({% link _pages/newsletter.md %}), subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

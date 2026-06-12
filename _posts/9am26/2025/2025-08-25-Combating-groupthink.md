@@ -48,7 +48,7 @@ However, the above only works if the team's roles are set up to do this.
 These tactics won't easily solve all problems with groupthink; besides being mindful when creating team practices and rituals, it's also a continuous effort that needs leadership. However, open dialogue and diverse perspectives are powerful tools to create truly impactful products.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

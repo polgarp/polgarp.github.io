@@ -62,7 +62,7 @@ Beyond the designers' and researchers' goals, leaders also need to think about t
 - Beyond the individual's goals, leaders also need to consider the broader organization's needs and align the individual's plans with the team's vision and strategy.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

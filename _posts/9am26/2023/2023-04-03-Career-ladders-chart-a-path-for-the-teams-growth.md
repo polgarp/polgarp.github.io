@@ -58,7 +58,7 @@ Just having the career ladder in place is not enough, it's just part of fosterin
 - The ladder should be part of the broader design strategy and vision, and bring the team vision alive by clarifying how the team should operate.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

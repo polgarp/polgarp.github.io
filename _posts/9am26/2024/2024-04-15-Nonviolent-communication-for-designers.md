@@ -51,7 +51,7 @@ The framework is also helpful when giving feedback at [design critique]({% post_
 I found NVC also quite helpful when designing, particularly when working with user needs and user research. Disconnecting observations from judgment avoids blaming the user, helps recognize biases, and avoids premature conclusions. When thinking about user needs, sometimes the direct and articulated expectations overshadow the more basic, human needs — which we need to identify to design better experiences.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

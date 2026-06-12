@@ -20,7 +20,7 @@ You need to realise a lot of redesign projects are internally focused, rather th
 ### 🥤 To recap
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

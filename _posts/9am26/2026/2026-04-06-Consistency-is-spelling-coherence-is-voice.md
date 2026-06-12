@@ -51,7 +51,7 @@ If consistency is spelling, coherence is the grammar and voice your product spea
 The work for design teams isn't only to police the rules, it's to decide what the product is trying to say, write those principles down, and then walk a full user journey end to end asking not only "is this consistent?" but "does this sound like us, and does it help the user get where they're going?" Coherence begins with the first flow you'll start on this week.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

@@ -1,0 +1,15 @@
+---
+layout: null
+---
+{% assign docs = site.posts | concat: site.portfolio | concat: site.playground %}
+[
+{% for doc in docs %}{% if doc.title %}
+  {
+    "title": {{ doc.title | jsonify }},
+    "url": {{ doc.url | relative_url | jsonify }},
+    "date": {% if doc.date %}{{ doc.date | date: "%Y-%m-%d" | jsonify }}{% else %}""{% endif %},
+    "label": {% assign cat = doc.categories | first %}{% if cat == "Newsletter" %}"9am26"{% elsif cat %}{{ cat | jsonify }}{% elsif doc.collection %}{{ doc.collection | capitalize | jsonify }}{% else %}""{% endif %},
+    "content": {{ doc.content | strip_html | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endif %}{% endfor %}
+]

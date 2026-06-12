@@ -54,7 +54,7 @@ All of these share one thing: they break the spell of proximity.
 For leaders, these practices can be made intentional part of the design process. Practices like having weekly checkins, daily standup style meetings, mixing up environments or structure, alternating between pair and solo design, and asking for clearer collaboration steps all help in establishing a cadence of convergence and divergence.
 
 > This is a post from my newsletter, **[9am26](https://polgarp.com/categories/newsletter/)**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

@@ -69,7 +69,7 @@ There are additional benefits to writing, as it helps develop personal skills, b
 - There are many different ways to practice writing, such as journaling, brainstorming, and reflective writing.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

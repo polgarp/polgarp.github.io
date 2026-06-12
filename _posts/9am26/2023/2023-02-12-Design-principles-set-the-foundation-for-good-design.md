@@ -54,7 +54,7 @@ Once design principles are created and shared, they can be used in a few ways:
 Design leaders can use design principles to improve the shared understanding in the team of what good looks like and scale direction. It's also a good tool to talk about design goals in the wider organization and express what [good design]({% post_url 9am26/2023/2023-02-06-What-is-good-design %}) looks like.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 
