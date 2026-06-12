@@ -9,7 +9,7 @@
 .intro__lede {
   font-size: var(--text-lg);
   font-weight: 600;
-  max-width: 28ch;
+  max-width: 36ch; // breaks the tagline into two lines, not three
 }
 
 .intro__more {
@@ -108,7 +108,8 @@
 }
 
 .post__title {
-  max-width: 30ch;
+  max-width: 32ch;
+  text-wrap: balance; // avoid orphaned single words on the last line
 }
 
 .post__lede {
@@ -143,11 +144,21 @@
   > h1,
   > h2 {
     font-size: var(--text-md);
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
+    margin-bottom: 0.9rem;
   }
 
   > h3 {
     margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  // End-of-article mark.
+  &::after {
+    content: "▪";
+    display: block;
+    color: var(--accent);
+    margin-top: 2.5rem;
   }
 
   > p,
@@ -212,6 +223,26 @@
     &:hover {
       color: var(--accent);
     }
+  }
+}
+
+// ----- Avatar (about page)
+
+.page-avatar {
+  float: right;
+  width: 7.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0.25rem 0 1rem 1.5rem;
+  // the source photo is circle-cropped; the shadow follows the shape
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 var(--accent);
+}
+
+@media (max-width: 600px) {
+  .page-avatar {
+    width: 5.5rem;
+    box-shadow: 6px 6px 0 var(--accent);
   }
 }
 
