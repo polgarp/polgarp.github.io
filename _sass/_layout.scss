@@ -165,3 +165,25 @@ main.shell {
     --text-xl: 1.5rem;
   }
 }
+
+// Comfortable touch targets without inflating the desktop masthead.
+@media (pointer: coarse) {
+  .masthead__tools button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .masthead__nav a {
+    padding-block: 0.6rem;
+    display: inline-block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
