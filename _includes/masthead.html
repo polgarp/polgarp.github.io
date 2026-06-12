@@ -1,0 +1,17 @@
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="masthead__brand" href="{{ '/' | relative_url }}" rel="home">
+      <span class="masthead__mark" aria-hidden="true"><span class="masthead__bracket">[</span>P</span>
+      <span class="masthead__name">Péter Balázs Polgár</span>
+    </a>
+    <nav class="masthead__nav" aria-label="Primary">
+      <ul>
+        {% for item in site.data.navigation.main %}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

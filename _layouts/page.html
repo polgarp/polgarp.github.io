@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="page-single">
+  {% if page.title %}
+  <header class="post__header">
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+  {% endif %}
+
+  {% assign hero = page.header.image | default: page.header.overlay_image %}
+  {% if hero %}
+  <figure class="post__hero">
+    <img src="{{ hero | relative_url }}" alt="" loading="eager">
+  </figure>
+  {% endif %}
+
+  <div class="post__body">
+    {{ content }}
+  </div>
+</article>

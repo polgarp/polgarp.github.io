@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="page-single">
+  <header class="post__header">
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+  <div class="post__body">{{ content }}</div>
+</article>
+
+{% assign posts = site.categories[page.taxonomy] %}
+{% include feed.html posts=posts %}

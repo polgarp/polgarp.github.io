@@ -1,0 +1,19 @@
+{% comment %}
+  Compatibility shim for Minimal Mistakes' feature_row include,
+  used by _pages/portfolio.md until its markup is rewritten.
+{% endcomment %}
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+{% for f in feature_row %}
+<section class="feature">
+  {% if f.image_path %}
+  <img class="feature__image" src="{{ f.image_path | relative_url }}" alt="{{ f.alt | default: '' }}" loading="lazy">
+  {% endif %}
+  {% if f.title %}<h2 class="feature__title">{{ f.title }}</h2>{% endif %}
+  {% if f.excerpt %}<div class="feature__text">{{ f.excerpt | markdownify }}</div>{% endif %}
+  {% if f.url %}<p class="feature__cta"><a href="{{ f.url | relative_url }}">{{ f.btn_label | default: "Read more" }}</a></p>{% endif %}
+</section>
+{% endfor %}

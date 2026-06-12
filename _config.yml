@@ -13,21 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "[P Péter Balázs Polgár, Product Design Leader"
-title_separator: "|"
+title: "Péter Balázs Polgár"
+tagline: "Design explorer. Building products and product design teams."
 name: "Péter Balázs Polgár"
 url: "https://polgarp.com"
 email: hello@polgarp.com
 description: >- # this means to ignore newlines until "baseurl:"
-  "Design explorer."
+  Design explorer. Building products and product design teams.
+  Ideas and stuff by Péter Balázs Polgár, product design leader.
 twitter_username: polgarp
 github_username: polgarp
-minimal_mistakes_skin: "contrast"
-search: true
-search_full_content: true
-site.description: "Ideas and Stuff by Péter Balázs Polgár, Product Design Leader"
+mastodon_url: "https://mastodon.online/@polgarp"
+linkedin_url: "https://linkedin.com/in/peterbalazspolgar"
+newsletter_url: "/categories/newsletter/"
 logo: "/assets/images/logo.png"
-masthead_title: "Péter Balázs Polgár"
 
 
 
@@ -49,12 +48,9 @@ comments:
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 50 # amount of posts to show
-paginate_path: /page:num/
 date_format: "%Y. %B %d"
 timezone: Europe/Copenhagen
 
@@ -75,13 +71,13 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 author:
   name: "Péter Balázs Polgár"
@@ -122,40 +118,26 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: false
-      read_time: true
+      layout: post
       comments: true
-      share: false
-      related: true
-      show_date: true
-      classes: wide
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: false
-      classes: wide
+      layout: page
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
-      author_profile: false
-      related: false
-      classes: wide
+      layout: case-study
   # _playground
   - scope:
       path: ""
       type: playground
     values:
-      layout: single
-      author_profile: false
-      related: false
-      classes: wide
+      layout: page
 
 category_archive:
   type: liquid

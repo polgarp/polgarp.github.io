@@ -1,24 +1,17 @@
 ---
-layout: archive
+layout: default
 ---
+<section class="intro">
+  <h1 class="intro__lede">Design explorer. Building products and&nbsp;product design teams.</h1>
+  <p class="intro__more"><a href="{{ '/about/' | relative_url }}">More about me →</a></p>
+</section>
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% if post.categories contains 'Blog' or post.categories contains 'Newsletter' %}
-      {% include archive-single.html type=entries_layout %}
-    {% endif %}  
-  {% endfor %}
-</div>
-
-{% include paginator.html %}
+{% assign feed_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% if post.categories contains "Blog" or post.categories contains "Newsletter" %}
+    {% assign feed_posts = feed_posts | push: post %}
+  {% endif %}
+{% endfor %}
+{% include feed.html posts=feed_posts show_type=true %}

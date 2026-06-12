@@ -1,0 +1,21 @@
+{% comment %}
+  Year-grouped entry list.
+  Params: posts (array of posts), show_type (bool — label 9am26 issues)
+{% endcomment %}
+{% assign by_year = include.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in by_year %}
+<section class="feed__year">
+  <h2 class="feed__year-label">{{ year.name }}</h2>
+  <ol class="feed" reversed>
+    {% for post in year.items %}
+    <li class="feed__item">
+      <time class="feed__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>
+      <span class="feed__title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if include.show_type and post.categories contains "Newsletter" %}<span class="feed__type" title="9am26 newsletter issue">9am26</span>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endfor %}
