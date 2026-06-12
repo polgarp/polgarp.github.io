@@ -108,7 +108,7 @@
 }
 
 .post__title {
-  max-width: 24ch;
+  max-width: 30ch;
 }
 
 .post__lede {
@@ -131,13 +131,18 @@
   > ul,
   > ol,
   > blockquote,
+  > h1,
   > h2,
   > h3,
   > h4 {
     max-width: var(--measure);
   }
 
+  // Some newsletter issues use h1 section headings in the body;
+  // demote them visually to the h2 scale.
+  > h1,
   > h2 {
+    font-size: var(--text-md);
     margin-top: 2.5rem;
   }
 
