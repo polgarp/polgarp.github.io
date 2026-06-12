@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post h-entry">
+  <header class="post__header">
+    <p class="post__meta">
+      {% assign cat = page.categories | first %}
+      <span class="post__cat">{% if cat == "Newsletter" %}9am26{% else %}{{ cat }}{% endif %}</span>
+      <span class="post__meta-sep" aria-hidden="true">/</span>
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      <span class="post__meta-sep" aria-hidden="true">/</span>
+      {% assign words = content | strip_html | number_of_words %}
+      <span>{{ words | plus: 199 | divided_by: 200 }} min</span>
+    </p>
+    <h1 class="post__title p-name">{{ page.title }}</h1>
+  </header>
+
+  {% assign hero = page.header.image | default: page.header.overlay_image %}
+  {% if hero %}
+  <figure class="post__hero">
+    <img src="{{ hero | relative_url }}" alt="" loading="eager" fetchpriority="high">
+  </figure>
+  {% endif %}
+
+  <div class="post__body e-content">
+    {{ content }}
+  </div>
+
+  <footer class="post__footer">
+    {% if page.tags.size > 0 %}
+    <p class="post__tags">
+      {% for tag in page.tags %}<a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}
+    </p>
+    {% endif %}
+  </footer>
+</article>

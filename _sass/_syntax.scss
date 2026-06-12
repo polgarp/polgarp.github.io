@@ -1,0 +1,11 @@
+// Rouge syntax highlighting — quiet, near-monochrome.
+
+.highlight {
+  .c, .cm, .c1, .cs { color: var(--ink-muted); font-style: italic; } // comments
+  .k, .kd, .kn, .kp, .kr, .kt { font-weight: 600; }                  // keywords
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx { color: var(--ink-muted); } // strings
+  .nf, .nc, .nn { font-weight: 600; }                                // names
+  .gd { color: var(--accent); }                                      // diff deleted
+  .gi { font-weight: 600; }                                          // diff inserted
+  .err { color: var(--accent); }
+}

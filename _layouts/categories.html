@@ -3,30 +3,28 @@ layout: default
 ---
 <article class="page-single">
   <header class="post__header">
-    <h1 class="post__title" id="page-title">{{ page.title }}</h1>
+    <h1 class="post__title">{{ page.title }}</h1>
   </header>
   <div class="post__body">{{ content }}</div>
 </article>
 
-{% assign sorted_tags = site.tags | sort %}
-
+{% assign sorted_categories = site.categories | sort %}
 <ul class="taxonomy-index">
-  {% for tag in sorted_tags %}
-  <li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }} <span class="taxonomy-index__count">{{ tag[1].size }}</span></a></li>
+  {% for category in sorted_categories %}
+  <li><a href="#{{ category[0] | slugify }}">{{ category[0] }} <span class="taxonomy-index__count">{{ category[1].size }}</span></a></li>
   {% endfor %}
 </ul>
 
-{% for tag in sorted_tags %}
-<section id="{{ tag[0] | slugify | downcase }}" class="taxonomy-section">
-  <h2 class="feed__year-label">{{ tag[0] }}</h2>
+{% for category in sorted_categories %}
+<section id="{{ category[0] | slugify | downcase }}" class="taxonomy-section">
+  <h2 class="feed__year-label">{{ category[0] }}</h2>
   <ol class="feed">
-    {% for post in tag.last %}
+    {% for post in category.last %}
     <li class="feed__item">
       <time class="feed__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
       <span class="feed__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
     </li>
     {% endfor %}
   </ol>
-  <p class="back-to-top"><a href="#page-title">Back to top ↑</a></p>
 </section>
 {% endfor %}

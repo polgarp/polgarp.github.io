@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="post case-study">
+  <header class="post__header">
+    {% if page.role or page.company or page.timeframe %}
+    <p class="post__meta">
+      {% if page.company %}<span>@{{ page.company }}</span>{% endif %}
+      {% if page.timeframe %}<span class="post__meta-sep" aria-hidden="true">/</span><span>{{ page.timeframe }}</span>{% endif %}
+    </p>
+    {% endif %}
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+
+  {% assign hero = page.header.image | default: page.header.overlay_image %}
+  {% if hero %}
+  <figure class="post__hero">
+    <img src="{{ hero | relative_url }}" alt="" loading="eager">
+  </figure>
+  {% endif %}
+
+  <div class="post__body">
+    {{ content }}
+  </div>
+
+  <footer class="post__footer">
+    <p class="back-to-top"><a href="{{ '/portfolio/' | relative_url }}">← Back to the portfolio</a></p>
+  </footer>
+</article>
