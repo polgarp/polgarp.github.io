@@ -71,7 +71,7 @@ In the end, for design leaders, AI doesn't change that much. Spaces for their te
 - To create successful AI products, designers should focus on the principles of transparency, user-centered design, and collaboration, and keep ethical and legal concerns in mind.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

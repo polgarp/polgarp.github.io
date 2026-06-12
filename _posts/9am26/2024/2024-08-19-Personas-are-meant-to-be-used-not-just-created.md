@@ -56,7 +56,7 @@ The other common difficulty I see in getting personas right is how efforts often
 Ultimately as with any other tool, personas need to be useful throughout the design process to make them sensible to create.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

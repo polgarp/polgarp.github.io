@@ -64,7 +64,7 @@ Researchers are more tricky, the value created (for example lowering the risk of
 - By working together, UX researchers and product designers can create truly user-centered products. The key is to foster good conversations and build understanding between the roles to ensure successful collaboration.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

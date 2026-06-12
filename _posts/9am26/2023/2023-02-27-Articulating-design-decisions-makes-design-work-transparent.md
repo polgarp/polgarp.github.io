@@ -47,7 +47,7 @@ Design leaders can help their teams in a few ways to develop better articulation
 Besides the obvious improvements in the design process, clear articulation of design choices also helps the wider strategy. Showing transparency in the design process and explaining why things were designed in a certain way makes organizations more design focused, and ultimately more user-centered.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

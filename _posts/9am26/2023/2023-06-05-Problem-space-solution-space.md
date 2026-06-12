@@ -63,7 +63,7 @@ Keeping in mind both spaces, while exploring them at the same time is where thin
 - Iterations and parallel exploration of the problem space and solution space are essential. Cross-functional collaboration helps maintain a holistic view. Design leaders play a vital role in guiding and supporting teams to ensure exhaustive exploration and a holistic perspective.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

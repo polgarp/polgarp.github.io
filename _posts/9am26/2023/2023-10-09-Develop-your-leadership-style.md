@@ -54,7 +54,7 @@ Styles will ideally help to determine how you work with your team, and how the d
 - Articulating your leadership style is a simple but valuable exercise. It can help you to better understand your values and motivations and to develop a more intentional and effective approach to leadership.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

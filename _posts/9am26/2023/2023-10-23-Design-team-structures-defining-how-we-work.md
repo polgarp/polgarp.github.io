@@ -55,7 +55,7 @@ Team structure is not only an organizational chart of designers and researchers 
 - Team structure is important for collaboration and communication. A clear team structure can help to reduce friction and improve collaboration and communication.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

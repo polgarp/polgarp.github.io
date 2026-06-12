@@ -88,7 +88,7 @@ At the end of the day, the true value of user research rigor for product develop
 - Several things design leaders can do to promote rigor in user research, such as providing training to researchers, setting clear expectations for research quality, and creating a culture of continuous learning.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

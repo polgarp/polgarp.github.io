@@ -59,7 +59,7 @@ Developing the mindset around desire paths is relatively easy - design leaders s
 - To incorporate desire paths in design, designers should observe user behavior, understand their motivations, and consider user flows rather than static screens.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

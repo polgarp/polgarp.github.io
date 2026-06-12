@@ -47,7 +47,7 @@ To make sure discovery is encompassing, discussing opportunities should start wi
 If the outcome of discovery is the decisions defining what the product team needs to build, discovery activities need to cover all aspects of those decisions.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

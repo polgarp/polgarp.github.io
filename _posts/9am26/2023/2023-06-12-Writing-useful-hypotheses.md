@@ -68,7 +68,7 @@ The terms beliefs and bets also allow for a simpler way of teaching hypothesis-d
 - Using hypotheses encourages a mindset of actively looking to disprove beliefs, fostering critical thinking, experimentation, and a culture of taking risks and making data-informed decisions.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

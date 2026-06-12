@@ -92,6 +92,34 @@ main.shell {
   }
 }
 
+.masthead__right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.masthead__tools {
+  display: flex;
+  gap: 0.5rem;
+
+  button {
+    font: inherit;
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    background: none;
+    border: 1px solid var(--rule);
+    width: 1.9rem;
+    height: 1.9rem;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+  }
+}
+
 // ----- Footer
 
 .footer {

@@ -50,7 +50,7 @@ Once a clear intent is articulated, it can be used in a few ways immediately. Sh
 For design leaders, seeing intentions across projects makes the background of projects and the alignment across designers and product teams more visible.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

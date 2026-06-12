@@ -65,7 +65,7 @@ To get there, clear alignment with other teams is needed, while the strategy its
 - A UX strategy should be closely aligned with the product strategy, which defines the overall direction and goals for the product.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

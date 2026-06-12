@@ -46,7 +46,7 @@ I love working in design, as designers are intrinsically optimistic. We believe 
 - Design has the power of counteracting fear with hope and optimism, this is important to keep in mind during wartime.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

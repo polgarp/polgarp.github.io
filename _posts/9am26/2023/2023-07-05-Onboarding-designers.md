@@ -66,7 +66,7 @@ Regardless of the details of an onboarding plan, or how things are done one impo
 - Apart from the formal onboarding process, it's important to help new designers and researchers integrate into the team's culture. Also, it's essential to celebrate their arrival and make them feel welcome.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

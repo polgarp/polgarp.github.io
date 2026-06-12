@@ -72,7 +72,7 @@ For most teams, these values are not something that will be used daily, but they
 - A way to articulate value for the design team is to make it part of their mission statement. This can help to ensure that everyone in the organization understands how design contributes to the company's success.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

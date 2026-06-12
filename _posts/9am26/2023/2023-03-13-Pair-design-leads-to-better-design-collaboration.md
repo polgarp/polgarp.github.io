@@ -60,7 +60,7 @@ For design leaders, the practice of pair design is an opportunity to level up th
 - This practice helps to level up junior and mid-level designers to be true peers in product teams by working with another, more senior designer.
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 

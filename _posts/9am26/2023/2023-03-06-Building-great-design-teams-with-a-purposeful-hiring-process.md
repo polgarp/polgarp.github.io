@@ -48,7 +48,7 @@ Over the last two roles I had, we came to similar process steps, which can be bo
 One of my key learning over the past few years was how homework, most types of in-person exercises (like whiteboard sessions), and trial days all suffer from the same issue. There are perceived benefits to both parties, as there is a deeper look into how the candidates perform, how they approach problems, etc that paints a better picture than a case study. The candidates also get a better and deeper insight into the internal collaboration of the company. But the downsides far outweigh the benefits. Every one of these practices asks the candidates to spend time and energy on unjustified tasks while creating further stress. Also, certain biases in these tasks favor some candidates over others that might be not aligned with the profile we are looking for. For example, whiteboard exercises favor people who can sketch quickly - which is a nice skill to have but disqualify a lot of candidates who would be otherwise a great fit. 
 
 > This is a post from my newsletter, **[9am26]({% link _pages/newsletter.md %})**, subscribe here:
-> {% include newsletter-signup.html %}
+{% include newsletter-signup.html %}
 
 # 🍪 Things to snack on
 
