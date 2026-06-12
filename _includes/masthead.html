@@ -1,5 +1,5 @@
 <header class="masthead">
-  <div class="shell-wide masthead__inner">
+  <div class="shell masthead__inner">
     <a class="masthead__brand" href="{{ '/' | relative_url }}" rel="home">
       {% include logo.svg %}
       <span class="masthead__name">Péter Balázs Polgár</span>
@@ -16,7 +16,7 @@
       </nav>
       <div class="masthead__tools">
         <button id="search-toggle" type="button" aria-label="Search (press /)" title="Search ( / )">/</button>
-        <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+        <button id="theme-toggle" class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Dark mode" title="Dark mode"></button>
       </div>
     </div>
   </div>

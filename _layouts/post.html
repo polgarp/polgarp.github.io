@@ -33,9 +33,9 @@ layout: default
       {% for tag in page.tags %}<a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}
     </p>
     {% endif %}
-    {% unless content contains "beehiiv.com" %}
+    {% if page.categories contains "Newsletter" %}{% unless content contains "beehiiv.com" %}
     {% include newsletter-signup.html %}
-    {% endunless %}
+    {% endunless %}{% endif %}
     {% include giscus.html %}
   </footer>
 </article>

@@ -37,8 +37,7 @@
   --tracking-caps: 0.07em;
 
   // Layout
-  --shell: 50rem;       // content column
-  --shell-wide: 64rem;  // masthead + footer frame
+  --shell: 50rem;       // one column, shared by masthead, content, and footer
   --measure: 65ch;      // prose measure inside the column
   --gap: 1.5rem;
   --section: 4rem;

@@ -295,15 +295,12 @@
   aspect-ratio: 1;
   object-fit: cover;
   margin: 0.25rem 0 1rem 1.5rem;
-  // the source photo is circle-cropped; the shadow follows the shape
-  border-radius: 50%;
-  box-shadow: 8px 8px 0 var(--accent);
+  border-radius: 50%; // the source photo is circle-cropped
 }
 
 @media (max-width: 600px) {
   .page-avatar {
     width: 5.5rem;
-    box-shadow: 6px 6px 0 var(--accent);
   }
 }
 
