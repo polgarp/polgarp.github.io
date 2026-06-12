@@ -13,7 +13,7 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 ### Building
 
-- A product design themed tarot deck to explore symolism and the core ideas of our craft
+- A product design themed tarot deck to explore symbolism and the core ideas of our craft
 - An agentic storyboard comic creator without AI image generation.
 - An agentic workflow to explore of user segments and insights instead of tired old personas.
 

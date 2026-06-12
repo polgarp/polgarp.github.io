@@ -131,11 +131,17 @@ main.shell {
   }
 }
 
-// Search trigger: a keycap, echoing the kbd hints in the overlay.
+// Search trigger: a keycap matching the theme switch's track height,
+// so the two boxed tools sit on one visual line.
 .masthead__tools #search-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: auto;
-  height: auto;
-  padding: 0.1rem 0.6rem;
+  height: 1.1rem;
+  padding-inline: 0.5rem;
+  font-size: var(--text-xs);
+  line-height: 1;
   border: 1px solid var(--rule);
   transition: color 0.15s ease, border-color 0.15s ease;
 
@@ -205,10 +211,8 @@ main.shell {
 }
 
 .footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
   font-size: var(--text-sm);
+  color: var(--ink-muted); // the · separators
 
   a {
     text-decoration: none;
