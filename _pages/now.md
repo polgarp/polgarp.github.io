@@ -26,5 +26,4 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 Factorio, scaling my factory to 150-200k SPM.
  
----
 *Last updated: March 2026*

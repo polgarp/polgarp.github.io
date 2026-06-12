@@ -12,6 +12,14 @@
   var loading = false;
   var active = -1;
 
+  function recent() {
+    return index.slice().sort(function (a, b) {
+      return (b.date || "").localeCompare(a.date || "");
+    }).slice(0, 5).map(function (d) {
+      return { d: d, title: escapeHtml(d.title), snippet: "" };
+    });
+  }
+
   function open() {
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
@@ -22,8 +30,10 @@
         .then(function (r) { return r.json(); })
         .then(function (data) {
           index = data;
-          if (input.value) render(search(input.value));
+          render(input.value ? search(input.value) : recent());
         });
+    } else if (index && !input.value) {
+      render(recent());
     }
   }
 
@@ -102,7 +112,9 @@
     links[active].scrollIntoView({ block: "nearest" });
   }
 
-  input.addEventListener("input", function () { render(search(input.value)); });
+  input.addEventListener("input", function () {
+    render(input.value ? search(input.value) : (index ? recent() : []));
+  });
 
   input.addEventListener("keydown", function (e) {
     if (e.key === "ArrowDown") { e.preventDefault(); move(1); }

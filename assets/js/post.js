@@ -5,6 +5,14 @@
   var body = document.querySelector(".post__body");
   if (!body) return;
 
+  // ----- Quiet the emojis in headings (grayscale via .u-emoji)
+  body.querySelectorAll("h1, h2, h3").forEach(function (h) {
+    h.innerHTML = h.innerHTML.replace(
+      /(\p{Extended_Pictographic}️?)/gu,
+      '<span class="u-emoji">$1</span>'
+    );
+  });
+
   // ----- Heading anchors (kramdown already provides the ids)
   body.querySelectorAll("h1[id], h2[id], h3[id]").forEach(function (h) {
     var a = document.createElement("a");

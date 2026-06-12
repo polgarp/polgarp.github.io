@@ -1,0 +1,10 @@
+# Curated homepage topics. `topic` must match post tags (case-insensitive);
+# `anchor` is the slug on the /tags/ page.
+- topic: Design leadership
+  anchor: design-leadership
+- topic: Product design
+  anchor: product-design
+- topic: User research
+  anchor: user-research
+- topic: AI design
+  anchor: ai-design
