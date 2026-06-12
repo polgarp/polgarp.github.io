@@ -9,11 +9,15 @@ layout: default
 
 {{ content }}
 
-<nav class="topics" aria-label="Curated topics">
-  {% for t in site.data.topics %}
-  <a class="topic-chip" data-topic="{{ t.topic | downcase }}" href="{{ '/tags/' | relative_url }}#{{ t.anchor }}">#{{ t.topic | downcase }}</a>
-  {% endfor %}
-</nav>
+<div class="topics" role="group" aria-label="Filter by topic">
+  <p class="topics__label">Filter by topic</p>
+  <div class="topics__row">
+    {% for t in site.data.topics %}
+    <button class="topic-chip" type="button" aria-pressed="false" data-topic="{{ t.topic | downcase }}">#{{ t.topic | downcase }}</button>
+    {% endfor %}
+  </div>
+  <p class="topics__status" aria-live="polite" hidden></p>
+</div>
 
 {% assign feed_posts = "" | split: "" %}
 {% for post in site.posts %}
