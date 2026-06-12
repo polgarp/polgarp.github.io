@@ -230,6 +230,13 @@ main.shell {
   filter: grayscale(1); // quiets the ☕ without markup in the config string
 }
 
+// One minute a day. Note: deliberately NOT grayscaled — the only
+// full-color emoji on the site, while the clock reads 9:26.
+.footer__club {
+  font-size: var(--text-xs);
+  color: var(--accent);
+}
+
 @media (max-width: 600px) {
   .masthead__name {
     display: none;
