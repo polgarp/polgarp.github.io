@@ -2,6 +2,9 @@
 (function () {
   "use strict";
 
+  console.log("%c[P%c  black, red, white & monospace. Hello, fellow source-reader.",
+    "color:#e00000;font-weight:bold", "");
+
   var btn = document.getElementById("theme-toggle");
   if (!btn) return;
 
