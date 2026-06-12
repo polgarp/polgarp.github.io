@@ -4,9 +4,7 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Empathy
-  - Collaboration
-  - 9am26
+  - Design teams
 header:
   overlay_image: /assets/images/2023-08-07-Raising-team-empathy.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

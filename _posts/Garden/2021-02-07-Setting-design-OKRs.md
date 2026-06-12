@@ -4,7 +4,7 @@ categories:
   - Garden
 tags:
   - Design leadership
-  - OKRs
+  - Design strategy
 date: 2021-02-07
 ---
 

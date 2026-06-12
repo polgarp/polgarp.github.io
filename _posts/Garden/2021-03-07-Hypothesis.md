@@ -3,8 +3,7 @@ title: "Hypothesis"
 categories:
   - Garden
 tags:
-  - Product development
-  - Product management
+  - Product design
   - Product discovery
 date: 2021-03-07
 ---

@@ -5,8 +5,7 @@ categories:
 tags:
   - Design leadership
   - Product design
-  - Design audit
-  - 9am26
+  - Design process
 header:
   overlay_image: /assets/images/2023-04-24-Design-audits-improving-collaboration-quality-and-alignment.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

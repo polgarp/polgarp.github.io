@@ -4,9 +4,7 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Communication
-  - Presenting work
-  - 9am26
+  - Coaching
 header:
   overlay_image: /assets/images/2024-04-29-Better-presentations-with-the-pyramid-principle.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

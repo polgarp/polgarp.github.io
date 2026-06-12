@@ -3,7 +3,7 @@ title: "Planning design activities"
 categories:
   - Garden
 tags:
-  - Product development
+  - Product design
 date: 2020-06-15
 ---
 

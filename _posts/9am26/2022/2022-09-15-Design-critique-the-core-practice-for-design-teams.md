@@ -3,11 +3,8 @@ title: "e01 Design critique - a core practice for design teams"
 categories:
   - Newsletter
 tags:
-  - Design practice
-  - Method
+  - Design process
   - Product design
-  - Presenting work
-  - 9am26
 header: 
   overlay_color: rgba(255, 0, 0, 0.8)
   show_overlay_excerpt: false

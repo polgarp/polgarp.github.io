@@ -3,9 +3,8 @@ title: "e49 The power of stepping back "
 categories:
   - Newsletter
 tags:
-  - Design practice
+  - Design process
   - Product design
-  - 9am26
 header:
   overlay_image: /assets/images/2026-03-14-the-power-of-stepping-back.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

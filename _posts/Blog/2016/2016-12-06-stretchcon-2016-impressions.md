@@ -5,7 +5,6 @@ categories:
 tags:
   - Design leadership
   - Conference
-  - Summary
   - Org design
   - People management
 header:

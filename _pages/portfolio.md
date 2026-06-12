@@ -40,7 +40,7 @@ When multiple teams build independently, products fragment. I bring coherence by
 Design is a powerful tool for prediction, it lets us show, not just tell, compelling stories about the future. I use vision prototypes and storytelling to align leadership, redirect product strategy, and give teams a shared picture of where we're heading.
 
 - **Key story**: [Shaping product strategy through design vision](/portfolio/2022-design-vision-product-vision) @Krisp
-- Some further thoughts on [prototypes](/tags/#prototype)
+- Some further thoughts on [prototypes](/tags/#prototypes)
 
 ![](/assets/images/portfolio/discovery-cover.png)
 
@@ -63,7 +63,7 @@ A strong design team is a key driver of business success. I build teams that not
 - [Building a user research team](/portfolio/2021-building-a-user-research-team) @Trustpilot
 - [Four leadership modes for a troubled launch](/portfolio/2021-four-leadership-modes-for-a-troubled-launch) @Trustpilot
 - [Growing teams with experience stories](/portfolio/2018-improve-with-experience-stories) @Emarsys
-- Some further thoughts on [people management](/tags/#people-management), [org design](/tags/#org-design), [coaching](/tags/#coaching), and [hiring](/tags/#hiring)
+- Some further thoughts on [people management](/tags/#people-management), [org design](/tags/#org-design), and [coaching](/tags/#coaching)
 
 ## Foundations: Building craft depth
 

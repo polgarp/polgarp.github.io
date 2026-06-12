@@ -5,9 +5,7 @@ categories:
 tags:
   - Design leadership
   - Personas
-  - Method
   - Design process
-  - 9am26
 header:
   overlay_image: /assets/images/2024-08-19-Personas-are-meant-to-be-used-not-just-created.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

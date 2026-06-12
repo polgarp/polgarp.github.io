@@ -5,7 +5,6 @@ categories:
 tags:
   - Design leadership
   - Coaching
-  - 9am26
 header:
   overlay_image: /assets/images/2023-11-13-Nurturing-designer-and-researcher-careers.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

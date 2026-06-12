@@ -6,8 +6,6 @@ tags:
   - Design leadership
   - User research
   - Design teams
-  - Research operations
-  - 9am26
 header:
   overlay_image: /assets/images/.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

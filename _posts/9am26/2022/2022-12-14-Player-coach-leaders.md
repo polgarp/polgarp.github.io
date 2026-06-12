@@ -4,9 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Design practice
+  - Design process
   - Org design
-  - 9am26
 header:
   overlay_image: /assets/images/2022-12-14-Player-coach-leadership.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

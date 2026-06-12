@@ -4,7 +4,6 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - 9am26
 header:
   overlay_image: /assets/images/2023-09-25-Wartime-peacetime-design-leadership.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

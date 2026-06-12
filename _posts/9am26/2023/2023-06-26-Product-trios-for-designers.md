@@ -4,11 +4,9 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Product development
+  - Product design
   - Product discovery
-  - Collaboration
-  - Product trio
-  - 9am26
+  - Design teams
 header:
   overlay_image: /assets/images/2023-06-26-Product-trios-for-designers.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

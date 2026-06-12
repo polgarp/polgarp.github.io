@@ -5,7 +5,6 @@ categories:
 tags:
   - Design leadership
   - Design teams
-  - 9am26
 header:
   overlay_image: /assets/images/2024-01-29-Articulating-the-design-team-s-value.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

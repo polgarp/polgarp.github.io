@@ -3,8 +3,6 @@ title: "Workflow change types with automation"
 categories:
   - Blog 
 tags:
-  - Idea
-  - Automation
   - AI design
 header:
   overlay_color: rgba(255, 63, 49, 0.8)

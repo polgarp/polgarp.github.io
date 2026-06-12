@@ -6,7 +6,6 @@ tags:
   - Design leadership
   - People management
   - Coaching
-  - Team management
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

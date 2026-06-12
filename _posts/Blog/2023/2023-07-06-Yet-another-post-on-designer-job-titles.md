@@ -4,9 +4,8 @@ categories:
   - Blog
 tags:
   - Design teams
-  - Definition
-  - Product designer
-  - UX researcher
+  - Design career
+  - User research
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

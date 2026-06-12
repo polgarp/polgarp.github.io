@@ -4,9 +4,8 @@ categories:
   - Newsletter
 tags:
   - Design leadership
-  - Self-management
+  - Coaching
   - Personal practices
-  - 9am26
 header:
   overlay_image: /assets/images/2023-10-09-Develop-your-leadership-style.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

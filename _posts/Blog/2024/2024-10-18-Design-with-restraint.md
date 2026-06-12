@@ -4,10 +4,8 @@ categories:
   - Blog 
 tags:
   - Product design
-  - Design practice
-  - Collaboration
-  - Idea
-  - Link stash
+  - Design process
+  - Design teams
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

@@ -5,9 +5,8 @@ categories:
 tags:
   - Product design
   - Design process
-  - Hypotheses
+  - Product discovery
   - Design intent
-  - 9am26
 header:
   overlay_image: /assets/images/2023-06-12-Writing-useful-hypotheses.jpg
   overlay_filter: rgba(255, 63, 49, 0.8)

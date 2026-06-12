@@ -3,10 +3,9 @@ title: "Knowledge workflow 2026 updates: Obsidian, Claude"
 categories:
   - Blog
 tags:
-  - Tools
+  - Knowledge work
   - Personal practices
-  - Obsidian
-  - Claude
+  - AI design
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

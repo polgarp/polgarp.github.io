@@ -3,7 +3,6 @@ title: "Types of vision"
 categories:
   - Garden
 tags:
-  - Product development
   - Product design
 date: 2020-11-24
 ---

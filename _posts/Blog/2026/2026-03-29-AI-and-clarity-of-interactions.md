@@ -4,9 +4,8 @@ categories:
   - Blog
 tags:
   - AI design
-  - Automation
-  - Idea
   - Product design
+  - Side project
 header:
   overlay_color: rgba(255, 63, 49, 0.8)
   show_overlay_excerpt: false

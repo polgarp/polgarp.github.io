@@ -5,8 +5,6 @@ categories:
 tags:
   - Design leadership
   - Product design
-  - Sustainability
-  - 9am26
 header:
   overlay_image: /assets/images/2023-04-17-Sustainability-for-product-design-teams.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

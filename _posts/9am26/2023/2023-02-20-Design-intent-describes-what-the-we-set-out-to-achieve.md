@@ -5,8 +5,6 @@ categories:
 tags:
   - Product design
   - Design intent
-  - Good design
-  - 9am26
 header:
   overlay_image: /assets/images/2023-02-20-Design-intent-describes-what-the-we-set-out-to-achieve.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)

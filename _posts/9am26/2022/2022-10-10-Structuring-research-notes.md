@@ -4,9 +4,7 @@ categories:
   - Newsletter
 tags:
   - User research
-  - Research repository
-  - Note taking
-  - 9am26
+  - Knowledge work
 header:
   overlay_image: /assets/images/2022-10-10-Structuring-research-notes.jpg
   overlay_filter: rgba(255, 0, 0, 0.8)
