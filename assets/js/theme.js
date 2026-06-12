@@ -5,6 +5,24 @@
   console.log("%c[P%c  black, red, white & monospace. Hello, fellow source-reader.",
     "color:#e00000;font-weight:bold", "");
 
+  // The 9:26 club: one minute a day, the footer notices.
+  function club() {
+    var now = new Date();
+    var open = now.getHours() === 9 && now.getMinutes() === 26;
+    var line = document.querySelector(".footer__club");
+    if (open && !line) {
+      line = document.createElement("p");
+      line.className = "footer__club";
+      line.textContent = "it's 9:26 — drink up ☕";
+      var footer = document.querySelector(".footer__inner");
+      if (footer) footer.appendChild(line);
+    } else if (!open && line) {
+      line.remove();
+    }
+  }
+  club();
+  setInterval(club, 20000);
+
   var btn = document.getElementById("theme-toggle");
   if (!btn) return;
 

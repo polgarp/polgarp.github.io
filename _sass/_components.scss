@@ -6,12 +6,6 @@
   margin-bottom: var(--section);
 }
 
-.intro__lede {
-  font-size: var(--text-lg);
-  font-weight: 600;
-  max-width: 36ch; // breaks the tagline into two lines, not three
-}
-
 .intro__now {
   margin-top: 1rem;
   font-size: var(--text-sm);
