@@ -177,27 +177,32 @@ main.shell {
   border: 1px solid var(--rule);
   transition: border-color 0.15s ease;
 
-  // the standing block
+  // the standing block — stands on the floor of the box and pivots on its
+  // bottom edge, so it tips like a domino instead of spinning about its centre
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
     left: 0.2rem;
+    bottom: 0.13rem;
     width: 0.34rem;
     height: 0.72rem;
-    transform: translateY(-50%);
     background: var(--ink);
-    transition: transform 0.35s ease, background-color 0.15s ease;
+    transform-origin: 50% 100%;
+    transition: transform 0.4s ease, background-color 0.15s ease;
   }
 }
 
 .theme-switch.is-dark .theme-switch__box::after {
-  transform: translateY(-50%) translateX(1.25rem);
+  transform: translateX(1.25rem);
 }
 
-// The tumble: stand → lie → stand, retriggered per click in JS.
-.theme-switch.is-tipping .theme-switch__box::after {
-  animation: knob-tip 0.35s ease;
+// The tumble: stand → lie → stand on the far end, mirrored to travel direction.
+.theme-switch.is-tip-right .theme-switch__box::after {
+  animation: tip-right 0.4s ease;
+}
+
+.theme-switch.is-tip-left .theme-switch__box::after {
+  animation: tip-left 0.4s ease;
 }
 
 .theme-switch:hover .theme-switch__box {
@@ -273,10 +278,18 @@ main.shell {
   }
 }
 
-@keyframes knob-tip {
+// Tip toward travel: bottom-edge pivot carries the block across as the
+// translateX slides it, so it rolls onto its side and stands up on the far end.
+@keyframes tip-right {
   0% { rotate: 0deg; }
   50% { rotate: 90deg; }
   100% { rotate: 180deg; }
+}
+
+@keyframes tip-left {
+  0% { rotate: 0deg; }
+  50% { rotate: -90deg; }
+  100% { rotate: -180deg; }
 }
 
 @media (prefers-reduced-motion: reduce) {

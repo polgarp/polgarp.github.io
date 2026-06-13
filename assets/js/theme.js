@@ -41,14 +41,11 @@
     }
   }
 
-  var label = btn.querySelector(".theme-switch__label");
-
   function reflect(theme) {
     var dark = theme === "dark";
     btn.classList.toggle("is-dark", dark);
-    // the switch advertises where a click takes you
+    // the switch advertises where a click takes you (tooltip only)
     var target = dark ? "light" : "dark";
-    if (label) label.textContent = target + " mode";
     btn.setAttribute("aria-label", "Switch to " + target + " mode");
     btn.title = "Switch to " + target + " mode";
   }
@@ -61,10 +58,10 @@
     localStorage.setItem("theme", next);
     reflect(next);
     syncGiscus(next);
-    // retrigger the tumble
-    btn.classList.remove("is-tipping");
+    // retrigger the tumble, mirrored to the direction of travel
+    btn.classList.remove("is-tip-right", "is-tip-left");
     void btn.offsetWidth;
-    btn.classList.add("is-tipping");
+    btn.classList.add(next === "dark" ? "is-tip-right" : "is-tip-left");
   });
 
   // If a stored theme overrides the OS preference, align giscus once it loads.
