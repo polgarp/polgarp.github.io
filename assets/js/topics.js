@@ -68,12 +68,15 @@
   });
 })();
 
-// j / k navigation through the feed — focuses the next/previous entry link,
-// so Enter opens it. Additive: Tab still works. Power-user nicety.
+// j / k navigation. On a feed page it focuses the next/previous entry link
+// (Enter opens it). On a Blog/9am26 post it jumps to the neighbouring post in
+// the same feed order. Additive to Tab; ignores inputs and the search dialog.
 (function () {
   "use strict";
 
-  if (!document.querySelector(".feed")) return;
+  var feed = document.querySelector(".feed");
+  var article = document.querySelector("[data-post-next], [data-post-prev]");
+  if (!feed && !article) return;
 
   function links() {
     return Array.prototype.slice.call(
@@ -89,15 +92,26 @@
     var overlay = document.getElementById("search");
     if (overlay && !overlay.hidden) return; // the dialog owns the keyboard
 
-    var list = links();
-    if (!list.length) return;
-    e.preventDefault();
-    var i = list.indexOf(document.activeElement);
-    if (e.key === "j") {
-      i = i < 0 ? 0 : Math.min(list.length - 1, i + 1);
+    if (feed) {
+      var list = links();
+      if (!list.length) return;
+      e.preventDefault();
+      var i = list.indexOf(document.activeElement);
+      if (e.key === "j") {
+        i = i < 0 ? 0 : Math.min(list.length - 1, i + 1);
+      } else {
+        i = i <= 0 ? 0 : i - 1;
+      }
+      list[i].focus();
     } else {
-      i = i <= 0 ? 0 : i - 1;
+      // within a post: j → next (older), k → previous (newer)
+      var url = e.key === "j"
+        ? article.getAttribute("data-post-next")
+        : article.getAttribute("data-post-prev");
+      if (url) {
+        e.preventDefault();
+        location.href = url;
+      }
     }
-    list[i].focus();
   });
 })();
