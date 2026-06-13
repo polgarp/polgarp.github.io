@@ -42,7 +42,12 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   clickable starter terms, freshly picked from a 12-term pool each open; clicking one fills
   the query and runs the search. Sits above the existing recent-posts empty state. Verified:
   seeds render on open, click runs search (20 results), hide once typing.
-- [ ] **R6 — #7 reading progress**: 1px red rule under the masthead fills while reading a post.
+- [x] **R6 — #7 reading progress** *(shipped)*: 2px red hairline fixed at the top of the
+  viewport (masthead isn't sticky, so top-of-page is the sensible spot), fills left→right
+  with scroll progress. Only on post + case-study layouts (gated by the `.reading-progress`
+  element; rAF-throttled scroll/resize). Verified scaleX 0→0.5→1 top/mid/bottom.
+  Also tweaked R4: 404 bowl now holds attached ~1s (backwards fill) then falls;
+  title is "404 — This page tipped over".
 - [ ] **R7 — #8 j/k feed navigation** + accessibility review pass (focus order, roles,
   aria on chips/switch/search, reduced motion, contrast re-check).
 - [ ] **R8 — #10 /colophon/ page**: short and sweet — stack, typeface, 22KB, design rules,
