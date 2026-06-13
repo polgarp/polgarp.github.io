@@ -68,10 +68,10 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   phrase now links to it; coffee coda kept, ☕ greyed via `.u-emoji` (dropped the
   whole-line grayscale filter so the link's red hover survives). Not in main nav (footer
   discovery only).
-- [ ] **R9 — #12 OG share images**: pre-generated mono cards (title on white, red square)
-  committed to assets/og/, wired via front-matter image for jekyll-seo-tag.
-  Note: GH Pages classic can't run custom plugins → generation is a local script,
-  re-run when new posts are added.
+- [~] **R9 — #12 OG share images** *(deferred by choice)*: GH Pages classic can't generate
+  images; options were a GitHub Action (per-post, robust to direct-on-GitHub commits), a
+  single static default card (no CI), or a local script (gaps on direct commits). Peter
+  opted to skip for now — OG stays as jekyll-seo-tag text meta. Revisit if link previews matter.
 - [ ] **R10 — #13 "bauhaus" easter egg**: typing the word swaps palette to the
   red/yellow/blue triad for ~2s, then settles back.
 
