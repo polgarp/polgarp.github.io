@@ -41,8 +41,16 @@
     }
   }
 
+  var label = btn.querySelector(".theme-switch__label");
+
   function reflect(theme) {
-    btn.setAttribute("aria-checked", theme === "dark" ? "true" : "false");
+    var dark = theme === "dark";
+    btn.classList.toggle("is-dark", dark);
+    // the switch advertises where a click takes you
+    var target = dark ? "light" : "dark";
+    if (label) label.textContent = target + " mode";
+    btn.setAttribute("aria-label", "Switch to " + target + " mode");
+    btn.title = "Switch to " + target + " mode";
   }
 
   reflect(current());
@@ -53,10 +61,10 @@
     localStorage.setItem("theme", next);
     reflect(next);
     syncGiscus(next);
-    // retrigger the knob squash
-    btn.classList.remove("is-squashing");
+    // retrigger the tumble
+    btn.classList.remove("is-tipping");
     void btn.offsetWidth;
-    btn.classList.add("is-squashing");
+    btn.classList.add("is-tipping");
   });
 
   // If a stored theme overrides the OS preference, align giscus once it loads.

@@ -150,55 +150,62 @@ main.shell {
   }
 }
 
-// Dark-mode switch: a track with a square knob, drawn with pseudo-elements
-// so the button keeps a comfortable hit area.
+// Dark-mode switch: a standing rectangle in a box. On toggle the block tips
+// onto its side and stands back up on the far end — a Bauhaus tumble.
 .masthead__tools .theme-switch {
-  width: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+  height: auto;
+  padding: 0;
   border: 0;
-  position: relative;
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  white-space: nowrap;
 
-  &::before {
-    // track
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.2rem;
-    height: 1.1rem;
-    border: 1px solid var(--rule);
-    transition: border-color 0.15s ease;
+  &:hover {
+    color: var(--accent);
   }
+}
 
+.theme-switch__box {
+  position: relative;
+  flex: none;
+  width: 2rem;
+  height: 1.05rem;
+  border: 1px solid var(--rule);
+  transition: border-color 0.15s ease;
+
+  // the standing block
   &::after {
-    // knob
     content: "";
     position: absolute;
     top: 50%;
-    left: 0.475rem;
-    width: 0.7rem;
-    height: 0.7rem;
+    left: 0.2rem;
+    width: 0.34rem;
+    height: 0.72rem;
     transform: translateY(-50%);
     background: var(--ink);
-    transition: transform 0.15s ease, background-color 0.15s ease;
+    transition: transform 0.35s ease, background-color 0.15s ease;
   }
+}
 
-  &[aria-checked="true"]::after {
-    transform: translateY(-50%) translateX(1.1rem);
-  }
+.theme-switch.is-dark .theme-switch__box::after {
+  transform: translateY(-50%) translateX(1.25rem);
+}
 
-  // Mechanical squash while the knob slides (retriggered per click in JS).
-  &.is-squashing::after {
-    animation: knob-squash 0.25s ease;
-  }
+// The tumble: stand → lie → stand, retriggered per click in JS.
+.theme-switch.is-tipping .theme-switch__box::after {
+  animation: knob-tip 0.35s ease;
+}
 
-  &:hover::before {
-    border-color: var(--accent);
-  }
+.theme-switch:hover .theme-switch__box {
+  border-color: var(--accent);
+}
 
-  &:hover::after {
-    background: var(--accent);
-  }
+.theme-switch:hover .theme-switch__box::after {
+  background: var(--accent);
 }
 
 // ----- Footer
@@ -266,10 +273,10 @@ main.shell {
   }
 }
 
-@keyframes knob-squash {
-  0% { scale: 1; }
-  40% { scale: 1.35 0.65; }
-  100% { scale: 1; }
+@keyframes knob-tip {
+  0% { rotate: 0deg; }
+  50% { rotate: 90deg; }
+  100% { rotate: 180deg; }
 }
 
 @media (prefers-reduced-motion: reduce) {
