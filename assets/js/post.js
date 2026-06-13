@@ -5,6 +5,24 @@
   var body = document.querySelector(".post__body");
   if (!body) return;
 
+  // ----- Reading progress: a hairline that fills as you move through the post
+  var progress = document.querySelector(".reading-progress span");
+  if (progress) {
+    var ticking = false;
+    function updateProgress() {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - doc.clientHeight;
+      var p = max > 0 ? Math.min(1, (window.scrollY || doc.scrollTop) / max) : 0;
+      progress.style.transform = "scaleX(" + p + ")";
+      ticking = false;
+    }
+    document.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(updateProgress); }
+    }, { passive: true });
+    window.addEventListener("resize", updateProgress, { passive: true });
+    updateProgress();
+  }
+
   // ----- Quiet the emojis in headings (grayscale via .u-emoji)
   body.querySelectorAll("h1, h2, h3").forEach(function (h) {
     h.innerHTML = h.innerHTML.replace(
