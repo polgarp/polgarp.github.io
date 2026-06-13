@@ -10,7 +10,18 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
     a third footer line appears: "it's 9:26 — drink up ☕".
     Detail: the colophon's ☕ is grayscaled; the club line's ☕ is the only
     full-color emoji on the site, one minute per day.
-- [x] **R2 — #2 switch tumble** *(shipped; two revisions per feedback)*:
+- [x] **R2 — #2 switch domino roll** *(shipped; three revisions per feedback)*:
+  Final = a true two-pivot domino roll. Block ABCD stands on the box floor; rolling
+  right it pivots on corner D (origin 100% 100%, rotate 0→90, lies on CD), then at 50%
+  the origin jumps to corner C (100% 0%) with a compensating translate(h,h) — derived so
+  position is continuous — and rotates 90→180 to stand on CB. Travel = w+h = 1.04rem,
+  matching the `is-dark` steady translateX. Left roll = same keyframes `reverse` (mirror).
+  Block is now a real `<i>` element (measurable). Verified via WAAPI sampling: bottom
+  constant (grounded), inside box, continuous at the 50% pivot switch, lands without jump.
+  Earlier attempts (rejected): square squash; centre-`rotate` (swung out of box, wrong
+  corner); single bottom-centre pivot (not a real roll).
+
+- [x] ~~**R2 — #2 switch tumble**~~ *(superseded)*:
   Standing rectangle (1:2) that tips like a domino — **bottom-edge pivot**
   (`transform-origin: 50% 100%`, block sits on the box floor) so it stays grounded and
   inside the box instead of spinning about its centre and poking out. Tip is **mirrored
