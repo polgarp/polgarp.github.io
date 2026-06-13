@@ -389,6 +389,32 @@ article.post .post__body::after {
   }
 }
 
+// ----- 404: the P loses its bowl
+
+.error404__mark {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+// The red bowl has tipped off the P and lies on the baseline.
+.error404__bowl {
+  fill: var(--accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translateY(78px) rotate(90deg);
+  animation: bowl-fall 0.8s cubic-bezier(0.45, 0, 0.65, 1);
+}
+
+// It drops from the P, overshoots the floor a touch, and settles.
+@keyframes bowl-fall {
+  0% { transform: translateY(0) rotate(0deg); }
+  55% { transform: translateY(82px) rotate(92deg); }
+  100% { transform: translateY(78px) rotate(90deg); }
+}
+
 // ----- Avatar (about page)
 
 .page-avatar {
