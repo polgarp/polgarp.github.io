@@ -34,7 +34,10 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   message in an HTML comment, placed in `<head>` right after `<meta charset>` (so the
   UTF-8 art decodes) — appears near the top of every page's source, pairing with the
   console greeting. Also: sped the switch roll 0.4s → 0.28s per feedback.
-- [ ] **R4 — #5 404 logo**: the P's red bowl tipped off the glyph, fallen to the baseline.
+- [x] **R4 — #5 404 logo** *(shipped)*: dedicated `_layouts/404.html` with a large `[P`
+  mark whose red bowl has tipped off and lies on the baseline (translateY + rotate 90°).
+  Drops from the P on load (`bowl-fall` keyframe, slight overshoot; reduced-motion shows it
+  already fallen). Title changed to "This page tipped over". 404 link: /404.html.
 - [ ] **R5 — #6 search seeds**: empty overlay shows "try: …" with 3 rotating suggestions.
 - [ ] **R6 — #7 reading progress**: 1px red rule under the masthead fills while reading a post.
 - [ ] **R7 — #8 j/k feed navigation** + accessibility review pass (focus order, roles,

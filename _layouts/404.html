@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="page-single error404">
+  <svg class="error404__mark" viewBox="0 0 256 256" role="img" aria-label="The P has lost its bowl">
+    <!-- bracket + P stem (keeps the theme ink colour) -->
+    <path fill="currentColor" d="M32 32h64v32H64v128h48v32H32zM112 64h48v128h-32V96h-16z"/>
+    <!-- the P's red bowl, tipped off and fallen to the baseline -->
+    <path class="error404__bowl" d="M160 64h64v96h-64v-32h32V96h-32z"/>
+  </svg>
+
+  <header class="post__header">
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post__body">
+    {{ content }}
+  </div>
+</article>
