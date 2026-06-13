@@ -62,8 +62,12 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   - Audit: Lighthouse Accessibility **100** on home + post, in **both light and dark**
     (contrast passes both palettes). Best-Practices dings are only giscus/beehiiv 3rd-party
     cookies. Reduced-motion guard already covers the roll/bowl/transitions.
-- [ ] **R8 — #10 /colophon/ page**: short and sweet — stack, typeface, 22KB, design rules,
-  **mentions Bauhaus** (per #13 note). Footer "black, red, white & monospace" links to it.
+- [x] **R8 — #10 /colophon/ page** *(shipped)*: short page — type (IBM Plex Mono), colour
+  (**Bauhaus** palette), built-with (Jekyll/GH Pages, ~35 KB CSS+JS, no theme/framework/
+  analytics), the vanilla scripts + j/k & / hints, GitHub source link. Footer's design
+  phrase now links to it; coffee coda kept, ☕ greyed via `.u-emoji` (dropped the
+  whole-line grayscale filter so the link's red hover survives). Not in main nav (footer
+  discovery only).
 - [ ] **R9 — #12 OG share images**: pre-generated mono cards (title on white, red square)
   committed to assets/og/, wired via front-matter image for jekyll-seo-tag.
   Note: GH Pages classic can't run custom plugins → generation is a local script,

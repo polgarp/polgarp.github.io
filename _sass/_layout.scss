@@ -244,7 +244,19 @@ main.shell {
 .footer__colophon {
   font-size: var(--text-xs);
   color: var(--ink-muted);
-  filter: grayscale(1); // quiets the ☕ without markup in the config string
+
+  // ☕ is greyed via .u-emoji; the design phrase links to the colophon page
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+  }
 }
 
 // One minute a day. Note: deliberately NOT grayscaled — the only
