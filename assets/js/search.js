@@ -12,6 +12,7 @@
   var index = null;
   var loading = false;
   var active = -1;
+  var lastFocus = null;
 
   // A small pool of starter queries, each a real seam in the writing.
   var SEEDS = [
@@ -47,6 +48,7 @@
   }
 
   function open() {
+    lastFocus = document.activeElement;
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     input.focus();
@@ -68,6 +70,25 @@
     overlay.hidden = true;
     document.body.style.overflow = "";
     active = -1;
+    // return focus to whatever opened the dialog (usually the search keycap)
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    lastFocus = null;
+  }
+
+  // Keep Tab focus inside the dialog while it's open (it's aria-modal).
+  function trapFocus(e) {
+    if (e.key !== "Tab") return;
+    var focusable = overlay.querySelectorAll("input, button, a[href]");
+    if (!focusable.length) return;
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   }
 
   function escapeHtml(s) {
@@ -174,6 +195,8 @@
   overlay.addEventListener("click", function (e) {
     if (e.target === overlay) close();
   });
+
+  overlay.addEventListener("keydown", trapFocus);
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !overlay.hidden) close();

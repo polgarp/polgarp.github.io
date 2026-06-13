@@ -67,3 +67,37 @@
     });
   });
 })();
+
+// j / k navigation through the feed — focuses the next/previous entry link,
+// so Enter opens it. Additive: Tab still works. Power-user nicety.
+(function () {
+  "use strict";
+
+  if (!document.querySelector(".feed")) return;
+
+  function links() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll(".feed__item:not(.is-hidden) .feed__title a")
+    );
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "j" && e.key !== "k") return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (/^(input|textarea|select)$/i.test(tag)) return;
+    var overlay = document.getElementById("search");
+    if (overlay && !overlay.hidden) return; // the dialog owns the keyboard
+
+    var list = links();
+    if (!list.length) return;
+    e.preventDefault();
+    var i = list.indexOf(document.activeElement);
+    if (e.key === "j") {
+      i = i < 0 ? 0 : Math.min(list.length - 1, i + 1);
+    } else {
+      i = i <= 0 ? 0 : i - 1;
+    }
+    list[i].focus();
+  });
+})();

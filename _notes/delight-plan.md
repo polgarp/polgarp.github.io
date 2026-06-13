@@ -48,8 +48,16 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   element; rAF-throttled scroll/resize). Verified scaleX 0→0.5→1 top/mid/bottom.
   Also tweaked R4: 404 bowl now holds attached ~1s (backwards fill) then falls;
   title is "404 — This page tipped over".
-- [ ] **R7 — #8 j/k feed navigation** + accessibility review pass (focus order, roles,
-  aria on chips/switch/search, reduced motion, contrast re-check).
+- [x] **R7 — #8 j/k feed navigation + a11y pass** *(shipped)*:
+  - j/k moves focus through visible `.feed__item .feed__title a` links (Enter opens);
+    additive to Tab, ignores inputs and the open search dialog. Appended as a 2nd IIFE in
+    topics.js (runs on any page with a `.feed`).
+  - Search dialog focus management (Lighthouse can't catch this): stores the opener,
+    focuses the input on open, **traps Tab inside** the dialog, and **returns focus** to the
+    opener on close/Escape. Verified: open→input, Shift+Tab wraps to last, Esc→toggle.
+  - Audit: Lighthouse Accessibility **100** on home + post, in **both light and dark**
+    (contrast passes both palettes). Best-Practices dings are only giscus/beehiiv 3rd-party
+    cookies. Reduced-motion guard already covers the roll/bowl/transitions.
 - [ ] **R8 — #10 /colophon/ page**: short and sweet — stack, typeface, 22KB, design rules,
   **mentions Bauhaus** (per #13 note). Footer "black, red, white & monospace" links to it.
 - [ ] **R9 — #12 OG share images**: pre-generated mono cards (title on white, red square)
