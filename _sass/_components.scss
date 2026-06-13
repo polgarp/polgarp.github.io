@@ -472,6 +472,30 @@ article.post .post__body::after {
   }
 }
 
+.search__seeds {
+  margin-top: 0.85rem;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.search__seed {
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--ink-muted);
+  text-underline-offset: 0.2em;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+}
+
 .search__results {
   list-style: none;
   padding: 0;

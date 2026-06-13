@@ -38,7 +38,10 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   mark whose red bowl has tipped off and lies on the baseline (translateY + rotate 90°).
   Drops from the P on load (`bowl-fall` keyframe, slight overshoot; reduced-motion shows it
   already fallen). Title changed to "This page tipped over". 404 link: /404.html.
-- [ ] **R5 — #6 search seeds**: empty overlay shows "try: …" with 3 rotating suggestions.
+- [x] **R5 — #6 search seeds** *(shipped)*: empty search overlay shows "Try …" with 3
+  clickable starter terms, freshly picked from a 12-term pool each open; clicking one fills
+  the query and runs the search. Sits above the existing recent-posts empty state. Verified:
+  seeds render on open, click runs search (20 results), hide once typing.
 - [ ] **R6 — #7 reading progress**: 1px red rule under the masthead fills while reading a post.
 - [ ] **R7 — #8 j/k feed navigation** + accessibility review pass (focus order, roles,
   aria on chips/switch/search, reduced motion, contrast re-check).

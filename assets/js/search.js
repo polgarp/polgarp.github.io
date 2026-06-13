@@ -5,12 +5,38 @@
   var overlay = document.getElementById("search");
   var input = document.getElementById("search-input");
   var results = document.getElementById("search-results");
+  var seedsEl = document.getElementById("search-seeds");
   var toggle = document.getElementById("search-toggle");
   if (!overlay || !input || !results) return;
 
   var index = null;
   var loading = false;
   var active = -1;
+
+  // A small pool of starter queries, each a real seam in the writing.
+  var SEEDS = [
+    "coherence", "groupthink", "personas", "discovery", "prototypes",
+    "hiring", "design systems", "rituals", "design vision",
+    "knowledge workflow", "OKRs", "onboarding"
+  ];
+
+  function renderSeeds() {
+    if (!seedsEl) return;
+    var pool = SEEDS.slice();
+    var pick = [];
+    while (pool.length && pick.length < 3) {
+      pick.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+    }
+    seedsEl.innerHTML = "Try " + pick.map(function (t) {
+      return '<button type="button" class="search__seed" data-term="' +
+        escapeHtml(t) + '">' + escapeHtml(t) + "</button>";
+    }).join(" · ");
+    seedsEl.hidden = false;
+  }
+
+  function hideSeeds() {
+    if (seedsEl) seedsEl.hidden = true;
+  }
 
   function recent() {
     return index.slice().sort(function (a, b) {
@@ -24,6 +50,7 @@
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     input.focus();
+    if (!input.value) renderSeeds();
     if (!index && !loading) {
       loading = true;
       fetch("/search.json")
@@ -113,8 +140,25 @@
   }
 
   input.addEventListener("input", function () {
-    render(input.value ? search(input.value) : (index ? recent() : []));
+    if (input.value) {
+      hideSeeds();
+      render(search(input.value));
+    } else {
+      renderSeeds();
+      render(index ? recent() : []);
+    }
   });
+
+  if (seedsEl) {
+    seedsEl.addEventListener("click", function (e) {
+      var b = e.target.closest(".search__seed");
+      if (!b) return;
+      input.value = b.dataset.term;
+      hideSeeds();
+      render(search(input.value));
+      input.focus();
+    });
+  }
 
   input.addEventListener("keydown", function (e) {
     if (e.key === "ArrowDown") { e.preventDefault(); move(1); }
