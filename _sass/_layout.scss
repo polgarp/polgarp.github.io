@@ -198,11 +198,11 @@ main.shell {
 // Roll right (→ dark) plays the keyframes forward; roll left (→ light) reverses
 // them, which mirrors the motion: it tips onto its left corner and rolls back.
 .theme-switch.is-tip-right .theme-switch__block {
-  animation: tip 0.4s cubic-bezier(0.5, 0, 0.5, 1);
+  animation: tip 0.28s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .theme-switch.is-tip-left .theme-switch__block {
-  animation: tip 0.4s cubic-bezier(0.5, 0, 0.5, 1) reverse;
+  animation: tip 0.28s cubic-bezier(0.5, 0, 0.5, 1) reverse;
 }
 
 .theme-switch:hover .theme-switch__box {

@@ -30,7 +30,10 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   — target mode lives in the tooltip/aria-label only ("Switch to … mode"). Plain
   action-labelled button (no role=switch). Rejected: square-knob squash (cartoonish,
   overflowed); centre-pivot rotate (swung out of the box, wrong corner).
-- [ ] **R3 — #3 view-source banner**: ASCII `[P` logo in an HTML comment at the top of every page.
+- [x] **R3 — #3 view-source banner** *(shipped)*: ASCII `[P` mark (box-drawing) + a short
+  message in an HTML comment, placed in `<head>` right after `<meta charset>` (so the
+  UTF-8 art decodes) — appears near the top of every page's source, pairing with the
+  console greeting. Also: sped the switch roll 0.4s → 0.28s per feedback.
 - [ ] **R4 — #5 404 logo**: the P's red bowl tipped off the glyph, fallen to the baseline.
 - [ ] **R5 — #6 search seeds**: empty overlay shows "try: …" with 3 rotating suggestions.
 - [ ] **R6 — #7 reading progress**: 1px red rule under the masthead fills while reading a post.
