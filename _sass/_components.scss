@@ -621,6 +621,59 @@ article.post .post__body::after {
   }
 }
 
+// ----- Bauhaus easter egg (type "bauhaus")
+
+.bauhaus {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+
+  span {
+    display: block;
+    transform: scale(0.4) rotate(-8deg);
+    transition: transform 0.45s cubic-bezier(0.2, 0.85, 0.3, 1);
+  }
+
+  // triangle (yellow), square (red), circle (blue), slightly overlapped
+  .bauhaus__tri {
+    width: 0;
+    height: 0;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 8.5rem solid #f4c20d;
+    margin-right: -2.5rem;
+  }
+
+  .bauhaus__sq {
+    width: 8rem;
+    height: 8rem;
+    background: #d62828;
+  }
+
+  .bauhaus__ci {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: #1f3a93;
+    margin-left: -2.5rem;
+  }
+
+  &.is-in {
+    opacity: 1;
+
+    span { transform: scale(1) rotate(0); }
+    .bauhaus__tri { transform: scale(1) rotate(-6deg); }
+    .bauhaus__ci { transform: scale(1) rotate(0); }
+  }
+}
+
 // ----- Reading progress (posts + case studies)
 
 .reading-progress {
