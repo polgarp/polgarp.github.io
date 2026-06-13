@@ -72,8 +72,15 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   images; options were a GitHub Action (per-post, robust to direct-on-GitHub commits), a
   single static default card (no CI), or a local script (gaps on direct commits). Peter
   opted to skip for now — OG stays as jekyll-seo-tag text meta. Revisit if link previews matter.
-- [ ] **R10 — #13 "bauhaus" easter egg**: typing the word swaps palette to the
-  red/yellow/blue triad for ~2s, then settles back.
+- [x] **R10 — #13 "bauhaus" easter egg** *(shipped)*: global keystroke buffer; typing
+  "bauhaus" outside a text field drops a centered composition — yellow triangle, red square,
+  blue circle (Kandinsky shape→colour) — fading in/hold/out over ~2s. pointer-events:none,
+  z-index above everything. Verified trigger + composition.
+
+---
+
+**Delight series complete (R1–R10).** R9 deferred by choice. All other rounds shipped to
+`master`-bound commits on the working branch; remember to push when ready.
 
 ## Notes / decisions
 
