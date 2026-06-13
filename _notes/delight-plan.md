@@ -52,6 +52,10 @@ Process: one item per round, quick feedback after each. (Numbers from the idea l
   - j/k moves focus through visible `.feed__item .feed__title a` links (Enter opens);
     additive to Tab, ignores inputs and the open search dialog. Appended as a 2nd IIFE in
     topics.js (runs on any page with a `.feed`).
+  - **In-post j/k** (follow-up): on a Blog/9am26 post, j → next (older) post, k → previous
+    (newer), in the same mixed feed order. Neighbours computed in post.html via the same
+    Blog+Newsletter filter, emitted as `data-post-next/prev`; Garden & other categories get
+    no neighbours (no in-post nav). Verified jumps both directions + Garden excluded.
   - Search dialog focus management (Lighthouse can't catch this): stores the opener,
     focuses the input on open, **traps Tab inside** the dialog, and **returns focus** to the
     opener on close/Escape. Verified: open→input, Shift+Tab wraps to last, Esc→toggle.

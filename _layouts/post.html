@@ -1,8 +1,24 @@
 ---
 layout: default
 ---
+{% comment %} Neighbours for j/k navigation — the same Blog + Newsletter feed,
+newest-first. Posts outside those categories (e.g. Garden) won't match, so they
+get no neighbours and no in-post j/k. {% endcomment %}
+{% assign feedposts = "" | split: "" %}
+{% for p in site.posts %}
+  {% if p.categories contains "Blog" or p.categories contains "Newsletter" %}
+    {% assign feedposts = feedposts | push: p %}
+  {% endif %}
+{% endfor %}
+{% assign curidx = -1 %}
+{% for p in feedposts %}
+  {% if p.url == page.url %}{% assign curidx = forloop.index0 %}{% break %}{% endif %}
+{% endfor %}
+{% assign previdx = curidx | minus: 1 %}
+{% assign nextidx = curidx | plus: 1 %}
+
 <div class="reading-progress" aria-hidden="true"><span></span></div>
-<article class="post h-entry">
+<article class="post h-entry"{% if curidx > 0 %} data-post-prev="{{ feedposts[previdx].url | relative_url }}"{% endif %}{% if curidx >= 0 and nextidx < feedposts.size %} data-post-next="{{ feedposts[nextidx].url | relative_url }}"{% endif %}>
   <header class="post__header">
     <p class="post__meta">
       {% assign cat = page.categories | first %}
