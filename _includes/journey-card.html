@@ -15,8 +15,9 @@
 <a class="jcard" href="{{ story.url | relative_url }}">
   {% if role.image %}<img class="jcard__logo" src="{{ role.image | relative_url }}" alt="{{ company }}">{% endif %}
   <span class="jcard__meta">{{ role.text | replace: "<br>", " · " | replace: "@", "" | replace: "⊂", "·" }}</span>
-  <span class="jcard__title">{{ story.title }} <span class="jcard__arrow" aria-hidden="true">→</span></span>
+  <span class="jcard__title">{{ story.title }}</span>
   {% if include.blurb %}<span class="jcard__blurb">{{ include.blurb }}</span>{% endif %}
+  <span class="jcard__cue" aria-hidden="true">Read the story →</span>
 </a>
   {% endif %}
 {% endif %}
