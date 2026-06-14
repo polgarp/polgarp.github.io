@@ -3,8 +3,8 @@
 # case study's own front matter by _includes/journey-card.html.
 
 intro:
-  lead: "I build design teams that drive product strategy — and I stay close to the craft."
-  sub: "Across fifteen years I've worked at every altitude: hands-on design, design and technical leadership, and building the teams and systems that make great products possible."
+  lead: "I build design teams that drive product strategy, staying close to the craft."
+  sub: "My throughline is coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
 career:
@@ -81,4 +81,4 @@ foundations:
     - 1980-Learn-Teach-Organise
 
 cta:
-  line: "Want the long version? Here's my CV — or just say hello."
+  line: "Want the long version? Take a peek at my CV or just say hello."
