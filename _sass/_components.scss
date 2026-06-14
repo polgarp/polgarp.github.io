@@ -927,7 +927,7 @@ h3:hover .heading-anchor {
   display: block;
   text-decoration: none;
   border: 1px solid var(--rule);
-  padding: 1.25rem 5.5rem 2.9rem 1.5rem;
+  padding: 1.25rem 7.5rem 2.9rem 1.5rem;
   transition: border-color 0.15s ease, transform 0.15s ease;
 
   &:hover,
@@ -949,14 +949,15 @@ h3:hover .heading-anchor {
   }
 }
 
-// A vertical image band cropped from the story, spanning the full card height
-// and flush to the right edge; it floats in from the right on hover.
+// A vertical image band cropped from the story. Inset top and bottom for
+// breathing room, but flush to the right edge so it stays connected and floats
+// in from the right on hover.
 .jcard__hint {
   position: absolute;
-  top: 0;
+  top: 1.25rem;
   right: 0;
-  bottom: 0;
-  width: 4rem;
+  bottom: 1.25rem;
+  width: 6rem;
   overflow: hidden;
   opacity: 0;
   transform: translateX(0.6rem);
