@@ -374,9 +374,8 @@ article.post .post__body::after {
   max-height: 2.5rem;
   width: auto;
   margin-bottom: 0.85rem;
-  box-sizing: border-box;
   filter: grayscale(1) contrast(1.1);
-  transition: filter 0.2s ease, background-color 0.2s ease, padding 0.2s ease;
+  transition: filter 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     filter: none;
@@ -391,8 +390,8 @@ article.post .post__body::after {
   &:hover {
     filter: none;
     background: #fff;
-    border-radius: 3px;
-    padding: 0.18rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0 0.32rem #fff;
   }
 }
 
@@ -403,8 +402,8 @@ article.post .post__body::after {
     &:hover {
       filter: none;
       background: #fff;
-      border-radius: 3px;
-      padding: 0.18rem;
+      border-radius: 0.2rem;
+      box-shadow: 0 0 0 0.32rem #fff;
     }
   }
 }
@@ -962,10 +961,9 @@ h3:hover .heading-anchor {
   width: auto;
   align-self: flex-start;
   object-fit: contain;
-  box-sizing: border-box;
   filter: grayscale(1);
   opacity: 0.85;
-  transition: filter 0.25s ease, opacity 0.25s ease, background-color 0.25s ease, padding 0.25s ease;
+  transition: filter 0.25s ease, opacity 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .career__role {
@@ -999,16 +997,16 @@ h3:hover .heading-anchor {
 [data-theme="dark"] .jcard:hover .jcard__logo {
   filter: none;
   background: #fff;
-  border-radius: 3px;
-  padding: 0.18rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 0.32rem #fff;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .career__item:hover .career__logo,
   :root:not([data-theme="light"]) .jcard:hover .jcard__logo {
     filter: none;
     background: #fff;
-    border-radius: 3px;
-    padding: 0.18rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0 0.32rem #fff;
   }
 }
 
@@ -1110,10 +1108,9 @@ h3:hover .heading-anchor {
   height: 1.6rem;
   width: auto;
   margin-bottom: 0.9rem;
-  box-sizing: border-box;
   filter: grayscale(1);
   opacity: 0.85;
-  transition: filter 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, padding 0.2s ease;
+  transition: filter 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .jcard__meta {
