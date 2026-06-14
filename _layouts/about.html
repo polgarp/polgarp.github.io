@@ -32,7 +32,7 @@ layout: default
   <section class="about-sec">
     <h2 class="eyebrow">Work with me</h2>
     {% if a.contact.line %}<p class="about-lead">{{ a.contact.line }}</p>{% endif %}
-    <p class="about__contact-email">Want to talk? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="about__contact-email">Want to talk? <a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ '/now/' | relative_url }}">what I'm up to now</a></p>
   </section>
 </article>
 <script src="{{ '/assets/js/about.js' | relative_url }}" defer></script>
