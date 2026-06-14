@@ -778,6 +778,13 @@ h3:hover .heading-anchor {
 // ----- Splash pages (portfolio/playground indexes)
 
 // Cover images break out of the text column to a wider, centered frame.
+// The image centres on its containing block, so that block must span the full
+// (viewport-centred) column — otherwise it inherits the 65ch prose measure and
+// the image drifts left, clipping at mid widths.
+.page-splash .post__body > p:has(> img) {
+  max-width: none;
+}
+
 .page-splash .post__body > p > img {
   display: block;
   width: min(100vw - 2.5rem, 64rem);
