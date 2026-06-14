@@ -30,7 +30,7 @@ layout: default
     <p class="area__num" aria-hidden="true">{{ area.num }}</p>
     <h2 class="area__headline">{{ area.headline }}</h2>
     <p class="area__line">{{ area.line }}</p>
-    {% include journey-card.html slug=area.key.slug blurb=area.key.blurb %}
+    {% include journey-card.html slug=area.key.slug blurb=area.key.blurb image=area.key.image %}
     {% if area.more %}
     <ul class="area__more">
       {% for slug in area.more %}

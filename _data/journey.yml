@@ -3,7 +3,7 @@
 # case study's own front matter by _includes/journey-card.html.
 
 intro:
-  lead: "I bring coherence to products, teams, and whole portfolios."
+  lead: "I bring coherence to products, teams, and product portfolios."
   sub: "Fifteen years of it: founding design teams, scaling discovery practice, and steering strategy with design, at every altitude."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
@@ -35,6 +35,7 @@ areas:
     line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product."
     key:
       slug: 2019-aligning-teams-through-an-ia-redesign
+      image: /assets/images/portfolio/hints/hint-coherence.jpg
       blurb: "Unified seven teams' fragmented B2B app behind one information architecture. ~20% more users reached their intended flows, and the IA outlived me by years."
     more:
       - 2026-build-a-horizontal-framework-with-ai
@@ -46,6 +47,7 @@ areas:
     line: "Design can show the future, not just argue about it. I use vision and prototypes to steer strategy and align leadership."
     key:
       slug: 2022-design-vision-product-vision
+      image: /assets/images/portfolio/hints/hint-vision.jpg
       blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
     more:
       - 2025-driving-alignment-with-prototypes
@@ -55,6 +57,7 @@ areas:
     line: "Good products come from understanding, not assumptions. I make research and discovery part of how decisions get made, not a phase before the real work."
     key:
       slug: 2022-raising-org-maturity-through-product-work
+      image: /assets/images/portfolio/hints/hint-discovery.jpg
       blurb: "Used real product work to pull a startup's practices up a maturity level, discovery by example, not decree."
     more:
       - 2020-a-data-driven-approach-to-design-strategy
@@ -65,6 +68,7 @@ areas:
     line: "A good team makes everyone around it better. I build teams with clear growth, embedded practice, and deliberate org design."
     key:
       slug: 2015-designing-a-ux-team
+      image: /assets/images/portfolio/hints/hint-teams.jpg
       blurb: "Built Emarsys' first UX team and practice from scratch, with the next two heads of UX promoted from within."
     more:
       - 2021-building-a-user-research-team

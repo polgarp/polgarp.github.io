@@ -18,6 +18,7 @@
   <span class="jcard__title">{{ story.title }}</span>
   {% if include.blurb %}<span class="jcard__blurb">{{ include.blurb }}</span>{% endif %}
   <span class="jcard__cue" aria-hidden="true">Read the story →</span>
+  {% if include.image %}<span class="jcard__hint"><img src="{{ include.image | relative_url }}" alt="" loading="lazy"></span>{% endif %}
 </a>
   {% endif %}
 {% endif %}
