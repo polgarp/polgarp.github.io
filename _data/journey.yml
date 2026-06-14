@@ -4,7 +4,7 @@
 
 intro:
   lead: "I build design teams that drive product strategy, staying close to the craft."
-  sub: "I lead to coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
+  sub: "I bring coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
 career:
@@ -35,7 +35,7 @@ areas:
     line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product."
     key:
       slug: 2019-aligning-teams-through-an-ia-redesign
-      blurb: "Unified seven teams' fragmented B2B app behind one information architecture, ~20% more users reached their intended flows, and the IA outlived me by years."
+      blurb: "Unified seven teams' fragmented B2B app behind one information architecture. ~20% more users reached their intended flows, and the IA outlived me by years."
     more:
       - 2026-build-a-horizontal-framework-with-ai
       - 2026-making-a-complex-portfolio-feel-simple
@@ -43,7 +43,7 @@ areas:
 
   - num: "02"
     headline: "Shaping strategy through design vision"
-    line: "Design can show the future, looking beyond the immediate horizon. I use vision and prototypes to steer strategy and align leadership."
+    line: "Design can show the future, not just argue about it. I use vision and prototypes to steer strategy and align leadership."
     key:
       slug: 2022-design-vision-product-vision
       blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
@@ -62,7 +62,7 @@ areas:
 
   - num: "04"
     headline: "Building and scaling design teams"
-    line: "A strong team multiplies everyone's impact. I build teams with clear growth, embedded practice, and deliberate org design."
+    line: "A good team makes everyone around it better. I build teams with clear growth, embedded practice, and deliberate org design."
     key:
       slug: 2015-designing-a-ux-team
       blurb: "Built Emarsys' first UX team and practice from scratch, with the next two heads of UX promoted from within."
