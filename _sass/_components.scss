@@ -375,19 +375,22 @@ article.post .post__body::after {
   width: auto;
   margin-bottom: 0.85rem;
   filter: grayscale(1) contrast(1.1);
-  transition: filter 0.2s ease;
+  transition: filter 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     filter: none;
   }
 }
 
-// In dark mode, invert the (mostly dark-on-transparent) logos to stay legible.
+// In dark mode logos are inverted (white) to stay legible; hovering lights them
+// up in true colour on a small white chip so dark wordmarks don't disappear.
 [data-theme="dark"] .case-meta__logo {
   filter: grayscale(1) invert(1) contrast(1.1);
 
   &:hover {
-    filter: grayscale(1) invert(1) contrast(1.1);
+    filter: none;
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff;
   }
 }
 
@@ -396,7 +399,9 @@ article.post .post__body::after {
     filter: grayscale(1) invert(1) contrast(1.1);
 
     &:hover {
-      filter: grayscale(1) invert(1) contrast(1.1);
+      filter: none;
+      background: #fff;
+      box-shadow: 0 0 0 3px #fff;
     }
   }
 }
@@ -956,7 +961,7 @@ h3:hover .heading-anchor {
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.85;
-  transition: filter 0.25s ease, opacity 0.25s ease;
+  transition: filter 0.25s ease, opacity 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .career__role {
@@ -984,16 +989,20 @@ h3:hover .heading-anchor {
   }
 }
 
-// In dark mode, keep logos inverted on hover — revealing brand colour would
-// sink the dark wordmarks into the background. Emphasis comes from the text.
+// In dark mode, hovering lights the logo up in true colour on a small white
+// chip so dark wordmarks stay legible (instead of sinking into the background).
 [data-theme="dark"] .career__item:hover .career__logo,
 [data-theme="dark"] .jcard:hover .jcard__logo {
-  filter: grayscale(1) invert(1);
+  filter: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px #fff;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .career__item:hover .career__logo,
   :root:not([data-theme="light"]) .jcard:hover .jcard__logo {
-    filter: grayscale(1) invert(1);
+    filter: none;
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff;
   }
 }
 
@@ -1026,6 +1035,7 @@ h3:hover .heading-anchor {
 .jcard {
   position: relative;
   display: block;
+  overflow: hidden; // clip the hint so it reveals from the card edge, not outside
   text-decoration: none;
   border: 1px solid var(--rule);
   padding: 1.25rem 7.5rem 2.9rem 1.5rem;
@@ -1096,7 +1106,7 @@ h3:hover .heading-anchor {
   margin-bottom: 0.9rem;
   filter: grayscale(1);
   opacity: 0.85;
-  transition: filter 0.2s ease, opacity 0.2s ease;
+  transition: filter 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .jcard__meta {
