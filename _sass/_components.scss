@@ -927,7 +927,7 @@ h3:hover .heading-anchor {
   display: block;
   text-decoration: none;
   border: 1px solid var(--rule);
-  padding: 1.25rem 6rem 2.9rem 1.5rem;
+  padding: 1.25rem 5.5rem 2.9rem 1.5rem;
   transition: border-color 0.15s ease, transform 0.15s ease;
 
   &:hover,
@@ -944,21 +944,22 @@ h3:hover .heading-anchor {
 
     .jcard__hint {
       opacity: 1;
-      transform: translateY(-50%);
+      transform: none;
     }
   }
 }
 
-// A 1:2 image band cropped from the story, floating in from the right on hover.
+// A vertical image band cropped from the story, spanning the full card height
+// and flush to the right edge; it floats in from the right on hover.
 .jcard__hint {
   position: absolute;
-  top: 50%;
-  right: 1.25rem;
-  transform: translateY(-50%) translateX(0.6rem);
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: 4rem;
-  aspect-ratio: 1 / 2;
   overflow: hidden;
   opacity: 0;
+  transform: translateX(0.6rem);
   transition: opacity 0.3s ease, transform 0.3s ease;
 
   img {
