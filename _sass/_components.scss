@@ -775,6 +775,207 @@ h3:hover .heading-anchor {
   margin-bottom: 2.5rem;
 }
 
+// ----- Journey (portfolio) page
+
+.journey__head {
+  margin-bottom: var(--section);
+}
+
+.journey__lead {
+  font-size: var(--text-md);
+  max-width: 30ch;
+  margin-top: 1rem;
+}
+
+.journey__sub {
+  color: var(--ink-muted);
+  max-width: var(--measure);
+  margin-top: 0.9rem;
+}
+
+// Career strip: a quick credibility scan.
+.career {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  border-block: 1px solid var(--rule);
+  padding-block: 1.5rem;
+  margin-bottom: var(--section);
+}
+
+.career__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.career__logo {
+  height: 1.5rem;
+  width: auto;
+  align-self: flex-start;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.85;
+}
+
+.career__role {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.career__period {
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+  margin-top: auto; // align periods along the bottom even when roles wrap
+}
+
+[data-theme="dark"] .career__logo,
+[data-theme="dark"] .jcard__logo {
+  filter: grayscale(1) invert(1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .career__logo,
+  :root:not([data-theme="light"]) .jcard__logo {
+    filter: grayscale(1) invert(1);
+  }
+}
+
+// Area block: big quiet numeral, headline, one line, key card, secondary links.
+.area {
+  margin-bottom: var(--section);
+}
+
+.area__num {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+.area__headline {
+  font-size: var(--text-lg);
+}
+
+.area__line {
+  color: var(--ink-muted);
+  max-width: var(--measure);
+  margin: 0.6rem 0 1.5rem;
+}
+
+// Key-story card.
+.jcard {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 1.25rem 1.5rem 1.5rem;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--accent);
+
+    .jcard__logo { filter: none; opacity: 1; }
+    .jcard__arrow { color: var(--accent); }
+  }
+}
+
+.jcard__logo {
+  display: block;
+  height: 1.6rem;
+  width: auto;
+  margin-bottom: 0.9rem;
+  filter: grayscale(1);
+  opacity: 0.85;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.jcard__meta {
+  display: block;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+.jcard__title {
+  display: block;
+  font-weight: 600;
+  font-size: var(--text-md);
+}
+
+.jcard__arrow {
+  color: var(--ink-muted);
+  transition: color 0.15s ease;
+}
+
+.jcard__blurb {
+  display: block;
+  color: var(--ink-muted);
+  margin-top: 0.6rem;
+  max-width: 60ch;
+}
+
+// Secondary story links under each area.
+.area__more {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.jlink {
+  text-decoration: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+
+  .jlink__title {
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 0.2em;
+  }
+
+  .jlink__co {
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+
+  &:hover .jlink__title {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+}
+
+.area--foundations .area__headline {
+  font-size: var(--text-md);
+  color: var(--ink-muted);
+}
+
+.journey__cta {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+  margin-top: var(--section);
+}
+
+.journey__cta-actions {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .career {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
 // ----- Splash pages (portfolio/playground indexes)
 
 // Cover images break out of the text column to a wider, centered frame.
