@@ -480,66 +480,42 @@ article.post .post__body::after {
   margin-bottom: 1rem;
 }
 
-.beyond__intro {
-  max-width: var(--measure);
-  margin-bottom: 1.5rem;
-}
-
-// A glossary-style list: labels stack as a clean column; the note for each
-// reveals to the right on hover/focus, so there are no empty gaps at rest.
-.facets {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.facet {
+// A compact row of interest chips; one shared caption below shows the hovered
+// chip's note and defaults to a friendly line, so nothing reveals into emptiness.
+.beyond__chips {
   display: flex;
-  align-items: baseline;
-  gap: 1.25rem;
-  border-top: 1px solid var(--rule);
-  padding: 0.85rem 0;
-  cursor: default;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 1.1rem;
+}
 
-  &:last-child { border-bottom: 1px solid var(--rule); }
+.beyond__chip {
+  font: inherit;
+  font-size: var(--text-sm);
+  background: none;
+  cursor: pointer;
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  padding: 0.25rem 0.7rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
 
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+  &:hover,
+  &:focus-visible,
+  &.is-active {
+    color: var(--accent);
+    border-color: var(--accent);
   }
 }
 
-.facet__label {
-  flex: none;
-  width: 9rem;
-  font-weight: 600;
-  font-size: var(--text-md);
-  transition: color 0.15s ease;
-}
-
-.facet__note {
-  flex: 1;
+.beyond__caption {
+  max-width: var(--measure);
+  min-height: 3em; // hold space so 1- and 2-line notes don't jump the layout
   color: var(--ink-muted);
-  opacity: 0;
-  transform: translateX(-0.4rem);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
 
-.facet:hover,
-.facet:focus-within,
-.facet:focus {
-  .facet__label { color: var(--accent); }
-  .facet__note { opacity: 1; transform: none; }
-}
-
-// On touch there's no hover — show the notes by default.
-@media (hover: none) {
-  .facet__note { opacity: 1; transform: none; }
-}
-
-@media (max-width: 600px) {
-  .facet { flex-direction: column; gap: 0.3rem; }
-  .facet__label { width: auto; }
+  &::before {
+    content: "› ";
+    color: var(--accent);
+  }
 }
 
 .about__contact {
