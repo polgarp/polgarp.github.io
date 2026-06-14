@@ -6,29 +6,13 @@
    id="layer"
    x="0px"
    y="0px"
-   viewBox="0 0 652 352"
+   viewBox="0 0 599.74707 125.64855"
    xml:space="preserve"
-   sodipodi:docname="emarsys-logo.svg"
-   width="652"
-   height="352"
-   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   width="599.74707"
+   height="125.64855"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs3" /><sodipodi:namedview
-   id="namedview2"
-   pagecolor="#ffffff"
-   bordercolor="#000000"
-   borderopacity="0.25"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="0.94031655"
-   inkscape:cx="294.58165"
-   inkscape:cy="189.29796"
-   inkscape:current-layer="layer" />
+   id="defs3" />
 <style
    type="text/css"
    id="style1">
@@ -44,7 +28,7 @@
 </style>
 <g
    id="Homepage"
-   transform="translate(5.52648,-146.02427)">
+   transform="translate(-20.6,-259.2)">
 	<g
    id="Homepage---Active-Client"
    transform="translate(-33,-34)">
@@ -109,7 +93,7 @@
 						<polygon
    id="path-1_1_"
    class="st2"
-   points="481.7,288.6 481.7,347.7 426.6,347.7 426.6,288.6 " />
+   points="426.6,347.7 426.6,288.6 481.7,288.6 481.7,347.7 " />
 					</g>
 				</mask>
 				<path
@@ -121,7 +105,7 @@
 			<polygon
    id="Fill-16"
    class="st4"
-   points="63.8,317.5 63.8,336.9 107.1,317.5 107.1,298 " />
+   points="107.1,317.5 107.1,298 63.8,317.5 63.8,336.9 " />
 			<g
    id="Group-20"
    transform="translate(5.07977,19.648549)">
@@ -156,23 +140,23 @@
 						<polygon
    id="path-3_1_"
    class="st2"
-   points="37.4,365.2 102,365.2 102,317.2 37.4,317.2 " />
+   points="102,317.2 37.4,317.2 37.4,365.2 102,365.2 " />
 					</g>
 				</mask>
 				<polygon
    id="Fill-18"
    class="st6"
-   points="102,336.6 37.4,365.2 37.4,345.8 102,317.2 "
+   points="37.4,345.8 102,317.2 102,336.6 37.4,365.2 "
    mask="url(#mask-4_1_)" />
 			</g>
 			<polygon
    id="Fill-21"
    class="st7"
-   points="63.8,317.5 63.8,336.9 20.6,317.5 20.6,298 " />
+   points="20.6,317.5 20.6,298 63.8,317.5 63.8,336.9 " />
 			<polygon
    id="Fill-23"
    class="st8"
-   points="107.1,278.6 20.6,317.5 20.6,298 107.1,259.2 " />
+   points="20.6,298 107.1,259.2 107.1,278.6 20.6,317.5 " />
 		</g>
 	</g>
 </g>

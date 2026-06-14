@@ -4,7 +4,7 @@
 
 intro:
   lead: "I build design teams that drive product strategy, staying close to the craft."
-  sub: "My throughline is coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
+  sub: "I lead to coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
 career:
@@ -35,7 +35,7 @@ areas:
     line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product."
     key:
       slug: 2019-aligning-teams-through-an-ia-redesign
-      blurb: "Unified seven teams' fragmented B2B app behind one information architecture — ~20% more users reached their intended flows, and the IA outlived me by years."
+      blurb: "Unified seven teams' fragmented B2B app behind one information architecture, ~20% more users reached their intended flows, and the IA outlived me by years."
     more:
       - 2026-build-a-horizontal-framework-with-ai
       - 2026-making-a-complex-portfolio-feel-simple
@@ -43,19 +43,19 @@ areas:
 
   - num: "02"
     headline: "Shaping strategy through design vision"
-    line: "Design can show the future, not just describe it. I use vision and prototypes to redirect strategy and align leadership."
+    line: "Design can show the future, looking beyond the immediate horizon. I use vision and prototypes to steer strategy and align leadership."
     key:
       slug: 2022-design-vision-product-vision
-      blurb: "A vision prototype that moved Krisp from a feature to a product — and redirected the roadmap behind it."
+      blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
     more:
       - 2025-driving-alignment-with-prototypes
 
   - num: "03"
     headline: "Embedding discovery into product decisions"
-    line: "Good products come from understanding, not assumptions. I make research and discovery part of how decisions get made — not a phase before the real work."
+    line: "Good products come from understanding, not assumptions. I make research and discovery part of how decisions get made, not a phase before the real work."
     key:
       slug: 2022-raising-org-maturity-through-product-work
-      blurb: "Used real product work to pull a startup's practices up a maturity level — discovery by example, not decree."
+      blurb: "Used real product work to pull a startup's practices up a maturity level, discovery by example, not decree."
     more:
       - 2020-a-data-driven-approach-to-design-strategy
       - 2017-a-ux-process-for-transparent-collaboration
@@ -65,14 +65,14 @@ areas:
     line: "A strong team multiplies everyone's impact. I build teams with clear growth, embedded practice, and deliberate org design."
     key:
       slug: 2015-designing-a-ux-team
-      blurb: "Built Emarsys' first UX team and practice from scratch; the next two heads of UX were both promoted from within."
+      blurb: "Built Emarsys' first UX team and practice from scratch, with the next two heads of UX promoted from within."
     more:
       - 2021-building-a-user-research-team
       - 2021-four-leadership-modes-for-a-troubled-launch
       - 2018-improve-with-experience-stories
 
 foundations:
-  line: "Earlier, as a UX researcher at Prezi (2011–2014), I built the craft this all rests on — and a habit of learning in public."
+  line: "Earlier, as a UX researcher at Prezi, I built the craft this all rests on, and a habit of learning in public."
   slugs:
     - 2013-learning-with-stories-in-mobile-app-design
     - 2014-shared-understanding-with-story-mapping

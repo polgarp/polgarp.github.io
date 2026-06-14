@@ -9,7 +9,7 @@
   {% if include.variant == "secondary" %}
 <a class="jlink" href="{{ story.url | relative_url }}">
   <span class="jlink__title">{{ story.title }}</span>
-  <span class="jlink__co">@{{ company }}</span>
+  {% if role.text contains "@" %}<span class="jlink__co">@{{ company }}</span>{% endif %}
 </a>
   {% else %}
 <a class="jcard" href="{{ story.url | relative_url }}">
