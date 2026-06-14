@@ -6,15 +6,15 @@ beyond:
   default: "Outside work, I chase the whimsy of details that create emergent ideas."
   facets:
     - label: "Cooking"
-      note: "Mostly improvised, occasionally ambitious — the kitchen is where I think with my hands."
+      note: "Mostly improvised, occasionally ambitious, mix of creative techniques for new dishes and effective meal planning. The kitchen is where I think with my hands."
     - label: "Sci-fi"
-      note: "I read it for the ideas: futures that argue with the present."
+      note: "I read for the ideas as much as for the stories. Exploring futures helps to argue with the present."
     - label: "Boardgames"
-      note: "Systems you can hold — a ruleset that turns strangers into a table of schemers."
+      note: "Systems you can hold, rules that turn strangers into a table of schemers."
     - label: "Painting"
-      note: "Slow, analogue, and gloriously undo-less — the opposite of pixels."
+      note: "Slow, analogue, and gloriously undo-less, the opposite of pixels."
     - label: "Cities"
-      note: "I explore new ones on foot, collecting the small design decisions most people walk past."
+      note: "I explore new ones on foot, enjoying people expressing themselves via systems, artifacts, and ideas."
 
 contact:
-  line: "I mentor designers and advise teams now and then — on design practice, discovery, and growing people."
+  line: "I mentor designers and advise teams occasionally on design practice, discovery, and growing people."
