@@ -2,10 +2,11 @@
 permalink: /about/
 title: "I'm *super* annoyed by bad experiences."
 intro: "So I channel that energy into building better things — and the teams and practices that make them possible."
+work_lead: "I build the systems and culture that make great products possible."
 avatar: /assets/images/bio-photo.jpg
 layout: about
 ---
 
-I'm a design leader who's stayed close to the craft. The thing I care about most is **coherence** — making scattered parts feel like one thing, whether that's a product, a team, or a whole portfolio.
+I've built design organizations from scratch, shaped product strategy through vision work, and made research and discovery part of how companies actually decide. Concretely: scaling a team from 2 to 16, aligning 50+ stakeholders around one coherent direction, and helping leadership commit to a hard strategic pivot.
 
-The fifteen-year version of how I got here is on my [Journey](/portfolio/). The short version: from research at Prezi to building and leading design at Emarsys, Trustpilot, Krisp, and now Canonical.
+Today I'm lead designer at [Canonical](https://canonical.com/), driving cross-portfolio coherence for Ubuntu Pro. The fifteen-year arc — Prezi, Emarsys, Trustpilot, Krisp — is on my [Journey](/portfolio/).
