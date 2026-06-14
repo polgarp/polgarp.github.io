@@ -2,13 +2,14 @@
 layout: default
 ---
 {% assign j = site.data.journey %}
-<nav class="area-index" aria-label="Jump to area">
+<nav class="area-index" aria-label="Jump to section">
+  <a href="#journey-top" data-target="journey-top">intro</a>
   {% for area in j.areas %}
   <a href="#area-{{ area.num }}" data-target="area-{{ area.num }}">{{ area.num }}</a>
   {% endfor %}
 </nav>
 <article class="journey">
-  <header class="journey__head">
+  <header class="journey__head" id="journey-top">
     <h1 class="post__title">{{ page.title }}</h1>
     <p class="journey__lead">{{ j.intro.lead }}</p>
     <p class="journey__sub">{{ j.intro.sub }}</p>
