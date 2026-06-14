@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% assign a = site.data.about %}
+<article class="about">
+  <header class="about__head">
+    <div class="about__intro">
+      <h1 class="post__title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      {% if page.intro %}<p class="about__lede">{{ page.intro }}</p>{% endif %}
+    </div>
+    {% if page.avatar %}
+    <img class="about__photo" src="{{ page.avatar | relative_url }}" alt="Portrait of {{ site.name }}">
+    {% endif %}
+  </header>
+
+  <div class="post__body about__bio">
+    {{ content }}
+  </div>
+
+  <section class="beyond" aria-labelledby="beyond-h">
+    <h2 class="beyond__label" id="beyond-h">Beyond work</h2>
+    {% if a.beyond.intro %}<p class="beyond__intro">{{ a.beyond.intro }}</p>{% endif %}
+    <ul class="facets">
+      {% for f in a.beyond.facets %}
+      <li class="facet" tabindex="0">
+        <span class="facet__label">{{ f.label }}</span>
+        <span class="facet__note">{{ f.note }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer class="about__contact">
+    {% if a.contact.line %}<p>{{ a.contact.line }}</p>{% endif %}
+    <p>Want to talk? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </footer>
+</article>

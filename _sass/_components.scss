@@ -428,21 +428,136 @@ article.post .post__body::after {
   100% { transform: translateY(78px) rotate(90deg); }
 }
 
-// ----- Avatar (about page)
+// ----- About page
 
-.page-avatar {
-  float: right;
-  width: 7.5rem;
+.about__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: var(--section);
+}
+
+.about__lede {
+  margin-top: 1rem;
+  font-size: var(--text-md);
+  color: var(--ink-muted);
+  max-width: 30ch;
+}
+
+.about__photo {
+  flex: none;
+  width: 8.5rem;
   aspect-ratio: 1;
   object-fit: cover;
-  margin: 0.25rem 0 1rem 1.5rem;
   border-radius: 50%; // the source photo is circle-cropped
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+
+  &:hover { filter: none; }
+}
+
+[data-theme="dark"] .about__photo { filter: grayscale(1) brightness(0.95); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .about__photo { filter: grayscale(1) brightness(0.95); }
+}
+
+.about__bio {
+  max-width: var(--measure);
+  margin-bottom: var(--section);
+}
+
+// ----- Beyond work: interactive facets
+
+.beyond__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.beyond__intro {
+  max-width: var(--measure);
+  margin-bottom: 1.5rem;
+}
+
+// A glossary-style list: labels stack as a clean column; the note for each
+// reveals to the right on hover/focus, so there are no empty gaps at rest.
+.facets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facet {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  border-top: 1px solid var(--rule);
+  padding: 0.85rem 0;
+  cursor: default;
+
+  &:last-child { border-bottom: 1px solid var(--rule); }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.facet__label {
+  flex: none;
+  width: 9rem;
+  font-weight: 600;
+  font-size: var(--text-md);
+  transition: color 0.15s ease;
+}
+
+.facet__note {
+  flex: 1;
+  color: var(--ink-muted);
+  opacity: 0;
+  transform: translateX(-0.4rem);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.facet:hover,
+.facet:focus-within,
+.facet:focus {
+  .facet__label { color: var(--accent); }
+  .facet__note { opacity: 1; transform: none; }
+}
+
+// On touch there's no hover — show the notes by default.
+@media (hover: none) {
+  .facet__note { opacity: 1; transform: none; }
 }
 
 @media (max-width: 600px) {
-  .page-avatar {
-    width: 5.5rem;
+  .facet { flex-direction: column; gap: 0.3rem; }
+  .facet__label { width: auto; }
+}
+
+.about__contact {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+  margin-top: var(--section);
+  color: var(--ink-muted);
+  max-width: var(--measure);
+
+  a { color: var(--ink); }
+}
+
+@media (max-width: 600px) {
+  .about__head {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
+  .about__photo { width: 6rem; }
 }
 
 // ----- Search overlay

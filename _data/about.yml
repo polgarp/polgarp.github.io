@@ -1,0 +1,21 @@
+# Drives the "beyond work" section of /about. Facet notes are DRAFTS in Péter's
+# voice — correct the specifics (authors, games, painting style, cities).
+
+beyond:
+  intro: "Outside work, I chase the whimsy of details that create emergent ideas."
+  facets:
+    - label: "Cooking"
+      note: "Mostly improvised, occasionally ambitious. The kitchen is where I think with my hands."
+    - label: "Sci-fi"
+      note: "I read it for the ideas — futures that argue with the present."
+    - label: "Boardgames"
+      note: "Systems you can hold. I love a ruleset that turns strangers into a table of schemers."
+    - label: "Painting"
+      note: "Slow, analogue, and gloriously undo-less — the opposite of pixels."
+    - label: "Cities"
+      note: "I explore new ones on foot, collecting the small design decisions most people walk past."
+    - label: "Factorio"
+      note: "Optimising a factory to 150–200k SPM. Coherence at scale, for fun."
+
+contact:
+  line: "I mentor designers and advise teams now and then — on design practice, discovery, and growing people."
