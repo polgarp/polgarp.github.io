@@ -797,6 +797,7 @@ h3:hover .heading-anchor {
       font-size: var(--text-sm);
       font-variant-numeric: tabular-nums;
       letter-spacing: var(--tracking-caps);
+      text-transform: uppercase;
       text-decoration: none;
       color: var(--ink-muted);
       transition: color 0.15s ease;
@@ -838,6 +839,13 @@ h3:hover .heading-anchor {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+
+  // hovering anywhere in a role's column fades its colour in
+  &:hover {
+    .career__logo { filter: none; opacity: 1; }
+    .career__role { color: var(--accent); }
+    .career__period { color: var(--ink); }
+  }
 }
 
 .career__logo {
@@ -847,11 +855,13 @@ h3:hover .heading-anchor {
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.85;
+  transition: filter 0.25s ease, opacity 0.25s ease;
 }
 
 .career__role {
   font-size: var(--text-sm);
   font-weight: 600;
+  transition: color 0.25s ease;
 }
 
 .career__period {
@@ -859,6 +869,7 @@ h3:hover .heading-anchor {
   color: var(--ink-muted);
   font-variant-numeric: tabular-nums;
   margin-top: auto; // align periods along the bottom even when roles wrap
+  transition: color 0.25s ease;
 }
 
 [data-theme="dark"] .career__logo,
@@ -868,6 +879,19 @@ h3:hover .heading-anchor {
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .career__logo,
   :root:not([data-theme="light"]) .jcard__logo {
+    filter: grayscale(1) invert(1);
+  }
+}
+
+// In dark mode, keep logos inverted on hover — revealing brand colour would
+// sink the dark wordmarks into the background. Emphasis comes from the text.
+[data-theme="dark"] .career__item:hover .career__logo,
+[data-theme="dark"] .jcard:hover .jcard__logo {
+  filter: grayscale(1) invert(1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .career__item:hover .career__logo,
+  :root:not([data-theme="light"]) .jcard:hover .jcard__logo {
     filter: grayscale(1) invert(1);
   }
 }
