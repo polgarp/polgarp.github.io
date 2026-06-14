@@ -1,12 +1,11 @@
-# Drives the "beyond work" section of /about. Notes are DRAFTS in Péter's voice
-# — correct the specifics (authors, games, painting style, cities). The caption
+# Drives the "beyond work" section of /about. The caption
 # defaults to `default` and swaps to a facet's note on hover/focus.
 
 beyond:
   default: "Outside work, I chase the whimsy of details that create emergent ideas."
   facets:
     - label: "Cooking"
-      note: "Mostly improvised, occasionally ambitious, mix of creative techniques for new dishes and effective meal planning. The kitchen is where I think with my hands."
+      note: "Mostly improvised, occasionally ambitious, a mix of creative techniques for new dishes and effective meal planning.
     - label: "Sci-fi"
       note: "I read for the ideas as much as for the stories. Exploring futures helps to argue with the present."
     - label: "Boardgames"
