@@ -462,14 +462,12 @@ article.post .post__body::after {
   :root:not([data-theme="light"]) .about__photo { filter: grayscale(1) brightness(0.95); }
 }
 
-.about__bio {
-  max-width: var(--measure);
+// Three consistent sections: each opens with an eyebrow + a red "›" lead line.
+.about-sec {
   margin-bottom: var(--section);
 }
 
-// ----- Beyond work: interactive facets
-
-.beyond__label {
+.eyebrow {
   font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: var(--tracking-caps);
@@ -479,6 +477,28 @@ article.post .post__body::after {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
+
+.about-lead {
+  max-width: var(--measure);
+  margin-bottom: 1rem;
+
+  &::before {
+    content: "› ";
+    color: var(--accent);
+  }
+}
+
+.about__bio {
+  max-width: var(--measure);
+}
+
+.about__contact-email {
+  color: var(--ink-muted);
+
+  a { color: var(--ink); }
+}
+
+// ----- Beyond work: interactive chips
 
 // A compact row of interest chips; one shared caption below shows the hovered
 // chip's note and defaults to a friendly line, so nothing reveals into emptiness.
@@ -516,16 +536,6 @@ article.post .post__body::after {
     content: "› ";
     color: var(--accent);
   }
-}
-
-.about__contact {
-  border-top: 1px solid var(--rule);
-  padding-top: 1.5rem;
-  margin-top: var(--section);
-  color: var(--ink-muted);
-  max-width: var(--measure);
-
-  a { color: var(--ink); }
 }
 
 @media (max-width: 600px) {

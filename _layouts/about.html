@@ -13,12 +13,14 @@ layout: default
     {% endif %}
   </header>
 
-  <div class="post__body about__bio">
-    {{ content }}
-  </div>
+  <section class="about-sec">
+    <h2 class="eyebrow">The work</h2>
+    {% if page.work_lead %}<p class="about-lead">{{ page.work_lead }}</p>{% endif %}
+    <div class="post__body about__bio">{{ content }}</div>
+  </section>
 
-  <section class="beyond" aria-labelledby="beyond-h">
-    <h2 class="beyond__label" id="beyond-h">Beyond work</h2>
+  <section class="about-sec beyond" aria-labelledby="beyond-h">
+    <h2 class="eyebrow" id="beyond-h">Beyond work</h2>
     <div class="beyond__chips">
       {% for f in a.beyond.facets %}
       <button class="beyond__chip" type="button" data-note="{{ f.note | escape }}">{{ f.label | downcase }}</button>
@@ -27,9 +29,10 @@ layout: default
     <p class="beyond__caption" data-default="{{ a.beyond.default | escape }}" aria-live="polite">{{ a.beyond.default }}</p>
   </section>
 
-  <footer class="about__contact">
-    {% if a.contact.line %}<p>{{ a.contact.line }}</p>{% endif %}
-    <p>Want to talk? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-  </footer>
+  <section class="about-sec">
+    <h2 class="eyebrow">Work with me</h2>
+    {% if a.contact.line %}<p class="about-lead">{{ a.contact.line }}</p>{% endif %}
+    <p class="about__contact-email">Want to talk? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </section>
 </article>
 <script src="{{ '/assets/js/about.js' | relative_url }}" defer></script>
