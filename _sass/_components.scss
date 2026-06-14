@@ -801,6 +801,48 @@ h3:hover .heading-anchor {
   transform: translateX(-50%);
 }
 
+// Indexed works: a heading that follows a cover image is a showcased "thing".
+// Number it, enlarge it, and turn its description into a caption — so the page
+// reads as a catalogue rather than a post. Headings without a cover image (the
+// page intro, "Foundations") stay plain and unnumbered.
+.page-splash .post__body {
+  counter-reset: work;
+}
+
+.page-splash .post__body > p:has(> img) + :is(h1, h2) {
+  counter-increment: work;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: var(--text-lg);
+
+  &::before {
+    content: counter(work, decimal-leading-zero);
+    flex: none;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: var(--tracking-caps);
+    color: var(--ink-muted);
+  }
+
+  // a red arrow only where the title links somewhere
+  a:not(.heading-anchor)::after {
+    content: " →";
+    color: var(--accent);
+    white-space: nowrap;
+  }
+}
+
+// Section deep-link anchors aren't useful on a showcase index.
+.page-splash .heading-anchor {
+  display: none;
+}
+
+.page-splash .post__body > p:has(> img) + :is(h1, h2) + p {
+  color: var(--ink-muted);
+  max-width: 52ch;
+}
+
 // ----- Emojis (9am26 section headings): keep the wink, drop the palette fight.
 
 .u-emoji,
