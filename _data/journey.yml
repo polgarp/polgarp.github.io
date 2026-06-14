@@ -3,8 +3,8 @@
 # case study's own front matter by _includes/journey-card.html.
 
 intro:
-  lead: "I build design teams that drive product strategy, staying close to the craft."
-  sub: "I bring coherence, across a user's journey, teams, or a whole product portfolio, built on discovery and practices that outlast me."
+  lead: "I bring coherence to products, teams, and whole portfolios."
+  sub: "Fifteen years of it: founding design teams, scaling discovery practice, and steering strategy with design, at every altitude."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
 career:
