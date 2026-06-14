@@ -781,8 +781,16 @@ h3:hover .heading-anchor {
 // The image centres on its containing block, so that block must span the full
 // (viewport-centred) column — otherwise it inherits the 65ch prose measure and
 // the image drifts left, clipping at mid widths.
+// Each item is image → title → description: push the image well clear of the
+// previous block and snug it to its own title below.
 .page-splash .post__body > p:has(> img) {
   max-width: none;
+  margin-top: var(--section);
+  margin-bottom: 0.9rem;
+}
+
+.page-splash .post__body > p:has(> img) + :is(h1, h2, h3) {
+  margin-top: 0;
 }
 
 .page-splash .post__body > p > img {
