@@ -195,6 +195,12 @@ main.shell {
   height: 0.7rem;
   background: var(--ink);
   transition: background-color 0.15s ease;
+  // iOS Safari re-rounds the tumble's final rotated matrix differently from the
+  // resting translateX, snapping a sub-pixel on the light→dark hand-off. Pinning
+  // the block to its own layer stabilises the rounding and kills the flicker.
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .theme-switch.is-dark .theme-switch__block {
