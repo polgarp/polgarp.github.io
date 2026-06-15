@@ -195,12 +195,6 @@ main.shell {
   height: 0.7rem;
   background: var(--ink);
   transition: background-color 0.15s ease;
-  // iOS Safari re-rounds the tumble's final rotated matrix differently from the
-  // resting translateX, snapping a sub-pixel on the light→dark hand-off. Pinning
-  // the block to its own layer stabilises the rounding and kills the flicker.
-  will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .theme-switch.is-dark .theme-switch__block {
@@ -384,28 +378,21 @@ main.shell {
   }
 }
 
-// Two-pivot domino roll. Phase 1 pivots on the bottom-right corner D
-// (transform-origin 100% 100%) rotating 0→90° so the block lies on edge CD.
-// At the midpoint the origin jumps to corner C (100% 0%) with a compensating
-// translate of (h, h), derived so the block's position is continuous across
-// the switch, then phase 2 rotates 90→180° to stand it up on edge CB.
+// Two-pivot domino roll. The block tips onto its bottom-right corner (0→90°),
+// lies flat, then rises over its far corner (90→180°) to stand on the far end.
+//
+// The pivots are baked into per-keyframe translates against a single, constant
+// transform-origin (the block's centre). An earlier version swapped the origin
+// mid-animation; iOS Safari doesn't apply that swap in lockstep with the
+// translate, so the block flickered on the light→dark roll. With the origin
+// fixed there's nothing to desync. Translates are the exact pivot positions:
+// τ(θ) = (o − c) − R(θ)(o − c) + τ₀, sampled every 45°.
 @keyframes tip {
-  0% {
-    transform-origin: 100% 100%;
-    transform: rotate(0deg);
-  }
-  50% {
-    transform-origin: 100% 100%;
-    transform: rotate(90deg);
-  }
-  50.01% {
-    transform-origin: 100% 0%;
-    transform: translate(0.7rem, 0.7rem) rotate(90deg);
-  }
-  100% {
-    transform-origin: 100% 0%;
-    transform: translate(0.7rem, 0.7rem) rotate(180deg);
-  }
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(0.297rem, -0.018rem) rotate(45deg); }
+  50%  { transform: translate(0.52rem, 0.18rem) rotate(90deg); }
+  75%  { transform: translate(0.743rem, 0.477rem) rotate(135deg); }
+  100% { transform: translate(1.04rem, 0) rotate(180deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
