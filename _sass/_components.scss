@@ -38,15 +38,23 @@
   font-size: var(--text-sm);
   color: var(--ink-muted);
   max-width: var(--measure);
+
+  // External links carry the same departure mark as the post body.
+  a[href^="http"]::after {
+    content: "↗";
+    margin-left: 0.2ch;
+    color: var(--ink-muted);
+  }
 }
 
 .intro__links {
   margin-top: 0.5rem;
   font-size: var(--text-sm);
+  color: var(--ink-muted); // the · separator
 
+  // Underlined like the rest of the site's links, so they read as clickable.
   a {
-    text-decoration: none;
-    color: var(--ink-muted);
+    color: inherit;
 
     &:hover {
       color: var(--accent);
