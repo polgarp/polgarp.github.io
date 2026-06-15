@@ -6,7 +6,23 @@
   margin-bottom: var(--section);
 }
 
-// Small name kicker above the lede — orients first-time arrivals that this is
+// The lede's one link (to Journey) is the lede's single red phrase: a quiet
+// doorway into the work, not a sixth nav item. Red is rationed, so it reads as
+// "this earned your attention" rather than as decoration.
+.intro .post__title a {
+  color: var(--accent);
+  text-decoration: none;
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+}
+
+// Small name kicker above the lede, orients first-time arrivals that this is
 // a personal home, without repeating the role (the line below states that).
 .intro__eyebrow {
   font-size: var(--text-sm);
@@ -62,17 +78,23 @@
 .topic-chip {
   font: inherit;
   font-size: var(--text-sm);
-  background: none;
+  // A filled rest state reads as a pressable control, not an inline tag, so the
+  // chips look clickable before you hover. The press nudge confirms the tap.
+  background: var(--surface);
   cursor: pointer;
   color: var(--ink-muted);
   border: 1px solid var(--rule);
   padding: 0.25rem 0.7rem;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 
   &:hover,
   &:focus-visible {
     color: var(--accent);
     border-color: var(--accent);
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 
   &.is-active {
@@ -203,6 +225,8 @@
 
 .post__title {
   max-width: 38ch;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .post__lede {
@@ -221,6 +245,10 @@
 }
 
 .post__body {
+  // Narrower measure than the global 65ch: long-form reading is easier at
+  // ~60ch. Children below inherit it through var(--measure).
+  --measure: 60ch;
+
   > p,
   > ul,
   > ol,
@@ -232,17 +260,21 @@
     max-width: var(--measure);
   }
 
-  // Generous air around headings carries the hierarchy.
+  // Hierarchy carried by weight and tracking, not size alone: section headings
+  // are heavier and tighter than the 600-weight subheads below them.
   // (Some newsletter issues use h1 section headings; same scale as h2.)
   > h1,
   > h2 {
     font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
     margin-top: 3.25rem;
     margin-bottom: 1rem;
   }
 
   > h3 {
     font-size: 1.0625rem;
+    font-weight: 600;
     margin-top: 2.5rem;
     margin-bottom: 0.8rem;
   }
@@ -282,7 +314,7 @@
   }
 }
 
-// End-of-article mark — articles only, so empty page intros
+// End-of-article mark, articles only, so empty page intros
 // (tags, categories) don't render a stray mark.
 article.post .post__body::after {
   content: "▪";
@@ -449,7 +481,7 @@ article.post .post__body::after {
   margin-top: 1rem;
   font-size: var(--text-md);
   color: var(--ink-muted);
-  max-width: 30ch;
+  max-width: 38ch;
 }
 
 .about__photo {
@@ -885,7 +917,7 @@ h3:hover .heading-anchor {
 
 // ----- Journey (portfolio) page
 
-// Sticky area index — sits in the left gutter on wide screens, tracks scroll.
+// Sticky area index: sits in the left gutter on wide screens, tracks scroll.
 .area-index {
   display: none;
 }
@@ -1198,7 +1230,7 @@ h3:hover .heading-anchor {
 
 // Cover images break out of the text column to a wider, centered frame.
 // The image centres on its containing block, so that block must span the full
-// (viewport-centred) column — otherwise it inherits the 65ch prose measure and
+// (viewport-centred) column, otherwise it inherits the prose measure and
 // the image drifts left, clipping at mid widths.
 // Each item is image → title → description: push the image well clear of the
 // previous block and snug it to its own title below.
@@ -1221,7 +1253,7 @@ h3:hover .heading-anchor {
 }
 
 // Indexed works: a heading that follows a cover image is a showcased "thing".
-// Number it, enlarge it, and turn its description into a caption — so the page
+// Number it, enlarge it, and turn its description into a caption, so the page
 // reads as a catalogue rather than a post. Headings without a cover image (the
 // page intro, "Foundations") stay plain and unnumbered.
 .page-splash .post__body {

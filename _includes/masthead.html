@@ -5,7 +5,7 @@
       <span class="masthead__name">Péter Balázs Polgár</span>
     </a>
     <div class="masthead__right">
-      <nav class="masthead__nav" aria-label="Primary">
+      <nav class="masthead__nav" id="primary-nav" aria-label="Primary">
         <ul>
           {% for item in site.data.navigation.main %}
           <li>
@@ -15,6 +15,9 @@
         </ul>
       </nav>
       <div class="masthead__tools">
+        <button id="menu-toggle" class="masthead__menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+          <span class="masthead__menu-bars" aria-hidden="true"></span>
+        </button>
         <button id="search-toggle" type="button" aria-label="Search (press /)" title="Search ( / )">/</button>
         <button id="theme-toggle" class="theme-switch" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
           <span class="theme-switch__box" aria-hidden="true"><i class="theme-switch__block"></i></span>

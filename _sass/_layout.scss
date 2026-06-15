@@ -109,6 +109,12 @@ main.shell {
   gap: 1.5rem;
 }
 
+// The hamburger only exists under the mobile breakpoint; desktop shows the
+// inline nav. (Sizing/colour come from the shared .masthead__tools button rule.)
+.masthead__menu {
+  display: none;
+}
+
 .masthead__tools {
   display: flex;
   align-items: center;
@@ -151,7 +157,7 @@ main.shell {
 }
 
 // Dark-mode switch: a standing rectangle in a box. On toggle the block tips
-// onto its side and stands back up on the far end — a Bauhaus tumble.
+// onto its side and stands back up on the far end, a Bauhaus tumble.
 .masthead__tools .theme-switch {
   display: inline-flex;
   align-items: center;
@@ -179,7 +185,7 @@ main.shell {
 }
 
 // A standing block (w 0.34 × h 0.7) on the floor of the box. It rolls like a
-// domino: tips onto corner D, lies on CD, then rises over corner C onto CB —
+// domino: tips onto corner D, lies on CD, then rises over corner C onto CB,
 // a true two-pivot roll, not a centre-spin. Travel = w + h = 1.04rem.
 .theme-switch__block {
   position: absolute;
@@ -259,7 +265,7 @@ main.shell {
   }
 }
 
-// One minute a day. Note: deliberately NOT grayscaled — the only
+// One minute a day. Note: deliberately NOT grayscaled, the only
 // full-color emoji on the site, while the clock reads 9:26.
 .footer__club {
   font-size: var(--text-xs);
@@ -274,6 +280,88 @@ main.shell {
   :root {
     --section: 2.75rem;
     --text-xl: 1.5rem;
+  }
+
+  .masthead {
+    position: relative;
+  }
+
+  .masthead__menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Three bars that fold into an X when the panel is open.
+  .masthead__menu-bars {
+    position: relative;
+    display: block;
+    width: 1.1rem;
+    height: 2px;
+    background: currentColor;
+    transition: background-color 0.15s ease;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      transition: transform 0.2s ease;
+    }
+
+    &::before { top: -6px; }
+    &::after { top: 6px; }
+  }
+
+  .masthead__menu[aria-expanded="true"] .masthead__menu-bars {
+    background: transparent;
+
+    &::before { transform: translateY(6px) rotate(45deg); }
+    &::after { transform: translateY(-6px) rotate(-45deg); }
+  }
+
+  // Collapsed nav: a full-width panel that drops below the bar when toggled.
+  .masthead__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    z-index: 30;
+
+    &.is-open {
+      display: block;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 0;
+      padding: 0.5rem 1.25rem 1rem;
+    }
+
+    li {
+      border-top: 1px solid var(--rule);
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 0.75rem 0;
+      font-size: var(--text-base);
+
+      // The current-page dot would sit off the left edge in the stacked list.
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
@@ -293,8 +381,8 @@ main.shell {
 // Two-pivot domino roll. Phase 1 pivots on the bottom-right corner D
 // (transform-origin 100% 100%) rotating 0→90° so the block lies on edge CD.
 // At the midpoint the origin jumps to corner C (100% 0%) with a compensating
-// translate of (h, h) — derived so the block's position is continuous across
-// the switch — then phase 2 rotates 90→180° to stand it up on edge CB.
+// translate of (h, h), derived so the block's position is continuous across
+// the switch, then phase 2 rotates 90→180° to stand it up on edge CB.
 @keyframes tip {
   0% {
     transform-origin: 100% 100%;
