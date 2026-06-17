@@ -12,6 +12,8 @@ sidebar:
 
 At Krisp (~200 employees at the time), the core challenge was existential: built on a successful noise cancellation technology, the app was mostly invisible to users, easily lost as a feature rather than a standalone product. The company needed to find a killer app that could carry recognizable value to a wider audience and expand the total addressable market. But **the product was being built feature-by-feature** as new technology became available, resulting in a fragmented user journey and no clear strategic direction. I took on a project to create a product vision that would unify our efforts, address user problems, and point toward the right future.
 
+## A four-week sprint to a tangible future
+
 My goal was to **prototype the future with a few compelling hero images** and interactions, that would energize the team and allow for better prioritization. Partnering with a product director and a founder, **I led a highly iterative, four-week process**. I focused on exploring divergent ideas and converging on a solution based on feedback from stakeholders, our design team, and users. This fast, iterative approach was essential to validate our ideas quickly and get buy-in from the organization.
 
 {% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-1.png" caption="User journey, after four weeks of iterative discovery" %}
@@ -24,4 +26,8 @@ I designed **a unified flow that addressed core user problems** and showcased th
 
 {% include figure image_path="/assets/images/portfolio/2022-design-vision-product-vision-2.png" caption="Hero images from the presentation to the whole company, showing key vision interaction points" %}
 
-The project delivered exactly what was needed — though not in the way we initially expected. By making the product direction tangible and testable, the vision showed leadership that this particular path wouldn’t carry the company where it needed to go. That clarity was the real outcome: the design vision gave the stakeholder group the confidence to make a major strategic pivot, and many of our ideas influenced the tech team’s roadmap going forward. **Design is a powerful tool for prediction. It lets us show, not just tell, a compelling story about the future and shape the product’s, and ultimately the company’s direction.**
+## The outcome we didn't expect
+
+The project delivered exactly what was needed — though not in the way we initially expected. By making the product direction tangible and testable, the vision showed leadership that this particular path wouldn’t carry the company where it needed to go. That clarity was the real outcome: the design vision gave the stakeholder group the confidence to make a major strategic pivot, and many of our ideas influenced the tech team’s roadmap going forward.
+
+{% include pullquote text="Design is a powerful tool for prediction. It lets us show, not just tell, a compelling story about the future, and shape the product's direction." %}

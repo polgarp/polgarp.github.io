@@ -18,10 +18,16 @@ I noticed a pattern where team members were staying comfortable as shallow gener
 
 {% include figure image_path="assets/images/portfolio/2018-improve-with-experience-stories-2.png" caption="Creating a level system" %}
 
-To address this, I designed a level system (an approach I called the 'UX RPG' to signify the end goal of a great team) to help people **set  goals and grow** themselves. This system was not a checklist, but a diagnostic tool for finding their growth directions and skills gaps.
+## The UX RPG
+
+To address this, I designed a level system (an approach I called the 'UX RPG' to signify the end goal of a great team) to help people **set goals and grow** themselves. This system was not a checklist, but a diagnostic tool for finding their growth directions and skills gaps.
 
 I introduced **'experience stories,'** which were like personal portfolio pieces focused on distilling lessons learned into reusable knowledge. These stories were a form of continuous **discovery**, turning individual experiences into shared knowledge. They helped us understand our strengths and weaknesses, which in turn helped to create a clearer **vision for our team’s future**. The system also became a key part of everyone's growth plan, a way to direct my coaching efforts, and a core topic of discussion in our 1on1s.
 
 {% include figure image_path="assets/images/portfolio/2018-improve-with-experience-stories-3.png" caption="Experience stories by the team" %}
 
-Making this system work required a lot of reflection and trust. But after two years, the results were clear: the best story writers were also our highest performers, and the system's transparency meant I got very few questions about promotions. People were focused on their own growth rather than comparing themselves to others.
+## What it produced
+
+Making this system work required a lot of reflection and trust. But after two years, the results were clear: the system's transparency meant I got very few questions about promotions, and people focused on their own growth rather than comparing themselves to others.
+
+{% include pullquote text="The best story writers were also our highest performers." %}

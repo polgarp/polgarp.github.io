@@ -16,7 +16,11 @@ The first step was improving the pricing page, but this turned out to be much mo
 
 {% include figure image_path="/assets/images/portfolio/2026-making-a-complex-portfolio-feel-simple-1.png" caption="Old and new pricing pages" %}
 
+## More than a page redesign
+
 The earlier pricing page was created when the product was less complete. It had originally been useful for the sales team to highlight the simple pricing model, but over time **the page didn't follow the evolution of the offering**. More critically, it didn't show the full stack of what was covered. For a portfolio with deep technical breadth, this was a real problem, users couldn't see what they were actually getting, and the sales team had also stopped using it.
+
+## A modular model, aligned across teams
 
 I needed to create a page that represented the full stack while being **modular in approach**, so we could easily add new modules as the offering evolved in the future. The first step was to understand how the current page performed, so I dived deep into analytics data, run a few simple measurements, and did a round of interviews with customer facing teams. Based on the input I could come up with a new model to show the full stack offering and the pricing. To complement the data, I've collected product descriptions from 10+ different product teams to align how each part of the portfolio was presented. This alignment work, getting teams to agree on how their products fit into a coherent whole, was where the real complexity lived.
 
@@ -26,4 +30,10 @@ With the model in place, I focused on designing a page that provided **a simple 
 
 {% include figure image_path="/assets/images/portfolio/2026-making-a-complex-portfolio-feel-simple-3.png" caption="Pricing page details, a simple overview of a complex offering" %}
 
-A/B testing showed that the new page converted ~10% better. But the outcome I found most telling was that the sales team started using the page again in their pitches, both to explain the offering to prospects and as simple documentation for customers on our pricing. When a page works for self-service users and sales conversations alike, it means the underlying model is doing its job.
+## What changed
+
+A/B testing showed that the new page converted ~10% better. But the outcome I found most telling was that the sales team started using the page again in their pitches, both to explain the offering to prospects and as simple documentation for customers on our pricing.
+
+{% include stats items="~10%|conversion lift, A/B tested;;10+ teams|aligned on one model;;Sales|using the page again" %}
+
+{% include pullquote text="When a page works for self-service users and sales conversations alike, the underlying model is doing its job." %}

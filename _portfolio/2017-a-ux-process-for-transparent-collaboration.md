@@ -14,12 +14,18 @@ As I led the newly formed UX team at Emarsys, I quickly identified a critical ch
 
 {% include figure image_path="assets/images/portfolio/2017-establishing-a-ux-process-1.png" caption="Phases of activities in the design process" %}
 
+## A shared process, adapted not imposed
+
 To address this, I introduced a common UX process based on Design Council's Double Diamond model. I led the team in adapting it to fit our specific needs, ensuring it provided a flexible approach rather than a rigid set of rules. 
 
 {% include figure image_path="assets/images/portfolio/2017-establishing-a-ux-process-2.png" caption="Methods during the design process" %}
+
+## The brief as the linchpin
 
 A key part of this new process was requiring a **design brief** to be created in the middle. This single artifact served as a bridge, forcing us to summarize our research and formally define the problem before jumping into solutions. This approach was crucial to **making better product decisions with discovery** and provided **a clear framework for how we'd work as a team**.
 
 {% include figure image_path="assets/images/portfolio/2017-establishing-a-ux-process-3.png" caption="Outcomes over the design process" %}
 
-The results were clear: the process organized our activities and proved scalable for any project size. The design brief became a particularly powerful tool, giving our designers clear, focused goals, and communicating design goals to our partners. The brief itself was simple, but it changed how the team thought about their work, and how our partners understood what we were doing and why.
+The results were clear: the process organized our activities and proved scalable for any project size. The design brief became a particularly powerful tool, giving our designers clear, focused goals, and communicating those goals to our partners.
+
+{% include pullquote text="The brief itself was simple, but it changed how the team thought about their work, and how our partners understood what we were doing and why." %}

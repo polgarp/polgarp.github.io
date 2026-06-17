@@ -14,6 +14,8 @@ At Krisp, we had a clear ambition: to go beyond noise cancellation and improve t
 
 {% include figure image_path="/assets/images/portfolio/2022-raising-org-maturity-with-product-work-1.png" caption="Full product discovery, major iteration points with green tags" %}
 
+## A test case for a new way of working
+
 We started with an end-of-call summary feature to test our hypothesis around providing real-time coaching. I set up a rapid-iteration process to continuously test for fit, feasibility, value, and usability with my product manager partner. My approach pushed us to work in parallel, **making discovery a core, integrated part of our workflow** and speeding us up. We extensively discussed all aspects of the solution at each step and collected data from users to validate our assumptions.
 
 {% include figure image_path="/assets/images/portfolio/2022-raising-org-maturity-with-product-work-2.png" caption="Final released widgets, showing the full set of beta features" %}
@@ -22,4 +24,6 @@ This collaborative model was a significant evolution from our previous process, 
 
 {% include figure image_path="/assets/images/portfolio/2022-raising-org-maturity-with-product-work-3.png" caption="Vision developed to show next steps from beta, with updated always-on widget" %}
 
-A well-designed process can be as impactful as a well-designed feature. By **building the right team practices**, we not only learned what our users needed, but also learned to work more efficiently, and set a new standard for how the organization makes product decisions.
+{% include pullquote text="A well-designed process can be as impactful as a well-designed feature." %}
+
+By **building the right team practices**, we not only learned what our users needed, but also learned to work more efficiently, and set a new standard for how the organization makes product decisions.

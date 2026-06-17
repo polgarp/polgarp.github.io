@@ -3,8 +3,8 @@
 # case study's own front matter by _includes/journey-card.html.
 
 intro:
-  lead: "I bring coherence to products, teams, and product portfolios."
-  sub: "Fifteen years of it: founding design teams, scaling discovery practice, and steering strategy with design, at every altitude."
+  lead: "I make systems work for humans, at every altitude."
+  sub: "Fifteen years of it: founding and leading design teams, and getting hands-on with the technical work when that's what's needed. I build coherence into products and portfolios, and the durable foundations that both teams and agentic workflows can build on."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
 career:
@@ -32,7 +32,7 @@ career:
 areas:
   - num: "01"
     headline: "Driving product coherence at scale"
-    line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product."
+    line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product, and holds together as a system teams and their agents can build on."
     key:
       slug: 2019-aligning-teams-through-an-ia-redesign
       image: /assets/images/portfolio/hints/hint-coherence.jpg
@@ -49,12 +49,10 @@ areas:
       slug: 2022-design-vision-product-vision
       image: /assets/images/portfolio/hints/hint-vision.jpg
       blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
-    more:
-      - 2025-driving-alignment-with-prototypes
 
   - num: "03"
     headline: "Embedding discovery into product decisions"
-    line: "Good products come from understanding, not assumptions. I make research and discovery part of how decisions get made, not a phase before the real work."
+    line: "Good products come from understanding, not assumptions. I make discovery rigorous enough that the understanding lasts, becoming context the whole team and their agents can act on."
     key:
       slug: 2022-raising-org-maturity-through-product-work
       image: /assets/images/portfolio/hints/hint-discovery.jpg
@@ -85,4 +83,4 @@ foundations:
     - 1980-Learn-Teach-Organise
 
 cta:
-  line: "Want the long version? Take a peek at my CV or just say hello."
+  line: "Looking for more? Take a peek at my CV or say hello."

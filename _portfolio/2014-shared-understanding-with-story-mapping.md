@@ -18,8 +18,14 @@ I introduced user story mapping as a solution, recognizing it as a powerful tool
 
 {% include figure image_path="assets/images/portfolio/2014-shared-understanding-with-story-mapping-2.jpg" caption="Team task planning with user story map" %}
 
+## One map, four teams
+
 I led the sessions to create the first map, then worked directly with each of the dev teams to get their buy-in and iterate on areas that weren't clear. This ensured everyone was aligned from the start. Throughout development, we used a modified map to coordinate efforts, adding details as needed and providing a real-time view of our progress. 
 
 {% include figure image_path="assets/images/portfolio/2014-shared-understanding-with-story-mapping-3.jpg" caption="Looking at the wider context with the story map" %}
 
-This experience was foundational to my leadership philosophy. It proved that a simple, visual tool can be the key to **improve team collaboration**, **tying discovery practices to product decisions**, and **ensuring a coherent user journey**. I've since introduced this method at other organizations (like at [Emarsys](https://blog.craftlab.hu/drawing-houses-fb6893facfbe)) to help teams achieve the same level of clarity and focus.
+This experience was foundational to my leadership philosophy.
+
+{% include pullquote text="A simple, visual tool can be the key to better collaboration, tying discovery to product decisions, and a coherent user journey." %}
+
+I've since introduced this method at other organizations (like at [Emarsys](https://blog.craftlab.hu/drawing-houses-fb6893facfbe)) to help teams achieve the same level of clarity and focus.

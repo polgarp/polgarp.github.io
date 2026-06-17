@@ -1,6 +1,10 @@
 ---
 title: "Driving alignment with prototypes"
 date: 2025-09-01
+# Draft: excluded from the built site until the prose is finalised and the three
+# TODO images are added. Re-enable by removing this line and re-adding the slug
+# to Area 02's `more:` list in _data/journey.yml.
+published: false
 sidebar:
   - title: "Role"
     image: /assets/images/portfolio/canonical-logo.svg
@@ -10,17 +14,22 @@ sidebar:
     text: "Lead the design on the Ubuntu Pro portfolio."
 ---
 
-Words are on the page, <br>
-A tale half-told, half-dreamed of, <br>
-Waiting for the end.<br>
+When I joined Canonical, the offering around Ubuntu Pro was fragmented. Its pieces had been added at different times by different teams, so it never added up to a coherent experience, and that fragmentation was holding us back from levelling up the offering as a whole.
 
----
-{% include figure image_path="/assets/images/portfolio/2026-1.png" caption="" %}
+{% comment %} TODO image: end-to-end journey map showing the fragmentation across the Ubuntu Pro offering. {% endcomment %}
 
-WIP Notes:
-When I joined Canonical, we had a fragmented offering around Ubuntu Pro. Pieces were added at various times by various teams, not only not offering a coherent experience, but also keeping us from levelling up the offering.
-First we did a journey map to see all the misalignment and how that affects the experience, and the various team's work.
-Then we pitched a simple idea to company leadership with a single hero image to showcase the experience. This had the intended effect, and it was decided to start working on the Portal project.
-We developed user narratives to capture and set the problem space.
-Made a vision that showed the direction beyond the first PoC and MVP, also to coordinate the multiple teams and projects that were included.
-Delivered the first MVP based on the long term vision. Led the conversation with 6+ product teams.
+## Showing the future, not arguing about it
+
+I started by mapping the journey end to end, which made the misalignment visible, both how it affected users and how it pulled the teams in different directions. With that shared picture in hand, I pitched a simple idea to company leadership, anchored by a single hero image of the experience we could build. The image did the convincing: leadership greenlit the Portal project on the strength of it.
+
+{% comment %} TODO image: the single hero image used to pitch the Portal to leadership. {% endcomment %}
+
+## From a hero image to a shipped MVP
+
+To turn the pitch into something buildable, I developed user narratives to capture and frame the problem space, then a longer-term vision that pointed past the first proof of concept and MVP. The vision did double duty: it set the direction and coordinated the 6+ product teams whose work the Portal pulled together. We delivered the first MVP against that long-term vision, and I led the cross-team conversation that kept everyone moving toward the same place.
+
+{% comment %} TODO image: the Portal MVP, or the long-term vision frame used to align teams. {% endcomment %}
+
+{% include pullquote text="A hero image let leadership see the future, clearly enough to commit to it." %}
+
+This is ongoing work: the portfolio is broad, and the Portal grows with it.
