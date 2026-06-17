@@ -1,0 +1,18 @@
+{%- comment -%}
+Outcome stat band. Pulls metrics already stated in a story into a scannable
+mono row. One delimited param so it stays terse in markdown:
+
+  {% include stats items="~20%|intended user flows;;5+ yrs|IA in production" %}
+
+Split on ";;" between stats, "|" between numeral and label.
+{%- endcomment -%}
+<dl class="stats">
+  {%- assign _items = include.items | split: ";;" -%}
+  {%- for _item in _items -%}
+    {%- assign _parts = _item | split: "|" -%}
+    <div class="stat">
+      <dt class="stat__num">{{ _parts[0] | strip }}</dt>
+      <dd class="stat__label">{{ _parts[1] | strip }}</dd>
+    </div>
+  {%- endfor -%}
+</dl>

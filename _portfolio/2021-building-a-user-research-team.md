@@ -20,8 +20,12 @@ My challenge was to guide the team to **change operating model and evolve**. We 
 
 In the first phase, we were successful with knowledge sharing, as we created a repository of templated reports that made reusing evergreen insights much easier by multiple teams. However, we needed further changes to improve impact on the strategic projects.
 
+## Embedding research where decisions happen
+
 To step up, the core of my strategy was to embed researchers directly into product teams for key projects based on quarterly planning. This was a crucial part of **building the right team** and ensuring they had a direct impact on business goals. This approach also allowed researchers to educate product teams on best practices and gather insights that could inform broader strategy. To balance these priorities, I set clear guidelines for time allocation, ensuring the team had dedicated time for project work, ad hoc support, and primary research.
 
 {% include figure image_path="/assets/images/portfolio/2021-building-a-user-research-team-3.png" caption="Trustpilot's research team in 2021" %}
 
-As the last piece of the puzzle, we also added a lead user researcher to the team. They provided direct leadership support and helped the team engage with product leadership more effectively. Through this redesign, the research function went from a single researcher to a team of three embedded across product, a result of demonstrating clear value through the new operating model. This immediately led to more consistent research and a greater flow of insights across the organization. The right org design for a research team isn't something you can plan upfront, you find it by experimenting with how the team connects to the business environment and the teams around it.
+As the last piece of the puzzle, we also added a lead user researcher to the team. They provided direct leadership support and helped the team engage with product leadership more effectively. Through this redesign, the research function went from a single researcher to a team of three embedded across product, a result of demonstrating clear value through the new operating model. This immediately led to more consistent research and a greater flow of insights across the organization.
+
+{% include pullquote text="The right org design for a research team isn't something you can plan upfront. You find it by experimenting with how the team connects to the business around it." %}

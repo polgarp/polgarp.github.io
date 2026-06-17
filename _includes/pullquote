@@ -1,0 +1,7 @@
+{%- comment -%}
+A pull-quote: one sharp line lifted from the story, set larger and
+accent-marked. Distinct from blockquote, which content uses for asides.
+
+  {% include pullquote text="Internal alignment along a coherent journey is a strategic business driver." %}
+{%- endcomment -%}
+<p class="pullquote">{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>

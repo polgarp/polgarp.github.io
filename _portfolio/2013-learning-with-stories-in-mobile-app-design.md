@@ -18,8 +18,14 @@ To make this happen, I **collected stories from user research** that we could re
 
 {% include figure image_path="assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-2.png" caption="Crafting stories from interview data" %}
 
+## Reworking research around stories
+
 We already had weekly user sessions (interviews and tests), so the first task was to rework our guides. Interviews now focused on collecting rich user stories about their contexts and needs, while our tests were re-purposed to explicitly validate these stories. This ensured our **product decisions were grounded in reality**, not assumptions. This also helped define our acceptance criteria for MVP validation. The understanding also helped in focusing the design efforts.
 
 {% include figure image_path="assets/images/portfolio/2013-learning-with-stories-in-mobile-app-design-3.jpg" caption="Sharing insights to the team" %}
 
-This story-driven approach helped us define our **product vision** and served as a powerful tool for aligning our team and stakeholders, from developers to marketing. It provided a clear, shared understanding of what we were building and why. We even used these stories for product marketing, which directly contributed to the app's successful launch. This experience reinforced my belief that **a compelling vision, grounded in discovery, is the ultimate force multiplier for a team.** I also did a [conference talk](https://prezi.com/dutn4vgss7js/stories-in-ux-design/) on this topic.
+This story-driven approach helped us define our **product vision** and served as a powerful tool for aligning our team and stakeholders, from developers to marketing. It provided a clear, shared understanding of what we were building and why. We even used these stories for product marketing, which directly contributed to the app's successful launch.
+
+{% include pullquote text="A compelling vision, grounded in discovery, is the ultimate force multiplier for a team." %}
+
+I also did a [conference talk](https://prezi.com/dutn4vgss7js/stories-in-ux-design/) on this topic.

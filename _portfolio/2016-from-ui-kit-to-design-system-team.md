@@ -14,6 +14,8 @@ When I joined Emarsys, the product had a new look but lacked a systematic unifie
 
 {% include figure image_path="assets/images/portfolio/2016-building-a-design-system-1.png" caption="Design system Sketch UI kit" %}
 
+## Bringing design and engineering together
+
 The engineering team had already built a great UI kit from the new designs, but it provided little guidance on how to use each element effectively for the design team. I saw an opportunity to bring our design and development teams together. We started to use the **Atomic Design framework** to structure our work, with detailed interaction guidelines to unify our components, providing the team with a direction for building a cohesive experience.
 
 {% include figure image_path="assets/images/portfolio/2016-building-a-design-system-2.png" caption="Design system v1" %}
@@ -22,4 +24,8 @@ I led the UX team in recreating all of our elements as proper components to spee
 
 {% include figure image_path="assets/images/portfolio/2016-building-a-design-system-3.png" caption="Design system v2" %}
 
-Recognizing the importance of this work, I successfully advocated for **a dedicated cross-functional Design System team** composed of engineers, designers, and researchers. The results went beyond consistency: a more coherent experience across a deeply complex product meant faster customer onboarding and reduced support costs, while the shared component library sped up both design and development work. Building a design system is not just about assets, it's about building the cross-functional team and culture that can effectively scale a product.
+## A dedicated Design System team
+
+Recognizing the importance of this work, I successfully advocated for **a dedicated cross-functional Design System team** composed of engineers, designers, and researchers. The results went beyond consistency: a more coherent experience across a deeply complex product meant faster customer onboarding and reduced support costs, while the shared component library sped up both design and development work.
+
+{% include pullquote text="Building a design system is not just about assets. It's about building the cross-functional team and culture that can scale a product." %}

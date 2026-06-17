@@ -14,6 +14,8 @@ Leading design on Trustpilot's freemium product, I faced a significant challenge
 
 {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-2.png" caption="Trustpilot's in-app pricing page before the redesign" %}
 
+## Four leadership modes
+
 The core of the issue was a lack of shared vision and collaborative practice. I took a multi-faceted approach to resolve this, focusing on four key leadership archetypes:
 * **Coach:** I worked directly with the designer, helping them to interpret feedback constructively and plan the way forward.
 * **Architect:** I initiated a **design system update** and used our existing **customer journey maps** to improve how we **represented the user journey** across the product experience.
@@ -25,7 +27,11 @@ My role was to bring alignment and help the project move ahead, by providing cri
 
 {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-1.png" caption="Activity artefacts" %}
 
-This collaborative approach transformed the project. Conversion rates improved by ~15%, and more importantly, the collaboration model between teams changed fundamentally. **Design leadership is about building the systems and relationships that enable teams to navigate complexity and achieve shared success.** 
+## What changed
+
+This collaborative approach transformed the project. Conversion rates improved by ~15%, and more importantly, the collaboration model between teams changed fundamentally.
+
+{% include pullquote text="Design leadership is about building the systems and relationships that let teams navigate complexity and reach shared success." %}
 
 {% include figure image_path="/assets/images/portfolio/2021-leader-archetypes-in-practice-4.png" caption="The updated pricing page" %}
 

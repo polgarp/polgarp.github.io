@@ -14,6 +14,8 @@ I joined Emarsys with a strategic mandate: to not only **build and lead the new 
 
 {% include figure image_path="assets/images/portfolio/2015-designing-a-ux-team-3.png" caption="The Emarsys UX team in 2015 looking for new members" %}
 
+## Three guiding principles
+
 My approach to **building the right team** was guided by three core principles:
 
 1. **Lean UX mindset:** We experimented and learned what design practices the organization needed to truly bring the product forward, treating the org itself like a product we had to understand and improve.
@@ -22,8 +24,16 @@ My approach to **building the right team** was guided by three core principles:
 
 {% include figure image_path="assets/images/portfolio/2015-designing-a-ux-team-2.jpeg" caption="Working with design thinking methods with partners from product and engineering" %}
 
-Through a disciplined approach to [hiring](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb) and professional growth, we grew the team from 2 to 16 in two years, with 95%+ retention — only one designer left during my tenure. Together, we introduced a suite of practices that became the foundation of our work: **discovery and research** to make better product decisions (like frequent interviews and [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47)), **visioning tools** like design principles and briefs, and **systems thinking** like our [design system]({% link _portfolio/2016-from-ui-kit-to-design-system-team.md %}) and [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe) to **build coherent cross-product user journeys**.
+## From two to sixteen
+
+Through a disciplined approach to [hiring](https://blog.craftlab.hu/hiring-ux-people-at-emarsys-e12f5bfdd5fb) and professional growth, the team grew fast and stayed.
+
+{% include stats items="2→16|team in two years;;95%+|retention, one departure;;2|next heads promoted from within" %}
+
+Together, we introduced a suite of practices that became the foundation of our work: **discovery and research** to make better product decisions (like frequent interviews and [design sprints](https://medium.com/emarsys-design/running-the-design-sprint-at-emarsys-4b40a4cecc47)), **visioning tools** like design principles and briefs, and **systems thinking** like our [design system]({% link _portfolio/2016-from-ui-kit-to-design-system-team.md %}) and [user story maps](https://blog.craftlab.hu/drawing-houses-fb6893facfbe) to **build coherent cross-product user journeys**.
 
 {% include figure image_path="assets/images/portfolio/2015-designing-a-ux-team-1.jpg" caption="The Emarsys UX team in 2017" %}
 
-The team launched a new email editor, campaign manager, automation system, and AI features — a full platform transformation. Design teams are very much like a product: you have to understand the needs of your 'users' (the rest of the organization) to create the best possible solutions.
+The team launched a new email editor, campaign manager, automation system, and AI features — a full platform transformation.
+
+{% include pullquote text="A design team is very much like a product: you have to understand the needs of your 'users', the rest of the organization, to create the best possible solutions." %}

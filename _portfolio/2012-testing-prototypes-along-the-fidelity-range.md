@@ -14,6 +14,8 @@ At Prezi, I was tasked with a particularly complex problem: designing for team c
 
 {% include figure image_path="assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-1.png" caption="Building lo-fi prototypes" %}
 
+## Matching fidelity to the question
+
 The real challenge was making sure we were **learning about the value of our ideas as early and efficiently as possible**. To meet this goal, my designer partner and I developed a new process. We learned to match the fidelity of our prototypes directly to the questions we were trying to answer, from simple paper sketches for testing value to high-fidelity code for validating usability. This process was a direct result of my close collaboration with a designer partner. We pair designed to redefine our approach, proving that **effective design and discovery are a team sport**.
 
 {% include figure image_path="assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-2.png" caption="Building prototypes in webflow" %}
@@ -22,4 +24,10 @@ During this time I learned a lot on what is the best fidelity to test, and how t
 
 {% include figure image_path="assets/images/portfolio/2012-testing-prototypes-along-the-fidelity-range-3.png" caption="building prototypes in bootstrap" %}
 
-I synthesized these insights into a [conference talk](https://prezi.com/qfftsdxtojf0/from-lo-fi-to-hi-fi/) on prototyping at the UxLx conference, but the real takeaway was more profound: by **making our testing and prototyping more deliberate and strategic, we elevated our entire design practice**. This experience is core to my belief in the power of grounded, insight-driven product decisions.
+## The takeaway
+
+I synthesized these insights into a [conference talk](https://prezi.com/qfftsdxtojf0/from-lo-fi-to-hi-fi/) on prototyping at the UxLx conference, but the real takeaway was more profound.
+
+{% include pullquote text="By making our testing and prototyping more deliberate and strategic, we elevated our entire design practice." %}
+
+This experience is core to my belief in the power of grounded, insight-driven product decisions.

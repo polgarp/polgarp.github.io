@@ -14,11 +14,17 @@ When I joined Trustpilot, the product organization was struggling with a key cha
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-1.png" caption="Too many first level items in the old IA" %}
 
+## Aligning the org around one journey
+
 To solve this, I partnered with a product manager and their team to lead an information architecture project focused on redesigning the main menu. While one product team drove the work, all 7 product teams contributed by revising structures in their own areas, and we engaged ~20 teams across the organization, about 50-60 stakeholders including commercial teams like support and customer success.
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-2.jpg" caption="Preparing with  card sorting to understand function groups across the app" %}
 
-Our core principle was simple: **a better information architecture requires both a better understanding of our organization and its users**. To get everyone on the same page, we designed a strategic process with four parallel tracks, ensuring our solution would be both user-centered and internally aligned.
+Our core principle was simple:
+
+{% include pullquote text="A better information architecture requires a better understanding of both our organization and its users." %}
+
+To get everyone on the same page, we designed a strategic process with four parallel tracks, ensuring our solution would be both user-centered and internally aligned.
  - User research track: We wanted to understand **how current users perceived the app** and intended to continuously test versions via usability testing, card sorting, and tree testing. This was our core discovery track.
  - Alignment track: We did **workshops with all product teams and key stakeholders** over several weeks, understanding key concerns, ambitions, and expectations towards the new IA while also getting buy-in. With some groups, we set up further workshops to understand how the new menus would impact their work.
  - Design track: We involved the entire design team to widen our solution space, proving that **great ideas come from a collaborative culture**.
@@ -28,4 +34,10 @@ I was working within each of these tracks both as coach and the occasional playe
 
 {% include figure image_path="assets/images/portfolio/2019-redesigning-app-ia-is-alignment-3.png" caption="What we delivered: clearer menu, transparent workflow to follow" %}
 
-After three months, we had a solution that was agreed upon by everyone. The results spoke for themselves: a ~20% increase in intended user flows, customer success teams reporting significantly easier onboarding for new customers, and an IA foundation so solid it was still in use 5+ years later. Our success was not just in the metrics, but in proving that internal alignment along a **coherent user journey** is a strategic business driver, one that compounds over time.
+## What it delivered
+
+After three months, we had a solution everyone had agreed on, and customer success teams reported significantly easier onboarding for new customers.
+
+{% include stats items="~20%|intended-flow lift;;7 teams|behind one IA;;5+ yrs|still in production" %}
+
+The success wasn't just in the metrics. It was proof that internal alignment along a coherent user journey is a strategic business driver, one that compounds over time.

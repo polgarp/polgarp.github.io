@@ -14,6 +14,8 @@ Leading a fairly mature design team with a dual-track agile approach was a great
 
 {% include figure image_path="assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-1.png" caption="Preparing the evaluation model highlighting key factors" %}
 
+## A maturity evaluation as discovery
+
 To address this, I introduced a **design maturity evaluation**. This method served as a powerful **discovery practice**, a way to quickly gather insights on our strengths and weaknesses. It gave us an objective view of where we were and what opportunities would have the greatest impact on improving our overall design function. 
 
 {% include figure image_path="assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-2.png" caption="Completed evaluation showing the different organizational maturity levels" %}
@@ -22,4 +24,12 @@ For the first round speed, rather than precision was a priority, as we didn't kn
 
 {% include figure image_path="assets/images/portfolio/2020-define-design-strategy-through-maturity-evaluation-3.png" caption="Part of the evaluation results with recommendations for strategy" %}
 
-The evaluation pointed at a few clear bets. We invested in user journeys and personas to give design critique something to lean on, in experience visions to push onboarding further out than the next sprint, and in promoting our own people rather than hiring over them. Retention improved, the team started picking its own initiatives instead of waiting to be asked, and product decisions got better evidence to argue with.
+## The bets it pointed to
+
+The evaluation pointed at a few clear bets:
+
+- **User journeys and personas**, to give design critique something to lean on.
+- **Experience visions**, to push onboarding further out than the next sprint.
+- **Promoting our own people**, rather than hiring over them.
+
+Retention improved, the team started picking its own initiatives instead of waiting to be asked, and product decisions got better evidence to argue with.
