@@ -1,5 +1,5 @@
 ---
-title: "Streamin UIs"
+title: "Streaming UIs"
 categories:
   - Blog
 tags:
