@@ -304,6 +304,14 @@
     margin-bottom: 1.1rem;
   }
 
+  // A "sized" figure (opt-in via the figure include's width param) centers a
+  // smaller-than-measure image, but the figure box itself stays at the full
+  // measure so its figcaption reads at the same line-length as body copy
+  // instead of being squeezed to the image's own width.
+  > .figure--sized {
+    max-width: var(--measure);
+  }
+
   // Outbound links carry a quiet departure mark.
   :is(p, li) > a[href^="http"]:not(:has(img))::after {
     content: "↗";

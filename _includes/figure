@@ -1,5 +1,5 @@
-<figure class="figure">
-  <img src="{{ include.image_path | relative_url }}" alt="{{ include.alt | default: '' }}" loading="lazy">
+<figure class="figure{% if include.width %} figure--sized{% endif %}">
+  <img src="{{ include.image_path | relative_url }}" alt="{{ include.alt | default: '' }}" loading="lazy"{% if include.width %} style="max-width: {{ include.width }}; display: block; margin-inline: auto;"{% endif %}>
   {% if include.caption %}
   <figcaption>{{ include.caption | markdownify }}</figcaption>
   {% endif %}

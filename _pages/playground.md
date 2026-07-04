@@ -5,6 +5,12 @@ permalink: /playground/
 excerpt: "Side projects, experiments, things I built for fun. More messy WIP ideas on my [Github](https://github.com/polgarp)."
 ---
 
+![](/assets/images/playground/arcana-header.png)
+
+## [The Designer's Arcana](/playground/the-designers-arcana/)
+
+A 78-card tarot deck where every card is a moment from a designer's working life, mapped onto the traditional Rider-Waite-Smith meanings.
+
 ![](/assets/images/playground/tilecraft-1.png)
 
 ## [Tilecraft](/playground/tilecraft/)
