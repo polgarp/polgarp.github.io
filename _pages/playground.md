@@ -11,6 +11,12 @@ excerpt: "Side projects, experiments, things I built for fun. More messy WIP ide
 
 A 78-card tarot deck where every card is a moment from a designer's working life, mapped onto the traditional Rider-Waite-Smith meanings.
 
+![](/assets/images/playground/collage-design.jpg)
+
+## [collage-design](/playground/collage-design/)
+
+A Claude skill that makes cut-and-layer collage art, sourcing real open licensed imagery from public archives and composing it into a finished piece.
+
 ![](/assets/images/playground/tilecraft-1.png)
 
 ## [Tilecraft](/playground/tilecraft/)
