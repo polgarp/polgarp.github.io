@@ -23,8 +23,10 @@
   // is the one thing this rule must never do.
   var OFFSET_MIN = SNAP + 2.5;
   var OFFSET_MAX = SNAP + 9;
-  var REACH = 44;         // how far the cursor's attention carries
-  var K_ATTEND = 55;      // an attended point can finally reach its target
+  var REACH = 78;         // how far the cursor's attention carries
+  var K_ATTEND = 62;      // an attended point can finally reach its target
+  var WAKE = 150;         // how hard a moving cursor shoves the settled 80%
+  var WAKE_SPEED = 1200;  // ...scaled by how fast you're moving, up to here
 
   Illo.rule("intention-rendering", function (sim, opts) {
     var offsets = null;
@@ -62,22 +64,30 @@
         var n = sim.n;
         var px = sim.px, py = sim.py, on = sim.pointerOn;
         var reach2 = REACH * REACH;
+        // A fast pass shoves harder than a slow one. Capped, so a flick can't
+        // fling the picture apart.
+        var wake = WAKE * (0.35 + 0.65 * Math.min(sim.pspeed / WAKE_SPEED, 1));
 
         for (var i = 0; i < n; i++) {
           var dx = sim.txs[i] - sim.xs[i];
           var dy = sim.tys[i] - sim.ys[i];
           var d = Math.sqrt(dx * dx + dy * dy) || 1e-6;
 
+          var cx = px - sim.xs[i];
+          var cy = py - sim.ys[i];
+          var c2 = cx * cx + cy * cy;
+          var near = on && c2 < reach2;
+
           var k, rest;
           if (sim.landed[i]) {
+            // Seated by hand, and it stays that way. The part you finished is
+            // the part that stops moving when you poke at it.
             k = K_LANDED; rest = 0;
           } else if (sim.hard[i]) {
             // The cursor is attention, not force. Nothing gets dragged: while
             // you are looking here, this point is simply able to reach where it
             // belongs. Look away and it relaxes back to almost-right.
-            var cx = px - sim.xs[i];
-            var cy = py - sim.ys[i];
-            if (on && cx * cx + cy * cy < reach2) { k = K_ATTEND; rest = 0; }
+            if (near) { k = K_ATTEND; rest = 0; }
             else { k = K_HARD; rest = offsets[i]; }
           } else {
             k = K_EASY; rest = 0;
@@ -88,8 +98,21 @@
           // around where it belongs — near enough to look right, wrong enough
           // to be wrong.
           var f = k * (d - rest) / d;
-          var vx = (sim.vxs[i] + dx * f * dt) * DAMP;
-          var vy = (sim.vys[i] + dy * f * dt) * DAMP;
+          var ax = dx * f;
+          var ay = dy * f;
+
+          // The settled 80% gets shoved aside by a moving cursor and springs
+          // back. Disturbing finished work is easy; only the unfinished part
+          // needs you.
+          if (near && !sim.landed[i] && !sim.hard[i]) {
+            var cd = Math.sqrt(c2) || 1e-6;
+            var falloff = 1 - c2 / reach2;
+            ax -= (cx / cd) * wake * falloff * falloff * 60;
+            ay -= (cy / cd) * wake * falloff * falloff * 60;
+          }
+
+          var vx = (sim.vxs[i] + ax * dt) * DAMP;
+          var vy = (sim.vys[i] + ay * dt) * DAMP;
           sim.vxs[i] = vx;
           sim.vys[i] = vy;
           sim.xs[i] += vx * dt;

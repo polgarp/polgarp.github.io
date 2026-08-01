@@ -51,8 +51,12 @@
     this.h = 0;
     this.px = -1e6;      // pointer, in logical px
     this.py = -1e6;
+    this.pvx = 0;        // pointer velocity, px/s, smoothed
+    this.pvy = 0;
+    this.pspeed = 0;
     this.pointerOn = false;
     this.rng = null;
+    this.cell = 8;
   }
 
   Sim.prototype.alloc = function (n) {
@@ -154,17 +158,36 @@
     readTokens(this.el, this.ink);
 
     var self = this;
-    // Pointer position only; all work happens in the frame.
+    var lastT = 0;
+    // Position and velocity only; all the work happens in the frame. Velocity
+    // is what lets a rule respond to how you move, not just where you are —
+    // a slow considered pass and a fast swipe should not feel the same.
     cv.addEventListener("pointermove", function (e) {
+      var s = self.sim;
       var r = cv.getBoundingClientRect();
-      self.sim.px = e.clientX - r.left;
-      self.sim.py = e.clientY - r.top;
-      self.sim.pointerOn = true;
+      var x = e.clientX - r.left;
+      var y = e.clientY - r.top;
+      var now = e.timeStamp || performance.now();
+      var dt = lastT ? Math.min((now - lastT) / 1000, 0.1) : 0;
+      if (dt > 0 && s.pointerOn) {
+        // Smooth hard enough to ignore jitter, lightly enough to stay live.
+        s.pvx = s.pvx * 0.6 + ((x - s.px) / dt) * 0.4;
+        s.pvy = s.pvy * 0.6 + ((y - s.py) / dt) * 0.4;
+        s.pspeed = Math.sqrt(s.pvx * s.pvx + s.pvy * s.pvy);
+      }
+      lastT = now;
+      s.px = x;
+      s.py = y;
+      s.pointerOn = true;
       self.wake();
     }, { passive: true });
+
     cv.addEventListener("pointerleave", function () {
-      self.sim.pointerOn = false;
-      self.sim.px = self.sim.py = -1e6;
+      var s = self.sim;
+      s.pointerOn = false;
+      s.px = s.py = -1e6;
+      s.pvx = s.pvy = s.pspeed = 0;
+      lastT = 0;
     }, { passive: true });
 
     this.resize();
@@ -218,6 +241,14 @@
     this.last = t;
     this.acc += dt;
 
+    // No pointermove events arrive while the cursor is held still, so decay
+    // its velocity here — otherwise a stopped cursor would read as still
+    // moving at whatever speed it last had.
+    var s = this.sim;
+    s.pvx *= 0.88;
+    s.pvy *= 0.88;
+    s.pspeed = Math.sqrt(s.pvx * s.pvx + s.pvy * s.pvy);
+
     var steps = 0;
     while (this.acc >= STEP && steps < MAX_CATCHUP) {
       this.rule.step(STEP);
@@ -233,10 +264,12 @@
 
     this.frameCost = this.frameCost * 0.9 + (performance.now() - t0) * 0.1;
 
-    // Rest detection: mean squared speed, sustained.
-    var s = this.sim, e = 0;
+    // Rest detection: mean squared speed, sustained. A cursor resting on a
+    // settled field is genuinely at rest, so this keys off pointer *motion*
+    // rather than mere presence.
+    var e = 0;
     for (var i = 0; i < s.n; i++) e += s.vxs[i] * s.vxs[i] + s.vys[i] * s.vys[i];
-    if (s.n && e / s.n < REST_ENERGY && !s.pointerOn) this.restCount++;
+    if (s.n && e / s.n < REST_ENERGY && s.pspeed < 6) this.restCount++;
     else this.restCount = 0;
 
     if (this.restCount > REST_FRAMES) { this.sleep(); return; }
@@ -300,7 +333,9 @@
     textTargets: textTargets,
     mulberry32: mulberry32,
     instances: instances,
-    boot: boot
+    boot: boot,
+    // Bake-off only: lets the harness weigh each candidate's own source.
+    _src: function (name) { return renderers[name] ? renderers[name].toString() : ""; }
   };
 
   // Deferred scripts run while readyState is already "interactive", so

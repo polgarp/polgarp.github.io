@@ -186,8 +186,167 @@
     ctx.globalAlpha = 1;
   }
 
+  // ---------------------------------------------------------------
+  // 5. GLYPH FIELD
+  // The mark stays on its cell; the GLYPH encodes how far the point still is
+  // from home. So an unfinished mark isn't displaced, it's thinner — the word
+  // is complete in silhouette and visibly under-resolved in texture. This is
+  // the one register where "almost done" can be shown without moving anything.
+  // ---------------------------------------------------------------
+  var RAMP = ".:-=+*#";
+  var ERR_FULL = 16;   // error at which a mark reads as barely there
+
+  function err(sim, i) {
+    var dx = sim.txs[i] - sim.xs[i];
+    var dy = sim.tys[i] - sim.ys[i];
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  function glyph(ctx, sim, ink) {
+    var cell = sim.cell || 8;
+    var mono = getComputedStyle(document.documentElement)
+      .getPropertyValue("--font-mono").trim() || "monospace";
+    ctx.font = Math.round(cell * 1.35) + "px " + mono;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    var i, gx, gy, e, ri;
+    ctx.fillStyle = ink.fg;
+    for (i = 0; i < sim.n; i++) {
+      if (sim.landed[i]) continue;
+      gx = Math.round((sim.xs[i] - cell / 2) / cell) * cell + cell / 2;
+      gy = Math.round((sim.ys[i] - cell / 2) / cell) * cell + cell / 2;
+      e = err(sim, i);
+      ri = Math.round((1 - Math.min(e / ERR_FULL, 1)) * (RAMP.length - 1));
+      ctx.fillText(RAMP.charAt(ri), gx, gy);
+    }
+
+    ctx.fillStyle = ink.accent;
+    for (i = 0; i < sim.n; i++) {
+      if (!sim.landed[i]) continue;
+      gx = Math.round((sim.xs[i] - cell / 2) / cell) * cell + cell / 2;
+      gy = Math.round((sim.ys[i] - cell / 2) / cell) * cell + cell / 2;
+      ctx.fillText("#", gx, gy);
+    }
+  }
+
+  // ---------------------------------------------------------------
+  // 6. HALFTONE CELLS
+  // The same idea made continuous: on-grid, but the dot's RADIUS carries how
+  // settled the point is. Reads as printed halftone rather than as a screen —
+  // closest of the eight to the black/red/white printed register. Arcs of
+  // different radii share one path, so it is still a single fill().
+  // ---------------------------------------------------------------
+  function halftone(ctx, sim, ink) {
+    var cell = sim.cell || 8;
+    var rmax = cell * 0.52;
+    var i, gx, gy, r;
+
+    ctx.fillStyle = ink.fg;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (sim.landed[i]) continue;
+      gx = Math.round((sim.xs[i] - cell / 2) / cell) * cell + cell / 2;
+      gy = Math.round((sim.ys[i] - cell / 2) / cell) * cell + cell / 2;
+      r = rmax * (0.18 + 0.82 * (1 - Math.min(err(sim, i) / ERR_FULL, 1)));
+      ctx.moveTo(gx + r, gy);
+      ctx.arc(gx, gy, r, 0, 6.283185);
+    }
+    ctx.fill();
+
+    ctx.fillStyle = ink.accent;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (!sim.landed[i]) continue;
+      gx = Math.round((sim.xs[i] - cell / 2) / cell) * cell + cell / 2;
+      gy = Math.round((sim.ys[i] - cell / 2) / cell) * cell + cell / 2;
+      ctx.moveTo(gx + rmax, gy);
+      ctx.arc(gx, gy, rmax, 0, 6.283185);
+    }
+    ctx.fill();
+  }
+
+  // ---------------------------------------------------------------
+  // 7. PLOTTER PATH
+  // One continuous pen stroke through consecutive points, broken between runs
+  // so the pen lifts rather than dragging across gaps. Unlike the mesh this is
+  // sequence-based, not proximity-based: it reads as drawing rather than as
+  // network. Cheapest possible draw — one path, one stroke.
+  // ---------------------------------------------------------------
+  function plotter(ctx, sim, ink) {
+    var cell = sim.cell || 8;
+    var i, run = false;
+
+    ctx.strokeStyle = ink.fg;
+    ctx.lineWidth = 1.1;
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    for (i = 0; i < sim.n - 1; i++) {
+      // Adjacent in the target grid? Then the pen stays down.
+      var sameRow = Math.abs(sim.tys[i + 1] - sim.tys[i]) < 0.5;
+      var nextCol = Math.abs(sim.txs[i + 1] - sim.txs[i] - cell) < 0.5;
+      if (sameRow && nextCol) {
+        if (!run) { ctx.moveTo(sim.xs[i], sim.ys[i]); run = true; }
+        ctx.lineTo(sim.xs[i + 1], sim.ys[i + 1]);
+      } else {
+        run = false;
+      }
+    }
+    ctx.stroke();
+
+    ctx.fillStyle = ink.accent;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (!sim.landed[i]) continue;
+      ctx.moveTo(sim.xs[i] + 1.8, sim.ys[i]);
+      ctx.arc(sim.xs[i], sim.ys[i], 1.8, 0, 6.283185);
+    }
+    ctx.fill();
+  }
+
+  // ---------------------------------------------------------------
+  // 8. ERROR TICKS
+  // Every mark draws a hairline from where it belongs to where it actually is.
+  // The picture draws its own defect: a finished mark is a dot, an unfinished
+  // one trails a visible little vector. The most literal of the eight, and the
+  // only one where the gap is impossible to miss rather than easy to.
+  // ---------------------------------------------------------------
+  function ticks(ctx, sim, ink) {
+    var i;
+    ctx.strokeStyle = ink.muted;
+    ctx.lineWidth = 0.9;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (sim.landed[i]) continue;
+      ctx.moveTo(sim.txs[i], sim.tys[i]);
+      ctx.lineTo(sim.xs[i], sim.ys[i]);
+    }
+    ctx.stroke();
+
+    ctx.fillStyle = ink.fg;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (sim.landed[i]) continue;
+      ctx.rect(sim.xs[i] - 1, sim.ys[i] - 1, 2, 2);
+    }
+    ctx.fill();
+
+    ctx.fillStyle = ink.accent;
+    ctx.beginPath();
+    for (i = 0; i < sim.n; i++) {
+      if (!sim.landed[i]) continue;
+      ctx.rect(sim.xs[i] - 1.5, sim.ys[i] - 1.5, 3, 3);
+    }
+    ctx.fill();
+  }
+
   Illo.renderer("grid", grid);
   Illo.renderer("mesh", mesh);
   Illo.renderer("trace", trace);
   Illo.renderer("rings", rings);
+  Illo.renderer("glyph", glyph);
+  Illo.renderer("halftone", halftone);
+  Illo.renderer("plotter", plotter);
+  Illo.renderer("ticks", ticks);
 })();
