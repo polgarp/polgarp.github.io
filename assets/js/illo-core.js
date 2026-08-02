@@ -22,6 +22,21 @@
   var renderers = {};
   var instances = [];
 
+  // ---- One pointer, tracked at window level and shared by every instance.
+  // An illustration reacts to where the cursor is on the PAGE, not only when
+  // it happens to be over the canvas — which is what makes a background-layer
+  // instance possible at all, and what stops a small figure feeling inert
+  // until you hit it exactly.
+  var ptr = { x: -1e6, y: -1e6, vx: 0, vy: 0, speed: 0, t: 0, on: false };
+  var PTR_DECAY = 130;   // ms for a stopped cursor's speed to fall to ~1/e
+  var PTR_MARGIN = 220;  // how far outside a figure the cursor still wakes it
+
+  function pointerSpeedNow() {
+    if (!ptr.on) return 0;
+    var age = performance.now() - ptr.t;
+    return ptr.speed * Math.exp(-age / PTR_DECAY);
+  }
+
   // ---- Colour: read from the design tokens, never hard-coded here. Resolved
   // against the figure itself rather than the root, because custom properties
   // inherit — so a locally inverted section gets a correctly inverted
@@ -86,33 +101,22 @@
     };
   }
 
-  // ---- Sample text into grid-aligned target points. Shared by every rule that
-  // wants marks to assemble into a word, and grid-aligned by construction so
-  // the grid-bound renderer gets exact cells for free.
-  function textTargets(text, w, h, cell, font) {
+  // ---- Turn any drawn mask into grid-aligned target points.
+  //
+  // The subject is whatever `paint` draws into a cols x rows bitmap: a word, a
+  // vector shape, an icon. Sampling at grid resolution means every target lands
+  // on a cell by construction, so the marks are grid-true whatever the subject
+  // is — this is the piece that lets the same engine render INTENTION and a
+  // drawing of a computer without knowing the difference.
+  function maskTargets(w, h, cell, paint) {
     var cols = Math.max(1, Math.floor(w / cell));
     var rows = Math.max(1, Math.floor(h / cell));
     var off = document.createElement("canvas");
     off.width = cols;
     off.height = rows;
     var c = off.getContext("2d", { willReadFrequently: true });
-
-    // Fit the word to the box by binary-searching the size in grid units.
-    var lo = 1, hi = rows * 2, size = 1;
-    while (lo <= hi) {
-      var mid = (lo + hi) >> 1;
-      c.font = "700 " + mid + "px " + font;
-      if (c.measureText(text).width <= cols * 0.92 && mid <= rows * 0.8) {
-        size = mid; lo = mid + 1;
-      } else { hi = mid - 1; }
-    }
-
-    c.clearRect(0, 0, cols, rows);
-    c.font = "700 " + size + "px " + font;
-    c.textAlign = "center";
-    c.textBaseline = "middle";
     c.fillStyle = "#000";
-    c.fillText(text, cols / 2, rows / 2);
+    paint(c, cols, rows);
 
     var data = c.getImageData(0, 0, cols, rows).data;
     var out = [];
@@ -126,6 +130,39 @@
     return out;
   }
 
+  function textTargets(text, w, h, cell, font) {
+    return maskTargets(w, h, cell, function (c, cols, rows) {
+      // Fit the word to the box by binary-searching the size in grid units.
+      var lo = 1, hi = rows * 2, size = 1;
+      while (lo <= hi) {
+        var mid = (lo + hi) >> 1;
+        c.font = "700 " + mid + "px " + font;
+        if (c.measureText(text).width <= cols * 0.92 && mid <= rows * 0.8) {
+          size = mid; lo = mid + 1;
+        } else { hi = mid - 1; }
+      }
+      c.font = "700 " + size + "px " + font;
+      c.textAlign = "center";
+      c.textBaseline = "middle";
+      c.fillText(text, cols / 2, rows / 2);
+    });
+  }
+
+  // ---- A vector subject: SVG path data, scaled to fit and centred. Path2D is
+  // baseline in every browser we target, so a shape costs no build step and no
+  // asset — the drawing is a string in the rule file.
+  function pathTargets(d, vbW, vbH, w, h, cell, fillRatio) {
+    var p = new Path2D(d);
+    return maskTargets(w, h, cell, function (c, cols, rows) {
+      var k = Math.min(cols / vbW, rows / vbH) * (fillRatio || 0.88);
+      c.save();
+      c.translate((cols - vbW * k) / 2, (rows - vbH * k) / 2);
+      c.scale(k, k);
+      c.fill(p);
+      c.restore();
+    });
+  }
+
   // ---- One live illustration bound to one <figure>.
   function Instance(el) {
     this.el = el;
@@ -133,6 +170,7 @@
     this.rendererName = el.getAttribute("data-illo-render") || "grid";
     this.seed = parseInt(el.getAttribute("data-illo-seed"), 10) || 1;
     this.text = el.getAttribute("data-illo-text") || "INTENTION";
+    this.shape = el.getAttribute("data-illo-shape") || "";
     this.sim = new Sim();
     this.rule = null;
     this.ctx = null;
@@ -157,44 +195,12 @@
     this.el.classList.add("illo--live");
     readTokens(this.el, this.ink);
 
-    var self = this;
-    var lastT = 0;
-    // Position and velocity only; all the work happens in the frame. Velocity
-    // is what lets a rule respond to how you move, not just where you are —
-    // a slow considered pass and a fast swipe should not feel the same.
-    cv.addEventListener("pointermove", function (e) {
-      var s = self.sim;
-      var r = cv.getBoundingClientRect();
-      var x = e.clientX - r.left;
-      var y = e.clientY - r.top;
-      var now = e.timeStamp || performance.now();
-      var dt = lastT ? Math.min((now - lastT) / 1000, 0.1) : 0;
-      if (dt > 0 && s.pointerOn) {
-        // Smooth hard enough to ignore jitter, lightly enough to stay live.
-        s.pvx = s.pvx * 0.6 + ((x - s.px) / dt) * 0.4;
-        s.pvy = s.pvy * 0.6 + ((y - s.py) / dt) * 0.4;
-        s.pspeed = Math.sqrt(s.pvx * s.pvx + s.pvy * s.pvy);
-      }
-      lastT = now;
-      s.px = x;
-      s.py = y;
-      s.pointerOn = true;
-      self.wake();
-    }, { passive: true });
-
-    cv.addEventListener("pointerleave", function () {
-      var s = self.sim;
-      s.pointerOn = false;
-      s.px = s.py = -1e6;
-      s.pvx = s.pvy = s.pspeed = 0;
-      lastT = 0;
-    }, { passive: true });
-
     this.resize();
   };
 
   Instance.prototype.resize = function () {
     var rect = this.el.getBoundingClientRect();
+    this.rect = rect;
     var w = Math.max(1, Math.round(rect.width));
     var h = Math.max(1, Math.round(rect.height));
     if (w === this.sim.w && h === this.sim.h) return;
@@ -212,7 +218,9 @@
 
     var factory = rules[this.ruleName];
     if (!factory) return;
-    this.rule = factory(this.sim, { text: this.text, seed: this.seed });
+    this.rule = factory(this.sim, {
+      text: this.text, shape: this.shape, seed: this.seed
+    });
     this.rule.seed();
     this.restCount = 0;
     this.wake();
@@ -241,13 +249,18 @@
     this.last = t;
     this.acc += dt;
 
-    // No pointermove events arrive while the cursor is held still, so decay
-    // its velocity here — otherwise a stopped cursor would read as still
-    // moving at whatever speed it last had.
+    // Map the shared page-level pointer into this instance's own coordinates.
+    // The rect is cached and refreshed on scroll/resize rather than measured
+    // per frame, so this costs no layout.
     var s = this.sim;
-    s.pvx *= 0.88;
-    s.pvy *= 0.88;
-    s.pspeed = Math.sqrt(s.pvx * s.pvx + s.pvy * s.pvy);
+    var r = this.rect;
+    s.px = ptr.x - r.left;
+    s.py = ptr.y - r.top;
+    s.pointerOn = ptr.on;
+    s.pinside = s.px >= 0 && s.py >= 0 && s.px <= s.w && s.py <= s.h;
+    // Speed decays from the last move's timestamp, so a cursor held still
+    // reads as still — without any per-instance state to get out of sync.
+    s.pspeed = pointerSpeedNow();
 
     var steps = 0;
     while (this.acc >= STEP && steps < MAX_CATCHUP) {
@@ -269,7 +282,7 @@
     // rather than mere presence.
     var e = 0;
     for (var i = 0; i < s.n; i++) e += s.vxs[i] * s.vxs[i] + s.vys[i] * s.vys[i];
-    if (s.n && e / s.n < REST_ENERGY && s.pspeed < 6) this.restCount++;
+    if (s.n && !s.busy && e / s.n < REST_ENERGY && s.pspeed < 6) this.restCount++;
     else this.restCount = 0;
 
     if (this.restCount > REST_FRAMES) { this.sleep(); return; }
@@ -316,6 +329,52 @@
       }, 150);
     }, { passive: true });
 
+    // Scrolling moves every figure relative to the viewport, so the cached
+    // rects have to follow. Coalesced into one frame — never per event.
+    var rectTick = false;
+    function refreshRects() {
+      instances.forEach(function (i) {
+        if (i.visible) i.rect = i.el.getBoundingClientRect();
+      });
+      rectTick = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!rectTick) { rectTick = true; requestAnimationFrame(refreshRects); }
+    }, { passive: true });
+
+    // One pointer listener for the whole page, however many figures exist.
+    var lastT = 0;
+    window.addEventListener("pointermove", function (e) {
+      var now = e.timeStamp || performance.now();
+      var dt = lastT ? Math.min((now - lastT) / 1000, 0.1) : 0;
+      if (dt > 0 && ptr.on) {
+        // Smoothed hard enough to ignore jitter, lightly enough to stay live.
+        ptr.vx = ptr.vx * 0.6 + ((e.clientX - ptr.x) / dt) * 0.4;
+        ptr.vy = ptr.vy * 0.6 + ((e.clientY - ptr.y) / dt) * 0.4;
+        ptr.speed = Math.sqrt(ptr.vx * ptr.vx + ptr.vy * ptr.vy);
+      }
+      lastT = now;
+      ptr.x = e.clientX;
+      ptr.y = e.clientY;
+      ptr.t = now;
+      ptr.on = true;
+      // Only wake what the cursor could plausibly affect.
+      instances.forEach(function (i) {
+        var r = i.rect;
+        if (!r) return;
+        if (e.clientX > r.left - PTR_MARGIN && e.clientX < r.right + PTR_MARGIN &&
+            e.clientY > r.top - PTR_MARGIN && e.clientY < r.bottom + PTR_MARGIN) {
+          i.wake();
+        }
+      });
+    }, { passive: true });
+
+    window.addEventListener("blur", function () {
+      ptr.on = false;
+      ptr.speed = ptr.vx = ptr.vy = 0;
+      lastT = 0;
+    });
+
     // Theme: theme.js writes data-theme on <html>; the OS query covers the
     // rest. No change to theme.js needed — it already writes what we watch.
     function reink() {
@@ -331,6 +390,8 @@
     rule: function (name, factory) { rules[name] = factory; },
     renderer: function (name, fn) { renderers[name] = fn; },
     textTargets: textTargets,
+    pathTargets: pathTargets,
+    maskTargets: maskTargets,
     mulberry32: mulberry32,
     instances: instances,
     boot: boot,
