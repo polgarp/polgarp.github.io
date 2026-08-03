@@ -2,6 +2,29 @@
 <html lang="en">
 {% include head.html %}
 <body data-share-service="{{ site.share_service }}">
+{%- if content contains "data-illo" %}
+  <script>
+    /* Runs before any illustration is parsed, so the static fallback is never
+       shown to a reader who is going to get the live version — otherwise it
+       paints, then vanishes when the engine takes over, which reads as a
+       flash. Reduced-motion readers are left alone: the fallback is what they
+       keep, and hiding it even briefly would be wrong.
+
+       Hiding it up front means a failure would leave an empty box, so this
+       also arms a failsafe: if nothing has painted shortly after load, the
+       fallback comes back. core.js sets data-illo-painted on its first frame. */
+    (function () {
+      var d = document.documentElement;
+      try {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      } catch (e) { return; }
+      d.classList.add("illo-js");
+      window.setTimeout(function () {
+        if (!d.hasAttribute("data-illo-painted")) d.classList.remove("illo-js");
+      }, 2500);
+    })();
+  </script>
+{%- endif %}
   <a class="skip-link" href="#main">Skip to content</a>
   {% include masthead.html %}
   <main id="main" class="shell">

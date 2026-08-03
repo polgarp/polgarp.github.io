@@ -1427,6 +1427,12 @@ img.emoji {
     inset: 0;
   }
 
+
+  // Two ways the fallback gets hidden. The first prevents the flash: the
+  // inline script in default.html sets .illo-js before any figure is parsed,
+  // for readers who will get the live version. The second holds afterwards,
+  // once a frame has actually drawn — so if the failsafe releases .illo-js
+  // because nothing painted, the fallback comes back.
   &.illo--live .illo__static {
     visibility: hidden;
   }
@@ -1443,4 +1449,17 @@ img.emoji {
   width: min(64rem, calc(100vw - 3rem));
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+// Set by the inline script in default.html before any figure is parsed, so a
+// reader who will get the live illustration never sees the static fallback
+// paint and then disappear. Released again by that script's failsafe if
+// nothing has drawn, so a failed engine still leaves a picture on the page.
+.illo-js .illo .illo__static {
+  visibility: hidden;
+}
+
+// One figure whose engine failed, on a page where the rest are fine.
+.illo-js .illo.illo--fallback .illo__static {
+  visibility: visible;
 }
