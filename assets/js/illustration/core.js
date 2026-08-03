@@ -510,6 +510,55 @@
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", reink);
   }
 
+  // ---- Export the current frame as SVG, for the static fallback.
+  //
+  // Run against a settled illustration; the result is committed to
+  // _includes/illustrations/ and inlined by the include, so a reader without
+  // JavaScript sees the idle state rather than a generic plate. It records an
+  // actual draw pass, so it cannot disagree with what the engine renders.
+  function exportSVG(index) {
+    var inst = instances[index || 0];
+    if (!inst || !Illo.marks.record) return "";
+    var s = inst.sim;
+    Illo.marks.record(true);
+    inst.paint();
+    var marks = Illo.marks.recorded() || [];
+    Illo.marks.record(false);
+    inst.paint();
+
+    // Group by weight so the file is a handful of <g>s rather than a few
+    // hundred fully-specified elements; gzip does the rest.
+    var groups = {}, i, m;
+    for (i = 0; i < marks.length; i++) {
+      m = marks[i];
+      var key = m[3] + "|" + m[4];
+      (groups[key] = groups[key] || []).push(m);
+    }
+    var body = "";
+    Object.keys(groups).forEach(function (key) {
+      var g = groups[key], parts = key.split("|");
+      // currentColor for ink so the fallback follows the theme; accent marks
+      // keep their own colour, which is the token value at export time.
+      var isInk = parts[1] === inst.ink.fg;
+      body += '<g font-weight="' + parts[0] + '"' +
+              (isInk ? "" : ' fill="' + parts[1] + '"') + ">";
+      for (i = 0; i < g.length; i++) {
+        body += '<text x="' + Math.round(g[i][0]) + '" y="' + Math.round(g[i][1]) +
+                '">' + g[i][2] + "</text>";
+      }
+      body += "</g>";
+    });
+
+    // No role or label here: the include wraps this and owns the accessible
+    // name, so the alt text lives in one place next to the caption.
+    return '<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"' +
+      ' viewBox="0 0 ' + Math.round(s.w) + " " + Math.round(s.h) + '"' +
+      ' preserveAspectRatio="xMidYMid meet"' +
+      ' font-family="var(--font-mono), monospace" font-size="' +
+      Illo.marks.size(s.cell) + '" fill="currentColor" text-anchor="middle"' +
+      ' dominant-baseline="central">' + body + "</svg>";
+  }
+
   window.Illo = {
     rule: function (name, factory) { rules[name] = factory; },
     renderer: function (name, fn) { renderers[name] = fn; },
@@ -517,7 +566,8 @@
     maskTargets: maskTargets,
     mulberry32: mulberry32,
     instances: instances,
-    boot: boot
+    boot: boot,
+    exportSVG: exportSVG
   };
 
   // Deferred scripts run while readyState is already "interactive", so

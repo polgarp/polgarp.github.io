@@ -27,6 +27,11 @@
   // Draw one pass over the field: `use(i)` selects points, `tone(i)` gives
   // 0..1. Glyphs are grouped by ramp step so the canvas font is set once per
   // step rather than once per mark — the difference is roughly 3x.
+  // When recording, a pass also appends what it drew. The exporter uses this
+  // so a generated fallback is exactly what the renderer produced — whatever
+  // verb drew it — rather than a second implementation of each verb's tone.
+  var rec = null;
+
   function pass(ctx, sim, colour, use, tone) {
     var cell = sim.cell || 8;
     var mono = getComputedStyle(document.documentElement)
@@ -56,7 +61,9 @@
       var g = GLYPHS.charAt(s);
       for (i = 0; i < b.length; i++) {
         var k = b[i];
-        ctx.fillText(g, snap(sim.xs[k], cell), snap(sim.ys[k], cell));
+        var mx = snap(sim.xs[k], cell), my = snap(sim.ys[k], cell);
+        ctx.fillText(g, mx, my);
+        if (rec) rec.push([mx, my, g, WEIGHTS[s], colour]);
       }
     }
   }
@@ -95,5 +102,8 @@
   }
 
   Illo.marks = { pass: pass, snap: snap, clamp01: clamp01, glyphs: GLYPHS,
+                 size: function (cell) { return Math.round(cell * SIZE_RATIO); },
+                 record: function (on) { rec = on ? [] : null; return rec; },
+                 recorded: function () { return rec; },
                  hash: hash, near2: near2, render: render, isLanded: isLanded };
 })();
