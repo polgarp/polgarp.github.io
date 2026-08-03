@@ -77,6 +77,7 @@
   var FOCUS_R = 168;
 
   function focus(ctx, sim, ink) {
+    sim.pinned = true;
     var r2 = FOCUS_R * FOCUS_R;
     for (var i = 0; i < sim.n; i++) {
       var sharp = sim.pointerOn ? clamp01(1 - near2(sim, i) / r2) : 0;
@@ -231,6 +232,29 @@
       isLanded(sim));
   }
 
+  // ---------------------------------------------------------------
+  // RENDER — most of the object resolves on its own; a minority never does.
+  // Points outside the accent-eligible subset settle to full resolve during
+  // arrival and stay there. Accent-eligible points hold at RESIST until the
+  // cursor reaches them, then lock at full resolve and draw as accent.
+  // Owns resolve outright, so it sets sim.pinned.
+  // ---------------------------------------------------------------
+  var RENDER_R = 74, RESIST = 0.52;
+
+  function render_(ctx, sim, ink) {
+    sim.pinned = true;
+    var r2 = RENDER_R * RENDER_R, on = sim.pointerOn;
+    for (var i = 0; i < sim.n; i++) {
+      if (!sim.hard[i]) { sim.aux[i] = 1; continue; }
+      if (!sim.landed[i] && on && near2(sim, i) < r2) sim.landed[i] = 1;
+      sim.aux[i] = sim.landed[i] ? 1 : RESIST;
+    }
+    render(ctx, sim, ink,
+      function (i) { return 0.12 + sim.aux[i] * 0.88; },
+      isLanded(sim));
+  }
+
+  Illo.renderer("render", render_);
   Illo.renderer("order", order);
   Illo.renderer("focus", focus);
   Illo.renderer("light", light);

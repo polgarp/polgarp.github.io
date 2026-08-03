@@ -179,6 +179,7 @@
     this.restCount = 0;
     this.running = false;
     this.visible = false;
+    this.shown = false;   // has a frame drawn? gates hiding the fallback
     this.frameCost = 0;   // rolling ms, exposed for profiling
     this.ink = { fg: "#000", muted: "#6e6e6e", accent: "#d62828", paper: "#fff" };
   }
@@ -192,8 +193,10 @@
     this.stage = stage;
     this.canvas = cv;
     this.ctx = cv.getContext("2d", { alpha: true });
-    this.el.classList.add("illo--live");
     readTokens(this.el, this.ink);
+    // The static fallback stays visible until a frame has actually drawn (see
+    // frame()). Anything that throws before then leaves a real picture on the
+    // page rather than an empty box.
 
     this.resize();
   };
@@ -276,6 +279,12 @@
 
     this.frameCost = this.frameCost * 0.9 + (performance.now() - t0) * 0.1;
 
+    // Pixels exist now, so it is safe to hide the fallback.
+    if (!this.shown) {
+      this.shown = true;
+      this.el.classList.add("illo--live");
+    }
+
     // Rest detection: mean squared speed, sustained, and gated on sim.busy so
     // a rule can hold the loop open. Keyed on pointer motion rather than
     // presence, so a stationary cursor over a settled field still rests.
@@ -301,8 +310,17 @@
     els.forEach(function (el) {
       var inst = new Instance(el);
       if (!rules[inst.ruleName]) return;
-      inst.mount();
-      instances.push(inst);
+      try {
+        inst.mount();
+        instances.push(inst);
+      } catch (e) {
+        // Leave this figure showing its static fallback and carry on with the
+        // rest of the page.
+        if (inst.canvas && inst.canvas.parentNode) {
+          inst.canvas.parentNode.removeChild(inst.canvas);
+        }
+        el.classList.remove("illo--live");
+      }
     });
     if (!instances.length) return;
 
@@ -338,6 +356,13 @@
       rectTick = false;
     }
     window.addEventListener("scroll", function () {
+      // Scrolling moves a figure past a stationary cursor, which would
+      // otherwise read exactly like sweeping the cursor across the figure —
+      // so a reader scrolling the page with the mouse resting over the column
+      // would trigger every verb without ever pointing at anything. Treat
+      // scrolling as disengaging the pointer until it genuinely moves again.
+      ptr.on = false;
+      ptr.speed = ptr.vx = ptr.vy = 0;
       if (!rectTick) { rectTick = true; requestAnimationFrame(refreshRects); }
     }, { passive: true });
 
@@ -346,7 +371,7 @@
     window.addEventListener("pointermove", function (e) {
       var now = e.timeStamp || performance.now();
       var dt = lastT ? Math.min((now - lastT) / 1000, 0.1) : 0;
-      if (dt > 0 && ptr.on) {
+      if (dt > 0 && ptr.on) {   // ptr.on false right after a scroll
         // Smoothed hard enough to ignore jitter, lightly enough to stay live.
         ptr.vx = ptr.vx * 0.6 + ((e.clientX - ptr.x) / dt) * 0.4;
         ptr.vy = ptr.vy * 0.6 + ((e.clientY - ptr.y) / dt) * 0.4;
