@@ -1,0 +1,47 @@
+# Objects an illustration can be built on. Single source of truth: the include
+# emits `d` into the static SVG fallback AND into a data attribute the engine
+# reads, so the live and no-JS versions can never disagree.
+#
+# All drawn in a 100x100 box. Abstract only — a literal subject reads as a
+# smudge at cell resolution, and an abstract object carrying a verb says more
+# than a picture of a thing anyway. Holes rely on opposite winding (nonzero
+# fill), which canvas and SVG agree on.
+#
+# fit: wide     stretch to fill the figure. For shapes with no meaningful
+#               aspect ratio, where filling the column reads better.
+# fit: contain  keep the aspect ratio. For shapes that would look wrong
+#               stretched — anything round or angled.
+
+rect:
+  d: "M14 22 H86 V78 H14 Z"
+  fit: wide
+frame:
+  d: "M10 20 H90 V80 H10 Z M20 30 V70 H80 V30 Z"
+  fit: wide
+band:
+  d: "M6 42 H94 V58 H6 Z"
+  fit: wide
+split:
+  d: "M8 20 H46 V80 H8 Z M54 20 H92 V80 H54 Z"
+  fit: wide
+columns:
+  d: "M14 18 H32 V82 H14 Z M41 18 H59 V82 H41 Z M68 18 H86 V82 H68 Z"
+  fit: wide
+stack:
+  d: "M12 22 H88 V36 H12 Z M12 43 H88 V57 H12 Z M12 64 H88 V78 H12 Z"
+  fit: wide
+steps:
+  d: "M10 70 H34 V86 H10 Z M38 46 H62 V86 H38 Z M66 22 H90 V86 H66 Z"
+  fit: wide
+disc:
+  d: "M50 50 m -32 0 a 32 32 0 1 0 64 0 a 32 32 0 1 0 -64 0 Z"
+  fit: contain
+ring:
+  d: "M50 50 m -34 0 a 34 34 0 1 0 68 0 a 34 34 0 1 0 -68 0 Z M50 50 m -20 0 a 20 20 0 1 1 40 0 a 20 20 0 1 1 -40 0 Z"
+  fit: contain
+wedge:
+  d: "M12 82 L50 18 L88 82 Z"
+  fit: contain
+cross:
+  d: "M42 14 H58 V42 H86 V58 H58 V86 H42 V58 H14 V42 H42 Z"
+  fit: contain

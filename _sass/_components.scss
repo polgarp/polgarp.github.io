@@ -1395,3 +1395,42 @@ img.emoji {
     margin-top: 1rem;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Interactive illustration. An abstract object held on the monospace grid,
+// with a verb the cursor performs on it. See _includes/illustration.
+//
+// The static SVG is the default content and the accessible representation; the
+// engine replaces it with a canvas only where it can actually run, so no-JS
+// and prefers-reduced-motion readers keep a real picture rather than a gap.
+.illo {
+  --illo-h: 17rem;
+
+  .illo__stage {
+    position: relative;
+    height: var(--illo-h);
+    color: var(--ink);
+  }
+
+  .illo__static,
+  .illo__canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  // Canvas sits over the plate, which is then hidden — keeping the SVG in flow
+  // until the moment it is replaced avoids a layout jump on boot.
+  .illo__canvas {
+    position: absolute;
+    inset: 0;
+  }
+
+  &.illo--live .illo__static {
+    visibility: hidden;
+  }
+
+  figcaption {
+    max-width: var(--measure);
+  }
+}
