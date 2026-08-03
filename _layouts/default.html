@@ -52,7 +52,7 @@
   data-illo-render, so the rendered content names exactly what to load — a post
   using one verb ships one verb, not six.
   {% endcomment -%}
-  {%- assign _verbs = "order,focus,light,ignite,sift,pace" | split: "," -%}
+  {%- assign _verbs = "order,focus,light,ignite,sift,pace,deepen" | split: "," -%}
   {%- for v in _verbs -%}
     {%- capture _needle %}data-illo-render="{{ v }}"{% endcapture -%}
     {%- if content contains _needle %}
