@@ -15,60 +15,75 @@
   if (!window.Illo || !Illo.marks) return;
 
   var clamp01 = Illo.marks.clamp01;
-  var hash = Illo.marks.hash;
   var near2 = Illo.marks.near2;
   var render = Illo.marks.render;
-  var isLanded = Illo.marks.isLanded;
 
   // ---------------------------------------------------------------
-  // DEEPEN — covering the ground always produces something; covering it at a
-  // considered pace is the only thing that produces something solid.
+  // DEEPEN — any pass finishes the artefact; only worked ground has anything
+  // underneath it.
   //
-  // SHALLOW is reached by any pass at any speed: the mark exists, thin. Depth
-  // beyond that accrues per unit of GROUND COVERED, weighted by care — not per
-  // unit of time. That distinction is the whole verb: if depth accrued with
-  // time, holding the cursor still would be the optimal strategy, which is the
-  // opposite of practice. You have to actually work through the material.
+  // Two separate quantities. Resolve (sim.aux) is the artefact: a pass at any
+  // speed drives it to full, so the field goes solid and looks done. Depth is
+  // held privately here and accrues only per unit of GROUND COVERED weighted
+  // by care, so it peaks at a considered pace and is zero at both a standstill
+  // and a sprint. Where depth passes DEEP, an accent-eligible mark shows red.
   //
-  // The result is a sweet spot rather than a slope: effort peaks at half of
-  // SLOW and falls off either side. Rushing covers ground without care;
-  // dawdling shows care without covering ground. Neither is practice.
+  // The contrast is therefore categorical rather than tonal: rushing leaves a
+  // finished-looking field with nothing in it, working leaves the same
+  // finished field with something showing through. A purely tonal difference
+  // between the two barely read; presence or absence of accent reads at a
+  // glance.
   //
-  // Distinct from `pace`, which takes resolve AWAY at speed. Here speed is not
-  // punished, it just yields less — the artefact still gets made either way.
+  // Distinct from `pace`, which takes resolve AWAY at speed. Speed isn't
+  // punished here at all — it just produces nothing but the surface.
   // ---------------------------------------------------------------
   var DEEPEN_R = 74;
   var SLOW = 420;        // px/s above which a pass is pure haste
-  var SHALLOW = 0.66;    // resolve any pass reaches, however fast
-  var RATE = 1.8;        // resolve per second at the ideal pace
-  var DEEP = 0.9;        // above this a mark counts as understood
+  var FINISH = 0.55;     // reach fraction beyond which a pass completes a mark
+  var RATE = 2.4;        // depth per second at the ideal pace
+  var DEEP = 0.5;        // depth above which a mark shows through
+  var FADE = 0.07;       // depth lost per second, so the field renews
+
+  var depth = null, depthFor = -1;
 
   function deepen(ctx, sim, ink) {
+    var n = sim.n, i, dt = 1 / 60, live = 0;
+    if (!depth || depthFor !== n) { depth = new Float32Array(n); depthFor = n; }
+
     if (sim.moving) {
-      var r2 = DEEPEN_R * DEEPEN_R, dt = 1 / 60;
+      var r2 = DEEPEN_R * DEEPEN_R;
       var rel = clamp01(sim.pspeed / SLOW);
       var care = 1 - rel;          // attention: highest when slow
       var travel = rel;            // ground covered: highest when fast
       // Product peaks at 0.25 when rel is 0.5, so x4 normalises the ideal
       // pace to full effort. Zero at a standstill and zero at a sprint.
       var effort = care * travel * 4;
-      for (var i = 0; i < sim.n; i++) {
+      for (i = 0; i < n; i++) {
         var q = near2(sim, i);
         if (q >= r2) continue;
         var falloff = 1 - q / r2;
-        // The artefact appears at once, whatever the speed.
-        if (sim.aux[i] < SHALLOW) sim.aux[i] = SHALLOW;
-        // Depth has no ceiling short of full: effort alone decides how fast
-        // it accrues. A rushed pass gains nothing because its effort is zero,
-        // not because a cap forbids it — capping by care as well would put the
-        // ceiling out of reach of the very pace that gains fastest.
-        sim.aux[i] = clamp01(sim.aux[i] + RATE * effort * falloff * dt);
-        sim.landed[i] = sim.aux[i] > DEEP ? 1 : 0;
+        // The artefact gets finished outright, whatever the speed. Assigned
+        // rather than accumulated: a fast flick is only in reach of a given
+        // mark for two or three frames, so any per-second rate would make
+        // haste produce LESS surface, which is the opposite of the claim.
+        if (falloff > FINISH && sim.aux[i] < 1) sim.aux[i] = 1;
+        // What lies under it only accrues if the ground was actually worked.
+        if (effort > 0) depth[i] = clamp01(depth[i] + RATE * effort * falloff * dt);
       }
     }
+
+    for (i = 0; i < n; i++) {
+      if (depth[i] > 0) {
+        depth[i] -= FADE * dt;
+        if (depth[i] < 0) depth[i] = 0; else live = 1;
+      }
+      sim.landed[i] = depth[i] > DEEP ? 1 : 0;
+    }
+    if (live) sim.busy = true;
+
     render(ctx, sim, ink,
       function (i) { return 0.1 + sim.aux[i] * 0.9; },
-      isLanded(sim));
+      function (i) { return !!sim.landed[i]; });
   }
 
   Illo.renderer("deepen", deepen);
