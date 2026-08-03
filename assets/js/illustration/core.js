@@ -219,6 +219,7 @@
     this.running = false;
     this.visible = false;
     this.shown = false;   // has a frame drawn? gates hiding the fallback
+    this.started = false; // has it been properly in view at least once?
     this.frameCost = 0;   // rolling ms, exposed for profiling
     this.ink = { fg: "#000", muted: "#6e6e6e", accent: "#d62828", paper: "#fff" };
   }
@@ -303,6 +304,16 @@
     // Speed decays from the last move's timestamp, so a cursor held still
     // reads as still — without any per-instance state to get out of sync.
     s.pspeed = pointerSpeedNow();
+    // A parked cursor is present but not acting. Verbs that ACCUMULATE state
+    // must gate on this, or a mouse left resting over a figure keeps feeding
+    // it forever and the loop never reaches rest. Verbs that merely reflect
+    // where the pointer is (focus, light) use pointerOn instead.
+    s.moving = s.pointerOn && s.pspeed > 6;
+    // A parked cursor is present but not acting. Verbs that ACCUMULATE state
+    // must gate on this, or a mouse left resting over a figure keeps feeding
+    // it forever and the loop never reaches rest. Verbs that merely reflect
+    // the pointer's position (focus, light) use pointerOn instead.
+    s.moving = s.pointerOn && s.pspeed > 6;
 
     var steps = 0;
     while (this.acc >= STEP && steps < MAX_CATCHUP) {
@@ -363,6 +374,34 @@
     });
     if (!instances.length) return;
 
+    // Two separate questions, deliberately:
+    //
+    //   Has it STARTED? Only once the whole figure has cleared the bottom
+    //   tenth of the viewport, so the arrival animation doesn't play out below
+    //   the fold where nobody sees it. A figure too tall to fit that band
+    //   falls back to its top edge being on screen.
+    //
+    //   Should it KEEP RUNNING? Any overlap at all, which is what the observer
+    //   below answers. Using the strict test for both would stop and restart
+    //   the loop every time the figure drifted a few pixels past the line.
+    //
+    // The start test is geometric and changes continuously with scroll, so it
+    // is evaluated in the scroll handler rather than in the observer callback:
+    // an observer only fires when a listed threshold is crossed, and a figure
+    // can go from mostly visible to fully clear without crossing one.
+    var START_INSET = 0.10;
+
+    function maybeStart(inst) {
+      if (inst.started || !inst.visible || !inst.rect) return;
+      var vh = window.innerHeight || 0;
+      var line = vh * (1 - START_INSET);
+      var r = inst.rect;
+      var ok = r.height > line
+        ? (r.top >= 0 && r.top < line)     // too tall to fit above the line
+        : (r.top >= 0 && r.bottom <= line);
+      if (ok) { inst.started = true; inst.wake(); }
+    }
+
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         var inst = null;
@@ -371,17 +410,20 @@
         }
         if (!inst) return;
         inst.visible = entry.isIntersecting;
-        if (entry.isIntersecting) inst.wake();
-        else inst.sleep();
+        if (!entry.isIntersecting) { inst.sleep(); return; }
+        inst.rect = (inst.stage || inst.el).getBoundingClientRect();
+        if (inst.started) inst.wake();
+        else maybeStart(inst);
       });
-    }, { rootMargin: "120px" });
+    }, { rootMargin: "0px" });
+
     instances.forEach(function (i) { io.observe(i.el); });
 
     var rt = 0;
     window.addEventListener("resize", function () {
       clearTimeout(rt);
       rt = setTimeout(function () {
-        instances.forEach(function (i) { i.resize(); });
+        instances.forEach(function (i) { i.resize(); maybeStart(i); });
       }, 150);
     }, { passive: true });
 
@@ -390,7 +432,9 @@
     var rectTick = false;
     function refreshRects() {
       instances.forEach(function (i) {
-        if (i.visible) i.rect = (i.stage || i.el).getBoundingClientRect();
+        if (!i.visible) return;
+        i.rect = (i.stage || i.el).getBoundingClientRect();
+        maybeStart(i);
       });
       rectTick = false;
     }

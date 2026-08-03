@@ -17,10 +17,13 @@
   var BASE = 0.46;        // resolve level at rest: clearly legible, unresolved
   var JITTER = 15;        // how far a fully unresolved point strays from cell
   var ACCENT_SHARE = 0.18;
-  var REVERT = 0.11;      // resolve units per second back toward base
+  var REVERT = 0.07;      // resolve units per second back toward base
+  var HOLD = 4.5;         // seconds of stillness before any decay begins, so
+                          // what a reader just did stays put long enough to
+                          // look at
   var K = 32;             // softer spring: settling stays visible
   var DAMP = 0.86;
-  var ARRIVE = 2.4;
+  var ARRIVE = 3.4;       // slower assembly: it should not demand a look
 
   // Shape geometry is NOT duplicated here. The include emits the path from
   // _data/illo_shapes.yml into both the static SVG and a data attribute, and
@@ -28,7 +31,7 @@
   // versions cannot drift apart.
 
   Illo.rule("field", function (sim, opts) {
-    var jx = null, jy = null, delays = null, clock = 0;
+    var jx = null, jy = null, delays = null, clock = 0, holdUntil = 0;
     var base = typeof opts.base === "number" ? opts.base : BASE;
 
     return {
@@ -69,6 +72,11 @@
 
       step: function (dt) {
         clock += dt;
+        // Pointer MOTION restarts the hold, not mere presence — a cursor
+        // parked on the page stays "on" indefinitely, so keying off presence
+        // would renew the hold forever and nothing would ever decay.
+        if (sim.pspeed > 6) holdUntil = clock + HOLD;
+        var decaying = clock >= holdUntil;
         var settling = clock < ARRIVE + 0.5;
         var n = sim.n, live = 0;
 
@@ -85,8 +93,9 @@
           // verb sets sim.pinned, meaning it rewrites resolve every frame and
           // owns it outright — reverting under such a verb would fight it and
           // keep the field marked live forever, so it would never rest.
-          if (sim.pinned) {
-            /* verb owns resolve */
+          if (sim.pinned || !decaying) {
+            // verb owns resolve, or we are still holding what the reader did
+            if (sim.aux[i] !== base) live = 1;
           } else if (sim.aux[i] > base) {
             sim.aux[i] -= REVERT * dt;
             if (sim.aux[i] <= base) { sim.aux[i] = base; sim.landed[i] = 0; }
