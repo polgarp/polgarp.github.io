@@ -283,6 +283,9 @@
     if (!this.shown) {
       this.shown = true;
       this.el.classList.add("illo--live");
+      // Disarms the failsafe in default.html: something has drawn, so the
+      // fallback does not need to be brought back.
+      document.documentElement.setAttribute("data-illo-painted", "1");
     }
   };
 
@@ -382,11 +385,13 @@
         instances.push(inst);
       } catch (e) {
         // Leave this figure showing its static fallback and carry on with the
-        // rest of the page.
+        // rest of the page. The plate is hidden globally by .illo-js, so it
+        // has to be un-hidden for this figure specifically.
         if (inst.canvas && inst.canvas.parentNode) {
           inst.canvas.parentNode.removeChild(inst.canvas);
         }
         el.classList.remove("illo--live");
+        el.classList.add("illo--fallback");
       }
     });
     if (!instances.length) return;
