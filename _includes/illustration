@@ -1,0 +1,77 @@
+{%- comment -%}
+An interactive illustration. Object + verb: an abstract shape held on the
+monospace grid, and a thing the cursor does to it.
+
+  {% include illustration object="band" verb="sift"
+     alt="A dense field of marks. Sweeping removes the light ones; what
+          survives is heavier."
+     caption="Automation takes the easy decisions first." %}
+
+  object   rect frame band split columns stack steps  (fill the column)
+           disc ring wedge cross                      (keep their aspect)
+  verb     order focus light ignite sift pace
+  alt      required. Describes what the illustration shows and does.
+  caption  optional. Visible, and carries the argument in words.
+  seed     optional. Changes the arrangement without changing the object.
+  fit      optional override, "wide" or "contain". Each object has a default.
+  height   optional CSS length, default 17rem.
+
+The static SVG below is what a reader without JavaScript, or with
+prefers-reduced-motion, sees: the object as a dotted plate. The engine upgrades
+it to a live canvas. Both read their geometry from the same path in
+_data/illo_shapes.yml, so the two can never drift apart.
+{%- endcomment -%}
+{%- assign _shape = site.data.illo_shapes[include.object] -%}
+{%- assign _path = _shape.d -%}
+{%- assign _fit = include.fit | default: _shape.fit | default: "contain" -%}
+{%- assign _id = include.object | append: "-" | append: include.verb | append: "-" | append: include.seed -%}
+{%- if _path -%}
+<figure class="illo"
+        data-illo="field"
+        data-illo-render="{{ include.verb | default: 'order' }}"
+        data-illo-path="{{ _path }}"
+        data-illo-fit="{{ _fit }}"
+        data-illo-seed="{{ include.seed | default: 7 }}"
+        {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
+  <div class="illo__stage">
+    {%- comment -%}
+    Two ways to draw the plate, because stretching an SVG with
+    preserveAspectRatio="none" would stretch the dot pattern along with the
+    shape and turn the marks into bars.
+
+    wide     clip a pattern-filled rect to the shape. The clip stretches to
+             the box, the pattern stays in element space, so dots stay square.
+    contain  a viewBox does the fitting; nothing is distorted either way.
+    {%- endcomment -%}
+    <svg class="illo__static" role="img"
+         {% unless _fit == 'wide' %}viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"{% endunless %}
+         aria-label="{{ include.alt | strip_newlines | normalize_whitespace | escape }}">
+      <defs>
+        {%- if _fit == 'wide' %}
+        <pattern id="illo-grid-{{ _id }}" width="8" height="8" patternUnits="userSpaceOnUse">
+          <rect width="3.4" height="3.4" x="2.3" y="2.3" fill="currentColor"/>
+        </pattern>
+        {%- else %}
+        <pattern id="illo-grid-{{ _id }}" width="2.9" height="2.9" patternUnits="userSpaceOnUse">
+          <rect width="1.25" height="1.25" x="0.83" y="0.83" fill="currentColor"/>
+        </pattern>
+        {%- endif %}
+        {%- if _fit == 'wide' %}
+        <clipPath id="illo-clip-{{ _id }}" clipPathUnits="objectBoundingBox">
+          <path d="{{ _path }}" transform="scale(0.01)"/>
+        </clipPath>
+        {%- endif %}
+      </defs>
+      {%- if _fit == 'wide' %}
+      <rect width="100%" height="100%" fill="url(#illo-grid-{{ _id }})"
+            clip-path="url(#illo-clip-{{ _id }})"/>
+      {%- else %}
+      <path d="{{ _path }}" fill="url(#illo-grid-{{ _id }})"/>
+      {%- endif %}
+    </svg>
+  </div>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" | strip }}</figcaption>
+  {%- endif %}
+</figure>
+{%- endif -%}
