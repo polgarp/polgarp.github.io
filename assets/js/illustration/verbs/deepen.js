@@ -43,6 +43,8 @@
   var RATE = 2.4;        // depth per second at the ideal pace
   var DEEP = 0.5;        // depth above which a mark shows through
   var FADE = 0.07;       // depth lost per second, so the field renews
+  var DWELL = 0.45;      // effort from pausing, as a share of the ideal pace
+  var PAUSE_MS = 2600;   // how long a pause keeps working before it stops
 
   var depth = null, depthFor = -1;
 
@@ -50,14 +52,22 @@
     var n = sim.n, i, dt = 1 / 60, live = 0;
     if (!depth || depthFor !== n) { depth = new Float32Array(n); depthFor = n; }
 
-    if (sim.moving) {
+    // Engaged covers both moving and having just stopped, so pausing over a
+    // spot reveals depth there — otherwise the only way to discover the verb
+    // is to guess the right pace. Bounded by PAUSE_MS so a cursor left resting
+    // on the page stops feeding it and the field can settle.
+    if (sim.pointerOn && (sim.moving || sim.pidle < PAUSE_MS)) {
       var r2 = DEEPEN_R * DEEPEN_R;
       var rel = clamp01(sim.pspeed / SLOW);
       var care = 1 - rel;          // attention: highest when slow
       var travel = rel;            // ground covered: highest when fast
       // Product peaks at 0.25 when rel is 0.5, so x4 normalises the ideal
       // pace to full effort. Zero at a standstill and zero at a sprint.
-      var effort = care * travel * 4;
+      // Two ways to earn depth. Pausing pays a fraction of the ideal rate and
+      // only where the cursor sits; working across the ground pays in full and
+      // covers area. Taking the max means a pause is a way in, never the
+      // efficient strategy.
+      var effort = Math.max(care * DWELL, care * travel * 4);
       for (i = 0; i < n; i++) {
         var q = near2(sim, i);
         if (q >= r2) continue;
