@@ -37,10 +37,10 @@
     {%- endif -%}
   {%- endfor %}
   {%- comment %}
-  A post needing a bespoke verb drops a file named after itself into
-  assets/js/illustration/posts/ and it is picked up automatically — no config,
-  and the filename carries the connection to the post. Shared verbs stay in
-  verbs.js; this is only for things one post needs.
+  A post needing a bespoke verb drops a file named after its markdown file
+  into assets/js/illustration/posts/ and it is picked up automatically — no
+  config, and the filename carries the connection to the post. Anything
+  reusable belongs in verbs/ instead, where other posts can reach it.
   {% endcomment -%}
   {%- assign _slug = page.path | split: "/" | last | split: "." | first -%}
   {%- assign _postjs = "/assets/js/illustration/posts/" | append: _slug | append: ".js" -%}
