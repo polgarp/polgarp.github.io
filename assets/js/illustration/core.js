@@ -266,7 +266,24 @@
     });
     this.rule.seed();
     this.restCount = 0;
-    this.wake();
+    // Show the seeded state straight away. The loop itself still waits until
+    // the figure is properly in view (see maybeStart).
+    this.paint();
+    if (this.started) this.wake();
+  };
+
+  // Draw the current state without advancing it. Used once at mount so the
+  // canvas takes over from the static plate immediately, showing the
+  // animation's start point rather than swapping to it later mid-scroll.
+  Instance.prototype.paint = function () {
+    if (!this.ctx || !this.rule) return;
+    var draw = renderers[this.rendererName] || renderers.order;
+    if (!draw.noClear) this.ctx.clearRect(0, 0, this.sim.w, this.sim.h);
+    draw(this.ctx, this.sim, this.ink);
+    if (!this.shown) {
+      this.shown = true;
+      this.el.classList.add("illo--live");
+    }
   };
 
   Instance.prototype.wake = function () {

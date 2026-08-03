@@ -23,7 +23,8 @@
                           // look at
   var K = 32;             // softer spring: settling stays visible
   var DAMP = 0.86;
-  var ARRIVE = 3.4;       // slower assembly: it should not demand a look
+  var ARRIVE = 3.4;       // window over which points begin, left to right
+  var RAMP = 1.1;         // seconds for one point to come into focus
 
   // Shape geometry is NOT duplicated here. The include emits the path from
   // _data/illo_shapes.yml into both the static SVG and a data attribute, and
@@ -60,12 +61,15 @@
           var a = rnd() * Math.PI * 2;
           jx[i] = Math.cos(a) * JITTER * loose;
           jy[i] = Math.sin(a) * JITTER * loose;
-          sim.aux[i] = base;
+          // Starts unresolved, which puts the point at its own cell plus its
+          // full offset: the object is legible from the very first frame, just
+          // loose. Arrival is it coming into focus, not flying in.
+          sim.aux[i] = 0;
           sim.landed[i] = 0;
           sim.hard[i] = rnd() < ACCENT_SHARE ? 1 : 0;   // accent-eligible
           delays[i] = (sim.txs[i] / sim.w) * ARRIVE * 0.72 + rnd() * ARRIVE * 0.28;
-          sim.xs[i] = sim.txs[i] + (rnd() - 0.5) * sim.w * 0.55;
-          sim.ys[i] = sim.tys[i] + (rnd() - 0.5) * sim.h * 0.55;
+          sim.xs[i] = sim.txs[i] + jx[i];
+          sim.ys[i] = sim.tys[i] + jy[i];
           sim.vxs[i] = sim.vys[i] = 0;
         }
       },
@@ -81,12 +85,14 @@
         var n = sim.n, live = 0;
 
         for (var i = 0; i < n; i++) {
-          if (clock < delays[i]) {
-            sim.xs[i] += sim.vxs[i] * dt;
-            sim.ys[i] += sim.vys[i] * dt;
+          var age = clock - delays[i];
+          if (age < RAMP && !sim.landed[i]) {
+            // Arrival: resolve ramps 0 -> base once this point's turn comes.
+            // Written directly rather than left to the revert, which is far
+            // too slow to read as an arrival.
+            sim.aux[i] = age <= 0 ? 0 : base * (age / RAMP);
             live = 1;
-            continue;
-          }
+          } else
 
           // Verbs push resolve away from BASE; this pulls it back, and
           // clears `landed` once a point has fully returned. Skipped when a
