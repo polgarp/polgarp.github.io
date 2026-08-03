@@ -329,11 +329,21 @@
     // it forever and the loop never reaches rest. Verbs that merely reflect
     // where the pointer is (focus, light) use pointerOn instead.
     s.moving = s.pointerOn && s.pspeed > 6;
+    // Milliseconds since the pointer last actually moved. A verb that wants to
+    // respond to someone pausing over it uses this with a bounded window, so
+    // it still stops accruing and the loop still reaches rest — a parked
+    // cursor must never be able to feed a verb indefinitely.
+    s.pidle = s.pointerOn ? performance.now() - ptr.t : Infinity;
     // A parked cursor is present but not acting. Verbs that ACCUMULATE state
     // must gate on this, or a mouse left resting over a figure keeps feeding
     // it forever and the loop never reaches rest. Verbs that merely reflect
     // the pointer's position (focus, light) use pointerOn instead.
     s.moving = s.pointerOn && s.pspeed > 6;
+    // Milliseconds since the pointer last actually moved. A verb that wants to
+    // respond to someone pausing over it uses this with a bounded window, so
+    // it still stops accruing and the loop still reaches rest — a parked
+    // cursor must never be able to feed a verb indefinitely.
+    s.pidle = s.pointerOn ? performance.now() - ptr.t : Infinity;
 
     var steps = 0;
     while (this.acc >= STEP && steps < MAX_CATCHUP) {
