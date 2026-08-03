@@ -1,7 +1,12 @@
 ---
 title: "Illustrations in context"
 sitemap: false
+published: false
 ---
+
+<!-- Development harness, deliberately not published: it contains excerpts of
+     real posts and is for checking illustrations in context, not for readers.
+     To view it:  bundle exec jekyll serve --unpublished  -->
 
 Four illustrations as they'd actually appear, in real post prose at real
 measure. This is the check before anything merges: not whether each one is

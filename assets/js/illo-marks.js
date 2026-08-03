@@ -1,18 +1,20 @@
-// How a mark is drawn. One style, deliberately: weighted monospace glyphs.
+// Mark rendering. One style: weighted monospace glyphs, where the character
+// carries coarse tone and the font weight carries fine tone.
 //
-// The character carries coarse tone and the font weight carries fine tone, so
-// the ramp has roughly twice the range of glyphs alone while keeping the
-// texture that pure rectangles lack. A monospace face holds its advance across
-// weights, so varying weight does not disturb the grid.
+//   Illo.marks.pass(ctx, sim, colour, use, tone)
 //
-// Alternatives considered and rejected are recorded in the doctrine, not here.
+// `use(i)` selects which points this pass draws, `tone(i)` returns 0..1.
+// Call once per colour; a tone of 0 draws nothing.
+//
+// Varying weight is safe on the grid because a monospace face keeps its
+// advance across weights. Rejected alternatives are in the doctrine.
 (function () {
   "use strict";
   if (!window.Illo) return;
 
   var GLYPHS = " .:-=+*#";
-  // Real weights only — IBM Plex Mono ships 400/600/700 on this site. A
-  // synthesised bold would smear the cell.
+  // Only weights the loaded face actually has (head.html loads 400/600/700).
+  // A synthesised bold would smear the cell.
   var WEIGHTS = [400, 400, 400, 600, 600, 700, 700, 700];
   var SIZE_RATIO = 1.35;
 

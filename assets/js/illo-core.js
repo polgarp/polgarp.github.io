@@ -1,20 +1,24 @@
-// Illustration engine. Points, a rule that moves them, a renderer that draws
-// them. The engine knows nothing about any particular post: a rule supplies the
-// targets and the forces, a renderer supplies the marks.
+// Illustration engine. Boots every [data-illo] element on the page, runs a
+// fixed-timestep simulation for each, and draws it through a named renderer.
 //
-// Contract:
-//   Illo.rule(name, factory)      factory(sim, opts) -> { seed, step }
-//   Illo.renderer(name, fn)       fn(ctx, sim, ink)
+//   Illo.rule(name, factory)     factory(sim, opts) -> { seed(), step(dt) }
+//   Illo.renderer(name, fn)      fn(ctx, sim, ink)
+//   Illo.pathTargets(...)        sample SVG path data onto the grid
 //
-// Everything runs on typed arrays and allocates nothing per frame, so a settled
-// illustration costs exactly zero.
+// Element attributes: data-illo (rule), data-illo-render (renderer),
+// data-illo-path, data-illo-fit, data-illo-seed. See _includes/illustration.
+//
+// A rule owns geometry and sets sim.busy while it still has work; a renderer
+// draws and may write per-point state. Both run on typed arrays and must not
+// allocate per frame — the loop stops when the field settles, and GC pauses
+// are visible in slow motion.
 (function () {
   "use strict";
 
   var STEP = 1 / 60;          // fixed physics timestep, independent of refresh
   var MAX_CATCHUP = 5;        // don't spiral after a backgrounded tab
-  var REST_ENERGY = 0.05;     // mean squared speed (px/s) below which we stop —
-                              // ~0.2 px/s average, i.e. 0.003 px per frame
+  var REST_ENERGY = 0.05;     // mean squared speed (px/s) counted as stopped:
+                              // ~0.2 px/s average, 0.003 px per frame
   var REST_FRAMES = 20;       // ...sustained this long
   var MAX_DPR = 2;            // 3x buys nothing at these mark sizes
 
@@ -22,11 +26,10 @@
   var renderers = {};
   var instances = [];
 
-  // ---- One pointer, tracked at window level and shared by every instance.
-  // An illustration reacts to where the cursor is on the PAGE, not only when
-  // it happens to be over the canvas — which is what makes a background-layer
-  // instance possible at all, and what stops a small figure feeling inert
-  // until you hit it exactly.
+  // ---- One pointer, tracked at window level and shared by every instance,
+  // so an illustration reacts to the cursor anywhere on the page rather than
+  // only when it is over the canvas. Required for background-layer instances,
+  // which never receive pointer events of their own.
   var ptr = { x: -1e6, y: -1e6, vx: 0, vy: 0, speed: 0, t: 0, on: false };
   var PTR_DECAY = 130;   // ms for a stopped cursor's speed to fall to ~1/e
   var PTR_MARGIN = 220;  // how far outside a figure the cursor still wakes it
@@ -90,8 +93,8 @@
     this.aux = new Float32Array(n);
   };
 
-  // ---- Deterministic RNG so an instance looks the same on every load, and so
-  // the SVG exporter can reproduce the exact frame the browser would draw.
+  // ---- Deterministic RNG, seeded per instance, so an illustration looks the
+  // same on every load and data-illo-seed is a stable way to vary it.
   function mulberry32(seed) {
     var a = seed >>> 0;
     return function () {
@@ -130,9 +133,9 @@
     return out;
   }
 
-  // ---- A vector subject: SVG path data, scaled to fit and centred. Path2D is
-  // baseline in every browser we target, so a shape costs no build step and no
-  // asset — the drawing is a string in the rule file.
+  // ---- Sample SVG path data onto the grid. The path comes from the include
+  // (see _data/illo_shapes.yml), which emits the same string into the static
+  // fallback, so both representations are built from one source.
   // `fit` is "contain" (keep the aspect ratio) or "wide" (stretch to fill).
   // A rectangle has no meaningful proportions and reads better filling the
   // column; anything round or angled would look wrong stretched, so the
@@ -246,9 +249,9 @@
     this.last = t;
     this.acc += dt;
 
-    // Map the shared page-level pointer into this instance's own coordinates.
+    // Map the shared page-level pointer into this instance's coordinates.
     // The rect is cached and refreshed on scroll/resize rather than measured
-    // per frame, so this costs no layout.
+    // per frame, so this triggers no layout.
     var s = this.sim;
     var r = this.rect;
     s.px = ptr.x - r.left;
@@ -267,16 +270,15 @@
     }
 
     var draw = renderers[this.rendererName] || renderers.order;
-    // A trail-based renderer fades the previous frame itself rather than
-    // losing it to a clear.
+    // A renderer may set noClear to fade the previous frame itself.
     if (!draw.noClear) this.ctx.clearRect(0, 0, this.sim.w, this.sim.h);
     draw(this.ctx, this.sim, this.ink);
 
     this.frameCost = this.frameCost * 0.9 + (performance.now() - t0) * 0.1;
 
-    // Rest detection: mean squared speed, sustained. A cursor resting on a
-    // settled field is genuinely at rest, so this keys off pointer *motion*
-    // rather than mere presence.
+    // Rest detection: mean squared speed, sustained, and gated on sim.busy so
+    // a rule can hold the loop open. Keyed on pointer motion rather than
+    // presence, so a stationary cursor over a settled field still rests.
     var e = 0;
     for (var i = 0; i < s.n; i++) e += s.vxs[i] * s.vxs[i] + s.vys[i] * s.vys[i];
     if (s.n && !s.busy && e / s.n < REST_ENERGY && s.pspeed < 6) this.restCount++;
@@ -326,8 +328,8 @@
       }, 150);
     }, { passive: true });
 
-    // Scrolling moves every figure relative to the viewport, so the cached
-    // rects have to follow. Coalesced into one frame — never per event.
+    // Scrolling moves every figure relative to the viewport, so cached rects
+    // must follow. Coalesced into one frame, never measured per event.
     var rectTick = false;
     function refreshRects() {
       instances.forEach(function (i) {
@@ -355,7 +357,7 @@
       ptr.y = e.clientY;
       ptr.t = now;
       ptr.on = true;
-      // Only wake what the cursor could plausibly affect.
+      // Wake only instances the cursor could plausibly affect.
       instances.forEach(function (i) {
         var r = i.rect;
         if (!r) return;
@@ -372,8 +374,8 @@
       lastT = 0;
     });
 
-    // Theme: theme.js writes data-theme on <html>; the OS query covers the
-    // rest. No change to theme.js needed — it already writes what we watch.
+    // theme.js writes data-theme on <html>; observing the attribute avoids
+    // coupling to it. The media query covers the unset-preference case.
     function reink() {
       instances.forEach(function (i) { readTokens(i.el, i.ink); i.wake(); });
     }
@@ -394,8 +396,8 @@
   };
 
   // Deferred scripts run while readyState is already "interactive", so
-  // anything short of "complete" still has DOMContentLoaded ahead of it — and
-  // waiting for it is what guarantees every rule file has registered first.
+  // anything short of "complete" still has DOMContentLoaded ahead of it.
+  // Waiting for it guarantees every rule and renderer file has registered.
   if (document.readyState === "complete") boot();
   else document.addEventListener("DOMContentLoaded", boot);
 })();
