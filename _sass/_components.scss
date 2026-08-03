@@ -1434,3 +1434,12 @@ img.emoji {
     max-width: var(--measure);
   }
 }
+
+// An illustration whose object has no relationship to the reading measure can
+// break out of the column. Centres on the viewport rather than the parent, so
+// it works wherever it is placed.
+.illo--wide .illo__stage {
+  width: min(64rem, calc(100vw - 3rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
