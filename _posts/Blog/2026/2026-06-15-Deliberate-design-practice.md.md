@@ -14,6 +14,11 @@ This is also true to various design practices, we are loosing benefits that we g
 - Agents are great at finding patterns in a large repository of user interviews. If the researcher outsources this work, their tacit knowledge doesn't get built. It's much harder to jump in to a conversation with the team on a new user need or recognizing assumptions. The team's product intuition gets shallow.
 - With new design tools creating full prototypes in a few minutes, the designers don't build an intimate knowledge of the solution space. Finding new interactions and spotting holistic problems becomes much harder.
 
+{% include illustration object="rect" verb="deepen" seed="6" height="13rem" width="wide"
+   svg="deliberate-design-practice"
+   alt="A loose rectangular field of marks. Sweeping the cursor across it quickly makes the marks appear but leaves them thin; moving slowly over the same ground makes them solid, and a scattered few turn red."
+   caption="Move fast and the marks appear. Move slowly and they hold. The artefact arrives either way; the understanding doesn't." %}
+
 These will cause long term degradation, as experience gets shallow and less effective. Less mature teams will not even recognize what they are loosing, while more mature team may develop practices to counteract this, like human-in-the-loop reviews and rely on institutional knowledge. 
 
 This boils down to being more mindful and explicit what goes where in the design process, that is being more rigorous, which helps in understanding which step can go fast, and where the team needs to slow down.
