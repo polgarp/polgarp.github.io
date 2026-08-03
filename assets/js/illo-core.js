@@ -86,6 +86,10 @@
     this.tys = new Float32Array(n);
     this.hard = new Uint8Array(n);
     this.landed = new Uint8Array(n);
+    // Generic per-point scalar a rule defines the meaning of. For `field` it
+    // is how settled the point is, 0 chaotic to 1 resolved — which is also
+    // what most renderers read as tone.
+    this.aux = new Float32Array(n);
   };
 
   // ---- Deterministic RNG so an instance looks the same on every load, and so
@@ -171,6 +175,10 @@
     this.seed = parseInt(el.getAttribute("data-illo-seed"), 10) || 1;
     this.text = el.getAttribute("data-illo-text") || "INTENTION";
     this.shape = el.getAttribute("data-illo-shape") || "";
+    // Style (how a mark is drawn) is independent of the renderer (what the
+    // cursor does), so the two can be chosen separately.
+    this.style = el.getAttribute("data-illo-style") || "mark";
+    this.settled = el.getAttribute("data-illo-settled") === "1";
     this.sim = new Sim();
     this.rule = null;
     this.ctx = null;
@@ -218,8 +226,10 @@
 
     var factory = rules[this.ruleName];
     if (!factory) return;
+    this.sim.style = this.style;
     this.rule = factory(this.sim, {
-      text: this.text, shape: this.shape, seed: this.seed
+      text: this.text, shape: this.shape, seed: this.seed,
+      settled: this.settled
     });
     this.rule.seed();
     this.restCount = 0;
