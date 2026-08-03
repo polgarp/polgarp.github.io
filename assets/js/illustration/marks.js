@@ -32,7 +32,10 @@
   // verb drew it — rather than a second implementation of each verb's tone.
   var rec = null;
 
-  function pass(ctx, sim, colour, use, tone) {
+  // `glyph`, if given, overrides the ramp character for every mark in the
+  // pass. Weight still comes from tone, so an overridden mark keeps the
+  // field's tonal structure while reading as a different KIND of mark.
+  function pass(ctx, sim, colour, use, tone, glyph) {
     var cell = sim.cell || 8;
     var mono = getComputedStyle(document.documentElement)
       .getPropertyValue("--font-mono").trim() || "monospace";
@@ -58,7 +61,7 @@
       var b = buckets[s];
       if (!b.length) continue;
       ctx.font = WEIGHTS[s] + " " + size + "px " + mono;
-      var g = GLYPHS.charAt(s);
+      var g = glyph || GLYPHS.charAt(s);
       for (i = 0; i < b.length; i++) {
         var k = b[i];
         var mx = snap(sim.xs[k], cell), my = snap(sim.ys[k], cell);
@@ -89,12 +92,12 @@
   // Verbs with no persistent state pass a constant-false `changed`.
   // Every tone is scaled by mask coverage, so objects fade at their edges
   // without each verb having to handle it.
-  function render(ctx, sim, ink, tone, changed) {
+  function render(ctx, sim, ink, tone, changed, accentGlyph) {
     function toned(i) { return tone(i) * sim.wt[i]; }
     pass(ctx, sim, ink.fg,
       function (i) { return !(changed(i) && sim.hard[i]); }, toned);
     pass(ctx, sim, ink.accent,
-      function (i) { return changed(i) && sim.hard[i]; }, toned);
+      function (i) { return changed(i) && sim.hard[i]; }, toned, accentGlyph);
   }
 
   function isLanded(sim) {

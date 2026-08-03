@@ -91,9 +91,13 @@
     }
     if (live) sim.busy = true;
 
+    // Depth reads as a different kind of mark, not just a red one: the ramp
+    // never produces this glyph, so what surfaces is legibly not more of the
+    // same. Colour alone was doing too much work.
     render(ctx, sim, ink,
       function (i) { return 0.1 + sim.aux[i] * 0.9; },
-      function (i) { return !!sim.landed[i]; });
+      function (i) { return !!sim.landed[i]; },
+      "@");
   }
 
   Illo.renderer("deepen", deepen);
