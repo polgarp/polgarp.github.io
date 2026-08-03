@@ -21,38 +21,48 @@
   var isLanded = Illo.marks.isLanded;
 
   // ---------------------------------------------------------------
-  // DEEPEN — passing over the field always produces something; only passing
-  // slowly produces something solid.
+  // DEEPEN — covering the ground always produces something; covering it at a
+  // considered pace is the only thing that produces something solid.
   //
-  // SHALLOW is reached immediately at any speed: the mark exists, thin. Above
-  // that, gain scales with how slowly the pointer is moving, so a careful pass
-  // carries a mark to full resolve and an accent-eligible one goes red.
+  // SHALLOW is reached by any pass at any speed: the mark exists, thin. Depth
+  // beyond that accrues per unit of GROUND COVERED, weighted by care — not per
+  // unit of time. That distinction is the whole verb: if depth accrued with
+  // time, holding the cursor still would be the optimal strategy, which is the
+  // opposite of practice. You have to actually work through the material.
+  //
+  // The result is a sweet spot rather than a slope: effort peaks at half of
+  // SLOW and falls off either side. Rushing covers ground without care;
+  // dawdling shows care without covering ground. Neither is practice.
   //
   // Distinct from `pace`, which takes resolve AWAY at speed. Here speed is not
   // punished, it just yields less — the artefact still gets made either way.
   // ---------------------------------------------------------------
   var DEEPEN_R = 74;
-  var SLOW = 340;        // px/s at which no depth is gained at all
+  var SLOW = 420;        // px/s above which a pass is pure haste
   var SHALLOW = 0.66;    // resolve any pass reaches, however fast
-  var RATE = 1.5;        // resolve per second gained at a crawl
+  var RATE = 1.8;        // resolve per second at the ideal pace
   var DEEP = 0.9;        // above this a mark counts as understood
 
   function deepen(ctx, sim, ink) {
     if (sim.moving) {
       var r2 = DEEPEN_R * DEEPEN_R, dt = 1 / 60;
-      // 1 when barely moving, 0 at SLOW and beyond.
-      var care = 1 - clamp01(sim.pspeed / SLOW);
-      var target = SHALLOW + care * (1 - SHALLOW);
+      var rel = clamp01(sim.pspeed / SLOW);
+      var care = 1 - rel;          // attention: highest when slow
+      var travel = rel;            // ground covered: highest when fast
+      // Product peaks at 0.25 when rel is 0.5, so x4 normalises the ideal
+      // pace to full effort. Zero at a standstill and zero at a sprint.
+      var effort = care * travel * 4;
       for (var i = 0; i < sim.n; i++) {
         var q = near2(sim, i);
         if (q >= r2) continue;
         var falloff = 1 - q / r2;
         // The artefact appears at once, whatever the speed.
         if (sim.aux[i] < SHALLOW) sim.aux[i] = SHALLOW;
-        // Understanding accrues only as fast as attention allows.
-        if (sim.aux[i] < target) {
-          sim.aux[i] = clamp01(sim.aux[i] + RATE * falloff * dt);
-        }
+        // Depth has no ceiling short of full: effort alone decides how fast
+        // it accrues. A rushed pass gains nothing because its effort is zero,
+        // not because a cap forbids it — capping by care as well would put the
+        // ceiling out of reach of the very pace that gains fastest.
+        sim.aux[i] = clamp01(sim.aux[i] + RATE * effort * falloff * dt);
         sim.landed[i] = sim.aux[i] > DEEP ? 1 : 0;
       }
     }

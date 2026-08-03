@@ -16,8 +16,8 @@ This is also true to various design practices, we are loosing benefits that we g
 
 {% include illustration object="rect" verb="deepen" seed="6" height="13rem" width="wide"
    svg="deliberate-design-practice"
-   alt="A loose rectangular field of marks. Sweeping the cursor across it quickly makes the marks appear but leaves them thin; moving slowly over the same ground makes them solid, and a scattered few turn red."
-   caption="Move fast and the marks appear. Move slowly and they hold. The artefact arrives either way; the understanding doesn't." %}
+   alt="A loose rectangular field of marks. Sweeping the cursor across it quickly makes the marks appear but leaves them thin. Working across the same ground at a steadier pace makes them solid, and a scattered few turn red. Holding the cursor still does nothing."
+   caption="The output still arrives. What rushing costs is the understanding, and nothing announces it going." %}
 
 These will cause long term degradation, as experience gets shallow and less effective. Less mature teams will not even recognize what they are loosing, while more mature team may develop practices to counteract this, like human-in-the-loop reviews and rely on institutional knowledge. 
 
