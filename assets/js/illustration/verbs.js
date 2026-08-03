@@ -36,10 +36,13 @@
   // subset chosen at seed) — which is what bounds how much red can appear.
   // Verbs with no persistent state pass a constant-false `changed`.
   function render(ctx, sim, ink, tone, changed) {
+    // Every tone is scaled by mask coverage, so an object fades out at its
+    // edges and into its halo without each verb having to handle it.
+    function toned(i) { return tone(i) * sim.wt[i]; }
     pass(ctx, sim, ink.fg,
-      function (i) { return !(changed(i) && sim.hard[i]); }, tone);
+      function (i) { return !(changed(i) && sim.hard[i]); }, toned);
     pass(ctx, sim, ink.accent,
-      function (i) { return changed(i) && sim.hard[i]; }, tone);
+      function (i) { return changed(i) && sim.hard[i]; }, toned);
   }
 
   function isLanded(sim) {
@@ -172,11 +175,14 @@
   }
 
   // ---------------------------------------------------------------
-  // SIFT — points that are not accent-eligible are removed near the cursor
-  // and fade back in at REGROW per second. Survivors are marked changed, so
-  // they draw at full tone and become the accent.
+  // SIFT — the cursor removes the easy marks; what survives is heavier.
+  // Removed marks scatter outward as they fade and drift back as they return,
+  // so the field visibly reorganises rather than just dimming. Survivors are
+  // pushed to full resolve through sim.aux, which means the field rule's own
+  // revert returns them to base and clears the accent — the illustration
+  // recovers on its own, like every other verb here.
   // ---------------------------------------------------------------
-  var SIFT_R = 66, REGROW = 0.16;
+  var SIFT_R = 70, REGROW = 0.13, SCATTER = 26;
   var gone = null, goneFor = -1;
 
   function sift(ctx, sim, ink) {
@@ -185,25 +191,39 @@
     var r2 = SIFT_R * SIFT_R;
 
     for (i = 0; i < n; i++) {
-      // Light marks are the easy work — automation takes those first.
-      if (sim.pointerOn && !sim.hard[i] && hash(i) > 0.34 && near2(sim, i) < r2) {
-        gone[i] = 1;
+      var inReach = sim.pointerOn && near2(sim, i) < r2;
+      if (inReach && !sim.hard[i]) {
+        gone[i] = 1;                       // easy work: automated away
       } else if (gone[i] > 0) {
-        gone[i] -= REGROW * dt;
+        gone[i] -= REGROW * dt;            // and it comes back, slowly
         if (gone[i] < 0) gone[i] = 0;
       }
+      // Only harden marks with real coverage: an accent in the faint halo
+      // draws too pale to register as accent at all.
+      if (inReach && sim.hard[i] && sim.wt[i] > 0.55) {
+        // What survives hardens. Written into aux so the field rule reverts
+        // it, rather than latching forever.
+        sim.aux[i] = 1;
+        sim.landed[i] = 1;
+      }
       if (gone[i] > 0) live = 1;
-      // What survives a sweep hardens: denser, and eligible for accent.
-      sim.landed[i] = (sim.pointerOn && near2(sim, i) < r2 && !gone[i]) ||
-                      sim.landed[i] ? 1 : 0;
     }
     if (live) sim.busy = true;
 
+    // A departing mark drifts off its cell, which is what makes the removal
+    // read as movement rather than as a dimmer switch.
+    var cell = sim.cell || 8;
+    for (i = 0; i < n; i++) {
+      if (gone[i] > 0) {
+        sim.xs[i] += (hash(i) - 0.5) * SCATTER * gone[i] * dt;
+        sim.ys[i] += (hash(i * 7.3) - 0.5) * SCATTER * gone[i] * dt;
+      }
+    }
+
     render(ctx, sim, ink,
       function (i) {
-        // A removed mark fades out and fades back rather than blinking.
         var present = 1 - gone[i];
-        return (sim.landed[i] ? 1 : sim.base + 0.2) * present;
+        return (0.12 + sim.aux[i] * 0.88) * present;
       },
       isLanded(sim));
   }
@@ -232,29 +252,6 @@
       isLanded(sim));
   }
 
-  // ---------------------------------------------------------------
-  // RENDER — most of the object resolves on its own; a minority never does.
-  // Points outside the accent-eligible subset settle to full resolve during
-  // arrival and stay there. Accent-eligible points hold at RESIST until the
-  // cursor reaches them, then lock at full resolve and draw as accent.
-  // Owns resolve outright, so it sets sim.pinned.
-  // ---------------------------------------------------------------
-  var RENDER_R = 74, RESIST = 0.52;
-
-  function render_(ctx, sim, ink) {
-    sim.pinned = true;
-    var r2 = RENDER_R * RENDER_R, on = sim.pointerOn;
-    for (var i = 0; i < sim.n; i++) {
-      if (!sim.hard[i]) { sim.aux[i] = 1; continue; }
-      if (!sim.landed[i] && on && near2(sim, i) < r2) sim.landed[i] = 1;
-      sim.aux[i] = sim.landed[i] ? 1 : RESIST;
-    }
-    render(ctx, sim, ink,
-      function (i) { return 0.12 + sim.aux[i] * 0.88; },
-      isLanded(sim));
-  }
-
-  Illo.renderer("render", render_);
   Illo.renderer("order", order);
   Illo.renderer("focus", focus);
   Illo.renderer("light", light);
