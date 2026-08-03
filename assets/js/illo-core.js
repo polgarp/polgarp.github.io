@@ -60,15 +60,13 @@
     this.cap = 0;
     this.xs = this.ys = this.vxs = this.vys = null;
     this.txs = this.tys = null;
-    this.hard = null;    // Uint8Array: 1 = resists settling
-    this.landed = null;  // Uint8Array: 1 = seated by hand, locked
+    this.hard = null;    // Uint8Array: 1 = accent-eligible, fixed at seed
+    this.landed = null;  // Uint8Array: 1 = changed by the reader
     this.w = 0;
     this.h = 0;
     this.px = -1e6;      // pointer, in logical px
     this.py = -1e6;
-    this.pvx = 0;        // pointer velocity, px/s, smoothed
-    this.pvy = 0;
-    this.pspeed = 0;
+    this.pspeed = 0;     // pointer speed, px/s, decayed from the last move
     this.pointerOn = false;
     this.rng = null;
     this.cell = 8;
@@ -107,11 +105,9 @@
 
   // ---- Turn any drawn mask into grid-aligned target points.
   //
-  // The subject is whatever `paint` draws into a cols x rows bitmap: a word, a
-  // vector shape, an icon. Sampling at grid resolution means every target lands
-  // on a cell by construction, so the marks are grid-true whatever the subject
-  // is — this is the piece that lets the same engine render INTENTION and a
-  // drawing of a computer without knowing the difference.
+  // The subject is whatever `paint` draws into a cols x rows bitmap. Sampling
+  // at grid resolution means every target lands on a cell by construction, so
+  // the marks are grid-true whatever the shape is.
   function maskTargets(w, h, cell, paint) {
     var cols = Math.max(1, Math.floor(w / cell));
     var rows = Math.max(1, Math.floor(h / cell));
@@ -134,34 +130,27 @@
     return out;
   }
 
-  function textTargets(text, w, h, cell, font) {
-    return maskTargets(w, h, cell, function (c, cols, rows) {
-      // Fit the word to the box by binary-searching the size in grid units.
-      var lo = 1, hi = rows * 2, size = 1;
-      while (lo <= hi) {
-        var mid = (lo + hi) >> 1;
-        c.font = "700 " + mid + "px " + font;
-        if (c.measureText(text).width <= cols * 0.92 && mid <= rows * 0.8) {
-          size = mid; lo = mid + 1;
-        } else { hi = mid - 1; }
-      }
-      c.font = "700 " + size + "px " + font;
-      c.textAlign = "center";
-      c.textBaseline = "middle";
-      c.fillText(text, cols / 2, rows / 2);
-    });
-  }
-
   // ---- A vector subject: SVG path data, scaled to fit and centred. Path2D is
   // baseline in every browser we target, so a shape costs no build step and no
   // asset — the drawing is a string in the rule file.
-  function pathTargets(d, vbW, vbH, w, h, cell, fillRatio) {
+  // `fit` is "contain" (keep the aspect ratio) or "wide" (stretch to fill).
+  // A rectangle has no meaningful proportions and reads better filling the
+  // column; anything round or angled would look wrong stretched, so the
+  // choice belongs to the shape and travels with it in the data file.
+  function pathTargets(d, vbW, vbH, w, h, cell, fit, fillRatio) {
     var p = new Path2D(d);
+    var ratio = fillRatio || 0.92;
     return maskTargets(w, h, cell, function (c, cols, rows) {
-      var k = Math.min(cols / vbW, rows / vbH) * (fillRatio || 0.88);
+      var kx, ky;
+      if (fit === "wide") {
+        kx = (cols / vbW) * ratio;
+        ky = (rows / vbH) * ratio;
+      } else {
+        kx = ky = Math.min(cols / vbW, rows / vbH) * ratio;
+      }
       c.save();
-      c.translate((cols - vbW * k) / 2, (rows - vbH * k) / 2);
-      c.scale(k, k);
+      c.translate((cols - vbW * kx) / 2, (rows - vbH * ky) / 2);
+      c.scale(kx, ky);
       c.fill(p);
       c.restore();
     });
@@ -171,14 +160,12 @@
   function Instance(el) {
     this.el = el;
     this.ruleName = el.getAttribute("data-illo");
-    this.rendererName = el.getAttribute("data-illo-render") || "grid";
+    this.rendererName = el.getAttribute("data-illo-render") || "order";
     this.seed = parseInt(el.getAttribute("data-illo-seed"), 10) || 1;
-    this.text = el.getAttribute("data-illo-text") || "INTENTION";
-    this.shape = el.getAttribute("data-illo-shape") || "";
-    // Style (how a mark is drawn) is independent of the renderer (what the
-    // cursor does), so the two can be chosen separately.
-    this.style = el.getAttribute("data-illo-style") || "mark";
-    this.settled = el.getAttribute("data-illo-settled") === "1";
+    // Geometry comes from the include, which emitted the same path into the
+    // static SVG. One source, so the live and fallback versions cannot drift.
+    this.path = el.getAttribute("data-illo-path") || "";
+    this.fit = el.getAttribute("data-illo-fit") || "contain";
     this.sim = new Sim();
     this.rule = null;
     this.ctx = null;
@@ -189,15 +176,17 @@
     this.restCount = 0;
     this.running = false;
     this.visible = false;
-    this.frameCost = 0;   // rolling ms, for the bake-off readout
+    this.frameCost = 0;   // rolling ms, exposed for profiling
     this.ink = { fg: "#000", muted: "#6e6e6e", accent: "#d62828", paper: "#fff" };
   }
 
   Instance.prototype.mount = function () {
+    var stage = this.el.querySelector(".illo__stage") || this.el;
     var cv = document.createElement("canvas");
     cv.className = "illo__canvas";
     cv.setAttribute("aria-hidden", "true");
-    this.el.appendChild(cv);
+    stage.appendChild(cv);
+    this.stage = stage;
     this.canvas = cv;
     this.ctx = cv.getContext("2d", { alpha: true });
     this.el.classList.add("illo--live");
@@ -207,7 +196,7 @@
   };
 
   Instance.prototype.resize = function () {
-    var rect = this.el.getBoundingClientRect();
+    var rect = (this.stage || this.el).getBoundingClientRect();
     this.rect = rect;
     var w = Math.max(1, Math.round(rect.width));
     var h = Math.max(1, Math.round(rect.height));
@@ -226,10 +215,8 @@
 
     var factory = rules[this.ruleName];
     if (!factory) return;
-    this.sim.style = this.style;
     this.rule = factory(this.sim, {
-      text: this.text, shape: this.shape, seed: this.seed,
-      settled: this.settled
+      path: this.path, fit: this.fit, seed: this.seed
     });
     this.rule.seed();
     this.restCount = 0;
@@ -279,7 +266,7 @@
       steps++;
     }
 
-    var draw = renderers[this.rendererName] || renderers.grid;
+    var draw = renderers[this.rendererName] || renderers.order;
     // A trail-based renderer fades the previous frame itself rather than
     // losing it to a clear.
     if (!draw.noClear) this.ctx.clearRect(0, 0, this.sim.w, this.sim.h);
@@ -344,7 +331,7 @@
     var rectTick = false;
     function refreshRects() {
       instances.forEach(function (i) {
-        if (i.visible) i.rect = i.el.getBoundingClientRect();
+        if (i.visible) i.rect = (i.stage || i.el).getBoundingClientRect();
       });
       rectTick = false;
     }
@@ -399,14 +386,11 @@
   window.Illo = {
     rule: function (name, factory) { rules[name] = factory; },
     renderer: function (name, fn) { renderers[name] = fn; },
-    textTargets: textTargets,
     pathTargets: pathTargets,
     maskTargets: maskTargets,
     mulberry32: mulberry32,
     instances: instances,
-    boot: boot,
-    // Bake-off only: lets the harness weigh each candidate's own source.
-    _src: function (name) { return renderers[name] ? renderers[name].toString() : ""; }
+    boot: boot
   };
 
   // Deferred scripts run while readyState is already "interactive", so

@@ -1,12 +1,17 @@
-// The verbs. What the cursor DOES — orthogonal to how a mark is drawn.
+// The verbs: what the cursor does. The cursor acts AS the verb — it doesn't
+// push the picture around, it changes the picture's state and the geometry
+// follows. That is why none of these can carve a hole in the image.
 //
-// Accent doctrine, applied consistently here: RED MEANS PERSISTENT STATE THE
-// READER CAUSED. A verb that leaves a trace uses it; a verb that only reflects
-// where the cursor is (light, depth, focus) uses none. That is not a shortage
-// of red, it is the signal — accent present means this picture remembers you.
+// Two rules every verb obeys:
 //
-// Every verb reads and writes sim.aux (0 chaotic .. 1 resolved) rather than
-// pushing points around, so nothing can carve a void in the image.
+//   ACCENT IS SCARCE. Red is drawn only where a point is both changed by the
+//   reader (`landed`) and accent-eligible (`hard`, a fixed ~18% chosen at
+//   seed). However hard a reader sweeps, red marks a few things, never the
+//   whole object.
+//
+//   PERSISTENCE IS HONEST. A verb that leaves a trace uses red; a verb that
+//   only reflects where the cursor is (light, focus) uses none. The presence
+//   of accent tells a reader whether this picture remembers them.
 (function () {
   "use strict";
   if (!window.Illo || !Illo.marks) return;
@@ -14,74 +19,81 @@
   var pass = Illo.marks.pass;
   var clamp01 = Illo.marks.clamp01;
 
+  // Stable per-point noise: same value every frame, no storage.
   function hash(i) {
     var x = Math.sin(i * 127.1) * 43758.5453;
     return x - Math.floor(x);
   }
 
-  // Squared distance from the cursor, in logical px.
   function near2(sim, i) {
     var dx = sim.px - sim.xs[i], dy = sim.py - sim.ys[i];
     return dx * dx + dy * dy;
   }
 
+  // Shared ink/accent draw. `tone` maps a point to 0..1.
+  function render(ctx, sim, ink, tone, changed) {
+    pass(ctx, sim, ink.fg,
+      function (i) { return !(changed(i) && sim.hard[i]); }, tone);
+    pass(ctx, sim, ink.accent,
+      function (i) { return changed(i) && sim.hard[i]; }, tone);
+  }
+
+  function isLanded(sim) {
+    return function (i) { return !!sim.landed[i]; };
+  }
+
   // ---------------------------------------------------------------
-  // ORDER — the cursor brings structure to chaos, and the structure stays.
-  // Starts genuinely disordered: marks off their cells, tone random. Where you
-  // attend, points settle onto the grid and resolve, permanently. The picture
-  // is built by where you looked. Red = the ordered part, because that is
-  // exactly the state you caused.
+  // ORDER — the cursor brings structure, and the structure holds for a while.
+  // Where you attend, points resolve onto the grid. A scarce minority of what
+  // you ordered goes red, marking what your attention actually produced.
   // ---------------------------------------------------------------
   var ORDER_R = 78, ORDER_RATE = 7;
 
   function order(ctx, sim, ink) {
-    var r2 = ORDER_R * ORDER_R, i, hot = 0;
     if (sim.pointerOn) {
-      for (i = 0; i < sim.n; i++) {
+      var r2 = ORDER_R * ORDER_R;
+      for (var i = 0; i < sim.n; i++) {
         var q = near2(sim, i);
-        if (q < r2) {
-          sim.aux[i] += (1 - q / r2) * ORDER_RATE * (1 / 60);
-          if (sim.aux[i] > 1) sim.aux[i] = 1;
-          if (sim.aux[i] > 0.6) sim.landed[i] = 1;
-        }
+        if (q >= r2) continue;
+        sim.aux[i] = clamp01(sim.aux[i] + (1 - q / r2) * ORDER_RATE * (1 / 60));
+        if (sim.aux[i] > 0.6) sim.landed[i] = 1;
       }
     }
-    for (i = 0; i < sim.n; i++) if (sim.aux[i] > 0.02 && sim.aux[i] < 0.99) { hot = 1; break; }
-    sim.busy = !!hot;
-
-    pass(ctx, sim, ink.fg,
-      function (i) { return !sim.landed[i]; },
-      function (i) { return 0.18 + sim.aux[i] * 0.55 + hash(i) * 0.18; });
-    pass(ctx, sim, ink.accent,
-      function (i) { return !!sim.landed[i]; },
-      function () { return 1; });
+    render(ctx, sim, ink,
+      function (i) { return 0.1 + sim.aux[i] * 0.9; },
+      isLanded(sim));
   }
 
   // ---------------------------------------------------------------
-  // FOCUS — the cursor is a lens. Nothing moves, nothing persists.
-  // Away from the cursor the tone comes from noise, so the image is present
-  // but will not resolve; near it, every mark reads true. No accent: this verb
-  // leaves nothing behind, and saying so with the absence of red is the point.
+  // FOCUS — the cursor is a lens. Nothing persists, so no accent.
+  // Out of focus the outline itself goes vague: resolve drops, so points drift
+  // off their cells and the tone comes from noise. The object is present but
+  // won't hold still enough to read.
   // ---------------------------------------------------------------
-  var FOCUS_R = 165;
+  var FOCUS_R = 168;
 
   function focus(ctx, sim, ink) {
     var r2 = FOCUS_R * FOCUS_R;
-    pass(ctx, sim, ink.fg,
-      function () { return true; },
+    for (var i = 0; i < sim.n; i++) {
+      var sharp = sim.pointerOn ? clamp01(1 - near2(sim, i) / r2) : 0;
+      sharp *= sharp;
+      // Written directly rather than accumulated: focus is a state of the
+      // cursor, not something the reader builds up.
+      sim.aux[i] = sim.base * 0.55 + sharp * (1 - sim.base * 0.55);
+    }
+    render(ctx, sim, ink,
       function (i) {
-        var sharp = sim.pointerOn ? clamp01(1 - near2(sim, i) / r2) : 0;
-        sharp = sharp * sharp;
-        // True tone where sharp, per-cell noise where not.
-        return 1 * sharp + (0.15 + hash(i) * 0.5) * (1 - sharp);
-      });
+        var t = sim.aux[i];
+        // Noise dominates where unresolved, truth where sharp.
+        return t * t + hash(i) * 0.42 * (1 - t);
+      },
+      function () { return false; });
   }
 
   // ---------------------------------------------------------------
-  // LIGHT — the cursor is a light source. Global, nothing persists.
-  // Every mark shades by how much it faces you, so moving anywhere re-lights
-  // the whole surface. You liked this one; the only change is that it now
-  // draws through the style layer, so it can wear the contrasty rect mark.
+  // LIGHT — the cursor is a light source. Global, nothing persists, no accent.
+  // Every mark shades by how much it faces the cursor, so moving anywhere on
+  // the page re-lights the whole surface at once.
   // ---------------------------------------------------------------
   function light(ctx, sim, ink) {
     var cx = sim.w / 2, cy = sim.h / 2;
@@ -89,63 +101,37 @@
     var ll = Math.sqrt(lx * lx + ly * ly) || 1e-6;
     lx /= ll; ly /= ll;
     var lit = sim.pointerOn;
-    pass(ctx, sim, ink.fg,
-      function () { return true; },
+    render(ctx, sim, ink,
       function (i) {
-        if (!lit) return 0.6;
+        if (!lit) return 0.55;
         var ox = sim.xs[i] - cx, oy = sim.ys[i] - cy;
         var ol = Math.sqrt(ox * ox + oy * oy) || 1e-6;
         var face = 0.5 + 0.5 * ((ox / ol) * lx + (oy / ol) * ly);
-        return 0.14 + face * 0.96;
-      });
+        return 0.12 + face * 0.95;
+      },
+      function () { return false; });
   }
 
   // ---------------------------------------------------------------
-  // DEPTH — the cursor is a viewpoint. Global, nothing persists.
-  // You said it didn't read on a word: too many small strokes, too few depth
-  // steps. Now five planes instead of three, a wider throw, and tone tied to
-  // plane so near reads heavy and far reads faint. Wants a simple object.
-  // ---------------------------------------------------------------
-  var PLANES = 5, THROW = 15;
-
-  function depth(ctx, sim, ink) {
-    var sx = sim.pointerOn ? clamp01((sim.px - sim.w / 2) / (sim.w / 2) * 0.5 + 0.5) * 2 - 1 : 0;
-    var sy = sim.pointerOn ? clamp01((sim.py - sim.h / 2) / (sim.h / 2) * 0.5 + 0.5) * 2 - 1 : 0;
-    var cell = sim.cell || 8;
-    var style = Illo.marks.styles[sim.style] || Illo.marks.styles.mark;
-    style.begin(ctx, cell);
-    ctx.fillStyle = ink.fg;
-    if (style.batched) ctx.beginPath();
-    for (var i = 0; i < sim.n; i++) {
-      var p = (hash(i * 3.7) * PLANES | 0);          // 0..PLANES-1
-      var d = p / (PLANES - 1) * 2 - 1;              // -1 far .. 1 near
-      style.draw(ctx,
-        Illo.marks.snap(sim.xs[i] + sx * THROW * d, cell),
-        Illo.marks.snap(sim.ys[i] + sy * THROW * d, cell),
-        0.22 + (d * 0.5 + 0.5) * 0.86, cell);
-    }
-    if (style.batched) ctx.fill();
-  }
-
-  // ---------------------------------------------------------------
-  // IGNITE — the cursor leaves heat, which spreads and cools.
-  // The one you found clearest, kept and strengthened. Persistent, so red.
+  // IGNITE — the cursor leaves heat, which spreads to neighbours and cools.
+  // The clearest case of the accent doctrine: heat is unambiguously state the
+  // reader caused, and it fades, so red stays scarce without any cap.
   // ---------------------------------------------------------------
   var IG_R = 62, IG_GAIN = 3.2, IG_SPREAD = 0.75, IG_DECAY = 0.42;
   var heat = null, nbr = null, nbrFor = -1;
 
   function buildNeighbours(sim) {
-    var cell = sim.cell || 8, n = sim.n, map = {}, i;
+    var cell = sim.cell || 8, n = sim.n, map = {}, i, k;
     for (i = 0; i < n; i++) {
       map[Math.round(sim.tys[i] / cell) * 1e5 + Math.round(sim.txs[i] / cell)] = i;
     }
     nbr = new Int32Array(n * 4);
     for (i = 0; i < n; i++) {
-      var cx = Math.round(sim.txs[i] / cell), cy = Math.round(sim.tys[i] / cell), k;
-      k = map[cy * 1e5 + cx - 1]; nbr[i * 4] = k === undefined ? -1 : k;
-      k = map[cy * 1e5 + cx + 1]; nbr[i * 4 + 1] = k === undefined ? -1 : k;
-      k = map[(cy - 1) * 1e5 + cx]; nbr[i * 4 + 2] = k === undefined ? -1 : k;
-      k = map[(cy + 1) * 1e5 + cx]; nbr[i * 4 + 3] = k === undefined ? -1 : k;
+      var cx = Math.round(sim.txs[i] / cell), cy = Math.round(sim.tys[i] / cell);
+      k = map[cy * 1e5 + cx - 1];       nbr[i * 4] = k === undefined ? -1 : k;
+      k = map[cy * 1e5 + cx + 1];       nbr[i * 4 + 1] = k === undefined ? -1 : k;
+      k = map[(cy - 1) * 1e5 + cx];     nbr[i * 4 + 2] = k === undefined ? -1 : k;
+      k = map[(cy + 1) * 1e5 + cx];     nbr[i * 4 + 3] = k === undefined ? -1 : k;
     }
     nbrFor = n;
   }
@@ -164,6 +150,7 @@
       heat[i] -= IG_DECAY * dt;
       if (heat[i] < 0) heat[i] = 0; else if (heat[i] > 1) heat[i] = 1;
       if (heat[i] > 0.02) hot = 1;
+      sim.landed[i] = heat[i] > 0.15 ? 1 : 0;
     }
     for (i = 0; i < n; i++) {
       if (heat[i] < 0.3) continue;
@@ -172,85 +159,80 @@
         if (j >= 0 && heat[j] < heat[i]) heat[j] += (heat[i] - heat[j]) * IG_SPREAD * dt;
       }
     }
-    sim.busy = !!hot;
+    if (hot) sim.busy = true;
 
-    pass(ctx, sim, ink.fg,
-      function (i) { return heat[i] <= 0.15; },
-      function () { return 0.62; });
-    pass(ctx, sim, ink.accent,
-      function (i) { return heat[i] > 0.15; },
-      function (i) { return 0.35 + heat[i] * 0.65; });
+    render(ctx, sim, ink,
+      function (i) { return sim.base + 0.16 + heat[i] * 0.72; },
+      isLanded(sim));
   }
 
   // ---------------------------------------------------------------
-  // SIFT — the cursor removes the easy marks, and what is left is heavier.
-  // For the automation-trap argument: you take work away and the remainder is
-  // denser, not lighter. Sweeping deletes the light marks permanently; the
-  // survivors are the hard ones, and they go red because the state is yours.
+  // SIFT — the cursor removes the easy marks; the remainder is heavier.
+  // Removed marks grow back slowly, so the illustration renews itself instead
+  // of ending up spent. That is a general principle here, not a concession:
+  // an illustration a reader can only exhaust once is a worse illustration.
   // ---------------------------------------------------------------
-  var SIFT_R = 66;
+  var SIFT_R = 66, REGROW = 0.16;
+  var gone = null, goneFor = -1;
 
   function sift(ctx, sim, ink) {
-    var r2 = SIFT_R * SIFT_R, i, moving = 0;
-    if (sim.pointerOn) {
-      for (i = 0; i < sim.n; i++) {
-        if (sim.landed[i] || sim.hard[i]) continue;
-        if (near2(sim, i) < r2) {
-          // Light marks are the easy work: automation takes them first.
-          if (hash(i) > 0.34) sim.landed[i] = 1;   // removed
-          else sim.hard[i] = 1;                    // survives, and hardens
-          moving = 1;
-        }
-      }
-    }
-    if (moving) sim.busy = true;
+    var n = sim.n, i, dt = 1 / 60, live = 0;
+    if (!gone || goneFor !== n) { gone = new Float32Array(n); goneFor = n; }
+    var r2 = SIFT_R * SIFT_R;
 
-    pass(ctx, sim, ink.fg,
-      function (i) { return !sim.landed[i] && !sim.hard[i]; },
-      function (i) { return 0.28 + hash(i) * 0.34; });
-    pass(ctx, sim, ink.accent,
-      function (i) { return !!sim.hard[i]; },
-      function () { return 1; });
+    for (i = 0; i < n; i++) {
+      // Light marks are the easy work — automation takes those first.
+      if (sim.pointerOn && !sim.hard[i] && hash(i) > 0.34 && near2(sim, i) < r2) {
+        gone[i] = 1;
+      } else if (gone[i] > 0) {
+        gone[i] -= REGROW * dt;
+        if (gone[i] < 0) gone[i] = 0;
+      }
+      if (gone[i] > 0) live = 1;
+      // What survives a sweep hardens: denser, and eligible for accent.
+      sim.landed[i] = (sim.pointerOn && near2(sim, i) < r2 && !gone[i]) ||
+                      sim.landed[i] ? 1 : 0;
+    }
+    if (live) sim.busy = true;
+
+    render(ctx, sim, ink,
+      function (i) {
+        // A removed mark fades out and fades back rather than blinking.
+        var present = 1 - gone[i];
+        return (sim.landed[i] ? 1 : sim.base + 0.2) * present;
+      },
+      isLanded(sim));
   }
 
   // ---------------------------------------------------------------
   // PACE — slowness deepens, speed degrades.
-  // For the deliberate-practice argument: the slowness was doing work nobody
-  // named. Move the cursor slowly and marks under it gain; sweep fast and they
-  // thin out. Uses the pointer velocity the engine already tracks, so it is
-  // the one verb that responds to HOW you move rather than where.
+  // The only verb that reads HOW you move rather than where, using the pointer
+  // velocity the engine already tracks. Move carefully and marks resolve;
+  // sweep through and they thin out.
   // ---------------------------------------------------------------
   var PACE_R = 72, SLOW = 260;
 
   function pace(ctx, sim, ink) {
-    var r2 = PACE_R * PACE_R, dt = 1 / 60, i, hot = 0;
     if (sim.pointerOn) {
-      // 1 when barely moving, -1 when sweeping.
+      var r2 = PACE_R * PACE_R, dt = 1 / 60;
+      // +1 when barely moving, -1 when sweeping.
       var care = 1 - 2 * clamp01(sim.pspeed / SLOW);
-      for (i = 0; i < sim.n; i++) {
+      for (var i = 0; i < sim.n; i++) {
         var q = near2(sim, i);
         if (q >= r2) continue;
-        sim.aux[i] += care * (1 - q / r2) * 2.2 * dt;
-        sim.aux[i] = clamp01(sim.aux[i]);
+        sim.aux[i] = clamp01(sim.aux[i] + care * (1 - q / r2) * 2.2 * dt);
         sim.landed[i] = sim.aux[i] > 0.8 ? 1 : 0;
       }
     }
-    for (i = 0; i < sim.n; i++) if (sim.aux[i] > 0.02) { hot = 1; break; }
-    sim.busy = !!hot;
-
-    pass(ctx, sim, ink.fg,
-      function (i) { return !sim.landed[i]; },
-      function (i) { return 0.16 + sim.aux[i] * 0.6; });
-    pass(ctx, sim, ink.accent,
-      function (i) { return !!sim.landed[i]; },
-      function () { return 1; });
+    render(ctx, sim, ink,
+      function (i) { return 0.08 + sim.aux[i] * 0.92; },
+      isLanded(sim));
   }
 
   Illo.renderer("order", order);
-  Illo.renderer("focus2", focus);
-  Illo.renderer("light2", light);
-  Illo.renderer("depth2", depth);
-  Illo.renderer("ignite2", ignite);
+  Illo.renderer("focus", focus);
+  Illo.renderer("light", light);
+  Illo.renderer("ignite", ignite);
   Illo.renderer("sift", sift);
   Illo.renderer("pace", pace);
 })();
