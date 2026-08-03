@@ -61,5 +61,39 @@
     }
   }
 
-  Illo.marks = { pass: pass, snap: snap, clamp01: clamp01, glyphs: GLYPHS };
+
+  // ---- Helpers every verb needs.
+
+  // Stable per-point noise: same value every frame, no storage.
+  function hash(i) {
+    var x = Math.sin(i * 127.1) * 43758.5453;
+    return x - Math.floor(x);
+  }
+
+  // Squared distance from the cursor to a point, in logical px.
+  function near2(sim, i) {
+    var dx = sim.px - sim.xs[i], dy = sim.py - sim.ys[i];
+    return dx * dx + dy * dy;
+  }
+
+  // Two passes: ink, then accent. A point draws accent only when it is both
+  // changed by the reader (`changed`) and accent-eligible (sim.hard, a fixed
+  // subset chosen at seed) — which is what bounds how much red can appear.
+  // Verbs with no persistent state pass a constant-false `changed`.
+  // Every tone is scaled by mask coverage, so objects fade at their edges
+  // without each verb having to handle it.
+  function render(ctx, sim, ink, tone, changed) {
+    function toned(i) { return tone(i) * sim.wt[i]; }
+    pass(ctx, sim, ink.fg,
+      function (i) { return !(changed(i) && sim.hard[i]); }, toned);
+    pass(ctx, sim, ink.accent,
+      function (i) { return changed(i) && sim.hard[i]; }, toned);
+  }
+
+  function isLanded(sim) {
+    return function (i) { return !!sim.landed[i]; };
+  }
+
+  Illo.marks = { pass: pass, snap: snap, clamp01: clamp01, glyphs: GLYPHS,
+                 hash: hash, near2: near2, render: render, isLanded: isLanded };
 })();
