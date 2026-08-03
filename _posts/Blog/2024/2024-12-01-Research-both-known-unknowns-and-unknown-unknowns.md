@@ -4,6 +4,8 @@ categories:
   - Blog 
 tags:
   - User research
+redirect_from:
+  - /blog/Research-both-known-unknowns-and-unknown-unknowns.md/
 ---
 
 **Greg Bernstein** in [**Making research more durable**](https://gregg.io/durable-research):

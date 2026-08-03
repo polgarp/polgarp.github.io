@@ -4,6 +4,8 @@ categories:
   - Blog
 tags:
   - AI design
+redirect_from:
+  - /blog/Deliberate-design-practice.md/
 ---
 
 [The Typing Was the Safety Harness](https://leadership.garden/typing-was-the-safety-harness/) by **Csaba Okrona**:
@@ -14,10 +16,10 @@ This is also true to various design practices, we are loosing benefits that we g
 - Agents are great at finding patterns in a large repository of user interviews. If the researcher outsources this work, their tacit knowledge doesn't get built. It's much harder to jump in to a conversation with the team on a new user need or recognizing assumptions. The team's product intuition gets shallow.
 - With new design tools creating full prototypes in a few minutes, the designers don't build an intimate knowledge of the solution space. Finding new interactions and spotting holistic problems becomes much harder.
 
-{% include illustration object="rect" verb="deepen" seed="6" height="13rem" width="wide"
+{% include illustration object="rect" verb="deepen" seed="6" height="12rem" width="wide" density="light"
    svg="deliberate-design-practice"
    alt="A loose rectangular field of marks. Moving the cursor across it fills the marks in solidly at any speed, so the field looks finished. Pausing over a spot, or working across the ground at a steady pace, brings out a scattering of red marks underneath it. Rushing through leaves none."
-   caption="The output still arrives. What rushing costs is the understanding, and nothing announces it going." %}
+   caption="The output arrives and looks finished. Rushing costs the invisible work." %}
 
 These will cause long term degradation, as experience gets shallow and less effective. Less mature teams will not even recognize what they are loosing, while more mature team may develop practices to counteract this, like human-in-the-loop reviews and rely on institutional knowledge. 
 

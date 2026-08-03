@@ -17,6 +17,9 @@ monospace grid, and a thing the cursor does to it.
   height   optional CSS length, default 17rem.
   svg      optional name of an exported idle state in _includes/illustrations/.
            Strongly preferred: without it the fallback is a generic plate.
+  density  optional "light" or "lighter" to widen the grid pitch. A wide
+           figure at the default pitch runs to well over a thousand marks,
+           which reads as texture rather than as an object.
   width    optional "wide" to break out of the reading column. Use when the
            object has no relationship to the measure and the extra room helps.
 
@@ -35,6 +38,7 @@ _data/illo_shapes.yml, so the two can never drift apart.
         data-illo-render="{{ include.verb | default: 'order' }}"
         data-illo-path="{{ _path }}"
         data-illo-fit="{{ _fit }}"
+        {% if include.density %}data-illo-density="{{ include.density }}"{% endif %}
         data-illo-seed="{{ include.seed | default: 7 }}"
         {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
   <div class="illo__stage">
