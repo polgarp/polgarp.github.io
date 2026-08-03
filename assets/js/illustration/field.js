@@ -13,7 +13,7 @@
   "use strict";
   if (!window.Illo) return;
 
-  var CELL = 8;
+  var CELL = 8;           // default grid pitch; density= widens it
   var BASE = 0.46;        // resolve level at rest: clearly legible, unresolved
   var JITTER = 15;        // how far a fully unresolved point strays from cell
   var ACCENT_SHARE = 0.18;
@@ -38,11 +38,16 @@
     return {
       seed: function () {
         if (!opts.path) return;
-        var t = Illo.pathTargets(opts.path, 100, 100, sim.w, sim.h, CELL, opts.fit);
+        // A wide figure at the default pitch runs to well over a thousand
+        // marks, which reads as texture rather than as an object. Widening the
+        // pitch thins it without changing anything else.
+        var cell = opts.density === "light" ? 11
+                 : opts.density === "lighter" ? 14 : CELL;
+        var t = Illo.pathTargets(opts.path, 100, 100, sim.w, sim.h, cell, opts.fit);
         var n = t.length / 3;
         if (!n) return;
         sim.alloc(n);
-        sim.cell = CELL;
+        sim.cell = cell;
         sim.base = base;
         if (!jx || jx.length < n) { jx = new Float32Array(n); jy = new Float32Array(n); }
         if (!delays || delays.length < n) delays = new Float32Array(n);

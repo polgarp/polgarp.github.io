@@ -208,6 +208,7 @@
     // static SVG. One source, so the live and fallback versions cannot drift.
     this.path = el.getAttribute("data-illo-path") || "";
     this.fit = el.getAttribute("data-illo-fit") || "contain";
+    this.density = el.getAttribute("data-illo-density") || "";
     this.sim = new Sim();
     this.rule = null;
     this.ctx = null;
@@ -262,7 +263,7 @@
     var factory = rules[this.ruleName];
     if (!factory) return;
     this.rule = factory(this.sim, {
-      path: this.path, fit: this.fit, seed: this.seed
+      path: this.path, fit: this.fit, density: this.density, seed: this.seed
     });
     this.rule.seed();
     this.restCount = 0;
