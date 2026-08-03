@@ -21,10 +21,34 @@
   is already rendered here, so the include's markup is visible to this test.
   {% endcomment -%}
   {%- if content contains "data-illo" %}
-  <script src="{{ '/assets/js/illo-core.js' | relative_url }}" defer></script>
-  <script src="{{ '/assets/js/illo-marks.js' | relative_url }}" defer></script>
-  <script src="{{ '/assets/js/illo-verbs.js' | relative_url }}" defer></script>
-  <script src="{{ '/assets/js/illustrations/field.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/illustration/core.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/illustration/marks.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/illustration/field.js' | relative_url }}" defer></script>
+  {%- comment %}
+  Only the verbs this page actually uses. The include writes the verb into
+  data-illo-render, so the rendered content names exactly what to load — a post
+  using one verb ships one verb, not six.
+  {% endcomment -%}
+  {%- assign _verbs = "order,focus,light,ignite,sift,pace" | split: "," -%}
+  {%- for v in _verbs -%}
+    {%- capture _needle %}data-illo-render="{{ v }}"{% endcapture -%}
+    {%- if content contains _needle %}
+  <script src="{{ '/assets/js/illustration/verbs/' | append: v | append: '.js' | relative_url }}" defer></script>
+    {%- endif -%}
+  {%- endfor %}
+  {%- comment %}
+  A post needing a bespoke verb drops a file named after its markdown file
+  into assets/js/illustration/posts/ and it is picked up automatically — no
+  config, and the filename carries the connection to the post. Anything
+  reusable belongs in verbs/ instead, where other posts can reach it.
+  {% endcomment -%}
+  {%- assign _slug = page.path | split: "/" | last | split: "." | first -%}
+  {%- assign _postjs = "/assets/js/illustration/posts/" | append: _slug | append: ".js" -%}
+  {%- for f in site.static_files -%}
+    {%- if f.path == _postjs -%}
+  <script src="{{ _postjs | relative_url }}" defer></script>
+    {%- endif -%}
+  {%- endfor -%}
   {%- endif %}
 </body>
 </html>

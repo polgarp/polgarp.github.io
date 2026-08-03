@@ -91,6 +91,9 @@
     // is how settled the point is, 0 chaotic to 1 resolved — which is also
     // what most renderers read as tone.
     this.aux = new Float32Array(n);
+    // Mask coverage 0..1 at each point's cell. Renderers multiply tone by it,
+    // so partly covered cells at an object's edge read as a soft falloff.
+    this.wt = new Float32Array(n);
   };
 
   // ---- Deterministic RNG, seeded per instance, so an illustration looks the
@@ -111,7 +114,15 @@
   // The subject is whatever `paint` draws into a cols x rows bitmap. Sampling
   // at grid resolution means every target lands on a cell by construction, so
   // the marks are grid-true whatever the shape is.
-  function maskTargets(w, h, cell, paint) {
+  // Returns flat triples: x, y, coverage. Coverage is the mask's alpha at that
+  // cell, so a cell the shape only partly covers yields a faint mark rather
+  // than none — which is what gives an object soft edges instead of a hard
+  // fill, and lets marks carry on past its boundary.
+  var COVER_MIN = 0.09;
+  var HALO = 0.62;      // how strongly the blurred halo contributes
+  var HALO_PASSES = 3;  // box-blur passes; each is roughly one cell of spread
+
+  function maskTargets(w, h, cell, paint, bleed) {
     var cols = Math.max(1, Math.floor(w / cell));
     var rows = Math.max(1, Math.floor(h / cell));
     var off = document.createElement("canvas");
@@ -122,25 +133,53 @@
     paint(c, cols, rows);
 
     var data = c.getImageData(0, 0, cols, rows).data;
-    var out = [];
-    for (var y = 0; y < rows; y++) {
-      for (var x = 0; x < cols; x++) {
-        if (data[(y * cols + x) * 4 + 3] > 110) {
-          out.push((x + 0.5) * cell, (y + 0.5) * cell);
+    var n = cols * rows, i;
+    var src = new Float32Array(n);
+    for (i = 0; i < n; i++) src[i] = data[i * 4 + 3] / 255;
+
+    // Halo by box-blurring the coverage in CELL space. Doing it here rather
+    // than by stroking the path keeps the spread isotropic — a stroke inside
+    // an anisotropic scale is wide on one axis and thin on the other, which
+    // swallows a stretched object entirely.
+    var cov = src;
+    if (bleed !== 0) {
+      var a = new Float32Array(src), b2 = new Float32Array(n), p, x, y;
+      for (p = 0; p < HALO_PASSES; p++) {
+        for (y = 0; y < rows; y++) {
+          for (x = 0; x < cols; x++) {
+            var sum = 0, cnt = 0;
+            for (var dy = -1; dy <= 1; dy++) {
+              var yy = y + dy;
+              if (yy < 0 || yy >= rows) continue;
+              for (var dx = -1; dx <= 1; dx++) {
+                var xx = x + dx;
+                if (xx < 0 || xx >= cols) continue;
+                sum += a[yy * cols + xx]; cnt++;
+              }
+            }
+            b2[y * cols + x] = sum / cnt;
+          }
         }
+        a.set(b2);
+      }
+      cov = new Float32Array(n);
+      for (i = 0; i < n; i++) {
+        // Solid where the shape is; the blur only adds the surrounding smudge.
+        cov[i] = Math.min(1, src[i] + a[i] * HALO);
+      }
+    }
+
+    var out = [];
+    for (var yy2 = 0; yy2 < rows; yy2++) {
+      for (var xx2 = 0; xx2 < cols; xx2++) {
+        var v = cov[yy2 * cols + xx2];
+        if (v > COVER_MIN) out.push((xx2 + 0.5) * cell, (yy2 + 0.5) * cell, v);
       }
     }
     return out;
   }
 
-  // ---- Sample SVG path data onto the grid. The path comes from the include
-  // (see _data/illo_shapes.yml), which emits the same string into the static
-  // fallback, so both representations are built from one source.
-  // `fit` is "contain" (keep the aspect ratio) or "wide" (stretch to fill).
-  // A rectangle has no meaningful proportions and reads better filling the
-  // column; anything round or angled would look wrong stretched, so the
-  // choice belongs to the shape and travels with it in the data file.
-  function pathTargets(d, vbW, vbH, w, h, cell, fit, fillRatio) {
+  function pathTargets(d, vbW, vbH, w, h, cell, fit, bleed, fillRatio) {
     var p = new Path2D(d);
     var ratio = fillRatio || 0.92;
     return maskTargets(w, h, cell, function (c, cols, rows) {
@@ -156,7 +195,7 @@
       c.scale(kx, ky);
       c.fill(p);
       c.restore();
-    });
+    }, bleed);
   }
 
   // ---- One live illustration bound to one <figure>.
@@ -179,6 +218,8 @@
     this.restCount = 0;
     this.running = false;
     this.visible = false;
+    this.shown = false;   // has a frame drawn? gates hiding the fallback
+    this.started = false; // has it been properly in view at least once?
     this.frameCost = 0;   // rolling ms, exposed for profiling
     this.ink = { fg: "#000", muted: "#6e6e6e", accent: "#d62828", paper: "#fff" };
   }
@@ -192,8 +233,10 @@
     this.stage = stage;
     this.canvas = cv;
     this.ctx = cv.getContext("2d", { alpha: true });
-    this.el.classList.add("illo--live");
     readTokens(this.el, this.ink);
+    // The static fallback stays visible until a frame has actually drawn (see
+    // frame()). Anything that throws before then leaves a real picture on the
+    // page rather than an empty box.
 
     this.resize();
   };
@@ -223,7 +266,24 @@
     });
     this.rule.seed();
     this.restCount = 0;
-    this.wake();
+    // Show the seeded state straight away. The loop itself still waits until
+    // the figure is properly in view (see maybeStart).
+    this.paint();
+    if (this.started) this.wake();
+  };
+
+  // Draw the current state without advancing it. Used once at mount so the
+  // canvas takes over from the static plate immediately, showing the
+  // animation's start point rather than swapping to it later mid-scroll.
+  Instance.prototype.paint = function () {
+    if (!this.ctx || !this.rule) return;
+    var draw = renderers[this.rendererName] || renderers.order;
+    if (!draw.noClear) this.ctx.clearRect(0, 0, this.sim.w, this.sim.h);
+    draw(this.ctx, this.sim, this.ink);
+    if (!this.shown) {
+      this.shown = true;
+      this.el.classList.add("illo--live");
+    }
   };
 
   Instance.prototype.wake = function () {
@@ -261,6 +321,16 @@
     // Speed decays from the last move's timestamp, so a cursor held still
     // reads as still — without any per-instance state to get out of sync.
     s.pspeed = pointerSpeedNow();
+    // A parked cursor is present but not acting. Verbs that ACCUMULATE state
+    // must gate on this, or a mouse left resting over a figure keeps feeding
+    // it forever and the loop never reaches rest. Verbs that merely reflect
+    // where the pointer is (focus, light) use pointerOn instead.
+    s.moving = s.pointerOn && s.pspeed > 6;
+    // A parked cursor is present but not acting. Verbs that ACCUMULATE state
+    // must gate on this, or a mouse left resting over a figure keeps feeding
+    // it forever and the loop never reaches rest. Verbs that merely reflect
+    // the pointer's position (focus, light) use pointerOn instead.
+    s.moving = s.pointerOn && s.pspeed > 6;
 
     var steps = 0;
     while (this.acc >= STEP && steps < MAX_CATCHUP) {
@@ -275,6 +345,12 @@
     draw(this.ctx, this.sim, this.ink);
 
     this.frameCost = this.frameCost * 0.9 + (performance.now() - t0) * 0.1;
+
+    // Pixels exist now, so it is safe to hide the fallback.
+    if (!this.shown) {
+      this.shown = true;
+      this.el.classList.add("illo--live");
+    }
 
     // Rest detection: mean squared speed, sustained, and gated on sim.busy so
     // a rule can hold the loop open. Keyed on pointer motion rather than
@@ -301,10 +377,47 @@
     els.forEach(function (el) {
       var inst = new Instance(el);
       if (!rules[inst.ruleName]) return;
-      inst.mount();
-      instances.push(inst);
+      try {
+        inst.mount();
+        instances.push(inst);
+      } catch (e) {
+        // Leave this figure showing its static fallback and carry on with the
+        // rest of the page.
+        if (inst.canvas && inst.canvas.parentNode) {
+          inst.canvas.parentNode.removeChild(inst.canvas);
+        }
+        el.classList.remove("illo--live");
+      }
     });
     if (!instances.length) return;
+
+    // Two separate questions, deliberately:
+    //
+    //   Has it STARTED? Only once the whole figure has cleared the bottom
+    //   tenth of the viewport, so the arrival animation doesn't play out below
+    //   the fold where nobody sees it. A figure too tall to fit that band
+    //   falls back to its top edge being on screen.
+    //
+    //   Should it KEEP RUNNING? Any overlap at all, which is what the observer
+    //   below answers. Using the strict test for both would stop and restart
+    //   the loop every time the figure drifted a few pixels past the line.
+    //
+    // The start test is geometric and changes continuously with scroll, so it
+    // is evaluated in the scroll handler rather than in the observer callback:
+    // an observer only fires when a listed threshold is crossed, and a figure
+    // can go from mostly visible to fully clear without crossing one.
+    var START_INSET = 0.10;
+
+    function maybeStart(inst) {
+      if (inst.started || !inst.visible || !inst.rect) return;
+      var vh = window.innerHeight || 0;
+      var line = vh * (1 - START_INSET);
+      var r = inst.rect;
+      var ok = r.height > line
+        ? (r.top >= 0 && r.top < line)     // too tall to fit above the line
+        : (r.top >= 0 && r.bottom <= line);
+      if (ok) { inst.started = true; inst.wake(); }
+    }
 
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -314,17 +427,20 @@
         }
         if (!inst) return;
         inst.visible = entry.isIntersecting;
-        if (entry.isIntersecting) inst.wake();
-        else inst.sleep();
+        if (!entry.isIntersecting) { inst.sleep(); return; }
+        inst.rect = (inst.stage || inst.el).getBoundingClientRect();
+        if (inst.started) inst.wake();
+        else maybeStart(inst);
       });
-    }, { rootMargin: "120px" });
+    }, { rootMargin: "0px" });
+
     instances.forEach(function (i) { io.observe(i.el); });
 
     var rt = 0;
     window.addEventListener("resize", function () {
       clearTimeout(rt);
       rt = setTimeout(function () {
-        instances.forEach(function (i) { i.resize(); });
+        instances.forEach(function (i) { i.resize(); maybeStart(i); });
       }, 150);
     }, { passive: true });
 
@@ -333,11 +449,20 @@
     var rectTick = false;
     function refreshRects() {
       instances.forEach(function (i) {
-        if (i.visible) i.rect = (i.stage || i.el).getBoundingClientRect();
+        if (!i.visible) return;
+        i.rect = (i.stage || i.el).getBoundingClientRect();
+        maybeStart(i);
       });
       rectTick = false;
     }
     window.addEventListener("scroll", function () {
+      // Scrolling moves a figure past a stationary cursor, which would
+      // otherwise read exactly like sweeping the cursor across the figure —
+      // so a reader scrolling the page with the mouse resting over the column
+      // would trigger every verb without ever pointing at anything. Treat
+      // scrolling as disengaging the pointer until it genuinely moves again.
+      ptr.on = false;
+      ptr.speed = ptr.vx = ptr.vy = 0;
       if (!rectTick) { rectTick = true; requestAnimationFrame(refreshRects); }
     }, { passive: true });
 
@@ -346,7 +471,7 @@
     window.addEventListener("pointermove", function (e) {
       var now = e.timeStamp || performance.now();
       var dt = lastT ? Math.min((now - lastT) / 1000, 0.1) : 0;
-      if (dt > 0 && ptr.on) {
+      if (dt > 0 && ptr.on) {   // ptr.on false right after a scroll
         // Smoothed hard enough to ignore jitter, lightly enough to stay live.
         ptr.vx = ptr.vx * 0.6 + ((e.clientX - ptr.x) / dt) * 0.4;
         ptr.vy = ptr.vy * 0.6 + ((e.clientY - ptr.y) / dt) * 0.4;
