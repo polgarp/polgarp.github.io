@@ -91,6 +91,9 @@
     // is how settled the point is, 0 chaotic to 1 resolved — which is also
     // what most renderers read as tone.
     this.aux = new Float32Array(n);
+    // Mask coverage 0..1 at each point's cell. Renderers multiply tone by it,
+    // so partly covered cells at an object's edge read as a soft falloff.
+    this.wt = new Float32Array(n);
   };
 
   // ---- Deterministic RNG, seeded per instance, so an illustration looks the
@@ -111,7 +114,15 @@
   // The subject is whatever `paint` draws into a cols x rows bitmap. Sampling
   // at grid resolution means every target lands on a cell by construction, so
   // the marks are grid-true whatever the shape is.
-  function maskTargets(w, h, cell, paint) {
+  // Returns flat triples: x, y, coverage. Coverage is the mask's alpha at that
+  // cell, so a cell the shape only partly covers yields a faint mark rather
+  // than none — which is what gives an object soft edges instead of a hard
+  // fill, and lets marks carry on past its boundary.
+  var COVER_MIN = 0.09;
+  var HALO = 0.62;      // how strongly the blurred halo contributes
+  var HALO_PASSES = 3;  // box-blur passes; each is roughly one cell of spread
+
+  function maskTargets(w, h, cell, paint, bleed) {
     var cols = Math.max(1, Math.floor(w / cell));
     var rows = Math.max(1, Math.floor(h / cell));
     var off = document.createElement("canvas");
@@ -122,25 +133,53 @@
     paint(c, cols, rows);
 
     var data = c.getImageData(0, 0, cols, rows).data;
-    var out = [];
-    for (var y = 0; y < rows; y++) {
-      for (var x = 0; x < cols; x++) {
-        if (data[(y * cols + x) * 4 + 3] > 110) {
-          out.push((x + 0.5) * cell, (y + 0.5) * cell);
+    var n = cols * rows, i;
+    var src = new Float32Array(n);
+    for (i = 0; i < n; i++) src[i] = data[i * 4 + 3] / 255;
+
+    // Halo by box-blurring the coverage in CELL space. Doing it here rather
+    // than by stroking the path keeps the spread isotropic — a stroke inside
+    // an anisotropic scale is wide on one axis and thin on the other, which
+    // swallows a stretched object entirely.
+    var cov = src;
+    if (bleed !== 0) {
+      var a = new Float32Array(src), b2 = new Float32Array(n), p, x, y;
+      for (p = 0; p < HALO_PASSES; p++) {
+        for (y = 0; y < rows; y++) {
+          for (x = 0; x < cols; x++) {
+            var sum = 0, cnt = 0;
+            for (var dy = -1; dy <= 1; dy++) {
+              var yy = y + dy;
+              if (yy < 0 || yy >= rows) continue;
+              for (var dx = -1; dx <= 1; dx++) {
+                var xx = x + dx;
+                if (xx < 0 || xx >= cols) continue;
+                sum += a[yy * cols + xx]; cnt++;
+              }
+            }
+            b2[y * cols + x] = sum / cnt;
+          }
         }
+        a.set(b2);
+      }
+      cov = new Float32Array(n);
+      for (i = 0; i < n; i++) {
+        // Solid where the shape is; the blur only adds the surrounding smudge.
+        cov[i] = Math.min(1, src[i] + a[i] * HALO);
+      }
+    }
+
+    var out = [];
+    for (var yy2 = 0; yy2 < rows; yy2++) {
+      for (var xx2 = 0; xx2 < cols; xx2++) {
+        var v = cov[yy2 * cols + xx2];
+        if (v > COVER_MIN) out.push((xx2 + 0.5) * cell, (yy2 + 0.5) * cell, v);
       }
     }
     return out;
   }
 
-  // ---- Sample SVG path data onto the grid. The path comes from the include
-  // (see _data/illo_shapes.yml), which emits the same string into the static
-  // fallback, so both representations are built from one source.
-  // `fit` is "contain" (keep the aspect ratio) or "wide" (stretch to fill).
-  // A rectangle has no meaningful proportions and reads better filling the
-  // column; anything round or angled would look wrong stretched, so the
-  // choice belongs to the shape and travels with it in the data file.
-  function pathTargets(d, vbW, vbH, w, h, cell, fit, fillRatio) {
+  function pathTargets(d, vbW, vbH, w, h, cell, fit, bleed, fillRatio) {
     var p = new Path2D(d);
     var ratio = fillRatio || 0.92;
     return maskTargets(w, h, cell, function (c, cols, rows) {
@@ -156,7 +195,7 @@
       c.scale(kx, ky);
       c.fill(p);
       c.restore();
-    });
+    }, bleed);
   }
 
   // ---- One live illustration bound to one <figure>.

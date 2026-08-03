@@ -12,6 +12,10 @@ tags:
 
 I believe this will be another example for the [automation trap]({% post_url Blog/2024/2024-04-04-Generative-AIs-automation-trap %}). While these agentic systems are great at automating some of the tedious work away, they also great at automating easy decisions, leaving only the hard ones for the human part of the centaur. 
 
+{% include illustration object="band" verb="sift" seed="4" height="11rem" width="wide"
+   alt="A wide band of marks with soft, smudged edges. Sweeping the cursor across it clears away the lighter marks; the heavier ones that survive darken and a few turn red. The cleared marks drift back over the following seconds."
+   caption="Automation takes the easy decisions first. What's left isn't less work — it's only hard work." %}
+
 Also tools like Claude make it very easy to work on multiple things parallel, making the hard part taking even more energy (Pablo Stanley's [Fried](https://pablostanley.substack.com/p/fried) writes about this).
 
 So how to deal with this?

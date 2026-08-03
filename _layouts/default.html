@@ -25,6 +25,19 @@
   <script src="{{ '/assets/js/illustration/marks.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/illustration/verbs.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/illustration/field.js' | relative_url }}" defer></script>
+  {%- comment %}
+  A post needing a bespoke verb drops a file named after itself into
+  assets/js/illustration/posts/ and it is picked up automatically — no config,
+  and the filename carries the connection to the post. Shared verbs stay in
+  verbs.js; this is only for things one post needs.
+  {% endcomment -%}
+  {%- assign _slug = page.path | split: "/" | last | split: "." | first -%}
+  {%- assign _postjs = "/assets/js/illustration/posts/" | append: _slug | append: ".js" -%}
+  {%- for f in site.static_files -%}
+    {%- if f.path == _postjs -%}
+  <script src="{{ _postjs | relative_url }}" defer></script>
+    {%- endif -%}
+  {%- endfor -%}
   {%- endif %}
 </body>
 </html>

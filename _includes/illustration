@@ -15,6 +15,8 @@ monospace grid, and a thing the cursor does to it.
   seed     optional. Changes the arrangement without changing the object.
   fit      optional override, "wide" or "contain". Each object has a default.
   height   optional CSS length, default 17rem.
+  width    optional "wide" to break out of the reading column. Use when the
+           object has no relationship to the measure and the extra room helps.
 
 The static SVG below is what a reader without JavaScript, or with
 prefers-reduced-motion, sees: the object as a dotted plate. The engine upgrades
@@ -26,7 +28,7 @@ _data/illo_shapes.yml, so the two can never drift apart.
 {%- assign _fit = include.fit | default: _shape.fit | default: "contain" -%}
 {%- assign _id = include.object | append: "-" | append: include.verb | append: "-" | append: include.seed -%}
 {%- if _path -%}
-<figure class="illo"
+<figure class="illo{% if include.width == 'wide' %} illo--wide{% endif %}"
         data-illo="field"
         data-illo-render="{{ include.verb | default: 'order' }}"
         data-illo-path="{{ _path }}"

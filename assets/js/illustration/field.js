@@ -15,11 +15,11 @@
 
   var CELL = 8;
   var BASE = 0.46;        // resolve level at rest: clearly legible, unresolved
-  var JITTER = 6;         // how far a fully unresolved point strays from cell
+  var JITTER = 15;        // how far a fully unresolved point strays from cell
   var ACCENT_SHARE = 0.18;
   var REVERT = 0.11;      // resolve units per second back toward base
-  var K = 40;
-  var DAMP = 0.82;
+  var K = 32;             // softer spring: settling stays visible
+  var DAMP = 0.86;
   var ARRIVE = 2.4;
 
   // Shape geometry is NOT duplicated here. The include emits the path from
@@ -35,7 +35,7 @@
       seed: function () {
         if (!opts.path) return;
         var t = Illo.pathTargets(opts.path, 100, 100, sim.w, sim.h, CELL, opts.fit);
-        var n = t.length / 2;
+        var n = t.length / 3;
         if (!n) return;
         sim.alloc(n);
         sim.cell = CELL;
@@ -46,13 +46,17 @@
 
         var rnd = sim.rng;
         for (var i = 0; i < n; i++) {
-          sim.txs[i] = t[i * 2];
-          sim.tys[i] = t[i * 2 + 1];
+          sim.txs[i] = t[i * 3];
+          sim.tys[i] = t[i * 3 + 1];
+          sim.wt[i] = t[i * 3 + 2];
+          // Marks in the faint halo outside the object sit looser, so the
+          // edge reads as smudge rather than as a second, softer outline.
+          var loose = 1 + (1 - sim.wt[i]) * 1.6;
           // A fixed per-point offset direction, so the unresolved state is
           // static rather than seething.
           var a = rnd() * Math.PI * 2;
-          jx[i] = Math.cos(a) * JITTER;
-          jy[i] = Math.sin(a) * JITTER;
+          jx[i] = Math.cos(a) * JITTER * loose;
+          jy[i] = Math.sin(a) * JITTER * loose;
           sim.aux[i] = base;
           sim.landed[i] = 0;
           sim.hard[i] = rnd() < ACCENT_SHARE ? 1 : 0;   // accent-eligible
