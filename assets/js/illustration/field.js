@@ -77,8 +77,13 @@
           }
 
           // Verbs push resolve away from BASE; this pulls it back, and
-          // clears `landed` once a point has fully returned.
-          if (sim.aux[i] > base) {
+          // clears `landed` once a point has fully returned. Skipped when a
+          // verb sets sim.pinned, meaning it rewrites resolve every frame and
+          // owns it outright — reverting under such a verb would fight it and
+          // keep the field marked live forever, so it would never rest.
+          if (sim.pinned) {
+            /* verb owns resolve */
+          } else if (sim.aux[i] > base) {
             sim.aux[i] -= REVERT * dt;
             if (sim.aux[i] <= base) { sim.aux[i] = base; sim.landed[i] = 0; }
             else live = 1;

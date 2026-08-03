@@ -20,6 +20,10 @@ Product design boils down to two main activities: creating a shared intention an
 
 As AI tools are getting better and better at rendering intentions, there will always be parts where someone needs to craft things by hand. Like creating core primitives of a visual language, writing an important library for the code base, or making sure a user flow is coherent. The Pareto principle applies: 80% of the experience gets done much faster by an AI tool, but the remaining 20% will need a systematic design effort. **That's precisely where clarity of intention matters most.**
 
+{% include illustration object="rect" verb="render" seed="7" height="15rem"
+   alt="A rectangle made of small marks. Most of it is crisp from the start, but a scattered fifth of the marks sit soft and slightly off the grid. Moving the cursor over those seats them, and they lock in red."
+   caption="Most of it arrives already done. The rest only resolves where a hand goes." %}
+
 Creating a shared intention is still not something these tools can do well. Even in a small team, getting the right understanding of the problem space (even if research is sped up), and developing a shared intention takes effort. People need to watch the same TV channel, so to speak, to be able to create things that fit together. 
 
 With Tilecraft, I didn't even need a shared intention, but clarifying my own intentions took time. In creating a shared intention both "shared" and "creating intention" are both important and hard parts, and AI tools don't solve these fundamental challenges of design.
