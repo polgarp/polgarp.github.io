@@ -1,17 +1,18 @@
-// The verbs: what the cursor does. The cursor acts AS the verb — it doesn't
-// push the picture around, it changes the picture's state and the geometry
-// follows. That is why none of these can carve a hole in the image.
+// Verbs: what the cursor does to a field. Registered with
+// Illo.renderer(name, fn) and chosen per illustration via data-illo-render.
 //
-// Two rules every verb obeys:
+//   fn(ctx, sim, ink)
 //
-//   ACCENT IS SCARCE. Red is drawn only where a point is both changed by the
-//   reader (`landed`) and accent-eligible (`hard`, a fixed ~18% chosen at
-//   seed). However hard a reader sweeps, red marks a few things, never the
-//   whole object.
+// A verb reads pointer state (sim.px, sim.py, sim.pspeed, sim.pointerOn),
+// writes per-point state (sim.aux 0..1, sim.landed), and draws through
+// render() below. A verb must NOT write sim.xs/sim.ys: the `field` rule owns
+// geometry and derives it from sim.aux.
 //
-//   PERSISTENCE IS HONEST. A verb that leaves a trace uses red; a verb that
-//   only reflects where the cursor is (light, focus) uses none. The presence
-//   of accent tells a reader whether this picture remembers them.
+// Set sim.busy = true while a verb still has state to settle, or the engine
+// will stop the frame loop mid-transition.
+//
+// Rationale for the verb set is in
+// ~/CoolThingsDoing/illustration-doctrine/DOCTRINE.md
 (function () {
   "use strict";
   if (!window.Illo || !Illo.marks) return;
@@ -30,7 +31,10 @@
     return dx * dx + dy * dy;
   }
 
-  // Shared ink/accent draw. `tone` maps a point to 0..1.
+  // Two passes: ink, then accent. A point draws accent only when it is both
+  // changed by the reader (`changed`) and accent-eligible (sim.hard, a fixed
+  // subset chosen at seed) — which is what bounds how much red can appear.
+  // Verbs with no persistent state pass a constant-false `changed`.
   function render(ctx, sim, ink, tone, changed) {
     pass(ctx, sim, ink.fg,
       function (i) { return !(changed(i) && sim.hard[i]); }, tone);
@@ -43,9 +47,9 @@
   }
 
   // ---------------------------------------------------------------
-  // ORDER — the cursor brings structure, and the structure holds for a while.
-  // Where you attend, points resolve onto the grid. A scarce minority of what
-  // you ordered goes red, marking what your attention actually produced.
+  // ORDER — resolve accumulates near the cursor and holds until the field
+  // rule reverts it. ORDER_R is the influence radius in px, ORDER_RATE the
+  // resolve gained per second at the centre of it.
   // ---------------------------------------------------------------
   var ORDER_R = 78, ORDER_RATE = 7;
 
@@ -65,10 +69,10 @@
   }
 
   // ---------------------------------------------------------------
-  // FOCUS — the cursor is a lens. Nothing persists, so no accent.
-  // Out of focus the outline itself goes vague: resolve drops, so points drift
-  // off their cells and the tone comes from noise. The object is present but
-  // won't hold still enough to read.
+  // FOCUS — resolve is rewritten from cursor distance every frame rather than
+  // accumulated, so nothing persists and no accent is drawn. Low resolve both
+  // drives tone toward per-point noise and lets the field rule drift points
+  // off their cells, so the outline softens along with the fill.
   // ---------------------------------------------------------------
   var FOCUS_R = 168;
 
@@ -91,9 +95,9 @@
   }
 
   // ---------------------------------------------------------------
-  // LIGHT — the cursor is a light source. Global, nothing persists, no accent.
-  // Every mark shades by how much it faces the cursor, so moving anywhere on
-  // the page re-lights the whole surface at once.
+  // LIGHT — tone from how far each point faces the cursor, as a dot product
+  // measured from the field centre. Global: every point changes on any pointer
+  // move, including moves outside the figure.
   // ---------------------------------------------------------------
   function light(ctx, sim, ink) {
     var cx = sim.w / 2, cy = sim.h / 2;
@@ -113,9 +117,9 @@
   }
 
   // ---------------------------------------------------------------
-  // IGNITE — the cursor leaves heat, which spreads to neighbours and cools.
-  // The clearest case of the accent doctrine: heat is unambiguously state the
-  // reader caused, and it fades, so red stays scarce without any cap.
+  // IGNITE — per-point heat, gained near the cursor, spread to the four grid
+  // neighbours and decayed each frame. Heat is local state rather than
+  // sim.aux, so geometry is unaffected.
   // ---------------------------------------------------------------
   var IG_R = 62, IG_GAIN = 3.2, IG_SPREAD = 0.75, IG_DECAY = 0.42;
   var heat = null, nbr = null, nbrFor = -1;
@@ -167,10 +171,9 @@
   }
 
   // ---------------------------------------------------------------
-  // SIFT — the cursor removes the easy marks; the remainder is heavier.
-  // Removed marks grow back slowly, so the illustration renews itself instead
-  // of ending up spent. That is a general principle here, not a concession:
-  // an illustration a reader can only exhaust once is a worse illustration.
+  // SIFT — points that are not accent-eligible are removed near the cursor
+  // and fade back in at REGROW per second. Survivors are marked changed, so
+  // they draw at full tone and become the accent.
   // ---------------------------------------------------------------
   var SIFT_R = 66, REGROW = 0.16;
   var gone = null, goneFor = -1;
@@ -205,10 +208,9 @@
   }
 
   // ---------------------------------------------------------------
-  // PACE — slowness deepens, speed degrades.
-  // The only verb that reads HOW you move rather than where, using the pointer
-  // velocity the engine already tracks. Move carefully and marks resolve;
-  // sweep through and they thin out.
+  // PACE — resolve gains while the pointer is slow and drops while it is
+  // fast. SLOW is the speed in px/s at which the effect crosses zero; above
+  // it, passing over the field costs resolve instead of adding it.
   // ---------------------------------------------------------------
   var PACE_R = 72, SLOW = 260;
 
