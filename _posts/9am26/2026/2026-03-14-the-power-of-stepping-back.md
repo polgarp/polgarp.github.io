@@ -54,29 +54,39 @@ For leaders, these practices can be made intentional part of the design process.
 # 🍪 Things to snack on
 
 [Stepping Back from the Canvas](https://myranaito.medium.com/stepping-back-from-the-canvas-a0f2d91ed7d1) by **Myra Naito**
+
 Gives three tips of changing perspectives to be able to look at your canvas in a different light. While these tips focus on more graphic things, they can be a good inspiration to apply to other types of work.
+
 _Our strongest, clearest vision happens in the center of your eyes. Anything in your peripheral vision is not in focus. Your physical proximity to your canvas can often leave most of your work in your peripheral vision._
 
 <p style="text-align: center;">♦</p>
 
 [Creative Cognition: The Construal Level Theory & Psychological Distance](https://cognitiontoday.com/creative-cognition-construal-level-theory-psychological-distance/) by **Aditya Shukla** 
+
 Explains how construal level theory provides the scientific basis for the creative step back. Higher construal levels activate broader conceptual networks, enabling novel associations. Spatial distance (solving problems for a faraway university), temporal distance (reflecting on past events), and personal distance (solving problems for others) all measurably increase creative output.
+
 _"High construals create a pathway to fetch creative ideas because the links between different ideas are more abstract & broad."_
 
 <p style="text-align: center;">♦</p>
 
 [Zooming In and Out of UX Design Resolutions](https://articles.centercentre.com/zooming-in-and-out-of-ux-design-resolutions/) by **Jared M. Spool**
+
 Uses the Eames' Powers of Ten film as a metaphor for how UX design operates at multiple resolutions, from screen-level to ecosystem-level. Each resolution reveals different problems and requires different tools, making the ability to zoom in and out a critical design leadership skill.
+
 _"Each change in resolution requires a different set of skills. They are all still UX design skills, but because the problems and tools change, the skills necessary to solve those problems and operate those tools will change."_
 
 <p style="text-align: center;">♦</p>
 
 [The importance of zooming out in the design process](https://uxdesign.cc/the-importance-of-zooming-out-in-the-design-process-feea24ee7422) by **Fabricio Telxeira**
+
 Zooming in and zooming out are the two main components of the design process. The article shows a few ways to practice zooming out: forcing your brain to be idle, looking at designs from a different perspective, presenting designs aloud, show it around, writing summaries about concepts.
+
 _Zooming in and focusing on a problem is relatively easy for us designers. The challenge resides in stepping back and judging the designs you are creating with fresh eyes and different perspectives._
 
 <p style="text-align: center;">♦</p>
 
 [12 Powerful Creative Problem-Solving Techniques That Work](https://scottjeffrey.com/creative-problem-solving-techniques/) by **Scott Jeffrey**
+
 Describes three stepping-back techniques: the 30,000-foot view (zooming out with a detached mindset), deliberate incubation (walking away to allow subconscious processing), and contextual reframing (examining underlying assumptions). All share the principle that mental distance from the immediate problem enables fresh insight.
+
 _"Deliberate mind-wandering supports creativity."_
