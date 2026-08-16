@@ -1,1 +1,0 @@
-https://cms.greatquestion.co/blog/ipo-readiness-for-research
