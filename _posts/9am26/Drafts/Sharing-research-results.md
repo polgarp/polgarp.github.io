@@ -1,1 +1,0 @@
-Besides types like presentations, safaris etc, also how to present results to various levels of people? To other orgs? sales and marketing

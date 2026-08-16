@@ -1,1 +1,0 @@
-https://medium.com/mule-design/design-sprints-are-snake-oil-fd6f8e385a27

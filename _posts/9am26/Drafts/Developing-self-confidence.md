@@ -1,1 +1,0 @@
-As a designer - as a leader.
