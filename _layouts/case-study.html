@@ -1,6 +1,21 @@
 ---
 layout: default
 ---
+{% comment %} Story neighbours, newest first by the story's own date, so a reader
+who finishes one case study is offered the next rather than only a way back.
+{% endcomment %}
+{% assign stories = site.portfolio | sort: "date" | reverse %}
+{% assign curidx = -1 %}
+{% for s in stories %}
+  {% if s.url == page.url %}{% assign curidx = forloop.index0 %}{% break %}{% endif %}
+{% endfor %}
+{% assign previdx = curidx | minus: 1 %}
+{% assign nextidx = curidx | plus: 1 %}
+{% assign has_newer = false %}
+{% if curidx > 0 %}{% assign has_newer = true %}{% endif %}
+{% assign has_older = false %}
+{% if curidx >= 0 and nextidx < stories.size %}{% assign has_older = true %}{% endif %}
+
 <div class="reading-progress" aria-hidden="true"><span></span></div>
 <article class="post case-study">
   <header class="post__header">
@@ -43,6 +58,29 @@ layout: default
   </div>
 
   <footer class="post__footer">
-    <p class="back-to-top"><a href="{{ '/portfolio/' | relative_url }}">← Back to the portfolio</a></p>
+    {% if has_newer or has_older %}
+    <nav class="post-nav" aria-label="More work">
+      {% if has_newer %}
+      {% assign n = stories[previdx] %}
+      <a class="post-nav__item post-nav__item--newer" href="{{ n.url | relative_url }}">
+        <span class="post-nav__label">Newer</span>
+        <span class="post-nav__title">{{ n.title }}</span>
+      </a>
+      {% endif %}
+      {% if has_older %}
+      {% assign o = stories[nextidx] %}
+      <a class="post-nav__item post-nav__item--older" href="{{ o.url | relative_url }}">
+        <span class="post-nav__label">Older</span>
+        <span class="post-nav__title">{{ o.title }}</span>
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    <p class="case-study__end">
+      <a href="{{ '/portfolio/' | relative_url }}">← All the work</a>
+      <span class="case-study__end-sep" aria-hidden="true">·</span>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
   </footer>
 </article>

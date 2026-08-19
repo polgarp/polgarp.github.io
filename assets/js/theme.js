@@ -31,16 +31,6 @@
       (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   }
 
-  function syncGiscus(theme) {
-    var frame = document.querySelector("iframe.giscus-frame");
-    if (frame) {
-      frame.contentWindow.postMessage(
-        { giscus: { setConfig: { theme: theme === "dark" ? "dark" : "light" } } },
-        "https://giscus.app"
-      );
-    }
-  }
-
   function reflect(theme) {
     var dark = theme === "dark";
     btn.classList.toggle("is-dark", dark);
@@ -57,22 +47,9 @@
     document.documentElement.dataset.theme = next;
     localStorage.setItem("theme", next);
     reflect(next);
-    syncGiscus(next);
     // retrigger the tumble, mirrored to the direction of travel
     btn.classList.remove("is-tip-right", "is-tip-left");
     void btn.offsetWidth;
     btn.classList.add(next === "dark" ? "is-tip-right" : "is-tip-left");
   });
-
-  // If a stored theme overrides the OS preference, align giscus once it loads.
-  var stored = localStorage.getItem("theme");
-  if (stored) {
-    var tries = 0;
-    var timer = setInterval(function () {
-      if (document.querySelector("iframe.giscus-frame") || ++tries > 20) {
-        clearInterval(timer);
-        syncGiscus(stored);
-      }
-    }, 500);
-  }
 })();

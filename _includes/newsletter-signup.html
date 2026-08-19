@@ -1,4 +1,12 @@
-<aside class="newsletter">
+{%- comment -%}
+Subscribe block. Two shapes from one markup:
+
+  (default)          the full bordered block, for /newsletter/ where signing up
+                     is the page's whole job.
+  variant="compact"  a hairline-ruled band for the end of an article, where the
+                     signup is an offer rather than the point.
+{%- endcomment -%}
+<aside class="newsletter{% if include.variant == 'compact' %} newsletter--compact{% endif %}">
   <p class="newsletter__label">9am26</p>
   <p class="newsletter__text">Reflections on design leadership, a few times a year, in your inbox.</p>
   <iframe class="newsletter__embed" src="{{ site.newsletter_embed }}" title="Subscribe to the 9am26 newsletter" height="52" loading="lazy" scrolling="no"></iframe>

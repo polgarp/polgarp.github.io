@@ -32,27 +32,21 @@ logo: "/assets/images/logo.png"
 
 # Site UI settings (consumed by the custom layouts/includes)
 
+# The current role, stated once. Liquid does not run in _config.yml, so
+# templates compose these atoms rather than repeating the title in prose.
+# _data/journey.yml deliberately omits a role for Canonical so the career
+# strip falls back to this same string.
+current:
+  role: "Lead Experience Designer"
+  company: "Canonical"
+  company_url: "https://canonical.com/"
+  focus: "designing humane human–AI workflows"
+
 intro:
   lede: 'Design explorer. Building products and <a href="/portfolio/">product design teams</a>.'
-  now: 'Currently lead product designer at <a href="https://canonical.com/">Canonical</a>, designing humane human–AI workflows.'
 colophon: "black, red, white & monospace"
 newsletter_embed: "https://embeds.beehiiv.com/37db567b-1484-4bb3-8430-ed1d569535ca?slim=true"
 share_service: "https://mastodonshare.com/?text="
-
-# Comments
-
-repository: polgarp/polgarp.github.io
-
-comments:
-  provider: "giscus"
-  giscus:
-    repo_id              : MDEwOlJlcG9zaXRvcnkyNjMxNTQ0ODI= # Shown during giscus setup at https://giscus.app
-    category_name        : General # Full text name of the category
-    category_id          : DIC_kwDOD69rMs4CYXfz # Shown during giscus setup at https://giscus.app
-    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
-    theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-   
 
 
 # Build settings
@@ -103,7 +97,6 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true
   # _pages
   - scope:
       path: "_pages"
