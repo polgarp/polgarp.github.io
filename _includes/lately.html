@@ -1,0 +1,27 @@
+{%- comment -%}
+The newest few entries, given room to be read rather than scanned. These are
+deliberately absent from the archive below while nothing is filtered, so the
+page never shows the same entry twice; topics.js folds them back in the moment
+a topic is chosen. Params: posts (array).
+{%- endcomment -%}
+<section class="lately" aria-labelledby="lately-label">
+  <div class="lately__inner">
+  <h2 class="lately__label" id="lately-label">Lately</h2>
+  <ol class="lately__list">
+    {%- for post in include.posts %}
+    <li class="lately__item" data-tags="{{ post.tags | join: '|' | downcase }}" data-url="{{ post.url }}">
+      <time class="lately__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>
+      <h3 class="lately__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {%- comment %} Front-matter `excerpt` wins; otherwise Jekyll's first
+      paragraph stands in, so a post never has to carry one. {% endcomment -%}
+      {%- assign _ex = post.excerpt | strip_html | normalize_whitespace | strip -%}
+      {%- if _ex != "" %}
+      {%- comment %} truncatewords appends its ellipsis even when the cut word
+      already carried a full stop, which reads as "together....". {% endcomment -%}
+      <p class="lately__excerpt">{{ _ex | truncatewords: 28, "…" | replace: ".…", "…" | replace: ",…", "…" | replace: ";…", "…" }}</p>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+  </div>
+</section>
