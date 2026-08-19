@@ -366,12 +366,40 @@ main.shell {
 }
 
 // Comfortable touch targets without inflating the desktop masthead.
+//
+// The earlier version of this block set width/height on `.masthead__tools
+// button`, which loses on specificity to `.masthead__tools #search-toggle`
+// (0,1,1,0) and `.masthead__tools .theme-switch` (0,0,2,0) declared above —
+// media queries add no weight of their own. Only the hamburger, which nothing
+// else targets, actually grew; the search keycap stayed 25x18 and the theme
+// switch 30x18. So the tools keep their drawn size and the tap target grows
+// underneath them instead: 44px tall, and half the gap wider on each side, so
+// neighbouring targets meet edge to edge without overlapping.
 @media (pointer: coarse) {
-  .masthead__tools button {
-    width: 2.75rem;
-    height: 2.75rem;
+  .masthead__tools {
+    gap: 1rem;
   }
 
+  .masthead__tools > button {
+    position: relative;
+  }
+
+  .masthead__tools > button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 2.75rem;
+    transform: translateY(-50%);
+  }
+}
+
+// Above the mobile breakpoint the nav is a horizontal row, where an inline-block
+// target is right. Inside the stacked panel it is not: `display: inline-block`
+// here used to beat the panel's `display: block`, leaving each row's bordered
+// full width but only its text tappable.
+@media (pointer: coarse) and (min-width: 601px) {
   .masthead__nav a {
     padding-block: 0.6rem;
     display: inline-block;

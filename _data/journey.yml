@@ -26,11 +26,12 @@ career:
     period: "2021–2023"
   - company: "Canonical"
     logo: /assets/images/portfolio/canonical-logo.svg
-    role: "Lead Experience Designer"
+    # role omitted on purpose: the current role lives in _config.yml (site.current.role)
     period: "2024–"
 
 areas:
   - num: "01"
+    label: "coherence"
     headline: "Driving product coherence at scale"
     line: "When teams build independently, products fragment. I align them around the user's journey so the whole feels like one product, and holds together as a system teams and their agents can build on."
     key:
@@ -43,6 +44,7 @@ areas:
       - 2016-from-ui-kit-to-design-system-team
 
   - num: "02"
+    label: "strategy"
     headline: "Shaping strategy through design vision"
     line: "Design can show the future, not just argue about it. I use vision and prototypes to steer strategy and align leadership."
     key:
@@ -51,6 +53,7 @@ areas:
       blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
 
   - num: "03"
+    label: "discovery"
     headline: "Embedding discovery into product decisions"
     line: "Good products come from understanding, not assumptions. I make discovery rigorous enough that the understanding lasts, becoming context the whole team and their agents can act on."
     key:
@@ -62,6 +65,7 @@ areas:
       - 2017-a-ux-process-for-transparent-collaboration
 
   - num: "04"
+    label: "teams"
     headline: "Building and scaling design teams"
     line: "A good team makes everyone around it better. I build teams with clear growth, embedded practice, and deliberate org design."
     key:

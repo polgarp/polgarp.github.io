@@ -152,11 +152,13 @@
   margin-bottom: 1rem;
 }
 
-// Entry count sneaks in when you hover a year.
+// The count is the one number that gives the archive its shape, so it is always
+// legible rather than a hover reward that touch readers never collect. It still
+// steps back from the year itself, and brightens when you hover the label.
 .feed__year-count {
   margin-left: 0.75ch;
   font-weight: 400;
-  opacity: 0;
+  opacity: 0.65;
   transition: opacity 0.2s ease;
 
   .feed__year-label:hover & {
@@ -425,8 +427,12 @@ article.post .post__body::after {
   }
 }
 
-.back-to-top {
+// A quiet closing line of links. Shared by the tag index's "back to top" and
+// the last line of a case study, so the two read as the same kind of exit.
+.back-to-top,
+.case-study__end {
   font-size: var(--text-sm);
+  color: var(--ink-muted); // the · separator
 
   a {
     text-decoration: none;
@@ -436,6 +442,14 @@ article.post .post__body::after {
       color: var(--accent);
     }
   }
+}
+
+.case-study__end {
+  margin-top: 2rem;
+}
+
+.case-study__end-sep {
+  margin-inline: 0.4rem;
 }
 
 // ----- Case study meta (role/scope block)
@@ -822,20 +836,65 @@ article.post .post__body::after {
   border: 0;
 }
 
-// ----- Comments
+// The end-of-article shape: the block drops its box and becomes a ruled band,
+// so it reads as an offer at the close rather than a card interrupting the flow.
+.newsletter--compact {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  padding: 1.25rem 0 0;
+  margin-top: 2rem;
+}
 
-.comments {
-  margin-top: var(--section);
+// ----- Neighbouring entries (posts and case studies)
+//
+// The feed is reverse-chronological, so these are labelled "newer" and "older"
+// rather than next/previous, which would promise a curated sequence that isn't
+// there. Older keeps column 2 whether or not a newer entry exists, so the first
+// and last entries both read left-to-right as time.
 
-  .comments__label {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    letter-spacing: var(--tracking-caps);
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.25rem;
+.post-nav {
+  display: grid;
+  gap: 1.25rem 2rem;
+  // Matches the newsletter band directly below it, so the two hairlines that
+  // close an article are the same length instead of stepping.
+  max-width: var(--measure);
+  border-top: 1px solid var(--rule);
+  padding-top: 1.25rem;
+  margin-top: 2rem;
+}
+
+.post-nav__item {
+  display: block;
+  text-decoration: none;
+}
+
+.post-nav__label {
+  display: block;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.35rem;
+}
+
+.post-nav__title {
+  display: block;
+  text-wrap: pretty;
+
+  .post-nav__item:hover &,
+  .post-nav__item:focus-visible & {
+    color: var(--accent);
+  }
+}
+
+@media (min-width: 640px) {
+  .post-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post-nav__item--older {
+    grid-column: 2;
+    text-align: right;
   }
 }
 
@@ -989,14 +1048,19 @@ h3:hover .heading-anchor {
 }
 
 @media (min-width: 1080px) {
+  // Anchored to the right so the words grow leftward into empty margin instead
+  // of pushing into the column. Numerals fitted the old 3.25rem gutter; words
+  // don't, and a bare "03" told the reader nothing without scrolling to it.
   .area-index {
     position: fixed;
     top: 50%;
+    right: calc(50% + var(--shell) / 2 + 0.5rem);
     transform: translateY(-50%);
-    left: max(1.5rem, calc((100vw - var(--shell)) / 2 - 3.25rem));
     z-index: 5;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
     gap: 0.6rem;
 
     a {
@@ -1011,6 +1075,34 @@ h3:hover .heading-anchor {
       &:hover { color: var(--ink); }
 
       &.is-current { color: var(--accent); }
+    }
+  }
+
+  // The rail is a small courtesy on a page that isn't long enough to need much
+  // help, so it stays out of the way until the reader has left the intro, then
+  // eases in with a short stagger. `js-rail` is set by journey.js, so a reader
+  // without JavaScript keeps a plain, always-visible rail rather than a blank
+  // gutter. Colour is excluded from the delay so hover stays instant.
+  .area-index.js-rail a {
+    opacity: 0;
+    transform: translateX(-0.35rem);
+    transition:
+      opacity 0.45s ease,
+      transform 0.45s cubic-bezier(0.2, 0.8, 0.3, 1),
+      color 0.15s ease;
+  }
+
+  .area-index.js-rail.is-revealed a {
+    opacity: 1;
+    transform: none;
+  }
+
+  @for $i from 1 through 6 {
+    .area-index.js-rail.is-revealed a:nth-child(#{$i}) {
+      // Real unit arithmetic rather than interpolation: libsass (the converter
+      // this Jekyll pins) can't parse an interpolated multi-value delay.
+      $step: ($i - 1) * 45ms;
+      transition-delay: $step, $step, 0s;
     }
   }
 }
@@ -1185,9 +1277,14 @@ h3:hover .heading-anchor {
 }
 
 // On touch / small screens the hover hint can't show; reclaim the reserved slot.
+// The cue is a different case: it is the card's only "this is a link" signal, so
+// where hover can never fire it ships in its resting position instead of waiting
+// for an animation that will never run. The bottom padding it sits in was always
+// correct — it just held empty space until now.
 @media (hover: none), (max-width: 640px) {
   .jcard { padding-right: 1.5rem; }
   .jcard__hint { display: none; }
+
 }
 
 .jcard__cue {
@@ -1199,6 +1296,16 @@ h3:hover .heading-anchor {
   opacity: 0;
   transform: translateX(-0.4rem);
   transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+// Where hover can never fire, the cue is the card's only "this is a link"
+// signal, so it ships in its resting position. This has to sit *after* the
+// declaration above: same specificity, and source order decides.
+@media (hover: none), (max-width: 640px) {
+  .jcard__cue {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .jcard__logo {

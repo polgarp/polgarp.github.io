@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{% comment %} Neighbours for j/k navigation: the same Blog + Newsletter feed,
-newest-first. Posts outside those categories (e.g. Garden) won't match, so they
-get no neighbours and no in-post j/k. {% endcomment %}
+{% comment %} Neighbours for j/k navigation and the footer links: the same Blog +
+Newsletter feed, newest-first. Posts outside those categories (e.g. Garden) won't
+match, so they get no neighbours and no in-post j/k. {% endcomment %}
 {% assign feedposts = "" | split: "" %}
 {% for p in site.posts %}
   {% if p.categories contains "Blog" or p.categories contains "Newsletter" %}
@@ -16,9 +16,16 @@ get no neighbours and no in-post j/k. {% endcomment %}
 {% endfor %}
 {% assign previdx = curidx | minus: 1 %}
 {% assign nextidx = curidx | plus: 1 %}
+{% comment %} feedposts is newest-first, so previdx is the *newer* post and nextidx
+the older one. The footer labels them "newer"/"older" rather than "next/previous",
+which would promise a curated sequence that doesn't exist. {% endcomment %}
+{% assign has_newer = false %}
+{% if curidx > 0 %}{% assign has_newer = true %}{% endif %}
+{% assign has_older = false %}
+{% if curidx >= 0 and nextidx < feedposts.size %}{% assign has_older = true %}{% endif %}
 
 <div class="reading-progress" aria-hidden="true"><span></span></div>
-<article class="post h-entry"{% if curidx > 0 %} data-post-prev="{{ feedposts[previdx].url | relative_url }}"{% endif %}{% if curidx >= 0 and nextidx < feedposts.size %} data-post-next="{{ feedposts[nextidx].url | relative_url }}"{% endif %}>
+<article class="post h-entry"{% if has_newer %} data-post-prev="{{ feedposts[previdx].url | relative_url }}"{% endif %}{% if has_older %} data-post-next="{{ feedposts[nextidx].url | relative_url }}"{% endif %}>
   <header class="post__header">
     <p class="post__meta">
       {% assign cat = page.categories | first %}
@@ -48,9 +55,26 @@ get no neighbours and no in-post j/k. {% endcomment %}
       {% for tag in page.tags %}<a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}
     </p>
     {% endif %}
-    {% if page.categories contains "Newsletter" %}{% unless content contains "beehiiv.com" %}
-    {% include newsletter-signup.html %}
-    {% endunless %}{% endif %}
-    {% include giscus.html %}
+
+    {% if has_newer or has_older %}
+    <nav class="post-nav" aria-label="More writing">
+      {% if has_newer %}
+      {% assign n = feedposts[previdx] %}
+      <a class="post-nav__item post-nav__item--newer" href="{{ n.url | relative_url }}">
+        <span class="post-nav__label">Newer</span>
+        <span class="post-nav__title">{{ n.title }}</span>
+      </a>
+      {% endif %}
+      {% if has_older %}
+      {% assign o = feedposts[nextidx] %}
+      <a class="post-nav__item post-nav__item--older" href="{{ o.url | relative_url }}">
+        <span class="post-nav__label">Older</span>
+        <span class="post-nav__title">{{ o.title }}</span>
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    {% include newsletter-signup.html variant="compact" %}
   </footer>
 </article>

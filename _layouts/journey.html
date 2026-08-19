@@ -5,7 +5,7 @@ layout: default
 <nav class="area-index" aria-label="Jump to section">
   <a href="#journey-top" data-target="journey-top">intro</a>
   {% for area in j.areas %}
-  <a href="#area-{{ area.num }}" data-target="area-{{ area.num }}">{{ area.num }}</a>
+  <a href="#area-{{ area.num }}" data-target="area-{{ area.num }}">{{ area.label | default: area.num }}</a>
   {% endfor %}
 </nav>
 <article class="journey">
@@ -19,7 +19,7 @@ layout: default
     {% for job in j.career %}
     <div class="career__item">
       <img class="career__logo" src="{{ job.logo | relative_url }}" alt="{{ job.company }}">
-      <span class="career__role">{{ job.role }}</span>
+      <span class="career__role">{{ job.role | default: site.current.role }}</span>
       <span class="career__period">{{ job.period }}</span>
     </div>
     {% endfor %}

@@ -7,8 +7,16 @@
   var sections = [].slice.call(document.querySelectorAll("#journey-top, .area[id]"));
   if (!links.length || !sections.length) return;
 
+  // Marking the rail as JS-managed is what arms the reveal in CSS. Without it
+  // the rail is plainly visible, so a failed or blocked script leaves a working
+  // index rather than an empty gutter.
+  var rail = links[0].closest(".area-index");
+  if (rail) rail.classList.add("js-rail");
+
   function setCurrent(id) {
     links.forEach(function (a) { a.classList.toggle("is-current", a.dataset.target === id); });
+    // The rail earns its place once the reader has left the intro.
+    if (rail) rail.classList.toggle("is-revealed", id !== "journey-top");
   }
 
   // The current section is the last one whose top has crossed a line ~35% down

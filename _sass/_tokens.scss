@@ -2,7 +2,7 @@
 // Black, red, white & monospace. Quiet precision.
 
 // One red per mode, both AA-compliant for small text:
-// "poster red" #d62828 on white ≈ 5.5:1, #ef4444 on #161616 ≈ 4.8:1.
+// "poster red" #d62828 on white = 5.01:1, #ef4444 on #161616 = 4.81:1.
 // Dark mode is deliberately softened (dimmed ink, lifted paper) so
 // white-on-black doesn't vibrate.
 @mixin light-tokens {
