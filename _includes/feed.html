@@ -1,13 +1,25 @@
 {% comment %}
-  Year-grouped entry list. Params: posts (array of posts)
+  Year-grouped entry list. Params:
+    posts   (array of posts)
+    lately  (optional "url|url|" string; those entries render but stay hidden
+             until a topic filter merges them back in, so the newest few appear
+             once on the page instead of twice)
 {% endcomment %}
 {% assign by_year = include.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in by_year %}
+{% comment %} Count what this group actually shows, so the label never claims
+more entries than are on screen. {% endcomment %}
+{% assign shown = 0 %}
+{% for post in year.items %}
+  {% capture _u %}{{ post.url }}|{% endcapture %}
+  {% unless include.lately contains _u %}{% assign shown = shown | plus: 1 %}{% endunless %}
+{% endfor %}
 <section class="feed__year">
-  <h2 class="feed__year-label">{{ year.name }}<span class="feed__year-count" aria-hidden="true">▪ {{ year.items | size }} {% if year.items.size == 1 %}entry{% else %}entries{% endif %}</span></h2>
+  <h2 class="feed__year-label">{{ year.name }}<span class="feed__year-count" aria-hidden="true">▪ {{ shown }} {% if shown == 1 %}entry{% else %}entries{% endif %}</span></h2>
   <ol class="feed" reversed>
     {% for post in year.items %}
-    <li class="feed__item" data-tags="{{ post.tags | join: '|' | downcase }}">
+    {% capture _u %}{{ post.url }}|{% endcapture %}
+    <li class="feed__item{% if include.lately contains _u %} is-lately{% endif %}" data-tags="{{ post.tags | join: '|' | downcase }}" data-url="{{ post.url }}">
       <time class="feed__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>
       <span class="feed__title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>

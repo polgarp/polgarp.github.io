@@ -10,8 +10,17 @@ layout: default
 
 {{ content }}
 
-<div class="topics" role="group" aria-label="Filter by topic">
-  <p class="topics__label">Looking for something?</p>
+{% assign feed_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% if post.categories contains "Blog" or post.categories contains "Newsletter" %}
+    {% assign feed_posts = feed_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} The chips are a statement of what Péter is working through, not a
+search prompt — hence the heading. They double as the archive's filter. {% endcomment %}
+<div class="topics" role="group" aria-labelledby="topics-label">
+  <h2 class="topics__label" id="topics-label">What I'm thinking about</h2>
   <div class="topics__row">
     {% for t in site.data.topics %}
     <button class="topic-chip" type="button" aria-pressed="false" data-label="{{ t.label }}" data-topic="{{ t.tags | join: '|' | downcase }}">#{{ t.label }}</button>
@@ -20,10 +29,11 @@ layout: default
   <p class="topics__status" aria-live="polite" hidden></p>
 </div>
 
-{% assign feed_posts = "" | split: "" %}
-{% for post in site.posts %}
-  {% if post.categories contains "Blog" or post.categories contains "Newsletter" %}
-    {% assign feed_posts = feed_posts | push: post %}
-  {% endif %}
-{% endfor %}
-{% include feed.html posts=feed_posts %}
+{% assign lately = feed_posts | slice: 0, 3 %}
+{% assign lately_urls = "" %}
+{% for p in lately %}{% assign lately_urls = lately_urls | append: p.url | append: "|" %}{% endfor %}
+{% include lately.html posts=lately %}
+
+<div class="feed-wrap" id="feed">
+  {% include feed.html posts=feed_posts lately=lately_urls %}
+</div>
