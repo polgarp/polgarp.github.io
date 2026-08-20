@@ -22,11 +22,24 @@ search prompt — hence the heading. They double as the archive's filter. {% end
 <div class="topics" role="group" aria-labelledby="topics-label">
   <h2 class="topics__label" id="topics-label">What I'm thinking about</h2>
   <div class="topics__row">
-    {% for t in site.data.topics %}
-    <button class="topic-chip" type="button" aria-pressed="false" data-label="{{ t.label }}" data-topic="{{ t.tags | join: '|' | downcase }}">#{{ t.label }}</button>
-    {% endfor %}
+    {%- for t in site.data.topics %}
+    {%- comment %} How many entries this topic actually reaches, counted from the
+    same feed the chip filters, so the number can never drift from the result.
+    {% endcomment -%}
+    {%- assign _want = t.tags | join: '|' | downcase | split: '|' -%}
+    {%- assign _n = 0 -%}
+    {%- for post in feed_posts -%}
+      {%- assign _ptags = post.tags | join: '|' | downcase | split: '|' -%}
+      {%- for _w in _want -%}
+        {%- if _ptags contains _w -%}{%- assign _n = _n | plus: 1 -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endfor %}
+    <button class="topic-chip" type="button" aria-pressed="false" data-label="{{ t.label }}" data-count="{{ _n }}" data-topic="{{ t.tags | join: '|' | downcase }}">#{{ t.label }}</button>
+    {%- endfor %}
   </div>
-  <p class="topics__status" aria-live="polite" hidden></p>
+  <div class="topics__status-wrap">
+    <p class="topics__status" aria-live="polite"></p>
+  </div>
 </div>
 
 {% assign lately = feed_posts | slice: 0, 3 %}
