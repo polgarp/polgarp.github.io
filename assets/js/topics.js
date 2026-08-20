@@ -10,12 +10,14 @@
   var items = document.querySelectorAll(".feed__item[data-tags]");
   var years = document.querySelectorAll(".feed__year");
   var status = document.querySelector(".topics__status");
+  var statusWrap = document.querySelector(".topics__status-wrap");
   var wrap = document.getElementById("feed");
   var lately = document.querySelector(".lately");
   var latelyItems = lately ? lately.querySelectorAll(".lately__item") : [];
   if (!chips.length || !items.length) return;
 
-  var active = null;
+  var active = null;   // the pinned topic
+  var hovered = null;  // the topic under the pointer, preview only
 
   function matches(el, chip) {
     var tags = (el.dataset.tags || "").split("|");
@@ -58,90 +60,138 @@
     writeStatus();
   }
 
+  var statusTimer = null;
+
+  // One row, two jobs. Hovering previews what a topic holds and invites the
+  // click; the pinned state reports the result and offers the way out. Both live
+  // here rather than on the chip, so the chips stay the size of their labels.
   function writeStatus() {
     if (!status) return;
-    if (!active) {
-      status.hidden = true;
-      status.textContent = "";
+    window.clearTimeout(statusTimer);
+
+    var shown = active || hovered;
+    if (!shown) {
+      if (statusWrap) statusWrap.classList.remove("is-open");
+      // Emptied only once the row has closed, so the text never disappears out
+      // from under a reader mid-collapse.
+      statusTimer = window.setTimeout(function () {
+        status.textContent = "";
+      }, 300);
       return;
     }
-    var n = document.querySelectorAll(".feed__item:not(.is-hidden)").length;
-    status.hidden = false;
+
+    var n = active
+      ? document.querySelectorAll(".feed__item:not(.is-hidden)").length
+      : parseInt(shown.dataset.count, 10);
+
+    // A live region should announce a result, not narrate a pointer.
+    status.setAttribute("aria-live", active ? "polite" : "off");
     status.textContent = n + (n === 1 ? " entry" : " entries") +
-      " about #" + active.dataset.label + " · ";
-    var clear = document.createElement("button");
-    clear.type = "button";
-    clear.className = "topics__clear";
-    clear.textContent = "clear filter";
-    clear.addEventListener("click", function () { select(null, true); });
-    status.appendChild(clear);
+      " about #" + shown.dataset.label + " · ";
+
+    if (active) {
+      var clear = document.createElement("button");
+      clear.type = "button";
+      clear.className = "topics__clear";
+      clear.textContent = "clear filter";
+      clear.addEventListener("click", function () { select(null, true); });
+      status.appendChild(clear);
+    } else {
+      var nudge = document.createElement("span");
+      nudge.className = "topics__nudge";
+      nudge.textContent = "Curious?";
+      status.appendChild(nudge);
+    }
+    if (statusWrap) statusWrap.classList.add("is-open");
   }
 
   // The block folds into the list rather than blinking out. Nothing meaningfully
   // moves — the rows land within a few pixels of the cards they replace — so the
-  // motion is the collapse itself, with the arriving rows settling in behind it.
-  var collapseTimer = null;
+  // motion is the fold itself, in two beats: the content fades as a unit, then
+  // the height closes behind it while the arriving rows settle in. Fading first
+  // matters because the collapse clips bottom-up; done together you watch the
+  // excerpt, then the list, then the label snap away in sequence.
+  var FADE = 160;
+  var CLOSE = 280;
+  var timers = [];
 
-  function animateMerge(nextActive) {
-    var reduce = false;
-    try { reduce = matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
-    if (!lately) return { before: function () {}, after: function () {} };
+  function clearTimers() {
+    timers.forEach(window.clearTimeout);
+    timers = [];
+  }
+  function later(fn, ms) { timers.push(window.setTimeout(fn, ms)); }
+
+  function prefersReduced() {
+    try { return matchMedia("(prefers-reduced-motion: reduce)").matches; }
+    catch (e) { return false; }
+  }
+
+  function closeLately(arriving) {
+    lately.classList.add("is-fading");
+    later(function () {
+      lately.classList.add("is-collapsed");
+      revealRows(arriving);
+      later(function () {
+        lately.hidden = true;
+        lately.classList.remove("is-collapsed", "is-fading");
+      }, CLOSE + 40);
+    }, FADE);
+  }
+
+  function openLately() {
+    // Start closed and blank, then open the height and bring the content back.
+    lately.hidden = false;
+    lately.classList.add("is-collapsed", "is-fading");
+    void lately.offsetHeight;
+    requestAnimationFrame(function () {
+      lately.classList.remove("is-collapsed");
+      // Waits out the status row's collapse: bringing the content back while the
+      // page is still settling puts a visible box under a moving layout.
+      later(function () { lately.classList.remove("is-fading"); }, CLOSE);
+    });
+  }
+
+  function revealRows(arriving) {
+    if (!arriving.length) return;
+    arriving.forEach(function (row) { row.classList.add("is-arriving"); });
+    // A single rAF gets batched into the same style recalc, so the browser never
+    // sees the start state and no transition runs. Force the read.
+    void wrap.offsetHeight;
+    requestAnimationFrame(function () {
+      arriving.forEach(function (row, i) {
+        row.style.transitionDelay = (i * 45) + "ms";
+        row.classList.add("is-arrived");
+      });
+    });
+    later(function () {
+      arriving.forEach(function (row) {
+        row.style.transitionDelay = "";
+        row.classList.remove("is-arriving", "is-arrived");
+      });
+    }, 280 + arriving.length * 45 + 80);
+  }
+
+  function animateMerge(nextActive, arriving) {
+    if (!lately) return;
+    clearTimers();
+
+    if (prefersReduced()) {
+      lately.classList.remove("is-collapsed", "is-fading");
+      lately.hidden = !!nextActive;
+      return;
+    }
 
     var closing = !!nextActive && !lately.hidden;
     var opening = !nextActive && lately.hidden;
 
-    return {
-      before: function () {
-        window.clearTimeout(collapseTimer);
-        if (opening) {
-          // Unhide first so the expansion has something to lay out.
-          lately.hidden = false;
-          lately.classList.add("is-collapsed");
-          void lately.offsetHeight;
-        }
-      },
-      after: function (arriving) {
-        if (reduce) {
-          lately.classList.remove("is-collapsed");
-          lately.hidden = !!nextActive;
-          return;
-        }
-        if (closing) {
-          lately.classList.add("is-collapsed");
-          collapseTimer = window.setTimeout(function () {
-            lately.hidden = true;
-            lately.classList.remove("is-collapsed");
-          }, 420);
-        } else if (opening) {
-          requestAnimationFrame(function () {
-            lately.classList.remove("is-collapsed");
-          });
-        }
-
-        if (!arriving.length) return;
-        arriving.forEach(function (row) { row.classList.add("is-arriving"); });
-        // A single rAF gets batched into the same style recalc, so the browser
-        // never sees the start state and no transition runs. Force the read.
-        void wrap.offsetHeight;
-        requestAnimationFrame(function () {
-          arriving.forEach(function (row, i) {
-            row.style.transitionDelay = (i * 45) + "ms";
-            row.classList.add("is-arrived");
-          });
-        });
-        window.setTimeout(function () {
-          arriving.forEach(function (row) {
-            row.style.transitionDelay = "";
-            row.classList.remove("is-arriving", "is-arrived");
-          });
-        }, 280 + arriving.length * 45 + 80);
-      }
-    };
+    if (closing) closeLately(arriving);
+    else if (opening) openLately();
+    else if (nextActive) revealRows(arriving); // topic-to-topic, block already shut
   }
 
   function select(chip, push) {
-    var anim = animateMerge(chip);
-    anim.before();
+    hovered = null;
+    var wasHidden = lately ? lately.hidden : true;
     active = chip;
     setState({ keepLately: true });
     var arriving = [];
@@ -150,7 +200,8 @@
         if (!row.classList.contains("is-hidden")) arriving.push(row);
       });
     }
-    anim.after(arriving);
+    if (lately) lately.hidden = wasHidden; // the sequence below owns this
+    animateMerge(chip, arriving);
     writeUrl(push !== false);
   }
 
@@ -173,24 +224,55 @@
     return null;
   }
 
+  function undim() {
+    items.forEach(function (it) { it.classList.remove("is-dimmed"); });
+    latelyItems.forEach(function (li) { li.classList.remove("is-dimmed"); });
+  }
+
+  function preview(chip) {
+    if (active) return; // a pinned topic owns the row; don't preview over it
+    hovered = chip;
+    items.forEach(function (it) {
+      it.classList.toggle("is-dimmed", !matches(it, chip));
+    });
+    latelyItems.forEach(function (li) {
+      li.classList.toggle("is-dimmed", !matches(li, chip));
+    });
+    writeStatus();
+  }
+
+  function endPreview() {
+    hovered = null;
+    undim();
+    writeStatus();
+  }
+
   chips.forEach(function (chip) {
     chip.addEventListener("click", function () {
       select(active === chip ? null : chip, true);
     });
-    chip.addEventListener("mouseenter", function () {
-      if (active) return;
-      items.forEach(function (it) {
-        it.classList.toggle("is-dimmed", !matches(it, chip));
-      });
-      latelyItems.forEach(function (li) {
-        li.classList.toggle("is-dimmed", !matches(li, chip));
-      });
-    });
-    chip.addEventListener("mouseleave", function () {
-      items.forEach(function (it) { it.classList.remove("is-dimmed"); });
-      latelyItems.forEach(function (li) { li.classList.remove("is-dimmed"); });
-    });
+    chip.addEventListener("mouseenter", function () { preview(chip); });
   });
+
+  // Bound to the row, not each chip: opening the status row costs the block
+  // below it some height, so it opens once on the way in and closes once on the
+  // way out. Sliding between chips only swaps the text.
+  //
+  // focusin/focusout mirror this for the keyboard, and because they bubble, the
+  // relatedTarget check keeps Tab between two chips from closing and reopening
+  // the row on every step.
+  var row = document.querySelector(".topics__row");
+  if (row) {
+    row.addEventListener("mouseleave", endPreview);
+    row.addEventListener("focusin", function (e) {
+      var chip = e.target.closest && e.target.closest(".topic-chip");
+      if (chip) preview(chip);
+    });
+    row.addEventListener("focusout", function (e) {
+      if (e.relatedTarget && row.contains(e.relatedTarget)) return;
+      endPreview();
+    });
+  }
 
   function readUrl() {
     var m = /[?&]topic=([^&]+)/.exec(location.search);

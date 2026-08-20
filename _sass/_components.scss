@@ -65,7 +65,7 @@
 // ----- Topic filters (homepage)
 
 .topics {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem; // + the status wrapper's constant 0.75rem = 2.5rem
 }
 
 .topics__label {
@@ -119,10 +119,44 @@
   }
 }
 
-.topics__status {
+// Toggling this line in and out of flow is what made the filter jump: it claims
+// its height the instant it appears, shoving the Lately block down before
+// anything animates, and hands the height back on clear so the block snaps up.
+// So it doesn't appear — it *trades* height with the block below, opening as
+// that one folds. Opacity alone can't do this; only layout answers layout.
+// The invitation the hover state offers. Same red as the clear control beside
+// it, but no underline: this is a nudge, not something to press.
+.topics__nudge {
+  color: var(--accent);
+}
+
+.topics__status-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  // The gap lives out here, where it is constant. Put it on the clipped item and
+  // padding survives the collapse — the row shuts to 12px instead of 0, which is
+  // the residue that made the block below twitch.
   margin-top: 0.75rem;
+  transition: grid-template-rows 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.topics__status-wrap.is-open {
+  grid-template-rows: 1fr;
+  transition-delay: 0.2s; // waits for the Lately content to finish fading
+}
+
+.topics__status {
+  overflow: hidden;
+  min-height: 0;
   font-size: var(--text-sm);
   color: var(--ink-muted);
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.topics__status-wrap.is-open .topics__status {
+  opacity: 1;
+  transition-delay: 0.32s; // text arrives once its room is nearly open
 }
 
 .topics__clear {
@@ -157,19 +191,25 @@
 .lately {
   display: grid;
   grid-template-rows: 1fr;
-  transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.22s ease;
+  transition: grid-template-rows 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+// `overflow: hidden` is what makes the row collapse work, but it also means the
+// block is *clipped* bottom-up rather than shrunk — excerpt, then list, then
+// label, each snapping away in turn. So the content fades as a unit first and
+// the height closes behind it, while nothing is left visible to be clipped.
 .lately__inner {
   overflow: hidden;
   min-height: 0;
-  padding-bottom: var(--section); // inside, so the spacing collapses too
+  transition: opacity 0.2s ease;
+}
+
+.lately.is-fading .lately__inner {
+  opacity: 0;
 }
 
 .lately.is-collapsed {
   grid-template-rows: 0fr;
-  opacity: 0;
 }
 
 // `display: grid` above is an author declaration and outranks the UA style for
@@ -191,10 +231,13 @@
 
 .lately__list {
   list-style: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+  // The block's bottom spacing lives here rather than on the clipping wrapper:
+  // padding on the wrapper is outside the grid row's control, so it held the
+  // collapse open at 64px and then snapped shut.
+  padding: 0 0 var(--section);
 }
 
 .lately__item {
