@@ -29,7 +29,7 @@ The design process should start with defining the problem space, clearly articul
 
 Working in the problem space would involve user research (most prominently user interviews), journey maps, and personas - these drive the exploration and further ideation. Both wide (uncover further sets of problems) and deep (uncover more details about problems) exploration should be done.
 
-The solution space can be explored based on the understanding of the problem space. This would usually mean generating diverging ideas and concepts, up until the concept becomes clearer, and the design can converge to the final solution. The problem space is explored mostly with prototypes, trying out different ways of solving the problem.
+The solution space can be explored based on the understanding of the problem space. This would usually mean generating diverging ideas and concepts, up until the concept becomes clearer, and the design can converge to the final solution. The solution space is explored mostly with prototypes, trying out different ways of solving the problem.
 
 If this all sounds a bit idealistic, and maybe a bit waterfall-y, it's because in practice the process is rarely this clean. 
 
