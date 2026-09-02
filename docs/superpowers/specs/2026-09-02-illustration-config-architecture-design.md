@@ -1,7 +1,7 @@
 # Illustration configuration architecture
 
 **Date:** 2026-09-02
-**Status:** approved, not yet implemented
+**Status:** implemented 2026-09-02
 
 ## Problem
 
@@ -239,3 +239,54 @@ flag in `_config.yml` and its script block in `_layouts/default.html`.
   writes them.
 - **The two posts' SVG exports are assumed correct for the restored pitch.**
   Verified by comparing against the pre-`f716aa1` build, not assumed.
+
+## Doctrine amendment, as built
+
+Commit 6788201 locked "one style, six verbs". One style previously implied one
+character size. It no longer does: character size (`cell` × `mark_scale`) is a
+per-illustration style parameter declared in `_data/illustrations.yml`. The
+style *vocabulary* — weighted monospace glyphs on a grid, character carrying
+coarse tone and weight carrying fine tone — remains single and engine-owned,
+along with the three substrate invariants (legible at rest, accent scarce,
+state refreshes).
+
+## What actually keeps illustrations independent
+
+Four defects of the same shape were found, one shipped and three latent:
+
+- `@property --illo-density` with `initial-value: 20px` — a registered property
+  resolves on every element, so the CSS fallback became unconditional. This is
+  the one that shipped, taking both posts' glyphs from 11px and 15px to 27px.
+- `--illo-cell` defined on `:root` — inherits to every element, and would have
+  done the same thing under a new name as soon as `cell` became CSS-readable.
+- `core.js` assigned `window.Illo` wholesale, dropping the `config` object
+  attached by `config.js`. Invisible in development, because a cached copy of
+  `core.js` still worked.
+- The include hardcoded a `lightest` density default on the background branch.
+  Harmless while CSS outranked attributes; under the precedence rule a default
+  baked into the include beat the stylesheet and took the home layer from a
+  9.576px pitch to 20px. A default written into the include is not the
+  illustration speaking, so it is now emitted only when one is passed.
+
+The first two are now impossible to reintroduce silently:
+`scripts/check-illustrations.mjs` fails the build if a registered property
+carries a non-zero `initial-value`, if any engine-readable `--illo-*` property
+is defined on `:root`, or if a figure relies on an implicit pitch. The
+reasoning lives beside each rule — in `assets/js/illustration/config.js` and in
+`_sass/_tokens.scss`.
+
+## Deviations from the design as specified
+
+- **The precedence rule became its own module** (`assets/js/illustration/config.js`)
+  rather than a function inside `core.js`, so it is pure and unit-testable in
+  plain Node with no DOM. `test/config.test.cjs`, 11 cases.
+- **The check script asserts structure, not drawn pixels.** Measuring glyph size
+  in CI needs a headless browser, and this repo has no `package.json` and no
+  runtime dependencies. Glyph size is a pure function of the resolved config,
+  so the unit tests pin the resolution and the three structural assertions pin
+  the inputs. The browser probe — patching `fillText` and reading `ctx.font` —
+  stays a manual step, run against a `master` build for comparison after every
+  task that touched rendering.
+- **`_config.yml` gained an `exclude` list.** Not in the design: it turned out
+  Jekyll was processing `docs/` as site content, and a Liquid tag quoted in the
+  plan's prose failed the whole build.
