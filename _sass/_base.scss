@@ -10,9 +10,15 @@
   margin: 0;
 }
 
+// The paper fill lives on html, not on body, so the illustration background
+// layer has somewhere to sit. A negative z-index layer inside body paints
+// behind body's own background box, which would hide it completely; html's
+// background is propagated to the viewport canvas instead, below everything.
+// With body transparent the rendered result is identical to filling body.
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  background: var(--paper);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -23,7 +29,7 @@ body {
   font-family: var(--font-mono);
   font-size: var(--text-base);
   line-height: var(--leading);
-  background: var(--paper);
+  background: transparent;   // see the note on html above
   color: var(--ink);
 }
 

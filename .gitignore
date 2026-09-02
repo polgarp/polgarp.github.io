@@ -17,3 +17,9 @@ _posts/9am26/Drafts/.ztr-directory
 .ztr-directory
 _posts/9am26/Topic-ideas.md
 _tag-audit/
+
+# Impeccable working files. Critique snapshots and the working backlog are
+# session scratch — useful locally, but they are notes about the site rather
+# than part of it, and they go stale the moment the page changes.
+.impeccable/
+docs/home-critique-backlog.md

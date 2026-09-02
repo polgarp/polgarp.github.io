@@ -43,11 +43,25 @@ current:
   focus: "designing humane human–AI workflows"
 
 intro:
-  lede: 'Design explorer. Building products and <a href="/portfolio/">product design teams</a>.'
+  # The opening statement on the home page, and nothing else — `tagline` above
+  # is what the browser tab carries. This is the positioning spine, the same
+  # sentence as the CV, LinkedIn and the Journey page, so the surfaces agree.
+  #
+  # No link inside it, deliberately: a link would be red, and the only red in
+  # the opening view should be red the reader caused by moving the cursor over
+  # the illustration. Journey is one item along in the nav either way.
+  # Kept as the canonical wording; the home page sets it as literal text so its
+  # hand-placed line breaks live next to it. Change both together.
+  lede: 'I make systems work for humans, at every altitude.'
 colophon: "black, red, white & monospace"
 newsletter_embed: "https://embeds.beehiiv.com/37db567b-1484-4bb3-8430-ed1d569535ca?slim=true"
 share_service: "https://mastodonshare.com/?text="
 
+
+# TEMPORARY: loads assets/js/illustration/tune.js on pages with an
+# illustration, so the background layer's numbers can be dialled in live.
+# Delete this flag and that file once they are settled.
+illo_tune: false
 
 # Build settings
 markdown: kramdown

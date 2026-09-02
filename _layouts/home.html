@@ -1,11 +1,72 @@
 ---
 layout: default
 ---
-<section class="intro">
-  <p class="intro__eyebrow">{{ site.name }}</p>
-  <h1 class="post__title">{{ site.intro.lede }}</h1>
-  <p class="intro__now">Currently {{ site.current.role | downcase }} at <a href="{{ site.current.company_url }}">{{ site.current.company }}</a>, {{ site.current.focus }}.</p>
-  <p class="intro__links"><a href="{{ '/about/' | relative_url }}">about</a> · <a href="{{ '/now/' | relative_url }}">now</a></p>
+{%- comment %}
+The opening view: one claim, the illustration behind it, and the single fact a
+cold arrival needs.
+
+The claim is set as literal text rather than `site.intro.lede` because its line
+breaks are part of its typesetting — see the spans below. Editing it means
+editing the breaks with it, which a config value would hide.
+
+The claim is the positioning spine — the same sentence as the CV, LinkedIn and
+Journey — so the three surfaces finally agree. It carries no link, so it draws
+no accent of its own: the only red it can produce is red the reader caused by
+moving the cursor, which is what the illustration's accent has always meant.
+(The logo's bowl is also red, and permanently so. An earlier version of this
+note claimed the opening view's only red was reader-caused, which was simply
+untrue — a brand mark is entitled to the accent; the statement is not.)
+
+There is no eyebrow above it and no scroll cue below it. The heading carries
+its own weight, and a slice of the next section showing under the fold is a
+truer invitation to scroll than a label saying "scroll" would be.
+{% endcomment -%}
+<section class="hero">
+  {%- comment %} Ground comes right where someone tends it, at whatever
+  altitude the reader chooses to work. The object is `plate` — undifferentiated
+  ground, edge to edge — so the structure is what attention produces rather than
+  something the shape arrived with. `range` is `order` with a scale term: high
+  in the field a pass is wide and shallow, low in it tight and deep, and neither
+  pays better than the other. That is the second half of the sentence in front
+  of it — "at every altitude" — which plain `order` had no way to say.
+
+  It belongs to the top of the page and scrolls away, rather than following the
+  reader down it: locality is what stops a background being wallpaper. Placed
+  here rather than in default.html so it stays on the home page, and so the
+  engine's "ship only where it is used" gate keeps every other page at zero
+  bytes. {% endcomment -%}
+  {% include illustration verb="range" seed="7" background=true %}
+  {%- comment %} The breaks are set by hand rather than left to
+  `text-wrap: balance`, which broke inside "make systems work" and produced a
+  rag that stepped by exactly two character cells twice. Below the breakpoint
+  the spans go inline and the browser wraps it normally. The sentence is locked
+  configuration, so hard-coding where it turns is legitimate; the spans carry
+  no meaning, which is why they are spans and not list items. {% endcomment -%}
+  {%- comment %} The claim and the fact are ONE object, not two texts floating
+  on a field. The plate is the page's own device — the bordered chip, the ruled
+  feed row — taken up to display scale: solid paper, so the field passes behind
+  it and stops at its edge rather than running through the type. That is also
+  what lets the field be strong enough for its accent to read as red.
+  {% endcomment -%}
+  <div class="hero__plate">
+    <h1 class="hero__message"><span class="hero__line">I make systems work for humans,</span> <span class="hero__line">at every altitude.</span></h1>
+    {%- comment %} The company is deliberately NOT a link. It was the only link
+    in the opening view, and it pointed off the site — the first and most
+    prominent thing a cold arrival could click sent them to an employer. Journey
+    takes its place, inside the same paragraph so it reads as the end of the
+    thought rather than as a separate call to action.
+
+    "Case studies" rather than a phrase, because this is the one place on the
+    site that says the word. The nav item stays "Journey", so a hiring manager
+    scanning for the term they actually scan for has exactly one place to find
+    it — and it is a content type, not a claim about the work being any good,
+    which is what "fifteen years" and its relatives all were. Earlier drafts
+    ("How I got here", "The work behind it") either under-described the page —
+    18 case studies and a career strip, not a memoir — or leaned on an "it" that
+    had to reach back past the Canonical sentence to find its referent.
+    {% endcomment -%}
+    <p class="hero__now"><span class="hero__now-label">Currently</span> {{ site.current.role | downcase }} at {{ site.current.company }}, {{ site.current.focus }}. <a class="hero__more" href="{{ '/portfolio/' | relative_url }}">Case studies</a></p>
+  </div>
 </section>
 
 {{ content }}
@@ -17,10 +78,23 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% comment %} The chips are a statement of what Péter is working through, not a
-search prompt — hence the heading. They double as the archive's filter. {% endcomment %}
+{% comment %} The heading and the chips are one sentence: "I've been writing
+about" — #design leadership, #product design, and so on. The chips complete it,
+which is why the heading is a fragment and should stay one. They double as the
+archive's filter.
+
+It replaced "What I'm thinking about", which was passive and described a mood
+rather than a body of work. This points at the archive directly below and
+states a fact about it, making no claim about whether the opinions in it are
+any good — everything built on "I have opinions on…" was tried and rejected as
+boastful. Still a statement, not a search prompt.
+
+This band is also what shows through under the fold, so it is the first thing
+a visitor learns is below the statement: the subjects, with counts, and
+something to click. It has to sit above the feed because it filters it.
+{% endcomment %}
 <div class="topics" role="group" aria-labelledby="topics-label">
-  <h2 class="topics__label" id="topics-label">What I'm thinking about</h2>
+  <h2 class="topics__label" id="topics-label">I've been writing about</h2>
   <div class="topics__row">
     {%- for t in site.data.topics %}
     {%- comment %} How many entries this topic actually reaches, counted from the

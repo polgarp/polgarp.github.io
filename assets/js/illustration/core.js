@@ -262,9 +262,43 @@
 
     var factory = rules[this.ruleName];
     if (!factory) return;
-    this.rule = factory(this.sim, {
-      path: this.path, fit: this.fit, density: this.density, seed: this.seed
-    });
+    // Grid pitch and resting resolve may both be driven from CSS as well as
+    // from attributes, so they can answer the viewport and the type. Read here
+    // rather than at mount because resize already re-seeds the field whenever
+    // the box changes, which is exactly when a breakpoint or a fluid size
+    // changes what they should be.
+    //
+    // Each is used ONLY if it parses to a usable number. A registered custom
+    // property resolves its calc() to a length; where @property is
+    // unsupported the raw "calc(...)" string arrives instead, and taking it
+    // literally would seed the field at the wrong pitch rather than falling
+    // back to the attribute.
+    var cs = getComputedStyle(this.el);
+    var cssCell = parseFloat(cs.getPropertyValue("--illo-density"));
+    var cssBase = parseFloat(cs.getPropertyValue("--illo-base"));
+    var opts = {
+      path: this.path, fit: this.fit, seed: this.seed,
+      density: cssCell > 0 ? cssCell : this.density
+    };
+    if (cssBase >= 0 && cssBase <= 1) opts.base = cssBase;
+    var cssArrive = parseFloat(cs.getPropertyValue("--illo-arrive"));
+    if (cssArrive > 0) opts.arrive = cssArrive;
+    var cssMark = parseFloat(cs.getPropertyValue("--illo-mark-scale"));
+    this.sim.markScale = cssMark > 0 ? cssMark : 1;
+    // Coverage falloff distances, in px. Lengths rather than fractions: they
+    // answer to what sits over the field (a masthead, a band of chips), which
+    // is a roughly fixed height while the layer's is not.
+    var fadeTop = parseFloat(cs.getPropertyValue("--illo-char-fade-top"));
+    var fadeBottom = parseFloat(cs.getPropertyValue("--illo-char-fade-bottom"));
+    if (fadeTop > 0) opts.fadeTop = fadeTop;
+    if (fadeBottom > 0) opts.fadeBottom = fadeBottom;
+    var arriveX = parseFloat(cs.getPropertyValue("--illo-arrive-x"));
+    var arriveY = parseFloat(cs.getPropertyValue("--illo-arrive-y"));
+    if (arriveX >= 0 && arriveY >= 0) {
+      opts.arriveX = arriveX;
+      opts.arriveY = arriveY;
+    }
+    this.rule = factory(this.sim, opts);
     this.rule.seed();
     this.restCount = 0;
     // Show the seeded state straight away. The loop itself still waits until

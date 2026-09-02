@@ -5,6 +5,40 @@
 // "poster red" #d62828 on white = 5.01:1, #ef4444 on #161616 = 4.81:1.
 // Dark mode is deliberately softened (dimmed ink, lifted paper) so
 // white-on-black doesn't vibrate.
+// Registered so they compute to a real length. An UNregistered custom property
+// holding a calc() is handed back verbatim by getComputedStyle — the engine
+// would read the literal string "calc(...)" and parse nothing from it. With a
+// syntax declared, the browser resolves the arithmetic first.
+//
+// Degrades safely: where @property is unsupported the engine's parse fails,
+// and it falls back to the `data-illo-density` attribute on the element.
+@property --illo-cell {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 20px;
+}
+
+// Registered as lengths so the engine reads them in PIXELS. An unregistered
+// custom property hands getComputedStyle back the specified value verbatim —
+// "13rem", which parses as the number 13 and would be read as 13 pixels.
+@property --illo-char-fade-top {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --illo-char-fade-bottom {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --illo-density {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 20px;
+}
+
 @mixin light-tokens {
   --paper: #ffffff;
   --ink: #000000;
@@ -14,6 +48,16 @@
   --rule-strong: #949494;  // 3.03:1 on paper — for control boundaries, not dividers
   --surface: #f5f5f5;
   --selection: #f5c9c9;
+  // The illustration layer's own ink and accent.
+  //
+  // These exist so the layer does NOT need a wrapper opacity. Fading the whole
+  // canvas faded the accent with it: poster red at 14% composites to about
+  // rgb(245,218,218), a pink wash, so "persistent state the reader caused"
+  // arrived as no state at all. Drawing the ordinary marks in a pale grey at
+  // full alpha gets the same quiet field, and leaves the accent free to be
+  // actual red the moment the reader earns one.
+  --illo-ink: #cfcfcf;
+  --illo-accent: #d62828;
 }
 
 @mixin dark-tokens {
@@ -25,6 +69,10 @@
   --rule-strong: #646464;  // 3.09:1 on paper — for control boundaries, not dividers
   --surface: #1f1f1f;
   --selection: #5b211e;
+  // Light marks on dark ground carry further than dark marks on light, so this
+  // is not the mirror of the light value — it is tuned by eye, not by formula.
+  --illo-ink: #303030;
+  --illo-accent: #ef4444;
 }
 
 :root {
@@ -39,6 +87,60 @@
   --text-md: 1.25rem;
   --text-lg: 1.4375rem;
   --text-xl: 1.75rem;
+  // The home page's opening statement. The scale above tops out at a size for
+  // article titles inside a column; a sentence that has to hold a whole
+  // viewport needs its own step. Used below the two-line breakpoint, where the
+  // statement re-wraps naturally and the size only has to be fluid.
+  --text-hero: clamp(1.75rem, 1.1rem + 3.2vw, 4rem);
+
+  // ----- The statement's size, derived rather than chosen.
+  //
+  // Above the breakpoint the statement is set as two explicit lines, so its
+  // size cannot come from a `vw` clamp that merely lands near the right value:
+  // one character too wide and a line that cannot re-wrap overflows the page.
+  // Monospace makes it exact instead. IBM Plex Mono advances 0.6em and the
+  // tracking removes 0.03em, so a character occupies 0.57em; the longest line
+  // is 31 characters, hence 17.67em. Divide the available width by that and
+  // the line fills it precisely, at every width, by construction.
+  //
+  // The width runs from the shared left spine to a gutter at the right edge —
+  // asymmetric on purpose. The statement is the one block allowed to break the
+  // reading column, and it breaks it toward the reader's right.
+  --hero-chars: 17.67;
+
+  // The shell's content edge — the spine every block on the page shares.
+  // Below 50rem the shell is full width and the spine is just its padding.
+  --hero-spine: max(1.25rem, calc(50vw - 23.75rem));
+
+  // Air to the right of the statement. An earlier version left only the
+  // shell's own 1.25rem, which put the right edge at 100vw - 20px: a 20px
+  // margin beside 60px type, so the line looked like it was running off the
+  // screen rather than filling it. Proportional, so it grows with the type.
+  // Widened from 6vw. The statement ran almost the full viewport, which made it
+  // read as oversized for the plate carrying it — and the plate's own margin is
+  // whatever is left after this. Air here buys air on both sides of the paper.
+  --hero-gutter: max(4rem, 12vw);
+
+  // Right edge lands at 100vw - gutter. The first term is the case where the
+  // shell is centred (the spine is 50vw - 23.75rem); the second is narrow
+  // viewports where the spine is fixed padding. min() picks the right one at
+  // exactly 50rem without a media query.
+  --hero-width: min(
+    calc(50vw + 380px - var(--hero-gutter)),
+    calc(100vw - 1.25rem - var(--hero-gutter))
+  );
+  --hero-fs: min(4.5rem, calc(var(--hero-width) / var(--hero-chars)));
+
+  // The illustration's grid pitch, derived from the statement's letterform:
+  // half a character advance, so every glyph spans exactly two cells and every
+  // line is four. The lattice is made of the type's own metrics rather than a
+  // round number the type happens to sit over. 0.57em / 2 = 0.285em.
+  //
+  // A third was tried, to get smaller marks. It works visually and stays
+  // exactly divisible, but the mark count follows AREA: 8660 marks against
+  // 4020, and 14ms a frame against the 4ms budget. Smaller marks are bought
+  // with --illo-mark-scale instead, which costs nothing.
+  --illo-cell: calc(var(--hero-fs) * 0.285);
   --leading: 1.72;
   --tracking-caps: 0.07em;
 
@@ -47,6 +149,19 @@
   --measure: 65ch;      // prose measure inside the column
   --gap: 1.5rem;
   --section: 4rem;
+
+  // ----- The home page's opening view.
+  //
+  // The hero holds the statement; whatever follows it shows through in the
+  // remaining slice of the first screen, which is the only invitation to
+  // scroll the page gets. Deliberately `dvh`: on a phone `vh` is measured
+  // against the viewport WITHOUT the browser's chrome, so 88vh overshoots the
+  // visible area and eats the very slice this design depends on.
+  --hero-h: 88dvh;
+  // A standing allowance for the masthead, which is lifted out of flow on the
+  // home page and would otherwise crowd the top of the statement. Not a
+  // measurement of it — the statement only needs to clear it.
+  --masthead-allow: 4.5rem;
 }
 
 :root[data-theme="dark"] {

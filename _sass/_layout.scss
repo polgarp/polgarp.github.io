@@ -16,6 +16,42 @@ main.shell {
   border-bottom: 1px solid var(--rule);
 }
 
+// ----- The masthead on the home page
+//
+// Lifted out of flow and stripped of its rule, so the opening statement is a
+// whole screen rather than a screen with a banner across the top.
+//
+// The rule is a reading affordance: it separates chrome from text. Over a
+// statement there is no text to separate, so it has nothing to do but cut the
+// illustration's ground in half. It returns on every other page, where it does.
+//
+// Absolute rather than sticky or fixed. It sits on the statement and scrolls
+// away with it — the site has no sticky chrome anywhere, and introducing it
+// here would trade a permanent strip of every reading screen for an effect.
+// Out of flow also means the hero starts at the document's top edge, so the
+// slice showing under the fold is exactly what --hero-h leaves and does not
+// have to be guessed at by subtracting a header whose height varies with wrap.
+//
+// Higher specificity than the mobile block below, which sets position: relative
+// on the same element — deliberate, and safe: absolute is a containing block
+// too, so the collapsed nav panel still drops from the bar's bottom edge.
+[data-layout="home"] {
+  .masthead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 0;
+  }
+
+  // The hero owns the top of the page; the shell's usual breathing room above
+  // it would push the statement down and eat the slice below the fold.
+  main.shell {
+    padding-block-start: 0;
+  }
+}
+
 .masthead__inner {
   display: flex;
   align-items: center;

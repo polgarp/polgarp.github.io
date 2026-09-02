@@ -7,7 +7,14 @@
     <div class="masthead__right">
       <nav class="masthead__nav" id="primary-nav" aria-label="Primary">
         <ul>
+          {%- comment %} "Home" is dropped on the home page rather than marked
+          current: the brand lockup to the left is already the link home, so on
+          this one page the item points at where you are. Dropped outright, not
+          on scroll — removing it as the reader scrolls would reflow the nav and
+          shift the remaining items. The nav is right-aligned, so on other pages
+          Home extends the row leftward and nothing else moves. {% endcomment -%}
           {% for item in site.data.navigation.main %}
+          {%- if page.url == item.url and item.url == "/" %}{% continue %}{% endif -%}
           <li>
             <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
           </li>
@@ -18,7 +25,7 @@
         <button id="menu-toggle" class="masthead__menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
           <span class="masthead__menu-bars" aria-hidden="true"></span>
         </button>
-        <button id="search-toggle" type="button" aria-label="Search (press /)" title="Search ( / )">/</button>
+        <button id="search-toggle" type="button" aria-label="Search (press /)" aria-keyshortcuts="/" title="Search ( / )">/</button>
         <button id="theme-toggle" class="theme-switch" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
           <span class="theme-switch__box" aria-hidden="true"><i class="theme-switch__block"></i></span>
         </button>

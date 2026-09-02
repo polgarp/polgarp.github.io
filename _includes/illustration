@@ -9,7 +9,9 @@ monospace grid, and a thing the cursor does to it.
 
   object   rect frame band split columns stack steps  (fill the column)
            disc ring wedge cross                      (keep their aspect)
-  verb     order focus light ignite sift pace
+           plate                                      (full bleed; the default
+                                                       for background=true)
+  verb     order focus light ignite sift pace deepen range
   alt      required. Describes what the illustration shows and does.
   caption  optional. Visible, and carries the argument in words.
   seed     optional. Changes the arrangement without changing the object.
@@ -22,17 +24,68 @@ monospace grid, and a thing the cursor does to it.
            which reads as texture rather than as an object.
   width    optional "wide" to break out of the reading column. Use when the
            object has no relationship to the measure and the extra room helps.
+  background  optional. Emits the layer form instead of a figure: fixed to the
+           viewport, behind the page, inert to the mouse, aria-hidden, and with
+           no caption, no alt and no static fallback. It carries no content, so
+           there is nothing for a no-JS reader to miss — see the note below.
 
 The static SVG below is what a reader without JavaScript, or with
 prefers-reduced-motion, sees: the object as a dotted plate. The engine upgrades
 it to a live canvas. Both read their geometry from the same path in
 _data/illo_shapes.yml, so the two can never drift apart.
 {%- endcomment -%}
-{%- assign _shape = site.data.illo_shapes[include.object] -%}
+{%- comment -%}
+Background mode defaults to `plate`, the one full-bleed object: a background's
+edge is the edge of the viewport, so an inset shape reads as a rectangle
+floating on the page rather than as ground. Every other object is inset by
+design. Naming an object explicitly still works, and then it is not
+edge-to-edge — which is the point of naming it.
+{%- endcomment -%}
+{%- if include.background and include.object == nil -%}
+{%- assign _object = "plate" -%}
+{%- else -%}
+{%- assign _object = include.object -%}
+{%- endif -%}
+{%- assign _shape = site.data.illo_shapes[_object] -%}
 {%- assign _path = _shape.d -%}
 {%- assign _fit = include.fit | default: _shape.fit | default: "contain" -%}
-{%- assign _id = include.object | append: "-" | append: include.verb | append: "-" | append: include.seed -%}
+{%- assign _id = _object | append: "-" | append: include.verb | append: "-" | append: include.seed -%}
 {%- if _path -%}
+{%- if include.background -%}
+{%- comment -%}
+Background mode. The same engine, the same object+verb, placed as a layer
+rather than as a figure.
+
+Three things are deliberately absent, and all three follow from the same fact:
+a background makes its argument to a reader who is doing something else.
+
+  no caption     there is nowhere to put one, and a background that needed a
+                 caption to be understood would be the wrong background.
+  no alt         it is aria-hidden. A figure's alt exists because the figure
+                 carries content; this carries atmosphere for the argument the
+                 page is already making in words.
+  no static SVG  doctrine rule 14 requires an exported fallback for every
+                 figure, because a reader without JavaScript would otherwise
+                 lose part of the post. Here they lose nothing: no-JS and
+                 reduced-motion readers get plain paper, which is what the page
+                 looked like before this existed. A viewport-sized export would
+                 also be ~40 KB of inline SVG on the most-visited page.
+
+Density defaults to `lightest` rather than to the figure default: this spans a
+viewport, not a column, and the mark count grows with area.
+{%- endcomment -%}
+<div class="illo illo--bg"
+     aria-hidden="true"
+     data-illo="field"
+     data-illo-render="{{ include.verb | default: 'order' }}"
+     data-illo-path="{{ _path }}"
+     data-illo-fit="{{ _fit }}"
+     data-illo-density="{{ include.density | default: 'lightest' }}"
+     data-illo-seed="{{ include.seed | default: 7 }}"
+     {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
+  <div class="illo__stage"></div>
+</div>
+{%- else -%}
 <figure class="illo{% if include.width == 'wide' %} illo--wide{% endif %}"
         data-illo="field"
         data-illo-render="{{ include.verb | default: 'order' }}"
@@ -91,4 +144,5 @@ _data/illo_shapes.yml, so the two can never drift apart.
   <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" | strip }}</figcaption>
   {%- endif %}
 </figure>
+{%- endif -%}
 {%- endif -%}

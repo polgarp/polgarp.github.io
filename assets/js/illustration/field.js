@@ -34,6 +34,30 @@
   Illo.rule("field", function (sim, opts) {
     var jx = null, jy = null, delays = null, clock = 0, holdUntil = 0;
     var base = typeof opts.base === "number" ? opts.base : BASE;
+    // How long the staggered arrival runs. The default is tuned for a figure
+    // the reader is looking at; a background wants to be finished before they
+    // have read what is in front of it.
+    var arrive = typeof opts.arrive === "number" && opts.arrive > 0
+      ? opts.arrive : ARRIVE;
+    // Vertical coverage falloff, in px, for a layer that has to dissolve into
+    // the page rather than end. Applied to COVERAGE, not to opacity — see the
+    // note where it is used.
+    var fadeTop = opts.fadeTop > 0 ? opts.fadeTop : 0;
+    var fadeBottom = opts.fadeBottom > 0 ? opts.fadeBottom : 0;
+    // Where the arrival starts from, as a fraction of the box. Absent, the
+    // stagger runs left to right, which is right for a figure the reader is
+    // looking at and wrong behind a headline, where it reads as text loading.
+    var ax = typeof opts.arriveX === "number" ? opts.arriveX : -1;
+    var ay = typeof opts.arriveY === "number" ? opts.arriveY : -1;
+    var radial = ax >= 0 && ay >= 0;
+
+    // Smoothstep. A linear falloff steps down the glyph ramp at a constant
+    // rate, so the ramp's own boundaries show up as bands; easing it puts the
+    // steep part in the middle where there are enough ramp steps to hide it.
+    function ease(t) {
+      t = t < 0 ? 0 : t > 1 ? 1 : t;
+      return t * t * (3 - 2 * t);
+    }
 
     return {
       seed: function () {
@@ -41,8 +65,21 @@
         // A wide figure at the default pitch runs to well over a thousand
         // marks, which reads as texture rather than as an object. Widening the
         // pitch thins it without changing anything else.
+        //
+        // `lightest` exists for the background layer, which spans a whole
+        // viewport rather than a figure: at the default pitch that is tens of
+        // thousands of marks, and the cost is one fillText each. The step is
+        // large because the jump is in area, not in width.
+        //
+        // A bare number is also accepted, as a pitch in px. The named steps
+        // are the vocabulary and what illustrations should use; the numeric
+        // form exists so a pitch can be dialled in live before being given a
+        // name. If nothing in the repo passes a number, this line can go.
         var cell = opts.density === "light" ? 11
-                 : opts.density === "lighter" ? 14 : CELL;
+                 : opts.density === "lighter" ? 14
+                 : opts.density === "lightest" ? 20
+                 : parseFloat(opts.density) > 0 ? parseFloat(opts.density)
+                 : CELL;
         var t = Illo.pathTargets(opts.path, 100, 100, sim.w, sim.h, cell, opts.fit);
         var n = t.length / 3;
         if (!n) return;
@@ -58,6 +95,38 @@
           sim.txs[i] = t[i * 3];
           sim.tys[i] = t[i * 3 + 1];
           sim.wt[i] = t[i * 3 + 2];
+
+          // ---- Fade by CHARACTER, not by opacity.
+          //
+          // Coverage multiplies tone, and tone picks the glyph: `#` -> `*` ->
+          // `+` -> `=` -> `-` -> `:` -> `.` -> nothing. So thinning coverage
+          // over a long distance makes a field dissolve by walking down its own
+          // ramp, in the vocabulary the style is actually made of, instead of
+          // turning translucent. It is the same mechanism rule 7 uses for soft
+          // edges — only stretched from three cells to a couple of hundred px.
+          //
+          // It also composes with the accent: a red mark near the edge steps
+          // down to `+` and then `.` rather than washing out to pink.
+          //
+          // This is NOT a substitute for a legibility mask. A `.` at full ink
+          // is still a real mark, so text sitting over the fade still needs an
+          // opacity floor. It is a substitute for the mask doing all the work.
+          if (fadeTop || fadeBottom) {
+            var yy = sim.tys[i];
+            var env = 1;
+            if (fadeTop && yy < fadeTop) env = Math.min(env, yy / fadeTop);
+            if (fadeBottom && yy > sim.h - fadeBottom) {
+              env = Math.min(env, (sim.h - yy) / fadeBottom);
+            }
+            // Ragged, not ruled. Coverage is a pure function of y, so every
+            // mark in a row lands on the same ramp step and the boundaries
+            // between `:` and `.` and nothing come out as straight horizontal
+            // lines — the fade reads as a set of bands rather than as a field
+            // thinning out. A stable per-point offset moves each mark up or
+            // down the ramp a little, so the edge frays.
+            env += (Illo.marks.hash(i) - 0.5) * 0.38;
+            sim.wt[i] *= ease(env);
+          }
           // Marks in the faint halo outside the object sit looser, so the
           // edge reads as smudge rather than as a second, softer outline.
           var loose = 1 + (1 - sim.wt[i]) * 1.6;
@@ -72,7 +141,24 @@
           sim.aux[i] = 0;
           sim.landed[i] = 0;
           sim.hard[i] = rnd() < ACCENT_SHARE ? 1 : 0;   // accent-eligible
-          delays[i] = (sim.txs[i] / sim.w) * ARRIVE * 0.72 + rnd() * ARRIVE * 0.28;
+          // Arrival order. Radial from a named point when one is given, so the
+          // field can compose itself outward from wherever the page's own
+          // subject sits; left to right otherwise.
+          var lead;
+          if (radial) {
+            var dx = sim.txs[i] / sim.w - ax;
+            var dy = sim.tys[i] / sim.h - ay;
+            // Normalised by the farthest corner from that origin, so the last
+            // mark lands exactly at the end of the window whatever the origin.
+            var far = Math.max(
+              Math.hypot(ax, ay), Math.hypot(1 - ax, ay),
+              Math.hypot(ax, 1 - ay), Math.hypot(1 - ax, 1 - ay)
+            );
+            lead = Math.hypot(dx, dy) / (far || 1);
+          } else {
+            lead = sim.txs[i] / sim.w;
+          }
+          delays[i] = lead * arrive * 0.72 + rnd() * arrive * 0.28;
           sim.xs[i] = sim.txs[i] + jx[i];
           sim.ys[i] = sim.tys[i] + jy[i];
           sim.vxs[i] = sim.vys[i] = 0;
@@ -86,7 +172,7 @@
         // would renew the hold forever and nothing would ever decay.
         if (sim.pspeed > 6) holdUntil = clock + HOLD;
         var decaying = clock >= holdUntil;
-        var settling = clock < ARRIVE + 0.5;
+        var settling = clock < arrive + 0.5;
         var n = sim.n, live = 0;
 
         for (var i = 0; i < n; i++) {

@@ -39,7 +39,13 @@
     var cell = sim.cell || 8;
     var mono = getComputedStyle(document.documentElement)
       .getPropertyValue("--font-mono").trim() || "monospace";
-    var size = Math.round(cell * SIZE_RATIO);
+    // Glyphs are drawn slightly larger than their cell so a dense field reads as
+    // a surface rather than as separate dots. A layer may scale that down to
+    // get finer, airier texture WITHOUT a finer grid — cost follows the mark
+    // count, which follows area, so buying smaller marks by shrinking the cell
+    // costs the square of what it looks like it should. Defaults to 1, so
+    // every existing figure and its committed export are unaffected.
+    var size = Math.round(cell * SIZE_RATIO * (sim.markScale || 1));
 
     ctx.fillStyle = colour;
     ctx.textAlign = "center";

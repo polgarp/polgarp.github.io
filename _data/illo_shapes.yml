@@ -12,6 +12,22 @@
 # fit: contain  keep the aspect ratio. For shapes that would look wrong
 #               stretched — anything round or angled.
 
+# Every object below is inset inside the 100x100 box, because a figure needs
+# soft edges inside its frame (doctrine rule 7). `plate` is the exception and
+# exists for background mode, where there is no frame to sit inside: the edge
+# of the field is the edge of the viewport, and an inset would read as a
+# floating rectangle rather than as ground.
+plate:
+  # Deliberately drawn OUTSIDE its own 100x100 box. Coverage is sampled per
+  # cell and then halo-blurred, so a path that stops exactly at the boundary
+  # leaves the outermost cells partly covered — the field thins for ~4 cells and
+  # presents as a soft-edged rectangle inset from the viewport rather than as
+  # ground running off it. Overhanging the box saturates coverage everywhere
+  # inside it and pushes the falloff off-screen, with no element wider than the
+  # viewport and so no risk of horizontal overflow.
+  d: "M-20 -20 H120 V120 H-20 Z"
+  fit: wide
+
 rect:
   d: "M14 22 H86 V78 H14 Z"
   fit: wide

@@ -189,6 +189,29 @@
     else if (nextActive) revealRows(arriving); // topic-to-topic, block already shut
   }
 
+  // Reveal the outcome of a filter.
+  //
+  // The chips sit right at the fold on the home page, so the first entry a
+  // filter produces lands below it. Without this, activating a chip silently
+  // rewrites a list the reader cannot see, and the click reads as "nothing
+  // happened" — the strongest complaint the page's own critique turned up.
+  //
+  // Scrolls the band itself to the top rather than the first result, so the
+  // control stays on screen next to its own outcome; a reader who wants a
+  // different topic should not have to scroll back up to change their mind.
+  function revealResults() {
+    var band = document.querySelector(".topics");
+    if (!band || !band.scrollIntoView) return;
+    var top = band.getBoundingClientRect().top;
+    // Already parked near the top: a second chip must not re-scroll underneath
+    // someone who is reading the results of the first.
+    if (top >= 0 && top < window.innerHeight * 0.3) return;
+    band.scrollIntoView({
+      block: "start",
+      behavior: prefersReduced() ? "auto" : "smooth"
+    });
+  }
+
   function select(chip, push) {
     hovered = null;
     var wasHidden = lately ? lately.hidden : true;
@@ -203,6 +226,10 @@
     if (lately) lately.hidden = wasHidden; // the sequence below owns this
     animateMerge(chip, arriving);
     writeUrl(push !== false);
+    // Only for a deliberate choice. Restoring from the URL on load must not
+    // yank the page away from wherever the reader actually arrived, and
+    // clearing a filter should leave them where they were.
+    if (active && push !== false) revealResults();
   }
 
   // A user-driven change pushes, so Back steps out of the filter instead of
