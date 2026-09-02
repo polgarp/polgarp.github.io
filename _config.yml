@@ -75,13 +75,22 @@ include:
   - _pages
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
+#
+# Naming this key overrides Jekyll's defaults, so the default entries are
+# repeated here rather than inherited.
+#
+# docs/, scripts/ and test/ are project tooling, not site content. Specs and
+# plans quote Liquid tags in prose and in code fences; without this Jekyll
+# parses them as templates, and a single quoted `{% if %}` with no matching
+# `{% endif %}` fails the entire build.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - docs/
+  - scripts/
+  - test/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
