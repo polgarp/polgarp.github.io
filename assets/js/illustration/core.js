@@ -22,6 +22,12 @@
   var REST_FRAMES = 20;       // ...sustained this long
   var MAX_DPR = 2;            // 3x buys nothing at these mark sizes
 
+  // The only place in the engine a style parameter is named. A parameter absent
+  // from this list is attribute-only, which is the right default: CSS should be
+  // consulted solely for values that must answer the viewport.
+  var CSS_READABLE = ["density", "base", "arrive", "markScale",
+                      "fadeTop", "fadeBottom", "arriveX", "arriveY"];
+
   var rules = {};
   var renderers = {};
   var instances = [];
@@ -208,7 +214,6 @@
     // static SVG. One source, so the live and fallback versions cannot drift.
     this.path = el.getAttribute("data-illo-path") || "";
     this.fit = el.getAttribute("data-illo-fit") || "contain";
-    this.density = el.getAttribute("data-illo-density") || "";
     this.sim = new Sim();
     this.rule = null;
     this.ctx = null;
@@ -262,42 +267,27 @@
 
     var factory = rules[this.ruleName];
     if (!factory) return;
-    // Grid pitch and resting resolve may both be driven from CSS as well as
-    // from attributes, so they can answer the viewport and the type. Read here
-    // rather than at mount because resize already re-seeds the field whenever
-    // the box changes, which is exactly when a breakpoint or a fluid size
-    // changes what they should be.
-    //
-    // Each is used ONLY if it parses to a usable number. A registered custom
-    // property resolves its calc() to a length; where @property is
-    // unsupported the raw "calc(...)" string arrives instead, and taking it
-    // literally would seed the field at the wrong pitch rather than falling
-    // back to the attribute.
+    // Every data-illo-* attribute the include emitted, as written. The engine
+    // does NOT enumerate the style parameters it supports: a new one is a key
+    // in the profile plus a read in the rule, with nothing to change here.
+    var attrs = {}, list = this.el.attributes, i;
+    for (i = 0; i < list.length; i++) attrs[list[i].name] = list[i].value;
+
+    // Read at rule construction rather than at mount: resize already re-seeds
+    // whenever the box changes, which is exactly when a breakpoint or a fluid
+    // size changes what these should be.
     var cs = getComputedStyle(this.el);
-    var cssCell = parseFloat(cs.getPropertyValue("--illo-density"));
-    var cssBase = parseFloat(cs.getPropertyValue("--illo-base"));
-    var opts = {
-      path: this.path, fit: this.fit, seed: this.seed,
-      density: cssCell > 0 ? cssCell : this.density
-    };
-    if (cssBase >= 0 && cssBase <= 1) opts.base = cssBase;
-    var cssArrive = parseFloat(cs.getPropertyValue("--illo-arrive"));
-    if (cssArrive > 0) opts.arrive = cssArrive;
-    var cssMark = parseFloat(cs.getPropertyValue("--illo-mark-scale"));
-    this.sim.markScale = cssMark > 0 ? cssMark : 1;
-    // Coverage falloff distances, in px. Lengths rather than fractions: they
-    // answer to what sits over the field (a masthead, a band of chips), which
-    // is a roughly fixed height while the layer's is not.
-    var fadeTop = parseFloat(cs.getPropertyValue("--illo-char-fade-top"));
-    var fadeBottom = parseFloat(cs.getPropertyValue("--illo-char-fade-bottom"));
-    if (fadeTop > 0) opts.fadeTop = fadeTop;
-    if (fadeBottom > 0) opts.fadeBottom = fadeBottom;
-    var arriveX = parseFloat(cs.getPropertyValue("--illo-arrive-x"));
-    var arriveY = parseFloat(cs.getPropertyValue("--illo-arrive-y"));
-    if (arriveX >= 0 && arriveY >= 0) {
-      opts.arriveX = arriveX;
-      opts.arriveY = arriveY;
-    }
+    function fromCss(prop) { return cs.getPropertyValue(prop); }
+
+    var opts = Illo.config.resolve(attrs, fromCss, CSS_READABLE);
+    opts.path = this.path;
+    opts.fit = this.fit;
+    opts.seed = this.seed;
+
+    // Renderers get (ctx, sim, ink) and would otherwise have no way to reach
+    // configuration. Hanging it on the sim is what lets a verb take a
+    // per-illustration parameter without touching the include or this file.
+    this.sim.opts = opts;
     this.rule = factory(this.sim, opts);
     this.rule.seed();
     this.restCount = 0;
@@ -609,16 +599,19 @@
       ' dominant-baseline="central">' + body + "</svg>";
   }
 
-  window.Illo = {
-    rule: function (name, factory) { rules[name] = factory; },
-    renderer: function (name, fn) { renderers[name] = fn; },
-    pathTargets: pathTargets,
-    maskTargets: maskTargets,
-    mulberry32: mulberry32,
-    instances: instances,
-    boot: boot,
-    exportSVG: exportSVG
-  };
+  // Augment rather than replace. config.js loads before this file and attaches
+  // Illo.config; assigning a fresh object here would silently drop it, and the
+  // failure is invisible in development because a cached copy of this file
+  // still works. Every other file in the system already extends Illo this way.
+  var Illo = window.Illo = window.Illo || {};
+  Illo.rule = function (name, factory) { rules[name] = factory; };
+  Illo.renderer = function (name, fn) { renderers[name] = fn; };
+  Illo.pathTargets = pathTargets;
+  Illo.maskTargets = maskTargets;
+  Illo.mulberry32 = mulberry32;
+  Illo.instances = instances;
+  Illo.boot = boot;
+  Illo.exportSVG = exportSVG;
 
   // Deferred scripts run while readyState is already "interactive", so
   // anything short of "complete" still has DOMContentLoaded ahead of it.

@@ -80,7 +80,7 @@ viewport, not a column, and the mark count grows with area.
      data-illo-render="{{ include.verb | default: 'order' }}"
      data-illo-path="{{ _path }}"
      data-illo-fit="{{ _fit }}"
-     data-illo-density="{{ include.density | default: 'lightest' }}"
+     {% if include.density %}data-illo-density="{{ include.density }}"{% endif %}
      data-illo-seed="{{ include.seed | default: 7 }}"
      {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
   <div class="illo__stage"></div>

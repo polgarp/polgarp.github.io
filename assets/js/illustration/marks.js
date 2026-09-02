@@ -45,7 +45,7 @@
     // count, which follows area, so buying smaller marks by shrinking the cell
     // costs the square of what it looks like it should. Defaults to 1, so
     // every existing figure and its committed export are unaffected.
-    var size = Math.round(cell * SIZE_RATIO * (sim.markScale || 1));
+    var size = Math.round(cell * SIZE_RATIO * ((sim.opts && sim.opts.markScale) || 1));
 
     ctx.fillStyle = colour;
     ctx.textAlign = "center";
