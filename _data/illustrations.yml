@@ -1,0 +1,46 @@
+# One entry per illustration. This is the durable record of what an
+# illustration IS: its object, its verb, and the style that makes it look like
+# itself. An illustration does not change over time except by a deliberate edit
+# here — no other illustration's stylesheet can reach it.
+#
+# `style:` keys become data-illo-* attributes, snake_case to kebab-case:
+#   mark_scale  ->  data-illo-mark-scale  ->  opts.markScale  ->  --illo-mark-scale
+#
+# A style key that is ABSENT means "ask the stylesheet": the engine falls back
+# to the scoped CSS custom property, then to its own default. Absence is how an
+# illustration says a value must answer the viewport rather than be fixed here.
+
+brain-fry:
+  object: band
+  verb: sift
+  seed: 4
+  height: 11rem
+  width: wide
+  svg: brain-fry-and-the-automation-trap
+  style:
+    cell: 8          # the engine default, stated outright rather than inherited
+
+deliberate-practice:
+  object: rect
+  verb: deepen
+  seed: 6
+  height: 12rem
+  width: wide
+  svg: deliberate-design-practice
+  style:
+    cell: 11
+
+home-bg:
+  object: plate
+  verb: range
+  seed: 7
+  background: true
+  style:
+    # `cell` is deliberately absent. The background's pitch is derived from the
+    # hero's own type metrics (--illo-cell in .illo--bg), so the lattice is made
+    # of the type it sits behind and follows it as that type goes fluid.
+    mark_scale: 0.7
+    base: 0.24
+    arrive: 1.5
+    arrive_x: 0.28
+    arrive_y: 0.3

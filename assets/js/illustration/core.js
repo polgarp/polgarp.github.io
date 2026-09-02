@@ -25,7 +25,7 @@
   // The only place in the engine a style parameter is named. A parameter absent
   // from this list is attribute-only, which is the right default: CSS should be
   // consulted solely for values that must answer the viewport.
-  var CSS_READABLE = ["density", "base", "arrive", "markScale",
+  var CSS_READABLE = ["cell", "base", "arrive", "markScale",
                       "fadeTop", "fadeBottom", "arriveX", "arriveY"];
 
   var rules = {};

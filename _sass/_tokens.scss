@@ -43,12 +43,6 @@
   initial-value: 0px;
 }
 
-@property --illo-density {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 0px;
-}
-
 @mixin light-tokens {
   --paper: #ffffff;
   --ink: #000000;
@@ -141,16 +135,6 @@
   );
   --hero-fs: min(4.5rem, calc(var(--hero-width) / var(--hero-chars)));
 
-  // The illustration's grid pitch, derived from the statement's letterform:
-  // half a character advance, so every glyph spans exactly two cells and every
-  // line is four. The lattice is made of the type's own metrics rather than a
-  // round number the type happens to sit over. 0.57em / 2 = 0.285em.
-  //
-  // A third was tried, to get smaller marks. It works visually and stays
-  // exactly divisible, but the mark count follows AREA: 8660 marks against
-  // 4020, and 14ms a frame against the 4ms budget. Smaller marks are bought
-  // with --illo-mark-scale instead, which costs nothing.
-  --illo-cell: calc(var(--hero-fs) * 0.285);
   --leading: 1.72;
   --tracking-caps: 0.07em;
 

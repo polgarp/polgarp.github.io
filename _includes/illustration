@@ -2,32 +2,29 @@
 An interactive illustration. Object + verb: an abstract shape held on the
 monospace grid, and a thing the cursor does to it.
 
-  {% include illustration object="band" verb="sift"
+  {% include illustration name="brain-fry"
      alt="A dense field of marks. Sweeping removes the light ones; what
           survives is heavier."
      caption="Automation takes the easy decisions first." %}
 
-  object   rect frame band split columns stack steps  (fill the column)
-           disc ring wedge cross                      (keep their aspect)
-           plate                                      (full bleed; the default
-                                                       for background=true)
-  verb     order focus light ignite sift pace deepen range
-  alt      required. Describes what the illustration shows and does.
+  name     the illustration's profile in _data/illustrations.yml. Carries its
+           object, verb, seed, svg and style. One line is the whole call.
+  alt      required for a figure. Describes what the illustration shows and
+           does. Content, so it stays at the call site, not in the profile.
   caption  optional. Visible, and carries the argument in words.
-  seed     optional. Changes the arrangement without changing the object.
-  fit      optional override, "wide" or "contain". Each object has a default.
-  height   optional CSS length, default 17rem.
-  svg      optional name of an exported idle state in _includes/illustrations/.
-           Strongly preferred: without it the fallback is a generic plate.
-  density  optional "light" or "lighter" to widen the grid pitch. A wide
-           figure at the default pitch runs to well over a thousand marks,
-           which reads as texture rather than as an object.
-  width    optional "wide" to break out of the reading column. Use when the
-           object has no relationship to the measure and the extra room helps.
-  background  optional. Emits the layer form instead of a figure: fixed to the
-           viewport, behind the page, inert to the mouse, aria-hidden, and with
-           no caption, no alt and no static fallback. It carries no content, so
-           there is nothing for a no-JS reader to miss — see the note below.
+
+  Any profile field may be overridden inline for a one-off: object, verb, seed,
+  fit, height, width, svg, background.
+
+  STYLE lives in the profile's `style:` map, never here and never in a post.
+  Each key becomes a data-illo-* attribute the engine reads, and an absent key
+  means "ask the stylesheet". See _data/illustrations.yml, and the precedence
+  rule in assets/js/illustration/config.js:
+
+      attribute  >  scoped CSS  >  engine default
+
+  Objects are listed in _data/illo_shapes.yml, verbs in
+  assets/js/illustration/verbs/.
 
 The static SVG below is what a reader without JavaScript, or with
 prefers-reduced-motion, sees: the object as a dotted plate. The engine upgrades
@@ -41,17 +38,33 @@ floating on the page rather than as ground. Every other object is inset by
 design. Naming an object explicitly still works, and then it is not
 edge-to-edge — which is the point of naming it.
 {%- endcomment -%}
-{%- if include.background and include.object == nil -%}
-{%- assign _object = "plate" -%}
-{%- else -%}
-{%- assign _object = include.object -%}
-{%- endif -%}
+{%- assign _p = site.data.illustrations[include.name] -%}
+{%- assign _background = include.background | default: _p.background -%}
+{%- assign _object = include.object | default: _p.object -%}
+{%- if _background and _object == nil -%}{%- assign _object = "plate" -%}{%- endif -%}
+{%- assign _verb = include.verb | default: _p.verb | default: "order" -%}
+{%- assign _seed = include.seed | default: _p.seed | default: 1 -%}
+{%- assign _height = include.height | default: _p.height -%}
+{%- assign _width = include.width | default: _p.width -%}
+{%- assign _svg = include.svg | default: _p.svg -%}
 {%- assign _shape = site.data.illo_shapes[_object] -%}
 {%- assign _path = _shape.d -%}
-{%- assign _fit = include.fit | default: _shape.fit | default: "contain" -%}
-{%- assign _id = _object | append: "-" | append: include.verb | append: "-" | append: include.seed -%}
+{%- assign _fit = include.fit | default: _p.fit | default: _shape.fit | default: "contain" -%}
+{%- assign _id = _object | append: "-" | append: _verb | append: "-" | append: _seed -%}
+{%- comment -%}
+The illustration's style, as attributes. Each key of the profile's `style:` map
+becomes data-illo-<kebab>, which the engine reads without knowing the name: a
+new parameter is a key here and a read in the rule, and nothing else changes.
+
+A key absent from the profile emits no attribute, which is how an illustration
+says "ask the stylesheet" — see the precedence rule in
+assets/js/illustration/config.js.
+{%- endcomment -%}
+{%- capture _style -%}
+{%- for pair in _p.style %} data-illo-{{ pair[0] | replace: "_", "-" }}="{{ pair[1] }}"{% endfor -%}
+{%- endcapture -%}
 {%- if _path -%}
-{%- if include.background -%}
+{%- if _background -%}
 {%- comment -%}
 Background mode. The same engine, the same object+verb, placed as a layer
 rather than as a figure.
@@ -71,29 +84,28 @@ a background makes its argument to a reader who is doing something else.
                  looked like before this existed. A viewport-sized export would
                  also be ~40 KB of inline SVG on the most-visited page.
 
-Density defaults to `lightest` rather than to the figure default: this spans a
-viewport, not a column, and the mark count grows with area.
+The pitch is not stated in the profile: a layer spans a viewport rather than a
+column, and its grid is derived from the hero's own type metrics in .illo--bg
+so the lattice is made of the type it sits behind.
 {%- endcomment -%}
 <div class="illo illo--bg"
      aria-hidden="true"
      data-illo="field"
-     data-illo-render="{{ include.verb | default: 'order' }}"
+     data-illo-render="{{ _verb }}"
      data-illo-path="{{ _path }}"
      data-illo-fit="{{ _fit }}"
-     {% if include.density %}data-illo-density="{{ include.density }}"{% endif %}
-     data-illo-seed="{{ include.seed | default: 7 }}"
-     {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
+     data-illo-seed="{{ _seed }}"{{ _style }}
+     {% if _height %}style="--illo-h: {{ _height }}"{% endif %}>
   <div class="illo__stage"></div>
 </div>
 {%- else -%}
-<figure class="illo{% if include.width == 'wide' %} illo--wide{% endif %}"
+<figure class="illo{% if _width == 'wide' %} illo--wide{% endif %}"
         data-illo="field"
-        data-illo-render="{{ include.verb | default: 'order' }}"
+        data-illo-render="{{ _verb }}"
         data-illo-path="{{ _path }}"
         data-illo-fit="{{ _fit }}"
-        {% if include.density %}data-illo-density="{{ include.density }}"{% endif %}
-        data-illo-seed="{{ include.seed | default: 7 }}"
-        {% if include.height %}style="--illo-h: {{ include.height }}"{% endif %}>
+        data-illo-seed="{{ _seed }}"{{ _style }}
+        {% if _height %}style="--illo-h: {{ _height }}"{% endif %}>
   <div class="illo__stage">
     {%- comment -%}
     The static fallback: what a reader without JavaScript, or with reduced
@@ -110,8 +122,8 @@ viewport, not a column, and the mark count grows with area.
     {%- endcomment -%}
     <div class="illo__static" role="img"
          aria-label="{{ include.alt | strip_newlines | normalize_whitespace | escape }}">
-      {%- if include.svg -%}
-      {% include illustrations/{{ include.svg }}.svg %}
+      {%- if _svg -%}
+      {% include illustrations/{{ _svg }}.svg %}
       {%- else -%}
       <svg viewBox="{% unless _fit == 'wide' %}0 0 100 100{% endunless %}"
            preserveAspectRatio="{% if _fit == 'wide' %}none{% else %}xMidYMid meet{% endif %}"

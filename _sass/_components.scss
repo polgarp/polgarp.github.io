@@ -1973,16 +1973,10 @@ img.emoji {
   --ink: var(--illo-ink);
   --accent: var(--illo-accent);
 
-  // Arrival, in seconds. Shorter than a figure's 3.4s. A figure earns a slow
-  // reveal because the reader is looking at it; a background that is still
-  // assembling while someone reads the headline in front of it reads as a page
-  // that has not finished loading.
-  --illo-arrive: 1.5;
-
-  // Glyph size as a fraction of the cell. The grid stays locked to the type;
-  // the marks drawn on it are smaller, so the field reads as fine texture with
-  // air in it rather than as a solid weave. Free — the mark count is unchanged.
-  --illo-mark-scale: 0.7;
+  // Arrival (1.5s, shorter than a figure's 3.4s) and glyph size (0.7 of the
+  // cell) are STATIC, so they live in this illustration's profile under
+  // `home-bg` in _data/illustrations.yml rather than here. Only values that
+  // must answer the viewport belong in this file.
   // How much of the band's height is spent fading out at the bottom. The
   // object is full bleed, so without this it would stop at a hard horizontal
   // cut across the page.
@@ -2037,19 +2031,32 @@ img.emoji {
   --illo-bg-clear: 5rem;
   --illo-bg-fade-top: 8rem;
 
-  // Pitch, read by the engine in preference to the `data-illo-density`
-  // attribute. Derived from the statement's character advance (see
-  // --illo-cell), so the lattice is made of the type's own metrics: every
-  // glyph spans two cells and every line of the statement is four.
-  --illo-density: var(--illo-cell);
+  // ---- Pitch. This is the one style value the home layer does NOT state in
+  // its profile, because it is not a fixed number: it is derived from the
+  // statement's own letterform and follows it as the type goes fluid.
+  //
+  // Half a character advance, so every glyph spans exactly two cells and every
+  // line of the statement is four. The lattice is made of the type's metrics
+  // rather than a round number the type happens to sit over.
+  // 0.57em / 2 = 0.285em.
+  //
+  // A third was tried, to get smaller marks. It works visually and stays
+  // exactly divisible, but the mark count follows AREA: 8660 marks against
+  // 4020, and 14ms a frame against the 4ms budget. Smaller marks are bought
+  // with mark_scale in the profile instead, which costs nothing.
+  //
+  // Declared HERE and not on :root. A custom property on :root inherits to
+  // every element, so every illustration on the site would silently pick this
+  // pitch up in place of its own — which is the defect that took both posts'
+  // glyphs to 27px, wearing a different name. Guarded by
+  // scripts/check-illustrations.mjs.
+  --illo-cell: calc(var(--hero-fs) * 0.285);
 
-  // Resting resolve for this layer only, lower than the figure default of
-  // 0.46. Two reasons. It leaves far more headroom for `order` to work with,
-  // so tending the field is a bigger visible change. And it moves the resting
-  // mark down the ramp off `=` and `-` — the only two characters that form
-  // continuous horizontal runs, and the reason the light-mode field read as
-  // rows of unloaded body copy rather than as ground.
-  --illo-base: 0.24;
+  // Resting resolve is static and lives in the profile (`base: 0.24`), lower
+  // than the figure default of 0.46: it leaves more headroom for the verb to
+  // work with, and moves the resting mark down the ramp off `=` and `-`, the
+  // two characters that form continuous horizontal runs and made the
+  // light-mode field read as rows of unloaded body copy.
 
   // ---- The fade is made of characters, and only floored by opacity.
   //
@@ -2064,12 +2071,10 @@ img.emoji {
   --illo-char-fade-top: 9rem;
   --illo-char-fade-bottom: 15rem;
 
-  // The field composes itself outward from where the statement sits, rather
-  // than sweeping left to right. The left-to-right stagger is right for a
-  // figure the reader is looking at; behind a headline it reads as text
-  // loading, which is the skeleton-loader problem in another form.
-  --illo-arrive-x: 0.28;
-  --illo-arrive-y: 0.3;
+  // The field composes itself outward from where the statement sits rather
+  // than sweeping left to right — behind a headline that reads as text
+  // loading, the skeleton-loader problem in another form. Static, so the
+  // origin lives in the profile as arrive_x / arrive_y.
 
   @media (max-width: 47.99rem) {
     // Matches the taller tail where the chips wrap. Nested deliberately — see

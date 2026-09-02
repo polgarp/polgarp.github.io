@@ -62,24 +62,16 @@
     return {
       seed: function () {
         if (!opts.path) return;
-        // A wide figure at the default pitch runs to well over a thousand
-        // marks, which reads as texture rather than as an object. Widening the
-        // pitch thins it without changing anything else.
+        // Grid pitch in px. The illustration states it in its profile; CELL is
+        // the engine's default for one that does not state a pitch.
         //
-        // `lightest` exists for the background layer, which spans a whole
-        // viewport rather than a figure: at the default pitch that is tens of
-        // thousands of marks, and the cost is one fillText each. The step is
-        // large because the jump is in area, not in width.
-        //
-        // A bare number is also accepted, as a pitch in px. The named steps
-        // are the vocabulary and what illustrations should use; the numeric
-        // form exists so a pitch can be dialled in live before being given a
-        // name. If nothing in the repo passes a number, this line can go.
-        var cell = opts.density === "light" ? 11
-                 : opts.density === "lighter" ? 14
-                 : opts.density === "lightest" ? 20
-                 : parseFloat(opts.density) > 0 ? parseFloat(opts.density)
-                 : CELL;
+        // The pitch is worth stating deliberately: a wide figure at the default
+        // runs to well over a thousand marks, which reads as texture rather
+        // than as an object, and a full viewport is tens of thousands at one
+        // fillText each. Cost follows the mark count, which follows area, so
+        // buying smaller marks by shrinking the cell costs the square of what
+        // it looks like it should — use mark_scale for that instead.
+        var cell = opts.cell > 0 ? opts.cell : CELL;
         var t = Illo.pathTargets(opts.path, 100, 100, sim.w, sim.h, cell, opts.fit);
         var n = t.length / 3;
         if (!n) return;
