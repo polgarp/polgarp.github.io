@@ -11,11 +11,21 @@
 // syntax declared, the browser resolves the arithmetic first.
 //
 // Degrades safely: where @property is unsupported the engine's parse fails,
-// and it falls back to the `data-illo-density` attribute on the element.
+// and it falls back to the illustration's own attribute on the element.
+//
+// THE INITIAL VALUE IS ALWAYS A ZERO SENTINEL, NEVER A REAL VALUE.
+//
+// A registered custom property resolves on EVERY element in the document,
+// whether or not any rule sets it, so there is no "absent" for the engine to
+// detect. Zero is the value config.js rejects, and so is the only way to say
+// "nothing set this — use the illustration's own attribute". A real initial
+// value here makes the CSS fallback unconditional and silently overrides every
+// illustration's setup: that is what f716aa1 did, resizing two posts' glyphs
+// from 11px and 15px to 27px. Enforced by scripts/check-illustrations.mjs.
 @property --illo-cell {
   syntax: "<length>";
   inherits: true;
-  initial-value: 20px;
+  initial-value: 0px;
 }
 
 // Registered as lengths so the engine reads them in PIXELS. An unregistered
@@ -36,7 +46,7 @@
 @property --illo-density {
   syntax: "<length>";
   inherits: true;
-  initial-value: 20px;
+  initial-value: 0px;
 }
 
 @mixin light-tokens {
