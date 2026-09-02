@@ -142,7 +142,7 @@ test("an empty attribute does not shadow CSS", () => {
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `node --test test/`
+Run: `node --test test/*.test.cjs`
 Expected: FAIL — `Cannot find module '../assets/js/illustration/config.js'`
 
 - [ ] **Step 3: Write minimal implementation**
@@ -232,7 +232,7 @@ Create `assets/js/illustration/config.js`:
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `node --test test/`
+Run: `node --test test/*.test.cjs`
 Expected: PASS, 11/11.
 
 - [ ] **Step 5: Commit**
@@ -505,7 +505,7 @@ with:
 - [ ] **Step 5: Verify nothing moved**
 
 ```bash
-bundle exec jekyll build --quiet && node --test test/ && node scripts/check-illustrations.mjs
+bundle exec jekyll build --quiet && node --test test/*.test.cjs && node scripts/check-illustrations.mjs
 ```
 Then re-run the browser glyph probe from Task 2 Step 4.
 Expected: **11px** and **15px** unchanged; the home background visually identical.
@@ -731,7 +731,7 @@ byte:
 - [ ] **Step 7: Verify all three checks and the glyph sizes**
 
 ```bash
-bundle exec jekyll build --quiet && node --test test/ && node scripts/check-illustrations.mjs
+bundle exec jekyll build --quiet && node --test test/*.test.cjs && node scripts/check-illustrations.mjs
 grep -o 'data-illo-[a-z-]*="[^"]*"' _site/blog/brain-fry-and-the-automation-trap/index.html
 ```
 Expected: the check now **passes all three assertions**; the grep shows
@@ -775,7 +775,7 @@ block with its `<script>` from `_layouts/default.html`.
 
 ```bash
 grep -rn "illo_tune\|tune\.js" . --exclude-dir=_site --exclude-dir=.git || echo "clean"
-bundle exec jekyll build --quiet && node --test test/ && node scripts/check-illustrations.mjs
+bundle exec jekyll build --quiet && node --test test/*.test.cjs && node scripts/check-illustrations.mjs
 ```
 Expected: `clean`, then all checks pass.
 
@@ -841,7 +841,7 @@ git commit -m "Spec: mark implemented, record the one-style amendment"
 After every task:
 
 ```bash
-bundle exec jekyll build --quiet && node --test test/ && node scripts/check-illustrations.mjs
+bundle exec jekyll build --quiet && node --test test/*.test.cjs && node scripts/check-illustrations.mjs
 ```
 
 After Tasks 2, 3 and 4, additionally confirm in a browser that each illustration
