@@ -58,11 +58,6 @@ newsletter_embed: "https://embeds.beehiiv.com/37db567b-1484-4bb3-8430-ed1d569535
 share_service: "https://mastodonshare.com/?text="
 
 
-# TEMPORARY: loads assets/js/illustration/tune.js on pages with an
-# illustration, so the background layer's numbers can be dialled in live.
-# Delete this flag and that file once they are settled.
-illo_tune: false
-
 # Build settings
 markdown: kramdown
 
