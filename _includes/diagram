@@ -1,0 +1,20 @@
+{%- comment -%}
+A static diagram from _includes/diagrams/, inlined so it inherits the page's
+colour tokens: an <img> can see prefers-color-scheme but never the data-theme
+toggle, so it would be wrong for a reader whose choice differs from their system.
+
+  {% include diagram name="archetype-pipeline" alt="..." caption="..." %}
+
+  name     file in _includes/diagrams/, without .svg
+  alt      required
+  caption  optional
+{%- endcomment -%}
+<figure class="figure figure--diagram">
+  <div class="diagram" role="img" aria-label="{{ include.alt | strip_newlines | normalize_whitespace }}">
+    {%- capture _src -%}diagrams/{{ include.name }}.svg{%- endcapture -%}
+    {% include {{ _src }} %}
+  </div>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption | markdownify }}</figcaption>
+  {%- endif %}
+</figure>

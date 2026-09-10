@@ -2152,3 +2152,27 @@ img.emoji {
 // most visitors looking at the one thing the page is built around. It costs a
 // single paint and then rests at 0 ms forever, because there is no cursor that
 // could ever wake it.
+
+// Static diagrams (_includes/diagram). Drawn on a 1120px canvas, so they break
+// out of the 50rem shell to sit at 1:1 rather than scale their labels down to
+// ~8px. Mono labels are wide: below min-width the diagram scrolls, not the page.
+.figure--diagram {
+  .diagram {
+    width: min(70rem, calc(100vw - 3rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    min-width: 34rem;
+    height: auto;
+  }
+
+  figcaption {
+    max-width: var(--measure);
+  }
+}

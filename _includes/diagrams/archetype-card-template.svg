@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" width="1120" height="500">
+  <title>The shape of an archetype card</title>
+  <style>
+    .dg-card  { fill: none; stroke: var(--rule-strong, #949494); stroke-width: 1.5; }
+    .dg-badge { fill: none; stroke: var(--rule, #e4e4e4); stroke-width: 1; }
+    .dg-rule  { stroke: var(--rule, #e4e4e4); stroke-width: 1; }
+    .dg-bar   { fill: var(--rule, #e4e4e4); }
+    .dg-name  { font: 700 24px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-t     { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-sub   { font: 700 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-lab   { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-acc   { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+  </style>
+
+  <rect class="dg-card" x="40" y="36" width="1040" height="424"/>
+
+  <!-- header -->
+  <text class="dg-name" x="64" y="94">Archetype name</text>
+  <rect class="dg-badge" x="976" y="68" width="80" height="26" rx="13"/>
+  <text class="dg-lab" x="1016" y="86" text-anchor="middle">Day 0</text>
+
+  <text class="dg-lab" x="64" y="126">Job titles</text>
+  <rect class="dg-bar" x="150" y="118" width="400" height="8"/>
+
+  <text class="dg-lab" x="64" y="164">Quote</text>
+  <rect class="dg-bar" x="150" y="150" width="560" height="8"/>
+  <rect class="dg-bar" x="150" y="168" width="420" height="8"/>
+
+  <line class="dg-rule" x1="64" y1="196" x2="1056" y2="196"/>
+
+  <!-- column 1 -->
+  <text class="dg-t" x="64" y="228">Main job</text>
+  <rect class="dg-bar" x="64" y="246" width="300" height="8"/>
+  <rect class="dg-bar" x="64" y="262" width="280" height="8"/>
+  <rect class="dg-bar" x="64" y="278" width="200" height="8"/>
+
+  <text class="dg-t" x="64" y="334">Day in their life</text>
+  <rect class="dg-bar" x="64" y="352" width="300" height="8"/>
+  <rect class="dg-bar" x="64" y="368" width="240" height="8"/>
+  <rect class="dg-bar" x="64" y="384" width="180" height="8"/>
+
+  <!-- column 2 -->
+  <text class="dg-t" x="424" y="228">How to spot</text>
+  <rect class="dg-bar" x="424" y="246" width="270" height="8"/>
+  <rect class="dg-bar" x="424" y="262" width="250" height="8"/>
+  <rect class="dg-bar" x="424" y="278" width="265" height="8"/>
+  <rect class="dg-bar" x="424" y="294" width="210" height="8"/>
+
+  <text class="dg-t" x="424" y="334">Pain points</text>
+  <rect class="dg-bar" x="424" y="352" width="270" height="8"/>
+  <rect class="dg-bar" x="424" y="368" width="240" height="8"/>
+  <rect class="dg-bar" x="424" y="384" width="255" height="8"/>
+
+  <!-- column 3 -->
+  <text class="dg-t" x="754" y="228">Push and pull</text>
+  <text class="dg-sub" x="754" y="252">Pressure triggers</text>
+  <rect class="dg-bar" x="754" y="268" width="250" height="8"/>
+  <rect class="dg-bar" x="754" y="284" width="230" height="8"/>
+  <rect class="dg-bar" x="754" y="300" width="245" height="8"/>
+
+  <text class="dg-sub" x="754" y="334">Aspirations</text>
+  <rect class="dg-bar" x="754" y="352" width="250" height="8"/>
+  <rect class="dg-bar" x="754" y="368" width="215" height="8"/>
+  <rect class="dg-bar" x="754" y="384" width="240" height="8"/>
+
+  <!-- footer: the provenance line every card carries -->
+  <line class="dg-rule" x1="64" y1="412" x2="1056" y2="412"/>
+  <text class="dg-lab" x="64" y="440">Last updated<tspan class="dg-lab">  ·  </tspan><tspan class="dg-acc">Spec and changelog</tspan><tspan class="dg-lab">  ·  </tspan><tspan class="dg-acc">Archetypes overview</tspan></text>
+</svg>

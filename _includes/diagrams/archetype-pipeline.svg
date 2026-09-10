@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" width="1120" height="300">
+  <title>How an archetype gets built</title>
+  <style>
+    .dg-frame { fill: none; stroke: var(--rule-strong, #949494); stroke-width: 1.5; }
+    .dg-box   { fill: var(--surface, #f5f5f5); stroke: var(--rule, #e4e4e4); stroke-width: 1; }
+    .dg-gate  { fill: var(--surface, #f5f5f5); stroke: var(--accent, #d62828); stroke-width: 1.5; }
+    .dg-h     { font: 700 15px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-sub   { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-t     { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-role  { font: 400 10.5px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-gaterole { font: 400 10.5px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+    .dg-body  { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-arrow { stroke: var(--ink-muted, #6e6e6e); stroke-width: 1.4; fill: var(--ink-muted, #6e6e6e); }
+    .dg-return { fill: none; stroke: var(--accent, #d62828); stroke-width: 1.4; stroke-dasharray: 5 4; }
+    .dg-returnhead { fill: var(--accent, #d62828); }
+    .dg-returnlabel { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+    .dg-mask { fill: var(--paper, #fff); }
+  </style>
+
+  <rect class="dg-frame" x="40" y="36" width="1040" height="228"/>
+  <text class="dg-h" x="64" y="66">How an archetype gets built</text>
+  <text class="dg-sub" x="64" y="86">Agents draft; a person curates and signs off at every gate.</text>
+
+  <g class="dg-arrow">
+    <line x1="248" y1="160" x2="258" y2="160"/><path d="M258,156 L264,160 L258,164 Z"/>
+    <line x1="450" y1="160" x2="460" y2="160"/><path d="M460,156 L466,160 L460,164 Z"/>
+    <line x1="652" y1="160" x2="662" y2="160"/><path d="M662,156 L668,160 L662,164 Z"/>
+    <line x1="854" y1="160" x2="864" y2="160"/><path d="M864,156 L870,160 L864,164 Z"/>
+  </g>
+
+  <rect class="dg-box" x="64" y="110" width="182" height="100"/>
+  <text class="dg-t" x="78" y="134">1 · Gather</text>
+  <text class="dg-role" x="78" y="152">Agent</text>
+  <text class="dg-body" x="78" y="176">Interviews, expertise,</text>
+  <text class="dg-body" x="78" y="192">secondary sources.</text>
+
+  <rect class="dg-box" x="266" y="110" width="182" height="100"/>
+  <text class="dg-t" x="280" y="134">2 · Map jobs</text>
+  <text class="dg-role" x="280" y="152">Human</text>
+  <text class="dg-body" x="280" y="176">Jobs, needs, and</text>
+  <text class="dg-body" x="280" y="192">where products fit.</text>
+
+  <rect class="dg-box" x="468" y="110" width="182" height="100"/>
+  <text class="dg-t" x="482" y="134">3 · Synthesise</text>
+  <text class="dg-role" x="482" y="152">Agent</text>
+  <text class="dg-body" x="482" y="176">Aggregate, cite,</text>
+  <text class="dg-body" x="482" y="192">cluster, draft.</text>
+
+  <rect class="dg-gate" x="670" y="110" width="182" height="100"/>
+  <text class="dg-t" x="684" y="134">4 · Curate</text>
+  <text class="dg-gaterole" x="684" y="152">Human gate</text>
+  <text class="dg-body" x="684" y="176">A person decides;</text>
+  <text class="dg-body" x="684" y="192">experts check.</text>
+
+  <rect class="dg-box" x="872" y="110" width="182" height="100"/>
+  <text class="dg-t" x="886" y="134">5 · Publish</text>
+  <text class="dg-role" x="886" y="152">Agent</text>
+  <text class="dg-body" x="886" y="176">Spec + one-pager,</text>
+  <text class="dg-body" x="886" y="192">versioned in repo.</text>
+
+  <path class="dg-return" d="M963,210 L963,236 L155,236 L155,210"/>
+  <path class="dg-returnhead" d="M149,216 L155,206 L161,216 Z"/>
+  <rect class="dg-mask" x="490" y="227" width="138" height="18"/>
+  <text class="dg-returnlabel" x="559" y="240" text-anchor="middle">re-run as we learn</text>
+</svg>

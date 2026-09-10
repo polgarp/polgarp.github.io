@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 290" width="1120" height="290">
+  <title>Keeping the whole set fresh</title>
+  <style>
+    .dg-frame { fill: none; stroke: var(--rule-strong, #949494); stroke-width: 1.5; }
+    .dg-box   { fill: var(--surface, #f5f5f5); stroke: var(--rule, #e4e4e4); stroke-width: 1; }
+    .dg-fill  { fill: var(--ink, #000); }
+    .dg-h     { font: 700 15px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-sub   { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-t     { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-role  { font: 400 10.5px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-body  { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-ti    { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--paper, #fff); }
+    .dg-rolei { font: 400 10.5px var(--font-mono, ui-monospace, monospace); fill: var(--paper, #fff); opacity: 0.72; }
+    .dg-bodyi { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--paper, #fff); opacity: 0.62; }
+    .dg-arrow { stroke: var(--ink-muted, #6e6e6e); stroke-width: 1.4; fill: var(--ink-muted, #6e6e6e); }
+    .dg-return { fill: none; stroke: var(--accent, #d62828); stroke-width: 1.4; stroke-dasharray: 5 4; }
+    .dg-returnhead { fill: var(--accent, #d62828); }
+    .dg-returnlabel { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+    .dg-mask { fill: var(--paper, #fff); }
+  </style>
+
+  <rect class="dg-frame" x="40" y="36" width="1040" height="218"/>
+  <text class="dg-h" x="64" y="66">Keeping the whole set fresh</text>
+  <text class="dg-sub" x="64" y="86">Learning flows in from teams; refreshed archetypes flow back out.</text>
+
+  <g class="dg-arrow">
+    <line x1="299" y1="155" x2="309" y2="155"/><path d="M309,151 L315,155 L309,159 Z"/>
+    <line x1="552" y1="155" x2="562" y2="155"/><path d="M562,151 L568,155 L562,159 Z"/>
+    <line x1="805" y1="155" x2="815" y2="155"/><path d="M815,151 L821,155 L815,159 Z"/>
+  </g>
+
+  <rect class="dg-box" x="64" y="108" width="233" height="94"/>
+  <text class="dg-t" x="80" y="132">Teams contribute</text>
+  <text class="dg-role" x="80" y="150">product teams</text>
+  <text class="dg-body" x="80" y="172">build personas,</text>
+  <text class="dg-body" x="80" y="188">submit findings</text>
+
+  <rect class="dg-fill" x="317" y="108" width="233" height="94"/>
+  <text class="dg-ti" x="333" y="132">Agents synthesise</text>
+  <text class="dg-rolei" x="333" y="150">automated</text>
+  <text class="dg-bodyi" x="333" y="172">aggregate, cite,</text>
+  <text class="dg-bodyi" x="333" y="188">cluster, draft</text>
+
+  <rect class="dg-box" x="570" y="108" width="233" height="94"/>
+  <text class="dg-t" x="586" y="132">People curate</text>
+  <text class="dg-role" x="586" y="150">User Science</text>
+  <text class="dg-body" x="586" y="172">review, decide,</text>
+  <text class="dg-body" x="586" y="188">update the set</text>
+
+  <rect class="dg-box" x="823" y="108" width="233" height="94"/>
+  <text class="dg-t" x="839" y="132">Archetypes update</text>
+  <text class="dg-role" x="839" y="150">output</text>
+  <text class="dg-body" x="839" y="172">flow back to</text>
+  <text class="dg-body" x="839" y="188">every team</text>
+
+  <path class="dg-return" d="M939,202 L939,228 L180,228 L180,202"/>
+  <path class="dg-returnhead" d="M174,208 L180,198 L186,208 Z"/>
+  <rect class="dg-mask" x="410" y="219" width="300" height="18"/>
+  <text class="dg-returnlabel" x="559" y="232" text-anchor="middle">refreshed archetypes flow back to every team</text>
+</svg>
