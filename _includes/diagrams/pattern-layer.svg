@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" width="1120" height="420">
+  <title>The layer between components and journeys</title>
+  <style>
+    .dg-frame { fill: none; stroke: var(--rule-strong, #949494); stroke-width: 1.5; }
+    .dg-band  { fill: var(--surface, #f5f5f5); stroke: var(--rule, #e4e4e4); stroke-width: 1; }
+    .dg-gap   { fill: var(--surface, #f5f5f5); stroke: var(--accent, #d62828); stroke-width: 1.5; }
+    .dg-h     { font: 700 15px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-sub   { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-t     { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--ink, #000); }
+    .dg-ta    { font: 700 13px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+    .dg-body  { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--ink-muted, #6e6e6e); }
+    .dg-note  { font: 400 11px var(--font-mono, ui-monospace, monospace); fill: var(--accent, #d62828); }
+  </style>
+
+  <rect class="dg-frame" x="40" y="36" width="1040" height="348"/>
+  <text class="dg-h" x="64" y="66">The layer between components and journeys</text>
+  <text class="dg-sub" x="64" y="86">A design system that stops at components leaves the middle undescribed.</text>
+
+  <rect class="dg-band" x="64" y="116" width="992" height="72"/>
+  <text class="dg-t" x="84" y="144">Journeys</text>
+  <text class="dg-body" x="84" y="166">what a customer is trying to get done, across several products</text>
+  <text class="dg-body" x="1036" y="144" text-anchor="end">owned by product teams</text>
+
+  <rect class="dg-gap" x="64" y="204" width="992" height="72"/>
+  <text class="dg-ta" x="84" y="232">Patterns</text>
+  <text class="dg-body" x="84" y="254">how a surface is composed, and how services sit next to each other</text>
+  <text class="dg-note" x="1036" y="232" text-anchor="end">the new category</text>
+
+  <rect class="dg-band" x="64" y="292" width="992" height="72"/>
+  <text class="dg-t" x="84" y="320">Components</text>
+  <text class="dg-body" x="84" y="342">buttons, tables, inputs, the pieces a screen is built from</text>
+  <text class="dg-body" x="1036" y="320" text-anchor="end">owned by the design system</text>
+</svg>
