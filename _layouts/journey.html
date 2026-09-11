@@ -10,14 +10,19 @@ layout: default
 </nav>
 <article class="journey">
   <header class="journey__head" id="journey-top">
-    <h1 class="post__title">{{ page.title }}</h1>
-    <p class="journey__lead">{{ j.intro.lead }}</p>
+    {%- comment -%}
+      The page's own name lives in the tab title and the nav; the h1 carries the
+      claim. "Journey" set as the largest type on the page put a filing label
+      where the argument should be, and left the claim looking like a subtitle
+      to it.
+    {%- endcomment -%}
+    <h1 class="post__title journey__lead">{{ j.intro.lead }}</h1>
     <p class="journey__sub">{{ j.intro.sub }}</p>
   </header>
 
   <section class="career" aria-label="Where I've worked">
     {% for job in j.career %}
-    <div class="career__item">
+    <div class="career__item"{% if job.logo_height %} style="--logo-h: {{ job.logo_height }}"{% endif %}>
       <img class="career__logo" src="{{ job.logo | relative_url }}" alt="{{ job.company }}">
       <span class="career__role">{{ job.role | default: site.current.role }}</span>
       <span class="career__period">{{ job.period }}</span>
@@ -27,12 +32,20 @@ layout: default
 
   {% for area in j.areas %}
   <section class="area" id="area-{{ area.num }}">
-    <p class="area__num" aria-hidden="true">{{ area.num }}</p>
-    <h2 class="area__headline">{{ area.headline }}</h2>
+    <div class="area__head">
+      <p class="area__num" aria-hidden="true">{{ area.num }}</p>
+      <h2 class="area__headline" id="head-{{ area.num }}">{{ area.headline }}</h2>
+    </div>
     <p class="area__line">{{ area.line }}</p>
     {% include journey-card.html slug=area.key.slug blurb=area.key.blurb image=area.key.image %}
     {% if area.more %}
-    <ul class="area__more">
+    <p class="area__more-label" id="more-{{ area.num }}">Also in this area</p>
+    {%- comment -%}
+      Two ids, not one: every area's visible label reads "Also in this area", so
+      on its own it gives three lists the same accessible name. Pairing it with
+      the chapter heading makes each one distinct in a screen reader's list view.
+    {%- endcomment -%}
+    <ul class="area__more" aria-labelledby="more-{{ area.num }} head-{{ area.num }}">
       {% for slug in area.more %}
       <li>{% include journey-card.html slug=slug variant="secondary" %}</li>
       {% endfor %}
@@ -41,10 +54,17 @@ layout: default
   </section>
   {% endfor %}
 
-  <section class="area area--foundations">
-    <h2 class="area__headline">Foundations</h2>
+  {%- comment -%}
+    The id is what journey.js tracks. Foundations has no rail entry, so when it
+    becomes the current section nothing matches and the rail clears — which is
+    right: you have left the four areas behind.
+  {%- endcomment -%}
+  <section class="area area--foundations" id="foundations">
+    <div class="area__head">
+      <h2 class="area__headline" id="head-foundations">Foundations</h2>
+    </div>
     <p class="area__line">{{ j.foundations.line }}</p>
-    <ul class="area__more">
+    <ul class="area__more" aria-labelledby="head-foundations">
       {% for slug in j.foundations.slugs %}
       <li>{% include journey-card.html slug=slug variant="secondary" %}</li>
       {% endfor %}
@@ -52,9 +72,11 @@ layout: default
   </section>
 
   <footer class="journey__cta">
+    <h2 class="journey__cta-headline">{{ j.cta.headline }}</h2>
     <p>{{ j.cta.line }}</p>
+    {% if j.cta.invite %}<p class="journey__cta-invite">{{ j.cta.invite }}</p>{% endif %}
     <p class="journey__cta-actions">
-      {% if page.cv %}<a class="button" href="{{ page.cv }}">Péter's CV</a>{% endif %}
+      {% if page.cv %}<a class="button" href="{{ page.cv }}">Read my CV</a>{% endif %}
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
   </footer>

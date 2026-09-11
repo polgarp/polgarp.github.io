@@ -465,5 +465,10 @@ main.shell {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    // Durations alone leave delays intact, so a staggered reveal still plays as
+    // a timed cascade — it just snaps at each step instead of easing. The rail's
+    // 180ms stagger survived this block until these two lines were added.
+    transition-delay: 0s !important;
+    animation-delay: 0s !important;
   }
 }

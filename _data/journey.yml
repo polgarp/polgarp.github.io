@@ -4,27 +4,37 @@
 
 intro:
   lead: "I make systems work for humans, at every altitude."
-  sub: "Fifteen years of it: founding and leading design teams, and getting hands-on with the technical work when that's what's needed. I build coherence into products and portfolios, and the durable foundations that both teams and agentic workflows can build on."
+  sub: "Fifteen years of founding and leading design teams, and staying close enough to the work to build it."
 
 # Top-of-page credibility scan. Logos live in assets/images/portfolio/.
+#
+# `logo_height` is an optical correction, not a measurement. Set to one uniform
+# height these five wordmarks carry very different visual weight — Emarsys ran
+# 2.2x the area of Krisp — so the strip read as unconsidered, which is the
+# opposite of what a credibility scan is for. Absent, a logo falls back to 1.5rem.
 career:
   - company: "Prezi"
+    logo_height: "1.5rem"
     logo: /assets/images/portfolio/prezi-logo.png
     role: "UX Researcher"
     period: "2011–2014"
   - company: "Emarsys"
+    logo_height: "1.25rem"
     logo: /assets/images/portfolio/emarsys-logo.svg
     role: "Head of UX"
     period: "2015–2018"
   - company: "Trustpilot"
+    logo_height: "1.6rem"
     logo: /assets/images/portfolio/trustpilot-logo.png
     role: "Senior UX Manager"
     period: "2018–2021"
   - company: "Krisp"
+    logo_height: "1.7rem"
     logo: /assets/images/portfolio/krisp-logo.svg
     role: "Lead Product Designer"
     period: "2021–2023"
   - company: "Canonical"
+    logo_height: "1.4rem"
     logo: /assets/images/portfolio/canonical-logo.svg
     # role omitted on purpose: the current role lives in _config.yml (site.current.role)
     period: "2024–"
@@ -46,11 +56,13 @@ areas:
   - num: "02"
     label: "strategy"
     headline: "Shaping strategy through design vision"
-    line: "Design can show the future, not just argue about it. I use vision and prototypes to steer strategy and align leadership."
+    line: "A strategy argument needs something to point at. I use vision prototypes to make decisions easier, show where teams actually disagree, and feed concrete roadmaps and specs."
     key:
-      slug: 2022-design-vision-product-vision
-      image: /assets/images/portfolio/hints/hint-vision.jpg
-      blurb: "A vision prototype that moved Krisp from a feature to a product, and redirected the roadmap behind it."
+      slug: 2026-setting-direction-down-to-the-details
+      image: /assets/images/portfolio/hints/hint-pro.jpg
+      blurb: "A new layer over seven services, held together by one prototype that carries today's scope and the long-term picture at once."
+    more:
+      - 2022-design-vision-product-vision
 
   - num: "03"
     label: "discovery"
@@ -86,5 +98,9 @@ foundations:
     - 2011-usability-testing-the-prezi-editor
     - 1980-Learn-Teach-Organise
 
+# The close. Directional rather than a job ad: it names the shape of the work
+# rather than the title, which is both truer and legible to a current employer.
 cta:
-  line: "Looking for more? Take a peek at my CV or say hello."
+  headline: "Direction"
+  line: "Coherence across a portfolio, the discovery that keeps it grounded, and the team to sustain it, in a deep-tech domain where the problems are hard enough to need all three."
+  invite: "If that's the shape of your problem, I'd like to hear about it."
