@@ -1,5 +1,5 @@
 ---
-title: "Shaping product strategy through design vision"
+title: "Prototyping a future we chose not to build"
 date: 2022-06-01
 sidebar:
   - title: "Role"
@@ -28,6 +28,6 @@ I designed **a unified flow that addressed core user problems** and showcased th
 
 ## The outcome we didn't expect
 
-The project delivered exactly what was needed — though not in the way we initially expected. By making the product direction tangible and testable, the vision showed leadership that this particular path wouldn’t carry the company where it needed to go. That clarity was the real outcome: the design vision gave the stakeholder group the confidence to make a major strategic pivot, and many of our ideas influenced the tech team’s roadmap going forward.
+The project delivered exactly what was needed, though not in the way we initially expected. By making the product direction tangible and testable, the vision showed leadership that this particular path wouldn’t carry the company where it needed to go. That clarity was the real outcome: the design vision gave the stakeholder group the confidence to make a major strategic pivot, and many of our ideas influenced the tech team’s roadmap going forward.
 
 {% include pullquote text="Design is a powerful tool for prediction. It lets us show, not just tell, a compelling story about the future, and shape the product's direction." %}
