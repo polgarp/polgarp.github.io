@@ -10,47 +10,52 @@ sidebar:
     text: "Lead the design for the Ubuntu Pro portfolio."
 ---
 
-The various services around Ubuntu Pro had been assembled over years by different teams, so it never added up to a coherent experience. After I joined Canonical, I mapped the journey end to end, which made this fragmentation visible, and pitched what a single surface across the portfolio could look like. The decision to build it was already forming, and the pitch became the key perspective on what the UX should be. It became a project, a team, and a product: the next iteration of Ubuntu Pro.
+Services around Ubuntu Pro had been built over years by different teams, so they didn't form a coherent experience. Resolving that has been my main mission at Canonical. After I joined I mapped the customer journey end to end, which made the fragmentation visible, and pitched to leadership what a single surface across the portfolio could look like. The direction was already forming, and my pitch shaped what the experience became. It became a project, a team, and a product: the next iteration of Ubuntu Pro.
 
-{% comment %} TODO image: the end-to-end journey map, or the hero image used in the pitch. {% endcomment %}
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-journey.png" alt="Customer journey map for Ubuntu Pro showing the connected services and the friction between them" caption="The end to end customer journey, which made the fragmentation and the friction points between services visible." %}
 
-After the initial shaping, we set a three year roadmap till the general release. The first release brings seven services under one surface, and that number grows as we build new ones and adopt existing internal ones. At that size **alignment is the dominant cost**, and much of what I do goes on paying it down.
+We set a three-year roadmap to bring seven services together on an enterprise-grade foundation. We're a year in, releasing pieces and exploring ideas as we learn. At Canonical's scale, aligning backend services and **creating a coherent experience are the dominant cost**, and I shaped my role to drive that down.
 
-## The problem is that nothing exists yet
+## Agreeing on something that doesn't exist yet
 
-The first phase was argument. What the shared surface should be, what it should never absorb, and which parts were technically reachable. I ran workshops, took part in the architecture discussions, and drew the maps we argued over. The framing that settled the most disputes was deciding it **provides mechanisms, not products**: a shared backplane teams build their services on, which never makes product decisions for them.
+The first phase set the vision: how the project ties into the business strategy, what the shared surface should be, and what was technically feasible. I ran workshops, joined architecture discussions, and drew maps to visualise the tradeoffs. The framing we landed on was **mechanisms for existing products to slot into a coherent view**, a shared backplane teams build on that doesn't make product decisions for them.
 
-A weekly strategy session with the product manager and an architect has run for about ten rounds, and produced the long-term roadmap the delivery work is now sequenced against.
+Teams had to agree about something that didn't exist yet, so I had to make the work visible.
 
-Then it got concrete. More maps, written specifications, permission modelling worked out with the product manager. I direct four designers working on the shared surface itself and collaborate with the wider team as their services come into it, designing some surfaces myself, coordinating the rest, and running the research alongside.
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-maps.png" alt="User story map, information architecture map, and user flow maps side by side" caption="Story map to break down and prioritise, information architecture to align terminology across teams, user flows to show how screens connect." %}
 
-The recurring difficulty is that everyone is being asked to agree about something that does not exist. Words are a poor medium for that, and slide decks age badly.
+I wrote specifications, modelled permissions with the product manager, and drew the flow and information architecture maps. I run a weekly strategy session with the product manager, the engineering manager and the architect, so the long-term picture keeps developing while we deliver. I lead four designers on the shared surface and work with the wider team on how their services join. I design some surfaces myself, coordinate the rest, and run generative and evaluative research.
 
-## Stand-ins, so people argue about the same thing
+## A prototype that holds the whole roadmap
 
-So I build the thing early, in rough. Working with coding agents, I made a prototype that holds the current state, the next step, and the long-term ideas in one space, with variants sitting side by side and new explorations added as they come up. It runs to about a hundred destinations now and keeps growing, because extending it with coding agents is cheap enough to do inside a conversation. It is not a deliverable that gets handed over and filed. It is where the conversations happen now.
+Maps settle terminology and sequence, but they don't show a screen. I built the whole experience as a working prototype with coding agents. It carries the current scope and shows how the pieces connect to the long-term picture, so conversations can move between what ships next and what comes later. We build the minimum now without closing off the rest.
 
-{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-1.png" alt="Four versions of the same service launcher side by side: a search popover, an icon grid, a labelled list, and a full-height drawer." caption="Four forms of the launcher, built rather than argued about. Service names replaced for publication." %}
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-prototype.png" alt="The Ubuntu Pro home page in the prototype, with the variant lab panel open on the right showing controls for version, launcher trigger, drawer form and display options" caption="Home page, with current, near term and long term features sketched in, and the variant lab showing the alternative explorations. Service names replaced for publication." %}
 
-Being able to build the variants rather than describe them changed what was worth trying. The launcher exists in four forms with four ways to trigger it, because building all of them and feeling the difference was cheaper than arguing in the abstract. The whole prototype also switches between three versions of the product, today's scope, the next release and the long-term picture, so a conversation can move between them without changing tools. I keep a written record of what we deliberately did not build, and why, so the rejected branches stay part of the argument.
+This changed how we work through problems. I try alternatives during sessions and see how each one lands across the whole prototype. A variant lab sits on top of it, so explorations live in code rather than in a deck and we switch between them while talking. The prototype has about a hundred screens, and it also drives specifications and detailed designs.
 
-{% include pullquote text="A prototype gives everyone a stand-in to point at, and a stand-in settles arguments that words keep reopening." %}
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-drawer.png" alt="The same home page with the full-height service drawer open, listing services grouped into administration, products, partners and backoffice" caption="One of the switcher explorations: a full-height drawer grouping every service a customer can reach." %}
 
-The second-order effect matters more than the artifact. Once the experience is in front of people, **the decisions behind it get easier to settle**. Questions about identity, tenancy or where a service boundary sits stop being abstract architecture debates and become questions about something visible.
+Once the experience is in front of people, **the decisions behind it get easier to settle**. Questions about identity, tenancy or where a service boundary sits stop being architecture debates and become questions about something on screen. It also surfaces the questions we hadn't thought to ask.
 
-## Coherence needs a layer the design system doesn't have
+{% include pullquote text="I can rebuild a screen while the discussion is still running, so the answer is in front of everyone before the meeting ends." %}
 
-Working this way surfaced a gap. A design system with good components still produces an incoherent portfolio, because components say nothing about the middle: how a surface is composed, how services sit next to each other, how a journey holds together across products.
+## Design systems miss the coherence layer
 
-So I am contributing that middle upward as **layout patterns**, a new category in the design system alongside the component library. They carry the cross-service layout decisions and the smaller coherence rules, like keeping icons consistent from one service to the next. Coherence at portfolio scale has to be written down somewhere, and until now it was not.
+Canonical has a mature design system with tokens and consistent components. The design team cared about coherence inside each service, but not across them, where a journey crosses from one service to the next.
 
-{% include diagram name="pattern-layer"
-   alt="Three stacked bands. Journeys at the top, owned by product teams. Patterns in the middle, outlined in red and marked as the new category. Components at the bottom, owned by the design system." %}
+That's the middle layer of design system work, and it's where coherence comes from. Consistent components aren't the point of a design system; a coherent experience is, and components alone can't deliver one.
 
-## Where it stands
+I'm shaping that layer from the patterns I saw emerging and what the next pages needed, and contributing these to the design system as **layout patterns**, a new category between the component library and the journeys it serves.
 
-We are preparing the first MVP release, and the alignment machinery is holding. The prototype is the reference teams work from, the specifications are unblocking the teams building against them, and the pattern work is being absorbed into the design system.
+They're specified as structure, not styling. The look comes from components that already exist; what was missing was the arrangement: which regions a page has, where the primary action sits, how one service hands over to the next.
 
-{% include stats items="7 services|in the first release;;4 designers|on the shared surface;;3 years|of programme, still running" %}
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-ds-1.png" alt="Annotated wireframe of the standard service layout: primary sidebar, optional secondary navigation, and the page area, with callouts for the product logo, sectioned menu, title bar, content and pinned cluster" caption="The layout every service shares, written down so a customer moving between them stays oriented." %}
 
-The MVP is the first delivery against a vision that runs well past it.
+{% include figure image_path="/assets/images/portfolio/2026-setting-direction-down-to-the-details-ds-3.png" alt="Diagram of action promotion: workflow actions surface on a service dashboard, and service actions surface on the shared dashboard" caption="How a key action earns its way up from a workflow to a service dashboard, and from there to the shared one." %}
+
+## A year in, work is in progress
+
+We're releasing against the roadmap now. The maps, the prototype and the pattern work are what designers and engineers work from, and the near-term plan and the long-term picture still describe the same product. Keeping the vision in something people can use is how I set direction, both for what the product ships next and for what the design system has to become to carry it.
+
+{% include stats items="7 services|brought together;;4 designers|on the shared surface;;year 1 of 3|releasing throughout" %}
