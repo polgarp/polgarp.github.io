@@ -11,8 +11,9 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 ### Building
 
+- A design harness based fully on open source tools
+- A research website to learn about screen and software use for children
 - A product design themed tarot deck to explore symbolism and the core ideas of our craft
-- An agentic storyboard comic creator without AI image generation.
 - An agentic workflow to explore of user segments and insights instead of tired old personas.
 
 ### Reading
@@ -25,4 +26,4 @@ Figuring out the right way to be a centaur with current agentic AI tools, trying
 
 Factorio, scaling my factory to 150-200k SPM.
  
-*Last updated: June 2026*
+*Last updated: September 2026*
