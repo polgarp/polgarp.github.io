@@ -107,8 +107,21 @@ plugins:
 
 author:
   name: "Péter Balázs Polgár"
+  # jekyll-seo-tag falls back to the name for twitter:creator without this.
+  twitter: polgarp
 
 defaults:
+  # Every page: the share card link previews show. Without an og:image,
+  # LinkedIn scrapes the first picture it finds (on Journey, the Prezi logo).
+  # A page overrides it with its own `image:`. Regenerate via scripts/share-card.
+  - scope:
+      path: ""
+    values:
+      image:
+        path: "/assets/images/share-card.png"
+        width: 1200
+        height: 630
+        alt: "Péter Balázs Polgár: I make systems work for humans, at every altitude."
   # _posts
   - scope:
       path: ""

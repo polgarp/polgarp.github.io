@@ -92,6 +92,12 @@ tags:
 - Paschal: prototypes are now the bare minimum
 - the Lenny/Matthews guide as the evidence: a whole craft guide about making,
   "test" once, "user" six times, never a user of the product
+- Herbig/Bastian's **discovery slop**: output impressive to stakeholders that
+  doesn't reduce any meaningful uncertainty
+- Samsonov's anecdote: a week of solid framing work, and the PM asking whether
+  that was "a week worth of progress"
+- » A naming beat is available here if you want one — "discovery slop" is
+  Julia Bastian's, credit it rather than absorbing it.
 - » Verify that count against the live article before printing a number — the vault
   clip looks like it stops at a paywall.
 - » This is the beat with the most sting. Don't over-argue it; the artifact-count
@@ -121,6 +127,18 @@ tags:
   advance is what lets a team **stop**. Nothing else in the arc has said that.
 - Houde & Hill's own guidance, already written in 1997: know your prototype,
   prepare your audience; prototypes do not communicate their own purpose
+- the learning-needs roadmap: why do we roadmap what we assume we need to build
+  rather than what we know we have to learn
+- » **Available beat, and it revisits your own e25.** Tal Raviv argues a
+  hypothesis is what you believe true *today*, about users, and contains neither
+  "if" nor "then" — if/then is a prediction, a different object. e25 taught
+  observe / believe-because / if-then as one structure. The reconciliation: the
+  belief is what you're testing, the if/then is the return specification, and
+  people write only the second half. Better to go back to e25 openly than to
+  quietly contradict it.
+- » Laura Klein's split is worth a clause: generation vs validation return
+  different things, and only validation needs a made thing at all. The probes
+  that need nothing built are the cheap ones nobody schedules.
 
 ## Beat 8 — and decide what has to be real
 
@@ -193,6 +211,11 @@ tags:
    — prototypes as the bare minimum, plus the rebuild cost.
 8. **Mitropoulos et al.** (arXiv, 2026) — framing bias in LLM review. Use only if
    the transfer from security is stated openly.
+9. **Tim Herbig / Julia Bastian**, *How to Spot and Stop Discovery Slop* (2026) —
+   newest and most on-thesis; the fidelity/risk coupling as a failure name.
+10. **Tal Raviv**, *That's Not a Hypothesis* (2017) — strict definition, and the
+   one that argues with e25. **The vault clip's author metadata is wrong (it
+   says your name); the author is Tal Raviv.**
 
 » Also available, not shortlisted: Ryan Singer's fidelity curve (better used in the
   body as the thing that breaks), Trys Mudford on fidelity layers, George Abraham on
