@@ -16,7 +16,50 @@
       if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
     })();
   </script>
-  {% seo %}
+  {%- comment -%}
+    Link previews. An explicit `image:` in front matter goes through
+    jekyll-seo-tag as usual. Otherwise a post previews with its first image
+    (the figure under the lede) and everything else with the share card. The
+    plugin can't take a fallback, so its image-less twitter:card line is
+    swapped for our tags.
+  {%- endcomment -%}
+  {%- capture seo_tags %}{% seo %}{% endcapture -%}
+  {%- unless page.image -%}
+    {%- assign share_src = site.share_image.path -%}
+    {%- assign share_alt = site.share_image.alt -%}
+    {%- assign share_w = site.share_image.width -%}
+    {%- assign share_h = site.share_image.height -%}
+    {%- if page.collection == "posts" and page.content contains '<img src="' -%}
+      {%- assign share_tag = page.content | split: '<img src="' | slice: 1 | first | split: '>' | first -%}
+      {%- assign share_src = share_tag | split: '"' | first -%}
+      {%- assign share_alt = "" -%}
+      {%- if share_tag contains 'alt="' -%}
+        {%- assign share_alt = share_tag | split: 'alt="' | last | split: '"' | first -%}
+      {%- endif -%}
+      {%- assign share_w = nil -%}
+      {%- assign share_h = nil -%}
+    {%- endif -%}
+    {%- capture share_tags -%}
+  <meta property="og:image" content="{{ share_src | absolute_url }}" />
+  {%- if share_w %}
+  <meta property="og:image:width" content="{{ share_w }}" />
+  <meta property="og:image:height" content="{{ share_h }}" />
+  {%- endif %}
+  {%- if share_alt != "" %}
+  <meta property="og:image:alt" content="{{ share_alt }}" />
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image" content="{{ share_src | absolute_url }}" />
+  {%- if share_alt != "" %}
+  <meta name="twitter:image:alt" content="{{ share_alt }}" />
+  {%- endif %}
+    {%- endcapture -%}
+    {%- comment -%} Split, not replace: replace is Ruby gsub, which reads a
+    `\&` in an alt as "the match" and splices the tags into themselves. {%- endcomment -%}
+    {%- assign seo_parts = seo_tags | split: '<meta name="twitter:card" content="summary" />' -%}
+    {%- capture seo_tags %}{{ seo_parts[0] }}{{ share_tags }}{{ seo_parts[1] }}{% endcapture -%}
+  {%- endunless %}
+  {{ seo_tags }}
   {% feed_meta %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
